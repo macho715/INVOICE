@@ -1,0 +1,54 @@
+# HVDC Project Invoice Audit System - Code Owners
+# This file defines who is responsible for different parts of the codebase
+
+# Global owners
+* @macho715
+
+# Core system files
+/shpt_audit_system.py @macho715
+/domestic_audit_system.py @macho715
+/audit_runner_enhanced.py @macho715
+/joiners_enhanced.py @macho715
+/rules_enhanced.py @macho715
+
+# Configuration files
+/pyproject.toml @macho715
+/requirements.txt @macho715
+/Dockerfile @macho715
+
+# Documentation
+/README.md @macho715
+/docs/ @macho715
+*.md @macho715
+
+# CI/CD workflows
+/.github/workflows/ @macho715
+/.github/dependabot.yml @macho715
+/.github/CODEOWNERS @macho715
+
+# Security-related files
+/.github/workflows/security.yml @macho715
+/requirements.txt @macho715
+
+# Test files
+/tests/ @macho715
+*_test.py @macho715
+test_*.py @macho715
+
+# Reference data
+/ref/ @macho715
+*.json @macho715
+
+# Templates
+/templates/ @macho715
+
+# Scripts
+/scripts/ @macho715
+*.py @macho715
+
+# VBA modules (if any)
+*.bas @macho715
+
+# Power Query files
+*.pq @macho715
+*.m @macho715

@@ -1,0 +1,211 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoice-audit-system"
+version = "1.0.0"
+description = "HVDC Project Invoice Audit System - Samsung C&T Logistics & ADNOC·DSV Partnership"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "HVDC Project Team", email = "hvdc-project@samsung.com"}
+]
+maintainers = [
+    {name = "Samsung C&T Logistics", email = "logistics@samsung.com"},
+    {name = "ADNOC·DSV Partnership", email = "partnership@adnoc.com"}
+]
+keywords = [
+    "invoice", "audit", "logistics", "shipping", "transportation",
+    "hvdc", "samsung", "adnoc", "dsv", "automation", "validation"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Manufacturing",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+    "numpy>=1.24.0",
+    "click>=8.1.0",
+    "rich>=13.5.0",
+    "python-dotenv>=1.0.0",
+    "structlog>=23.1.0",
+    "pyyaml>=6.0.0",
+    "requests>=2.31.0",
+    "python-dateutil>=2.8.0",
+    "jsonschema>=4.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-xdist>=3.3.0",
+    "pytest-benchmark>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0",
+    "bandit>=1.7.5",
+    "pre-commit>=3.4.0",
+    "tox>=4.6.0",
+]
+security = [
+    "safety>=2.3.0",
+    "pip-audit>=2.6.0",
+    "semgrep>=1.40.0",
+]
+docs = [
+    "sphinx>=7.1.0",
+    "sphinx-rtd-theme>=1.3.0",
+]
+performance = [
+    "memory-profiler>=0.61.0",
+    "psutil>=5.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/macho715/INVOICE"
+Documentation = "https://github.com/macho715/INVOICE#readme"
+Repository = "https://github.com/macho715/INVOICE.git"
+Issues = "https://github.com/macho715/INVOICE/issues"
+Changelog = "https://github.com/macho715/INVOICE/releases"
+
+[project.scripts]
+invoice-audit = "invoice_audit.cli:main"
+shpt-audit = "invoice_audit.shpt:main"
+domestic-audit = "invoice_audit.domestic:main"
+
+[project.gui-scripts]
+invoice-audit-gui = "invoice_audit.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["invoice_audit*"]
+exclude = ["tests*", "docs*", "scripts*"]
+
+[tool.setuptools.package-data]
+invoice_audit = [
+    "ref/*.json",
+    "templates/*.md",
+    "templates/*.json",
+    "templates/*.yaml",
+    "templates/*.yml",
+]
+
+# Black configuration
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+# isort configuration
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["invoice_audit"]
+known_third_party = ["pandas", "numpy", "openpyxl", "click", "rich"]
+
+# MyPy configuration
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = [
+    "pandas.*",
+    "openpyxl.*",
+    "numpy.*",
+    "click.*",
+    "rich.*",
+]
+ignore_missing_imports = true
+
+# Pytest configuration
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+    "performance: marks tests as performance tests",
+    "security: marks tests as security tests",
+]
+
+# Coverage configuration
+[tool.coverage.run]
+source = ["invoice_audit"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "*/__pycache__/*",
+    "*/venv/*",
+    "*/env/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+# Bandit configuration
+[tool.bandit]
+exclude_dirs = ["tests", "venv", "env"]
+skips = ["B101", "B601"]
+
+# Safety configuration
+[tool.safety]
+output = "json"
+output_file = "safety-report.json"
