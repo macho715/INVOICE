@@ -159,7 +159,7 @@ jobs:
         python -m memory_profiler scripts/memory_test.py
         
     - name: Upload performance results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: performance-results
         path: .benchmarks/
@@ -196,7 +196,7 @@ jobs:
         semgrep --config=auto .
         
     - name: Upload security reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: security-reports
         path: |
@@ -228,7 +228,7 @@ jobs:
         python -m build
         
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dist
         path: dist/
