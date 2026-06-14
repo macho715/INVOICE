@@ -1,0 +1,1320 @@
+2025-10-22 05:33:12,847 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 6930, 'date_updates': 32, 'field_updates': 6898, 'appends': 212, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 05:33:23,897 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 05:33:23,897 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 05:33:23,898 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 05:33:24,050 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 05:33:24,052 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 05:33:24,052 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 05:33:24,052 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 05:33:24,052 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 05:33:24,053 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 05:33:26,912 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7073건
+2025-10-22 05:33:26,917 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7073건
+2025-10-22 05:33:26,918 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 05:33:26,997 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 05:33:26,998 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 05:33:27,044 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2250, 2: 3812, 3: 713}
+2025-10-22 05:33:27,044 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 05:33:27,044 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 05:33:27,044 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 05:33:27,044 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 05:33:27,045 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 05:33:27,045 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 05:33:33,312 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5232건 (창고간 이동 6건 별도)
+2025-10-22 05:33:33,314 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 05:33:39,695 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2356건
+2025-10-22 05:33:39,699 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 05:33:39,747 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 05:33:39,864 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 05:33:39,885 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 05:33:39,885 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 05:33:39,889 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 05:33:40,351 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2251건
+2025-10-22 05:33:40,354 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 05:33:43,293 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 05:33:43,293 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 05:33:44,360 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 05:33:44,363 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 05:33:51,339 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 05:33:51,344 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 05:33:51,345 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 05:33:51,345 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 05:34:32,590 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 05:34:32,594 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 05:34:33,119 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 05:34:33,122 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 05:34:33,123 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 05:34:33,123 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 05:34:33,123 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 05:34:33,340 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 05:34:33,343 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 05:34:34,456 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 05:34:34,457 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 05:34:34,460 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 05:34:34,461 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 05:34:34,462 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 05:34:34,833 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 05:34:34,834 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 05:34:34,852 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 05:34:34,858 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 05:34:34,860 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 05:34:34,860 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 05:34:34,861 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 05:34:34,885 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 05:34:34,887 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 05:34:48,445 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_053323_v3.0-corrected.xlsx
+2025-10-22 05:34:48,446 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 05:34:54,989 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 78건']
+2025-10-22 05:34:57,869 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 05:34:59,449 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 05:34:59,454 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 506, 'by_type': {'데이터 품질': 1, '시간 역전': 191, '과도 체류': 174, '머신러닝 이상치': 140}, 'by_severity': {'보통': 19, '치명적': 482, '높음': 5}}
+2025-10-22 05:44:15,054 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 78건']
+2025-10-22 05:44:17,155 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 05:44:18,525 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 05:44:18,529 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 506, 'by_type': {'데이터 품질': 1, '시간 역전': 191, '과도 체류': 174, '머신러닝 이상치': 140}, 'by_severity': {'보통': 19, '치명적': 482, '높음': 5}}
+2025-10-22 05:44:36,060 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=0, ML=0, 품질=0)
+2025-10-22 08:17:18,373 - hvdc_pipeline.run_pipeline - ERROR - Stage 1 실행 중 오류
+Traceback (most recent call last):
+  File "C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\run_pipeline.py", line 177, in run_stage
+    raise ImportError("Stage 1 동기화 모듈을 불러오지 못했습니다.")
+ImportError: Stage 1 동기화 모듈을 불러오지 못했습니다.
+2025-10-22 08:20:59,285 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 08:22:38,694 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 08:22:52,595 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 08:22:52,595 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 08:22:52,595 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 08:22:52,637 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 08:22:52,639 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 08:22:52,640 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 08:22:52,640 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 08:22:52,640 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 08:22:52,643 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 08:22:56,553 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 08:22:56,564 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 08:22:56,565 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 08:22:56,627 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 08:22:56,628 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 08:22:56,678 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 08:22:56,679 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 08:22:56,679 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 08:22:56,679 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 08:22:56,679 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 08:22:56,680 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 08:22:56,680 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 08:23:06,719 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 08:23:06,722 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 08:23:15,546 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 08:23:15,549 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 08:23:15,598 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 08:23:15,703 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 08:23:15,735 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 08:23:15,736 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 08:23:15,745 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 08:23:16,710 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 08:23:16,713 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 08:23:20,257 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 08:23:20,259 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 08:23:21,485 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 08:23:21,488 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 08:23:31,565 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 08:23:31,568 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 08:23:31,568 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 08:23:31,568 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 08:24:14,594 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 08:24:14,597 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 08:24:15,190 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 08:24:15,194 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 08:24:15,195 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 08:24:15,195 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 08:24:15,195 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 08:24:15,402 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 08:24:15,403 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 08:24:16,934 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 08:24:16,935 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 08:24:16,937 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 08:24:16,937 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 08:24:16,940 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 08:24:17,668 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 08:24:17,669 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 08:24:17,695 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 08:24:17,703 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 08:24:17,704 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 08:24:17,711 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 08:24:17,716 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 08:24:17,803 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 08:24:17,813 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 08:24:32,980 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_082252_v3.0-corrected.xlsx
+2025-10-22 08:24:32,980 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 08:24:36,890 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 08:24:40,503 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 08:24:43,356 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 08:24:43,364 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 08:25:56,124 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 08:25:59,250 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 08:26:01,357 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 08:26:01,363 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 08:26:22,452 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=0, ML=0, 품질=0)
+2025-10-22 08:34:20,067 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 08:34:32,726 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 08:34:32,726 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 08:34:32,726 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 08:34:32,746 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 08:34:32,748 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 08:34:32,748 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 08:34:32,748 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 08:34:32,748 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 08:34:32,750 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 08:34:35,878 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 08:34:35,885 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 08:34:35,886 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 08:34:35,940 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 08:34:35,940 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 08:34:35,952 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 08:34:35,952 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 08:34:35,952 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 08:34:35,952 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 08:34:35,952 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 08:34:35,953 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 08:34:35,953 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 08:34:43,467 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 08:34:43,471 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 08:34:51,577 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 08:34:51,580 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 08:34:51,614 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 08:34:51,666 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 08:34:51,685 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 08:34:51,685 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 08:34:51,690 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 08:34:52,021 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 08:34:52,023 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 08:34:54,834 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 08:34:54,834 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 08:34:55,570 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 08:34:55,572 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 08:35:02,587 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 08:35:02,590 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 08:35:02,590 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 08:35:02,590 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 08:35:43,624 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 08:35:43,627 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 08:35:44,157 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 08:35:44,159 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 08:35:44,160 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 08:35:44,160 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 08:35:44,160 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 08:35:44,325 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 08:35:44,326 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 08:35:45,436 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 08:35:45,437 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 08:35:45,439 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 08:35:45,439 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 08:35:45,440 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 08:35:45,756 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 08:35:45,757 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 08:35:45,772 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 08:35:45,777 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 08:35:45,778 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 08:35:45,778 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 08:35:45,779 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 08:35:45,846 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 08:35:45,848 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 08:35:58,657 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_083432_v3.0-corrected.xlsx
+2025-10-22 08:35:58,657 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 08:36:02,542 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 08:36:04,878 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 08:36:06,536 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 08:36:06,544 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 08:40:38,649 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 08:40:52,185 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 08:40:52,185 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 08:40:52,186 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 08:40:52,213 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 08:40:52,214 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 08:40:52,214 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 08:40:52,214 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 08:40:52,214 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 08:40:52,215 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 08:40:55,466 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 08:40:55,472 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 08:40:55,474 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 08:40:55,527 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 08:40:55,529 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 08:40:55,546 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 08:40:55,547 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 08:40:55,547 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 08:40:55,547 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 08:40:55,547 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 08:40:55,549 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 08:40:55,549 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 08:41:02,820 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 08:41:02,829 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 08:41:09,804 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 08:41:09,807 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 08:41:09,840 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 08:41:09,938 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 08:41:09,967 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 08:41:09,967 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 08:41:09,972 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 08:41:10,389 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 08:41:10,394 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 08:41:13,277 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 08:41:13,277 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 08:41:14,083 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 08:41:14,085 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 08:41:21,305 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 08:41:21,306 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 08:41:21,307 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 08:41:21,309 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 08:42:05,251 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 08:42:05,254 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 08:42:05,974 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 08:42:05,978 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 08:42:05,978 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 08:42:05,978 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 08:42:05,978 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 08:42:06,188 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 08:42:06,189 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 08:42:07,561 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 08:42:07,562 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 08:42:07,563 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 08:42:07,563 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 08:42:07,566 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 08:42:07,908 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 08:42:07,911 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 08:42:07,929 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 08:42:07,934 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 08:42:07,935 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 08:42:07,935 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 08:42:07,936 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 08:42:07,965 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 08:42:07,967 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 08:42:23,194 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_084052_v3.0-corrected.xlsx
+2025-10-22 08:42:23,194 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 08:42:26,857 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 08:42:29,596 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 08:42:31,632 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 08:42:31,639 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 08:50:04,322 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 08:50:06,291 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 08:50:08,839 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 08:50:08,843 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 08:50:27,248 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=0, ML=0, 품질=0)
+2025-10-22 08:55:24,666 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 08:55:26,297 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 08:55:27,760 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 08:55:27,764 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 08:55:47,859 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=0, ML=0, 품질=0, 과도체류=0)
+2025-10-22 08:58:08,700 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 08:58:10,662 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 08:58:12,057 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 08:58:12,061 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 08:58:40,380 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=140, 품질=1, 과도체류=168)
+2025-10-22 10:04:14,468 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 10:04:27,541 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 10:04:27,541 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 10:04:27,542 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 10:04:27,560 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 10:04:27,561 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 10:04:27,561 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 10:04:27,561 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 10:04:27,562 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 10:04:27,562 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 10:04:30,564 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 10:04:30,569 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 10:04:30,571 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 10:04:30,614 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 10:04:30,615 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 10:04:30,627 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 10:04:30,628 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 10:04:30,628 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 10:04:30,628 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 10:04:30,628 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 10:04:30,628 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 10:04:30,629 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 10:04:38,237 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 10:04:38,241 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 10:04:44,517 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 10:04:44,520 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 10:04:44,575 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 10:04:44,659 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 10:04:44,684 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 10:04:44,684 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 10:04:44,692 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 10:04:45,519 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 10:04:45,523 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 10:04:48,688 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 10:04:48,689 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 10:04:49,551 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 10:04:49,555 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 10:04:56,969 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 10:04:56,972 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 10:04:56,973 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 10:04:56,973 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 10:05:43,154 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 10:05:43,157 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 10:05:43,730 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 10:05:43,733 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 10:05:43,734 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 10:05:43,734 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 10:05:43,734 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 10:05:44,014 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 10:05:44,015 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 10:05:45,560 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 10:05:45,561 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 10:05:45,564 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 10:05:45,564 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 10:05:45,566 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 10:05:46,000 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 10:05:46,001 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 10:05:46,017 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 10:05:46,021 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 10:05:46,022 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 10:05:46,023 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 10:05:46,025 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 10:05:46,052 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 10:05:46,054 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 10:05:58,524 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_100427_v3.0-corrected.xlsx
+2025-10-22 10:05:58,524 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 10:06:04,256 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 10:06:08,042 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 10:06:10,099 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 10:06:10,105 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 10:07:04,032 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 10:07:06,709 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 10:07:08,996 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 10:07:09,000 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 10:07:50,184 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=140, 품질=1, 과도체류=168)
+2025-10-22 10:32:07,545 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 10:32:24,093 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 10:32:24,093 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 10:32:24,094 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 10:32:24,119 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 10:32:24,121 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 10:32:24,121 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 10:32:24,122 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 10:32:24,122 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 10:32:24,123 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 10:32:28,844 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 10:32:28,862 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 10:32:28,868 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 10:32:28,958 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 10:32:28,960 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 10:32:28,990 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 10:32:28,991 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 10:32:28,991 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 10:32:28,991 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 10:32:28,992 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 10:32:28,993 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 10:32:28,993 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 10:32:38,206 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 10:32:38,209 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 10:32:48,118 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 10:32:48,122 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 10:32:48,208 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 10:32:48,294 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 10:32:48,318 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 10:32:48,318 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 10:32:48,324 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 10:32:48,799 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 10:32:48,803 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 10:32:52,587 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 10:32:52,587 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 10:32:53,443 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 10:32:53,445 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 10:33:01,370 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 10:33:01,373 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 10:33:01,373 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 10:33:01,373 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 10:33:46,894 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 10:33:46,896 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 10:33:47,381 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 10:33:47,384 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 10:33:47,385 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 10:33:47,385 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 10:33:47,385 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 10:33:47,668 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 10:33:47,669 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 10:33:48,789 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 10:33:48,790 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 10:33:48,792 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 10:33:48,793 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 10:33:48,794 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 10:33:49,104 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 10:33:49,105 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 10:33:49,121 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 10:33:49,125 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 10:33:49,126 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 10:33:49,126 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 10:33:49,127 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 10:33:49,149 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 10:33:49,151 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 10:34:00,265 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_103224_v3.0-corrected.xlsx
+2025-10-22 10:34:00,265 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 10:34:03,511 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 10:34:05,482 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 10:34:06,714 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 10:34:06,717 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 10:34:28,900 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=140, 품질=1, 과도체류=168)
+2025-10-22 11:25:12,323 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 11:25:25,274 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 11:25:25,275 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 11:25:25,276 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 11:25:25,305 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 11:25:25,307 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 11:25:25,307 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 11:25:25,308 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 11:25:25,308 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 11:25:25,309 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 11:25:28,935 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 11:25:28,942 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 11:25:28,943 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 11:25:28,983 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 11:25:28,984 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 11:25:29,033 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 11:25:29,034 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 11:25:29,034 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 11:25:29,034 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 11:25:29,035 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 11:25:29,035 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 11:25:29,036 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 11:25:38,083 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 11:25:38,086 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 11:25:46,127 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 11:25:46,131 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 11:25:46,186 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 11:25:46,248 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 11:25:46,265 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 11:25:46,266 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 11:25:46,270 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 11:25:46,615 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 11:25:46,617 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 11:25:49,576 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 11:25:49,576 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 11:25:50,546 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 11:25:50,550 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 11:25:57,796 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 11:25:57,799 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 11:25:57,799 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 11:25:57,800 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 11:26:44,594 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 11:26:44,601 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 11:26:45,581 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 11:26:45,584 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 11:26:45,585 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 11:26:45,585 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 11:26:45,585 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 11:26:45,875 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 11:26:45,877 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 11:26:47,677 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 11:26:47,680 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 11:26:47,683 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 11:26:47,683 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 11:26:47,687 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 11:26:48,339 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 11:26:48,341 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 11:26:48,371 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 11:26:48,383 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 11:26:48,385 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 11:26:48,386 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 11:26:48,387 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 11:26:48,434 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 11:26:48,438 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 11:27:01,667 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_112525_v3.0-corrected.xlsx
+2025-10-22 11:27:01,668 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 11:27:05,086 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 11:27:07,275 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 11:27:08,747 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 11:27:08,752 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 11:27:39,171 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=140, 품질=1, 과도체류=168)
+2025-10-22 11:42:54,981 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 41, 'date_updates': 29, 'field_updates': 12, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 11:43:07,200 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 11:43:07,200 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 11:43:07,201 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 11:43:07,219 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 11:43:07,222 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 11:43:07,222 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 11:43:07,223 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 11:43:07,223 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 11:43:07,225 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 11:43:10,721 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 11:43:10,732 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 11:43:10,733 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 11:43:10,807 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 11:43:10,808 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 11:43:10,826 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 11:43:10,830 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 11:43:10,831 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 11:43:10,831 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 11:43:10,832 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 11:43:10,834 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 11:43:10,834 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 11:43:19,441 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 11:43:19,445 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 11:43:27,393 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 11:43:27,398 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 11:43:27,427 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 11:43:27,495 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 11:43:27,521 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 11:43:27,521 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 11:43:27,529 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 11:43:28,122 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 11:43:28,139 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 11:43:32,133 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 11:43:32,133 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 11:43:33,410 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 11:43:33,415 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 11:43:43,719 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 11:43:43,722 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 11:43:43,723 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 11:43:43,723 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 11:44:28,557 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 11:44:28,578 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 11:44:29,311 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 11:44:29,328 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 11:44:29,329 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 11:44:29,330 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 11:44:29,330 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 11:44:29,714 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 11:44:29,717 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 11:44:31,017 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 11:44:31,018 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 11:44:31,020 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 11:44:31,021 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 11:44:31,023 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 11:44:31,502 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 11:44:31,503 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 11:44:31,517 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 11:44:31,521 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 11:44:31,522 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 11:44:31,523 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 11:44:31,524 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 11:44:31,545 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 11:44:31,548 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 11:44:44,746 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_114307_v3.0-corrected.xlsx
+2025-10-22 11:44:44,747 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 11:44:49,127 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 5건']
+2025-10-22 11:44:51,418 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 11:44:53,084 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 11:44:53,090 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 170, '머신러닝 이상치': 140}, 'by_severity': {'보통': 18, '치명적': 472, '높음': 11}}
+2025-10-22 11:45:23,608 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=140, 품질=1, 과도체류=168)
+2025-10-22 12:17:11,641 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 12:17:11,641 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 12:17:11,648 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 12:17:11,658 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 12:17:11,662 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 12:17:11,662 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 12:17:11,664 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 12:17:11,666 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 12:17:11,670 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 12:17:15,873 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7000건
+2025-10-22 12:17:15,886 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7000건
+2025-10-22 12:17:15,887 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 12:17:16,012 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 12:17:16,014 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 12:17:16,031 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3787, 3: 712}
+2025-10-22 12:17:16,032 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 12:17:16,032 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 12:17:16,032 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 12:17:16,034 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 12:17:16,037 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 12:17:16,038 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 12:17:26,411 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5205건 (창고간 이동 6건 별도)
+2025-10-22 12:17:26,415 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 12:17:35,908 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2305건
+2025-10-22 12:17:35,913 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 12:17:35,965 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 12:17:36,133 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 12:17:36,167 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 12:17:36,168 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 12:17:36,174 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 12:17:36,808 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 12:17:36,812 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 12:17:41,082 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 12:17:41,083 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 12:17:42,394 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 12:17:42,400 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 12:17:52,716 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 12:17:52,719 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 12:17:52,720 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 12:17:52,720 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 12:18:54,859 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 12:18:54,863 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 12:18:55,668 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 12:18:55,672 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 12:18:55,672 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 12:18:55,672 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 12:18:55,673 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 12:18:55,960 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 12:18:55,962 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 12:18:58,046 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 12:18:58,050 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 12:18:58,053 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 12:18:58,053 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 12:18:58,056 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 12:18:59,806 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 12:18:59,826 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 12:18:59,877 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 12:18:59,921 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 12:18:59,985 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 12:19:00,007 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 12:19:00,052 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 12:19:00,170 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 12:19:00,237 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 12:19:18,454 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_121711_v3.0-corrected.xlsx
+2025-10-22 12:19:18,454 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 12:20:26,581 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 245, 'date_updates': 73, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 12:21:28,436 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 245, 'date_updates': 73, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 12:21:45,368 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 12:21:45,368 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 12:21:45,369 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 12:21:45,405 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 12:21:45,408 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 12:21:45,408 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 12:21:45,409 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 12:21:45,409 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 12:21:45,410 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 12:21:49,788 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 12:21:49,959 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 12:21:49,969 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 12:21:50,057 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 12:21:50,059 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 12:21:50,098 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 319, 1: 2307, 2: 3834, 3: 712}
+2025-10-22 12:21:50,102 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 319건
+2025-10-22 12:21:50,102 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 12:21:50,104 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 12:21:50,105 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 12:21:50,108 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 12:21:50,110 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 12:22:00,227 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5252건 (창고간 이동 6건 별도)
+2025-10-22 12:22:00,229 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 12:22:08,585 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2329건
+2025-10-22 12:22:08,588 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 12:22:08,624 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 12:22:08,699 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 144개 그룹
+2025-10-22 12:22:08,721 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 93건
+2025-10-22 12:22:08,722 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 12:22:08,727 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 12:22:09,423 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2205건
+2025-10-22 12:22:09,427 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 12:22:13,197 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 12:22:13,198 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 12:22:14,201 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 12:22:14,205 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 12:22:23,051 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 12:22:23,054 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 12:22:23,055 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 12:22:23,055 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 12:23:25,528 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 12:23:25,538 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 12:23:26,338 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 12:23:26,341 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 12:23:26,341 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 12:23:26,341 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 12:23:26,342 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 12:23:26,605 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 12:23:26,606 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 12:23:28,749 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 12:23:28,750 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 12:23:28,754 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 12:23:28,754 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 12:23:28,757 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 12:23:29,379 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 12:23:29,381 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 12:23:29,412 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 12:23:29,421 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 12:23:29,424 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 12:23:29,425 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 12:23:29,426 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 12:23:29,480 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 12:23:29,495 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 12:23:48,655 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_122145_v3.0-corrected.xlsx
+2025-10-22 12:23:48,655 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 12:23:54,128 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 108건']
+2025-10-22 12:23:57,270 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 12:23:59,551 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 12:23:59,559 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 172, '머신러닝 이상치': 138}, 'by_severity': {'보통': 18, '치명적': 478, '높음': 5}}
+2025-10-22 12:24:41,229 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=138, 품질=1, 과도체류=172)
+2025-10-22 12:35:52,293 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 245, 'date_updates': 73, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 12:41:38,357 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 245, 'date_updates': 73, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 12:47:33,280 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 12:49:08,505 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 12:49:30,264 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 12:49:30,264 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 12:49:30,265 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 12:49:30,304 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 12:49:30,306 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 12:49:30,307 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 12:49:30,307 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 12:49:30,307 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 12:49:30,310 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 12:49:36,403 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 12:49:36,429 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 12:49:36,430 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 12:49:36,531 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 12:49:36,533 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 12:49:36,556 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2305, 2: 3833, 3: 736}
+2025-10-22 12:49:36,563 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 12:49:36,564 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 12:49:36,565 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 12:49:36,566 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 12:49:36,567 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 12:49:36,567 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 12:49:48,514 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5299건 (창고간 이동 6건 별도)
+2025-10-22 12:49:48,517 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 12:50:00,697 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-22 12:50:00,701 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 12:50:00,764 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 12:50:00,901 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 145개 그룹
+2025-10-22 12:50:00,953 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 96건
+2025-10-22 12:50:00,960 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 12:50:00,970 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 12:50:01,786 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 12:50:01,789 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 12:50:06,984 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 12:50:06,985 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 12:50:08,598 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 12:50:08,602 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 12:50:21,057 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 12:50:21,065 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 12:50:21,065 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 12:50:21,066 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 12:51:26,704 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 12:51:26,711 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 12:51:27,881 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 12:51:27,884 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 12:51:27,884 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 12:51:27,884 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 12:51:27,885 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 12:51:28,185 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 12:51:28,186 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 12:51:30,057 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 12:51:30,060 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 12:51:30,064 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 12:51:30,064 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 12:51:30,066 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 12:51:30,664 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 12:51:30,666 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 12:51:30,692 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 12:51:30,700 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 12:51:30,701 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 12:51:30,702 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 12:51:30,703 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 12:51:30,747 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 12:51:30,750 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 12:51:49,187 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_124930_v3.0-corrected.xlsx
+2025-10-22 12:51:49,188 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 12:51:56,797 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 108건']
+2025-10-22 12:52:00,100 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 12:52:02,781 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 12:52:02,788 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 501, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 172, '머신러닝 이상치': 138}, 'by_severity': {'보통': 18, '치명적': 478, '높음': 5}}
+2025-10-22 12:52:44,772 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=138, 품질=1, 과도체류=170)
+2025-10-22 13:02:38,696 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 13:04:14,876 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 13:04:32,547 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 13:04:32,548 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 13:04:32,548 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 13:04:32,574 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 13:04:32,577 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 13:04:32,577 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 13:04:32,578 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 13:04:32,578 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 13:04:32,579 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 13:04:37,558 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 13:04:37,581 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 13:04:37,582 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 13:04:37,647 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 13:04:37,648 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 13:04:37,665 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2305, 2: 3833, 3: 736}
+2025-10-22 13:04:37,665 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 13:04:37,665 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 13:04:37,666 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 13:04:37,666 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 13:04:37,667 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 13:04:37,667 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 13:04:47,852 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5299건 (창고간 이동 6건 별도)
+2025-10-22 13:04:47,855 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 13:04:57,982 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-22 13:04:57,986 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 13:04:58,035 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 13:04:58,119 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 145개 그룹
+2025-10-22 13:04:58,145 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 96건
+2025-10-22 13:04:58,145 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 13:04:58,151 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 13:04:58,840 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 13:04:58,844 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 13:05:02,862 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 13:05:02,863 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 13:05:04,150 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 13:05:04,153 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 13:05:13,976 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 13:05:13,980 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 13:05:13,981 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 13:05:13,982 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 13:06:14,129 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 13:06:14,133 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 13:06:14,975 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 13:06:14,979 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 13:06:14,980 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 13:06:14,980 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 13:06:14,980 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 13:06:15,364 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 13:06:15,365 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 13:06:17,554 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 13:06:17,556 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 13:06:17,562 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 13:06:17,562 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 13:06:17,565 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 13:06:18,259 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 13:06:18,261 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 13:06:18,282 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 13:06:18,289 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 13:06:18,290 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 13:06:18,292 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 13:06:18,293 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 13:06:18,337 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 13:06:18,341 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 13:06:37,266 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_130432_v3.0-corrected.xlsx
+2025-10-22 13:06:37,266 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 13:06:43,198 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 108건']
+2025-10-22 13:06:46,364 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 13:06:49,154 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 13:06:49,168 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 502, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 172, '머신러닝 이상치': 139}, 'by_severity': {'보통': 18, '치명적': 479, '높음': 5}}
+2025-10-22 13:07:32,170 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=139, 품질=2, 과도체류=170)
+2025-10-22 13:17:56,772 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 13:18:14,559 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 13:18:14,560 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 13:18:14,561 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 13:18:14,589 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 13:18:14,592 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 13:18:14,593 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 13:18:14,593 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 13:18:14,594 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 13:18:14,595 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 13:18:19,708 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 13:18:19,716 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 13:18:19,717 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 13:18:19,784 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 13:18:19,786 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 13:18:19,800 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2305, 2: 3833, 3: 736}
+2025-10-22 13:18:19,801 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 13:18:19,801 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 13:18:19,802 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 13:18:19,803 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 13:18:19,804 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 13:18:19,805 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 13:18:30,574 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5299건 (창고간 이동 6건 별도)
+2025-10-22 13:18:30,577 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 13:18:41,777 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-22 13:18:41,784 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 13:18:41,849 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 13:18:41,992 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 145개 그룹
+2025-10-22 13:18:42,043 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 96건
+2025-10-22 13:18:42,043 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 13:18:42,055 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 13:18:42,934 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 13:18:42,950 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 13:18:47,923 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 13:18:47,924 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 13:18:49,143 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 13:18:49,147 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 13:19:00,687 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 13:19:00,691 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 13:19:00,692 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 13:19:00,692 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 13:20:09,556 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 13:20:09,559 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 13:20:10,445 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 13:20:10,451 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 13:20:10,452 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 13:20:10,455 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 13:20:10,455 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 13:20:10,791 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 13:20:10,793 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 13:20:12,792 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 13:20:12,793 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 13:20:12,795 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 13:20:12,795 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 13:20:12,797 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 13:20:13,493 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 13:20:13,495 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 13:20:13,534 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 13:20:13,550 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 13:20:13,562 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 13:20:13,567 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 13:20:13,573 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 13:20:13,633 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 13:20:13,645 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 13:20:34,313 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_131814_v3.0-corrected.xlsx
+2025-10-22 13:20:34,313 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 13:20:40,651 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 108건']
+2025-10-22 13:20:44,436 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 13:20:47,224 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 13:20:47,230 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 502, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 172, '머신러닝 이상치': 139}, 'by_severity': {'보통': 18, '치명적': 479, '높음': 5}}
+2025-10-22 13:21:32,632 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=139, 품질=2, 과도체류=170)
+2025-10-22 13:28:18,998 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 13:28:18,998 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 13:28:19,000 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 13:28:19,012 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 13:28:19,014 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 13:28:19,015 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 13:28:19,015 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 13:28:19,015 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 13:28:19,016 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 13:28:23,858 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 13:28:23,879 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 13:28:23,880 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 13:28:24,011 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 13:28:24,014 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 13:28:24,041 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2305, 2: 3833, 3: 736}
+2025-10-22 13:28:24,041 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 13:28:24,041 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 13:28:24,042 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 13:28:24,042 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 13:28:24,043 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 13:28:24,044 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 13:28:34,992 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5299건 (창고간 이동 6건 별도)
+2025-10-22 13:28:35,002 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 13:28:46,574 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-22 13:28:46,579 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 13:28:46,624 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 13:28:46,710 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 145개 그룹
+2025-10-22 13:28:46,752 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 96건
+2025-10-22 13:28:46,752 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 13:28:46,764 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 13:28:47,659 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 13:28:47,667 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 13:28:52,367 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 13:28:52,367 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 13:28:53,735 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 13:28:53,741 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 13:29:05,260 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 13:29:05,270 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 13:29:05,271 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 13:29:05,271 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 13:30:07,803 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 13:30:07,816 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 13:30:08,714 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 13:30:08,718 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 13:30:08,719 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 13:30:08,719 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 13:30:08,719 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 13:30:08,978 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 13:30:08,980 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 13:30:10,661 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 13:30:10,667 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 13:30:10,670 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 13:30:10,670 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 13:30:10,673 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 13:30:11,585 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 13:30:11,586 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 13:30:11,605 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 13:30:11,610 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 13:30:11,611 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 165건
+2025-10-22 13:30:11,615 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 132건
+2025-10-22 13:30:11,616 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 13:30:11,650 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 13:30:11,653 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 13:30:49,288 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_132818_v3.0-corrected.xlsx
+2025-10-22 13:30:49,290 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 13:32:15,575 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 13:32:15,575 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 13:32:15,576 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 13:32:15,586 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 13:32:15,589 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 13:32:15,589 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 13:32:15,590 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 13:32:15,590 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 13:32:15,591 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 13:32:23,138 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 13:32:23,361 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 13:32:23,364 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 13:32:23,546 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 13:32:23,561 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 13:32:23,597 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3935, 3: 736}
+2025-10-22 13:32:23,602 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 13:32:23,608 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 13:32:23,611 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 13:32:23,621 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 13:32:23,629 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 13:32:23,637 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 13:32:35,352 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5401건 (창고간 이동 6건 별도)
+2025-10-22 13:32:35,356 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 13:32:47,104 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-22 13:32:47,111 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 13:32:47,199 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 13:32:47,354 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 147개 그룹
+2025-10-22 13:32:47,436 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 98건
+2025-10-22 13:32:47,440 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 13:32:47,450 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 13:32:48,237 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 13:32:48,240 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 13:32:52,926 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 13:32:52,926 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 13:32:54,360 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 13:32:54,363 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 13:33:10,623 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 13:33:10,626 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 13:33:10,627 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 13:33:10,627 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 13:34:18,378 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 13:34:18,383 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 13:34:19,273 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 13:34:19,277 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 13:34:19,278 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 13:34:19,278 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 13:34:19,278 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 13:34:19,561 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 13:34:19,562 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 13:34:21,733 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 13:34:21,738 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 13:34:21,742 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 13:34:21,743 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 13:34:21,746 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 13:34:22,732 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 13:34:22,734 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 13:34:22,746 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 13:34:22,753 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 13:34:22,754 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 198건
+2025-10-22 13:34:22,755 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 99건
+2025-10-22 13:34:22,756 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 13:34:22,786 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 13:34:22,788 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 13:34:42,457 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_133215_v3.0-corrected.xlsx
+2025-10-22 13:34:42,457 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 13:35:41,831 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 13:35:57,399 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 13:35:57,407 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 13:35:57,410 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 13:35:57,447 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 13:35:57,449 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 13:35:57,449 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 13:35:57,450 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 13:35:57,451 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 13:35:57,454 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 13:36:01,490 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 13:36:01,502 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 13:36:01,503 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 13:36:01,648 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 13:36:01,652 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 13:36:01,681 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3935, 3: 736}
+2025-10-22 13:36:01,682 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 13:36:01,682 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 13:36:01,683 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 13:36:01,688 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 13:36:01,690 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 13:36:01,691 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 13:36:10,527 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5401건 (창고간 이동 6건 별도)
+2025-10-22 13:36:10,530 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 13:36:19,226 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-22 13:36:19,230 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 13:36:19,267 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 13:36:19,371 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 147개 그룹
+2025-10-22 13:36:19,391 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 98건
+2025-10-22 13:36:19,391 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 13:36:19,396 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 13:36:19,926 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 13:36:19,929 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 13:36:23,722 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 13:36:23,722 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 13:36:24,892 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 13:36:24,896 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 13:36:34,157 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 13:36:34,160 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 13:36:34,160 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 13:36:34,161 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 13:37:31,233 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 13:37:31,240 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 13:37:32,124 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 13:37:32,126 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 13:37:32,127 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 13:37:32,127 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 13:37:32,127 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 13:37:32,491 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 13:37:32,492 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 13:37:34,131 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 13:37:34,132 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 13:37:34,134 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 13:37:34,135 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 13:37:34,138 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 13:37:34,647 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 13:37:34,648 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 13:37:34,667 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 13:37:34,674 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 13:37:34,675 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 198건
+2025-10-22 13:37:34,676 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 99건
+2025-10-22 13:37:34,677 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 13:37:34,705 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 13:37:34,708 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 13:37:51,956 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_133557_v3.0-corrected.xlsx
+2025-10-22 13:37:51,956 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 13:37:57,947 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 108건']
+2025-10-22 13:38:00,946 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 13:38:03,554 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 13:38:03,561 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 502, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 172, '머신러닝 이상치': 139}, 'by_severity': {'보통': 18, '치명적': 479, '높음': 5}}
+2025-10-22 13:38:42,335 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=139, 품질=2, 과도체류=170)
+2025-10-22 13:47:37,693 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 13:53:44,100 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 13:55:08,542 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 13:55:18,908 - hvdc_pipeline.run_pipeline - ERROR - Stage 2 실행 중 오류
+Traceback (most recent call last):
+  File "C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\run_pipeline.py", line 249, in run_stage
+    success = process_derived_columns(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\scripts\stage2_derived\derived_columns_processor.py", line 359, in process_derived_columns
+    df.to_excel(output_path, index=False)
+  File "C:\Program Files\Python311\Lib\site-packages\pandas\core\generic.py", line 2252, in to_excel
+    formatter.write(
+  File "C:\Program Files\Python311\Lib\site-packages\pandas\io\formats\excel.py", line 934, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\pandas\io\excel\_xlsxwriter.py", line 199, in __init__
+    super().__init__(
+  File "C:\Program Files\Python311\Lib\site-packages\pandas\io\excel\_base.py", line 1219, in __init__
+    self._handles = get_handle(
+                    ^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\pandas\io\common.py", line 868, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\derived\\HVDC WAREHOUSE_HITACHI(HE).xlsx'
+2025-10-22 14:19:38,362 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-22 14:19:58,700 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-22 14:19:58,700 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-22 14:19:58,702 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-22 14:19:58,733 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-22 14:19:58,735 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-22 14:19:58,735 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-22 14:19:58,735 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-22 14:19:58,736 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-22 14:19:58,737 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-22 14:20:03,527 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-22 14:20:03,540 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-22 14:20:03,541 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-22 14:20:03,665 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-22 14:20:03,666 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-22 14:20:03,681 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3935, 3: 736}
+2025-10-22 14:20:03,682 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-22 14:20:03,682 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-22 14:20:03,682 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-22 14:20:03,683 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-22 14:20:03,684 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-22 14:20:03,684 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-22 14:20:15,008 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5401건 (창고간 이동 6건 별도)
+2025-10-22 14:20:15,015 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-22 14:20:25,695 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-22 14:20:25,700 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-22 14:20:25,737 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-22 14:20:25,872 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 147개 그룹
+2025-10-22 14:20:25,924 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 98건
+2025-10-22 14:20:25,925 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-22 14:20:25,933 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-22 14:20:26,470 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-22 14:20:26,473 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-22 14:20:30,086 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-22 14:20:30,086 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-22 14:20:31,413 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-22 14:20:31,417 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-22 14:20:39,913 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-22 14:20:39,916 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-22 14:20:39,916 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-22 14:20:39,917 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-22 14:21:31,765 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-22 14:21:31,768 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-22 14:21:32,556 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-22 14:21:32,562 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-22 14:21:32,563 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-22 14:21:32,563 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-22 14:21:32,564 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-22 14:21:32,842 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-22 14:21:32,844 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-22 14:21:34,312 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-22 14:21:34,314 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-22 14:21:34,316 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-22 14:21:34,317 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-22 14:21:34,318 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-22 14:21:34,813 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-22 14:21:34,816 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-22 14:21:34,835 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-22 14:21:34,838 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-22 14:21:34,839 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 198건
+2025-10-22 14:21:34,840 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 99건
+2025-10-22 14:21:34,840 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-22 14:21:34,874 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-22 14:21:34,876 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-22 14:21:49,736 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251022_141958_v3.0-corrected.xlsx
+2025-10-22 14:21:49,736 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-22 14:21:55,069 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 108건']
+2025-10-22 14:21:57,709 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-22 14:21:59,836 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-22 14:21:59,844 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 502, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 172, '머신러닝 이상치': 139}, 'by_severity': {'보통': 18, '치명적': 479, '높음': 5}}
+2025-10-22 14:22:36,155 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=139, 품질=2, 과도체류=170)
+2025-10-23 10:01:20,466 - hvdc_pipeline.run_pipeline - INFO - Stage 1 동기화 통계: {'updates': 246, 'date_updates': 74, 'field_updates': 172, 'appends': 73, 'output_file': 'C:\\Users\\SAMSUNG\\Downloads\\HVDC_Invoice-20251015T070213Z-1-001\\HVDC_Invoice\\hvdc_pipeline_v4.0.0\\data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx'}
+2025-10-23 10:01:33,956 - scripts.stage3_report.report_generator - INFO -  수정된 HVDC 입고 로직 구현 및 집계 시스템 초기화 완료
+2025-10-23 10:01:33,961 - scripts.stage3_report.report_generator - INFO -  창고 vs 현장 분리 + 정확한 출고 타이밍 + 재고 검증 강화
+2025-10-23 10:01:33,964 - scripts.stage3_report.report_generator - INFO -  HVDC Excel Reporter Final 초기화 완료 (v3.0-corrected)
+2025-10-23 10:01:34,077 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 SIMENSE 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_SIMENSE(SIM).xlsx
+2025-10-23 10:01:34,082 - hvdc_pipeline.run_pipeline - WARNING - Stage 3 인보이스 데이터가 존재하지 않습니다: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_INVOICE.xlsx
+2025-10-23 10:01:34,084 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 시작 (v3.0-corrected)
+2025-10-23 10:01:34,085 - scripts.stage3_report.report_generator - INFO -  calculate_warehouse_statistics() - 종합 통계 계산 (SQM 확장)
+2025-10-23 10:01:34,085 - scripts.stage3_report.report_generator - INFO -  실제 HVDC RAW DATA 로드 시작 (원본 컬럼 보존)
+2025-10-23 10:01:34,087 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\derived\HVDC WAREHOUSE_HITACHI(HE).xlsx
+2025-10-23 10:01:39,019 - scripts.stage3_report.report_generator - INFO -  HITACHI 데이터 로드 완료: 7172건
+2025-10-23 10:01:39,034 - scripts.stage3_report.report_generator - INFO -  데이터 결합 완료: 7172건
+2025-10-23 10:01:39,035 - scripts.stage3_report.report_generator - INFO -  실제 데이터 전처리 시작 (원본 handling 컬럼 보존)
+2025-10-23 10:01:39,155 - scripts.stage3_report.report_generator - INFO -  v3.4-corrected: Off-by-One 버그 수정 + Pre Arrival 정확 판별
+2025-10-23 10:01:39,156 - scripts.stage3_report.report_generator - INFO -  기존 'wh handling' 컬럼을 'wh_handling_original'과 'wh_handling_legacy'로 보존
+2025-10-23 10:01:39,174 - scripts.stage3_report.report_generator - INFO -  Flow Code 분포: {0: 298, 1: 2203, 2: 3935, 3: 736}
+2025-10-23 10:01:39,175 - scripts.stage3_report.report_generator - INFO -  Pre Arrival 정확 판별: 298건
+2025-10-23 10:01:39,176 - scripts.stage3_report.report_generator - INFO -  Flow Code 재계산 완료 (Off-by-One 버그 수정)
+2025-10-23 10:01:39,177 - scripts.stage3_report.report_generator - INFO -  데이터 전처리 완료 (원본 handling 컬럼 보존)
+2025-10-23 10:01:39,177 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 시작
+2025-10-23 10:01:39,179 - scripts.stage3_report.report_generator - INFO -  최종 위치 계산 완료
+2025-10-23 10:01:39,180 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 시작
+2025-10-23 10:01:48,132 - scripts.stage3_report.report_generator - INFO -  수정된 창고 입고 계산 완료: 5401건 (창고간 이동 6건 별도)
+2025-10-23 10:01:48,134 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 시작
+2025-10-23 10:01:57,083 - scripts.stage3_report.report_generator - INFO -  수정된 창고 출고 계산 완료: 2331건
+2025-10-23 10:01:57,087 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 시작 (고성능 Pandas 버전)
+2025-10-23 10:01:57,168 - scripts.stage3_report.report_generator - INFO -  Status_Location 기준 재고 계산 완료: 21개 그룹
+2025-10-23 10:01:57,343 - scripts.stage3_report.report_generator - INFO -  물리적 위치 기준 재고 계산 완료: 147개 그룹
+2025-10-23 10:01:57,383 - scripts.stage3_report.report_generator - WARNING -  재고 불일치 발견: 98건
+2025-10-23 10:01:57,384 - scripts.stage3_report.report_generator - INFO -  수정된 창고 재고 계산 완료 (고성능 Pandas 버전)
+2025-10-23 10:01:57,396 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 시작
+2025-10-23 10:01:58,096 - scripts.stage3_report.report_generator - INFO -  직접 배송 계산 완료: 2203건
+2025-10-23 10:01:58,100 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 생성 시작
+2025-10-23 10:02:02,398 - scripts.stage3_report.report_generator - INFO -  월별 입고 피벗 테이블 완료: (33, 15)
+2025-10-23 10:02:02,400 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 시작
+2025-10-23 10:02:03,842 - scripts.stage3_report.report_generator - INFO -  월별 SQM 입고 계산 완료
+2025-10-23 10:02:03,848 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 시작 (창고간 + 창고→현장)
+2025-10-23 10:02:13,246 - scripts.stage3_report.report_generator - INFO -  월별 SQM 출고 계산 완료 (창고간 + 창고→현장)
+2025-10-23 10:02:13,249 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 시작
+2025-10-23 10:02:13,250 - scripts.stage3_report.report_generator - INFO -  누적 SQM 재고 계산 완료
+2025-10-23 10:02:13,250 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 시작 (모드별 차등 적용)
+2025-10-23 10:03:14,316 - scripts.stage3_report.report_generator - INFO -  일할 과금 시스템 완료: 33개월 처리
+2025-10-23 10:03:14,318 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 시작
+2025-10-23 10:03:14,952 - scripts.stage3_report.report_generator - INFO -  SQM 데이터 품질 분석 완료: 실제 0.0%, 추정 100.0%
+2025-10-23 10:03:14,955 - scripts.stage3_report.report_generator - INFO -  KPI 임계값 검증 시작 (수정 버전)
+2025-10-23 10:03:14,956 - scripts.stage3_report.report_generator - INFO -  수정 버전 KPI 검증 완료: SOME FAILED
+2025-10-23 10:03:14,956 - scripts.stage3_report.report_generator - INFO -  시트별 데이터 준비 중...
+2025-10-23 10:03:14,956 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 생성 (창고간 이동 반영)
+2025-10-23 10:03:15,222 - scripts.stage3_report.report_generator - INFO -  창고_월별_입출고 시트 완료 (창고간 이동 반영): (34, 23)
+2025-10-23 10:03:15,223 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 생성 (9열, 중복 없는 집계)
+2025-10-23 10:03:16,558 - scripts.stage3_report.report_generator - INFO -  현장_월별_입고재고 시트 완료: (34, 9) (9열, 중복 없는 집계)
+2025-10-23 10:03:16,559 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 시트 생성
+2025-10-23 10:03:16,562 - scripts.stage3_report.report_generator - INFO -  Flow Code 분석 완료: 4개 코드
+2025-10-23 10:03:16,563 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 시트 생성
+2025-10-23 10:03:16,566 - scripts.stage3_report.report_generator - INFO -  전체 트랜잭션 요약 완료: 6개 항목
+2025-10-23 10:03:16,926 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 생성 (실사용 면적 기준)
+2025-10-23 10:03:16,927 - scripts.stage3_report.report_generator - INFO -  SQM 누적 재고 시트 완료: 230건
+2025-10-23 10:03:16,945 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 생성 (Billing_Mode + Amount_Source 포함)
+2025-10-23 10:03:16,952 - scripts.stage3_report.report_generator - INFO -  SQM Invoice 과금 시트 완료: 363건
+2025-10-23 10:03:16,953 - scripts.stage3_report.report_generator - INFO -    - Rate 모드: 198건
+2025-10-23 10:03:16,954 - scripts.stage3_report.report_generator - INFO -    - Passthrough 모드: 99건
+2025-10-23 10:03:16,955 - scripts.stage3_report.report_generator - INFO -    - No-charge 모드: 33건
+2025-10-23 10:03:16,990 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 시트(입고·출고·누적) 생성
+2025-10-23 10:03:16,994 - scripts.stage3_report.report_generator - INFO -  SQM 피벗 테이블 완성: (23, 41)
+2025-10-23 10:03:33,257 - scripts.stage3_report.report_generator - INFO -  최종 Excel 리포트 생성 완료: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports\HVDC_입고로직_종합리포트_20251023_100133_v3.0-corrected.xlsx
+2025-10-23 10:03:33,258 - scripts.stage3_report.report_generator - INFO -  원본 전체 데이터는 C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\processed\reports 경로의 CSV로도 저장됨
+2025-10-23 10:03:37,338 - balanced_boost - WARNING - 데이터 품질 이슈: ['CASE_NO 중복 108건']
+2025-10-23 10:03:39,312 - balanced_boost - INFO - JSON 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.json
+2025-10-23 10:03:41,240 - balanced_boost - INFO - Excel 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice-20251015T070213Z-1-001\HVDC_Invoice\hvdc_pipeline_v4.0.0\data\anomaly\HVDC_anomaly_report.xlsx
+2025-10-23 10:03:41,250 - hvdc_pipeline.run_pipeline - INFO - Stage 4 이상치 요약: {'total': 502, 'by_type': {'데이터 품질': 1, '시간 역전': 190, '과도 체류': 172, '머신러닝 이상치': 139}, 'by_severity': {'보통': 18, '치명적': 479, '높음': 5}}
+2025-10-23 10:04:14,351 - hvdc_pipeline.run_pipeline - INFO - Stage 4 시각화 표시 완료: 색상 적용 완료 (시간역전=190, ML=139, 품질=2, 과도체류=170)

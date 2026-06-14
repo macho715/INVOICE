@@ -1,0 +1,43 @@
+# ML Training Components Requirements
+# Generated for HVDC Invoice Audit ML Integration
+# Last Updated: 2024-10-13
+
+# Core ML Libraries
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# String Similarity (for enhanced_matching.py compatibility)
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.20.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+
+# Jupyter Support (for development/analysis)
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Utilities
+pathlib2>=2.3.7
+tqdm>=4.65.0
+
+# Optional: Advanced ML (if needed)
+# xgboost>=1.7.0
+# lightgbm>=4.0.0
+
+# Optional: Deep Learning (if needed)
+# tensorflow>=2.13.0
+# torch>=2.0.0
+
+# Development Tools
+black>=23.7.0
+flake8>=6.0.0
+mypy>=1.5.0

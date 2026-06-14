@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVDC 통합 워크플로우 시스템</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .status-panel {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .status-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status-card.warning { border-left-color: #ffc107; }
+        .status-card.danger { border-left-color: #dc3545; }
+        .status-card.success { border-left-color: #28a745; }
+        .diagram-container {
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚢 HVDC 통합 워크플로우 시스템</h1>
+            <p>NetworkX + WorkflowTracker + 실시간 상태 추적</p>
+        </div>
+        
+        <div class="status-panel">
+            <h3>📊 현재 상태</h3>
+            <div class="status-grid">
+                <div class="status-card danger">
+                    <strong>전체 진행률</strong><br>
+                    0.0% (0/13)
+                </div>
+                <div class="status-card danger">
+                    <strong>ATLP 준비도</strong><br>
+                    ❌ 미완료
+                </div>
+                <div class="status-card warning">
+                    <strong>진행중 문서</strong><br>
+                    4개
+                </div>
+                <div class="status-card success">
+                    <strong>지연 문서</strong><br>
+                    0개
+                </div>
+            </div>
+            
+            <div class="alert alert-warning"><strong>⚠️ 누락 문서:</strong> SB, Fsc, PL, StrBridge, StrBow...</div>
+        </div>
+        
+        <div class="diagram-container">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff4444;"></div>
+                    <span>미제공 (NOT_PROVIDED)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ffaa00;"></div>
+                    <span>제공됨 (PROVIDED)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff8800;"></div>
+                    <span>검토중 (IN_REVIEW)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #44ff44;"></div>
+                    <span>승인됨 (APPROVED)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #4444ff;"></div>
+                    <span>제출됨 (SUBMITTED)</span>
+                </div>
+            </div>
+            
+            <div class="mermaid" id="mermaid-diagram">
+graph LR
+  %% Roles
+  Aries([Aries<br/>설계/검증])
+  Vessel([Vessel/LCT<br/>선장/운항])
+  Mammoet([Mammoet<br/>방법서/시퀀스])
+  Samsung([Samsung<br/>코디네이션])
+  HM([HM/MWS<br/>검토/승인])
+
+  %% Artifacts with Status
+  elc{ELC (FWD/AFT Draft · Trim · GM)<br/>(NOT_PROVIDED)}
+  tank{Ballast Tank Arrangement & Capacity<br/>(NOT_PROVIDED)}
+  seq{Sequence of Loading (단계/접촉/밸러스트)<br/>(NOT_PROVIDED)}
+  ms{Method Statement (Ballasting Seq 포함)<br/>(NOT_PROVIDED)}
+  fsc{Final Sailing Condition<br/>(NOT_PROVIDED)}
+  sb{Stability Booklet/기본도면<br/>(NOT_PROVIDED)}
+  pl{Packing List<br/>(NOT_PROVIDED)}
+  str_bridge{Steel Bridge Strength (결과)<br/>(NOT_PROVIDED)}
+  str_bow{Bow Deck Strength (결과)<br/>(NOT_PROVIDED)}
+  intact{Intact Stability per Step (결과)<br/>(NOT_PROVIDED)}
+  tyre7{7-타이어 스케치 계산 + ETA (결과)<br/>(NOT_PROVIDED)}
+  cover{Cover Note & Bundle<br/>(NOT_PROVIDED)}
+  atlp{ATLP/MWS 제출<br/>(NOT_PROVIDED)}
+
+  %% Provides with Status Colors
+  Vessel -->|제공(필수)| ELC
+  Vessel -->|제공(필수)| Tank
+  Vessel -->|제공(권장)| SB
+  Mammoet -->|제공(필수)| Seq
+  Mammoet -->|제공(필수)| MS
+  Mammoet -->|제공(권장)| Fsc
+  Mammoet -->|제공(권장)| PL
+
+  %% Aries consumes -> produces
+  ELC --> Aries
+  Tank --> Aries
+  Seq --> Aries
+  Aries --> StrBridge
+  Aries --> StrBow
+  Aries --> Intact
+  Aries --> Tyre7
+
+  %% Samsung packages & submits
+  StrBridge --> Samsung
+  StrBow --> Samsung
+  Intact --> Samsung
+  Tyre7 --> Samsung
+  MS --> Samsung
+  ELC --> Samsung
+  Tank --> Samsung
+  SB --> Samsung
+  PL --> Samsung
+  Fsc --> Samsung
+
+  Samsung --> Cover --> ATLP --> HM
+
+  %% Optional 확장범위
+  Aries -.추가계약(7~10d).-> Seq
+
+  %% Status-based styling
+  classDef notProvided fill:#ff4444,stroke:#ff0000,color:#fff
+  classDef provided fill:#ffaa00,stroke:#ff8800,color:#000
+  classDef inReview fill:#ff8800,stroke:#ff6600,color:#000
+  classDef approved fill:#44ff44,stroke:#00aa00,color:#000
+  classDef submitted fill:#4444ff,stroke:#0000ff,color:#fff
+  classDef role fill:#f7f7ff,stroke:#445,stroke-width:2px
+  class elc notProvided
+  class tank notProvided
+  class seq notProvided
+  class ms notProvided
+  class fsc notProvided
+  class sb notProvided
+  class pl notProvided
+  class str_bridge notProvided
+  class str_bow notProvided
+  class intact notProvided
+  class tyre7 notProvided
+  class cover notProvided
+  class atlp notProvided
+  class Aries,Vessel,Mammoet,Samsung,HM role
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#f7f7ff',
+                primaryTextColor: '#2c3e50',
+                primaryBorderColor: '#445',
+                lineColor: '#374',
+                secondaryColor: '#f8fff7',
+                tertiaryColor: '#ffffff'
+            },
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>

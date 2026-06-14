@@ -1,0 +1,18 @@
+[
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_apply_tolerance_correctly",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_calculate_delta_percent_negative",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_calculate_delta_percent_positive",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_calculate_delta_percent_zero",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_find_lane_by_port_and_destination",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_find_standard_item_by_description",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_handle_zero_reference_rate",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_load_all_json_files",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_normalize_destination_names",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_normalize_port_names",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_normalize_unit_names",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_return_critical_band_for_huge_delta",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_return_high_band_for_large_delta",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_return_none_for_missing_rate",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_return_pass_band_for_small_delta",
+  "test_rate_loader.py::TestUnifiedRateLoader::test_should_return_warn_band_for_medium_delta"
+]

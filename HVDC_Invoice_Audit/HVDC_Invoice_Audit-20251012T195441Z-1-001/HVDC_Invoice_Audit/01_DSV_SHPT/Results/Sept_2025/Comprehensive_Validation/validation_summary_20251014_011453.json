@@ -1,0 +1,60 @@
+{
+  "validation_summary": {
+    "overall_status": "SUCCESS",
+    "validation_timestamp": "2025-10-14T01:14:53.641294",
+    "total_validation_time": 15.2,
+    "confidence_score": 0.88,
+    "quality_grade": "GOOD"
+  },
+  "system_results": {
+    "vba_analysis": {
+      "status": "FILE_NOT_FOUND",
+      "reason": "VBA Excel file not accessible"
+    },
+    "python_audit": {
+      "status": "SUCCESS",
+      "csv_items_count": 102,
+      "csv_data": "     s_no sheet_name  ... evidence_count       evidence_types\n0       1    SCT0126  ...             10  ['BOE', 'DO', 'DN']\n1       2    SCT0126  ...             10  ['BOE', 'DO', 'DN']\n2       3    SCT0126  ...             10  ['BOE', 'DO', 'DN']\n3       4    SCT0126  ...             10  ['BOE', 'DO', 'DN']\n4       5    SCT0126  ...             10  ['BOE', 'DO', 'DN']\n..    ...        ...  ...            ...                  ...\n97      2   HE0499L3  ...              0                   []\n98      3   HE0499L3  ...              0                   []\n99      4   HE0499L3  ...              0                   []\n100     5   HE0499L3  ...              0                   []\n101     6   HE0499L3  ...              0                   []\n\n[102 rows x 22 columns]"
+    },
+    "pdf_integration": {
+      "status": "SKIPPED",
+      "reason": "Module not available"
+    },
+    "cross_system_integration": {
+      "status": "SUCCESS"
+    }
+  },
+  "validation_results": {
+    "gate_validation": {
+      "status": "SUCCESS",
+      "total_gates": 14,
+      "passed_gates": 12,
+      "failed_gates": 2,
+      "overall_pass_rate": 0.857
+    },
+    "compliance_check": {
+      "status": "SUCCESS",
+      "overall_compliance_score": 1.0,
+      "fanr_compliance": {
+        "status": "NOT_REQUIRED"
+      },
+      "moiat_compliance": {
+        "status": "COMPLIANT"
+      },
+      "dcd_compliance": {
+        "status": "COMPLIANT"
+      }
+    },
+    "anomaly_detection": {
+      "status": "SUCCESS",
+      "total_anomalies_detected": 1,
+      "high_risk_anomalies": 0,
+      "medium_risk_anomalies": 1,
+      "low_risk_anomalies": 0
+    }
+  },
+  "recommendations": [
+    "Gate 11, 12 검증 개선 필요 - PDF 문서 통합 활성화",
+    "전체적으로 양호한 검증 결과"
+  ]
+}

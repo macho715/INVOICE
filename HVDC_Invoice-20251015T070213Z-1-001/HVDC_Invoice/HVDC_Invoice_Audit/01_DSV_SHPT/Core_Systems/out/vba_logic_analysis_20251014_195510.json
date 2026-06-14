@@ -1,0 +1,2375 @@
+{
+  "parsed_files": {
+    "modApplyFormula.bas": {
+      "file_name": "modApplyFormula.bas",
+      "total_lines": 115,
+      "procedures": [
+        {
+          "name": "FindHeaderCol",
+          "lines": [
+            {
+              "line_num": 21,
+              "content": "    Dim c As Range",
+              "is_formatting": false
+            },
+            {
+              "line_num": 22,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 23,
+              "content": "    Set c = ws.Rows(headerRow).Find(What:=headerText, LookIn:=xlValues, LookAt:=xlWhole, MatchCase:=False)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 24,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 25,
+              "content": "    If Not c Is Nothing Then FindHeaderCol = c.Column",
+              "is_formatting": false
+            },
+            {
+              "line_num": 26,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 21
+        },
+        {
+          "name": "ApplyFormula_ByDynamicRemark_ExactTotal_Safe",
+          "lines": [
+            {
+              "line_num": 30,
+              "content": "    Dim t0 As Single: t0 = Timer",
+              "is_formatting": false
+            },
+            {
+              "line_num": 31,
+              "content": "    On Error GoTo ErrH",
+              "is_formatting": false
+            },
+            {
+              "line_num": 32,
+              "content": "    AppBegin \"ApplyFormula\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 33,
+              "content": "    LogActionSafe \"ApplyFormula\", \"BEGIN\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 34,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 35,
+              "content": "    ApplyFormula_Impl",
+              "is_formatting": false
+            },
+            {
+              "line_num": 36,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 37,
+              "content": "    LogActionSafe \"ApplyFormula\", \"END \" & Format(Timer - t0, \"0.00s\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 38,
+              "content": "Done:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 39,
+              "content": "    AppEnd",
+              "is_formatting": false
+            },
+            {
+              "line_num": 40,
+              "content": "    Exit Sub",
+              "is_formatting": false
+            },
+            {
+              "line_num": 41,
+              "content": "ErrH:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 42,
+              "content": "    LogActionSafe \"ApplyFormula\", \"ERR: \" & Err.description & \" (\" & Err.Number & \")\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 43,
+              "content": "    Resume Done",
+              "is_formatting": false
+            },
+            {
+              "line_num": 44,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 30
+        },
+        {
+          "name": "ApplyFormula_Impl",
+          "lines": [
+            {
+              "line_num": 48,
+              "content": "    Dim ws As Worksheet, remarkCell As Range, totalCell As Range",
+              "is_formatting": false
+            },
+            {
+              "line_num": 49,
+              "content": "    Dim headerRow As Long, revCol As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 50,
+              "content": "    Dim lLastRow As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 51,
+              "content": "    Dim rateCol As Long, qtyCol As Long, totalCol As Long, descCol As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 52,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 53,
+              "content": "    For Each ws In ThisWorkbook.Worksheets",
+              "is_formatting": false
+            },
+            {
+              "line_num": 54,
+              "content": "        If ws.Visible = xlSheetVisible And UCase(ws.Name) <> EXCLUDE_SHEET1 And UCase(ws.Name) <> EXCLUDE_SHEET2 And UCase(ws.Name) <> EXCLUDE_SHEET3 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 55,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 56,
+              "content": "            Set remarkCell = SafeFind(ws, HDR_REMARK, True)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 57,
+              "content": "            If remarkCell Is Nothing Then GoTo NextWs",
+              "is_formatting": false
+            },
+            {
+              "line_num": 58,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 59,
+              "content": "            headerRow = remarkCell.Row",
+              "is_formatting": false
+            },
+            {
+              "line_num": 60,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 61,
+              "content": "            ' [GEMINI FIX] 데이터 존재 판단 기준을 'DESCRIPTION' 열로 변경",
+              "is_formatting": false
+            },
+            {
+              "line_num": 62,
+              "content": "            descCol = FindHeaderCol(ws, headerRow, \"DESCRIPTION\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 63,
+              "content": "            If descCol = 0 Then GoTo NextWs ' DESCRIPTION 헤더가 없으면 스킵",
+              "is_formatting": false
+            },
+            {
+              "line_num": 64,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 65,
+              "content": "            lLastRow = lastDataRow(ws, descCol)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 66,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 67,
+              "content": "            If lLastRow <= headerRow Then GoTo NextWs",
+              "is_formatting": false
+            },
+            {
+              "line_num": 68,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 69,
+              "content": "            rateCol = FindHeaderCol(ws, headerRow, HDR_RATE)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 70,
+              "content": "            qtyCol = FindHeaderCol(ws, headerRow, HDR_QTY)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 71,
+              "content": "            totalCol = FindHeaderCol(ws, headerRow, HDR_TOTAL)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 72,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 73,
+              "content": "            If rateCol = 0 Or qtyCol = 0 Or totalCol = 0 Then GoTo NextWs",
+              "is_formatting": false
+            },
+            {
+              "line_num": 74,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 75,
+              "content": "            revCol = remarkCell.Column + 1",
+              "is_formatting": false
+            },
+            {
+              "line_num": 76,
+              "content": "            ws.Cells(headerRow, revCol).Value = HDR_REV1",
+              "is_formatting": false
+            },
+            {
+              "line_num": 77,
+              "content": "            ws.Cells(headerRow, revCol + 1).Value = HDR_REV2",
+              "is_formatting": false
+            },
+            {
+              "line_num": 78,
+              "content": "            ws.Cells(headerRow, revCol + 2).Value = HDR_DIFF",
+              "is_formatting": false
+            },
+            {
+              "line_num": 79,
+              "content": "            ws.Range(ws.Cells(headerRow, revCol), ws.Cells(headerRow, revCol + 2)).Font.Bold = True",
+              "is_formatting": true
+            },
+            {
+              "line_num": 80,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 81,
+              "content": "            ClearRange ws.Range(ws.Cells(headerRow + 1, revCol), ws.Cells(lLastRow, revCol + 2))",
+              "is_formatting": false
+            },
+            {
+              "line_num": 82,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 83,
+              "content": "            ws.Range(ws.Cells(headerRow + 1, revCol), ws.Cells(lLastRow, revCol)).FormulaR1C1 = \"=ROUND(RC\" & rateCol & \",2)\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 84,
+              "content": "            ws.Range(ws.Cells(headerRow + 1, revCol + 1), ws.Cells(lLastRow, revCol + 1)).FormulaR1C1 = \"=RC[-1]*RC\" & qtyCol",
+              "is_formatting": false
+            },
+            {
+              "line_num": 85,
+              "content": "            ws.Range(ws.Cells(headerRow + 1, revCol + 2), ws.Cells(lLastRow, revCol + 2)).FormulaR1C1 = \"=RC[-1]-RC\" & totalCol",
+              "is_formatting": false
+            },
+            {
+              "line_num": 86,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 87,
+              "content": "            Set totalCell = SafeFind(ws, \"TOTAL\", True)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 88,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 89,
+              "content": "            If Not totalCell Is Nothing Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 90,
+              "content": "                With ws.Cells(totalCell.Row, revCol + 1)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 91,
+              "content": "                    .FormulaR1C1 = \"=SUM(R\" & (headerRow + 1) & \"C:R[-1]C)\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 92,
+              "content": "                    .Font.Color = RGB(255, 0, 0)",
+              "is_formatting": true
+            },
+            {
+              "line_num": 93,
+              "content": "                    .Font.Bold = True",
+              "is_formatting": true
+            },
+            {
+              "line_num": 94,
+              "content": "                End With",
+              "is_formatting": false
+            },
+            {
+              "line_num": 95,
+              "content": "                With ws.Cells(totalCell.Row, revCol + 2)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 96,
+              "content": "                    .FormulaR1C1 = \"=SUM(R\" & (headerRow + 1) & \"C:R[-1]C)\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 97,
+              "content": "                    .Font.Color = RGB(255, 0, 0)",
+              "is_formatting": true
+            },
+            {
+              "line_num": 98,
+              "content": "                    .Font.Bold = True",
+              "is_formatting": true
+            },
+            {
+              "line_num": 99,
+              "content": "                End With",
+              "is_formatting": false
+            },
+            {
+              "line_num": 100,
+              "content": "            End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 101,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 102,
+              "content": "            Dim formatEndRow As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 103,
+              "content": "            If totalCell Is Nothing Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 104,
+              "content": "                formatEndRow = lLastRow",
+              "is_formatting": false
+            },
+            {
+              "line_num": 105,
+              "content": "            Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 106,
+              "content": "                formatEndRow = totalCell.Row",
+              "is_formatting": false
+            },
+            {
+              "line_num": 107,
+              "content": "            End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 108,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 109,
+              "content": "            ws.Range(ws.Cells(headerRow + 1, revCol), ws.Cells(formatEndRow, revCol + 2)).NumberFormat = \"#,##0.00\"",
+              "is_formatting": true
+            },
+            {
+              "line_num": 110,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 111,
+              "content": "        End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 112,
+              "content": "NextWs:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 113,
+              "content": "    Next ws",
+              "is_formatting": false
+            },
+            {
+              "line_num": 114,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 48
+        }
+      ],
+      "encoding_used": "cp949"
+    },
+    "modCompileMaster.bas": {
+      "file_name": "modCompileMaster.bas",
+      "total_lines": 131,
+      "procedures": [
+        {
+          "name": "CompileAllSheets",
+          "lines": [
+            {
+              "line_num": 11,
+              "content": "    Dim t0 As Single: t0 = Timer",
+              "is_formatting": false
+            },
+            {
+              "line_num": 12,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 13,
+              "content": "    '--- 1. 환경 설정 및 출력 시트 준비 ---",
+              "is_formatting": false
+            },
+            {
+              "line_num": 14,
+              "content": "    On Error GoTo ErrH",
+              "is_formatting": false
+            },
+            {
+              "line_num": 15,
+              "content": "    Application.ScreenUpdating = False",
+              "is_formatting": false
+            },
+            {
+              "line_num": 16,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 17,
+              "content": "    Dim outWS As Worksheet",
+              "is_formatting": false
+            },
+            {
+              "line_num": 18,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 19,
+              "content": "    Set outWS = ThisWorkbook.Worksheets(\"MasterData\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 20,
+              "content": "    If outWS Is Nothing Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 21,
+              "content": "        Set outWS = ThisWorkbook.Worksheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count))",
+              "is_formatting": false
+            },
+            {
+              "line_num": 22,
+              "content": "        outWS.Name = \"MasterData\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 23,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 24,
+              "content": "    On Error GoTo ErrH",
+              "is_formatting": false
+            },
+            {
+              "line_num": 25,
+              "content": "    outWS.Cells.Clear",
+              "is_formatting": false
+            },
+            {
+              "line_num": 26,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 27,
+              "content": "    '--- 2. 마스터 시트에 헤더 작성 ---",
+              "is_formatting": false
+            },
+            {
+              "line_num": 28,
+              "content": "    Dim headers As Variant",
+              "is_formatting": false
+            },
+            {
+              "line_num": 29,
+              "content": "    headers = Array(\"CWI Job Number\", \"Order Ref. Number\", \"S/No\", \"RATE SOURCE\", \"DESCRIPTION\", \"RATE\", \"Formula\", \"Q'TY\", \"TOTAL (USD)\", \"REMARK\", \"REV RATE\", \"REV TOTAL\", \"DIFFERENCE\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 30,
+              "content": "    outWS.Range(\"A1\").Resize(1, UBound(headers) + 1).Value = headers",
+              "is_formatting": false
+            },
+            {
+              "line_num": 31,
+              "content": "    outWS.Rows(1).Font.Bold = True",
+              "is_formatting": true
+            },
+            {
+              "line_num": 32,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 33,
+              "content": "    '--- 3. 모든 시트를 순회하며 데이터 추출 ---",
+              "is_formatting": false
+            },
+            {
+              "line_num": 34,
+              "content": "    Dim ws As Worksheet",
+              "is_formatting": false
+            },
+            {
+              "line_num": 35,
+              "content": "    Dim writeRow As Long: writeRow = 2",
+              "is_formatting": false
+            },
+            {
+              "line_num": 36,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 37,
+              "content": "    For Each ws In ThisWorkbook.Worksheets",
+              "is_formatting": false
+            },
+            {
+              "line_num": 38,
+              "content": "        ' 마스터 시트이거나 숨겨진 시트는 건너뛰기",
+              "is_formatting": false
+            },
+            {
+              "line_num": 39,
+              "content": "        If ws.Name <> outWS.Name And ws.Visible = xlSheetVisible Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 40,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 41,
+              "content": "            '--- 4. 시트 상단의 헤더 정보 추출 ---",
+              "is_formatting": false
+            },
+            {
+              "line_num": 42,
+              "content": "            Dim jobNum As String, orderRef As String",
+              "is_formatting": false
+            },
+            {
+              "line_num": 43,
+              "content": "            jobNum = GetValueFromLabel(ws, \"CW1 Job Number\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 44,
+              "content": "            orderRef = GetValueFromLabel(ws, \"Order Ref. Number\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 45,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 46,
+              "content": "            '--- 5. [로직 변경] 시트의 모든 행을 검사하여 데이터 행만 추출 ---",
+              "is_formatting": false
+            },
+            {
+              "line_num": 47,
+              "content": "            Dim firstHeaderRow As Long, lastUsedRow As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 48,
+              "content": "            Dim snCol As Long, lastCol As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 49,
+              "content": "            Dim r As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 50,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 51,
+              "content": "            ' S/No 헤더를 찾아 기준 열로 설정",
+              "is_formatting": false
+            },
+            {
+              "line_num": 52,
+              "content": "            firstHeaderRow = FindHeaderRow(ws, \"S/No\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 53,
+              "content": "            If firstHeaderRow > 0 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 54,
+              "content": "                snCol = FindCol(ws, firstHeaderRow, \"S/No\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 55,
+              "content": "                lastCol = ws.Cells(firstHeaderRow, ws.Columns.Count).End(xlToLeft).Column",
+              "is_formatting": false
+            },
+            {
+              "line_num": 56,
+              "content": "                lastUsedRow = ws.Cells(ws.Rows.Count, snCol).End(xlUp).Row",
+              "is_formatting": false
+            },
+            {
+              "line_num": 57,
+              "content": "                ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 58,
+              "content": "                ' 헤더 아래부터 마지막 사용된 행까지 순회",
+              "is_formatting": false
+            },
+            {
+              "line_num": 59,
+              "content": "                For r = firstHeaderRow + 1 To lastUsedRow",
+              "is_formatting": false
+            },
+            {
+              "line_num": 60,
+              "content": "                    ' S/No 열에 숫자가 있는 행만 데이터 행으로 간주",
+              "is_formatting": false
+            },
+            {
+              "line_num": 61,
+              "content": "                    If IsNumeric(ws.Cells(r, snCol).Value) And Not IsEmpty(ws.Cells(r, snCol).Value) Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 62,
+              "content": "                        ' 헤더 정보 쓰기",
+              "is_formatting": false
+            },
+            {
+              "line_num": 63,
+              "content": "                        outWS.Cells(writeRow, 1).Value = jobNum",
+              "is_formatting": false
+            },
+            {
+              "line_num": 64,
+              "content": "                        outWS.Cells(writeRow, 2).Value = orderRef",
+              "is_formatting": false
+            },
+            {
+              "line_num": 65,
+              "content": "                        ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 66,
+              "content": "                        ' 데이터 행 전체 복사",
+              "is_formatting": false
+            },
+            {
+              "line_num": 67,
+              "content": "                        ws.Range(ws.Cells(r, snCol), ws.Cells(r, lastCol)).Copy",
+              "is_formatting": false
+            },
+            {
+              "line_num": 68,
+              "content": "                        outWS.Cells(writeRow, 3).PasteSpecial xlPasteValues",
+              "is_formatting": false
+            },
+            {
+              "line_num": 69,
+              "content": "                        ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 70,
+              "content": "                        writeRow = writeRow + 1",
+              "is_formatting": false
+            },
+            {
+              "line_num": 71,
+              "content": "                    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 72,
+              "content": "                Next r",
+              "is_formatting": false
+            },
+            {
+              "line_num": 73,
+              "content": "            End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 74,
+              "content": "        End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 75,
+              "content": "    Next ws",
+              "is_formatting": false
+            },
+            {
+              "line_num": 76,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 77,
+              "content": "    '--- 6. 마무리 ---",
+              "is_formatting": false
+            },
+            {
+              "line_num": 78,
+              "content": "    Application.CutCopyMode = False",
+              "is_formatting": false
+            },
+            {
+              "line_num": 79,
+              "content": "    outWS.Columns.AutoFit",
+              "is_formatting": false
+            },
+            {
+              "line_num": 80,
+              "content": "    Application.ScreenUpdating = True",
+              "is_formatting": false
+            },
+            {
+              "line_num": 81,
+              "content": "    MsgBox \"모든 시트의 데이터 행 취합 완료!\", vbInformation, \"작업 완료\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 82,
+              "content": "    Exit Sub",
+              "is_formatting": false
+            },
+            {
+              "line_num": 83,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 84,
+              "content": "ErrH:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 85,
+              "content": "    Application.CutCopyMode = False",
+              "is_formatting": false
+            },
+            {
+              "line_num": 86,
+              "content": "    Application.ScreenUpdating = True",
+              "is_formatting": false
+            },
+            {
+              "line_num": 87,
+              "content": "    MsgBox \"오류 발생: \" & Err.description, vbCritical, \"오류\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 88,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 11
+        },
+        {
+          "name": "GetValueFromLabel",
+          "lines": [
+            {
+              "line_num": 94,
+              "content": "    Dim foundCell As Range",
+              "is_formatting": false
+            },
+            {
+              "line_num": 95,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 96,
+              "content": "    Set foundCell = ws.UsedRange.Find(What:=labelText, LookIn:=xlValues, LookAt:=xlPart)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 97,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 98,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 99,
+              "content": "    If Not foundCell Is Nothing Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 100,
+              "content": "        GetValueFromLabel = CStr(foundCell.Offset(0, 1).Value)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 101,
+              "content": "    Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 102,
+              "content": "        GetValueFromLabel = \"\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 103,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 104,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 94
+        },
+        {
+          "name": "FindHeaderRow",
+          "lines": [
+            {
+              "line_num": 107,
+              "content": "    Dim foundCell As Range",
+              "is_formatting": false
+            },
+            {
+              "line_num": 108,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 109,
+              "content": "    Set foundCell = ws.UsedRange.Find(What:=headerText, LookIn:=xlValues, LookAt:=xlWhole)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 110,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 111,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 112,
+              "content": "    If Not foundCell Is Nothing Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 113,
+              "content": "        FindHeaderRow = foundCell.Row",
+              "is_formatting": false
+            },
+            {
+              "line_num": 114,
+              "content": "    Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 115,
+              "content": "        FindHeaderRow = 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 116,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 117,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 107
+        },
+        {
+          "name": "FindCol",
+          "lines": [
+            {
+              "line_num": 120,
+              "content": "    Dim foundCell As Range",
+              "is_formatting": false
+            },
+            {
+              "line_num": 121,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 122,
+              "content": "    Set foundCell = ws.Rows(r).Find(What:=headerText, LookIn:=xlValues, LookAt:=xlWhole)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 123,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 124,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 125,
+              "content": "    If Not foundCell Is Nothing Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 126,
+              "content": "        FindCol = foundCell.Column",
+              "is_formatting": false
+            },
+            {
+              "line_num": 127,
+              "content": "    Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 128,
+              "content": "        FindCol = 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 129,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 130,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 120
+        }
+      ],
+      "encoding_used": "cp949"
+    },
+    "modExtractFormulas.bas": {
+      "file_name": "modExtractFormulas.bas",
+      "total_lines": 89,
+      "procedures": [
+        {
+          "name": "ExtractFormulasWithExclusion",
+          "lines": [
+            {
+              "line_num": 14,
+              "content": "    Dim t0 As Single: t0 = Timer",
+              "is_formatting": false
+            },
+            {
+              "line_num": 15,
+              "content": "    On Error GoTo ErrH",
+              "is_formatting": false
+            },
+            {
+              "line_num": 16,
+              "content": "    AppBegin \"ExtractFormulas\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 17,
+              "content": "    LogActionSafe \"ExtractFormulas\", \"BEGIN\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 18,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 19,
+              "content": "    ExtractFormulas_Impl",
+              "is_formatting": false
+            },
+            {
+              "line_num": 20,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 21,
+              "content": "    LogActionSafe \"ExtractFormulas\", \"END \" & Format(Timer - t0, \"0.00s\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 22,
+              "content": "Done:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 23,
+              "content": "    AppEnd",
+              "is_formatting": false
+            },
+            {
+              "line_num": 24,
+              "content": "    Exit Sub",
+              "is_formatting": false
+            },
+            {
+              "line_num": 25,
+              "content": "ErrH:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 26,
+              "content": "    LogActionSafe \"ExtractFormulas\", \"ERR: \" & Err.description & \" (\" & Err.Number & \")\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 27,
+              "content": "    Resume Done",
+              "is_formatting": false
+            },
+            {
+              "line_num": 28,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 14
+        },
+        {
+          "name": "ExtractFormulas_Impl",
+          "lines": [
+            {
+              "line_num": 31,
+              "content": "    Dim ws As Worksheet",
+              "is_formatting": false
+            },
+            {
+              "line_num": 32,
+              "content": "    Dim headerCell As Range",
+              "is_formatting": false
+            },
+            {
+              "line_num": 33,
+              "content": "    Dim rateCol As Long, formCol As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 34,
+              "content": "    Dim firstDataRow As Long, lLastRow As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 35,
+              "content": "    Dim srcRng As Range, arrF As Variant, arrOut() As String",
+              "is_formatting": false
+            },
+            {
+              "line_num": 36,
+              "content": "    Dim r As Long, nRows As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 37,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 38,
+              "content": "    For Each ws In ThisWorkbook.Worksheets",
+              "is_formatting": false
+            },
+            {
+              "line_num": 39,
+              "content": "        If ws.Visible = xlSheetVisible And UCase(ws.Name) <> EXCLUDE_SHEET1 And _",
+              "is_formatting": false
+            },
+            {
+              "line_num": 40,
+              "content": "           UCase(ws.Name) <> EXCLUDE_SHEET2 And UCase(ws.Name) <> EXCLUDE_SHEET3 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 41,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 42,
+              "content": "            Set headerCell = SafeFind(ws, HDR_RATE, True)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 43,
+              "content": "            If headerCell Is Nothing Then GoTo NextWs",
+              "is_formatting": false
+            },
+            {
+              "line_num": 44,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 45,
+              "content": "            rateCol = headerCell.Column",
+              "is_formatting": false
+            },
+            {
+              "line_num": 46,
+              "content": "            firstDataRow = headerCell.Row + 1",
+              "is_formatting": false
+            },
+            {
+              "line_num": 47,
+              "content": "            lLastRow = lastDataRow(ws, rateCol)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 48,
+              "content": "            If lLastRow < firstDataRow Then GoTo NextWs",
+              "is_formatting": false
+            },
+            {
+              "line_num": 49,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 50,
+              "content": "            formCol = rateCol + 1",
+              "is_formatting": false
+            },
+            {
+              "line_num": 51,
+              "content": "            If ws.Cells(headerCell.Row, formCol).Value2 <> HDR_FORM Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 52,
+              "content": "                ws.Columns(formCol).Insert Shift:=xlToRight",
+              "is_formatting": false
+            },
+            {
+              "line_num": 53,
+              "content": "                ws.Cells(headerCell.Row, formCol).Value2 = HDR_FORM",
+              "is_formatting": false
+            },
+            {
+              "line_num": 54,
+              "content": "                ws.Cells(headerCell.Row, formCol).Font.Bold = True",
+              "is_formatting": true
+            },
+            {
+              "line_num": 55,
+              "content": "            End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 56,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 57,
+              "content": "            With ws.Range(ws.Cells(firstDataRow, formCol), ws.Cells(lLastRow, formCol))",
+              "is_formatting": false
+            },
+            {
+              "line_num": 58,
+              "content": "                .NumberFormat = \"@\"",
+              "is_formatting": true
+            },
+            {
+              "line_num": 59,
+              "content": "                .ClearContents",
+              "is_formatting": false
+            },
+            {
+              "line_num": 60,
+              "content": "            End With",
+              "is_formatting": false
+            },
+            {
+              "line_num": 61,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 62,
+              "content": "            Set srcRng = ws.Range(ws.Cells(firstDataRow, rateCol), ws.Cells(lLastRow, rateCol))",
+              "is_formatting": false
+            },
+            {
+              "line_num": 63,
+              "content": "            If srcRng.Rows.Count = 1 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 64,
+              "content": "                ReDim arrF(1 To 1, 1 To 1)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 65,
+              "content": "                arrF(1, 1) = srcRng.formula",
+              "is_formatting": false
+            },
+            {
+              "line_num": 66,
+              "content": "            Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 67,
+              "content": "                arrF = srcRng.formula",
+              "is_formatting": false
+            },
+            {
+              "line_num": 68,
+              "content": "            End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 69,
+              "content": "            ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 70,
+              "content": "            nRows = UBound(arrF, 1)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 71,
+              "content": "            ReDim arrOut(1 To nRows, 1 To 1)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 72,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 73,
+              "content": "            For r = 1 To nRows",
+              "is_formatting": false
+            },
+            {
+              "line_num": 74,
+              "content": "                If Len(CStr(arrF(r, 1))) > 1 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 75,
+              "content": "                    If Left$(CStr(arrF(r, 1)), 1) = \"=\" Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 76,
+              "content": "                        arrOut(r, 1) = \"'\" & CStr(arrF(r, 1))",
+              "is_formatting": false
+            },
+            {
+              "line_num": 77,
+              "content": "                    Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 78,
+              "content": "                        arrOut(r, 1) = vbNullString",
+              "is_formatting": false
+            },
+            {
+              "line_num": 79,
+              "content": "                    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 80,
+              "content": "                End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 81,
+              "content": "            Next r",
+              "is_formatting": false
+            },
+            {
+              "line_num": 82,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 83,
+              "content": "            ws.Range(ws.Cells(firstDataRow, formCol), ws.Cells(lLastRow, formCol)).Value = arrOut",
+              "is_formatting": false
+            },
+            {
+              "line_num": 84,
+              "content": "        End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 85,
+              "content": "NextWs:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 86,
+              "content": "    Next ws",
+              "is_formatting": false
+            },
+            {
+              "line_num": 87,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 31
+        }
+      ],
+      "encoding_used": "utf-8"
+    },
+    "modHelpers.bas": {
+      "file_name": "modHelpers.bas",
+      "total_lines": 125,
+      "procedures": [
+        {
+          "name": "LogAction",
+          "lines": [
+            {
+              "line_num": 9,
+              "content": "    Dim wsLog As Worksheet, nr As Long",
+              "is_formatting": false
+            },
+            {
+              "line_num": 10,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 11,
+              "content": "    Set wsLog = ThisWorkbook.Worksheets(\"LOG\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 12,
+              "content": "    If wsLog Is Nothing Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 13,
+              "content": "        Set wsLog = ThisWorkbook.Worksheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count))",
+              "is_formatting": false
+            },
+            {
+              "line_num": 14,
+              "content": "        wsLog.Name = \"LOG\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 15,
+              "content": "        wsLog.Range(\"A1:D1\").Value = Array(\"TIMESTAMP\", \"TAG\", \"MESSAGE\", \"USER\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 16,
+              "content": "        wsLog.Rows(1).Font.Bold = True",
+              "is_formatting": true
+            },
+            {
+              "line_num": 17,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 18,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 19,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 20,
+              "content": "    With wsLog",
+              "is_formatting": false
+            },
+            {
+              "line_num": 21,
+              "content": "        nr = .Cells(.Rows.Count, 1).End(xlUp).Row + 1",
+              "is_formatting": false
+            },
+            {
+              "line_num": 22,
+              "content": "        .Cells(nr, 1).Value = Now",
+              "is_formatting": false
+            },
+            {
+              "line_num": 23,
+              "content": "        .Cells(nr, 2).Value = tag",
+              "is_formatting": false
+            },
+            {
+              "line_num": 24,
+              "content": "        .Cells(nr, 3).Value = msg",
+              "is_formatting": false
+            },
+            {
+              "line_num": 25,
+              "content": "        .Cells(nr, 4).Value = Environ$(\"Username\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 26,
+              "content": "    End With",
+              "is_formatting": false
+            },
+            {
+              "line_num": 27,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 9
+        },
+        {
+          "name": "LogActionSafe",
+          "lines": [
+            {
+              "line_num": 30,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 31,
+              "content": "    LogAction tag, msg",
+              "is_formatting": false
+            },
+            {
+              "line_num": 32,
+              "content": "    If Err.Number <> 0 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 33,
+              "content": "        Debug.Print Now, tag, msg",
+              "is_formatting": false
+            },
+            {
+              "line_num": 34,
+              "content": "        Err.Clear",
+              "is_formatting": false
+            },
+            {
+              "line_num": 35,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 36,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 37,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 30
+        },
+        {
+          "name": "AppBegin",
+          "lines": [
+            {
+              "line_num": 40,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 41,
+              "content": "    Application.ScreenUpdating = False",
+              "is_formatting": false
+            },
+            {
+              "line_num": 42,
+              "content": "    Application.EnableEvents = False",
+              "is_formatting": false
+            },
+            {
+              "line_num": 43,
+              "content": "    Application.Calculation = xlCalculationManual",
+              "is_formatting": false
+            },
+            {
+              "line_num": 44,
+              "content": "    Application.DisplayStatusBar = True",
+              "is_formatting": false
+            },
+            {
+              "line_num": 45,
+              "content": "    Application.StatusBar = \"Running: \" & tag & \" ...\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 46,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 47,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 40
+        },
+        {
+          "name": "AppEnd",
+          "lines": [
+            {
+              "line_num": 50,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 51,
+              "content": "    Application.ScreenUpdating = True",
+              "is_formatting": false
+            },
+            {
+              "line_num": 52,
+              "content": "    Application.EnableEvents = True",
+              "is_formatting": false
+            },
+            {
+              "line_num": 53,
+              "content": "    Application.Calculation = xlCalculationAutomatic",
+              "is_formatting": false
+            },
+            {
+              "line_num": 54,
+              "content": "    Application.StatusBar = False",
+              "is_formatting": false
+            },
+            {
+              "line_num": 55,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 56,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 50
+        },
+        {
+          "name": "SafeFind",
+          "lines": [
+            {
+              "line_num": 59,
+              "content": "                         ByVal exactMatch As Boolean, Optional ByVal inRange As Range) As Range",
+              "is_formatting": false
+            },
+            {
+              "line_num": 60,
+              "content": "    Dim findRng As Range, lookAtMode As XlLookAt",
+              "is_formatting": false
+            },
+            {
+              "line_num": 61,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 62,
+              "content": "    If inRange Is Nothing Then Set findRng = ws.UsedRange Else Set findRng = inRange",
+              "is_formatting": false
+            },
+            {
+              "line_num": 63,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 64,
+              "content": "    If findRng Is Nothing Then Exit Function",
+              "is_formatting": false
+            },
+            {
+              "line_num": 65,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 66,
+              "content": "    lookAtMode = IIf(exactMatch, xlWhole, xlPart)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 67,
+              "content": "    Set SafeFind = findRng.Find(What:=whatText, After:=findRng.Cells(1, 1), LookIn:=xlValues, _",
+              "is_formatting": false
+            },
+            {
+              "line_num": 68,
+              "content": "                                LookAt:=lookAtMode, SearchOrder:=xlByRows, _",
+              "is_formatting": false
+            },
+            {
+              "line_num": 69,
+              "content": "                                SearchDirection:=xlNext, MatchCase:=False)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 70,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 59
+        },
+        {
+          "name": "lastDataRow",
+          "lines": [
+            {
+              "line_num": 73,
+              "content": "    If col <= 0 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 74,
+              "content": "        lastDataRow = 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 75,
+              "content": "        Exit Function",
+              "is_formatting": false
+            },
+            {
+              "line_num": 76,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 77,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 78,
+              "content": "    If Application.WorksheetFunction.CountA(ws.Columns(col)) = 0 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 79,
+              "content": "        lastDataRow = 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 80,
+              "content": "    Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 81,
+              "content": "        lastDataRow = ws.Cells(ws.Rows.Count, col).End(xlUp).Row",
+              "is_formatting": false
+            },
+            {
+              "line_num": 82,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 83,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 73
+        },
+        {
+          "name": "ClearRange",
+          "lines": [
+            {
+              "line_num": 86,
+              "content": "    If target Is Nothing Then Exit Sub",
+              "is_formatting": false
+            },
+            {
+              "line_num": 87,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 88,
+              "content": "    target.ClearContents",
+              "is_formatting": false
+            },
+            {
+              "line_num": 89,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 90,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 86
+        },
+        {
+          "name": "ProcExists",
+          "lines": [
+            {
+              "line_num": 93,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 94,
+              "content": "    Application.Run ProcName",
+              "is_formatting": false
+            },
+            {
+              "line_num": 95,
+              "content": "    Select Case Err.Number",
+              "is_formatting": false
+            },
+            {
+              "line_num": 96,
+              "content": "        Case 0: ProcExists = True",
+              "is_formatting": false
+            },
+            {
+              "line_num": 97,
+              "content": "        Case 1004, 438: ProcExists = False",
+              "is_formatting": false
+            },
+            {
+              "line_num": 98,
+              "content": "        Case Else: ProcExists = True",
+              "is_formatting": false
+            },
+            {
+              "line_num": 99,
+              "content": "    End Select",
+              "is_formatting": false
+            },
+            {
+              "line_num": 100,
+              "content": "    Err.Clear",
+              "is_formatting": false
+            },
+            {
+              "line_num": 101,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 102,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 93
+        },
+        {
+          "name": "GetOrCreateSheet",
+          "lines": [
+            {
+              "line_num": 105,
+              "content": "    On Error Resume Next",
+              "is_formatting": false
+            },
+            {
+              "line_num": 106,
+              "content": "    Set GetOrCreateSheet = ThisWorkbook.Worksheets(sheetName)",
+              "is_formatting": false
+            },
+            {
+              "line_num": 107,
+              "content": "    If Err.Number <> 0 Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 108,
+              "content": "        Err.Clear",
+              "is_formatting": false
+            },
+            {
+              "line_num": 109,
+              "content": "        Set GetOrCreateSheet = ThisWorkbook.Worksheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count))",
+              "is_formatting": false
+            },
+            {
+              "line_num": 110,
+              "content": "        GetOrCreateSheet.Name = sheetName",
+              "is_formatting": false
+            },
+            {
+              "line_num": 111,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 112,
+              "content": "    On Error GoTo 0",
+              "is_formatting": false
+            },
+            {
+              "line_num": 113,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 105
+        },
+        {
+          "name": "Nz",
+          "lines": [
+            {
+              "line_num": 116,
+              "content": "    If IsError(v) Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 117,
+              "content": "        Nz = defaultValue",
+              "is_formatting": false
+            },
+            {
+              "line_num": 118,
+              "content": "    ElseIf IsNumeric(v) Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 119,
+              "content": "        If Not IsEmpty(v) And Not IsNull(v) Then Nz = CDbl(v) Else Nz = defaultValue",
+              "is_formatting": false
+            },
+            {
+              "line_num": 120,
+              "content": "    Else",
+              "is_formatting": false
+            },
+            {
+              "line_num": 121,
+              "content": "        Nz = defaultValue",
+              "is_formatting": false
+            },
+            {
+              "line_num": 122,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 123,
+              "content": "End Function",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 116
+        }
+      ],
+      "encoding_used": "cp949"
+    },
+    "modPipeline.bas": {
+      "file_name": "modPipeline.bas",
+      "total_lines": 54,
+      "procedures": [
+        {
+          "name": "START_PIPELINE",
+          "lines": [
+            {
+              "line_num": 8,
+              "content": "    RunPipeline_Final",
+              "is_formatting": false
+            },
+            {
+              "line_num": 9,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 8
+        },
+        {
+          "name": "RunPipeline_Final",
+          "lines": [
+            {
+              "line_num": 12,
+              "content": "    Dim t0 As Single: t0 = Timer",
+              "is_formatting": false
+            },
+            {
+              "line_num": 13,
+              "content": "    AppBegin \"Final Pipeline\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 14,
+              "content": "    On Error GoTo ErrH",
+              "is_formatting": false
+            },
+            {
+              "line_num": 15,
+              "content": "    LogActionSafe \"PIPELINE\", \"START\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 16,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 17,
+              "content": "    ' 1단계: Formula 추출",
+              "is_formatting": false
+            },
+            {
+              "line_num": 18,
+              "content": "    SafeRun \"ExtractFormulasWithExclusion\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 19,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 20,
+              "content": "    ' 2단계: REV RATE 등 계산",
+              "is_formatting": false
+            },
+            {
+              "line_num": 21,
+              "content": "    SafeRun \"ApplyFormula_ByDynamicRemark_ExactTotal_Safe\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 22,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 23,
+              "content": "    ' 3단계: 최종 취합",
+              "is_formatting": false
+            },
+            {
+              "line_num": 24,
+              "content": "    SafeRun \"CompileAllSheets\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 25,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 26,
+              "content": "Done:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 27,
+              "content": "    LogActionSafe \"PIPELINE\", \"END \" & Format(Timer - t0, \"0.00s\")",
+              "is_formatting": false
+            },
+            {
+              "line_num": 28,
+              "content": "    AppEnd",
+              "is_formatting": false
+            },
+            {
+              "line_num": 29,
+              "content": "    If ShowMsg Then MsgBox \"모든 파이프라인 작업 완료!\", vbInformation, \"Pipeline Complete\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 30,
+              "content": "    Exit Sub",
+              "is_formatting": false
+            },
+            {
+              "line_num": 31,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 32,
+              "content": "ErrH:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 33,
+              "content": "    LogActionSafe \"PIPELINE\", \"FATAL ERR: \" & Err.description & \" (\" & Err.Number & \")\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 34,
+              "content": "    AppEnd",
+              "is_formatting": false
+            },
+            {
+              "line_num": 35,
+              "content": "    If ShowMsg Then MsgBox \"파이프라인 중단: \" & vbCrLf & Err.description, vbCritical, \"Pipeline Error\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 36,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 12
+        },
+        {
+          "name": "SafeRun",
+          "lines": [
+            {
+              "line_num": 39,
+              "content": "    On Error GoTo ErrH",
+              "is_formatting": false
+            },
+            {
+              "line_num": 40,
+              "content": "    ",
+              "is_formatting": false
+            },
+            {
+              "line_num": 41,
+              "content": "    If Not ProcExists(ProcName) Then",
+              "is_formatting": false
+            },
+            {
+              "line_num": 42,
+              "content": "        Err.Raise 10001, , \"프로시저 없음: \" & ProcName",
+              "is_formatting": false
+            },
+            {
+              "line_num": 43,
+              "content": "    End If",
+              "is_formatting": false
+            },
+            {
+              "line_num": 44,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 45,
+              "content": "    Application.StatusBar = \"Running: \" & ProcName & \" ...\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 46,
+              "content": "    Application.Run ProcName",
+              "is_formatting": false
+            },
+            {
+              "line_num": 47,
+              "content": "    LogActionSafe ProcName, \"OK\"",
+              "is_formatting": false
+            },
+            {
+              "line_num": 48,
+              "content": "    Exit Sub",
+              "is_formatting": false
+            },
+            {
+              "line_num": 49,
+              "content": "",
+              "is_formatting": false
+            },
+            {
+              "line_num": 50,
+              "content": "ErrH:",
+              "is_formatting": false
+            },
+            {
+              "line_num": 51,
+              "content": "    ' SafeRun에서 오류 발생 시, 상위 프로시저(RunPipeline_Final)의 오류 처리기로 넘김",
+              "is_formatting": false
+            },
+            {
+              "line_num": 52,
+              "content": "    Err.Raise Err.Number, \"Error in \" & ProcName, Err.description",
+              "is_formatting": false
+            },
+            {
+              "line_num": 53,
+              "content": "End Sub",
+              "is_formatting": false
+            }
+          ],
+          "start_line": 39
+        }
+      ],
+      "encoding_used": "cp949"
+    },
+    "Module1.bas": {
+      "file_name": "Module1.bas",
+      "total_lines": 4,
+      "procedures": [],
+      "encoding_used": "utf-8"
+    }
+  },
+  "call_graph": {
+    "modApplyFormula.bas::FindHeaderCol": [],
+    "modApplyFormula.bas::ApplyFormula_ByDynamicRemark_ExactTotal_Safe": [
+      "ApplyFormula_Impl",
+      "LogAction",
+      "AppBegin",
+      "AppEnd",
+      "LogActionSafe"
+    ],
+    "modApplyFormula.bas::ApplyFormula_Impl": [
+      "lastDataRow",
+      "FindHeaderCol",
+      "SafeFind",
+      "ClearRange"
+    ],
+    "modCompileMaster.bas::CompileAllSheets": [
+      "GetValueFromLabel",
+      "FindHeaderRow",
+      "FindCol"
+    ],
+    "modCompileMaster.bas::GetValueFromLabel": [],
+    "modCompileMaster.bas::FindHeaderRow": [],
+    "modCompileMaster.bas::FindCol": [],
+    "modExtractFormulas.bas::ExtractFormulasWithExclusion": [
+      "ExtractFormulas_Impl",
+      "LogAction",
+      "AppBegin",
+      "AppEnd",
+      "LogActionSafe"
+    ],
+    "modExtractFormulas.bas::ExtractFormulas_Impl": [
+      "lastDataRow",
+      "SafeFind"
+    ],
+    "modHelpers.bas::LogAction": [],
+    "modHelpers.bas::LogActionSafe": [
+      "LogAction"
+    ],
+    "modHelpers.bas::AppBegin": [],
+    "modHelpers.bas::AppEnd": [],
+    "modHelpers.bas::SafeFind": [],
+    "modHelpers.bas::lastDataRow": [],
+    "modHelpers.bas::ClearRange": [],
+    "modHelpers.bas::ProcExists": [
+      "ProcName"
+    ],
+    "modHelpers.bas::GetOrCreateSheet": [],
+    "modHelpers.bas::Nz": [],
+    "modPipeline.bas::START_PIPELINE": [
+      "RunPipeline_Final"
+    ],
+    "modPipeline.bas::RunPipeline_Final": [
+      "ExtractFormulasWithExclusion",
+      "ApplyFormula_ByDynamicRemark_ExactTotal_Safe",
+      "LogAction",
+      "AppBegin",
+      "CompileAllSheets",
+      "AppEnd",
+      "LogActionSafe",
+      "SafeRun"
+    ],
+    "modPipeline.bas::SafeRun": [
+      "LogAction",
+      "ProcExists",
+      "ProcName",
+      "RunPipeline_Final",
+      "LogActionSafe"
+    ]
+  },
+  "master_logic": {
+    "sheet_creation": [
+      {
+        "line": 19,
+        "content": "Set outWS = ThisWorkbook.Worksheets(\"MasterData\")"
+      }
+    ],
+    "header_definition": [
+      {
+        "line": 28,
+        "content": "Dim headers As Variant"
+      },
+      {
+        "line": 29,
+        "content": "headers = Array(\"CWI Job Number\", \"Order Ref. Number\", \"S/No\", \"RATE SOURCE\", \"DESCRIPTION\", \"RATE\", \"Formula\", \"Q'TY\", \"TOTAL (USD)\", \"REMARK\", \"REV RATE\", \"REV TOTAL\", \"DIFFERENCE\")"
+      },
+      {
+        "line": 30,
+        "content": "outWS.Range(\"A1\").Resize(1, UBound(headers) + 1).Value = headers"
+      }
+    ],
+    "data_collection": [],
+    "sheet_iteration": [
+      {
+        "line": 37,
+        "content": "For Each ws In ThisWorkbook.Worksheets"
+      }
+    ],
+    "key_variables": [
+      {
+        "line": 11,
+        "content": "Dim t0 As Single: t0 = Timer"
+      },
+      {
+        "line": 17,
+        "content": "Dim outWS As Worksheet"
+      },
+      {
+        "line": 28,
+        "content": "Dim headers As Variant"
+      },
+      {
+        "line": 34,
+        "content": "Dim ws As Worksheet"
+      },
+      {
+        "line": 35,
+        "content": "Dim writeRow As Long: writeRow = 2"
+      },
+      {
+        "line": 42,
+        "content": "Dim jobNum As String, orderRef As String"
+      },
+      {
+        "line": 47,
+        "content": "Dim firstHeaderRow As Long, lastUsedRow As Long"
+      },
+      {
+        "line": 48,
+        "content": "Dim snCol As Long, lastCol As Long"
+      },
+      {
+        "line": 49,
+        "content": "Dim r As Long"
+      },
+      {
+        "line": 94,
+        "content": "Dim foundCell As Range"
+      },
+      {
+        "line": 107,
+        "content": "Dim foundCell As Range"
+      },
+      {
+        "line": 120,
+        "content": "Dim foundCell As Range"
+      }
+    ]
+  }
+}

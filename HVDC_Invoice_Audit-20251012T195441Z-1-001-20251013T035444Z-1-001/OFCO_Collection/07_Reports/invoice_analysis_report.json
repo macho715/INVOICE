@@ -1,0 +1,7504 @@
+{
+  "analysis": {
+    "file_path": "data/invoice_sept2025.xlsm",
+    "file_name": "invoice_sept2025.xlsm",
+    "analysis_date": "2025-10-20T00:06:33.197394",
+    "sheets": {
+      "SEPT": {
+        "name": "SEPT",
+        "dimensions": "34 rows x 27 columns",
+        "total_cells": 918,
+        "non_empty_cells": "548",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 31,
+            "data_types": {
+              "<class 'int'>": 28,
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DRAFT INVOICE FOR HVDC (LIGHTING PROJECT) - SEPTEMBER 2025",
+              "S/No",
+              1,
+              2,
+              3
+            ],
+            "unique_count": 31
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "Shpt Ref",
+              "HVDC-ADOPT-SCT-0126",
+              "HVDC-ADOPT-SCT-0127",
+              "HVDC-ADOPT-SCT-0038",
+              "HVDC-ADOPT-SCT-0122"
+            ],
+            "unique_count": 29
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "Job #",
+              "BAMF0017659",
+              "BAMF0017850",
+              "BAMF0016623",
+              "BAMF0017824"
+            ],
+            "unique_count": 29
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "Type",
+              "SHIPMENT",
+              "SHIPMENT",
+              "SHIPMENT",
+              "SHIPMENT"
+            ],
+            "unique_count": 4
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "BL #",
+              "CHN2595234",
+              "EGLV142502495441",
+              "SELA65901100",
+              "MEDUMD743842"
+            ],
+            "unique_count": 29
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "POL",
+              "KRPUS",
+              "CNSGH",
+              "KRPUS",
+              "KRPUS"
+            ],
+            "unique_count": 12
+          },
+          {
+            "index": 8,
+            "name": "8",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "POD",
+              "AEKHL",
+              "AEKHL",
+              "AEKHL",
+              "AEKHL"
+            ],
+            "unique_count": 4
+          },
+          {
+            "index": 9,
+            "name": "9",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "Mode",
+              "FCL",
+              "FCL",
+              "FCL",
+              "FCL"
+            ],
+            "unique_count": 4
+          },
+          {
+            "index": 10,
+            "name": "10",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'int'>": 25,
+              "<class 'str'>": 4
+            },
+            "sample_values": [
+              "No. Of CNTR",
+              3,
+              1,
+              0,
+              1
+            ],
+            "unique_count": 9
+          },
+          {
+            "index": 11,
+            "name": "11",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'float'>": 13,
+              "<class 'int'>": 12,
+              "<class 'str'>": 4
+            },
+            "sample_values": [
+              "Volume",
+              155,
+              1.134,
+              194.045,
+              4.67
+            ],
+            "unique_count": 17
+          },
+          {
+            "index": 12,
+            "name": "12",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'int'>": 25,
+              "<class 'str'>": 4
+            },
+            "sample_values": [
+              "Quantity",
+              749,
+              1,
+              38,
+              4
+            ],
+            "unique_count": 17
+          },
+          {
+            "index": 13,
+            "name": "13",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "Bill of Entry Number",
+              "30815/2025",
+              "32824/2025",
+              "5324/2025",
+              "32265/2025"
+            ],
+            "unique_count": 29
+          },
+          {
+            "index": 14,
+            "name": "14",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'datetime.datetime'>": 28,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "BOE Issued Date",
+              "2025-08-28 00:00:00",
+              "2025-09-11 00:00:00",
+              "2025-02-11 00:00:00",
+              "2025-09-08 00:00:00"
+            ],
+            "unique_count": 18
+          },
+          {
+            "index": 15,
+            "name": "15",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'int'>": 27,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "CONTRACT",
+              "# Trips",
+              3,
+              1,
+              7
+            ],
+            "unique_count": 6
+          },
+          {
+            "index": 16,
+            "name": "16",
+            "non_null_count": 25,
+            "data_types": {
+              "<class 'int'>": 24,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "MASTER DO\nCHARGE",
+              150,
+              150,
+              150,
+              80
+            ],
+            "unique_count": 4
+          },
+          {
+            "index": 17,
+            "name": "17",
+            "non_null_count": 25,
+            "data_types": {
+              "<class 'int'>": 24,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "CUSTOMS\nCLEARANCE\nCHARGE",
+              150,
+              150,
+              150,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 18,
+            "name": "18",
+            "non_null_count": 1,
+            "data_types": {
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "HOUSE\nDO\nCHARGE (BL EXCHANGE) / DELIVERY ORDER"
+            ],
+            "unique_count": 1
+          },
+          {
+            "index": 19,
+            "name": "19",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'int'>": 4,
+              "<class 'float'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "PORT HANDLING CHARGE",
+              1330,
+              372,
+              372,
+              1174.8000000000002
+            ],
+            "unique_count": 6
+          },
+          {
+            "index": 20,
+            "name": "20",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'int'>": 6,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "TRANSPORTATION\nCHARGE",
+              1512,
+              252,
+              252,
+              200
+            ],
+            "unique_count": 5
+          },
+          {
+            "index": 21,
+            "name": "21",
+            "non_null_count": 2,
+            "data_types": {
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "ADDITIONAL",
+              "TRANSPORTATION\nCHARGE"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 22,
+            "name": "22",
+            "non_null_count": 1,
+            "data_types": {
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "ADDITIONAL AMOUNT\n(Please refer to the detail sheet)"
+            ],
+            "unique_count": 1
+          },
+          {
+            "index": 23,
+            "name": "23",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'float'>": 3,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "DUTY RELATED CHARGES",
+              2691.77,
+              1422.76,
+              1584.19
+            ],
+            "unique_count": 4
+          },
+          {
+            "index": 24,
+            "name": "24",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'float'>": 7,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "AT COST AMOUNT",
+              166.0993873383254,
+              65.82028590878149,
+              21.78352620830497,
+              70.79646017699116
+            ],
+            "unique_count": 7
+          },
+          {
+            "index": 25,
+            "name": "25",
+            "non_null_count": 31,
+            "data_types": {
+              "<class 'int'>": 19,
+              "<class 'float'>": 11,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "GRAND TOTAL (USD)",
+              3308.0993873383254,
+              989.8202859087814,
+              21.78352620830497,
+              994.7964601769911
+            ],
+            "unique_count": 16
+          },
+          {
+            "index": 26,
+            "name": "26",
+            "non_null_count": 29,
+            "data_types": {
+              "<class 'str'>": 29
+            },
+            "sample_values": [
+              "Remarks",
+              "Shipment Cleared and Delivered",
+              "Shipment Cleared and Delivered",
+              "Only 1 Container repair charge",
+              "Shipment Cleared and Delivered"
+            ],
+            "unique_count": 5
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN,
+            "8": NaN,
+            "9": NaN,
+            "10": NaN,
+            "11": NaN,
+            "12": NaN,
+            "13": NaN,
+            "14": NaN,
+            "15": NaN,
+            "16": NaN,
+            "17": NaN,
+            "18": NaN,
+            "19": NaN,
+            "20": NaN,
+            "21": NaN,
+            "22": NaN,
+            "23": NaN,
+            "24": NaN,
+            "25": NaN,
+            "26": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": "DRAFT INVOICE FOR HVDC (LIGHTING PROJECT) - SEPTEMBER 2025",
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN,
+            "8": NaN,
+            "9": NaN,
+            "10": NaN,
+            "11": NaN,
+            "12": NaN,
+            "13": NaN,
+            "14": NaN,
+            "15": NaN,
+            "16": NaN,
+            "17": NaN,
+            "18": NaN,
+            "19": NaN,
+            "20": NaN,
+            "21": NaN,
+            "22": NaN,
+            "23": NaN,
+            "24": NaN,
+            "25": NaN,
+            "26": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN,
+            "8": NaN,
+            "9": NaN,
+            "10": NaN,
+            "11": NaN,
+            "12": NaN,
+            "13": NaN,
+            "14": NaN,
+            "15": "CONTRACT",
+            "16": NaN,
+            "17": NaN,
+            "18": NaN,
+            "19": NaN,
+            "20": NaN,
+            "21": "ADDITIONAL",
+            "22": NaN,
+            "23": NaN,
+            "24": NaN,
+            "25": NaN,
+            "26": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": "S/No",
+            "3": "Shpt Ref",
+            "4": "Job #",
+            "5": "Type",
+            "6": "BL #",
+            "7": "POL",
+            "8": "POD",
+            "9": "Mode",
+            "10": "No. Of CNTR",
+            "11": "Volume",
+            "12": "Quantity",
+            "13": "Bill of Entry Number",
+            "14": "BOE Issued Date",
+            "15": "# Trips",
+            "16": "MASTER DO\nCHARGE",
+            "17": "CUSTOMS\nCLEARANCE\nCHARGE",
+            "18": "HOUSE\nDO\nCHARGE (BL EXCHANGE) / DELIVERY ORDER",
+            "19": "PORT HANDLING CHARGE",
+            "20": "TRANSPORTATION\nCHARGE",
+            "21": "TRANSPORTATION\nCHARGE",
+            "22": "ADDITIONAL AMOUNT\n(Please refer to the detail sheet)",
+            "23": "DUTY RELATED CHARGES",
+            "24": "AT COST AMOUNT",
+            "25": "GRAND TOTAL (USD)",
+            "26": "Remarks"
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": 1,
+            "3": "HVDC-ADOPT-SCT-0126",
+            "4": "BAMF0017659",
+            "5": "SHIPMENT",
+            "6": "CHN2595234",
+            "7": "KRPUS",
+            "8": "AEKHL",
+            "9": "FCL",
+            "10": 3,
+            "11": 155,
+            "12": 749,
+            "13": "30815/2025",
+            "14": "2025-08-28 00:00:00",
+            "15": 3,
+            "16": 150,
+            "17": 150,
+            "18": NaN,
+            "19": 1330,
+            "20": 1512,
+            "21": NaN,
+            "22": NaN,
+            "23": NaN,
+            "24": 166.0993873383254,
+            "25": 3308.0993873383254,
+            "26": "Shipment Cleared and Delivered"
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 1,
+            "non_null_count": "1",
+            "values": [
+              "DRAFT INVOICE FOR HVDC (LIGHTING PROJECT) - SEPTEMBER 2025"
+            ]
+          },
+          {
+            "row_index": 2,
+            "non_null_count": "2",
+            "values": [
+              "CONTRACT",
+              "ADDITIONAL"
+            ]
+          },
+          {
+            "row_index": 3,
+            "non_null_count": "25",
+            "values": [
+              "S/No",
+              "Shpt Ref",
+              "Job #",
+              "Type",
+              "BL #",
+              "POL",
+              "POD",
+              "Mode",
+              "No. Of CNTR",
+              "Volume"
+            ]
+          },
+          {
+            "row_index": 4,
+            "non_null_count": "21",
+            "values": [
+              1,
+              "HVDC-ADOPT-SCT-0126",
+              "BAMF0017659",
+              "SHIPMENT",
+              "CHN2595234",
+              "KRPUS",
+              "AEKHL",
+              "FCL",
+              3,
+              155
+            ]
+          },
+          {
+            "row_index": 5,
+            "non_null_count": "21",
+            "values": [
+              2,
+              "HVDC-ADOPT-SCT-0127",
+              "BAMF0017850",
+              "SHIPMENT",
+              "EGLV142502495441",
+              "CNSGH",
+              "AEKHL",
+              "FCL",
+              1,
+              1.134
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "17",
+            "values": [
+              3,
+              "HVDC-ADOPT-SCT-0038",
+              "BAMF0016623",
+              "SHIPMENT",
+              "SELA65901100",
+              "KRPUS",
+              "AEKHL",
+              "FCL",
+              0,
+              194.045
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "21",
+            "values": [
+              4,
+              "HVDC-ADOPT-SCT-0122",
+              "BAMF0017824",
+              "SHIPMENT",
+              "MEDUMD743842",
+              "KRPUS",
+              "AEKHL",
+              "FCL",
+              1,
+              4.67
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "21",
+            "values": [
+              5,
+              "HVDC-ADOPT-SCT-0131",
+              "BAMF0017825",
+              "SHIPMENT",
+              "176-13032924",
+              "KRICN",
+              "AEAUH",
+              "AIR",
+              0,
+              12.757
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "21",
+            "values": [
+              6,
+              "HVDC-ADOPT-SCT-0123, 0124",
+              "BAMF0017918",
+              "SHIPMENT",
+              "SELA26992900",
+              "KRPUS",
+              "AEKHL",
+              "FCL",
+              1,
+              30.74
+            ]
+          }
+        ]
+      },
+      "SCT0126": {
+        "name": "SCT0126",
+        "dimensions": "29 rows x 8 columns",
+        "total_cells": 232,
+        "non_empty_cells": "87",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 8,
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 14
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'str'>": 9
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 10,
+            "data_types": {
+              "<class 'str'>": 10
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE",
+              "TERMINAL HANDLING FEE (1 X 20DC)",
+              "TERMINAL HANDLING FEE (2 X 40HC)"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'int'>": 6,
+              "<class 'float'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150,
+              372,
+              479
+            ],
+            "unique_count": 7
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 10,
+            "data_types": {
+              "<class 'int'>": 8,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              1,
+              2
+            ],
+            "unique_count": 5
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 21,
+            "data_types": {
+              "<class 'int'>": 11,
+              "<class 'str'>": 6,
+              "<class 'float'>": 4
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 15
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'str'>": 13,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017659",
+              "HVDC-ADOPT-SCT-0126",
+              "CHN2595234"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017659"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-SCT-0126"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "CHN2595234"
+            ]
+          }
+        ]
+      },
+      "SCT0127": {
+        "name": "SCT0127",
+        "dimensions": "29 rows x 8 columns",
+        "total_cells": 232,
+        "non_empty_cells": "81",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 13,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 13
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 8
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'str'>": 9
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE",
+              "TERMINAL HANDLING FEE (1 X 20DC)",
+              "TRANSPORTATION CHARGES (1 X 20DC) FROM KHALIFA PORT TO DSV MUSSAFAH YARD"
+            ],
+            "unique_count": 9
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'int'>": 5,
+              "<class 'float'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150,
+              372,
+              252
+            ],
+            "unique_count": 7
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              1,
+              1
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 21,
+            "data_types": {
+              "<class 'int'>": 11,
+              "<class 'str'>": 6,
+              "<class 'float'>": 4
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 15
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 13,
+            "data_types": {
+              "<class 'str'>": 12,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017850",
+              "HVDC-ADOPT-SCT-0127",
+              "EGLV142502495441"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017850"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-SCT-0127"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "EGLV142502495441"
+            ]
+          }
+        ]
+      },
+      "SCT0038": {
+        "name": "SCT0038",
+        "dimensions": "23 rows x 8 columns",
+        "total_cells": 184,
+        "non_empty_cells": "39",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 1
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 7
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 2,
+            "data_types": {
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "PORT CONTAINER REPAIR FEES (KOCU4717043)",
+              "DELIVERY ORDER, TERMINAL HANDLING, DO & LOCAL DHL FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 2,
+            "data_types": {
+              "<class 'str'>": 1,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              21.78352620830497
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 1
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 15,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 2
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 9
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0016623",
+              "HVDC-ADOPT-SCT-0038",
+              "SELA34449500"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0016623"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-SCT-0038"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "SELA34449500"
+            ]
+          }
+        ]
+      },
+      "SCT0122": {
+        "name": "SCT0122",
+        "dimensions": "29 rows x 8 columns",
+        "total_cells": 232,
+        "non_empty_cells": "81",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 13,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 13
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 8
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'str'>": 9
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE",
+              "TERMINAL HANDLING FEE (1 X 20DC)",
+              "TRANSPORTATION CHARGES (1 X 20DC) FROM KHALIFA PORT TO DSV MUSSAFAH YARD"
+            ],
+            "unique_count": 9
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'int'>": 4,
+              "<class 'float'>": 3,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150,
+              372,
+              252
+            ],
+            "unique_count": 7
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              1,
+              1
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 21,
+            "data_types": {
+              "<class 'int'>": 10,
+              "<class 'str'>": 6,
+              "<class 'float'>": 5
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 15
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 13,
+            "data_types": {
+              "<class 'str'>": 12,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017824",
+              "HVDC-ADOPT-SCT-0122",
+              "MEDUMD743842"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017824"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-SCT-0122"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "MEDUMD743842"
+            ]
+          }
+        ]
+      },
+      "SCT0131": {
+        "name": "SCT0131",
+        "dimensions": "28 rows x 8 columns",
+        "total_cells": 224,
+        "non_empty_cells": "74",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 12,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 12
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'str'>": 7
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 8
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE",
+              "TERMINAL HANDLING CHARGES (CW: 2136 KG)",
+              "TRANSPORTATION CHARGES (1 FB) FROM AUH AIRPORT TO MOSB"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'int'>": 3,
+              "<class 'float'>": 3,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150,
+              0.55,
+              200
+            ],
+            "unique_count": 7
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'int'>": 6,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              2136,
+              1
+            ],
+            "unique_count": 4
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 20,
+            "data_types": {
+              "<class 'int'>": 9,
+              "<class 'str'>": 6,
+              "<class 'float'>": 5
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 15
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 12,
+            "data_types": {
+              "<class 'str'>": 11,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017825",
+              "HVDC-ADOPT-SCT-0131",
+              "176-13032924"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017825"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-SCT-0131"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "176-13032924"
+            ]
+          }
+        ]
+      },
+      "SCT0123,0124": {
+        "name": "SCT0123,0124",
+        "dimensions": "30 rows x 8 columns",
+        "total_cells": 240,
+        "non_empty_cells": "94",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 15,
+            "data_types": {
+              "<class 'int'>": 9,
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 15
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 10,
+            "data_types": {
+              "<class 'str'>": 10
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 11,
+            "data_types": {
+              "<class 'str'>": 11
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE",
+              "TERMINAL HANDLING FEE (1 X 40HC)",
+              "TRANSPORTATION CHARGES (1 X 40HC) FROM KP TO DSV MUSSAFAH YARD"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 10,
+            "data_types": {
+              "<class 'int'>": 5,
+              "<class 'float'>": 4,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150,
+              479,
+              252
+            ],
+            "unique_count": 9
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 11,
+            "data_types": {
+              "<class 'int'>": 9,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              1,
+              1
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 22,
+            "data_types": {
+              "<class 'int'>": 10,
+              "<class 'str'>": 6,
+              "<class 'float'>": 6
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 17
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 15,
+            "data_types": {
+              "<class 'str'>": 14,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017918",
+              "HVDC-ADOPT-SCT-0123, 0124",
+              "SELA26992900"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017918"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-SCT-0123, 0124"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "SELA26992900"
+            ]
+          }
+        ]
+      },
+      "SCT0134": {
+        "name": "SCT0134",
+        "dimensions": "28 rows x 8 columns",
+        "total_cells": 224,
+        "non_empty_cells": "80",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 13,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 13
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 8
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'str'>": 9
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE",
+              "TERMINAL HANDLING CHARGES (CW: 2136 KG)",
+              "TRANSPORTATION CHARGES (3 TON PU) FROM AUH AIRPORT TO MOSB"
+            ],
+            "unique_count": 9
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'int'>": 4,
+              "<class 'float'>": 3,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150,
+              0.55,
+              100
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 9,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              2178,
+              1
+            ],
+            "unique_count": 4
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 20,
+            "data_types": {
+              "<class 'int'>": 9,
+              "<class 'str'>": 6,
+              "<class 'float'>": 5
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 16
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 13,
+            "data_types": {
+              "<class 'str'>": 12,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0018127",
+              "HVDC-ADOPT-SCT-0134",
+              "176-19855570"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0018127"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-SCT-0134"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "176-19855570"
+            ]
+          }
+        ]
+      },
+      "HE0471": {
+        "name": "HE0471",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017761",
+              "HVDC-ADOPT-HE-0471",
+              "RTM1530265"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017761"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0471"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "RTM1530265"
+            ]
+          }
+        ]
+      },
+      "HE0472": {
+        "name": "HE0472",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017768",
+              "HVDC-ADOPT-HE-0472",
+              "RTM1534281"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017768"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0472"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "RTM1534281"
+            ]
+          }
+        ]
+      },
+      "HE0473": {
+        "name": "HE0473",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017769",
+              "HVDC-ADOPT-HE-0473",
+              "RTM1534707"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017769"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0473"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "RTM1534707"
+            ]
+          }
+        ]
+      },
+      "HE0450,0459,0460": {
+        "name": "HE0450,0459,0460",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017867",
+              "HVDC-ADOPT-HE-0450, 0459, 0460",
+              "MEDUUX613372"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017867"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0450, 0459, 0460"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "MEDUUX613372"
+            ]
+          }
+        ]
+      },
+      "HE0466,0467,0468": {
+        "name": "HE0466,0467,0468",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017960",
+              "HVDC-ADOPT-HE-0466,0467,0468",
+              "MEDUUX624155"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017960"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0466,0467,0468"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "MEDUUX624155"
+            ]
+          }
+        ]
+      },
+      "HE0464,0465,0470": {
+        "name": "HE0464,0465,0470",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017886",
+              "HVDC-ADOPT-HE-0464,0465,0470",
+              "MEDUOS792143"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017886"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0464,0465,0470"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "MEDUOS792143"
+            ]
+          }
+        ]
+      },
+      "HE0437,0438-2,0439-2,0440-1,044": {
+        "name": "HE0437,0438-2,0439-2,0440-1,044",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017895",
+              "HVDC-ADOPT-HE-0437,0438-2,0439-2,0440-2,0441-1",
+              "MEDUUX614404"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017895"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0437,0438-2,0439-2,0440-2,0441-1"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "MEDUUX614404"
+            ]
+          }
+        ]
+      },
+      "HE0487": {
+        "name": "HE0487",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017784",
+              "HVDC-ADOPT-HE-0487",
+              "607-50516421"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017784"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0487"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-50516421"
+            ]
+          }
+        ]
+      },
+      "HE0438-0454": {
+        "name": "HE0438-0454",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017782",
+              "HVDC-ADOPT-HE-0438, 0439, 0440-1, 0441, 0482, 0454",
+              "MEDUUX604827"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017782"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0438, 0439, 0440-1, 0441, 0482, 0454"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "MEDUUX604827"
+            ]
+          }
+        ]
+      },
+      "HE0425,0426,0427,0428": {
+        "name": "HE0425,0426,0427,0428",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0018017",
+              "HVDC-ADOPT-HE-0425, 0426, 0427, 0428",
+              "MEDUUX603290"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0018017"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0425, 0426, 0427, 0428"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "MEDUUX603290"
+            ]
+          }
+        ]
+      },
+      "HE0475": {
+        "name": "HE0475",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              150
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 10
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0018063",
+              "HVDC-ADOPT-HE-0475",
+              "RTM1534689"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0018063"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0475"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "RTM1534689"
+            ]
+          }
+        ]
+      },
+      "HE0497": {
+        "name": "HE0497",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              2,
+              2,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017944",
+              "HVDC-ADOPT-HE-0497",
+              "607-50516443"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017944"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0497"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-50516443"
+            ]
+          }
+        ]
+      },
+      "HE0500": {
+        "name": "HE0500",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017956",
+              "HVDC-ADOPT-HE-0500",
+              "607-50517600"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017956"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0500"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-50517600"
+            ]
+          }
+        ]
+      },
+      "HE0488": {
+        "name": "HE0488",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017779",
+              "HVDC-ADOPT-HE-0488",
+              "607-50516406"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017779"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0488"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-50516406"
+            ]
+          }
+        ]
+      },
+      "HE0495,0496": {
+        "name": "HE0495,0496",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              2,
+              2,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017809",
+              "HVDC-ADOPT-HE-0495, 0496",
+              "607-50516432"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017809"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0495, 0496"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-50516432"
+            ]
+          }
+        ]
+      },
+      "HE0498": {
+        "name": "HE0498",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0018061",
+              "HVDC-ADOPT-HE-0498",
+              "607-37272745"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0018061"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0498"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-37272745"
+            ]
+          }
+        ]
+      },
+      "HE0501": {
+        "name": "HE0501",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0018095",
+              "HVDC-ADOPT-HE-0501",
+              "607-50201874"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0018095"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0501"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-50201874"
+            ]
+          }
+        ]
+      },
+      "HE0502": {
+        "name": "HE0502",
+        "dimensions": "22 rows x 8 columns",
+        "total_cells": 176,
+        "non_empty_cells": "43",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 8
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "CONTRACT",
+              "CONTRACT"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'str'>": 3
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "CUSTOMS CLEARANCE FEE"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 3,
+            "data_types": {
+              "<class 'int'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              80,
+              150
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 4,
+            "data_types": {
+              "<class 'str'>": 2,
+              "<class 'int'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              "AED"
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 14,
+            "data_types": {
+              "<class 'int'>": 7,
+              "<class 'str'>": 6,
+              "<class 'float'>": 1
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "MBL Number:"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'str'>": 7,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0018089",
+              "HVDC-ADOPT-HE-0502",
+              "607-36126425"
+            ],
+            "unique_count": 7
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0018089"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0502"
+            ]
+          },
+          {
+            "row_index": 9,
+            "non_null_count": "2",
+            "values": [
+              "MBL Number:",
+              "607-36126425"
+            ]
+          }
+        ]
+      },
+      "HE0499L1": {
+        "name": "HE0499L1",
+        "dimensions": "29 rows x 8 columns",
+        "total_cells": 232,
+        "non_empty_cells": "97",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 16,
+            "data_types": {
+              "<class 'int'>": 10,
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 16
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 11,
+            "data_types": {
+              "<class 'str'>": 11
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "DUTY",
+              "DUTY",
+              "DUTY",
+              "DUTY"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 11,
+            "data_types": {
+              "<class 'str'>": 11
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "BILL OF ENTRY",
+              "REGISTERATION FEE & KNOWLEDGE DIRHAM",
+              "DOCS PROCESSING",
+              "GATE PASS CHARGES"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 11,
+            "data_types": {
+              "<class 'float'>": 7,
+              "<class 'int'>": 3,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              24.51,
+              15.72,
+              8.58
+            ],
+            "unique_count": 9
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 12,
+            "data_types": {
+              "<class 'int'>": 10,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              1,
+              1
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 21,
+            "data_types": {
+              "<class 'float'>": 9,
+              "<class 'int'>": 7,
+              "<class 'str'>": 5
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "TOTAL (USD)"
+            ],
+            "unique_count": 16
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 15,
+            "data_types": {
+              "<class 'str'>": 14,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017813",
+              "HVDC-ADOPT-HE-0499(LOT1)",
+              "REMARK"
+            ],
+            "unique_count": 6
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017813"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0499(LOT1)"
+            ]
+          }
+        ]
+      },
+      "HE0499L2": {
+        "name": "HE0499L2",
+        "dimensions": "27 rows x 8 columns",
+        "total_cells": 216,
+        "non_empty_cells": "71",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 11,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 5
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 11
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 6,
+            "data_types": {
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "DUTY",
+              "DUTY",
+              "DUTY",
+              "DUTY"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 6,
+            "data_types": {
+              "<class 'str'>": 6
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "BILL OF ENTRY",
+              "GATE PASS CHARGES",
+              "CUSTOMS INSPECITON",
+              "PRO CUSTOMS"
+            ],
+            "unique_count": 6
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 6,
+            "data_types": {
+              "<class 'int'>": 3,
+              "<class 'float'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              8.58,
+              125,
+              150
+            ],
+            "unique_count": 5
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 10,
+            "data_types": {
+              "<class 'int'>": 8,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              1,
+              1
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 19,
+            "data_types": {
+              "<class 'int'>": 10,
+              "<class 'str'>": 5,
+              "<class 'float'>": 4
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "TOTAL (USD)"
+            ],
+            "unique_count": 12
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 13,
+            "data_types": {
+              "<class 'str'>": 12,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0017919",
+              "HVDC-ADOPT-HE-0499(LOT2)",
+              "REMARK"
+            ],
+            "unique_count": 6
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0017919"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0499(LOT2)"
+            ]
+          }
+        ]
+      },
+      "HE0499L3": {
+        "name": "HE0499L3",
+        "dimensions": "25 rows x 8 columns",
+        "total_cells": 200,
+        "non_empty_cells": "69",
+        "is_empty": false,
+        "columns": [
+          {
+            "index": 1,
+            "name": "1",
+            "non_null_count": 12,
+            "data_types": {
+              "<class 'str'>": 6,
+              "<class 'int'>": 6
+            },
+            "sample_values": [
+              "Bill to:",
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "P.O. Box 42654",
+              "Abu Dhabi, United Arab Emirates\t",
+              "S/No"
+            ],
+            "unique_count": 12
+          },
+          {
+            "index": 2,
+            "name": "2",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'str'>": 7
+            },
+            "sample_values": [
+              "RATE SOURCE",
+              "DUTY",
+              "DUTY",
+              "DUTY",
+              "DUTY"
+            ],
+            "unique_count": 2
+          },
+          {
+            "index": 3,
+            "name": "3",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'str'>": 7
+            },
+            "sample_values": [
+              "DESCRIPTION",
+              "MASTER DO FEE",
+              "DOCUMENT PROCESSING FEE",
+              "CUSTOMS INSPECTION",
+              "CUSTOMS INSPECTION (PRO Requirement)"
+            ],
+            "unique_count": 7
+          },
+          {
+            "index": 4,
+            "name": "4",
+            "non_null_count": 7,
+            "data_types": {
+              "<class 'int'>": 4,
+              "<class 'float'>": 2,
+              "<class 'str'>": 1
+            },
+            "sample_values": [
+              "RATE",
+              150,
+              20.01,
+              125,
+              150
+            ],
+            "unique_count": 5
+          },
+          {
+            "index": 5,
+            "name": "5",
+            "non_null_count": 8,
+            "data_types": {
+              "<class 'int'>": 6,
+              "<class 'str'>": 2
+            },
+            "sample_values": [
+              "Q'TY",
+              1,
+              1,
+              1,
+              1
+            ],
+            "unique_count": 3
+          },
+          {
+            "index": 6,
+            "name": "6",
+            "non_null_count": 17,
+            "data_types": {
+              "<class 'int'>": 8,
+              "<class 'str'>": 5,
+              "<class 'float'>": 4
+            },
+            "sample_values": [
+              "Draft Invoice Date:",
+              "Customer ID:",
+              "CW1 Job Number:",
+              "Order Ref. Number:",
+              "TOTAL (USD)"
+            ],
+            "unique_count": 12
+          },
+          {
+            "index": 7,
+            "name": "7",
+            "non_null_count": 11,
+            "data_types": {
+              "<class 'str'>": 10,
+              "<class 'datetime.datetime'>": 1
+            },
+            "sample_values": [
+              "2025-10-07 00:00:00",
+              "6410059266",
+              "BAMF0018111",
+              "HVDC-ADOPT-HE-0499(LOT3)",
+              "REMARK"
+            ],
+            "unique_count": 6
+          }
+        ],
+        "sample_data": [
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          },
+          {
+            "0": NaN,
+            "1": NaN,
+            "2": NaN,
+            "3": NaN,
+            "4": NaN,
+            "5": NaN,
+            "6": NaN,
+            "7": NaN
+          }
+        ],
+        "header_candidates": [
+          {
+            "row_index": 5,
+            "non_null_count": "3",
+            "values": [
+              "Bill to:",
+              "Draft Invoice Date:",
+              "2025-10-07 00:00:00"
+            ]
+          },
+          {
+            "row_index": 6,
+            "non_null_count": "3",
+            "values": [
+              "SAMSUNG C&T CORPORATION ABU DHABI",
+              "Customer ID:",
+              "6410059266"
+            ]
+          },
+          {
+            "row_index": 7,
+            "non_null_count": "3",
+            "values": [
+              "P.O. Box 42654",
+              "CW1 Job Number:",
+              "BAMF0018111"
+            ]
+          },
+          {
+            "row_index": 8,
+            "non_null_count": "3",
+            "values": [
+              "Abu Dhabi, United Arab Emirates\t",
+              "Order Ref. Number:",
+              "HVDC-ADOPT-HE-0499(LOT3)"
+            ]
+          }
+        ]
+      }
+    },
+    "summary": {
+      "total_sheets": 29,
+      "data_sheets": 29,
+      "empty_sheets": 0
+    }
+  },
+  "field_mapping": {
+    "invoice_number": [],
+    "invoice_date": [],
+    "amount": [
+      {
+        "sheet": "SEPT",
+        "column": "16",
+        "index": 16,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "17",
+        "index": 17,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "18",
+        "index": 18,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "19",
+        "index": 19,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "20",
+        "index": 20,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "21",
+        "index": 21,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "22",
+        "index": 22,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "23",
+        "index": 23,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "24",
+        "index": 24,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "24",
+        "index": 24,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "25",
+        "index": 25,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "26",
+        "index": 26,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0127",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0122",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0131",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0123,0124",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0134",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L1",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L1",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L2",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L2",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L3",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      }
+    ],
+    "currency": [
+      {
+        "sheet": "SEPT",
+        "column": "25",
+        "index": 25,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0038",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0471",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0472",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0473",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0450,0459,0460",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0466,0467,0468",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0464,0465,0470",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0487",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0438-0454",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0425,0426,0427,0428",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0475",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0497",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0500",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0488",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0495,0496",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0498",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0501",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0502",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L1",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L2",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L3",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      }
+    ],
+    "shipment_reference": [
+      {
+        "sheet": "SEPT",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "5",
+        "index": 5,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "18",
+        "index": 18,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "26",
+        "index": 26,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "26",
+        "index": 26,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SEPT",
+        "column": "26",
+        "index": 26,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0126",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0127",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0038",
+        "column": "3",
+        "index": 3,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0038",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0122",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0131",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0123,0124",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0134",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0471",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0472",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0473",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0450,0459,0460",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0466,0467,0468",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0464,0465,0470",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0487",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0438-0454",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0425,0426,0427,0428",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0475",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0497",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0500",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0488",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0495,0496",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0498",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0501",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0502",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      }
+    ],
+    "vendor": [
+      {
+        "sheet": "SCT0126",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0127",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0038",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0122",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0131",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0123,0124",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "SCT0134",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0471",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0472",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0473",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0450,0459,0460",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0466,0467,0468",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0464,0465,0470",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0487",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0438-0454",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0425,0426,0427,0428",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0475",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0497",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0500",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0488",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0495,0496",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0498",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0501",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0502",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L1",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L2",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      },
+      {
+        "sheet": "HE0499L3",
+        "column": "6",
+        "index": 6,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "recommendations": {
+    "primary_sheet": "SEPT",
+    "mapping_strategy": "automated_with_review"
+  }
+}

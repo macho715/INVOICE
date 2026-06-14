@@ -1,0 +1,54 @@
+# HVDC PDF Parser System - Required Packages
+# ============================================
+# Version: 1.0.0
+# Last Updated: 2025-10-13
+
+# PDF Processing
+pdfplumber>=0.10.0
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+
+# Ontology & RDF
+rdflib>=7.0.0
+SPARQLWrapper>=2.0.0
+
+# Data Validation
+pydantic>=2.0.0
+python-dateutil>=2.8.0
+
+# HTTP & API
+requests>=2.31.0
+urllib3>=2.0.0
+
+# YAML Configuration
+PyYAML>=6.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+
+# Logging
+colorlog>=6.7.0
+
+# Optional: OCR Engines (Cloud Services)
+# boto3>=1.28.0  # AWS Textract
+# google-cloud-documentai>=2.20.0  # Google Document AI
+# azure-ai-formrecognizer>=3.3.0  # Azure Form Recognizer
+
+# Optional: Database
+# psycopg2-binary>=2.9.0  # PostgreSQL
+# pymongo>=4.5.0  # MongoDB
+# redis>=5.0.0  # Redis Cache
+
+# Optional: API Server
+# fastapi>=0.104.0
+# uvicorn[standard]>=0.24.0
+# python-multipart>=0.0.6
+
+# Development Tools
+black>=23.0.0
+flake8>=6.1.0
+mypy>=1.5.0
+isort>=5.12.0
+

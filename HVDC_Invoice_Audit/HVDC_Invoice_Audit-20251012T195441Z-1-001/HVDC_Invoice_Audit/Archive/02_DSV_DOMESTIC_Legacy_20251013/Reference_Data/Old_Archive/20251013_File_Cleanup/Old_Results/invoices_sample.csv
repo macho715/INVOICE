@@ -1,0 +1,9 @@
+shipment_ref,origin,destination,vehicle,unit,rate_usd,amount_usd,quantity,distance_km,currency,supplier_grade
+HVDC-ADOPT-SCT-0066,DSV Mussafah Yard,MIRFA SITE,FLATBED,per truck,420,,1,120,USD,A
+HVDC-DSV-MOSB-DSV-112,MOSB,DSV MUSSAFAH YARD,FLATBED,per truck,200,,1,10,USD,A
+HVDC-DSV-MOSB-SHU-101,DSV M44 WAREHOUSE,SHUWEIHAT Site,FLATBED,per truck,600,,1,250,USD,B
+HVDC-DSV-MOSB-ALM-117,Mina Freeport,Mina Freeport,LOWBED,per truck,980.26,,1,5,USD,A
+HVDC-KEC-DIP-098,KEC DIP DUBAI,SHUWEIHAT,FLATBED,per truck,980,,1,161.4,USD,A
+HVDC-OD-UNKNOWN,Random Yard,Unknown Site,FLATBED,per truck,450,,1,118,USD,C
+HVDC-AED-TEST,DSV Mussafah Yard,MIRFA SITE,FLATBED,per truck,420,1542.45,1,120,AED,A
+HVDC-ANOMALY,DSV Mussafah Yard,MIRFA SITE,FLATBED,per truck,1500,,1,120,USD,A

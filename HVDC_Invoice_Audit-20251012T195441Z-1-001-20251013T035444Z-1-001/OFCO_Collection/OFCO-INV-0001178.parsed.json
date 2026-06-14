@@ -1,0 +1,1596 @@
+{
+  "meta": {
+    "invoice_number": "OFCO-INV-0001178",
+    "invoice_date": "15-Jul-2025",
+    "customer_name": null,
+    "supplier_name": null,
+    "samsung_ref": null,
+    "vat_percent": 5.0,
+    "currency": "AED",
+    "total_amount": 41375.75
+  },
+  "items": [
+    {
+      "SUBJECT": "1Agency fee: Berthing Arrangement",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT(AF FOR BA)",
+      "COST CENTER B": "CONTRACT",
+      "PRICE CENTER": "AGENCY FEE FOR BERTHING ARRANGEMENT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Channel Transit Permission / Pilot",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "2SAFEEN INV-62102- Berthing",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Unberthing & Pilotage- Rot#",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "3ADP INV-61871 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT DUES & SERVICES CHARGES",
+      "PRICE CENTER": "PORT DUES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "4SAFEEN INV-61206- Permits &",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "5SAFEEN INV-59089- Permits &",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "6ADP INV01250701362- PHC 5%1.00 1,472.56 LS1,472.56 73.63 1,546.19",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "7ADP INV01250701317- PHC 5%1.00 2,627.64 LS2,627.64 131.38 2,759.02",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "8ADP INV01250701313- PHC 5%1.00 2,631.72 LS2,631.72 131.59 2,763.31",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "9ADP INV01250701342- PHC 5%1.00 151.12 LS 151.12 7.56 158.68",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "10ADP INV01250701329- Port crane",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "11ADP INV01250701337- Port Forklift",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "12ADP INV01250701338- PHC 5%1.00 1,553.44 LS1,553.44 77.67 1,631.11",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "14Agency fee: Port Crane arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "15Agency fee: Port Forklift arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "16PTW Application Fee 5%4.00 40.84 LS 163.36 8.17 171.53",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "17Agency fee: Arranging FW Supply",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "AF FOR FW SA",
+      "PRICE CENTER": "SUPPLY WATER 5000IG",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "18Agency fee: Berthing Arrangement",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT(AF FOR BA)",
+      "COST CENTER B": "CONTRACT",
+      "PRICE CENTER": "AGENCY FEE FOR BERTHING ARRANGEMENT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "19SAFEEN INV-64761- Berthing",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "20ADP INV-64761 - Port Dues & Services 5%1.00 320.95 LS 320.95 16.05 337.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT DUES & SERVICES CHARGES",
+      "PRICE CENTER": "PORT DUES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "21ADP INV01250701390- Port Forklift",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "22ADP INV01250701380- PHC 5%1.00 2,439.75 LS2,439.75 121.99 2,561.74",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "23ADP INV01250701389- PHC 5%1.00 1,644.66 LS1,644.66 82.23 1,726.89",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "24SAFEEN INV-62067- Permits &",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "25ADP INV01250701405- PHC 5%1.00 736.28 LS 736.28 36.81 773.09",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "27Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "28Agency fee: Port Forklift arrangement 5%3.00 54.46 LS 163.38 8.17 171.55",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "29PTW Application Fee 5%2.00 40.84 LS 81.68 4.08 85.76Name : Samsung C&T Corporation-Abu Dhabi",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "151,952.44 3.6725 7,597.63 159,550.0730Agency fee: Arranging FW Supply",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "AF FOR FW SA",
+      "PRICE CENTER": "SUPPLY WATER 5000IG",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "31Agency fee: Berthing Arrangement",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT(AF FOR BA)",
+      "COST CENTER B": "CONTRACT",
+      "PRICE CENTER": "AGENCY FEE FOR BERTHING ARRANGEMENT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "32SAFEEN INV-66741- Berthing",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "33ADP INV-66716 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT DUES & SERVICES CHARGES",
+      "PRICE CENTER": "PORT DUES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "34ADP INV01250701421- PHC 5%1.00 887.68 LS 887.68 44.38 932.06",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "35ADP INV01250701411- PHC 5%1.00 1,539.82 LS1,539.82 76.99 1,616.81",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "37PTW Application Fee 5%1.00 40.84 LS 40.84 2.04 42.88",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "38Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "39Agency fee: Port Forklift arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "45Agency Fee: Gate Pass Arrangement 5%5.00 2.72 LS 13.60 0.68 14.28",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "DOCUMENTATION",
+      "COST CENTER B": "GATE PASS",
+      "PRICE CENTER": "GATE PASS",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "46Agency fee: Equipment Pass",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "1 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "BERTHING/SHIFTING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "7 7.1 Pilotage Normal-Vessel 12-Jul-2025 14:30:00 to 1,000.00 0 0.00 1,000.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "9 7.1 Pilotage Normal-Vessel 11-Jul-2025 13:30:00 to 1,000.00 0 0.00 1,000.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "13 7.1 Pilotage Normal-Vessel 09-Jul-2025 21 :45:00 to 1,000.00 0 0.00 1,000.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "14 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "BERTHING/SHIFTING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "15 7.1 Pilotage Normal-Vessel 13-Jul-2025 14:15:00 to 1,500.00 0 0.00 1,500.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Payment can be made by Cheque payable to Abu Dhabi Marine Services Co-SAFEEN LLC or by direct bank transfer to the following",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "1 6.1 Waste Handling First Domestic Skip 09-Jul-2025 700.00 0 0.00 700.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "WASTE HANDLING",
+      "COST CENTER B": "WASTE",
+      "PRICE CENTER": "WASTE HANDLING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "2 100.1 & 100.2 Port Dues Cargo 09-Jul-2025 23:15:00 to 13-Jul- 618.05 0 0.00 618.05",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Payment Storage Date",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "STORAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Free Storage End Date : 100208828200003",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "STORAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Lorry Mounted Crane 76-1 00T 0.000 (Other Cargo)",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Forklifts 6-12T (Other Cargo) 0.000",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Mobile Crane 41-65T (Other 0.000 Cargo)",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Free Storage End Date",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "STORAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "501.2 Mobile Crane 21-40T (Other",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Free Storage End Date SOL",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "STORAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "2 504.5 Forklifts 6-12T (Other Cargo}",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Mobile Crane 21-40T (Other 0.000 Cargo)",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "MARINE PTW -Working Overwater (over-side) _M-PTW-ZP-202s-226SlM-PTW-202s-24436",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Permit Record No. M-PTW-2025-24436",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "PTW APPLICANT DETAILS",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Permit Record No. M-PTW-2025-24435 Page I of7",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "MARINE PTW -Hot Work _M-PTW-ZP-2025-22548",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "MARINE PTW -Working Overwater (over-side) _M-PTW-ZP-2025-22077M-PTW-2025-23908",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Permit Record No. M-PTW-2025-23840 Page I of7",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "MARINE PTW -Hot Work _M-PTW-ZP-2025-21956",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "15.03.2026.pdf; Maritime Declaration of Health.docx; Waste details.xlsx; BUSHRA CREWLIST -JULY 2025.docx; 3.Uniform-Ships-Pre ­",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "WASTE HANDLING",
+      "COST CENTER B": "WASTE",
+      "PRICE CENTER": "WASTE HANDLING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "RE: [EXTERNAL]Re: Equipment Request (Crane/ Forklift/ MAFI Trailer) in Mina Zayed Berth# 5 &",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "SYSTEM <mzd.DBS@adports.ae>; MZD -GCSUPERINTENDENTS <mzd.GCSupt@adports.ae>; ADPorts MZD",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Subject: RE: [EXTERNAL]Re: Equipment Request (Crane/ Forklift/ MAFI Trailer) in Mina Zayed Berth# 5 & MZ Yard",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "SYSTEM <mzd.DBS@adRorts .ae>; MZD -GCSUPERINTENDENTS <mzd.GCSuRt@adRorts.ae >; ADPorts MZD",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "SYSTEM <mzd.DBS@adRorts.ae>; MZD -GCSUPERINTENDENTS <mzd.GCSup t@adRorts .ae>; ADPorts MZD",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": null,
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Berthing Unberthing and Shifting Normal-Vessel",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "BERTHING/SHIFTING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "1 100.1&100.2 Port Dues Cargo 20-Jul-2025 05.35:00 to 23-Jul- 478.70 0 0.00 478.70",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "2 6.1 Waste Handling First Domestic Skip 20-Jul-2025 700.00 0 0.00 700.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "WASTE HANDLING",
+      "COST CENTER B": "WASTE",
+      "PRICE CENTER": "WASTE HANDLING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "1 502.3 Forklifts 6-12T (Other Cargo) 0.000 1.000 0.000 340.00 340.00 0.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Forklifts 13-25T (Other Cargo) 0.000",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Free Storage End Date : 23-Jul-2025 00:00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "STORAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "MARINE PTW -Working Overwater (over-side) _M-PTW-ZP-202s-22185M-PTW-2025 -24692",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Permit Record No. M·PTW-2025-24692",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "PTW APPUCANT DETAILS",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "and/or brought to the site? MARINE PTW -Hot Work _M-PTW-ZP-2025-22733",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "M-PTW-2025-24691",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "2 7.1 Pilotage Normal-Vessel 28-Jul-2025 06:00:00 to 1,500.00 0 0.00 1,500.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "3 7.1 Pilotage Normal-Vessel 01-Aug-2025 19:30:00 to 1,000.00 0 0.00 1,000.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "4 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "BERTHING/SHIFTING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "5 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "BERTHING/SHIFTING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "1 6.1 Waste Handling First Domestic Skip 28-Jul-2025 700.00 0 0.00 700.00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "WASTE HANDLING",
+      "COST CENTER B": "WASTE",
+      "PRICE CENTER": "WASTE HANDLING",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "2 100.1 & 100.2 Port Dues Cargo 28-Jul-2025 07:50:00 to 01- 618.05 0 0.00 618.05",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Free Storage End Date : 29-Jul-2025 00:00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "STORAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "I Mobile Crane 21-401 (Other 0.000 Cargo)",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "2 502.3 Forklifts 6-121 (Other Cargo) 0.000",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Free Storage End Date : 28-Jul-2025 00:00",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": null,
+      "COST CENTER A": null,
+      "COST CENTER B": null,
+      "PRICE CENTER": "STORAGE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "501.2 Mobile Crane 21-40T (Other 0.000 3.000 0.000 I 575.00 1,725.00 o.oot--0.00 I Cargo)",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "'T' DIGITAL Forklifts 6-12T (Other Cargo) 0 000",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Permit Record No. M-PTW-2025-25081 Page I of7",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "MARINE PTW -Hot Work _M-PTW-ZP-2025-23111",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Equipment Request (Crane/ Forklift) in Mina Zayed Berth -LCT BUSH RA OPS",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "Equipment's: Crane & Forklift",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "• Crane: 50Ton (To offload materials from vessel to jetty)",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "• Forklift: 05Ton (To Shift the materials from Jetty to yard)",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "• Crane: 50Ton",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "• Forklift: 05Ton",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "FORKLIFT",
+      "PRICE CENTER": "FORKLIFT",
+      "NOTES": null
+    },
+    {
+      "SUBJECT": "certificates in order to submit the Hot Work PTW.",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": null,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "PTW APPLICATION",
+      "PRICE CENTER": "PTW APPLICATION",
+      "NOTES": null
+    }
+  ],
+  "audit": {
+    "total_amount_from_items": 0.0,
+    "total_deviation_pct": 100.0,
+    "within_tolerance": false,
+    "item_ea_rate_checks": [
+      {
+        "subject": "1Agency fee: Berthing Arrangement",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Channel Transit Permission / Pilot",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "2SAFEEN INV-62102- Berthing",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Unberthing & Pilotage- Rot#",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "3ADP INV-61871 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "4SAFEEN INV-61206- Permits &",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "5SAFEEN INV-59089- Permits &",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "6ADP INV01250701362- PHC 5%1.00 1,472.56 LS1,472.56 73.63 1,546.19",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "7ADP INV01250701317- PHC 5%1.00 2,627.64 LS2,627.64 131.38 2,759.02",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "8ADP INV01250701313- PHC 5%1.00 2,631.72 LS2,631.72 131.59 2,763.31",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "9ADP INV01250701342- PHC 5%1.00 151.12 LS 151.12 7.56 158.68",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "10ADP INV01250701329- Port crane",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "11ADP INV01250701337- Port Forklift",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "12ADP INV01250701338- PHC 5%1.00 1,553.44 LS1,553.44 77.67 1,631.11",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "14Agency fee: Port Crane arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "15Agency fee: Port Forklift arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "16PTW Application Fee 5%4.00 40.84 LS 163.36 8.17 171.53",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "17Agency fee: Arranging FW Supply",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "18Agency fee: Berthing Arrangement",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "19SAFEEN INV-64761- Berthing",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "20ADP INV-64761 - Port Dues & Services 5%1.00 320.95 LS 320.95 16.05 337.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "21ADP INV01250701390- Port Forklift",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "22ADP INV01250701380- PHC 5%1.00 2,439.75 LS2,439.75 121.99 2,561.74",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "23ADP INV01250701389- PHC 5%1.00 1,644.66 LS1,644.66 82.23 1,726.89",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "24SAFEEN INV-62067- Permits &",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "25ADP INV01250701405- PHC 5%1.00 736.28 LS 736.28 36.81 773.09",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "27Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "28Agency fee: Port Forklift arrangement 5%3.00 54.46 LS 163.38 8.17 171.55",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "29PTW Application Fee 5%2.00 40.84 LS 81.68 4.08 85.76Name : Samsung C&T Corporation-Abu Dhabi",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "151,952.44 3.6725 7,597.63 159,550.0730Agency fee: Arranging FW Supply",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "31Agency fee: Berthing Arrangement",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "32SAFEEN INV-66741- Berthing",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "33ADP INV-66716 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "34ADP INV01250701421- PHC 5%1.00 887.68 LS 887.68 44.38 932.06",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "35ADP INV01250701411- PHC 5%1.00 1,539.82 LS1,539.82 76.99 1,616.81",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "37PTW Application Fee 5%1.00 40.84 LS 40.84 2.04 42.88",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "38Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "39Agency fee: Port Forklift arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "45Agency Fee: Gate Pass Arrangement 5%5.00 2.72 LS 13.60 0.68 14.28",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "46Agency fee: Equipment Pass",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "1 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "7 7.1 Pilotage Normal-Vessel 12-Jul-2025 14:30:00 to 1,000.00 0 0.00 1,000.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "9 7.1 Pilotage Normal-Vessel 11-Jul-2025 13:30:00 to 1,000.00 0 0.00 1,000.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "13 7.1 Pilotage Normal-Vessel 09-Jul-2025 21 :45:00 to 1,000.00 0 0.00 1,000.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "14 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "15 7.1 Pilotage Normal-Vessel 13-Jul-2025 14:15:00 to 1,500.00 0 0.00 1,500.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Payment can be made by Cheque payable to Abu Dhabi Marine Services Co-SAFEEN LLC or by direct bank transfer to the following",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "1 6.1 Waste Handling First Domestic Skip 09-Jul-2025 700.00 0 0.00 700.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "2 100.1 & 100.2 Port Dues Cargo 09-Jul-2025 23:15:00 to 13-Jul- 618.05 0 0.00 618.05",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Payment Storage Date",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Free Storage End Date : 100208828200003",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Lorry Mounted Crane 76-1 00T 0.000 (Other Cargo)",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Forklifts 6-12T (Other Cargo) 0.000",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Mobile Crane 41-65T (Other 0.000 Cargo)",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Free Storage End Date",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "501.2 Mobile Crane 21-40T (Other",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Free Storage End Date SOL",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "2 504.5 Forklifts 6-12T (Other Cargo}",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Mobile Crane 21-40T (Other 0.000 Cargo)",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "MARINE PTW -Working Overwater (over-side) _M-PTW-ZP-202s-226SlM-PTW-202s-24436",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Permit Record No. M-PTW-2025-24436",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "PTW APPLICANT DETAILS",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Permit Record No. M-PTW-2025-24435 Page I of7",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "MARINE PTW -Hot Work _M-PTW-ZP-2025-22548",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "MARINE PTW -Working Overwater (over-side) _M-PTW-ZP-2025-22077M-PTW-2025-23908",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Permit Record No. M-PTW-2025-23840 Page I of7",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "MARINE PTW -Hot Work _M-PTW-ZP-2025-21956",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "15.03.2026.pdf; Maritime Declaration of Health.docx; Waste details.xlsx; BUSHRA CREWLIST -JULY 2025.docx; 3.Uniform-Ships-Pre ­",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "RE: [EXTERNAL]Re: Equipment Request (Crane/ Forklift/ MAFI Trailer) in Mina Zayed Berth# 5 &",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "SYSTEM <mzd.DBS@adports.ae>; MZD -GCSUPERINTENDENTS <mzd.GCSupt@adports.ae>; ADPorts MZD",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Subject: RE: [EXTERNAL]Re: Equipment Request (Crane/ Forklift/ MAFI Trailer) in Mina Zayed Berth# 5 & MZ Yard",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "SYSTEM <mzd.DBS@adRorts .ae>; MZD -GCSUPERINTENDENTS <mzd.GCSuRt@adRorts.ae >; ADPorts MZD",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "SYSTEM <mzd.DBS@adRorts.ae>; MZD -GCSUPERINTENDENTS <mzd.GCSup t@adRorts .ae>; ADPorts MZD",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Berthing Unberthing and Shifting Normal-Vessel",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "1 100.1&100.2 Port Dues Cargo 20-Jul-2025 05.35:00 to 23-Jul- 478.70 0 0.00 478.70",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "2 6.1 Waste Handling First Domestic Skip 20-Jul-2025 700.00 0 0.00 700.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "1 502.3 Forklifts 6-12T (Other Cargo) 0.000 1.000 0.000 340.00 340.00 0.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Forklifts 13-25T (Other Cargo) 0.000",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Free Storage End Date : 23-Jul-2025 00:00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "MARINE PTW -Working Overwater (over-side) _M-PTW-ZP-202s-22185M-PTW-2025 -24692",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Permit Record No. M·PTW-2025-24692",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "PTW APPUCANT DETAILS",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "and/or brought to the site? MARINE PTW -Hot Work _M-PTW-ZP-2025-22733",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "M-PTW-2025-24691",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "2 7.1 Pilotage Normal-Vessel 28-Jul-2025 06:00:00 to 1,500.00 0 0.00 1,500.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "3 7.1 Pilotage Normal-Vessel 01-Aug-2025 19:30:00 to 1,000.00 0 0.00 1,000.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "4 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "5 10.1 Berthing Unberthing and Shifting Normal-Vessel 320.00 0 0.00 320.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "1 6.1 Waste Handling First Domestic Skip 28-Jul-2025 700.00 0 0.00 700.00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "2 100.1 & 100.2 Port Dues Cargo 28-Jul-2025 07:50:00 to 01- 618.05 0 0.00 618.05",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Free Storage End Date : 29-Jul-2025 00:00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "I Mobile Crane 21-401 (Other 0.000 Cargo)",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "2 502.3 Forklifts 6-121 (Other Cargo) 0.000",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Free Storage End Date : 28-Jul-2025 00:00",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "501.2 Mobile Crane 21-40T (Other 0.000 3.000 0.000 I 575.00 1,725.00 o.oot--0.00 I Cargo)",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "'T' DIGITAL Forklifts 6-12T (Other Cargo) 0 000",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Permit Record No. M-PTW-2025-25081 Page I of7",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "MARINE PTW -Hot Work _M-PTW-ZP-2025-23111",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Equipment Request (Crane/ Forklift) in Mina Zayed Berth -LCT BUSH RA OPS",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Equipment's: Crane & Forklift",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "• Crane: 50Ton (To offload materials from vessel to jetty)",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "• Forklift: 05Ton (To Shift the materials from Jetty to yard)",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "• Crane: 50Ton",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "• Forklift: 05Ton",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "certificates in order to submit the Hot Work PTW.",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: broker
+  namespace: hybrid-doc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: broker
+  template:
+    metadata:
+      labels:
+        app: broker
+    spec:
+      containers:
+        - name: broker
+          image: rabbitmq:3.13-management
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: broker
+  namespace: hybrid-doc
+spec:
+  selector:
+    app: broker
+  ports:
+    - name: amqp
+      port: 5672
+      targetPort: 5672
+    - name: mgmt
+      port: 15672
+      targetPort: 15672

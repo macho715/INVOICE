@@ -1,0 +1,177 @@
+# LPO(Local Purchase Order) RDF 매핑 규칙
+# ABU WhatsApp 대화 데이터 기반
+
+namespaces:
+  hvdc: "https://hvdc.example.org/ns#"
+  hvdci: "https://hvdc.example.org/id/"
+  lpo: "https://hvdc.example.org/ns/lpo#"
+  org: "http://www.w3.org/ns/org#"
+  abu: "https://abu-dhabi.example.org/ns#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+entity_mapping:
+  # LPO 헤더 정보
+  lpo_header:
+    type: "lpo:LocalPurchaseOrder"
+    properties:
+      - field: "lpo_number"
+        property: "lpo:lpoNumber"
+        datatype: "xsd:string"
+      - field: "description"
+        property: "lpo:description"
+        datatype: "xsd:string"
+      - field: "vendor"
+        property: "lpo:vendorName"
+        datatype: "xsd:string"
+      - field: "date"
+        property: "lpo:issueDate"
+        datatype: "xsd:date"
+      - field: "location"
+        property: "lpo:deliveryLocation"
+        datatype: "xsd:string"
+      - field: "category"
+        property: "lpo:category"
+        datatype: "xsd:string"
+      - field: "responsible_person"
+        property: "abu:responsiblePerson"
+        datatype: "xsd:string"
+
+  # LPO 라인 아이템 (상세 정보)
+  lpo_line_item:
+    type: "lpo:LPOLineItem"
+    properties:
+      - field: "lpo_number"
+        property: "lpo:parentLPO"
+        datatype: "xsd:string"
+      - field: "description"
+        property: "lpo:description"
+        datatype: "xsd:string"
+      - field: "vendor"
+        property: "lpo:vendorName"
+        datatype: "xsd:string"
+      - field: "category"
+        property: "lpo:category"
+        datatype: "xsd:string"
+      - field: "location"
+        property: "lpo:deliveryLocation"
+        datatype: "xsd:string"
+
+  # 공급업체 정보
+  vendor_organization:
+    type: "org:Organization"
+    properties:
+      - field: "vendor"
+        property: "org:name"
+        datatype: "xsd:string"
+      - field: "vendor"
+        property: "rdfs:label"
+        datatype: "xsd:string"
+
+  # 위치 정보
+  delivery_location:
+    type: "abu:AbuDhabiLocation"
+    properties:
+      - field: "location"
+        property: "abu:locationName"
+        datatype: "xsd:string"
+      - field: "location"
+        property: "rdfs:label"
+        datatype: "xsd:string"
+
+business_rules:
+  # 필수 필드
+  required_fields:
+    - lpo_number
+    - description
+    - vendor
+    - date
+    - location
+
+  # 검증 규칙
+  validation_rules:
+    lpo_number_pattern: "^LPO-\\d{3,4}$"
+    location_values: ["AGI", "DAS", "MOSB", "MW4", "ALS"]
+    category_values: ["Stationary", "Electrical", "Construction", "Maintenance", "Furniture", "Kitchen", "Safety", "General", "Other"]
+
+  # 변환 규칙
+  conversion_rules:
+    date_format: "%y/%m/%d"  # WhatsApp 날짜 형식
+    output_date_format: "%Y-%m-%d"  # RDF 출력 형식
+    currency_default: "AED"
+    status_default: "Issued"
+
+  # 카테고리 매핑 규칙
+  category_mapping:
+    Stationary:
+      keywords: ["stationary", "office", "paper", "cup", "tissue"]
+      description: "사무용품 및 소모품"
+    Electrical:
+      keywords: ["elec", "wire", "cable", "electrical", "power"]
+      description: "전기 관련 자재"
+    Construction:
+      keywords: ["upvc", "steel", "conduit", "scaffolding", "kerb"]
+      description: "건설 자재"
+    Maintenance:
+      keywords: ["maintenance", "filter", "grease", "chemical"]
+      description: "유지보수 자재"
+    Furniture:
+      keywords: ["furniture", "bed", "cabinet", "shelving"]
+      description: "가구 및 인테리어"
+    Kitchen:
+      keywords: ["kitchen", "dish", "pantry", "food"]
+      description: "주방 관련 용품"
+    Safety:
+      keywords: ["protective", "sling", "webbing", "rope"]
+      description: "안전 장비"
+    General:
+      keywords: ["general", "consumable", "items"]
+      description: "일반 소모품"
+
+# 관계 정의
+relationships:
+  lpo_to_vendor:
+    subject: "lpo:LocalPurchaseOrder"
+    predicate: "lpo:hasVendor"
+    object: "org:Organization"
+
+  lpo_to_location:
+    subject: "lpo:LocalPurchaseOrder"
+    predicate: "lpo:hasDeliveryLocation"
+    object: "abu:AbuDhabiLocation"
+
+  lpo_to_line_item:
+    subject: "lpo:LocalPurchaseOrder"
+    predicate: "lpo:hasLineItem"
+    object: "lpo:LPOLineItem"
+
+  lpo_to_invoice:
+    subject: "lpo:LocalPurchaseOrder"
+    predicate: "lpo:generatesInvoice"
+    object: "hvdc:Invoice"
+
+  lpo_to_shipment:
+    subject: "lpo:LocalPurchaseOrder"
+    predicate: "lpo:relatesToShipment"
+    object: "hvdc:Shipment"
+
+# URI 생성 규칙
+uri_generation:
+  lpo_uri_pattern: "hvdci:LPO/{lpo_number}"
+  vendor_uri_pattern: "hvdci:Organization/{vendor_normalized}"
+  location_uri_pattern: "hvdci:Location/{location}"
+  line_item_uri_pattern: "hvdci:LPOLineItem/{lpo_number}-{line_number}"
+
+# 데이터 품질 규칙
+data_quality:
+  confidence_threshold: 0.85
+  validation_checks:
+    - lpo_number_format
+    - vendor_name_completeness
+    - location_validity
+    - date_format_consistency
+  error_handling:
+    missing_vendor: "Unknown_Vendor"
+    missing_location: "Unknown_Location"
+    invalid_date: "1900-01-01"

@@ -1,0 +1,26 @@
+
+Subject: Request for Trip Distance Confirmation - Domestic Deliveries (Sept 2025)
+
+Dear DSV Team,
+
+We are finalizing the September 2025 domestic invoice validation.
+
+Kindly confirm the trip distances (km) for the attached 7 lines 
+where the distance is currently recorded as 0.
+
+For each line, please provide:
+1) Origin/Destination (as dispatched)
+2) Actual trip distance (km) and method (GPS/ERP/Route plan)
+3) Any short-run minimum fare evidence (if applicable)
+
+We will update our reference map accordingly and proceed with validation.
+
+Please fill in the yellow-highlighted columns in the attached Excel file and 
+return it to us at your earliest convenience.
+
+Attachment: VENDOR_DISTANCE_REQUEST_SEPT2025.xlsx
+
+Thank you for your prompt support.
+
+Best regards,
+HVDC Audit Team

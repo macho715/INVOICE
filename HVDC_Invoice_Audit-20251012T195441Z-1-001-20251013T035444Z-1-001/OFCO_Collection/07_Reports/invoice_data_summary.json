@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-20T00:28:25.070461",
+  "rdf_data": {
+    "total_invoices": 29,
+    "namespaces": {
+      "brick": "https://brickschema.org/schema/Brick#",
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "dcmitype": "http://purl.org/dc/dcmitype/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "dcam": "http://purl.org/dc/dcam/",
+      "doap": "http://usefulinc.com/ns/doap#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "odrl": "http://www.w3.org/ns/odrl/2/",
+      "org": "http://www.w3.org/ns/org#",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "qb": "http://purl.org/linked-data/cube#",
+      "schema": "https://schema.org/",
+      "sh": "http://www.w3.org/ns/shacl#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "sosa": "http://www.w3.org/ns/sosa/",
+      "ssn": "http://www.w3.org/ns/ssn/",
+      "time": "http://www.w3.org/2006/time#",
+      "vann": "http://purl.org/vocab/vann/",
+      "void": "http://rdfs.org/ns/void#",
+      "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "hvdc": "https://hvdc.example.org/ns#"
+    }
+  },
+  "analysis": {
+    "currency_distribution": {},
+    "vendor_distribution": {
+      "BOE Issued Date": 1
+    },
+    "total_amount": 1171.0,
+    "avg_amount": 46.84
+  },
+  "comparison": {
+    "comparison_available": true,
+    "rdf_invoice_count": 29,
+    "excel_row_count": 33,
+    "conversion_rate": 87.87878787878788,
+    "data_quality": {
+      "rdf_completeness": 0.0,
+      "excel_completeness": 61.50392817059483,
+      "field_mapping_accuracy": 0
+    }
+  }
+}

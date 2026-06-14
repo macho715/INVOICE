@@ -1,0 +1,8 @@
+[
+  "test_contract_validation.py::TestContractValidation::test_should_calculate_delta_for_overcharged_contract",
+  "test_contract_validation.py::TestContractValidation::test_should_classify_contract_item",
+  "test_contract_validation.py::TestContractValidation::test_should_find_ref_rate_for_standard_contract_item",
+  "test_contract_validation.py::TestContractValidation::test_should_find_ref_rate_for_transportation_contract",
+  "test_contract_validation.py::TestContractValidation::test_should_handle_customs_clearance_contract",
+  "test_contract_validation.py::TestContractValidation::test_should_return_none_for_unknown_contract_item"
+]

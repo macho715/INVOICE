@@ -1,0 +1,525 @@
+@prefix hvdc: <https://hvdc.example.org/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://hvdc.example.org/id/Invoice/HE-0425__0426__0427__0428_20251020> a hvdc:Invoice ;
+    hvdc:currency "33929/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "MEDUUX603290" ;
+    hvdc:hasContainerNumber "ITGOA" ;
+    hvdc:hasJobNumber "BAMF0018017" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0425, 0426, 0427, 0428" ;
+    hvdc:hasVendor "2025-09-18 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0425__0426__0427__0428> ;
+    hvdc:title "17" ;
+    hvdc:totalAmount 8.0 ;
+    hvdc:unit "4" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0437_0438-2_0439-2_0440-2_0441-1_20251020> a hvdc:Invoice ;
+    hvdc:currency "32796/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "MEDUUX614404" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0017895" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0437,0438-2,0439-2,0440-2,0441-1" ;
+    hvdc:hasVendor "2025-09-11 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0437_0438-2_0439-2_0440-2_0441-1> ;
+    hvdc:title "14" ;
+    hvdc:totalAmount 8.0 ;
+    hvdc:unit "1" ;
+    hvdc:unitPrice 5.255 .
+
+<https://hvdc.example.org/id/Invoice/HE-0438__0439__0440-1__0441__0482__0454_20251020> a hvdc:Invoice ;
+    hvdc:currency "30650/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "MEDUUX604827" ;
+    hvdc:hasContainerNumber "SEGOT" ;
+    hvdc:hasJobNumber "BAMF0017782" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0438, 0439, 0440-1, 0441, 0482, 0454" ;
+    hvdc:hasVendor "2025-08-27 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0438__0439__0440-1__0441__0482__0454> ;
+    hvdc:title "16" ;
+    hvdc:totalAmount 40.0 ;
+    hvdc:unit "5" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0450__0459__0460_20251020> a hvdc:Invoice ;
+    hvdc:currency "32351/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "MEDUUX613372" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0017867" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0450, 0459, 0460" ;
+    hvdc:hasVendor "2025-09-09 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0450__0459__0460> ;
+    hvdc:title "11" ;
+    hvdc:totalAmount 41.0 ;
+    hvdc:unit "6" ;
+    hvdc:unitPrice 314.45 .
+
+<https://hvdc.example.org/id/Invoice/HE-0464__0465__0470_20251020> a hvdc:Invoice ;
+    hvdc:currency "32789/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "MEDUOS792143" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0017886" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0464, 0465, 0470" ;
+    hvdc:hasVendor "2025-09-11 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0464__0465__0470> ;
+    hvdc:title "13" ;
+    hvdc:totalAmount 116.0 ;
+    hvdc:unit "7" ;
+    hvdc:unitPrice 254.87 .
+
+<https://hvdc.example.org/id/Invoice/HE-0466__0467__0468_20251020> a hvdc:Invoice ;
+    hvdc:currency "33387/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "MEDUUX624155" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0017960" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0466, 0467, 0468" ;
+    hvdc:hasVendor "2025-09-15 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0466__0467__0468> ;
+    hvdc:title "12" ;
+    hvdc:totalAmount 8.0 ;
+    hvdc:unit "1" ;
+    hvdc:unitPrice 25.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0471_20251020> a hvdc:Invoice ;
+    hvdc:currency "31514/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "ANRB45303" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0017761" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0471" ;
+    hvdc:hasVendor "2025-09-02 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0471> ;
+    hvdc:title "8" ;
+    hvdc:totalAmount 4.0 ;
+    hvdc:unit "4" ;
+    hvdc:unitPrice 153.188 .
+
+<https://hvdc.example.org/id/Invoice/HE-0472_20251020> a hvdc:Invoice ;
+    hvdc:currency "31530/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "RTM1534281" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0017768" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0472" ;
+    hvdc:hasVendor "2025-09-02 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0472> ;
+    hvdc:title "9" ;
+    hvdc:totalAmount 6.0 ;
+    hvdc:unit "6" ;
+    hvdc:unitPrice 229.782 .
+
+<https://hvdc.example.org/id/Invoice/HE-0473_20251020> a hvdc:Invoice ;
+    hvdc:currency "31521/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "RTM1534707" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0017769" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0473" ;
+    hvdc:hasVendor "2025-09-02 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0473> ;
+    hvdc:title "10" ;
+    hvdc:totalAmount 7.0 ;
+    hvdc:unit "7" ;
+    hvdc:unitPrice 268.079 .
+
+<https://hvdc.example.org/id/Invoice/HE-0475_20251020> a hvdc:Invoice ;
+    hvdc:currency "34344/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 300.0 ;
+    hvdc:hasBLNumber "RTM1534689" ;
+    hvdc:hasContainerNumber "BEANR" ;
+    hvdc:hasJobNumber "BAMF0018063" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0475" ;
+    hvdc:hasVendor "2025-09-23 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0475> ;
+    hvdc:title "18" ;
+    hvdc:totalAmount 4.0 ;
+    hvdc:unit "4" ;
+    hvdc:unitPrice 153.188 .
+
+<https://hvdc.example.org/id/Invoice/HE-0487_20251020> a hvdc:Invoice ;
+    hvdc:currency "47395/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 230.0 ;
+    hvdc:hasBLNumber "607-50516421" ;
+    hvdc:hasContainerNumber "NLAMS" ;
+    hvdc:hasJobNumber "BAMF0017784" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0487" ;
+    hvdc:hasVendor "2025-09-02 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0487> ;
+    hvdc:title "15" ;
+    hvdc:totalAmount 5.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0488_20251020> a hvdc:Invoice ;
+    hvdc:currency "47325/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 230.0 ;
+    hvdc:hasBLNumber "607-50516406" ;
+    hvdc:hasContainerNumber "NLAMS" ;
+    hvdc:hasJobNumber "BAMF0017779" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0488" ;
+    hvdc:hasVendor "2025-09-02 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0488> ;
+    hvdc:title "21" ;
+    hvdc:totalAmount 8.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0495__0496_20251020> a hvdc:Invoice ;
+    hvdc:currency "47626/2025, 47628/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "160"^^xsd:date ;
+    hvdc:exchangeRate 460.0 ;
+    hvdc:hasBLNumber "607-50516432" ;
+    hvdc:hasContainerNumber "DKCPH" ;
+    hvdc:hasJobNumber "BAMF0017809" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0495, 0496" ;
+    hvdc:hasVendor "2025-09-03 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "300" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0495__0496> ;
+    hvdc:title "22" ;
+    hvdc:totalAmount 16.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0497_20251020> a hvdc:Invoice ;
+    hvdc:currency "49510/2025 & 49512/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "160"^^xsd:date ;
+    hvdc:exchangeRate 460.0 ;
+    hvdc:hasBLNumber "607-50516443" ;
+    hvdc:hasContainerNumber "NLAMS" ;
+    hvdc:hasJobNumber "BAMF0017944" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0497" ;
+    hvdc:hasVendor "2025-09-12 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "300" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0497> ;
+    hvdc:title "19" ;
+    hvdc:totalAmount 61.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0498_20251020> a hvdc:Invoice ;
+    hvdc:currency "51596/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 230.0 ;
+    hvdc:hasBLNumber "607-37272745" ;
+    hvdc:hasContainerNumber "ATLNZ" ;
+    hvdc:hasJobNumber "BAMF0018061" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0498" ;
+    hvdc:hasVendor "2025-09-22 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0498> ;
+    hvdc:title "23" ;
+    hvdc:totalAmount 23.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0499__LOT1__20251020> a hvdc:Invoice ;
+    hvdc:currency "102-08509705-25" ;
+    hvdc:description "-" ;
+    hvdc:exchangeRate 2691.77 ;
+    hvdc:hasBLNumber "CI-01256-25" ;
+    hvdc:hasContainerNumber "-" ;
+    hvdc:hasJobNumber "BAMF0017813" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0499 (LOT1)" ;
+    hvdc:hasVendor "2025-09-03 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0499__LOT1_> ;
+    hvdc:title "26" ;
+    hvdc:unit "-" .
+
+<https://hvdc.example.org/id/Invoice/HE-0499__LOT2__20251020> a hvdc:Invoice ;
+    hvdc:currency "102-08538719-25" ;
+    hvdc:description "-" ;
+    hvdc:exchangeRate 1422.76 ;
+    hvdc:hasBLNumber "CI-01260-25" ;
+    hvdc:hasContainerNumber "-" ;
+    hvdc:hasJobNumber "BAMF0017919" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0499 (LOT2)" ;
+    hvdc:hasVendor "2025-09-11 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0499__LOT2_> ;
+    hvdc:title "27" ;
+    hvdc:unit "-" .
+
+<https://hvdc.example.org/id/Invoice/HE-0499__LOT3__20251020> a hvdc:Invoice ;
+    hvdc:currency "102-08566354-25" ;
+    hvdc:description "-" ;
+    hvdc:exchangeRate 1584.19 ;
+    hvdc:hasBLNumber "-" ;
+    hvdc:hasContainerNumber "-" ;
+    hvdc:hasJobNumber "BAMF0018111" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0499 (LOT3)" ;
+    hvdc:hasVendor "2025-09-19 00:00:00" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0499__LOT3_> ;
+    hvdc:title "28" ;
+    hvdc:unit "-" .
+
+<https://hvdc.example.org/id/Invoice/HE-0500_20251020> a hvdc:Invoice ;
+    hvdc:currency "49975/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 230.0 ;
+    hvdc:hasBLNumber "607-50517600" ;
+    hvdc:hasContainerNumber "DKCPH" ;
+    hvdc:hasJobNumber "BAMF0017956" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0500" ;
+    hvdc:hasVendor "2025-09-15 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0500> ;
+    hvdc:title "20" ;
+    hvdc:totalAmount 2.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0501_20251020> a hvdc:Invoice ;
+    hvdc:currency "52048/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 230.0 ;
+    hvdc:hasBLNumber "607-50201874" ;
+    hvdc:hasContainerNumber "ATLNZ" ;
+    hvdc:hasJobNumber "BAMF0018095" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0501" ;
+    hvdc:hasVendor "2025-09-24 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0501> ;
+    hvdc:title "24" ;
+    hvdc:totalAmount 1.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/HE-0502_20251020> a hvdc:Invoice ;
+    hvdc:currency "52050/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 230.0 ;
+    hvdc:hasBLNumber "607-36126425" ;
+    hvdc:hasContainerNumber "DEFRA" ;
+    hvdc:hasJobNumber "BAMF0018089" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-HE-0502" ;
+    hvdc:hasVendor "2025-09-24 00:00:00" ;
+    hvdc:invoiceDate "0"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/HE-0502> ;
+    hvdc:title "25" ;
+    hvdc:totalAmount 7.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 0.0 .
+
+<https://hvdc.example.org/id/Invoice/SCT-0038_20251020> a hvdc:Invoice ;
+    hvdc:currency "5324/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:exchangeRate 21.78352620830497 ;
+    hvdc:hasBLNumber "SELA65901100" ;
+    hvdc:hasContainerNumber "KRPUS" ;
+    hvdc:hasJobNumber "BAMF0016623" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-SCT-0038" ;
+    hvdc:hasVendor "2025-02-11 00:00:00" ;
+    hvdc:invoiceDate "7"^^xsd:date ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/SCT-0038> ;
+    hvdc:title "3" ;
+    hvdc:totalAmount 38.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 194.045 .
+
+<https://hvdc.example.org/id/Invoice/SCT-0122_20251020> a hvdc:Invoice ;
+    hvdc:approvalStatus "252" ;
+    hvdc:currency "32265/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 994.7964601769911 ;
+    hvdc:hasBLNumber "MEDUMD743842" ;
+    hvdc:hasContainerNumber "KRPUS" ;
+    hvdc:hasJobNumber "BAMF0017824" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-SCT-0122" ;
+    hvdc:hasVendor "2025-09-08 00:00:00" ;
+    hvdc:invoiceDate "1"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/SCT-0122> ;
+    hvdc:status "372" ;
+    hvdc:title "4" ;
+    hvdc:totalAmount 4.0 ;
+    hvdc:unit "1" ;
+    hvdc:unitPrice 4.67 .
+
+<https://hvdc.example.org/id/Invoice/SCT-0123__0124_20251020> a hvdc:Invoice ;
+    hvdc:approvalStatus "252" ;
+    hvdc:currency "33676/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 1112.5194009530292 ;
+    hvdc:hasBLNumber "SELA26992900" ;
+    hvdc:hasContainerNumber "KRPUS" ;
+    hvdc:hasJobNumber "BAMF0017918" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-SCT-0123, 0124" ;
+    hvdc:hasVendor "2025-09-17 00:00:00" ;
+    hvdc:invoiceDate "1"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/SCT-0123__0124> ;
+    hvdc:status "479" ;
+    hvdc:title "6" ;
+    hvdc:totalAmount 6.0 ;
+    hvdc:unit "1" ;
+    hvdc:unitPrice 30.74 .
+
+<https://hvdc.example.org/id/Invoice/SCT-0126_20251020> a hvdc:Invoice ;
+    hvdc:approvalStatus "1512" ;
+    hvdc:currency "30815/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 3308.0993873383254 ;
+    hvdc:hasBLNumber "CHN2595234" ;
+    hvdc:hasContainerNumber "KRPUS" ;
+    hvdc:hasJobNumber "BAMF0017659" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-SCT-0126" ;
+    hvdc:hasVendor "2025-08-28 00:00:00" ;
+    hvdc:invoiceDate "3"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/SCT-0126> ;
+    hvdc:status "1330" ;
+    hvdc:title "1" ;
+    hvdc:totalAmount 749.0 ;
+    hvdc:unit "3" ;
+    hvdc:unitPrice 155.0 .
+
+<https://hvdc.example.org/id/Invoice/SCT-0127_20251020> a hvdc:Invoice ;
+    hvdc:approvalStatus "252" ;
+    hvdc:currency "32824/2025" ;
+    hvdc:description "AEKHL" ;
+    hvdc:dueDate "150"^^xsd:date ;
+    hvdc:exchangeRate 989.8202859087814 ;
+    hvdc:hasBLNumber "EGLV142502495441" ;
+    hvdc:hasContainerNumber "CNSGH" ;
+    hvdc:hasJobNumber "BAMF0017850" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-SCT-0127" ;
+    hvdc:hasVendor "2025-09-11 00:00:00" ;
+    hvdc:invoiceDate "1"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/SCT-0127> ;
+    hvdc:status "372" ;
+    hvdc:title "2" ;
+    hvdc:totalAmount 1.0 ;
+    hvdc:unit "1" ;
+    hvdc:unitPrice 1.134 .
+
+<https://hvdc.example.org/id/Invoice/SCT-0131_20251020> a hvdc:Invoice ;
+    hvdc:approvalStatus "200" ;
+    hvdc:currency "48474/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 1621.6822328114365 ;
+    hvdc:hasBLNumber "176-13032924" ;
+    hvdc:hasContainerNumber "KRICN" ;
+    hvdc:hasJobNumber "BAMF0017825" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-SCT-0131" ;
+    hvdc:hasVendor "2025-09-08 00:00:00" ;
+    hvdc:invoiceDate "1"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/SCT-0131> ;
+    hvdc:status "1174.8000000000002" ;
+    hvdc:title "5" ;
+    hvdc:totalAmount 4.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 12.757 .
+
+<https://hvdc.example.org/id/Invoice/SCT-0134_20251020> a hvdc:Invoice ;
+    hvdc:approvalStatus "910" ;
+    hvdc:currency "52506/2025" ;
+    hvdc:description "AEAUH" ;
+    hvdc:dueDate "80"^^xsd:date ;
+    hvdc:exchangeRate 2354.7822328114366 ;
+    hvdc:hasBLNumber "176-19855570" ;
+    hvdc:hasContainerNumber "KRICN" ;
+    hvdc:hasJobNumber "BAMF0018127" ;
+    hvdc:hasShipmentReference "HVDC-ADOPT-SCT-0134" ;
+    hvdc:hasVendor "2025-09-26 00:00:00" ;
+    hvdc:invoiceDate "3"^^xsd:date ;
+    hvdc:paymentTerms "150" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/SCT-0134> ;
+    hvdc:status "1197.9" ;
+    hvdc:title "7" ;
+    hvdc:totalAmount 4.0 ;
+    hvdc:unit "0" ;
+    hvdc:unitPrice 2.11 .
+
+<https://hvdc.example.org/id/Invoice/Shpt_Ref_20251020> a hvdc:Invoice ;
+    hvdc:approvalStatus """TRANSPORTATION
+CHARGE""" ;
+    hvdc:currency "Bill of Entry Number" ;
+    hvdc:description "POD" ;
+    hvdc:hasBLNumber "BL #" ;
+    hvdc:hasContainerNumber "POL" ;
+    hvdc:hasJobNumber "Job #" ;
+    hvdc:hasShipmentReference "Shpt Ref" ;
+    hvdc:hasVendor "BOE Issued Date" ;
+    hvdc:notes """HOUSE
+DO
+CHARGE (BL EXCHANGE) / DELIVERY ORDER""" ;
+    hvdc:paymentTerms """CUSTOMS
+CLEARANCE
+CHARGE""" ;
+    hvdc:relatedShipment <https://hvdc.example.org/id/Shipment/Shpt_Ref> ;
+    hvdc:status "PORT HANDLING CHARGE" ;
+    hvdc:title "S/No" ;
+    hvdc:unit "No. Of CNTR" .
+

@@ -1,0 +1,67 @@
+# HVDC Pipeline 전체 설정
+# HVDC Pipeline Overall Configuration
+
+pipeline:
+  name: "HVDC_Pipeline_v2"
+  version: "2.0.0"
+  description: "HVDC 통합 파이프라인 - 데이터 동기화부터 이상치 탐지까지"
+
+stages:
+  stage1:
+    name: "Data Synchronization"
+    description: "원본 데이터 동기화 및 정제"
+    enabled: true
+    sorting:
+      enabled: true  # false로 설정 시 비정렬 버전 사용
+      sort_by_master_no: true
+      output_suffix: "_v2.9.4"  # 정렬 버전
+      no_sorting_suffix: "_v2.9.4_no_sorting"  # 비정렬 버전
+    io:
+      master_file: "data/raw/Case List.xlsx"
+      warehouse_file: "data/raw/HVDC WAREHOUSE_HITACHI(HE).xlsx"
+      output_file: "data/processed/synced/HVDC WAREHOUSE_HITACHI(HE).synced_v2.9.4.xlsx"
+
+  stage2:
+    name: "Derived Columns"
+    description: "13개 파생 컬럼 계산 및 추가"
+    enabled: true
+
+  stage3:
+    name: "Report Generation"
+    description: "종합 보고서 생성"
+    enabled: true
+    io:
+      data_root: "data/processed/derived"
+      hitachi_file: "data/processed/derived/HVDC WAREHOUSE_HITACHI(HE).xlsx"
+      siemens_file: "data/processed/derived/HVDC WAREHOUSE_SIMENSE(SIM).xlsx"
+      invoice_file: "data/processed/derived/HVDC WAREHOUSE_INVOICE.xlsx"
+      report_directory: "data/processed/reports"
+
+  stage4:
+    name: "Anomaly Detection"
+    description: "이상치 탐지 및 분석"
+    enabled: true
+    io:
+      input_file: "data/processed/reports/HVDC_입고로직_종합리포트_20251020_051118_v3.0-corrected.xlsx"
+      sheet_name: "통합_원본데이터_Fixed"  # Stage 3 통합 원본 데이터 시트 (인덱스 11)
+      excel_output: "data/anomaly/HVDC_anomaly_report.xlsx"
+      json_output: "data/anomaly/HVDC_anomaly_report.json"
+      visualization:
+        enable_by_default: false
+        case_column: "Case No."
+        backup_enabled: true
+
+paths:
+  data_root: "data"
+  scripts_root: "scripts"
+  config_root: "config"
+  docs_root: "docs"
+  logs_root: "logs"
+  temp_root: "temp"
+  synced_dir: "data/processed/synced"
+  derived_dir: "data/processed/derived"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/pipeline.log"

@@ -1,0 +1,131 @@
+2025-11-04 07:16:09,114 [INFO] SHPT Enhanced 시스템 초기화 완료 (Oct 2025)
+2025-11-04 07:16:09,132 [INFO] 송장 파일: C:\Users\SAMSUNG\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001-20251013T035444Z-1-001\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\01_DSV_SHPT\Data\DSV 202510\SCNT SHIPMENT DRAFT INVOICE (OCTOBER 2025).xlsm
+2025-11-04 07:16:09,136 [INFO] ================================================================================
+2025-11-04 07:16:09,139 [INFO] [START] SHPT Enhanced Oct 2025 full audit
+2025-11-04 07:16:09,152 [INFO] ================================================================================
+2025-11-04 07:16:09,157 [INFO] 📂 송장 파일 로드 중: SCNT SHIPMENT DRAFT INVOICE (OCTOBER 2025).xlsm
+2025-11-04 07:16:15,091 [INFO] [OK] File loaded successfully
+2025-11-04 07:16:15,128 [INFO] 📊 총 시트 수: 23
+2025-11-04 07:16:15,306 [INFO] [DOCS] SCNT (HVDC) Import Shipments (Oct 2025) - Supporting Documents: 22 PDFs found
+2025-11-04 07:16:15,409 [INFO] [OK] Total 22 shipment supporting documents mapped
+2025-11-04 07:16:15,429 [INFO] 
+📋 시트별 송장 항목 추출 및 검증 중...
+
+2025-11-04 07:16:15,494 [INFO]   [OK] OCT: 0 items extracted
+2025-11-04 07:16:15,592 [INFO]   [OK] SCT0136: 7 items extracted
+2025-11-04 07:16:16,012 [INFO]   [OK] SCT0137: 7 items extracted
+2025-11-04 07:16:16,308 [INFO]   [OK] SCT0139: 7 items extracted
+2025-11-04 07:16:16,499 [INFO]   [OK] SIM0099: 5 items extracted
+2025-11-04 07:16:16,565 [INFO]   [OK] HE0504: 2 items extracted
+2025-11-04 07:16:16,677 [INFO]   [OK] PPL0020: 7 items extracted
+2025-11-04 07:16:16,708 [INFO]   [OK] HE0508: 3 items extracted
+2025-11-04 07:16:16,773 [INFO]   [OK] SCT0133: 9 items extracted
+2025-11-04 07:16:16,832 [INFO]   [OK] HE0509: 3 items extracted
+2025-11-04 07:16:16,851 [INFO]   [OK] SCT0141: 6 items extracted
+2025-11-04 07:16:16,886 [INFO]   [OK] HE0484: 2 items extracted
+2025-11-04 07:16:16,912 [INFO]   [OK] HE0451,0452: 2 items extracted
+2025-11-04 07:16:16,980 [INFO]   [OK] SEI0022: 6 items extracted
+2025-11-04 07:16:17,033 [INFO]   [OK] HE0476: 3 items extracted
+2025-11-04 07:16:17,093 [INFO]   [OK] HE0510,0511: 2 items extracted
+2025-11-04 07:16:17,163 [INFO]   [OK] HE0483: 2 items extracted
+2025-11-04 07:16:17,192 [INFO]   [OK] SIM0102,0103: 5 items extracted
+2025-11-04 07:16:17,228 [INFO]   [OK] HE0485: 3 items extracted
+2025-11-04 07:16:17,290 [INFO]   [OK] HE0499L4: 6 items extracted
+2025-11-04 07:16:17,339 [INFO]   [OK] HE0516: 2 items extracted
+2025-11-04 07:16:17,352 [INFO]   [OK] HE0517: 2 items extracted
+2025-11-04 07:16:17,372 [INFO]   [OK] SCT0145: 7 items extracted
+2025-11-04 07:16:17,377 [INFO] 
+[OK] Total 98 items extracted and validated from 22 sheets
+2025-11-04 07:16:17,430 [INFO] 
+💾 JSON 결과 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001-20251013T035444Z-1-001\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\01_DSV_SHPT\Results\Oct_2025\JSON\shpt_oct_2025_enhanced_result_20251104_071617.json
+2025-11-04 07:16:17,482 [INFO] 💾 CSV 결과 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001-20251013T035444Z-1-001\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\01_DSV_SHPT\Results\Oct_2025\CSV\shpt_oct_2025_enhanced_result_20251104_071617.csv
+2025-11-04 07:16:17,492 [INFO] 💾 요약 리포트 저장: C:\Users\SAMSUNG\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001-20251013T035444Z-1-001\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\01_DSV_SHPT\Results\Oct_2025\Reports\shpt_oct_2025_enhanced_summary_20251104_071617.txt
+2025-11-04 07:16:17,497 [INFO] 
+================================================================================
+2025-11-04 07:16:17,504 [INFO] 📊 SHPT Enhanced 감사 결과 요약
+2025-11-04 07:16:17,507 [INFO] ================================================================================
+2025-11-04 07:16:17,511 [INFO] 
+총 시트 수: 22
+2025-11-04 07:16:17,512 [INFO] 총 항목 수: 98
+2025-11-04 07:16:17,513 [INFO] PASS: 0 (0.0%)
+2025-11-04 07:16:17,518 [INFO] 검토 필요: 72
+2025-11-04 07:16:17,523 [INFO] FAIL: 26
+2025-11-04 07:16:17,537 [INFO] 총 금액: $18,268.43 USD
+2025-11-04 07:16:17,543 [INFO] 
+📋 Charge Group 분석:
+2025-11-04 07:16:17,554 [INFO]   - Contract: 66개
+2025-11-04 07:16:17,561 [INFO]   - AtCost: 5개
+2025-11-04 07:16:17,579 [INFO]   - PortalFee: 19개 ← Enhanced 기능
+2025-11-04 07:16:17,589 [INFO]   - Other: 8개
+2025-11-04 07:16:17,597 [INFO] 
+🚪 Gate 검증 결과:
+2025-11-04 07:16:17,606 [INFO]   - Gate PASS: 0개 (0.0%)
+2025-11-04 07:16:17,614 [INFO]   - 평균 Gate Score: 62.5
+2025-11-04 07:16:17,625 [INFO] 
+📋 시트별 항목 수:
+2025-11-04 07:16:17,632 [INFO]   - SCT0136: 7개
+2025-11-04 07:16:17,641 [INFO]   - SCT0137: 7개
+2025-11-04 07:16:17,645 [INFO]   - SCT0139: 7개
+2025-11-04 07:16:17,649 [INFO]   - SIM0099: 5개
+2025-11-04 07:16:17,665 [INFO]   - HE0504: 2개
+2025-11-04 07:16:17,677 [INFO]   - PPL0020: 7개
+2025-11-04 07:16:17,691 [INFO]   - HE0508: 3개
+2025-11-04 07:16:17,696 [INFO]   - SCT0133: 9개
+2025-11-04 07:16:17,704 [INFO]   - HE0509: 3개
+2025-11-04 07:16:17,710 [INFO]   - SCT0141: 6개
+2025-11-04 07:16:17,713 [INFO]   - HE0484: 2개
+2025-11-04 07:16:17,723 [INFO]   - HE0451,0452: 2개
+2025-11-04 07:16:17,725 [INFO]   - SEI0022: 6개
+2025-11-04 07:16:17,728 [INFO]   - HE0476: 3개
+2025-11-04 07:16:17,739 [INFO]   - HE0510,0511: 2개
+2025-11-04 07:16:17,745 [INFO]   - HE0483: 2개
+2025-11-04 07:16:17,756 [INFO]   - SIM0102,0103: 5개
+2025-11-04 07:16:17,759 [INFO]   - HE0485: 3개
+2025-11-04 07:16:17,763 [INFO]   - HE0499L4: 6개
+2025-11-04 07:16:17,776 [INFO]   - HE0516: 2개
+2025-11-04 07:16:17,776 [INFO]   - HE0517: 2개
+2025-11-04 07:16:17,777 [INFO]   - SCT0145: 7개
+2025-11-04 07:16:17,780 [INFO] 
+================================================================================
+2025-11-04 07:16:17,780 [INFO] [COMPLETE] SHPT Enhanced audit finished!
+2025-11-04 07:16:17,788 [INFO] ================================================================================
+2025-11-04 07:16:17,793 [INFO] 
+[SUCCESS] Enhanced audit completed successfully.
+2025-11-04 07:16:17,799 [INFO] [SAVED] Results saved to Results/Oct_2025 directory.
+2025-11-04 07:16:17,809 [INFO] 
+[PORTAL FEE] 19 items:
+2025-11-04 07:16:17,812 [INFO]   - APPOINTMENT FEE
+2025-11-04 07:16:17,813 [INFO]     Draft: $7.35
+2025-11-04 07:16:17,814 [INFO]     Doc AED: 27.0
+2025-11-04 07:16:17,816 [INFO]     Ref USD: $7.35
+2025-11-04 07:16:17,820 [INFO]     Delta: 0.03%
+2025-11-04 07:16:17,826 [INFO]     Tolerance: +/-0.5%
+2025-11-04 07:16:17,832 [INFO]     Status: REVIEW_NEEDED
+2025-11-04 07:16:17,837 [INFO]   - DOCUMENT PROCESSING FEE
+2025-11-04 07:16:17,840 [INFO]     Draft: $9.53
+2025-11-04 07:16:17,841 [INFO]     Doc AED: 35.0
+2025-11-04 07:16:17,844 [INFO]     Ref USD: $9.53
+2025-11-04 07:16:17,847 [INFO]     Delta: 0.00%
+2025-11-04 07:16:17,852 [INFO]     Tolerance: +/-0.5%
+2025-11-04 07:16:17,855 [INFO]     Status: REVIEW_NEEDED
+2025-11-04 07:16:17,859 [INFO]   - APPOINTMENT FEE
+2025-11-04 07:16:17,862 [INFO]     Draft: $7.35
+2025-11-04 07:16:17,863 [INFO]     Doc AED: 27.0
+2025-11-04 07:16:17,865 [INFO]     Ref USD: $7.35
+2025-11-04 07:16:17,866 [INFO]     Delta: 0.03%
+2025-11-04 07:16:17,870 [INFO]     Tolerance: +/-0.5%
+2025-11-04 07:16:17,873 [INFO]     Status: REVIEW_NEEDED
+2025-11-04 07:16:17,874 [INFO]   - DOCUMENT PROCESSING FEE
+2025-11-04 07:16:17,875 [INFO]     Draft: $9.53
+2025-11-04 07:16:17,880 [INFO]     Doc AED: 35.0
+2025-11-04 07:16:17,889 [INFO]     Ref USD: $9.53
+2025-11-04 07:16:17,891 [INFO]     Delta: 0.00%
+2025-11-04 07:16:17,892 [INFO]     Tolerance: +/-0.5%
+2025-11-04 07:16:17,893 [INFO]     Status: REVIEW_NEEDED
+2025-11-04 07:16:17,894 [INFO]   - APPOINTMENT FEE
+2025-11-04 07:16:17,899 [INFO]     Draft: $7.35
+2025-11-04 07:16:17,904 [INFO]     Doc AED: 27.0
+2025-11-04 07:16:17,909 [INFO]     Ref USD: $7.35
+2025-11-04 07:16:17,912 [INFO]     Delta: 0.03%
+2025-11-04 07:16:17,912 [INFO]     Tolerance: +/-0.5%
+2025-11-04 07:16:17,926 [INFO]     Status: REVIEW_NEEDED

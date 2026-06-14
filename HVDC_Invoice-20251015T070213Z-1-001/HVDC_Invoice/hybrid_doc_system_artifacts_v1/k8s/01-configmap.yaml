@@ -1,0 +1,214 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hybrid-config
+  namespace: hybrid-doc
+data:
+  routing_rules.json: |
+    {
+      "version": "1.0",
+      "default_engine": "docling",
+      "daily_ade_budget_usd": 50.0,
+      "sensitivity_force_local": [
+        "contract",
+        "passport",
+        "price-sensitive"
+      ],
+      "rules": [
+        {
+          "name": "long_document",
+          "when": {
+            "pages_gt": 12
+          },
+          "action": {
+            "engine": "ade",
+            "reason": "long_doc"
+          }
+        },
+        {
+          "name": "table_dense",
+          "when": {
+            "table_density_gte": 0.3
+          },
+          "action": {
+            "engine": "ade",
+            "reason": "table_dense"
+          }
+        },
+        {
+          "name": "checkbox_caption_chart",
+          "when": {
+            "visual_relations": [
+              "checkbox",
+              "caption",
+              "chart"
+            ]
+          },
+          "action": {
+            "engine": "ade",
+            "reason": "visual_relations"
+          }
+        },
+        {
+          "name": "scan_skewed",
+          "when": {
+            "skew_deg_gte": 4.0
+          },
+          "action": {
+            "engine": "ade",
+            "reason": "scan_skew"
+          }
+        },
+        {
+          "name": "bl_boe_many_pages",
+          "when": {
+            "doc_type_in": [
+              "bl",
+              "boe"
+            ],
+            "pages_gte": 4
+          },
+          "action": {
+            "engine": "ade",
+            "reason": "bl_boe_pages"
+          }
+        },
+        {
+          "name": "ade_budget_guard",
+          "when": {
+            "ade_budget_exceeded": true
+          },
+          "action": {
+            "engine": "docling",
+            "reason": "budget_guard"
+          }
+        },
+        {
+          "name": "sensitive_force_local",
+          "when": {
+            "sensitivity_in": [
+              "contract",
+              "passport",
+              "price-sensitive"
+            ]
+          },
+          "action": {
+            "engine": "docling",
+            "reason": "sensitive"
+          }
+        },
+        {
+          "name": "engine_fallback",
+          "when": {
+            "engine_failed": true
+          },
+          "action": {
+            "engine": "swap",
+            "reason": "fallback_swap"
+          }
+        }
+      ],
+      "metrics_emit": [
+        "latency_ms",
+        "engine",
+        "pages",
+        "table_density",
+        "ade_cost_usd",
+        "cache_hit",
+        "retries"
+      ]
+    }
+  unified_ir_schema.yaml: |
+    version: "1.0"
+    info:
+      title: Unified Document IR (blocks+coords)
+      description: Engine-agnostic IR for Docling/ADE outputs
+    components:
+      types:
+        BBox:
+          type: object
+          properties:
+            page: {type: integer}
+            x0: {type: number}
+            y0: {type: number}
+            x1: {type: number}
+            y1: {type: number}
+        Block:
+          type: object
+          required: [type]
+          properties:
+            id: {type: string}
+            type: {type: string, enum: [text, table, figure, header, footer, field, checkbox]}
+            text: {type: string}
+            table:
+              type: object
+              properties:
+                rows: {type: array, items: {type: array, items: {type: string}}}
+                header: {type: boolean}
+            bbox: {$ref: '#/components/types/BBox'}
+            meta:
+              type: object
+              properties:
+                confidence: {type: number}
+                source_engine: {type: string}
+                page_idx: {type: integer}
+                relations:
+                  type: array
+                  items: {type: object, properties: {type: {type: string}, target_id: {type: string}}}
+    document:
+      type: object
+      required: [doc_id, engine, blocks]
+      properties:
+        doc_id: {type: string}
+        engine: {type: string, enum: [docling, ade]}
+        pages: {type: integer}
+        meta:
+          type: object
+          properties:
+            filename: {type: string}
+            mime: {type: string}
+            created_at: {type: string}
+            checksum_sha256: {type: string}
+        blocks:
+          type: array
+          items: {$ref: '#/components/types/Block'}
+    mapping:
+      invoice:
+        selectors:
+          invoice_no:
+            any:
+              - regex: "(Invoice No\.?|INV\.? No\.?)\s*[:#]?\s*([A-Za-z0-9\-_/]+)"
+                group: 2
+          bl_no:
+            any:
+              - regex: "(B\/L|BL|Bill of Lading)\s*(No\.?|#)\s*[:#]?\s*([A-Za-z0-9\-_/]+)"
+                group: 3
+          incoterms:
+            any:
+              - regex: "\\b(EXW|FOB|CIF|CFR|DAP|DDP|FCA|CPT|CIP|DPU)\\b"
+                group: 1
+          hs_code:
+            any:
+              - regex: "\\b(\\d{4}\\.\\d{2}\\.\\d{2}|\\d{6,10})\\b"
+                group: 1
+          qty:
+            any:
+              - regex: "\\bQty\\s*[:#]?\\s*(\\d+(?:\\.\\d+)?)\\b"
+                group: 1
+          unit:
+            any:
+              - regex: "\\b(PC|PCS|PKG|PKGS|SET|EA|KG|TON|CBM)\\b"
+                group: 1
+          subtotal:
+            any:
+              - regex: "(Sub[- ]?Total)\\s*[:]?\\s*([0-9,]+\\.?\\d*)"
+                group: 2
+          vat:
+            any:
+              - regex: "(VAT|Tax)\\s*[:]?\\s*([0-9,]+\\.?\\d*)"
+                group: 2
+          grand_total:
+            any:
+              - regex: "(Grand\\s*Total|Total\\s*Amount)\\s*[:]?\\s*([0-9,]+\\.?\\d*)"
+                group: 2
+

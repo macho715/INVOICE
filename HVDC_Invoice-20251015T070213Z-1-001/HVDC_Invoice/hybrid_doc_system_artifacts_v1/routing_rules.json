@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "default_engine": "docling",
+  "daily_ade_budget_usd": 50.0,
+  "sensitivity_force_local": [
+    "contract",
+    "passport",
+    "price-sensitive"
+  ],
+  "rules": [
+    {
+      "name": "long_document",
+      "when": {
+        "pages_gt": 12
+      },
+      "action": {
+        "engine": "ade",
+        "reason": "long_doc"
+      }
+    },
+    {
+      "name": "table_dense",
+      "when": {
+        "table_density_gte": 0.3
+      },
+      "action": {
+        "engine": "ade",
+        "reason": "table_dense"
+      }
+    },
+    {
+      "name": "checkbox_caption_chart",
+      "when": {
+        "visual_relations": [
+          "checkbox",
+          "caption",
+          "chart"
+        ]
+      },
+      "action": {
+        "engine": "ade",
+        "reason": "visual_relations"
+      }
+    },
+    {
+      "name": "scan_skewed",
+      "when": {
+        "skew_deg_gte": 4.0
+      },
+      "action": {
+        "engine": "ade",
+        "reason": "scan_skew"
+      }
+    },
+    {
+      "name": "bl_boe_many_pages",
+      "when": {
+        "doc_type_in": [
+          "bl",
+          "boe"
+        ],
+        "pages_gte": 4
+      },
+      "action": {
+        "engine": "ade",
+        "reason": "bl_boe_pages"
+      }
+    },
+    {
+      "name": "ade_budget_guard",
+      "when": {
+        "ade_budget_exceeded": true
+      },
+      "action": {
+        "engine": "docling",
+        "reason": "budget_guard"
+      }
+    },
+    {
+      "name": "sensitive_force_local",
+      "when": {
+        "sensitivity_in": [
+          "contract",
+          "passport",
+          "price-sensitive"
+        ]
+      },
+      "action": {
+        "engine": "docling",
+        "reason": "sensitive"
+      }
+    },
+    {
+      "name": "engine_fallback",
+      "when": {
+        "engine_failed": true
+      },
+      "action": {
+        "engine": "swap",
+        "reason": "fallback_swap"
+      }
+    }
+  ],
+  "metrics_emit": [
+    "latency_ms",
+    "engine",
+    "pages",
+    "table_density",
+    "ade_cost_usd",
+    "cache_hit",
+    "retries"
+  ]
+}
