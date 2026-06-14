@@ -1,0 +1,103 @@
+{
+  "version": "flow-rules-v3.5",
+  "description": "Flow 0~5 for HVDC (AGI/DAS MOSB mandatory + mixed=5)",
+  "flow_rules": [
+    {
+      "id": "FLOW-000",
+      "priority": 100,
+      "when": {
+        "expr": "not has_wh_in && not has_mosb_in && not has_site_in"
+      },
+      "then": {
+        "Flow_Code": 0,
+        "Flow_Desc": "Flow 0: Pre Arrival (no inbound observed)"
+      }
+    },
+    {
+      "id": "FLOW-100",
+      "priority": 110,
+      "when": {
+        "expr": "coalesce(Final_Location, site) in ['MIR','SHU'] && has_site_in && not has_wh_in && not has_mosb_in"
+      },
+      "then": {
+        "Flow_Code": 1,
+        "Flow_Desc": "Flow 1: Port → Site (direct, MIR/SHU only)"
+      }
+    },
+    {
+      "id": "FLOW-200",
+      "priority": 120,
+      "when": {
+        "expr": "coalesce(Final_Location, site) not in ['AGI','DAS'] && has_wh_in && not has_mosb_in"
+      },
+      "then": {
+        "Flow_Code": 2,
+        "Flow_Desc": "Flow 2: Port → WH → Site"
+      }
+    },
+    {
+      "id": "FLOW-300",
+      "priority": 130,
+      "when": {
+        "expr": "coalesce(Final_Location, site) in ['AGI','DAS'] && has_mosb_in && not has_wh_in"
+      },
+      "then": {
+        "Flow_Code": 3,
+        "Flow_Desc": "Flow 3: Port → MOSB → Site (AGI/DAS)"
+      }
+    },
+    {
+      "id": "FLOW-400",
+      "priority": 140,
+      "when": {
+        "expr": "coalesce(Final_Location, site) in ['AGI','DAS'] && has_wh_in && has_mosb_in"
+      },
+      "then": {
+        "Flow_Code": 4,
+        "Flow_Desc": "Flow 4: Port → WH → MOSB → Site (AGI/DAS)"
+      }
+    },
+    {
+      "id": "FLOW-500",
+      "priority": 150,
+      "when": {
+        "expr": "(has_wh_in && has_mosb_in && events_count >= 2) || (has_wh_in && not has_site_in) || (has_mosb_in && coalesce(Final_Location, site) is null)"
+      },
+      "then": {
+        "Flow_Code": 5,
+        "Flow_Desc": "Flow 5: Port → WH or(and) MOSB (mixed / waiting / incomplete)",
+        "Transit_Flag": true
+      }
+    },
+    {
+      "id": "FLOW-AGI-DAS-FORCE",
+      "priority": 999,
+      "when": {
+        "expr": "coalesce(Final_Location, site) in ['AGI','DAS'] && (Flow_Code == 0 || Flow_Code == 1 || Flow_Code == 2)"
+      },
+      "then": {
+        "Flow_Original": "{{Flow_Code}}",
+        "Flow_Code": 3,
+        "Flow_Desc": "Flow 3: Port → MOSB → Site (AGI/DAS, domain override)",
+        "Transit_Flag": true,
+        "Transit_Note": "AGI/DAS requires MOSB leg (domain rule)"
+      }
+    }
+  ],
+  "fields_required": [
+    "Final_Location",
+    "site",
+    "has_wh_in",
+    "has_mosb_in",
+    "has_site_in",
+    "events_count",
+    "Flow_Code"
+  ],
+  "notes": [
+    "1) FLOW-000~500은 관측 이벤트 기반.",
+    "2) 마지막 FLOW-AGI-DAS-FORCE는 도메인 규칙 기반, 0/1/2만 끌어올림.",
+    "3) coalesce(Final_Location, site)는 Final_Location이 비었을 때 site로 대체.",
+    "4) events_count는 WH/MOSB류 이벤트 총합으로 계산하도록 파이프라인에서 미리 넣어둘 것.",
+    "5) 이 룰셋은 MIR/SHU 직송을 허용, AGI/DAS 직송은 불허."
+  ]
+}

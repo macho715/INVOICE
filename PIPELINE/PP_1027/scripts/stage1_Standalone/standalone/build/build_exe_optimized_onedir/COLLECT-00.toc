@@ -1,0 +1,6 @@
+([('Stage1Sync.exe',
+   'C:\\PP 1027\\scripts\\stage1_Standalone\\standalone\\dist\\Stage1Sync.exe',
+   'EXECUTABLE'),
+  ('stage1_cli.exe',
+   'C:\\PP 1027\\scripts\\stage1_Standalone\\standalone\\dist\\stage1_cli.exe',
+   'EXECUTABLE')],)

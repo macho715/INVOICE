@@ -1,0 +1,6 @@
+{
+  "tests/test_stage1_siemens_warehouse.py::TestSiemensWarehouseLoading::test_merge_warehouse_data_preserves_all_rows": true,
+  "tests/test_stage1_siemens_warehouse.py::TestSiemensWarehouseLoading::test_merge_warehouse_data_fills_nulls_from_siemens": true,
+  "tests/test_stage1_siemens_warehouse.py::TestSiemensWarehouseLoading::test_merge_prefers_hitachi_for_overlapping_cases": true,
+  "tests/test_stage1_siemens_warehouse.py::TestSiemensWarehouseLoading::test_source_vendor_set_correctly_for_warehouse": true
+}

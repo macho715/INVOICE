@@ -1,0 +1,28 @@
+[project]
+name = "cursor-project-setting"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "XlsxWriter",
+    "polars[excel]",
+    "great-expectations",
+    "xlwings>=0.31.0",
+    "pywin32>=306"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py313"]
+
+[tool.isort]
+profile = "black"
+py_version = 313
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.pyupgrade]
+keep-runtime-typing = true

@@ -1,0 +1,144 @@
+# Invoice vs Warehouse HVDC Match Report
+
+- Invoice: `C:\HVDC_WORK\PIPELINE\PP1030\output\spreadsheet\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted_hvdc_code_applied_may_oct2025.xlsx`
+- Warehouse: `C:\HVDC_WORK\PIPELINE\PP1030\output\WAREHOUSE_HITACHI,SIMENSE.xlsx`
+- Warehouse sheet: `통합_원본데이터_Fixed`
+- Warehouse rows with SCT Ref.No: 7553
+- Warehouse unique SCT Ref.No: 566
+
+## Match Status
+- no_match: 569 rows, TOTAL=3,369,426.67
+- non_hvdc_text_or_blank: 177 rows, TOTAL=15,262,318.40
+- exact: 147 rows, TOTAL=2,411,815.13
+- expanded_multi_code: 46 rows, TOTAL=204,846.36
+- descriptor_stripped: 34 rows, TOTAL=77,404.29
+
+## Month Match Status
+- 2024-01: {'exact': 9}
+- 2024-02: {'exact': 16, 'no_match': 1}
+- 2024-03: {'exact': 25, 'no_match': 2}
+- 2024-04: {'exact': 9, 'expanded_multi_code': 2, 'non_hvdc_text_or_blank': 5}
+- 2024-05: {'exact': 5, 'no_match': 2, 'non_hvdc_text_or_blank': 4}
+- 2024-06: {'exact': 6, 'expanded_multi_code': 1, 'no_match': 1, 'non_hvdc_text_or_blank': 6}
+- 2024-07: {'exact': 18, 'no_match': 6, 'expanded_multi_code': 4, 'non_hvdc_text_or_blank': 4}
+- 2024-08: {'expanded_multi_code': 3, 'no_match': 19, 'exact': 11, 'non_hvdc_text_or_blank': 4}
+- 2024-09: {'exact': 5, 'no_match': 13, 'non_hvdc_text_or_blank': 5}
+- 2024-10: {'no_match': 12, 'non_hvdc_text_or_blank': 6, 'expanded_multi_code': 2, 'exact': 1}
+- 2024-11: {'no_match': 23, 'exact': 9, 'expanded_multi_code': 1, 'non_hvdc_text_or_blank': 8}
+- 2024-12: {'exact': 3, 'no_match': 16, 'non_hvdc_text_or_blank': 9, 'expanded_multi_code': 2}
+- 2025-01: {'no_match': 38, 'expanded_multi_code': 3, 'non_hvdc_text_or_blank': 5, 'exact': 1}
+- 2025-02: {'no_match': 42, 'expanded_multi_code': 3, 'non_hvdc_text_or_blank': 5}
+- 2025-03: {'expanded_multi_code': 1, 'no_match': 23, 'non_hvdc_text_or_blank': 11}
+- 2025-04: {'no_match': 37, 'expanded_multi_code': 7, 'exact': 6, 'non_hvdc_text_or_blank': 5}
+- 2025-05: {'exact': 13, 'no_match': 49, 'expanded_multi_code': 1, 'non_hvdc_text_or_blank': 8}
+- 2025-06: {'no_match': 33, 'exact': 3, 'expanded_multi_code': 1, 'descriptor_stripped': 1, 'non_hvdc_text_or_blank': 8}
+- 2025-07: {'no_match': 53, 'descriptor_stripped': 2, 'expanded_multi_code': 3, 'exact': 1, 'non_hvdc_text_or_blank': 20}
+- 2025-08: {'exact': 2, 'no_match': 49, 'descriptor_stripped': 13, 'expanded_multi_code': 3, 'non_hvdc_text_or_blank': 8}
+- 2025-09: {'no_match': 23, 'descriptor_stripped': 17, 'expanded_multi_code': 6, 'non_hvdc_text_or_blank': 8}
+- 2025-10: {'no_match': 27, 'expanded_multi_code': 3, 'exact': 1, 'non_hvdc_text_or_blank': 9}
+- 2025-11: {'no_match': 40, 'exact': 2, 'non_hvdc_text_or_blank': 14}
+- 2025-12: {'no_match': 17, 'non_hvdc_text_or_blank': 10, 'exact': 1}
+- 2026-01: {'descriptor_stripped': 1, 'no_match': 21, 'non_hvdc_text_or_blank': 7}
+- 2026-02: {'no_match': 22, 'non_hvdc_text_or_blank': 8}
+
+## Not Exact Samples
+- Row 27 | 2024-02 | DSV Indoor | no_match | HVDC-ADOPT-PPL-0003 | TOTAL=2,570.15 | matched=[]
+- Row 38 | 2024-03 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0001 | TOTAL=6,788.35 | matched=[]
+- Row 49 | 2024-03 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0001 | TOTAL=2,562.00 | matched=[]
+- Row 62 | 2024-04 | DSV Outdoor | expanded_multi_code | HVDC-ADOPT-HE-0087,90 | TOTAL=2,397.25 | matched=['HVDC-ADOPT-HE-0087']
+- Row 63 | 2024-04 | DSV Outdoor | expanded_multi_code | HVDC-ADOPT-HE-0091,92 | TOTAL=99.00 | matched=['HVDC-ADOPT-HE-0091']
+- Row 66 | 2024-04 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=33,000.00 | matched=[]
+- Row 67 | 2024-04 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=374.85 | matched=[]
+- Row 68 | 2024-04 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=420.00 | matched=[]
+- Row 69 | 2024-04 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=441.00 | matched=[]
+- Row 70 | 2024-04 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=357.00 | matched=[]
+- Row 75 | 2024-05 | DSV Indoor | no_match | HVDC-ADOPT-SIM-0004 | TOTAL=141,874.28 | matched=[]
+- Row 76 | 2024-05 | DSV Indoor | no_match | HVDC-ADOPT-SIM-0008 | TOTAL=1,717.40 | matched=[]
+- Row 78 | 2024-05 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=33,000.00 | matched=[]
+- Row 79 | 2024-05 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=640.50 | matched=[]
+- Row 80 | 2024-05 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=913.50 | matched=[]
+- Row 81 | 2024-05 | DSV MZP | non_hvdc_text_or_blank | None | TOTAL=525.00 | matched=[]
+- Row 87 | 2024-06 | DSV Indoor | expanded_multi_code | HVDC-ADOPT-HE-0108 & 0109 | TOTAL=1,300.00 | matched=['HVDC-ADOPT-HE-0108', 'HVDC-ADOPT-HE-0109']
+- Row 89 | 2024-06 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0002 | TOTAL=3,725.00 | matched=[]
+- Row 90 | 2024-06 | DSV Outdoor | non_hvdc_text_or_blank | DSV Open Yard | TOTAL=45,000.00 | matched=[]
+- Row 91 | 2024-06 | DSV Indoor | non_hvdc_text_or_blank | M44 Warehouse | TOTAL=160,000.00 | matched=[]
+- Row 92 | 2024-06 | DSV Indoor | non_hvdc_text_or_blank | Al Markaz Warehouse | TOTAL=113,000.00 | matched=[]
+- Row 93 | 2024-06 | DSV Outdoor | non_hvdc_text_or_blank | Mina Zayed Open Yard | TOTAL=33,000.00 | matched=[]
+- Row 94 | 2024-06 | Shifting | non_hvdc_text_or_blank | Shifting from M44 to Al Markaz | TOTAL=94,520.00 | matched=[]
+- Row 95 | 2024-06 | Shifting | non_hvdc_text_or_blank | Shifting from M44 to Al Markaz | TOTAL=41,866.50 | matched=[]
+- Row 99 | 2024-07 | DSV Indoor | no_match | HVDC-ADOPT-SIM-0011 | TOTAL=420.00 | matched=[]
+- Row 109 | 2024-07 | DSV Outdoor | expanded_multi_code | HVDC-ADOPT-HE-0127-1, 128 | TOTAL=4,947.50 | matched=['HVDC-ADOPT-HE-0127-1']
+- Row 111 | 2024-07 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0003 | TOTAL=2,424.50 | matched=[]
+- Row 112 | 2024-07 | DSV Outdoor | non_hvdc_text_or_blank | DSV Open Yard | TOTAL=63,000.00 | matched=[]
+- Row 113 | 2024-07 | DSV Indoor | non_hvdc_text_or_blank | M44 Warehouse | TOTAL=160,000.00 | matched=[]
+- Row 114 | 2024-07 | DSV Indoor | non_hvdc_text_or_blank | Al Markaz Warehouse | TOTAL=160,000.00 | matched=[]
+- Row 115 | 2024-07 | DSV Outdoor | non_hvdc_text_or_blank | Mina Zayed Open Yard | TOTAL=33,000.00 | matched=[]
+- Row 116 | 2024-07 | DSV Outdoor | expanded_multi_code | HVDC-ADOPT-HE-0158 , 159 | TOTAL=6,132.50 | matched=['HVDC-ADOPT-HE-0158']
+- Row 118 | 2024-07 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0005 | TOTAL=33,605.55 | matched=[]
+- Row 121 | 2024-07 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0004 | TOTAL=5,373.65 | matched=[]
+- Row 122 | 2024-07 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0007 | TOTAL=5,625.30 | matched=[]
+- Row 123 | 2024-07 | DSV Indoor | expanded_multi_code | HVDC-ADOPT-HE-0130 , 0131 | TOTAL=6,537.20 | matched=['HVDC-ADOPT-HE-0130', 'HVDC-ADOPT-HE-0131']
+- Row 124 | 2024-07 | DSV Outdoor | expanded_multi_code | HVDC-ADOPT-HE-0132 , 0133 | TOTAL=7,160.00 | matched=['HVDC-ADOPT-HE-0132', 'HVDC-ADOPT-HE-0133']
+- Row 125 | 2024-07 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0008 | TOTAL=5,438.95 | matched=[]
+- Row 128 | 2024-08 | DSV Indoor | expanded_multi_code | HVDC-ADOPT-HE-0143, 0144 | TOTAL=1,253.66 | matched=['HVDC-ADOPT-HE-0143', 'HVDC-ADOPT-HE-0144']
+- Row 129 | 2024-08 | DSV Indoor | no_match | HVDC-ADOPT-SCT-0006 | TOTAL=34,468.00 | matched=[]
+- Row 141 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-HE-0179 | TOTAL=70,251.93 | matched=[]
+- Row 142 | 2024-08 | DSV Indoor | no_match | HVDC-ADOPT-HE-0179 | TOTAL=1,652.40 | matched=[]
+- Row 143 | 2024-08 | DSV Indoor | expanded_multi_code | HVDC-ADOPT-HE-0165, 169 | TOTAL=3,017.00 | matched=['HVDC-ADOPT-HE-0165']
+- Row 144 | 2024-08 | DSV Indoor | expanded_multi_code | HVDC-ADOPT-HE-0166, 171 | TOTAL=373.50 | matched=['HVDC-ADOPT-HE-0166']
+- Row 145 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0010 | TOTAL=9,867.68 | matched=[]
+- Row 146 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0009 | TOTAL=44,638.18 | matched=[]
+- Row 147 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-1 | TOTAL=31,912.45 | matched=[]
+- Row 148 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0006 | TOTAL=2,360.00 | matched=[]
+- Row 149 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=6,662.00 | matched=[]
+- Row 150 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=5,356.25 | matched=[]
+- Row 151 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=5,190.00 | matched=[]
+- Row 152 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=6,302.00 | matched=[]
+- Row 153 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=4,497.00 | matched=[]
+- Row 154 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=4,733.00 | matched=[]
+- Row 155 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=4,733.00 | matched=[]
+- Row 156 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=4,758.00 | matched=[]
+- Row 157 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=6,162.75 | matched=[]
+- Row 158 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=4,757.75 | matched=[]
+- Row 159 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005-2 | TOTAL=5,144.50 | matched=[]
+- Row 160 | 2024-08 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0013 | TOTAL=53,694.75 | matched=[]
+- Row 161 | 2024-08 | DSV Outdoor | non_hvdc_text_or_blank | DSV Open Yard | TOTAL=117,000.00 | matched=[]
+- Row 162 | 2024-08 | DSV Indoor | non_hvdc_text_or_blank | M44 Warehouse | TOTAL=178,800.00 | matched=[]
+- Row 163 | 2024-08 | DSV Indoor | non_hvdc_text_or_blank | Al Markaz Warehouse | TOTAL=188,200.00 | matched=[]
+- Row 164 | 2024-08 | DSV Outdoor | non_hvdc_text_or_blank | Mina Zayed Open Yard | TOTAL=33,000.00 | matched=[]
+- Row 168 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0009-1 | TOTAL=29,843.00 | matched=[]
+- Row 171 | 2024-09 | DSV Indoor | no_match | HVDC-DSV-MOSB-0042 | TOTAL=94.60 | matched=[]
+- Row 172 | 2024-09 | DSV Outdoor | no_match | HVDC-DSV-MOSB-0042 | TOTAL=2,000.00 | matched=[]
+- Row 173 | 2024-09 | DSV Outdoor | no_match | HVDC-DSV-MOSB-0042 | TOTAL=4,000.00 | matched=[]
+- Row 174 | 2024-09 | DSV Indoor | no_match | HVDC-ADOPT-SIM-0026 | TOTAL=450.40 | matched=[]
+- Row 175 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0009-2 | TOTAL=13,641.63 | matched=[]
+- Row 176 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0014 | TOTAL=45,754.50 | matched=[]
+- Row 177 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0014 | TOTAL=4,175.00 | matched=[]
+- Row 178 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0014 | TOTAL=4,191.15 | matched=[]
+- Row 179 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0014 | TOTAL=0.00 | matched=[]
+- Row 180 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0017 | TOTAL=40,000.20 | matched=[]
+- Row 181 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0009 | TOTAL=14,938.18 | matched=[]
+- Row 182 | 2024-09 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0010 | TOTAL=1,063.75 | matched=[]
+- Row 183 | 2024-09 | DSV Outdoor | non_hvdc_text_or_blank | Port charge Man Masket to Gate pass | TOTAL=6,069.00 | matched=[]
+- Row 184 | 2024-09 | DSV Outdoor | non_hvdc_text_or_blank | DSV Open Yard | TOTAL=194,400.00 | matched=[]
+- Row 185 | 2024-09 | DSV Indoor | non_hvdc_text_or_blank | M44 Warehouse | TOTAL=188,200.00 | matched=[]
+- Row 186 | 2024-09 | DSV Indoor | non_hvdc_text_or_blank | Al Markaz Warehouse | TOTAL=188,200.00 | matched=[]
+- Row 187 | 2024-09 | DSV Outdoor | non_hvdc_text_or_blank | Mina Zayed Open Yard | TOTAL=33,000.00 | matched=[]
+- Row 188 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0013 | TOTAL=21,694.70 | matched=[]
+- Row 189 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SEI-006 | TOTAL=5,481.25 | matched=[]
+- Row 190 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0016 | TOTAL=43,575.80 | matched=[]
+- Row 191 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0012 | TOTAL=23,703.00 | matched=[]
+- Row 192 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0015  | TOTAL=2,050.30 | matched=[]
+- Row 193 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0017 | TOTAL=2,441.35 | matched=[]
+- Row 194 | 2024-10 | DSV Indoor | non_hvdc_text_or_blank | HE-0192/195/189/193/197/191 | TOTAL=23,357.00 | matched=[]
+- Row 195 | 2024-10 | DSV Outdoor | non_hvdc_text_or_blank | HE-0192/195/189/193/197/191 | TOTAL=5,947.50 | matched=[]
+- Row 196 | 2024-10 | DSV Outdoor | expanded_multi_code | HVDC-ADOPT-HE-0183/184 | TOTAL=138.25 | matched=['HVDC-ADOPT-HE-0183']
+- Row 197 | 2024-10 | DSV Outdoor | expanded_multi_code | HVDC-ADOPT-HE-0200,0201 | TOTAL=2,786.50 | matched=['HVDC-ADOPT-HE-0200', 'HVDC-ADOPT-HE-0201']
+- Row 199 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0005 | TOTAL=23,511.00 | matched=[]
+- Row 200 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0009-2  | TOTAL=3,925.00 | matched=[]
+- Row 201 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0010  | TOTAL=500.25 | matched=[]
+- Row 202 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SCT-0014  | TOTAL=39.00 | matched=[]
+- Row 203 | 2024-10 | DSV Outdoor | no_match | HVDC-ADOPT-SIM-0017  | TOTAL=12,350.25 | matched=[]
+- Row 204 | 2024-10 | DSV Indoor | no_match | HVDC-ADOPT-SIM-0031 | TOTAL=428.00 | matched=[]
+- Row 205 | 2024-10 | DSV Outdoor | non_hvdc_text_or_blank | DSV Open Yard | TOTAL=194,400.00 | matched=[]
+- Row 206 | 2024-10 | DSV Indoor | non_hvdc_text_or_blank | M44 Warehouse | TOTAL=188,200.00 | matched=[]

@@ -1,0 +1,94 @@
+{
+  "colors": {
+    "sheets": {
+      "Case List, RIL": {
+        "header_row": 1,
+        "total_rows": 8945,
+        "total_columns": 43,
+        "case_column": 7,
+        "estimated_orange": 0,
+        "estimated_yellow": 0,
+        "yellow_row_samples": [],
+        "sample_cases": [
+          {
+            "case_no": "HVDC-ADOPT-SIM-0001",
+            "row": 2,
+            "color": "ORANGE?"
+          },
+          {
+            "case_no": "SIEFA0044602823001",
+            "row": 3,
+            "color": "ORANGE?"
+          },
+          {
+            "case_no": "SIEFA0044602823002",
+            "row": 4,
+            "color": "ORANGE?"
+          },
+          {
+            "case_no": "SIEFA0044602823003",
+            "row": 5,
+            "color": "ORANGE?"
+          },
+          {
+            "case_no": "SIEFA0044602823004",
+            "row": 6,
+            "color": "ORANGE?"
+          }
+        ]
+      }
+    }
+  },
+  "tracking": [
+    {
+      "case_no": "HVDC-ADOPT-SIM-0001",
+      "sheet": "Case List, RIL",
+      "found": true
+    },
+    {
+      "case_no": "SIEFA0044602823001",
+      "sheet": "Case List, RIL",
+      "found": true
+    },
+    {
+      "case_no": "SIEFA0044602823002",
+      "sheet": "Case List, RIL",
+      "found": true
+    },
+    {
+      "case_no": "SIEFA0044602823003",
+      "sheet": "Case List, RIL",
+      "found": true
+    },
+    {
+      "case_no": "SIEFA0044602823004",
+      "sheet": "Case List, RIL",
+      "found": true
+    }
+  ],
+  "verification": {
+    "sample_orange": 0,
+    "sample_yellow": 0,
+    "change_log": {}
+  },
+  "params": {
+    "stage1": "data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v3.4.xlsx",
+    "report": "docs\\reports\\excel_color_verification_fast.json",
+    "header_rows": 5,
+    "rows": 50,
+    "cols": 10,
+    "sheets": 1,
+    "samples": 5,
+    "processes": 2,
+    "no_parallel": true,
+    "tail_rows": 0,
+    "random_sample": 0,
+    "random_seed": 23,
+    "date_cols_only": false,
+    "full_scan": false,
+    "date_cols": "",
+    "max_cells": 2000,
+    "change_log": null,
+    "prefer_change_log": false
+  }
+}

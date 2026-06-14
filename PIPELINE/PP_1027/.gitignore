@@ -1,0 +1,60 @@
+# HVDC Pipeline - Git Ignore File
+
+# ============ 민감한 데이터 파일 ============
+# Samsung C&T / ADNOC 실제 데이터 보호
+data/raw/*.xlsx
+data/raw/**/*.xlsx
+data/processed/**/*.xlsx
+data/processed/**/*.csv
+data/anomaly/*.xlsx
+data/anomaly/*.json
+
+# ============ Python 캐시 ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============ 가상 환경 ============
+venv/
+ENV/
+env/
+.venv/
+
+# ============ 로그 파일 ============
+logs/
+*.log
+
+# ============ 환경 설정 ============
+.env
+.env.local
+.env.*.local
+
+# ============ IDE 설정 ============
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============ OS 파일 ============
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============ Excel 백업 파일 ============
+*.xlsx.backup
+*_backup.xlsx
+~$*.xlsx
+
+# ============ 임시 파일 ============
+tmp/
+temp/
+*.tmp
+
+# ============ 아카이브 ============
+*.zip
+*.tar.gz
+
+# ============ 마크다운 처리 ============
+# README와 문서는 포함하므로 제외하지 않음

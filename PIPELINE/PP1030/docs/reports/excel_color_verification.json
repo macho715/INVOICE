@@ -1,0 +1,36 @@
+{
+  "mode": "ultra_fast",
+  "version": "v1.0.1",
+  "sheets": {
+    "Case List, RIL": {
+      "header_row": 1,
+      "sampled_rows": 50,
+      "sampled_cols": 8,
+      "orange_samples": 0,
+      "yellow_samples": 0,
+      "sample_cases": []
+    }
+  },
+  "params": {
+    "mode": "ultra_fast",
+    "stage1": "data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v3.4.xlsx",
+    "report": "docs\\reports\\excel_color_verification.json",
+    "header_rows": 5,
+    "rows": 200,
+    "cols": 12,
+    "sheets": 1,
+    "samples": 5,
+    "processes": 2,
+    "no_parallel": false,
+    "tail_rows": 0,
+    "random_sample": 0,
+    "random_seed": 23,
+    "date_cols_only": false,
+    "full_scan": false,
+    "date_cols": "",
+    "max_cells": 500,
+    "change_log": null,
+    "prefer_change_log": false,
+    "verbose": false
+  }
+}

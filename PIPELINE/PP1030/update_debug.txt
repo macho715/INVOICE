@@ -1,0 +1,41 @@
+=== MINI.XLSX ===
+   Case No.  DSV Indoor  DSV Al Markaz  DSV Outdoor  Hauler Indoor  DSV MZP       MOSB  Shifting  MIR  SHU  DAS  AGI
+0    280047         NaN            NaN          NaN            NaN      NaN 2025-01-01       NaN  NaN  NaN  NaN  NaN
+1    280048         NaN            NaN          NaN            NaN      NaN 2025-01-02       NaN  NaN  NaN  NaN  NaN
+2    280053         NaN            NaN          NaN            NaN      NaN 2025-01-03       NaN  NaN  NaN  NaN  NaN
+3    280054         NaN            NaN          NaN            NaN      NaN 2025-01-04       NaN  NaN  NaN  NaN  NaN
+4    280055         NaN            NaN          NaN            NaN      NaN 2025-01-05       NaN  NaN  NaN  NaN  NaN
+5    280056         NaN            NaN          NaN            NaN      NaN 2025-01-06       NaN  NaN  NaN  NaN  NaN
+6    280057         NaN            NaN          NaN            NaN      NaN 2025-01-07       NaN  NaN  NaN  NaN  NaN
+7    280058         NaN            NaN          NaN            NaN      NaN 2025-01-08       NaN  NaN  NaN  NaN  NaN
+8    365468         NaN            NaN          NaN            NaN      NaN 2025-01-09       NaN  NaN  NaN  NaN  NaN
+9    365469         NaN            NaN          NaN            NaN      NaN 2025-01-10       NaN  NaN  NaN  NaN  NaN
+
+=== MASTER FILE (First 10 rows, Case No + Date columns) ===
+    Case No. MOSB DSV Indoor DSV Al Markaz DSV Outdoor DSV MZD MIR SHU DAS  AGI
+0     207721  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+1     207722  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+2     207723  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+3     207724  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+4     207725  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+5     207726  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+6     207727  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+7     207728  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+8     207729  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+9     207730  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+10    207731  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+11    207732  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+12    208221  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+13    208222  NaT        NaT           NaT  2024-01-19     NaT NaT NaT NaT  NaN
+14    207603  NaT        NaT           NaT  2024-01-25     NaT NaT NaT NaT  NaN
+15    207604  NaT        NaT           NaT  2024-01-25     NaT NaT NaT NaT  NaN
+16    207773  NaT        NaT           NaT  2024-01-25     NaT NaT NaT NaT  NaN
+17    207772  NaT        NaT           NaT  2024-01-25     NaT NaT NaT NaT  NaN
+18    207789  NaT        NaT           NaT  2024-01-25     NaT NaT NaT NaT  NaN
+19    207790  NaT        NaT           NaT  2024-01-25     NaT NaT NaT NaT  NaN
+
+=== Checking if Case Nos from mini exist in master ===
+Mini has 66 cases
+Master has 3545 cases
+Common cases: 23
+Sample common cases: [365468, 365469, 365470, 365471, 365472]

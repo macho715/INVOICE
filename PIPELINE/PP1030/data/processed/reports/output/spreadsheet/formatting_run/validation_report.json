@@ -1,0 +1,47 @@
+{
+  "output": "output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted.xlsx",
+  "sheets": [
+    "invoice_all_months"
+  ],
+  "sheet_summaries": [
+    {
+      "sheet": "invoice_all_months",
+      "rows": 609,
+      "columns": 32,
+      "na_after": 0,
+      "date_cells_checked": 2285,
+      "number_cells_checked": 5161,
+      "date_bad_count": 0,
+      "number_bad_count": 0,
+      "non_date_text_in_date_columns_count": 4,
+      "non_date_text_in_date_columns_sample": [
+        {
+          "cell": "Q516",
+          "value": "2025-11-31"
+        },
+        {
+          "cell": "Q517",
+          "value": "2025-11-31"
+        },
+        {
+          "cell": "Q518",
+          "value": "2025-11-31"
+        },
+        {
+          "cell": "Q519",
+          "value": "2025-11-31"
+        }
+      ],
+      "money_totals": {
+        "Amount": 9879451.036136,
+        "Handling In": 999136.24,
+        "Handling out": 965455.720225,
+        "Unstuffing": 1706000.0,
+        "Stuffing": 81866.5,
+        "folk lift": 379000.0,
+        "crane": 556001.33,
+        "TOTAL": 14575931.212921
+      }
+    }
+  ]
+}

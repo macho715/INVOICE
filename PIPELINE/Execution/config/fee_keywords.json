@@ -1,0 +1,166 @@
+{
+  "version": "v2.5.1",
+  "updated": "2025-10-29",
+  "notes": "Fee/Pass/Document keywords for PRICE CENTER C.",
+  "C": {
+    "label": "Fees / Pass / Documents (Admin)",
+    "rules": [
+      {
+        "pattern": "\\bagency fee\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "fee",
+        "priority": 10,
+        "flags": "i",
+        "notes": "Agency fee"
+      },
+      {
+        "pattern": "\\bhandling fee\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "fee",
+        "priority": 20,
+        "flags": "i",
+        "notes": "Handling fee"
+      },
+      {
+        "pattern": "\\b(document(ation)? (fee|charge)s?)\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "document",
+        "priority": 30,
+        "flags": "i",
+        "notes": "Documentation charges"
+      },
+      {
+        "pattern": "\\bgate pass\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "pass",
+        "priority": 40,
+        "flags": "i",
+        "notes": "Gate pass charges"
+      },
+      {
+        "pattern": "\\badmin(istration)? (fee|charge)s?\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "admin",
+        "priority": 50,
+        "flags": "i",
+        "notes": "Administration charges"
+      },
+      {
+        "pattern": "\\bcoordination (fee|charge)s?\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "admin",
+        "priority": 60,
+        "flags": "i",
+        "notes": "Coordination charges"
+      },
+      {
+        "pattern": "\\b(cargo|customs) clearance\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "admin",
+        "priority": 70,
+        "flags": "i",
+        "notes": "Cargo/Customs clearance service"
+      },
+      {
+        "pattern": "\\bberthing arrangement\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "admin",
+        "priority": 80,
+        "flags": "i",
+        "notes": "Berthing arrangement (admin)"
+      },
+      {
+        "pattern": "\\barranging fw supply\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "admin",
+        "priority": 90,
+        "flags": "i",
+        "notes": "Arrangement service for FW (admin)"
+      },
+      {
+        "pattern": "\\bpermit (fee|charge)\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "permit",
+        "priority": 100,
+        "flags": "i",
+        "notes": "Permit fees"
+      },
+      {
+        "pattern": "\\bcertificate( issuance)? fee\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "document",
+        "priority": 110,
+        "flags": "i",
+        "notes": "Certificate issuance"
+      },
+      {
+        "pattern": "\\binspection fee\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "inspection",
+        "priority": 120,
+        "flags": "i",
+        "notes": "Inspection fee"
+      },
+      {
+        "pattern": "\\bcourier (fee|charge)s?\\b",
+        "fields": [
+          "subject",
+          "description"
+        ],
+        "price_center": "C",
+        "subcategory": "admin",
+        "priority": 130,
+        "flags": "i",
+        "notes": "Courier handling charges"
+      }
+    ]
+  }
+}

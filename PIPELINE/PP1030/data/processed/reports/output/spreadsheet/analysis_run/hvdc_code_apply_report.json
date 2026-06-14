@@ -1,0 +1,1201 @@
+{
+  "source_workbook": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted.xlsx",
+  "output_workbook": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted_hvdc_code_applied.xlsx",
+  "sheet": "invoice_all_months",
+  "rule": "Only rows with HVDC CODE starting HVDC- and all HVDC CODE 1..4 blank were populated from the first four hyphen-separated tokens; non-HVDC text/service rows and existing split cells were left unchanged.",
+  "changed_rows_count": 104,
+  "changed_cells_count": 416,
+  "changed_rows_sample": [
+    {
+      "row": 467,
+      "code": "HVDC-DSV-HE-MOSB-263",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 7982.5
+    },
+    {
+      "row": 468,
+      "code": "HVDC-ADOPT-HE-0300",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        300
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 14.7108
+    },
+    {
+      "row": 469,
+      "code": "HVDC-DSV-MOSB-260",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        260
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 213.3399
+    },
+    {
+      "row": 471,
+      "code": "HVDC-DSV-MOSB-264",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        264
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 6700
+    },
+    {
+      "row": 472,
+      "code": "HVDC-DSV-MOSB-264",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        264
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 4700
+    },
+    {
+      "row": 473,
+      "code": "HVDC-DSV-HE-MOSB-267",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 2005
+    },
+    {
+      "row": 474,
+      "code": "HVDC-ADOPT-SCT-0128",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        128
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 9121.5
+    },
+    {
+      "row": 475,
+      "code": "HVDC-DSV-HE-MOSB-268",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 6828
+    },
+    {
+      "row": 476,
+      "code": "HVDC-DSV-HE-MOSB-268",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 7980
+    },
+    {
+      "row": 478,
+      "code": "HVDC-DSV-HE-MOSB-269",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 8612.2
+    },
+    {
+      "row": 479,
+      "code": "HVDC-DSV-HE-MOSB-269",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 6612.2
+    },
+    {
+      "row": 480,
+      "code": "HVDC-DSV-HE-MOSB-271",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 867.5000000000001
+    },
+    {
+      "row": 481,
+      "code": "HVDC-ADOPT-SCT-0086 (Outbound to SHU)",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        "0086 (Outbound to SHU)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 78.03
+    },
+    {
+      "row": 482,
+      "code": "HVDC-ADOPT-SCT-0086 (Outbound to MIR)",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        "0086 (Outbound to MIR)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 26.01
+    },
+    {
+      "row": 483,
+      "code": "HVDC-ADOPT-SCT-0132",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        132
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 2285
+    },
+    {
+      "row": 484,
+      "code": "HVDC-DSV-HE-MOSB-276",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 82.5
+    },
+    {
+      "row": 485,
+      "code": "HVDC-ADOPT-SCT-0135",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        135
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 4500
+    },
+    {
+      "row": 486,
+      "code": "HVDC-AGI-ALS-338",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 6238.1125
+    },
+    {
+      "row": 487,
+      "code": "HVDC-AGI-ALS-338",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 4238.1125
+    },
+    {
+      "row": 488,
+      "code": "HVDC-AGI-ALS-338",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 4238.1125
+    },
+    {
+      "row": 489,
+      "code": "HVDC-AGI-ALS-338",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 4238.1125
+    },
+    {
+      "row": 490,
+      "code": "HVDC-AGI-ALS-338",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 4238.1125
+    },
+    {
+      "row": 491,
+      "code": "HVDC-AGI-ALS-338",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 1483.8905
+    },
+    {
+      "row": 492,
+      "code": "HVDC-DSV-HE-MOSB-283 (Open Yard)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 8811.232470000006
+    },
+    {
+      "row": 493,
+      "code": "HVDC-DSV-HE-MOSB-283 (Warehouse)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": null
+    },
+    {
+      "row": 494,
+      "code": "HVDC-DSV-ELS-MIR-275 (Inbound & Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "ELS",
+        "MIR"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 128
+    },
+    {
+      "row": 495,
+      "code": "HVDC-ADOPT-SIM-0095 (Inbound & Outbound)",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        "0095 (Inbound & Outbound)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 1431.05
+    },
+    {
+      "row": 496,
+      "code": "HVDC-DSV-HE-MOSB-285(Open Yard)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 3334.720850000001
+    },
+    {
+      "row": 497,
+      "code": "HVDC-DSV-HE-MOSB-285(Warehouse)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": null
+    },
+    {
+      "row": 498,
+      "code": "HVDC-DSV-MOSB-288",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        288
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 2845.5
+    },
+    {
+      "row": 499,
+      "code": "HVDC-ADOPT-SCT-0138 (In/Outbound)",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        "0138 (In/Outbound)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 2732.15
+    },
+    {
+      "row": 500,
+      "code": "HVDC-DSV-HE-MOSB-292",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 3102.045625
+    },
+    {
+      "row": 501,
+      "code": "HVDC-AGI-SAS-MOSB-0010",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "SAS",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 573
+    },
+    {
+      "row": 503,
+      "code": "HVDC-ADOPT-HE-LOC-0007",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "LOC"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 276.2
+    },
+    {
+      "row": 504,
+      "code": "HVDC-ADOPT-SIM-0106",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        106
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 416.44
+    },
+    {
+      "row": 505,
+      "code": "HVDC-DSV-HE-MOSB-249",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 2610
+    },
+    {
+      "row": 506,
+      "code": "HVDC-DSV-HE-MIR-239(NOV)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MIR"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 22526.7196
+    },
+    {
+      "row": 507,
+      "code": "HVDC-DSV-SCT-MIR-253",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "SCT",
+        "MIR"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 2914.16
+    },
+    {
+      "row": 508,
+      "code": "HVDC-DSV-SIM-MOSB-266",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "SIM",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 1560.122880000001
+    },
+    {
+      "row": 509,
+      "code": "HVDC-DSV-SIM-MOSB-272",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "SIM",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 1578.682560000001
+    },
+    {
+      "row": 510,
+      "code": "HVDC-DSV-SIM-MOSB-282",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "SIM",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 1268.121600000001
+    },
+    {
+      "row": 511,
+      "code": "HVDC-DSV-HE/Schencker-MIR-286",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE/Schencker",
+        "MIR"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-11-01 00:00:00",
+      "total": 230.5
+    },
+    {
+      "row": 523,
+      "code": "HVDC-DSV-HE-MOSB-296 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 284.75
+    },
+    {
+      "row": 525,
+      "code": "HVDC-DSV-HE-MOSB-297 (Outbound from OY)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 2299.999999999999
+    },
+    {
+      "row": 526,
+      "code": "HVDC-DSV-HE-MOSB-297 (Outbound from WH)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 178
+    },
+    {
+      "row": 527,
+      "code": "HVDC-DSV-HE-MOSB-301 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 510.0000000000001
+    },
+    {
+      "row": 528,
+      "code": "HVDC-AGI-ALS-358 (Outbound)",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        "358 (Outbound)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 24515.11250000001
+    },
+    {
+      "row": 529,
+      "code": "HVDC-DSV-HE-MOSB-303(Outbound from OY))",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 2921.742625
+    },
+    {
+      "row": 530,
+      "code": "HVDC-DSV-HE-MOSB-303(Outbound from WH)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 130.10472
+    },
+    {
+      "row": 531,
+      "code": "HVDC-ADOPT-SCT-0140",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        140
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 2975.45
+    },
+    {
+      "row": 532,
+      "code": "HVDC-ADOPT-SCT-0142",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        142
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 2237.7
+    },
+    {
+      "row": 533,
+      "code": "HVDC-DSV-SAS-MIR-300",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "SAS",
+        "MIR"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 981.3000000000001
+    },
+    {
+      "row": 534,
+      "code": "HVDC-DSV-SAS-MIR-318",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "SAS",
+        "MIR"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 196.35
+    },
+    {
+      "row": 535,
+      "code": "HVDC-DSV-HE-MOSB-307 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 9797.5
+    },
+    {
+      "row": 536,
+      "code": "HVDC-DSV-HE-MOSB-307 (Outbond and Return to WH)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 288
+    },
+    {
+      "row": 537,
+      "code": "HVDC-ADOPT-HE-0519",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        519
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 8134.4
+    },
+    {
+      "row": 538,
+      "code": "HVDC-ADOPT-SCT-0143",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        143
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 19303.5
+    },
+    {
+      "row": 539,
+      "code": "HVDC-ADOPT-SCT-0144",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        144
+      ],
+      "category": "Outdoor",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 2446.5
+    },
+    {
+      "row": 540,
+      "code": "HVDC-DAS-SAS-MOSB-0013 (Inbound)",
+      "applied": [
+        "HVDC",
+        "DAS",
+        "SAS",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 6333.68
+    },
+    {
+      "row": 541,
+      "code": "HVDC-DAS/AGI-CAM-MOSB-001 (Inbound)",
+      "applied": [
+        "HVDC",
+        "DAS/AGI",
+        "CAM",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2025-12-01 00:00:00",
+      "total": 42.26
+    },
+    {
+      "row": 551,
+      "code": "HVDC-ADOPT-HE-0520 (Inbound)",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0520 (Inbound)"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 866.1400000000001
+    },
+    {
+      "row": 552,
+      "code": "HVDC-AGI-ALS-376 (Outbound from WH)",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        "376 (Outbound from WH)"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 1633.39111968
+    },
+    {
+      "row": 553,
+      "code": "HVDC-DSV-MOSB-323 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        "323 (Outbound)"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 2875.999999999999
+    },
+    {
+      "row": 554,
+      "code": "HVDC-DSV-HE-MOSB-327 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 2182
+    },
+    {
+      "row": 555,
+      "code": "HVDC-DSV-HE-MOSB-327 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 1850
+    },
+    {
+      "row": 556,
+      "code": "HVDC-DSV-SIM-MOSB-332 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "SIM",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 1388.4126
+    },
+    {
+      "row": 557,
+      "code": "HVDC-DSV-HE-MOSB-330 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 5173.999999999998
+    },
+    {
+      "row": 558,
+      "code": "HVDC-DSV-HE-MOSB-335 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 564
+    },
+    {
+      "row": 559,
+      "code": "HVDC-AGI-ALS-383 (Outbound)",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        "383 (Outbound)"
+      ],
+      "category": "Warehouse",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 9068.930400000003
+    },
+    {
+      "row": 560,
+      "code": "HVDC-AGI-ALS-366  (Outbound)",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        "366  (Outbound)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 9367.599999999999
+    },
+    {
+      "row": 561,
+      "code": "HVDC-ADOPT-SCT-0151",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        151
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 2552.6
+    },
+    {
+      "row": 562,
+      "code": "HVDC-ADOPT-SCT-0146",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        146
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 2717
+    },
+    {
+      "row": 563,
+      "code": "HVDC-ADOPT-SCT-0154",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        154
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 4500
+    },
+    {
+      "row": 564,
+      "code": "HVDC-AGI-ALS-371",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        371
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 9963.537250000005
+    },
+    {
+      "row": 565,
+      "code": "HVDC-AGI-ALS-374",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        374
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 9400.600000000006
+    },
+    {
+      "row": 566,
+      "code": "HVDC-AGI-ALS-376 (Outbaound from OY))",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        "376 (Outbaound from OY))"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 9167.087725
+    },
+    {
+      "row": 567,
+      "code": "HVDC-DSV-HE-MOSB-328 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 1665
+    },
+    {
+      "row": 568,
+      "code": "HVDC-AGI-ALS-378 (Outbound)",
+      "applied": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        "378 (Outbound)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 10737.59899999999
+    },
+    {
+      "row": 569,
+      "code": "HVDC-DSV-HE-MOSB-331 (Outbound)",
+      "applied": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 500.35
+    },
+    {
+      "row": 570,
+      "code": "HVDC-ADOPT-SCT-0108 (Outbound)",
+      "applied": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        "0108 (Outbound)"
+      ],
+      "category": "Outdoor",
+      "billing_month": "2026-01-01 00:00:00",
+      "total": 179.85
+    }
+  ],
+  "skipped_existing_mismatch_count": 8,
+  "skipped_existing_mismatch_sample": [
+    {
+      "row": 197,
+      "code": "HVDC-ADOPT-HE-0200,0201",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2000201
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0200,0201"
+      ]
+    },
+    {
+      "row": 310,
+      "code": "HVDC-ADOPT-SIM-0029, 0034 ",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        "0029, 0034 "
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        "0029, 0034"
+      ]
+    },
+    {
+      "row": 349,
+      "code": "HVDC-ADOPT-HE-0233,0236",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2330236
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0233,0236"
+      ]
+    },
+    {
+      "row": 350,
+      "code": "HVDC-ADOPT-HE-0256,0257",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2560257
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0256,0257"
+      ]
+    },
+    {
+      "row": 352,
+      "code": "HVDC-ADOPT-HE-0238,0239",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2380239
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0238,0239"
+      ]
+    },
+    {
+      "row": 377,
+      "code": "HVDC-ADOPT-HE-0246,247,249,250",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        246247249250
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0246,247,249,250"
+      ]
+    },
+    {
+      "row": 437,
+      "code": "HVDC-ADOPT-HE-0005 / 0027 ",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0005 / 0027 "
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0005 / 0027"
+      ]
+    },
+    {
+      "row": 440,
+      "code": "HVDC-ADOPT-HE-0094,0005,0262,0139,0178,0257,0093,0256,0138",
+      "existing": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        9.4000502620139e+33
+      ],
+      "candidate": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0094,0005,0262,0139,0178,0257,0093,0256,0138"
+      ]
+    }
+  ],
+  "money_totals_before": {
+    "Amount": "9879451.036136000004",
+    "Handling In": "999136.2400000000001",
+    "Handling out": "965455.72022468001159",
+    "Unstuffing": "1706000",
+    "Stuffing": "81866.5",
+    "folk lift": "379000",
+    "crane": "556001.33",
+    "TOTAL": "14575931.21292068001529"
+  },
+  "money_totals_after": {
+    "Amount": "9879451.036136000004",
+    "Handling In": "999136.2400000000001",
+    "Handling out": "965455.72022468001159",
+    "Unstuffing": "1706000",
+    "Stuffing": "81866.5",
+    "folk lift": "379000",
+    "crane": "556001.33",
+    "TOTAL": "14575931.21292068001529"
+  }
+}

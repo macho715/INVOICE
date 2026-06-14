@@ -1,0 +1,135 @@
+[
+  {
+    "행 레이블": "DSV",
+    "WH 기성": 2,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "ELS",
+    "WH 기성": 2,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "CAM",
+    "WH 기성": 4,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "HAU",
+    "WH 기성": 6,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "NIE",
+    "WH 기성": 16,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "PPL",
+    "WH 기성": 22,
+    "HVDC STATUS": 205,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "DSV Outdoor",
+    "WH 기성": 59,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "ALM",
+    "WH 기성": 66,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "SKM",
+    "WH 기성": 67,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "SAS",
+    "WH 기성": 133,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "DSV Indoor",
+    "WH 기성": 171,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "SEI",
+    "WH 기성": 253,
+    "HVDC STATUS": 363,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "MOSB",
+    "WH 기성": 283,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "(비어 있음)",
+    "WH 기성": 500,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "ALS",
+    "WH 기성": 740,
+    "HVDC STATUS": null,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "SIM",
+    "WH 기성": 2266,
+    "HVDC STATUS": 1667,
+    "입고로직 전체": 2529,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "HE",
+    "WH 기성": 5079,
+    "HVDC STATUS": 7469,
+    "입고로직 전체": 7566,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "SCT",
+    "WH 기성": 6767,
+    "HVDC STATUS": 3647,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  },
+  {
+    "행 레이블": "ZEN",
+    "WH 기성": null,
+    "HVDC STATUS": 397,
+    "입고로직 전체": null,
+    "입고로직(FLOW CODE 3,4,5)": null
+  }
+]

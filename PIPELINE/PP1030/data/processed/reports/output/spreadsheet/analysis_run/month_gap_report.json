@@ -1,0 +1,352 @@
+{
+  "expected_user_range_2025_04_to_2025_09": [
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09"
+  ],
+  "missing_in_final_output": [
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09"
+  ],
+  "source_missing_by_file": {
+    "HVDC WAREHOUSE_INVOICE.xlsx": [
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09"
+    ],
+    "복사본 Draft - (SCT)_DSV_Storage Operation Draft for Feb 2026 Rev1.xlsx": [
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09"
+    ]
+  },
+  "summaries": [
+    {
+      "path": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\HVDC WAREHOUSE_INVOICE.xlsx",
+      "name": "HVDC WAREHOUSE_INVOICE.xlsx",
+      "sheets": [
+        {
+          "sheet": "invoice",
+          "header_row": 1,
+          "sheet_month": null,
+          "data_rows": 465,
+          "month_counts": {
+            "2024-01": 9,
+            "2024-02": 17,
+            "2024-03": 27,
+            "2024-04": 16,
+            "2024-05": 11,
+            "2024-06": 14,
+            "2024-07": 32,
+            "2024-08": 37,
+            "2024-09": 23,
+            "2024-10": 21,
+            "2024-11": 41,
+            "2024-12": 30,
+            "2025-01": 47,
+            "2025-02": 50,
+            "2025-03": 35,
+            "2025-04": 55
+          }
+        }
+      ],
+      "month_counts": {
+        "2024-01": 9,
+        "2024-02": 17,
+        "2024-03": 27,
+        "2024-04": 16,
+        "2024-05": 11,
+        "2024-06": 14,
+        "2024-07": 32,
+        "2024-08": 37,
+        "2024-09": 23,
+        "2024-10": 21,
+        "2024-11": 41,
+        "2024-12": 30,
+        "2025-01": 47,
+        "2025-02": 50,
+        "2025-03": 35,
+        "2025-04": 55
+      }
+    },
+    {
+      "path": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\복사본 Draft - (SCT)_DSV_Storage Operation Draft for Feb 2026 Rev1.xlsx",
+      "name": "복사본 Draft - (SCT)_DSV_Storage Operation Draft for Feb 2026 Rev1.xlsx",
+      "sheets": [
+        {
+          "sheet": "JAN2024",
+          "header_row": null,
+          "sheet_month": "2024-01",
+          "data_rows": 25,
+          "month_counts": {
+            "2024-01": 25
+          }
+        },
+        {
+          "sheet": "FEB2024",
+          "header_row": null,
+          "sheet_month": "2024-02",
+          "data_rows": 19,
+          "month_counts": {
+            "2024-02": 19
+          }
+        },
+        {
+          "sheet": "MAR2024",
+          "header_row": null,
+          "sheet_month": "2024-03",
+          "data_rows": 30,
+          "month_counts": {
+            "2024-03": 30
+          }
+        },
+        {
+          "sheet": "APR2024",
+          "header_row": null,
+          "sheet_month": "2024-04",
+          "data_rows": 22,
+          "month_counts": {
+            "2024-04": 22
+          }
+        },
+        {
+          "sheet": "MAY2024",
+          "header_row": null,
+          "sheet_month": "2024-05",
+          "data_rows": 23,
+          "month_counts": {
+            "2024-05": 23
+          }
+        },
+        {
+          "sheet": "JUNE2024",
+          "header_row": null,
+          "sheet_month": "2024-06",
+          "data_rows": 22,
+          "month_counts": {
+            "2024-06": 22
+          }
+        },
+        {
+          "sheet": "Shifting Item",
+          "header_row": null,
+          "sheet_month": null,
+          "data_rows": 61,
+          "month_counts": {}
+        },
+        {
+          "sheet": "JULY2024",
+          "header_row": null,
+          "sheet_month": "2024-07",
+          "data_rows": 35,
+          "month_counts": {
+            "2024-07": 35
+          }
+        },
+        {
+          "sheet": "AUG2024",
+          "header_row": null,
+          "sheet_month": "2024-08",
+          "data_rows": 42,
+          "month_counts": {
+            "2024-08": 42
+          }
+        },
+        {
+          "sheet": "SEP2024",
+          "header_row": null,
+          "sheet_month": "2024-09",
+          "data_rows": 30,
+          "month_counts": {
+            "2024-09": 30
+          }
+        },
+        {
+          "sheet": "Oct2024",
+          "header_row": null,
+          "sheet_month": "2024-10",
+          "data_rows": 30,
+          "month_counts": {
+            "2024-10": 30
+          }
+        },
+        {
+          "sheet": "Nov2025",
+          "header_row": null,
+          "sheet_month": "2025-11",
+          "data_rows": 59,
+          "month_counts": {
+            "2025-11": 59
+          }
+        },
+        {
+          "sheet": "Dec2025",
+          "header_row": null,
+          "sheet_month": "2025-12",
+          "data_rows": 31,
+          "month_counts": {
+            "2025-12": 31
+          }
+        },
+        {
+          "sheet": "Jan2026",
+          "header_row": null,
+          "sheet_month": "2026-01",
+          "data_rows": 32,
+          "month_counts": {
+            "2026-01": 32
+          }
+        },
+        {
+          "sheet": "Feb2026",
+          "header_row": null,
+          "sheet_month": "2026-02",
+          "data_rows": 33,
+          "month_counts": {
+            "2026-02": 33
+          }
+        }
+      ],
+      "month_counts": {
+        "2024-01": 25,
+        "2024-02": 19,
+        "2024-03": 30,
+        "2024-04": 22,
+        "2024-05": 23,
+        "2024-06": 22,
+        "2024-07": 35,
+        "2024-08": 42,
+        "2024-09": 30,
+        "2024-10": 30,
+        "2025-11": 59,
+        "2025-12": 31,
+        "2026-01": 32,
+        "2026-02": 33
+      }
+    },
+    {
+      "path": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months.xlsx",
+      "name": "HVDC_WAREHOUSE_INVOICE_all_billing_months.xlsx",
+      "sheets": [
+        {
+          "sheet": "invoice_all_months",
+          "header_row": 1,
+          "sheet_month": null,
+          "data_rows": 608,
+          "month_counts": {
+            "2024-01": 9,
+            "2024-02": 17,
+            "2024-03": 27,
+            "2024-04": 16,
+            "2024-05": 11,
+            "2024-06": 14,
+            "2024-07": 32,
+            "2024-08": 37,
+            "2024-09": 23,
+            "2024-10": 21,
+            "2024-11": 41,
+            "2024-12": 30,
+            "2025-01": 47,
+            "2025-02": 50,
+            "2025-03": 35,
+            "2025-04": 55,
+            "2025-11": 56,
+            "2025-12": 28,
+            "2026-01": 29,
+            "2026-02": 30
+          }
+        }
+      ],
+      "month_counts": {
+        "2024-01": 9,
+        "2024-02": 17,
+        "2024-03": 27,
+        "2024-04": 16,
+        "2024-05": 11,
+        "2024-06": 14,
+        "2024-07": 32,
+        "2024-08": 37,
+        "2024-09": 23,
+        "2024-10": 21,
+        "2024-11": 41,
+        "2024-12": 30,
+        "2025-01": 47,
+        "2025-02": 50,
+        "2025-03": 35,
+        "2025-04": 55,
+        "2025-11": 56,
+        "2025-12": 28,
+        "2026-01": 29,
+        "2026-02": 30
+      }
+    },
+    {
+      "path": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted_hvdc_code_applied.xlsx",
+      "name": "HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted_hvdc_code_applied.xlsx",
+      "sheets": [
+        {
+          "sheet": "invoice_all_months",
+          "header_row": 1,
+          "sheet_month": null,
+          "data_rows": 608,
+          "month_counts": {
+            "2024-01": 9,
+            "2024-02": 17,
+            "2024-03": 27,
+            "2024-04": 16,
+            "2024-05": 11,
+            "2024-06": 14,
+            "2024-07": 32,
+            "2024-08": 37,
+            "2024-09": 23,
+            "2024-10": 21,
+            "2024-11": 41,
+            "2024-12": 30,
+            "2025-01": 47,
+            "2025-02": 50,
+            "2025-03": 35,
+            "2025-04": 55,
+            "2025-11": 56,
+            "2025-12": 28,
+            "2026-01": 29,
+            "2026-02": 30
+          }
+        }
+      ],
+      "month_counts": {
+        "2024-01": 9,
+        "2024-02": 17,
+        "2024-03": 27,
+        "2024-04": 16,
+        "2024-05": 11,
+        "2024-06": 14,
+        "2024-07": 32,
+        "2024-08": 37,
+        "2024-09": 23,
+        "2024-10": 21,
+        "2024-11": 41,
+        "2024-12": 30,
+        "2025-01": 47,
+        "2025-02": 50,
+        "2025-03": 35,
+        "2025-04": 55,
+        "2025-11": 56,
+        "2025-12": 28,
+        "2026-01": 29,
+        "2026-02": 30
+      }
+    }
+  ],
+  "conclusion": "2025-04 is present in the final output. 2025-05 through 2025-09 are absent from the final output and from the two invoice source workbooks found in the project root. 2025-10 is also absent from the output because sources jump from 2025-04 to 2025-11."
+}

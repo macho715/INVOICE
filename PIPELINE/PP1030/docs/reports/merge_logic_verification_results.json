@@ -1,0 +1,62 @@
+{
+  "verification1": {
+    "sample_cases": [],
+    "update_stats": {
+      "sample_count": 0,
+      "total_changes": 0,
+      "master_wins": 0
+    },
+    "verified_rules": {
+      "master_always_wins": null,
+      "date_columns_updated": false,
+      "non_date_columns_updated": false
+    },
+    "column_updates": {}
+  },
+  "verification2": {
+    "stage1": {
+      "original_total": 7197,
+      "multi_total": 9125,
+      "merged_total": 8680,
+      "loss": -1483
+    },
+    "stage2": {
+      "rows_before": 8680,
+      "rows_after": 8680,
+      "rows_match": true,
+      "added_columns": 12
+    },
+    "stage3": {
+      "rows_before": 8680,
+      "rows_after": 8680,
+      "rows_match": true,
+      "vendor_dist": {
+        "SIEMENS": 1606,
+        "HITACHI": 359
+      }
+    },
+    "data_loss": []
+  },
+  "verification3": {
+    "duplicate_cases": [],
+    "sheet_priority": {
+      "CASE_LIST": {
+        "rank": 1,
+        "first_idx": "0",
+        "count": "8602"
+      },
+      "HE_LOCAL": {
+        "rank": 2,
+        "first_idx": "8602",
+        "count": "78"
+      }
+    },
+    "empty_key_preserved": "0",
+    "dedup_stats": {
+      "total_rows": 8680,
+      "empty_keys": "0",
+      "valid_keys": "8680",
+      "unique_cases": 8680
+    }
+  }
+}

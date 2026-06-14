@@ -1,0 +1,19 @@
+{
+  "path": "output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted.xlsx",
+  "sheets": [
+    {
+      "title": "invoice_all_months",
+      "state": "visible",
+      "max_row": 609,
+      "max_column": 32,
+      "freeze_panes": "A2",
+      "auto_filter": "A1:AF609",
+      "merged_count": 0,
+      "tables": [
+        "표1:A1:AF609"
+      ],
+      "formula_count": 0
+    }
+  ],
+  "defined_names": []
+}

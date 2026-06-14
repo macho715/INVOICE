@@ -1,0 +1,437 @@
+{
+  "version": "v1.0",
+  "rules": [
+    {
+      "pattern": "\\b(adp inv|ad\\s*ports|adports)\\b.*\\bport dues\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "port_tariff",
+      "priority": 10,
+      "flags": "i",
+      "notes": "AD Ports invoice for Port Dues & Services"
+    },
+    {
+      "pattern": "\\bport dues\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "port_tariff",
+      "priority": 20,
+      "flags": "i",
+      "notes": "Port dues & services charges"
+    },
+    {
+      "pattern": "\\bport (handling|services?)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "port_tariff",
+      "priority": 30,
+      "flags": "i",
+      "notes": "Port handling/service charges"
+    },
+    {
+      "pattern": "\\bchannel transit\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "marine_ops",
+      "priority": 40,
+      "flags": "i",
+      "notes": "Channel transit charges"
+    },
+    {
+      "pattern": "\\bsafeen\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "marine_ops",
+      "priority": 50,
+      "flags": "i",
+      "notes": "SAFEEN marine operations / channel transit"
+    },
+    {
+      "pattern": "\\bpilotage\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "marine_ops",
+      "priority": 60,
+      "flags": "i",
+      "notes": "Pilotage service"
+    },
+    {
+      "pattern": "\\btowage\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "marine_ops",
+      "priority": 70,
+      "flags": "i",
+      "notes": "Towage service"
+    },
+    {
+      "pattern": "\\btug(boat)?\\s*assist(ance)?\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "marine_ops",
+      "priority": 80,
+      "flags": "i",
+      "notes": "Tug assistance"
+    },
+    {
+      "pattern": "\\bberth(ing)? (charge|fee|dues|rent)s?\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "port_tariff",
+      "priority": 90,
+      "flags": "i",
+      "notes": "Berthing charges"
+    },
+    {
+      "pattern": "\\b(mooring|unmooring)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "marine_ops",
+      "priority": 100,
+      "flags": "i",
+      "notes": "Mooring / Unmooring"
+    },
+    {
+      "pattern": "\\bchannel dues\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "A",
+      "subcategory": "marine_ops",
+      "priority": 110,
+      "flags": "i",
+      "notes": "Channel dues"
+    },
+    {
+      "pattern": "\\bforklift\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "equipment",
+      "priority": 10,
+      "flags": "i",
+      "notes": "Forklift hire/rental"
+    },
+    {
+      "pattern": "\\b(crane|crawler crane|mobile crane)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "equipment",
+      "priority": 20,
+      "flags": "i",
+      "notes": "Crane service"
+    },
+    {
+      "pattern": "\\b(manlift|boom lift|scissor lift|telehandler)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "equipment",
+      "priority": 30,
+      "flags": "i",
+      "notes": "Aerial work platforms"
+    },
+    {
+      "pattern": "\\b(hiab)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "equipment",
+      "priority": 40,
+      "flags": "i",
+      "notes": "HIAB truck crane"
+    },
+    {
+      "pattern": "\\b(bobcat|skid loader|skid-steer)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "equipment",
+      "priority": 50,
+      "flags": "i",
+      "notes": "Loader equipment"
+    },
+    {
+      "pattern": "\\b(excavator|backhoe)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "equipment",
+      "priority": 60,
+      "flags": "i",
+      "notes": "Excavation equipment"
+    },
+    {
+      "pattern": "\\b(generator|compressor)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "equipment",
+      "priority": 70,
+      "flags": "i",
+      "notes": "Power/air equipment"
+    },
+    {
+      "pattern": "\\b(labou?r( hour)?|man-?hour(s)?|m/?h|rigger|signalman|operator)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "manpower",
+      "priority": 80,
+      "flags": "i",
+      "notes": "Manpower / manhours"
+    },
+    {
+      "pattern": "\\b(5000|5,?000)\\s*ig\\b.*\\b(fw|fresh water)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "at_cost_supply",
+      "priority": 90,
+      "flags": "i",
+      "notes": "Fresh water 5000 IG at cost"
+    },
+    {
+      "pattern": "\\bfw supply\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "at_cost_supply",
+      "priority": 95,
+      "flags": "i",
+      "notes": "Fresh water supply (at cost)"
+    },
+    {
+      "pattern": "\\bwater supply\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "at_cost_supply",
+      "priority": 100,
+      "flags": "i",
+      "notes": "Water supply at cost"
+    },
+    {
+      "pattern": "\\b(mgo|diesel|fuel)\\s+(supply|charge|cost)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "B",
+      "subcategory": "at_cost_supply",
+      "priority": 110,
+      "flags": "i",
+      "notes": "Fuel/MGO at cost"
+    },
+    {
+      "pattern": "\\bagency fee\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "fee",
+      "priority": 10,
+      "flags": "i",
+      "notes": "Agency fee"
+    },
+    {
+      "pattern": "\\bhandling fee\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "fee",
+      "priority": 20,
+      "flags": "i",
+      "notes": "Handling fee"
+    },
+    {
+      "pattern": "\\b(document(ation)? (fee|charge)s?)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "document",
+      "priority": 30,
+      "flags": "i",
+      "notes": "Documentation charges"
+    },
+    {
+      "pattern": "\\bgate pass\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "pass",
+      "priority": 40,
+      "flags": "i",
+      "notes": "Gate pass charges"
+    },
+    {
+      "pattern": "\\badmin(istration)? (fee|charge)s?\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "admin",
+      "priority": 50,
+      "flags": "i",
+      "notes": "Administration charges"
+    },
+    {
+      "pattern": "\\bcoordination (fee|charge)s?\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "admin",
+      "priority": 60,
+      "flags": "i",
+      "notes": "Coordination charges"
+    },
+    {
+      "pattern": "\\b(cargo|customs) clearance\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "admin",
+      "priority": 70,
+      "flags": "i",
+      "notes": "Cargo/Customs clearance service"
+    },
+    {
+      "pattern": "\\bberthing arrangement\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "admin",
+      "priority": 80,
+      "flags": "i",
+      "notes": "Berthing arrangement (admin)"
+    },
+    {
+      "pattern": "\\barranging fw supply\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "admin",
+      "priority": 90,
+      "flags": "i",
+      "notes": "Arrangement service for FW (admin)"
+    },
+    {
+      "pattern": "\\bpermit (fee|charge)\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "permit",
+      "priority": 100,
+      "flags": "i",
+      "notes": "Permit fees"
+    },
+    {
+      "pattern": "\\bcertificate( issuance)? fee\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "document",
+      "priority": 110,
+      "flags": "i",
+      "notes": "Certificate issuance"
+    },
+    {
+      "pattern": "\\binspection fee\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "inspection",
+      "priority": 120,
+      "flags": "i",
+      "notes": "Inspection fee"
+    },
+    {
+      "pattern": "\\bcourier (fee|charge)s?\\b",
+      "fields": [
+        "subject",
+        "description"
+      ],
+      "price_center": "C",
+      "subcategory": "admin",
+      "priority": 130,
+      "flags": "i",
+      "notes": "Courier handling charges"
+    }
+  ]
+}

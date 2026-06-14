@@ -1,0 +1,4609 @@
+{
+  "invoice_workbook": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted_hvdc_code_applied_may_oct2025.xlsx",
+  "warehouse_workbook": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\WAREHOUSE_HITACHI,SIMENSE.xlsx",
+  "warehouse_sheet": "통합_원본데이터_Fixed",
+  "warehouse_rows_with_sct_ref": 7553,
+  "warehouse_unique_sct_refs": 566,
+  "invoice_rows_by_match_status": {
+    "exact": 147,
+    "no_match": 569,
+    "expanded_multi_code": 46,
+    "non_hvdc_text_or_blank": 177,
+    "descriptor_stripped": 34
+  },
+  "invoice_total_by_match_status": {
+    "exact": "2411815.1318600000921",
+    "no_match": "3369426.671008680010686",
+    "expanded_multi_code": "204846.35563000000111",
+    "non_hvdc_text_or_blank": "15262318.404475261848",
+    "descriptor_stripped": "77404.2946292799995"
+  },
+  "month_match_status": {
+    "2024-01": {
+      "exact": 9
+    },
+    "2024-02": {
+      "exact": 16,
+      "no_match": 1
+    },
+    "2024-03": {
+      "exact": 25,
+      "no_match": 2
+    },
+    "2024-04": {
+      "exact": 9,
+      "expanded_multi_code": 2,
+      "non_hvdc_text_or_blank": 5
+    },
+    "2024-05": {
+      "exact": 5,
+      "no_match": 2,
+      "non_hvdc_text_or_blank": 4
+    },
+    "2024-06": {
+      "exact": 6,
+      "expanded_multi_code": 1,
+      "no_match": 1,
+      "non_hvdc_text_or_blank": 6
+    },
+    "2024-07": {
+      "exact": 18,
+      "no_match": 6,
+      "expanded_multi_code": 4,
+      "non_hvdc_text_or_blank": 4
+    },
+    "2024-08": {
+      "expanded_multi_code": 3,
+      "no_match": 19,
+      "exact": 11,
+      "non_hvdc_text_or_blank": 4
+    },
+    "2024-09": {
+      "exact": 5,
+      "no_match": 13,
+      "non_hvdc_text_or_blank": 5
+    },
+    "2024-10": {
+      "no_match": 12,
+      "non_hvdc_text_or_blank": 6,
+      "expanded_multi_code": 2,
+      "exact": 1
+    },
+    "2024-11": {
+      "no_match": 23,
+      "exact": 9,
+      "expanded_multi_code": 1,
+      "non_hvdc_text_or_blank": 8
+    },
+    "2024-12": {
+      "exact": 3,
+      "no_match": 16,
+      "non_hvdc_text_or_blank": 9,
+      "expanded_multi_code": 2
+    },
+    "2025-01": {
+      "no_match": 38,
+      "expanded_multi_code": 3,
+      "non_hvdc_text_or_blank": 5,
+      "exact": 1
+    },
+    "2025-02": {
+      "no_match": 42,
+      "expanded_multi_code": 3,
+      "non_hvdc_text_or_blank": 5
+    },
+    "2025-03": {
+      "expanded_multi_code": 1,
+      "no_match": 23,
+      "non_hvdc_text_or_blank": 11
+    },
+    "2025-04": {
+      "no_match": 37,
+      "expanded_multi_code": 7,
+      "exact": 6,
+      "non_hvdc_text_or_blank": 5
+    },
+    "2025-05": {
+      "exact": 13,
+      "no_match": 49,
+      "expanded_multi_code": 1,
+      "non_hvdc_text_or_blank": 8
+    },
+    "2025-06": {
+      "no_match": 33,
+      "exact": 3,
+      "expanded_multi_code": 1,
+      "descriptor_stripped": 1,
+      "non_hvdc_text_or_blank": 8
+    },
+    "2025-07": {
+      "no_match": 53,
+      "descriptor_stripped": 2,
+      "expanded_multi_code": 3,
+      "exact": 1,
+      "non_hvdc_text_or_blank": 20
+    },
+    "2025-08": {
+      "exact": 2,
+      "no_match": 49,
+      "descriptor_stripped": 13,
+      "expanded_multi_code": 3,
+      "non_hvdc_text_or_blank": 8
+    },
+    "2025-09": {
+      "no_match": 23,
+      "descriptor_stripped": 17,
+      "expanded_multi_code": 6,
+      "non_hvdc_text_or_blank": 8
+    },
+    "2025-10": {
+      "no_match": 27,
+      "expanded_multi_code": 3,
+      "exact": 1,
+      "non_hvdc_text_or_blank": 9
+    },
+    "2025-11": {
+      "no_match": 40,
+      "exact": 2,
+      "non_hvdc_text_or_blank": 14
+    },
+    "2025-12": {
+      "no_match": 17,
+      "non_hvdc_text_or_blank": 10,
+      "exact": 1
+    },
+    "2026-01": {
+      "descriptor_stripped": 1,
+      "no_match": 21,
+      "non_hvdc_text_or_blank": 7
+    },
+    "2026-02": {
+      "no_match": 22,
+      "non_hvdc_text_or_blank": 8
+    }
+  },
+  "category_match_status": {
+    "DSV Outdoor": {
+      "exact": 57,
+      "no_match": 211,
+      "expanded_multi_code": 16,
+      "non_hvdc_text_or_blank": 28
+    },
+    "DSV Indoor": {
+      "exact": 63,
+      "no_match": 22,
+      "expanded_multi_code": 13,
+      "non_hvdc_text_or_blank": 29
+    },
+    "DSV MZP": {
+      "non_hvdc_text_or_blank": 9
+    },
+    "Shifting": {
+      "non_hvdc_text_or_blank": 2
+    },
+    "(blank)": {
+      "no_match": 2,
+      "non_hvdc_text_or_blank": 2
+    },
+    "DSV Al Markaz": {
+      "exact": 4,
+      "non_hvdc_text_or_blank": 2
+    },
+    "AAA  Storage": {
+      "non_hvdc_text_or_blank": 5
+    },
+    "Warehouse": {
+      "exact": 15,
+      "no_match": 100,
+      "expanded_multi_code": 4,
+      "non_hvdc_text_or_blank": 56,
+      "descriptor_stripped": 14
+    },
+    "Outdoor": {
+      "exact": 8,
+      "no_match": 234,
+      "non_hvdc_text_or_blank": 44,
+      "descriptor_stripped": 20,
+      "expanded_multi_code": 13
+    }
+  },
+  "not_exact_samples": [
+    {
+      "invoice_row": 27,
+      "billing_month": "2024-02",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-PPL-0003",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-PPL-0003"
+      ],
+      "matched": [],
+      "total": 2570.15,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 38,
+      "billing_month": "2024-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0001",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0001"
+      ],
+      "matched": [],
+      "total": 6788.35,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 49,
+      "billing_month": "2024-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0001",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0001"
+      ],
+      "matched": [],
+      "total": 2562.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 62,
+      "billing_month": "2024-04",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0087,90",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0087,90",
+        "HVDC-ADOPT-HE-0087",
+        "HVDC-ADOPT-HE-90"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0087"
+      ],
+      "total": 2397.25,
+      "warehouse_sample": [
+        {
+          "row": 1093,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0087",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 1094,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0087",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 1095,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0087",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor Covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 63,
+      "billing_month": "2024-04",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0091,92",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0091,92",
+        "HVDC-ADOPT-HE-0091",
+        "HVDC-ADOPT-HE-92"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0091"
+      ],
+      "total": 99.0,
+      "warehouse_sample": [
+        {
+          "row": 1101,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0091",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor Covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 66,
+      "billing_month": "2024-04",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 67,
+      "billing_month": "2024-04",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 374.85,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 68,
+      "billing_month": "2024-04",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 420.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 69,
+      "billing_month": "2024-04",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 441.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 70,
+      "billing_month": "2024-04",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 357.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 75,
+      "billing_month": "2024-05",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0004",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0004"
+      ],
+      "matched": [],
+      "total": 141874.28,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 76,
+      "billing_month": "2024-05",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0008",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0008"
+      ],
+      "matched": [],
+      "total": 1717.4,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 78,
+      "billing_month": "2024-05",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 79,
+      "billing_month": "2024-05",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 640.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 80,
+      "billing_month": "2024-05",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 913.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 81,
+      "billing_month": "2024-05",
+      "category": "DSV MZP",
+      "code": null,
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 525.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 87,
+      "billing_month": "2024-06",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0108 & 0109",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0108 & 0109",
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109"
+      ],
+      "total": 1300.0,
+      "warehouse_sample": [
+        {
+          "row": 1171,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0108",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 1172,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0108",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 1173,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0108",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Indoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 89,
+      "billing_month": "2024-06",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0002",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0002"
+      ],
+      "matched": [],
+      "total": 3725.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 90,
+      "billing_month": "2024-06",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 45000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 91,
+      "billing_month": "2024-06",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 160000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 92,
+      "billing_month": "2024-06",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 113000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 93,
+      "billing_month": "2024-06",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 94,
+      "billing_month": "2024-06",
+      "category": "Shifting",
+      "code": "Shifting from M44 to Al Markaz",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 94520.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 95,
+      "billing_month": "2024-06",
+      "category": "Shifting",
+      "code": "Shifting from M44 to Al Markaz",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 41866.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 99,
+      "billing_month": "2024-07",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0011",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0011"
+      ],
+      "matched": [],
+      "total": 420.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 109,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0127-1, 128",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0127-1, 128",
+        "HVDC-ADOPT-HE-0127-1",
+        "HVDC-ADOPT-HE-128"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0127-1"
+      ],
+      "total": 4947.5,
+      "warehouse_sample": [
+        {
+          "row": 2190,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0127-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 2191,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0127-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 2192,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0127-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 111,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0003",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0003"
+      ],
+      "matched": [],
+      "total": 2424.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 112,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 63000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 113,
+      "billing_month": "2024-07",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 160000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 114,
+      "billing_month": "2024-07",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 160000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 115,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 116,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0158 , 159",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0158 , 159",
+        "HVDC-ADOPT-HE-0158",
+        "HVDC-ADOPT-HE-159"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0158"
+      ],
+      "total": 6132.5,
+      "warehouse_sample": [
+        {
+          "row": 2033,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0158",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 2034,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0158",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 2035,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0158",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 118,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0005",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0005"
+      ],
+      "matched": [],
+      "total": 33605.55,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 121,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0004",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0004"
+      ],
+      "matched": [],
+      "total": 5373.65,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 122,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0007",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0007"
+      ],
+      "matched": [],
+      "total": 5625.3,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 123,
+      "billing_month": "2024-07",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0130 , 0131",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0130 , 0131",
+        "HVDC-ADOPT-HE-0130",
+        "HVDC-ADOPT-HE-0131"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0130",
+        "HVDC-ADOPT-HE-0131"
+      ],
+      "total": 6537.2,
+      "warehouse_sample": [
+        {
+          "row": 2567,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0130",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 2568,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0130",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 124,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0132 , 0133",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0132 , 0133",
+        "HVDC-ADOPT-HE-0132",
+        "HVDC-ADOPT-HE-0133"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0132",
+        "HVDC-ADOPT-HE-0133"
+      ],
+      "total": 7160.0,
+      "warehouse_sample": [
+        {
+          "row": 2571,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0132",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 2572,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0132",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 2573,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0132",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Indoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 125,
+      "billing_month": "2024-07",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0008",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0008"
+      ],
+      "matched": [],
+      "total": 5438.95,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 128,
+      "billing_month": "2024-08",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0143, 0144",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0143, 0144",
+        "HVDC-ADOPT-HE-0143",
+        "HVDC-ADOPT-HE-0144"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0143",
+        "HVDC-ADOPT-HE-0144"
+      ],
+      "total": 1253.66,
+      "warehouse_sample": [
+        {
+          "row": 1720,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0143",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 1721,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0143",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 1722,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0143",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Outdoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 129,
+      "billing_month": "2024-08",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SCT-0006",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0006"
+      ],
+      "matched": [],
+      "total": 34468.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 141,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0179",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-HE-0179"
+      ],
+      "matched": [],
+      "total": 70251.93,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 142,
+      "billing_month": "2024-08",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0179",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-HE-0179"
+      ],
+      "matched": [],
+      "total": 1652.4,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 143,
+      "billing_month": "2024-08",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0165, 169",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0165, 169",
+        "HVDC-ADOPT-HE-0165",
+        "HVDC-ADOPT-HE-169"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0165"
+      ],
+      "total": 3017.0,
+      "warehouse_sample": [
+        {
+          "row": 2609,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0165",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 2610,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0165",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 2611,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0165",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 144,
+      "billing_month": "2024-08",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0166, 171",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0166, 171",
+        "HVDC-ADOPT-HE-0166",
+        "HVDC-ADOPT-HE-171"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0166"
+      ],
+      "total": 373.5,
+      "warehouse_sample": [
+        {
+          "row": 2620,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0166",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 2621,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0166",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 2622,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0166",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 145,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0010",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0010"
+      ],
+      "matched": [],
+      "total": 9867.68,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 146,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0009",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0009"
+      ],
+      "matched": [],
+      "total": 44638.18,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 147,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-1",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-1"
+      ],
+      "matched": [],
+      "total": 31912.45,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 148,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0006",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0006"
+      ],
+      "matched": [],
+      "total": 2360.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 149,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 6662.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 150,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 5356.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 151,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 5190.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 152,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 6302.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 153,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 4497.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 154,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 4733.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 155,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 4733.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 156,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 4758.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 157,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 6162.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 158,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 4757.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 159,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005-2"
+      ],
+      "matched": [],
+      "total": 5144.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 160,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0013",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0013"
+      ],
+      "matched": [],
+      "total": 53694.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 161,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 117000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 162,
+      "billing_month": "2024-08",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 178800.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 163,
+      "billing_month": "2024-08",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 164,
+      "billing_month": "2024-08",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 168,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0009-1",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0009-1"
+      ],
+      "matched": [],
+      "total": 29843.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 171,
+      "billing_month": "2024-09",
+      "category": "DSV Indoor",
+      "code": "HVDC-DSV-MOSB-0042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-DSV-MOSB-0042"
+      ],
+      "matched": [],
+      "total": 94.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 172,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-DSV-MOSB-0042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-DSV-MOSB-0042"
+      ],
+      "matched": [],
+      "total": 2000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 173,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-DSV-MOSB-0042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-DSV-MOSB-0042"
+      ],
+      "matched": [],
+      "total": 4000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 174,
+      "billing_month": "2024-09",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0026",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0026"
+      ],
+      "matched": [],
+      "total": 450.4,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 175,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0009-2",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0009-2"
+      ],
+      "matched": [],
+      "total": 13641.63,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 176,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0014",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0014"
+      ],
+      "matched": [],
+      "total": 45754.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 177,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0014",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0014"
+      ],
+      "matched": [],
+      "total": 4175.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 178,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0014",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0014"
+      ],
+      "matched": [],
+      "total": 4191.15,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 179,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0014",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0014"
+      ],
+      "matched": [],
+      "total": 0.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 180,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0017",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0017"
+      ],
+      "matched": [],
+      "total": 40000.2,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 181,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0009",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0009"
+      ],
+      "matched": [],
+      "total": 14938.18,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 182,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0010",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0010"
+      ],
+      "matched": [],
+      "total": 1063.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 183,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "Port charge Man Masket to Gate pass",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 6069.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 184,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 194400.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 185,
+      "billing_month": "2024-09",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 186,
+      "billing_month": "2024-09",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 187,
+      "billing_month": "2024-09",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 188,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0013",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0013"
+      ],
+      "matched": [],
+      "total": 21694.7,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 189,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SEI-006",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SEI-006"
+      ],
+      "matched": [],
+      "total": 5481.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 190,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0016",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0016"
+      ],
+      "matched": [],
+      "total": 43575.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 191,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0012",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0012"
+      ],
+      "matched": [],
+      "total": 23703.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 192,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0015 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0015"
+      ],
+      "matched": [],
+      "total": 2050.3,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 193,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0017",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0017"
+      ],
+      "matched": [],
+      "total": 2441.35,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 194,
+      "billing_month": "2024-10",
+      "category": "DSV Indoor",
+      "code": "HE-0192/195/189/193/197/191",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 23357.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 195,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HE-0192/195/189/193/197/191",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 5947.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 196,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0183/184",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0183/184",
+        "HVDC-ADOPT-HE-0183",
+        "HVDC-ADOPT-HE-184"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0183"
+      ],
+      "total": 138.25,
+      "warehouse_sample": [
+        {
+          "row": 3211,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0183",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3212,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0183",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3213,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0183",
+          "Source_Vendor": "HITACHI",
+          "Site": "MIR",
+          "Storage": "Outdoor Covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 197,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0200,0201",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0200,0201",
+        "HVDC-ADOPT-HE-0200",
+        "HVDC-ADOPT-HE-0201"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0200",
+        "HVDC-ADOPT-HE-0201"
+      ],
+      "total": 2786.5,
+      "warehouse_sample": [
+        {
+          "row": 3484,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0200",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 199,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0005",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0005"
+      ],
+      "matched": [],
+      "total": 23511.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 200,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0009-2 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0009-2"
+      ],
+      "matched": [],
+      "total": 3925.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 201,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0010 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0010"
+      ],
+      "matched": [],
+      "total": 500.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 202,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0014 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0014"
+      ],
+      "matched": [],
+      "total": 39.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 203,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0017 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0017"
+      ],
+      "matched": [],
+      "total": 12350.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 204,
+      "billing_month": "2024-10",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0031",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0031"
+      ],
+      "matched": [],
+      "total": 428.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 205,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 194400.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 206,
+      "billing_month": "2024-10",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 207,
+      "billing_month": "2024-10",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 208,
+      "billing_month": "2024-10",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 209,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0016",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0016"
+      ],
+      "matched": [],
+      "total": 1449.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 210,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0018",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0018"
+      ],
+      "matched": [],
+      "total": 12893.28,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 211,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0018"
+      ],
+      "matched": [],
+      "total": 527.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 212,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0018"
+      ],
+      "matched": [],
+      "total": 235.13,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 213,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0018"
+      ],
+      "matched": [],
+      "total": 633.83,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 214,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0018"
+      ],
+      "matched": [],
+      "total": 634.65,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 215,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0018"
+      ],
+      "matched": [],
+      "total": 263.2,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 216,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0018"
+      ],
+      "matched": [],
+      "total": 598.95,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 217,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0019",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0019"
+      ],
+      "matched": [],
+      "total": 30167.98,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 218,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0019 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0019"
+      ],
+      "matched": [],
+      "total": 6197.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 219,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-DSV-MOSB-052 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-DSV-MOSB-052"
+      ],
+      "matched": [],
+      "total": 905.84,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 220,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0021",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0021"
+      ],
+      "matched": [],
+      "total": 4706.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 221,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0021 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0021"
+      ],
+      "matched": [],
+      "total": 193.58,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 222,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0021 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0021"
+      ],
+      "matched": [],
+      "total": 185.88,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 223,
+      "billing_month": "2024-11",
+      "category": "(blank)",
+      "code": "HVDC-ADOPT-SCT-0021 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0021"
+      ],
+      "matched": [],
+      "total": 326.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 226,
+      "billing_month": "2024-11",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0004",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0004"
+      ],
+      "matched": [],
+      "total": 913.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 227,
+      "billing_month": "2024-11",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0011",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0011"
+      ],
+      "matched": [],
+      "total": 605.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 228,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SEI-0008",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SEI-0008"
+      ],
+      "matched": [],
+      "total": 13014.23,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 229,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0018",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0018"
+      ],
+      "matched": [],
+      "total": 2155.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 230,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0019",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0019"
+      ],
+      "matched": [],
+      "total": 61759.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 231,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0021",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0021"
+      ],
+      "matched": [],
+      "total": 4000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 232,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0025",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0025"
+      ],
+      "matched": [],
+      "total": 26242.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 233,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0205, 0213",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0205, 0213",
+        "HVDC-ADOPT-HE-0205",
+        "HVDC-ADOPT-HE-0213"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0205",
+        "HVDC-ADOPT-HE-0213"
+      ],
+      "total": 24371.5,
+      "warehouse_sample": [
+        {
+          "row": 3580,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0205",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3581,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0205",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3582,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0205",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 241,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0014",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0014"
+      ],
+      "matched": [],
+      "total": 103.63,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 242,
+      "billing_month": "2024-11",
+      "category": "DSV Indoor",
+      "code": "10 Ton Forklift (M44 Warehouse)",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 1950.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 243,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 282600.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 244,
+      "billing_month": "2024-11",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 204650.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 245,
+      "billing_month": "2024-11",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 246,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 247,
+      "billing_month": "2024-11",
+      "category": "DSV Indoor",
+      "code": "Additional Manpower - M44 WH",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 3500.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 248,
+      "billing_month": "2024-11",
+      "category": "DSV Al Markaz",
+      "code": "Additional Manpower - Al Markaz WH",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 3500.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 249,
+      "billing_month": "2024-11",
+      "category": "DSV Outdoor",
+      "code": "Additional Manpower - Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 3500.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 251,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0046, 0047",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0046, 0047",
+        "HVDC-ADOPT-SIM-0046",
+        "HVDC-ADOPT-SIM-0047"
+      ],
+      "matched": [],
+      "total": 904.06,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 252,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "Valve Capacitor Replacement",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 11702.19,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 255,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "HVDC-MIR-SKM-001 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-MIR-SKM-001"
+      ],
+      "matched": [],
+      "total": 451.4,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 256,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "HVDC-MIR-SKM-001 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-MIR-SKM-001"
+      ],
+      "matched": [],
+      "total": 469.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 257,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDCADOPT-SIM-0005-2",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 15182.06,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 258,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0011",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0011"
+      ],
+      "matched": [],
+      "total": 20774.1,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 259,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0012",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0012"
+      ],
+      "matched": [],
+      "total": 17673.15,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 260,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0019",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0019"
+      ],
+      "matched": [],
+      "total": 10418.44,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 261,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0022",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0022"
+      ],
+      "matched": [],
+      "total": 35400.09,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 262,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0022 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0022"
+      ],
+      "matched": [],
+      "total": 720.23,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 263,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0024",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0024"
+      ],
+      "matched": [],
+      "total": 2333.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 264,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0025",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0025"
+      ],
+      "matched": [],
+      "total": 28696.07,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 265,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0025 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0025"
+      ],
+      "matched": [],
+      "total": 5731.58,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 266,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0018",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0018"
+      ],
+      "matched": [],
+      "total": 2155.43,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 267,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0018"
+      ],
+      "matched": [],
+      "total": 48.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 268,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0019",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0019"
+      ],
+      "matched": [],
+      "total": 8329.33,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 269,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0215, 0232",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0215, 0232",
+        "HVDC-ADOPT-HE-0215",
+        "HVDC-ADOPT-HE-0232"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0215",
+        "HVDC-ADOPT-HE-0232"
+      ],
+      "total": 9618.2,
+      "warehouse_sample": [
+        {
+          "row": 3735,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0215",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3736,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0215",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3737,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0215",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 270,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0215, 0232",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0215, 0232",
+        "HVDC-ADOPT-HE-0215",
+        "HVDC-ADOPT-HE-0232"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0215",
+        "HVDC-ADOPT-HE-0232"
+      ],
+      "total": 499.2,
+      "warehouse_sample": [
+        {
+          "row": 3735,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0215",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3736,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0215",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        },
+        {
+          "row": 3737,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0215",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor Covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 271,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0025",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0025"
+      ],
+      "matched": [],
+      "total": 6025.86,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 272,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0023",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0023"
+      ],
+      "matched": [],
+      "total": 6872.32,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 273,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 282600.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 274,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 207000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 275,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 276,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 277,
+      "billing_month": "2024-12",
+      "category": "DSV Indoor",
+      "code": "Additional Manpower - M44 WH",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 3500.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 278,
+      "billing_month": "2024-12",
+      "category": "DSV Al Markaz",
+      "code": "Additional Manpower - Al Markaz WH",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 3500.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 279,
+      "billing_month": "2024-12",
+      "category": "DSV Outdoor",
+      "code": "Additional Manpower - Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 3500.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 280,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0022 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0022"
+      ],
+      "matched": [],
+      "total": 9185.4,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 281,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0012 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0012"
+      ],
+      "matched": [],
+      "total": 2959.24,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 282,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0026",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0026"
+      ],
+      "matched": [],
+      "total": 18757.29,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 283,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0026 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0026"
+      ],
+      "matched": [],
+      "total": 4757.29,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 284,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0014 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0014"
+      ],
+      "matched": [],
+      "total": 7346.45,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 285,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0016 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0016"
+      ],
+      "matched": [],
+      "total": 14126.55,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 286,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0024 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0024"
+      ],
+      "matched": [],
+      "total": 22.33,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 287,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0192, 0195, 0189, 0193, 0197, 0191",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0192, 0195, 0189, 0193, 0197, 0191",
+        "HVDC-ADOPT-HE-0192",
+        "HVDC-ADOPT-HE-0195",
+        "HVDC-ADOPT-HE-0189",
+        "HVDC-ADOPT-HE-0193",
+        "HVDC-ADOPT-HE-0197",
+        "HVDC-ADOPT-HE-0191"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0192",
+        "HVDC-ADOPT-HE-0195",
+        "HVDC-ADOPT-HE-0189",
+        "HVDC-ADOPT-HE-0193",
+        "HVDC-ADOPT-HE-0197",
+        "HVDC-ADOPT-HE-0191"
+      ],
+      "total": 16289.91,
+      "warehouse_sample": [
+        {
+          "row": 3333,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0192",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 3334,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0192",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 3335,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0192",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Indoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 288,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0262 HE-0263",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0262 HE-0263",
+        "HVDC-ADOPT-HE-0262",
+        "HVDC-ADOPT-HE-0263"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0262",
+        "HVDC-ADOPT-HE-0263"
+      ],
+      "total": 5311.51,
+      "warehouse_sample": [
+        {
+          "row": 3957,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0262",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 3958,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0262",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 3959,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0262",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 289,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0010 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0010"
+      ],
+      "matched": [],
+      "total": 1367.3,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 290,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0025 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0025"
+      ],
+      "matched": [],
+      "total": 963.2,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 291,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0030",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0030"
+      ],
+      "matched": [],
+      "total": 55269.11,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 292,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0030 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0030"
+      ],
+      "matched": [],
+      "total": 10974.27,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 293,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0031",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0031"
+      ],
+      "matched": [],
+      "total": 27876.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 294,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0031 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0031"
+      ],
+      "matched": [],
+      "total": 7876.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 295,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0032",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0032"
+      ],
+      "matched": [],
+      "total": 12446.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 296,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0032 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0032"
+      ],
+      "matched": [],
+      "total": 2446.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 297,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0034",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0034"
+      ],
+      "matched": [],
+      "total": 8672.34,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 298,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0034 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0034"
+      ],
+      "matched": [],
+      "total": 2672.34,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 299,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0035",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0035"
+      ],
+      "matched": [],
+      "total": 4885.14,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 300,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0035 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0035"
+      ],
+      "matched": [],
+      "total": 576.66,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 301,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0036"
+      ],
+      "matched": [],
+      "total": 2223.26,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 302,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0036 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0036"
+      ],
+      "matched": [],
+      "total": 111.63,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 303,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0044",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0044"
+      ],
+      "matched": [],
+      "total": 44.28,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 304,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0044 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0044"
+      ],
+      "matched": [],
+      "total": 44.28,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 305,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0046",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0046"
+      ],
+      "matched": [],
+      "total": 7.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 306,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0046 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0046"
+      ],
+      "matched": [],
+      "total": 7.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 307,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SEI-0008 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SEI-0008"
+      ],
+      "matched": [],
+      "total": 3014.23,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 308,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0019 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0019"
+      ],
+      "matched": [],
+      "total": 1917.96,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 309,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0029, 0034",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0029, 0034",
+        "HVDC-ADOPT-SIM-0029",
+        "HVDC-ADOPT-SIM-0034"
+      ],
+      "matched": [],
+      "total": 2332.16,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 310,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0029, 0034 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0029, 0034",
+        "HVDC-ADOPT-SIM-0029",
+        "HVDC-ADOPT-SIM-0034"
+      ],
+      "matched": [],
+      "total": 193.23,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 311,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0035",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0035"
+      ],
+      "matched": [],
+      "total": 21756.35,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 312,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0043",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0043"
+      ],
+      "matched": [],
+      "total": 4029.2,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 313,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0045",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0045"
+      ],
+      "matched": [],
+      "total": 13960.78,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 314,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0045 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0045"
+      ],
+      "matched": [],
+      "total": 3960.78,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 315,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "EQ-211-HE_LOCAL-JAN24 - LV Panel - DAS Pole",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 2748.08,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 316,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0059",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0059"
+      ],
+      "matched": [],
+      "total": 949.2,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 317,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0060",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0060"
+      ],
+      "matched": [],
+      "total": 669.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 318,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0143, 0116",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0143, 0116",
+        "HVDC-ADOPT-HE-0143",
+        "HVDC-ADOPT-HE-0116"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0143",
+        "HVDC-ADOPT-HE-0116"
+      ],
+      "total": 0.0,
+      "warehouse_sample": [
+        {
+          "row": 1720,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0143",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 1721,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0143",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 1722,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0143",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Outdoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 319,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "HVDC-DSV-MOSB-042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-DSV-MOSB-042"
+      ],
+      "matched": [],
+      "total": 220.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 320,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0022",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0022"
+      ],
+      "matched": [],
+      "total": 853.82,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 322,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0026",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0026"
+      ],
+      "matched": [],
+      "total": 659.76,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 323,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 318600.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 324,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 207000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 325,
+      "billing_month": "2025-01",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 326,
+      "billing_month": "2025-01",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 327,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 25474.03,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 328,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 6440.45,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 329,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 5149.15,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 330,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 6610.43,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 331,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 5137.8,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 332,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 5157.58,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 333,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 6691.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 334,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 5151.93,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 335,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 5156.95,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 336,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 5171.73,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 337,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 5154.78,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 338,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0036",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0036"
+      ],
+      "matched": [],
+      "total": 6663.2,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 339,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0018 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0018"
+      ],
+      "matched": [],
+      "total": 46.73,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 340,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0019 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0019"
+      ],
+      "matched": [],
+      "total": 7102.39,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 341,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0029 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0029"
+      ],
+      "matched": [],
+      "total": 138.93,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 342,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0035 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0035"
+      ],
+      "matched": [],
+      "total": 4504.34,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 343,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0037",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0037"
+      ],
+      "matched": [],
+      "total": 16244.7,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 344,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0037",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0037"
+      ],
+      "matched": [],
+      "total": 6646.38,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 345,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0037",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0037"
+      ],
+      "matched": [],
+      "total": 5185.83,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 346,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0037",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0037"
+      ],
+      "matched": [],
+      "total": 5151.93,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 347,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0037",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0037"
+      ],
+      "matched": [],
+      "total": 5185.83,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 348,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0037",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0037"
+      ],
+      "matched": [],
+      "total": 4115.45,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 349,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0233,0236",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0233,0236",
+        "HVDC-ADOPT-HE-0233",
+        "HVDC-ADOPT-HE-0236"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0233",
+        "HVDC-ADOPT-HE-0236"
+      ],
+      "total": 12118.4,
+      "warehouse_sample": [
+        {
+          "row": 3794,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0233",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 3795,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0233",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 3796,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0233",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 350,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-HE-0256,0257",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0256,0257",
+        "HVDC-ADOPT-HE-0256",
+        "HVDC-ADOPT-HE-0257"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0256",
+        "HVDC-ADOPT-HE-0257"
+      ],
+      "total": 5610.7,
+      "warehouse_sample": [
+        {
+          "row": 4012,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0256",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 4013,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0256",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor"
+        },
+        {
+          "row": 4014,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0256",
+          "Source_Vendor": "HITACHI",
+          "Site": "DAS",
+          "Storage": "Outdoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 351,
+      "billing_month": "2025-02",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0058",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0058"
+      ],
+      "matched": [],
+      "total": 410.94,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 352,
+      "billing_month": "2025-02",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0238,0239",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0238,0239",
+        "HVDC-ADOPT-HE-0238",
+        "HVDC-ADOPT-HE-0239"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0238",
+        "HVDC-ADOPT-HE-0239"
+      ],
+      "total": 2741.67,
+      "warehouse_sample": [
+        {
+          "row": 3861,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0238",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Indoor heated"
+        },
+        {
+          "row": 3862,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0238",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Indoor heated"
+        },
+        {
+          "row": 3863,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0238",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Indoor heated"
+        }
+      ]
+    },
+    {
+      "invoice_row": 353,
+      "billing_month": "2025-02",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-SIM-0067",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0067"
+      ],
+      "matched": [],
+      "total": 716.08,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 354,
+      "billing_month": "2025-02",
+      "category": "DSV Indoor",
+      "code": "Warehouse Outbound",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 1770.29,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 355,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 318600.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 356,
+      "billing_month": "2025-02",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 207000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 357,
+      "billing_month": "2025-02",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 358,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 359,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0022 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0022"
+      ],
+      "matched": [],
+      "total": 1499.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 360,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0024 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0024"
+      ],
+      "matched": [],
+      "total": 310.85,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 361,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0029",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0029"
+      ],
+      "matched": [],
+      "total": 3956.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 362,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0030 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0030"
+      ],
+      "matched": [],
+      "total": 367.42,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 363,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0035 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0035"
+      ],
+      "matched": [],
+      "total": 308.48,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 364,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0036 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0036"
+      ],
+      "matched": [],
+      "total": 111.63,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 365,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0037",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0037"
+      ],
+      "matched": [],
+      "total": 10266.93,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 366,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0037 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0037"
+      ],
+      "matched": [],
+      "total": 2266.93,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 367,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0038",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0038"
+      ],
+      "matched": [],
+      "total": 18851.13,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 368,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0038 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0038"
+      ],
+      "matched": [],
+      "total": 2664.23,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 369,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0039",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0039"
+      ],
+      "matched": [],
+      "total": 2094.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 370,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0039 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0039"
+      ],
+      "matched": [],
+      "total": 23.65,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 371,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0048",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0048"
+      ],
+      "matched": [],
+      "total": 101.4,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 372,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SEI-0017-1",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SEI-0017-1"
+      ],
+      "matched": [],
+      "total": 7872.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 373,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SEI-0017-1 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SEI-0017-1"
+      ],
+      "matched": [],
+      "total": 1872.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 374,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SEI-0017-3",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SEI-0017-3"
+      ],
+      "matched": [],
+      "total": 7.1,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 375,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SEI-0019",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SEI-0019"
+      ],
+      "matched": [],
+      "total": 2187.1,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 376,
+      "billing_month": "2025-02",
+      "category": "DSV Outdoor",
+      "code": "HVDC-DAS-NIE-MOSB-004",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-DAS-NIE-MOSB-004",
+        "HVDC-DAS-NIE-004"
+      ],
+      "matched": [],
+      "total": 4111.6,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 377,
+      "billing_month": "2025-03",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0246,247,249,250",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0246,247,249,250",
+        "HVDC-ADOPT-HE-0246",
+        "HVDC-ADOPT-HE-247",
+        "HVDC-ADOPT-HE-249",
+        "HVDC-ADOPT-HE-250"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0246"
+      ],
+      "total": 3011.47,
+      "warehouse_sample": [
+        {
+          "row": 3908,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0246",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        },
+        {
+          "row": 3909,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0246",
+          "Source_Vendor": "HITACHI",
+          "Site": "SHU",
+          "Storage": "Indoor"
+        }
+      ]
+    },
+    {
+      "invoice_row": 378,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0042"
+      ],
+      "matched": [],
+      "total": 43939.08,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 379,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0042-A",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0042-A",
+        "HVDC-ADOPT-SIM-0042"
+      ],
+      "matched": [],
+      "total": 2662.65,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 380,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0050",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0050"
+      ],
+      "matched": [],
+      "total": 5577.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 381,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0050",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0050"
+      ],
+      "matched": [],
+      "total": 2613.75,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 382,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0053",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0053"
+      ],
+      "matched": [],
+      "total": 2199.3,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 383,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0052",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0052"
+      ],
+      "matched": [],
+      "total": 2300.48,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 384,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0052",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0052"
+      ],
+      "matched": [],
+      "total": 5701.35,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 385,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0035",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0035"
+      ],
+      "matched": [],
+      "total": 1233.71,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 386,
+      "billing_month": "2025-03",
+      "category": "(blank)",
+      "code": "HVDC-ADOPT-SIM-0057",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0057"
+      ],
+      "matched": [],
+      "total": 519.3,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 387,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SIM-0057",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SIM-0057"
+      ],
+      "matched": [],
+      "total": 563.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 388,
+      "billing_month": "2025-03",
+      "category": "(blank)",
+      "code": "Daily gate pass for operators",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 198.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 389,
+      "billing_month": "2025-03",
+      "category": "(blank)",
+      "code": "Daily gate pass for trailers",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 220.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 390,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "Mina Zayed open yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 33000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 391,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "DSV Open Yard",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 318600.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 392,
+      "billing_month": "2025-03",
+      "category": "DSV Indoor",
+      "code": "Al Markaz Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 188200.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 393,
+      "billing_month": "2025-03",
+      "category": "DSV Indoor",
+      "code": "M44 Warehouse",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 207000.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 394,
+      "billing_month": "2025-03",
+      "category": "AAA  Storage",
+      "code": "Dg Warehouse- November 2024",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 12823.49,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 395,
+      "billing_month": "2025-03",
+      "category": "AAA  Storage",
+      "code": "Dg Warehouse- December 2024",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 12946.49,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 396,
+      "billing_month": "2025-03",
+      "category": "AAA  Storage",
+      "code": "Dg Warehouse- January 2025",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 12714.99,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 397,
+      "billing_month": "2025-03",
+      "category": "AAA  Storage",
+      "code": "Dg Warehouse- February 2025",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 9210.15,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 398,
+      "billing_month": "2025-03",
+      "category": "AAA  Storage",
+      "code": "Dg Warehouse- March 2025",
+      "status": "non_hvdc_text_or_blank",
+      "candidates": [],
+      "matched": [],
+      "total": 7006.02,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 399,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0042"
+      ],
+      "matched": [],
+      "total": 902.73,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 400,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0042"
+      ],
+      "matched": [],
+      "total": 575.83,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 401,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0042",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0042"
+      ],
+      "matched": [],
+      "total": 407.83,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 402,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0063",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0063"
+      ],
+      "matched": [],
+      "total": 8.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 403,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0047",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0047"
+      ],
+      "matched": [],
+      "total": 2414.7,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 404,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0047",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0047"
+      ],
+      "matched": [],
+      "total": 414.7,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 405,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0045",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0045"
+      ],
+      "matched": [],
+      "total": 2118.85,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 406,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0045",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0045"
+      ],
+      "matched": [],
+      "total": 118.85,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 407,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0043",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0043"
+      ],
+      "matched": [],
+      "total": 2298.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 408,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0038",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0038"
+      ],
+      "matched": [],
+      "total": 2117.5,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 409,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0039",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0039"
+      ],
+      "matched": [],
+      "total": 47.3,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 410,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0069",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0069"
+      ],
+      "matched": [],
+      "total": 143.25,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 411,
+      "billing_month": "2025-03",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0065",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0065"
+      ],
+      "matched": [],
+      "total": 82.22,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 412,
+      "billing_month": "2025-04",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0069 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0069"
+      ],
+      "matched": [],
+      "total": 143.4,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 413,
+      "billing_month": "2025-04",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0301-1,0311-1,0308,0309-1,0310-1",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0301-1,0311-1,0308,0309-1,0310-1",
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0310-1"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0310-1"
+      ],
+      "total": 11187.5,
+      "warehouse_sample": [
+        {
+          "row": 4169,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0301-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 4170,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0301-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 414,
+      "billing_month": "2025-04",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0301-1,0311-1,0308,0309-1,0310-1",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0301-1,0311-1,0308,0309-1,0310-1",
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0310-1"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0310-1"
+      ],
+      "total": 3500.0,
+      "warehouse_sample": [
+        {
+          "row": 4169,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0301-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 4170,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0301-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 415,
+      "billing_month": "2025-04",
+      "category": "DSV Indoor",
+      "code": "HVDC-ADOPT-HE-0301-1,0311-1,0308,0309-1,0310-1",
+      "status": "expanded_multi_code",
+      "candidates": [
+        "HVDC-ADOPT-HE-0301-1,0311-1,0308,0309-1,0310-1",
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0310-1"
+      ],
+      "matched": [
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0310-1"
+      ],
+      "total": 3500.0,
+      "warehouse_sample": [
+        {
+          "row": 4169,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0301-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        },
+        {
+          "row": 4170,
+          "SCT Ref.No": "HVDC-ADOPT-HE-0301-1",
+          "Source_Vendor": "HITACHI",
+          "Site": "AGI",
+          "Storage": "Outdoor covered"
+        }
+      ]
+    },
+    {
+      "invoice_row": 416,
+      "billing_month": "2025-04",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0050",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0050"
+      ],
+      "matched": [],
+      "total": 2242.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 417,
+      "billing_month": "2025-04",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0050 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0050"
+      ],
+      "matched": [],
+      "total": 242.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 418,
+      "billing_month": "2025-04",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0063 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0063"
+      ],
+      "matched": [],
+      "total": 2.0,
+      "warehouse_sample": []
+    },
+    {
+      "invoice_row": 419,
+      "billing_month": "2025-04",
+      "category": "DSV Outdoor",
+      "code": "HVDC-ADOPT-SCT-0054 ",
+      "status": "no_match",
+      "candidates": [
+        "HVDC-ADOPT-SCT-0054"
+      ],
+      "matched": [],
+      "total": 5837.25,
+      "warehouse_sample": []
+    }
+  ],
+  "rule": "Invoice HVDC CODE was compared to warehouse SCT Ref.No. Matching statuses: exact raw code; descriptor_stripped after removing IN/OUT/parenthetical descriptors; expanded_multi_code for comma/slash/ampersand lists; no_match; non_hvdc_text_or_blank."
+}

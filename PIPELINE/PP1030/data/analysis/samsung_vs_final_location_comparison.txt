@@ -1,0 +1,28 @@
+================================================================================
+Samsung 파일 vs Final_Location 보고서 비교 분석
+================================================================================
+
+분석 일시: 2025-12-31 10:54:13
+
+Samsung 파일:
+  총 케이스: 1,724건
+  창고 합계: 752건
+  현장 합계: 0건
+
+HITACHI Final_Location:
+  총 케이스: 7,288건
+  창고 합계: 1,338건
+  현장 합계: 5,894건
+
+창고별 비교:
+  DSV Al Markaz: Samsung=0, HITACHI=20, 차이=+20
+  DSV Indoor: Samsung=752, HITACHI=554, 차이=-198
+  DSV MZP: Samsung=0, HITACHI=7, 차이=+7
+  DSV Outdoor: Samsung=0, HITACHI=363, 차이=+363
+  MOSB: Samsung=0, HITACHI=298, 차이=+298
+
+현장별 비교:
+  AGI: Samsung=0, HITACHI=438, 차이=+438
+  DAS: Samsung=0, HITACHI=1,784, 차이=+1,784
+  MIR: Samsung=0, HITACHI=1,817, 차이=+1,817
+  SHU: Samsung=0, HITACHI=1,855, 차이=+1,855

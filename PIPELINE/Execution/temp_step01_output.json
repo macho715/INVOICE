@@ -1,0 +1,977 @@
+{
+  "meta": {
+    "invoice_number": "OFCO-INV-0001178",
+    "invoice_date": "15 October, 2025",
+    "customer_name": "Samsung C&T Corporation-Abu Dhabi",
+    "supplier_name": "OFCO Offshore Support & Logistic Services LLC",
+    "samsung_ref": "SSS-BUSHRA-JULY-2025",
+    "vat_percent": 5.0,
+    "currency": "USD",
+    "total_excl_vat": 41375.75,
+    "total_vat": 2068.79,
+    "total_incl_vat": 43444.54,
+    "alt_currency": null,
+    "exchange_rate": null,
+    "alt_excl_vat": null,
+    "alt_vat": null,
+    "alt_incl_vat": null,
+    "vessel_name": "BushraOFCO",
+    "rotation_no": null,
+    "voyage_no": null,
+    "grt": null,
+    "dwt": null,
+    "loa": null,
+    "customer_reg_no": null
+  },
+  "items": [
+    {
+      "SUBJECT": "Agency fee: Berthing Arrangement Channel Transit Permission / Pilot Channel Transit Permission / Pilot Arrangement -Rot#25010192415%1.00 490.13 LS 490.13 24.51 514.64",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          490.13
+        ]
+      ],
+      "Amount (AED)": 490.13,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT(AF FOR BA)",
+      "COST CENTER B": "CONTRACT",
+      "PRICE CENTER": "AGENCY FEE FOR BERTHING ARRANGEMENT",
+      "NOTES": "tax_rate=15%; qty=1.0; unit_price=490.13; unit=LS; tax_amount=24.51; amount_incl_vat=514.64; sn=1; section=UNK"
+    },
+    {
+      "SUBJECT": "SAFEEN INV-62102- Berthing",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 62.0,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": "tax_rate=1; tax_amount=0.0; amount_incl_vat=2.0; sn=2; section=UNK"
+    },
+    {
+      "SUBJECT": "Unberthing & Pilotage- Rot#",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          5401.23
+        ]
+      ],
+      "Amount (AED)": 5401.23,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PILOTAGE",
+      "COST CENTER B": "PILOT LAUNCH",
+      "PRICE CENTER": "PILOTAGE",
+      "NOTES": "tax_rate=15%; qty=1.0; unit_price=5401.23; unit=LS; tax_amount=270.03; amount_incl_vat=5671.26; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV-61871 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          358.9
+        ]
+      ],
+      "Amount (AED)": 358.9,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT DUES & SERVICES CHARGES",
+      "PRICE CENTER": "PORT DUES",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=358.9; unit=LS; tax_amount=17.95; amount_incl_vat=376.85; sn=3; section=UNK"
+    },
+    {
+      "SUBJECT": "SAFEEN INV-61206- Permits &",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 61.0,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": "tax_rate=2; tax_amount=0.0; amount_incl_vat=6.0; sn=4; section=UNK"
+    },
+    {
+      "SUBJECT": "SAFEEN INV-59089- Permits &",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 59.0,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": "tax_rate=0; tax_amount=8.0; amount_incl_vat=9.0; sn=5; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701362- PHC 5%1.00 1,472.56 LS1,472.56 73.63 1,546.19",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          1472.56
+        ]
+      ],
+      "Amount (AED)": 1472.56,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=1472.56; unit=LS; tax_amount=73.63; amount_incl_vat=1546.19; sn=6; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701317- PHC 5%1.00 2,627.64 LS2,627.64 131.38 2,759.02",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          2627.64
+        ]
+      ],
+      "Amount (AED)": 2627.64,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=2627.64; unit=LS; tax_amount=131.38; amount_incl_vat=2759.02; sn=7; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701313- PHC 5%1.00 2,631.72 LS2,631.72 131.59 2,763.31",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          2631.72
+        ]
+      ],
+      "Amount (AED)": 2631.72,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=2631.72; unit=LS; tax_amount=131.59; amount_incl_vat=2763.31; sn=8; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701342- PHC 5%1.00 151.12 LS 151.12 7.56 158.68",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          151.12
+        ]
+      ],
+      "Amount (AED)": 151.12,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=151.12; unit=LS; tax_amount=7.56; amount_incl_vat=158.68; sn=9; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701329- Port crane",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 12.0,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "EQUIPMENT CHARGES",
+      "COST CENTER B": "CRANE",
+      "PRICE CENTER": "CRANE",
+      "NOTES": "tax_rate=50; tax_amount=701.0; amount_incl_vat=329.0; sn=10; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701337- Port Forklift",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 12.0,
+      "COST MAIN": "AT COST",
+      "COST CENTER A": "AT COST",
+      "COST CENTER B": "AT COST(FORKLIFT)",
+      "PRICE CENTER": "FOLK LIFT HIRE CHARGE",
+      "NOTES": "tax_rate=50; tax_amount=701.0; amount_incl_vat=337.0; sn=11; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701338- PHC 5%1.00 1,553.44 LS1,553.44 77.67 1,631.11",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          1553.44
+        ]
+      ],
+      "Amount (AED)": 1553.44,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=1553.44; unit=LS; tax_amount=77.67; amount_incl_vat=1631.11; sn=12; section=UNK"
+    },
+    {
+      "SUBJECT": "OFCO Handling Fees -Port charges Rot#25010192415%0.10 15,412.10 LS1,541.21 77.06 1,618.27",
+      "EA_RATE_PAIRS": [
+        [
+          0.1,
+          15412.1
+        ]
+      ],
+      "Amount (AED)": 1541.21,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "HANDLING FEE 10%",
+      "PRICE CENTER": "HANDLING FEE",
+      "NOTES": "tax_rate=15%; qty=0.1; unit_price=15412.1; unit=LS; tax_amount=77.06; amount_incl_vat=1618.27; sn=13; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Port Crane arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+      "EA_RATE_PAIRS": [
+        [
+          4.0,
+          54.46
+        ]
+      ],
+      "Amount (AED)": 217.84,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=4.0; unit_price=54.46; unit=LS; tax_amount=10.89; amount_incl_vat=228.73; sn=14; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Port Forklift arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+      "EA_RATE_PAIRS": [
+        [
+          4.0,
+          54.46
+        ]
+      ],
+      "Amount (AED)": 217.84,
+      "COST MAIN": "AT COST",
+      "COST CENTER A": "AT COST",
+      "COST CENTER B": "AT COST(FORKLIFT)",
+      "PRICE CENTER": "FOLK LIFT HIRE CHARGE",
+      "NOTES": "tax_rate=5%; qty=4.0; unit_price=54.46; unit=LS; tax_amount=10.89; amount_incl_vat=228.73; sn=15; section=UNK"
+    },
+    {
+      "SUBJECT": "PTW Application Fee 5%4.00 40.84 LS 163.36 8.17 171.53",
+      "EA_RATE_PAIRS": [
+        [
+          4.0,
+          40.84
+        ]
+      ],
+      "Amount (AED)": 163.36,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "CONTRACT(OFCO HF)",
+      "PRICE CENTER": "AGENCY FEE FOR ARRANGEMENT PTW",
+      "NOTES": "tax_rate=5%; qty=4.0; unit_price=40.84; unit=LS; tax_amount=8.17; amount_incl_vat=171.53; sn=16; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Arranging FW Supply arrangement on 25-07-20255%1.00 54.46 LS 54.46 2.72 57.18",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          54.46
+        ]
+      ],
+      "Amount (AED)": 54.46,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "AF FOR FW SA",
+      "PRICE CENTER": "SUPPLY WATER 5000IG",
+      "NOTES": "tax_rate=55%; qty=1.0; unit_price=54.46; unit=LS; tax_amount=2.72; amount_incl_vat=57.18; sn=17; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Berthing Arrangement Channel Transit Permission / Pilot Channel Transit Permission / Pilot Arrangement -Rot#25010196085%1.00 490.13 LS 490.13 24.51 514.64",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          490.13
+        ]
+      ],
+      "Amount (AED)": 490.13,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT(AF FOR BA)",
+      "COST CENTER B": "CONTRACT",
+      "PRICE CENTER": "AGENCY FEE FOR BERTHING ARRANGEMENT",
+      "NOTES": "tax_rate=85%; qty=1.0; unit_price=490.13; unit=LS; tax_amount=24.51; amount_incl_vat=514.64; sn=18; section=UNK"
+    },
+    {
+      "SUBJECT": "SAFEEN INV-64761- Berthing",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 64.0,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": "tax_rate=7; tax_amount=6.0; amount_incl_vat=1.0; sn=19; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV-64761 - Port Dues & Services 5%1.00 320.95 LS 320.95 16.05 337.00",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          320.95
+        ]
+      ],
+      "Amount (AED)": 320.95,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT DUES & SERVICES CHARGES",
+      "PRICE CENTER": "PORT DUES",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=320.95; unit=LS; tax_amount=16.05; amount_incl_vat=337.0; sn=20; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701390- Port Forklift",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 12.0,
+      "COST MAIN": "AT COST",
+      "COST CENTER A": "AT COST",
+      "COST CENTER B": "AT COST(FORKLIFT)",
+      "PRICE CENTER": "FOLK LIFT HIRE CHARGE",
+      "NOTES": "tax_rate=50; tax_amount=701.0; amount_incl_vat=390.0; sn=21; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701380- PHC 5%1.00 2,439.75 LS2,439.75 121.99 2,561.74",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          2439.75
+        ]
+      ],
+      "Amount (AED)": 2439.75,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=2439.75; unit=LS; tax_amount=121.99; amount_incl_vat=2561.74; sn=22; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701389- PHC 5%1.00 1,644.66 LS1,644.66 82.23 1,726.89",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          1644.66
+        ]
+      ],
+      "Amount (AED)": 1644.66,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=1644.66; unit=LS; tax_amount=82.23; amount_incl_vat=1726.89; sn=23; section=UNK"
+    },
+    {
+      "SUBJECT": "SAFEEN INV-62067- Permits &",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 62.0,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": "tax_rate=0; tax_amount=6.0; amount_incl_vat=7.0; sn=24; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701405- PHC 5%1.00 736.28 LS 736.28 36.81 773.09",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          736.28
+        ]
+      ],
+      "Amount (AED)": 736.28,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=736.28; unit=LS; tax_amount=36.81; amount_incl_vat=773.09; sn=25; section=UNK"
+    },
+    {
+      "SUBJECT": "OFCO Handling Fees -Port charges Rot#25010196085%0.10 9,897.00 LS 989.70 49.49 1,039.19",
+      "EA_RATE_PAIRS": [
+        [
+          0.1,
+          9897.0
+        ]
+      ],
+      "Amount (AED)": 989.7,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "HANDLING FEE 10%",
+      "PRICE CENTER": "HANDLING FEE",
+      "NOTES": "tax_rate=85%; qty=0.1; unit_price=9897.0; unit=LS; tax_amount=49.49; amount_incl_vat=1039.19; sn=26; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+      "EA_RATE_PAIRS": [
+        [
+          2.0,
+          54.46
+        ]
+      ],
+      "Amount (AED)": 108.92,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=2.0; unit_price=54.46; unit=LS; tax_amount=5.45; amount_incl_vat=114.37; sn=27; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Port Forklift arrangement 5%3.00 54.46 LS 163.38 8.17 171.55",
+      "EA_RATE_PAIRS": [
+        [
+          3.0,
+          54.46
+        ]
+      ],
+      "Amount (AED)": 163.38,
+      "COST MAIN": "AT COST",
+      "COST CENTER A": "AT COST",
+      "COST CENTER B": "AT COST(FORKLIFT)",
+      "PRICE CENTER": "FOLK LIFT HIRE CHARGE",
+      "NOTES": "tax_rate=5%; qty=3.0; unit_price=54.46; unit=LS; tax_amount=8.17; amount_incl_vat=171.55; sn=28; section=UNK"
+    },
+    {
+      "SUBJECT": "PTW Application Fee 5%2.00 40.84 LS 81.68 4.08 85.76",
+      "EA_RATE_PAIRS": [
+        [
+          2.0,
+          40.84
+        ]
+      ],
+      "Amount (AED)": 81.68,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "CONTRACT(OFCO HF)",
+      "PRICE CENTER": "AGENCY FEE FOR ARRANGEMENT PTW",
+      "NOTES": "tax_rate=5%; qty=2.0; unit_price=40.84; unit=LS; tax_amount=4.08; amount_incl_vat=85.76; sn=29; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Berthing Arrangement Channel Transit Permission / Pilot Channel Transit Permission / Pilot Arrangement -Rot#25010196945%1.00 490.13 LS 490.13 24.51 514.64",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          490.13
+        ]
+      ],
+      "Amount (AED)": 490.13,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT(AF FOR BA)",
+      "COST CENTER B": "CONTRACT",
+      "PRICE CENTER": "AGENCY FEE FOR BERTHING ARRANGEMENT",
+      "NOTES": "tax_rate=45%; qty=1.0; unit_price=490.13; unit=LS; tax_amount=24.51; amount_incl_vat=514.64; sn=31; section=UNK"
+    },
+    {
+      "SUBJECT": "SAFEEN INV-66741- Berthing",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 66.0,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "CHANNEL TRANSIT CHARGES",
+      "PRICE CENTER": "CHANNEL TRANSIT CHARGES",
+      "NOTES": "tax_rate=7; tax_amount=4.0; amount_incl_vat=1.0; sn=32; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV-66716 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          358.9
+        ]
+      ],
+      "Amount (AED)": 358.9,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT DUES & SERVICES CHARGES",
+      "PRICE CENTER": "PORT DUES",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=358.9; unit=LS; tax_amount=17.95; amount_incl_vat=376.85; sn=33; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701421- PHC 5%1.00 887.68 LS 887.68 44.38 932.06",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          887.68
+        ]
+      ],
+      "Amount (AED)": 887.68,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=887.68; unit=LS; tax_amount=44.38; amount_incl_vat=932.06; sn=34; section=UNK"
+    },
+    {
+      "SUBJECT": "ADP INV01250701411- PHC 5%1.00 1,539.82 LS1,539.82 76.99 1,616.81",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          1539.82
+        ]
+      ],
+      "Amount (AED)": 1539.82,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "PORT HANDLING CHARGES",
+      "PRICE CENTER": "PORT HANDLING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=1539.82; unit=LS; tax_amount=76.99; amount_incl_vat=1616.81; sn=35; section=UNK"
+    },
+    {
+      "SUBJECT": "OFCO Handling Fees -Port charges Rot#25010196945%0.10 4,730.60 LS 473.06 23.65 496.71",
+      "EA_RATE_PAIRS": [
+        [
+          0.1,
+          4730.6
+        ]
+      ],
+      "Amount (AED)": 473.06,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "HANDLING FEE 10%",
+      "PRICE CENTER": "HANDLING FEE",
+      "NOTES": "tax_rate=45%; qty=0.1; unit_price=4730.6; unit=LS; tax_amount=23.65; amount_incl_vat=496.71; sn=36; section=UNK"
+    },
+    {
+      "SUBJECT": "PTW Application Fee 5%1.00 40.84 LS 40.84 2.04 42.88",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          40.84
+        ]
+      ],
+      "Amount (AED)": 40.84,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "CONTRACT(OFCO HF)",
+      "PRICE CENTER": "AGENCY FEE FOR ARRANGEMENT PTW",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=40.84; unit=LS; tax_amount=2.04; amount_incl_vat=42.88; sn=37; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+      "EA_RATE_PAIRS": [
+        [
+          2.0,
+          54.46
+        ]
+      ],
+      "Amount (AED)": 108.92,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=2.0; unit_price=54.46; unit=LS; tax_amount=5.45; amount_incl_vat=114.37; sn=38; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Port Forklift arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+      "EA_RATE_PAIRS": [
+        [
+          2.0,
+          54.46
+        ]
+      ],
+      "Amount (AED)": 108.92,
+      "COST MAIN": "AT COST",
+      "COST CENTER A": "AT COST",
+      "COST CENTER B": "AT COST(FORKLIFT)",
+      "PRICE CENTER": "FOLK LIFT HIRE CHARGE",
+      "NOTES": "tax_rate=5%; qty=2.0; unit_price=54.46; unit=LS; tax_amount=5.45; amount_incl_vat=114.37; sn=39; section=UNK"
+    },
+    {
+      "SUBJECT": "INV-MAR-25-5790-Deck maintenance-",
+      "EA_RATE_PAIRS": [],
+      "Amount (AED)": 5.0,
+      "COST MAIN": "AT COST",
+      "COST CENTER A": "AT COST",
+      "COST CENTER B": "DECK MAINTENANCE",
+      "PRICE CENTER": "DECK MAINTENANCE",
+      "NOTES": "tax_rate=7; tax_amount=9.0; amount_incl_vat=0.0; sn=40; section=UNK"
+    },
+    {
+      "SUBJECT": "OFCO 10% Handling Fees 5%0.10 4,220.60 LS 422.06 21.10 443.16",
+      "EA_RATE_PAIRS": [
+        [
+          0.1,
+          4220.6
+        ]
+      ],
+      "Amount (AED)": 422.06,
+      "COST MAIN": "CONTRACT",
+      "COST CENTER A": "CONTRACT",
+      "COST CENTER B": "OFCO HF",
+      "PRICE CENTER": "OFCO HANDLING FEE",
+      "NOTES": "tax_rate=5%; qty=0.1; unit_price=4220.6; unit=LS; tax_amount=21.1; amount_incl_vat=443.16; sn=41; section=UNK"
+    },
+    {
+      "SUBJECT": "Pass Arrangement (details as per attached summary)5%1.00 462.90 LS 462.90 23.15 486.05",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          462.9
+        ]
+      ],
+      "Amount (AED)": 462.9,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=462.9; unit=LS; tax_amount=23.15; amount_incl_vat=486.05; sn=42; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency Fee: Short Term Pass Arrangement5%17.00 13.61 LS 231.37 11.57 242.94",
+      "EA_RATE_PAIRS": [
+        [
+          17.0,
+          13.61
+        ]
+      ],
+      "Amount (AED)": 231.37,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=17.0; unit_price=13.61; unit=LS; tax_amount=11.57; amount_incl_vat=242.94; sn=43; section=UNK"
+    },
+    {
+      "SUBJECT": "Pass Arrangement (details as per attached summary)5%1.00 136.15 LS 136.15 6.81 142.96",
+      "EA_RATE_PAIRS": [
+        [
+          1.0,
+          136.15
+        ]
+      ],
+      "Amount (AED)": 136.15,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=1.0; unit_price=136.15; unit=LS; tax_amount=6.81; amount_incl_vat=142.96; sn=44; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency Fee: Gate Pass Arrangement 5%5.00 2.72 LS 13.60 0.68 14.28",
+      "EA_RATE_PAIRS": [
+        [
+          5.0,
+          2.72
+        ]
+      ],
+      "Amount (AED)": 13.6,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=5.0; unit_price=2.72; unit=LS; tax_amount=0.68; amount_incl_vat=14.28; sn=45; section=UNK"
+    },
+    {
+      "SUBJECT": "Agency fee: Equipment Pass Arrangement5%4.00 13.61 LS 54.44 2.72 57.16",
+      "EA_RATE_PAIRS": [
+        [
+          4.0,
+          13.61
+        ]
+      ],
+      "Amount (AED)": 54.44,
+      "COST MAIN": "PORT HANDLING",
+      "COST CENTER A": "PORT HANDLING CHARGE",
+      "COST CENTER B": "AF FOR PASS ARRG",
+      "PRICE CENTER": "DOCUMENT PROCESSING CHARGE",
+      "NOTES": "tax_rate=5%; qty=4.0; unit_price=13.61; unit=LS; tax_amount=2.72; amount_incl_vat=57.16; sn=46; section=UNK"
+    }
+  ],
+  "audit": {
+    "total_amount_from_items": 29600.69,
+    "total_deviation_pct": 28.46,
+    "within_tolerance": false,
+    "item_ea_rate_checks": [
+      {
+        "subject": "Agency fee: Berthing Arrangement Channel Transit Permission / Pilot Channel Transit Permission / Pilot Arrangement -Rot#25010192415%1.00 490.13 LS 490.13 24.51 514.64",
+        "calc": 490.13,
+        "amount": 490.13,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "SAFEEN INV-62102- Berthing",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "Unberthing & Pilotage- Rot#",
+        "calc": 5401.23,
+        "amount": 5401.23,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV-61871 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+        "calc": 358.9,
+        "amount": 358.9,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "SAFEEN INV-61206- Permits &",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "SAFEEN INV-59089- Permits &",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "ADP INV01250701362- PHC 5%1.00 1,472.56 LS1,472.56 73.63 1,546.19",
+        "calc": 1472.56,
+        "amount": 1472.56,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701317- PHC 5%1.00 2,627.64 LS2,627.64 131.38 2,759.02",
+        "calc": 2627.64,
+        "amount": 2627.64,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701313- PHC 5%1.00 2,631.72 LS2,631.72 131.59 2,763.31",
+        "calc": 2631.72,
+        "amount": 2631.72,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701342- PHC 5%1.00 151.12 LS 151.12 7.56 158.68",
+        "calc": 151.12,
+        "amount": 151.12,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701329- Port crane",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "ADP INV01250701337- Port Forklift",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "ADP INV01250701338- PHC 5%1.00 1,553.44 LS1,553.44 77.67 1,631.11",
+        "calc": 1553.44,
+        "amount": 1553.44,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "OFCO Handling Fees -Port charges Rot#25010192415%0.10 15,412.10 LS1,541.21 77.06 1,618.27",
+        "calc": 1541.21,
+        "amount": 1541.21,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Port Crane arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+        "calc": 217.84,
+        "amount": 217.84,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Port Forklift arrangement 5%4.00 54.46 LS 217.84 10.89 228.73",
+        "calc": 217.84,
+        "amount": 217.84,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "PTW Application Fee 5%4.00 40.84 LS 163.36 8.17 171.53",
+        "calc": 163.36,
+        "amount": 163.36,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Arranging FW Supply arrangement on 25-07-20255%1.00 54.46 LS 54.46 2.72 57.18",
+        "calc": 54.46,
+        "amount": 54.46,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Berthing Arrangement Channel Transit Permission / Pilot Channel Transit Permission / Pilot Arrangement -Rot#25010196085%1.00 490.13 LS 490.13 24.51 514.64",
+        "calc": 490.13,
+        "amount": 490.13,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "SAFEEN INV-64761- Berthing",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "ADP INV-64761 - Port Dues & Services 5%1.00 320.95 LS 320.95 16.05 337.00",
+        "calc": 320.95,
+        "amount": 320.95,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701390- Port Forklift",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "ADP INV01250701380- PHC 5%1.00 2,439.75 LS2,439.75 121.99 2,561.74",
+        "calc": 2439.75,
+        "amount": 2439.75,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701389- PHC 5%1.00 1,644.66 LS1,644.66 82.23 1,726.89",
+        "calc": 1644.66,
+        "amount": 1644.66,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "SAFEEN INV-62067- Permits &",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "ADP INV01250701405- PHC 5%1.00 736.28 LS 736.28 36.81 773.09",
+        "calc": 736.28,
+        "amount": 736.28,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "OFCO Handling Fees -Port charges Rot#25010196085%0.10 9,897.00 LS 989.70 49.49 1,039.19",
+        "calc": 989.7,
+        "amount": 989.7,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+        "calc": 108.92,
+        "amount": 108.92,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Port Forklift arrangement 5%3.00 54.46 LS 163.38 8.17 171.55",
+        "calc": 163.38,
+        "amount": 163.38,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "PTW Application Fee 5%2.00 40.84 LS 81.68 4.08 85.76",
+        "calc": 81.68,
+        "amount": 81.68,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Berthing Arrangement Channel Transit Permission / Pilot Channel Transit Permission / Pilot Arrangement -Rot#25010196945%1.00 490.13 LS 490.13 24.51 514.64",
+        "calc": 490.13,
+        "amount": 490.13,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "SAFEEN INV-66741- Berthing",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "ADP INV-66716 - Port Dues & Services 5%1.00 358.90 LS 358.90 17.95 376.85",
+        "calc": 358.9,
+        "amount": 358.9,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701421- PHC 5%1.00 887.68 LS 887.68 44.38 932.06",
+        "calc": 887.68,
+        "amount": 887.68,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "ADP INV01250701411- PHC 5%1.00 1,539.82 LS1,539.82 76.99 1,616.81",
+        "calc": 1539.82,
+        "amount": 1539.82,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "OFCO Handling Fees -Port charges Rot#25010196945%0.10 4,730.60 LS 473.06 23.65 496.71",
+        "calc": 473.06,
+        "amount": 473.06,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "PTW Application Fee 5%1.00 40.84 LS 40.84 2.04 42.88",
+        "calc": 40.84,
+        "amount": 40.84,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Port Crane arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+        "calc": 108.92,
+        "amount": 108.92,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Port Forklift arrangement 5%2.00 54.46 LS 108.92 5.45 114.37",
+        "calc": 108.92,
+        "amount": 108.92,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "INV-MAR-25-5790-Deck maintenance-",
+        "status": "SKIP",
+        "reason": "missing EA/Rate or Amount"
+      },
+      {
+        "subject": "OFCO 10% Handling Fees 5%0.10 4,220.60 LS 422.06 21.10 443.16",
+        "calc": 422.06,
+        "amount": 422.06,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Pass Arrangement (details as per attached summary)5%1.00 462.90 LS 462.90 23.15 486.05",
+        "calc": 462.9,
+        "amount": 462.9,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency Fee: Short Term Pass Arrangement5%17.00 13.61 LS 231.37 11.57 242.94",
+        "calc": 231.37,
+        "amount": 231.37,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Pass Arrangement (details as per attached summary)5%1.00 136.15 LS 136.15 6.81 142.96",
+        "calc": 136.15,
+        "amount": 136.15,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency Fee: Gate Pass Arrangement 5%5.00 2.72 LS 13.60 0.68 14.28",
+        "calc": 13.6,
+        "amount": 13.6,
+        "dev": 0.0,
+        "ok": true
+      },
+      {
+        "subject": "Agency fee: Equipment Pass Arrangement5%4.00 13.61 LS 54.44 2.72 57.16",
+        "calc": 54.44,
+        "amount": 54.44,
+        "dev": 0.0,
+        "ok": true
+      }
+    ]
+  }
+}

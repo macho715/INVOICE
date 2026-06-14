@@ -1,0 +1,18 @@
+{
+  "version": "v2.5.1",
+  "updated": "2025-10-29",
+  "includes": {
+    "tariff_dictionary": "/mnt/data/tariff_dictionary.json",
+    "fee_keywords": "/mnt/data/fee_keywords.json"
+  },
+  "priority_rule": "Lower numeric priority wins when multiple patterns match.",
+  "fields": [
+    "pattern",
+    "fields",
+    "price_center",
+    "subcategory",
+    "priority",
+    "flags",
+    "notes"
+  ]
+}

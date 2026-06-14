@@ -1,0 +1,14 @@
+Label,Value
+ProjectRoot,C:\PP1030
+PythonExe,py
+Stage1Script,run\run_pipeline.py --stage 1
+Stage2Script,run\run_pipeline.py --stage 2
+Stage3Script,run\run_pipeline.py --stage 3
+Stage4Script,run\run_pipeline.py --stage 4
+ArgsStage1,
+ArgsStage2,
+ArgsStage3,
+ArgsStage4,--stage4-visualize
+,
+OpenAfterRun,TRUE
+

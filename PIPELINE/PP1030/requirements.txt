@@ -1,0 +1,16 @@
+# HVDC Pipeline Core Dependencies
+pandas>=2.0.0
+openpyxl>=3.1.0
+XlsxWriter>=3.1.0
+polars[excel]>=0.20.0
+great-expectations>=0.18.0
+
+# Excel Automation & Integration (2025-12-21 추가)
+xlwings>=0.31.0          # VBA-Python 통합
+pywin32>=306              # Windows COM 자동화
+
+# Optional Performance Libraries
+# calamine>=0.1.7         # Rust 기반 빠른 Excel 읽기 (선택)
+# pyexcel>=0.7.0          # 통합 Excel 인터페이스 (선택)
+# pyexcel-xlsx>=0.6.0     # pyexcel xlsx 지원 (선택)
+

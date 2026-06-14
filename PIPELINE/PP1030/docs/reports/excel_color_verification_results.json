@@ -1,0 +1,169 @@
+{
+  "raw_files": {
+    "master_file": {
+      "Case List": {
+        "header_row": 0,
+        "total_rows": 1780,
+        "case_column": null,
+        "columns": [
+          "Unnamed: 0",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6",
+          "Unnamed: 7",
+          "Unnamed: 8",
+          "Unnamed: 9"
+        ]
+      }
+    },
+    "warehouse_file": {
+      "Case List, RIL": {
+        "header_row": 0,
+        "raw_rows": 7006,
+        "data_rows": 7005,
+        "case_column": null,
+        "columns": [
+          "Unnamed: 0",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6",
+          "Unnamed: 7",
+          "Unnamed: 8",
+          "Unnamed: 9"
+        ]
+      },
+      "HE Local": {
+        "header_row": 0,
+        "raw_rows": 84,
+        "data_rows": 83,
+        "case_column": null,
+        "columns": [
+          "Unnamed: 0",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6",
+          "Unnamed: 7",
+          "Unnamed: 8",
+          "Unnamed: 9"
+        ]
+      },
+      "HE-0214,0252 (Capacitor)": {
+        "header_row": 0,
+        "raw_rows": 107,
+        "data_rows": 106,
+        "case_column": null,
+        "columns": [
+          "Unnamed: 0",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6",
+          "Unnamed: 7",
+          "Unnamed: 8",
+          "Unnamed: 9"
+        ]
+      }
+    }
+  },
+  "colors": {
+    "sheets": {
+      "Case List, RIL": {
+        "header_row": 1,
+        "total_rows": 8945,
+        "total_columns": 43,
+        "case_column": 7,
+        "case_column_name": "Case No.",
+        "orange_cells": 0,
+        "yellow_rows": 1943,
+        "sample_cases": [
+          {
+            "case_no": "192641",
+            "row": 8192,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192642",
+            "row": 8193,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192643",
+            "row": 8194,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192644",
+            "row": 8195,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192645",
+            "row": 8196,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192646",
+            "row": 8197,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192647",
+            "row": 8198,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192648",
+            "row": 8199,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192649",
+            "row": 8200,
+            "color": "YELLOW"
+          },
+          {
+            "case_no": "192650",
+            "row": 8201,
+            "color": "YELLOW"
+          }
+        ]
+      },
+      "HE Local": {
+        "header_row": 1,
+        "total_rows": 80,
+        "total_columns": 34,
+        "case_column": 7,
+        "case_column_name": "Case No.",
+        "orange_cells": 0,
+        "yellow_rows": 0,
+        "sample_cases": []
+      },
+      "HE-0214,0252 (Capacitor)": {
+        "header_row": 1,
+        "total_rows": 103,
+        "total_columns": 43,
+        "case_column": 7,
+        "case_column_name": "Case No.",
+        "orange_cells": 0,
+        "yellow_rows": 0,
+        "sample_cases": []
+      }
+    }
+  },
+  "verification": {
+    "total_orange_cells": 0,
+    "total_yellow_rows": 0,
+    "yellow_by_sheet": {}
+  }
+}

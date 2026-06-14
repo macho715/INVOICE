@@ -1,0 +1,104 @@
+{
+  "C:\\HVDC_WORK\\PIPELINE\\PP1030\\HVDC WAREHOUSE_INVOICE.xlsx": {
+    "exists": true,
+    "sheets": [
+      {
+        "sheet": "invoice",
+        "max_row": 466,
+        "max_column": 32,
+        "header_row": 1,
+        "month_counts": {
+          "2024-01": 9,
+          "2024-02": 17,
+          "2024-03": 27,
+          "2024-04": 16,
+          "2024-05": 11,
+          "2024-06": 14,
+          "2024-07": 32,
+          "2024-08": 37,
+          "2024-09": 23,
+          "2024-10": 21,
+          "2024-11": 41,
+          "2024-12": 30,
+          "2025-01": 47,
+          "2025-02": 50,
+          "2025-03": 35,
+          "2025-04": 55
+        },
+        "nonblank_data_rows": 465
+      }
+    ]
+  },
+  "C:\\HVDC_WORK\\PIPELINE\\PP1030\\??? Draft - (SCT)_DSV_Storage Operation Draft for Feb 2026 Rev1.xlsx": {
+    "exists": false,
+    "sheets": []
+  },
+  "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months.xlsx": {
+    "exists": true,
+    "sheets": [
+      {
+        "sheet": "invoice_all_months",
+        "max_row": 609,
+        "max_column": 32,
+        "header_row": 1,
+        "month_counts": {
+          "2024-01": 9,
+          "2024-02": 17,
+          "2024-03": 27,
+          "2024-04": 16,
+          "2024-05": 11,
+          "2024-06": 14,
+          "2024-07": 32,
+          "2024-08": 37,
+          "2024-09": 23,
+          "2024-10": 21,
+          "2024-11": 41,
+          "2024-12": 30,
+          "2025-01": 47,
+          "2025-02": 50,
+          "2025-03": 35,
+          "2025-04": 55,
+          "2025-11": 56,
+          "2025-12": 28,
+          "2026-01": 29,
+          "2026-02": 30
+        },
+        "nonblank_data_rows": 608
+      }
+    ]
+  },
+  "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted_hvdc_code_applied.xlsx": {
+    "exists": true,
+    "sheets": [
+      {
+        "sheet": "invoice_all_months",
+        "max_row": 609,
+        "max_column": 32,
+        "header_row": 1,
+        "month_counts": {
+          "2024-01": 9,
+          "2024-02": 17,
+          "2024-03": 27,
+          "2024-04": 16,
+          "2024-05": 11,
+          "2024-06": 14,
+          "2024-07": 32,
+          "2024-08": 37,
+          "2024-09": 23,
+          "2024-10": 21,
+          "2024-11": 41,
+          "2024-12": 30,
+          "2025-01": 47,
+          "2025-02": 50,
+          "2025-03": 35,
+          "2025-04": 55,
+          "2025-11": 56,
+          "2025-12": 28,
+          "2026-01": 29,
+          "2026-02": 30
+        },
+        "nonblank_data_rows": 608
+      }
+    ]
+  }
+}

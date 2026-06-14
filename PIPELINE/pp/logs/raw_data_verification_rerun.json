@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-10-23T13:31:57.974079",
+  "baseline_timestamp": "2025-10-23T13:14:44.687378",
+  "verification_status": "PASS",
+  "files": {
+    "Case List.xlsx": {
+      "filename": "Case List.xlsx",
+      "baseline": {
+        "path": "C:\\pipeline\\data\\raw\\Case List.xlsx",
+        "exists": true,
+        "size_bytes": 1179971,
+        "modified_time": "2025-10-23T12:48:45.418155",
+        "md5_hash": "174459d39602d43601b02f6beec96479",
+        "error": null
+      },
+      "current": {
+        "path": "C:\\pipeline\\data\\raw\\Case List.xlsx",
+        "exists": true,
+        "size_bytes": 1179971,
+        "modified_time": "2025-10-23T12:48:45.418155",
+        "md5_hash": "174459d39602d43601b02f6beec96479",
+        "error": null
+      },
+      "status": "UNCHANGED",
+      "changes": []
+    },
+    "HVDC Hitachi.xlsx": {
+      "filename": "HVDC Hitachi.xlsx",
+      "baseline": {
+        "path": "C:\\pipeline\\data\\raw\\HVDC Hitachi.xlsx",
+        "exists": true,
+        "size_bytes": 911226,
+        "modified_time": "2025-10-23T12:46:08.261276",
+        "md5_hash": "9b90732f6dbb12aa4ea6184bd0ba5485",
+        "error": null
+      },
+      "current": {
+        "path": "C:\\pipeline\\data\\raw\\HVDC Hitachi.xlsx",
+        "exists": true,
+        "size_bytes": 911226,
+        "modified_time": "2025-10-23T12:46:08.261276",
+        "md5_hash": "9b90732f6dbb12aa4ea6184bd0ba5485",
+        "error": null
+      },
+      "status": "UNCHANGED",
+      "changes": []
+    }
+  },
+  "summary": {
+    "total_files": 2,
+    "verified_files": 2,
+    "modified_files": 0,
+    "missing_files": 0,
+    "error_files": 0
+  }
+}

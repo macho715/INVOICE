@@ -1,0 +1,65 @@
+# Stage 2: Derived Columns (파생 컬럼) 설정
+# Stage 2: Derived Columns Configuration
+
+stage:
+  name: "Derived Columns"
+  version: "2.0.0"
+  description: "13개 파생 컬럼 계산 및 처리"
+
+input:
+  # Option 1: Use multi-sheet file (Stage 2 will merge automatically)
+  # synced_file: "data/processed/synced/HVDC WAREHOUSE_HITACHI(HE).synced_v3.4_multi.xlsx"
+  
+  # Option 2: Use pre-merged file (recommended for faster processing)
+  synced_file: "data/processed/synced/HVDC WAREHOUSE_HITACHI(HE).synced_v3.10_merged.xlsx"
+  backup_enabled: true
+
+output:
+  derived_file: "data/processed/derived/HVDC WAREHOUSE_HITACHI(HE).xlsx"
+  preserve_colors: true
+  backup_enabled: true
+
+columns:
+  # 13개 파생 컬럼 정의
+  status_columns:
+    - Status_SITE
+    - Status_WAREHOUSE
+    - Status_Current
+    - Status_Location
+    - Status_Location_Date
+    - Status_Storage
+
+  handling_columns:
+    - Site_AGI_handling
+    - WH_AGI_handling
+    - Total_AGI_handling
+    - Minus
+    - Final_AGI_handling
+
+  analysis_columns:
+    - Stack_Status
+    - SQM
+
+# warehouse_definitions: 
+# site_definitions:
+# ===== DEPRECATED =====
+# 창고/현장 정의는 @core/header_registry.py에서 중앙집중식으로 관리됩니다.
+# 이 섹션은 참고용으로만 유지되며, 실제 코드에서는 사용되지 않습니다.
+# 
+# 실제 사용:
+#   from core import get_warehouse_columns, get_site_columns
+#   warehouses = get_warehouse_columns()  # ['DHL WH', 'DSV Indoor', ...]
+#   sites = get_site_columns()  # ['MIR', 'SHU', 'DAS', 'AGI']
+#
+# 자세한 내용: @core/README.md, @core/INTEGRATION_GUIDE.md
+# ======================
+
+processing:
+  vectorization_enabled: true
+  performance_optimization: true
+  error_handling: "strict"
+
+validation:
+  required_columns_check: true
+  data_type_validation: true
+  null_value_handling: "skip"

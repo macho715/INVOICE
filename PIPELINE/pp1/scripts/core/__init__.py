@@ -1,0 +1,72 @@
+# -*- coding: utf-8 -*-
+"""
+HVDC Pipeline Core Module
+=========================
+
+Central header matching and detection system for all pipeline stages.
+This module provides robust, flexible header matching with zero hardcoding.
+
+Main Components:
+- header_detector: Automatically finds where headers start in Excel files
+- header_normalizer: Normalizes header names handling all edge cases
+- semantic_matcher: Matches headers based on meaning, not exact strings
+- header_registry: Configuration for semantic mappings across all stages
+- data_parser: Core data parsing utilities (Stack_Status, SQM, unit conversions)
+"""
+
+from .header_detector import HeaderDetector, detect_header_row
+from .header_normalizer import HeaderNormalizer, normalize_header
+from .semantic_matcher import SemanticMatcher, find_header_by_meaning
+from .header_registry import HeaderRegistry, HVDC_HEADER_REGISTRY, HeaderCategory, HeaderDefinition
+from .data_parser import parse_stack_status, calculate_sqm, convert_mm_to_cm, map_stack_status
+from .standard_header_order import (
+    STANDARD_HEADER_ORDER,
+    STAGE2_HEADER_ORDER,
+    STAGE1_BASE_COLS_ORDER,
+    HeaderOrderManager,
+)
+from .file_registry import FileRegistry, get_master_file, get_warehouse_file, get_synced_file, normalize_vendor_name, get_source_file_name
+
+# Convenience functions for getting warehouse/site/date columns from registry
+def get_warehouse_columns(use_primary_alias=True):
+    """Get warehouse columns from central registry."""
+    return HVDC_HEADER_REGISTRY.get_warehouse_columns(use_primary_alias)
+
+def get_site_columns(use_primary_alias=True):
+    """Get site columns from central registry."""
+    return HVDC_HEADER_REGISTRY.get_site_columns(use_primary_alias)
+
+def get_date_columns(use_primary_alias=True):
+    """Get date columns from central registry."""
+    return HVDC_HEADER_REGISTRY.get_date_columns(use_primary_alias)
+
+__version__ = "1.2.0"
+__all__ = [
+    "HeaderDetector",
+    "detect_header_row",
+    "HeaderNormalizer",
+    "normalize_header",
+    "SemanticMatcher",
+    "find_header_by_meaning",
+    "HeaderRegistry",
+    "HVDC_HEADER_REGISTRY",
+    "HeaderCategory",
+    "HeaderDefinition",
+    "parse_stack_status",
+    "calculate_sqm",
+    "convert_mm_to_cm",
+    "map_stack_status",
+    "STANDARD_HEADER_ORDER",
+    "STAGE2_HEADER_ORDER",
+    "STAGE1_BASE_COLS_ORDER",
+    "HeaderOrderManager",
+    "get_warehouse_columns",
+    "get_site_columns",
+    "get_date_columns",
+    "FileRegistry",
+    "get_master_file",
+    "get_warehouse_file",
+    "get_synced_file",
+    "normalize_vendor_name",
+    "get_source_file_name",
+]

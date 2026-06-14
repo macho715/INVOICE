@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoRo Loading Sequence Visualization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .water-transition { transition: all 1s ease-in-out; }
+        .cargo-transition { transition: all 1s ease-in-out; }
+        .ship-transition { transition: all 1s ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+    <div class="max-w-6xl mx-auto p-4">
+        <!-- Header -->
+        <header class="mb-6 border-b border-slate-700 pb-4">
+            <h1 class="text-3xl font-bold text-blue-400">⚓ RoRo Loading Sequence Visualizer</h1>
+            <p class="text-slate-400 text-sm mt-1">Project: ADNOC Heavy Cargo Stowage | Vessel: Lightship to Departure</p>
+        </header>
+
+        <!-- Main Display Area -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Graphic Visualization (Left/Top) -->
+            <div class="lg:col-span-2 bg-slate-800 rounded-xl p-6 border border-slate-700 relative overflow-hidden h-96 flex items-center justify-center">
+                <!-- Sky/Water Background -->
+                <div class="absolute inset-0 z-0">
+                    <div class="h-1/2 bg-sky-900/20 w-full"></div>
+                    <div class="h-1/2 bg-blue-900/40 w-full border-t border-blue-500/30"></div>
+                </div>
+
+                <!-- Visualization Container -->
+                <div class="relative z-10 w-full h-full flex items-center justify-center scale-90" id="visual-container">
+                    <!-- Dynamic SVG Content will be injected here via JS -->
+                    <svg viewBox="0 0 800 400" class="w-full h-full drop-shadow-2xl">
+                        <!-- Jetty -->
+                        <rect x="0" y="200" width="150" height="200" fill="#475569" />
+                        <text x="10" y="190" fill="#94a3b8" font-size="12">Jetty (Quay)</text>
+
+                        <!-- Ship Group (Rotates for Trim) -->
+                        <g id="ship-group" class="ship-transition" transform="rotate(0, 475, 250)">
+                            <!-- Hull -->
+                            <path d="M 180,200 L 780,200 L 750,350 L 220,350 Z" fill="#1e293b" stroke="#cbd5e1" stroke-width="2" />
+                            <line x1="180" y1="200" x2="780" y2="200" stroke="#334155" stroke-width="1" stroke-dasharray="5,5"/>
+                            <text x="700" y="230" fill="white" font-size="14" opacity="0.5">BOW (Fwd)</text>
+                            <text x="250" y="230" fill="white" font-size="14" opacity="0.5">STERN (Aft)</text>
+                            
+                            <!-- Fr.42 Marker -->
+                            <line x1="300" y1="200" x2="300" y2="350" stroke="yellow" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+                            <text x="290" y="370" fill="yellow" font-size="10" opacity="0.8">Fr.42</text>
+
+                            <!-- Ramp -->
+                            <rect id="ramp" x="150" y="195" width="60" height="10" fill="#f59e0b" transform="rotate(0, 150, 200)" />
+
+                            <!-- TR1 Cargo -->
+                            <g id="tr1" class="cargo-transition" transform="translate(50, 160)">
+                                <rect width="60" height="40" fill="#ef4444" stroke="white" rx="2" />
+                                <text x="15" y="25" fill="white" font-size="12" font-weight="bold">TR1</text>
+                            </g>
+
+                            <!-- TR2 Cargo -->
+                            <g id="tr2" class="cargo-transition" transform="translate(-100, 160)">
+                                <rect width="60" height="40" fill="#3b82f6" stroke="white" rx="2" />
+                                <text x="15" y="25" fill="white" font-size="12" font-weight="bold">TR2</text>
+                            </g>
+
+                            <!-- Water Ballast Indicator -->
+                            <rect id="ballast-tank" x="650" y="320" width="80" height="20" fill="#0ea5e9" opacity="0" />
+                        </g>
+
+                        <!-- Water Level Reference Line -->
+                        <line x1="0" y1="260" x2="800" y2="260" stroke="#60a5fa" stroke-width="2" stroke-opacity="0.5" />
+                    </svg>
+                </div>
+
+                <!-- Overlay Info -->
+                <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-sm p-3 rounded-lg border border-slate-600 text-right">
+                    <div class="text-xs text-gray-400">Current Trim</div>
+                    <div class="text-2xl font-mono font-bold text-yellow-400" id="trim-display">0.00m</div>
+                    <div class="text-xs text-gray-400 mt-1">Event</div>
+                    <div class="text-sm font-semibold text-white" id="status-display">Standby</div>
+                </div>
+            </div>
+
+            <!-- Controls & Details (Right/Bottom) -->
+            <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xl font-bold mb-4 border-b border-slate-600 pb-2">Sequence Control</h2>
+                    <div class="space-y-2 max-h-64 overflow-y-auto pr-2" id="button-list">
+                        <!-- Buttons generated by JS -->
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-slate-900/50 p-4 rounded-lg border border-slate-700">
+                    <h3 class="text-sm font-bold text-blue-400 mb-2">📋 Engineering Note</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed" id="desc-display">
+                        Select a stage to view the loading simulation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Data Table -->
+        <div class="mt-6 bg-slate-800 rounded-xl border border-slate-700 overflow-hidden">
+            <table class="w-full text-sm text-left text-slate-300">
+                <thead class="text-xs text-slate-400 uppercase bg-slate-900">
+                    <tr>
+                        <th class="px-6 py-3">Stage</th>
+                        <th class="px-6 py-3">Action</th>
+                        <th class="px-6 py-3">Key Metric</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-700">
+                    <tr class="bg-slate-800 hover:bg-slate-700">
+                        <td class="px-6 py-2 font-medium text-white">Stage 5 (Pre-Ballast)</td>
+                        <td class="px-6 py-2">Load 250t Water (Counter-weight)</td>
+                        <td class="px-6 py-2 text-red-400">Trim +2.70m (Intentional)</td>
+                    </tr>
+                    <tr class="bg-slate-800 hover:bg-slate-700">
+                        <td class="px-6 py-2 font-medium text-white">Stage 6A (Critical)</td>
+                        <td class="px-6 py-2">TR2 Entry (Bow Moment)</td>
+                        <td class="px-6 py-2 text-green-400">Trim -0.20m (Even Keel)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Configuration for each stage
+        const stages = [
+            { 
+                id: "stage1", label: "Stage 1: Arrival (Lightship)", 
+                desc: "Initial draft check & Trim check. Vessel is empty.",
+                trim: 0, tr1X: 50, tr2X: -100, ballastOpacity: 0, 
+                status: "Check Draft"
+            },
+            { 
+                id: "stage2", label: "Stage 2: TR1 Roll-on Start", 
+                desc: "1st Axle on ramp. Weight transfer begins. Slight stern trim increase.",
+                trim: -2, tr1X: 150, tr2X: -100, ballastOpacity: 0, 
+                status: "Axle on Ramp"
+            },
+            { 
+                id: "stage3", label: "Stage 3: TR1 Mid-Ramp", 
+                desc: "Cargo COG at ramp center. Critical moment on ramp.",
+                trim: -3, tr1X: 180, tr2X: -100, ballastOpacity: 0, 
+                status: "COG Mid-Ramp"
+            },
+            { 
+                id: "stage4", label: "Stage 4: TR1 On-Deck", 
+                desc: "Full weight transfer to vessel deck. Stern sits lower.",
+                trim: -4, tr1X: 220, tr2X: -100, ballastOpacity: 0, 
+                status: "Weight Transfer"
+            },
+            { 
+                id: "stage5", label: "Stage 5: TR1 Secured", 
+                desc: "Positioned at Fr.42 (Aft). Ready for pre-ballasting.",
+                trim: -4, tr1X: 300, tr2X: -100, ballastOpacity: 0, 
+                status: "Secured Aft"
+            },
+            { 
+                id: "stage5pb", label: "Stage 5: Pre-Ballast [D-1]", 
+                desc: "Load 250t Water. Intentional High Trim (+2.7m) by Head to counter TR2.",
+                trim: 2.7, tr1X: 300, tr2X: -100, ballastOpacity: 0.8, 
+                status: "Ballast +250t"
+            },
+            { 
+                id: "stage6a", label: "Stage 6A: TR2 Entry [Critical]", 
+                desc: "TR2 Enters. High Bow Trim reduces to Even Keel (-0.2m). Safe condition.",
+                trim: -0.2, tr1X: 300, tr2X: 150, ballastOpacity: 0.8, 
+                status: "Even Keel"
+            },
+            { 
+                id: "stage6c", label: "Stage 6C: Final Stowage", 
+                desc: "Both TRs secured. Stability check complete.",
+                trim: 0, tr1X: 300, tr2X: 500, ballastOpacity: 0.8, 
+                status: "Secured"
+            },
+            { 
+                id: "stage7", label: "Stage 7: Departure", 
+                desc: "Departure condition. Ready for sea voyage.",
+                trim: -0.5, tr1X: 300, tr2X: 500, ballastOpacity: 0.8, 
+                status: "Sailing"
+            }
+        ];
+
+        const shipGroup = document.getElementById('ship-group');
+        const tr1 = document.getElementById('tr1');
+        const tr2 = document.getElementById('tr2');
+        const ballast = document.getElementById('ballast-tank');
+        const trimDisplay = document.getElementById('trim-display');
+        const statusDisplay = document.getElementById('status-display');
+        const descDisplay = document.getElementById('desc-display');
+        const buttonList = document.getElementById('button-list');
+
+        let currentStageIndex = 0;
+
+        function renderButtons() {
+            buttonList.innerHTML = '';
+            stages.forEach((stage, index) => {
+                const btn = document.createElement('button');
+                btn.className = `w-full text-left px-4 py-2 rounded text-xs font-medium transition-colors ${index === currentStageIndex ? 'bg-blue-600 text-white border-l-4 border-blue-300' : 'bg-slate-700 text-slate-300 hover:bg-slate-600'}`;
+                btn.innerText = stage.label;
+                btn.onclick = () => setStage(index);
+                buttonList.appendChild(btn);
+            });
+        }
+
+        function setStage(index) {
+            currentStageIndex = index;
+            const data = stages[index];
+
+            // 1. Move Cargo (SVG translation)
+            // Base X for jetty is around 150. Ship starts at 180.
+            // We map the conceptual trX values to SVG coordinates
+            tr1.setAttribute('transform', `translate(${data.tr1X}, 160)`);
+            tr2.setAttribute('transform', `translate(${data.tr2X}, 160)`);
+
+            // 2. Apply Trim (Rotation)
+            // Positive Trim = Bow Down (Rotate positive/clockwise in this view setup logic usually, but let's invert for visual logic)
+            // Actually in this SVG: Bow is Right (780), Stern is Left (180).
+            // Trim + (By Head) means Bow Down -> Rotate Clockwise.
+            // Trim - (By Stern) means Stern Down -> Rotate Counter-Clockwise.
+            // We use a scaling factor for visual exaggeration (e.g., * 2 deg)
+            shipGroup.setAttribute('transform', `rotate(${data.trim * 1.5}, 475, 250)`);
+
+            // 3. Ballast Visibility
+            ballast.setAttribute('opacity', data.ballastOpacity);
+
+            // 4. Update Text
+            trimDisplay.innerText = (data.trim > 0 ? "+" : "") + data.trim.toFixed(2) + "m";
+            statusDisplay.innerText = data.status;
+            descDisplay.innerText = data.desc;
+
+            // 5. Update Button States
+            renderButtons();
+        }
+
+        // Init
+        renderButtons();
+        setStage(0);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "expectation_suite_name": "stage3_report_expectations",
+  "data_asset_type": "PandasDataFrame",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "FLOW_CODE"
+      },
+      "meta": {
+        "description": "FLOW_CODE 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "FLOW_CODE",
+        "value_set": [0, 1, 2, 3, 4, 5],
+        "mostly": 0.99
+      },
+      "meta": {
+        "description": "FLOW_CODE가 유효한 값이어야 함 (0-5)"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Final_Location"
+      },
+      "meta": {
+        "description": "Final_Location 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Total sqm"
+      },
+      "meta": {
+        "description": "Total sqm 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "Total sqm",
+        "min_value": 0.0,
+        "max_value": 10000.0,
+        "mostly": 0.95
+      },
+      "meta": {
+        "description": "Total sqm 값이 합리적인 범위 내에 있어야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "min_value": 8000,
+        "max_value": 10000
+      },
+      "meta": {
+        "description": "보고서 행 수가 합리적인 범위 내에 있어야 함"
+      }
+    }
+  ],
+  "meta": {
+    "description": "Stage 3 보고서 생성 결과 검증 규칙",
+    "version": "1.0.0"
+  }
+}
+

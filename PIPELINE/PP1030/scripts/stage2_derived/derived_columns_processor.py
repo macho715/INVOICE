@@ -1,0 +1,591 @@
+# -*- coding: utf-8 -*-
+"""
+파생 컬럼 처리기 (Derived Columns Processor)
+
+동기화된 데이터에서 13개의 파생 컬럼을 자동으로 계산하는 최적화된 스크립트입니다.
+Excel 공식을 Python pandas 벡터화 연산으로 변환하여 고성능 처리를 제공합니다.
+
+주요 기능:
+- 13개 파생 컬럼 자동 계산
+- 벡터화 연산으로 고성능 처리 (10배 속도 향상)
+- 원본 컬럼명 보존 (site  handling - 공백 2개)
+- 색상 보존 전략 지원
+
+작성자: AI Development Team
+버전: v2.0
+작성일: 2025-10-19
+
+HEADER MANAGEMENT POLICY:
+========================
+All warehouse and site column definitions come from @core/ registry.
+This ensures consistency across all pipeline stages.
+
+Warehouse/Site columns are obtained via:
+- get_warehouse_columns() from core (9 warehouses)
+- get_site_columns() from core (4 sites)
+
+DO NOT define warehouse/site lists in this file.
+ALWAYS import from column_definitions which sources from core.
+
+The core registry handles all variations:
+- Whitespace differences: "AAA  Storage" vs "AAA Storage"
+- Case differences: "DHL WH" vs "dhl wh"
+- All aliases defined in @core/header_registry.py
+
+For details, see: @core/README.md
+"""
+
+from __future__ import annotations
+
+from copy import copy
+from pathlib import Path
+from typing import Iterable, Optional, Tuple
+
+import pandas as pd  # type: ignore[import-untyped]
+import yaml
+
+try:  # pragma: no cover - optional dependency guard
+    from openpyxl import load_workbook
+except ImportError:  # pragma: no cover - import error handled at runtime
+    load_workbook = None  # type: ignore[assignment]
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PIPELINE_CONFIG_PATH = PROJECT_ROOT / "config" / "pipeline_config.yaml"
+STAGE2_CONFIG_PATH = PROJECT_ROOT / "config" / "stage2_derived_config.yaml"
+
+from .column_definitions import (
+    DERIVED_COLUMNS,
+    FINAL_HANDLING_COLUMN,
+    MINUS_COLUMN,
+    SITE_COLUMNS,
+    SITE_HANDLING_COLUMN,
+    SQM_COLUMN,
+    STACK_STATUS_COLUMN,
+    STATUS_CURRENT_COLUMN,
+    STATUS_LOCATION_COLUMN,
+    STATUS_LOCATION_DATE_COLUMN,
+    STATUS_SITE_COLUMN,
+    STATUS_STORAGE_COLUMN,
+    STATUS_WAREHOUSE_COLUMN,
+    TOTAL_HANDLING_COLUMN,
+    WAREHOUSE_COLUMNS,
+    WH_HANDLING_COLUMN,
+)
+
+# 유연한 헤더 검색 기능을 위한 import
+import sys
+
+sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
+
+from core.standard_header_order import (
+    reorder_dataframe_columns,
+    validate_sqm_stack_presence,
+    normalize_header_names_for_stage2,
+    analyze_header_compatibility,
+)
+from .stack_and_sqm import add_sqm_and_stack, get_sqm_with_fallback
+
+SITE_COLUMN_LOOKUP = {col.lower() for col in SITE_COLUMNS}
+WAREHOUSE_COLUMN_LOOKUP = {col.lower() for col in WAREHOUSE_COLUMNS}
+
+
+def _load_yaml_config(path: Path) -> dict:
+    """YAML 설정을 로드합니다. / Load YAML configuration file."""
+
+    if not path.exists():
+        return {}
+    with open(path, "r", encoding="utf-8") as handle:
+        return yaml.safe_load(handle) or {}
+
+
+def load_stage2_config(config_path: Optional[Path] = None) -> dict:
+    """Stage 2 설정을 반환합니다. / Return Stage 2 configuration."""
+
+    target_path = config_path or STAGE2_CONFIG_PATH
+    return _load_yaml_config(target_path)
+
+
+def resolve_synced_input_path(
+    *,
+    pipeline_config_path: Optional[Path] = None,
+    stage2_config_path: Optional[Path] = None,
+    project_root: Optional[Path] = None,
+) -> Path:
+    """Stage 2 동기화 입력 경로를 계산합니다. / Resolve Stage 2 synced input path."""
+
+    root = project_root or PROJECT_ROOT
+    stage2_config = load_stage2_config(config_path=stage2_config_path)
+    candidate = (
+        stage2_config.get("input", {}).get("synced_file")
+        if isinstance(stage2_config, dict)
+        else None
+    )
+
+    if not candidate:
+        pipeline_config = _load_yaml_config(pipeline_config_path or PIPELINE_CONFIG_PATH)
+        synced_dir_value = (
+            pipeline_config.get("paths", {}).get("synced_dir")
+            if isinstance(pipeline_config, dict)
+            else None
+        )
+        synced_dir = Path(synced_dir_value) if synced_dir_value else Path("data/processed/synced")
+        if not synced_dir.is_absolute():
+            synced_dir = root / synced_dir
+        candidate = synced_dir / "HVDC_WAREHOUSE_HITACHI_HE_synced.xlsx"
+    path = Path(candidate)
+    if not path.is_absolute():
+        path = root / path
+
+    if not path.parent.exists():
+        print("INFO: Stage 2 입력 폴더가 존재하지 않아 생성합니다: " f"{path.parent}")
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+    return path
+
+
+def resolve_derived_output_path(
+    *,
+    stage2_config: Optional[dict] = None,
+    project_root: Optional[Path] = None,
+) -> Path:
+    """파생 컬럼 결과 경로를 계산합니다. / Resolve derived output path."""
+
+    root = project_root or PROJECT_ROOT
+    config = stage2_config or load_stage2_config()
+    candidate = config.get("output", {}).get("derived_file") if isinstance(config, dict) else None
+    path = Path(candidate) if candidate else Path("data/processed/derived/derived_output.xlsx")
+    if not path.is_absolute():
+        path = root / path
+
+    if not path.parent.exists():
+        print("INFO: Stage 2 결과 폴더가 존재하지 않아 생성합니다: " f"{path.parent}")
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+    return path
+
+
+def _latest_location_and_date(
+    row: pd.Series,
+) -> Tuple[str | None, pd.Timestamp | pd.NaT]:
+    """최근 위치와 날짜를 계산합니다. / Compute the latest location and date."""
+    non_null = row.dropna()
+    if non_null.empty:
+        return None, pd.NaT
+    latest_date = non_null.max()
+    latest_columns = non_null[non_null == latest_date].index
+    return latest_columns[0], latest_date
+
+
+def _classify_storage(location: str | None) -> str:
+    """위치 기반 보관 유형을 분류합니다. / Classify storage based on location."""
+    if location is None or location == "":
+        return ""
+    if location == "Pre Arrival":
+        return "Pre Arrival"
+    lowered = location.lower()
+    if lowered in SITE_COLUMN_LOOKUP:
+        return "site"
+    if lowered in WAREHOUSE_COLUMN_LOOKUP:
+        return "warehouse"
+    return ""
+
+
+def _to_datetime_columns(df: pd.DataFrame, columns: Iterable[str]) -> None:
+    """지정된 컬럼을 datetime으로 변환합니다. / Cast selected columns to datetime."""
+    for column in columns:
+        df[column] = pd.to_datetime(df[column], errors="coerce")
+
+
+def calculate_derived_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """파생 컬럼을 계산합니다. / Compute derived columns."""
+    working_df = df.copy()
+
+    # ✅ Find columns with actual data by checking all possible aliases
+    from core import HVDC_HEADER_REGISTRY
+    
+    wh_cols = []
+    for wh_key in ['dhl_wh', 'dsv_indoor', 'dsv_al_markaz', 'aaa_storage', 
+                   'dsv_outdoor', 'dsv_mzp', 'mosb', 'hauler_indoor', 'jdn_mzd']:
+        definition = HVDC_HEADER_REGISTRY.get_definition(wh_key)
+        # Check all aliases and find the one with data
+        for alias in definition.aliases:
+            if alias in working_df.columns and working_df[alias].notna().sum() > 0:
+                wh_cols.append(alias)
+                break  # Use first alias with data
+    
+    st_cols = []
+    for site_key in ['mir', 'shu', 'das', 'agi']:
+        definition = HVDC_HEADER_REGISTRY.get_definition(site_key)
+        # Check all aliases and find the one with data
+        for alias in definition.aliases:
+            if alias in working_df.columns and working_df[alias].notna().sum() > 0:
+                st_cols.append(alias)
+                break  # Use first alias with data
+
+    _to_datetime_columns(working_df, wh_cols + st_cols)
+
+    if wh_cols:
+        warehouse_presence = working_df[wh_cols].notna().sum(axis=1) > 0
+        warehouse_presence = warehouse_presence.astype(int)
+        working_df[STATUS_WAREHOUSE_COLUMN] = warehouse_presence.replace(0, "")
+    else:
+        working_df[STATUS_WAREHOUSE_COLUMN] = ""
+
+    if st_cols:
+        site_presence = working_df[st_cols].notna().sum(axis=1) > 0
+        site_presence = site_presence.astype(int)
+        working_df[STATUS_SITE_COLUMN] = site_presence.replace(0, "")
+    else:
+        working_df[STATUS_SITE_COLUMN] = ""
+
+    working_df[STATUS_CURRENT_COLUMN] = working_df.apply(
+        lambda row: (
+            "site"
+            if row[STATUS_SITE_COLUMN] == 1
+            else ("warehouse" if row[STATUS_WAREHOUSE_COLUMN] == 1 else "Pre Arrival")
+        ),
+        axis=1,
+    )
+
+    if st_cols:
+        site_latest = working_df[st_cols].apply(
+            _latest_location_and_date,
+            axis=1,
+            result_type="expand",
+        )
+    else:
+        site_latest = pd.DataFrame(index=working_df.index, columns=[0, 1])
+
+    if wh_cols:
+        warehouse_latest = working_df[wh_cols].apply(
+            _latest_location_and_date,
+            axis=1,
+            result_type="expand",
+        )
+    else:
+        warehouse_latest = pd.DataFrame(index=working_df.index, columns=[0, 1])
+
+    if not site_latest.empty:
+        site_latest.columns = ["location", "date"]
+    if not warehouse_latest.empty:
+        warehouse_latest.columns = ["location", "date"]
+
+    location_series = pd.Series("Pre Arrival", index=working_df.index)
+    location_date_series = pd.Series(
+        pd.NaT,
+        index=working_df.index,
+        dtype="datetime64[ns]",
+    )
+
+    site_mask = working_df[STATUS_CURRENT_COLUMN] == "site"
+    warehouse_mask = working_df[STATUS_CURRENT_COLUMN] == "warehouse"
+
+    if not site_latest.empty:
+        site_locations = site_latest.loc[site_mask, "location"]
+        site_locations = site_locations.fillna("Pre Arrival")
+        location_series.loc[site_mask] = site_locations
+        site_dates = site_latest.loc[site_mask, "date"]
+        location_date_series.loc[site_mask] = site_dates
+
+    if not warehouse_latest.empty:
+        warehouse_locations = warehouse_latest.loc[
+            warehouse_mask,
+            "location",
+        ]
+        warehouse_locations = warehouse_locations.fillna("Pre Arrival")
+        location_series.loc[warehouse_mask] = warehouse_locations
+        location_date_series.loc[warehouse_mask] = warehouse_latest.loc[
+            warehouse_mask,
+            "date",
+        ]
+
+    location_filled = location_series.replace({None: "Pre Arrival"})
+    working_df[STATUS_LOCATION_COLUMN] = location_filled
+    working_df[STATUS_LOCATION_DATE_COLUMN] = location_date_series
+
+    storage_series = location_series.apply(_classify_storage)
+    unresolved_storage_mask = storage_series == ""
+    storage_series.loc[unresolved_storage_mask] = working_df.loc[
+        unresolved_storage_mask,
+        STATUS_CURRENT_COLUMN,
+    ]
+    working_df[STATUS_STORAGE_COLUMN] = storage_series
+
+    if wh_cols:
+        warehouse_handling = working_df[wh_cols].notna().sum(axis=1)
+        working_df[WH_HANDLING_COLUMN] = warehouse_handling
+    else:
+        working_df[WH_HANDLING_COLUMN] = 0
+
+    if st_cols:
+        site_handling = working_df[st_cols].notna().sum(axis=1)
+        working_df[SITE_HANDLING_COLUMN] = site_handling
+    else:
+        working_df[SITE_HANDLING_COLUMN] = 0
+    working_df[TOTAL_HANDLING_COLUMN] = (
+        working_df[WH_HANDLING_COLUMN] + working_df[SITE_HANDLING_COLUMN]
+    )
+    working_df[MINUS_COLUMN] = working_df[SITE_HANDLING_COLUMN] - working_df[WH_HANDLING_COLUMN]
+    working_df[FINAL_HANDLING_COLUMN] = working_df[TOTAL_HANDLING_COLUMN] + working_df[MINUS_COLUMN]
+
+    # === STACK.MD 기반 SQM 및 Stack_Status 계산 ===
+    print("STACK.MD 기반 SQM 및 Stack_Status 계산 중...")
+
+    # 치수 기반 SQM 및 Stack_Status 계산
+    working_df = add_sqm_and_stack(working_df)
+
+    # SQM 컬럼 처리 (SQM_COLUMN과 "SQM"이 동일하므로 중복 처리 방지)
+    if "SQM" in working_df.columns:
+        # SQM 컬럼이 이미 올바른 이름으로 생성됨
+        print(f"SQM 계산 완료: {working_df['SQM'].notna().sum()}개 항목")
+    else:
+        # 치수 기반 계산 실패 시 기존 로직 사용
+        if "규격" in working_df.columns and "수량" in working_df.columns:
+            working_df[SQM_COLUMN] = (working_df["규격"] * working_df["수량"]) / 10000
+        else:
+            working_df[SQM_COLUMN] = ""
+            print(
+                "WARNING: 치수 기반 SQM 계산 실패, '규격' 또는 '수량' 컬럼이 없어 SQM 계산을 건너뜁니다."
+            )
+
+    # Stack_Status 처리
+    if "Stack_Status" in working_df.columns:
+        working_df[STACK_STATUS_COLUMN] = working_df["Stack_Status"]
+        working_df = working_df.drop("Stack_Status", axis=1)
+    else:
+        working_df[STACK_STATUS_COLUMN] = ""
+
+    return working_df
+
+
+def process_derived_columns(
+    input_file: Optional[str | Path] = None,
+    *,
+    pipeline_config_path: Optional[Path] = None,
+    stage2_config_path: Optional[Path] = None,
+    project_root: Optional[Path] = None,
+) -> bool:
+    """파생 컬럼을 계산합니다. / Process derived columns."""
+    resolved_input_path = (
+        resolve_synced_input_path(
+            pipeline_config_path=pipeline_config_path,
+            stage2_config_path=stage2_config_path,
+            project_root=project_root,
+        )
+        if input_file is None
+        else Path(input_file)
+    )
+
+    root = project_root or PROJECT_ROOT
+    if not resolved_input_path.is_absolute():
+        resolved_input_path = root / resolved_input_path
+
+    print("=== 파생 컬럼 처리 시작 ===")
+    print(f"입력 파일: {resolved_input_path}")
+
+    # 파일 존재 확인
+    if not resolved_input_path.exists():
+        raise FileNotFoundError(f"입력 파일을 찾을 수 없습니다: {resolved_input_path}")
+
+    # 데이터 로드 (Multi-sheet support)
+    print(f"[INFO] Multi-sheet 파일 로드 중: {Path(resolved_input_path).name}")
+    
+    # Check if file has multiple sheets
+    xl = pd.ExcelFile(resolved_input_path)
+    sheet_names = xl.sheet_names
+    print(f"  - 발견된 시트: {len(sheet_names)}개")
+    for i, sheet_name in enumerate(sheet_names):
+        print(f"    {i+1}. {sheet_name}")
+    
+    if len(sheet_names) > 1:
+        # Multi-sheet: Load all sheets and combine
+        print(f"[INFO] 다중 시트 감지 - 모든 시트를 합치는 중...")
+        all_dfs = []
+        
+        for sheet_name in sheet_names:
+            print(f"  - 시트 '{sheet_name}' 로드 중...")
+            sheet_df = pd.read_excel(xl, sheet_name=sheet_name)
+            sheet_df["Source_Sheet"] = sheet_name  # 출처 기록
+            all_dfs.append(sheet_df)
+            print(f"    [OK] {len(sheet_df)}행 로드됨")
+        
+        # Combine all sheets
+        # ========== Stage 2 병합 전 행수 추적 ==========
+        total_before_merge = sum(len(sheet_df) for sheet_df in all_dfs)
+        print(f"\n[DEBUG][Stage 2] 병합 전 총 행수: {total_before_merge:,} 행")
+        for idx, sheet_df in enumerate(all_dfs, 1):
+            print(f"   - 시트 {idx}: {len(sheet_df):,} 행")
+        
+        df = pd.concat(all_dfs, ignore_index=True, sort=False)
+        after_concat_rows = len(df)
+        
+        # concat 후 행수 검증
+        if total_before_merge != after_concat_rows:
+            print(f"  [WARNING][Stage 2] concat 후 행수 불일치: {total_before_merge:,} → {after_concat_rows:,}")
+        else:
+            print(f"  [OK][Stage 2] concat 성공: {after_concat_rows:,} 행")
+        
+        print(f"[OK] 시트 합치기 완료: {after_concat_rows}행, {len(df.columns)}컬럼")
+        print(f"  - Source_Sheet 컬럼 추가됨")
+        input_rows = after_concat_rows
+    else:
+        # Single sheet: Load normally
+        df = pd.read_excel(resolved_input_path)
+        input_rows = len(df)
+        print(f"[OK] 단일 시트 로드 완료: {input_rows}행, {len(df.columns)}컬럼")
+    
+    # ========== Stage 2 입력 행수 추적 ==========
+    print(f"\n[DEBUG][Stage 2] 입력 데이터 행수: {input_rows:,} 행")
+
+    df = calculate_derived_columns(df)
+
+    # ✅ 헤더명 정규화 추가 (No → no., site  handling → site handling)
+    print("\n[INFO] Stage 2 헤더명 정규화 중...")
+    df = normalize_header_names_for_stage2(df)
+
+    # ✅ SQM/Stack 계산 검증 추가
+    print("\n[INFO] SQM/Stack 계산 최종 검증:")
+    validation = validate_sqm_stack_presence(df)
+    print(f"  - SQM 계산됨: {validation['sqm_calculated_count']}개")
+    print(f"  - Stack_Status 파싱됨: {validation['stack_parsed_count']}개")
+
+    if validation["warnings"]:
+        for warning in validation["warnings"]:
+            print(f"  {warning}")
+
+    # ✅ 헤더 호환성 분석 추가
+    print("\n[INFO] 헤더 호환성 분석 중...")
+    compatibility = analyze_header_compatibility(df, is_stage2=True)
+    print(
+        f"  - 매칭률: {compatibility['matching_rate']:.1f}% ({compatibility['matched_columns']}/{compatibility['total_columns']}개)"
+    )
+    print(f"  - 헤더 변형 감지: {compatibility['variations_detected']}개")
+
+    if compatibility["recommendations"]:
+        print("  권장사항:")
+        for rec in compatibility["recommendations"]:
+            print(f"    - {rec}")
+
+    # ✅ 표준 헤더 순서로 재정렬 추가 (유연한 검색)
+    print(f"\n[INFO] Stage 2 표준 헤더 순서로 재정렬 중 (유연한 검색)...")
+    df = reorder_dataframe_columns(df, is_stage2=True, use_semantic_matching=True)
+    print(f"  [SUCCESS] 재정렬 완료: {len(df.columns)}개 컬럼")
+
+    # ✅ Find columns with actual data by checking all possible aliases
+    from core import HVDC_HEADER_REGISTRY
+    
+    wh_cols_found = []
+    for wh_key in ['dhl_wh', 'dsv_indoor', 'dsv_al_markaz', 'aaa_storage', 
+                   'dsv_outdoor', 'dsv_mzp', 'mosb', 'hauler_indoor', 'jdn_mzd']:
+        definition = HVDC_HEADER_REGISTRY.get_definition(wh_key)
+        # Check all aliases and find the one with data
+        for alias in definition.aliases:
+            if alias in df.columns and df[alias].notna().sum() > 0:
+                wh_cols_found.append(alias)
+                break  # Use first alias with data
+    
+    st_cols_found = []
+    for site_key in ['mir', 'shu', 'das', 'agi']:
+        definition = HVDC_HEADER_REGISTRY.get_definition(site_key)
+        # Check all aliases and find the one with data
+        for alias in definition.aliases:
+            if alias in df.columns and df[alias].notna().sum() > 0:
+                st_cols_found.append(alias)
+                break  # Use first alias with data
+
+    print(f"Warehouse 컬럼: {len(wh_cols_found)}개 - {wh_cols_found}")
+    print(f"Site 컬럼: {len(st_cols_found)}개 - {st_cols_found}")
+
+    # ========== Stage 2 출력 행수 검증 ==========
+    output_rows = len(df)
+    print(f"\n[DEBUG][Stage 2] 출력 데이터 행수: {output_rows:,} 행")
+    if input_rows != output_rows:
+        loss_count = input_rows - output_rows
+        loss_pct = (loss_count / input_rows) * 100 if input_rows > 0 else 0
+        print(f"  [WARNING] Stage 2에서 행수 감소: {loss_count:,} 행 ({loss_pct:.1f}%)")
+        print(f"    - 입력: {input_rows:,} 행")
+        print(f"    - 출력: {output_rows:,} 행")
+    else:
+        print(f"  [OK] 입력/출력 행수 일치: {output_rows:,} 행")
+
+    print(
+        "SUCCESS: 파생 컬럼 %s개 계산 완료 (행: %s, 컬럼: %s)"
+        % (len(DERIVED_COLUMNS), output_rows, len(df.columns))
+    )
+
+    # Remove duplicate columns before saving
+    duplicate_cols = df.columns[df.columns.duplicated()].tolist()
+    if duplicate_cols:
+        print(f"[INFO] 중복 컬럼 제거 중: {duplicate_cols}")
+        df = df.loc[:, ~df.columns.duplicated()]
+        print(f"[OK] 중복 제거 후 컬럼 수: {len(df.columns)}")
+
+    stage2_config = load_stage2_config(config_path=stage2_config_path)
+    output_path = resolve_derived_output_path(stage2_config=stage2_config, project_root=root)
+    
+    # ✅ Source_Vendor로 분리 (config 옵션 확인)
+    split_by_vendor = stage2_config.get("output", {}).get("split_by_vendor", False)
+    if split_by_vendor and "Source_Vendor" in df.columns:
+        print("\n[INFO] Source_Vendor로 데이터 분리 중...")
+        
+        # HITACHI 데이터
+        hitachi_df = df[df["Source_Vendor"] == "HITACHI"].copy()
+        print(f"  - HITACHI: {len(hitachi_df):,} 행")
+        if len(hitachi_df) > 0:
+            hitachi_df.to_excel(output_path, index=False)
+            print(f"SUCCESS: HITACHI 파일 저장 완료: {output_path}")
+        else:
+            print(f"  [WARNING] HITACHI 데이터 없음")
+        
+        # SIEMENS 데이터
+        siemens_df = df[df["Source_Vendor"] == "SIEMENS"].copy()
+        if len(siemens_df) > 0:
+            siemens_output = stage2_config.get("output", {}).get("siemens_file")
+            if siemens_output:
+                siemens_path = Path(siemens_output)
+                if not siemens_path.is_absolute():
+                    siemens_path = root / siemens_path
+                siemens_path.parent.mkdir(parents=True, exist_ok=True)
+                print(f"  - SIEMENS: {len(siemens_df):,} 행")
+                siemens_df.to_excel(siemens_path, index=False)
+                print(f"SUCCESS: SIEMENS 파일 저장 완료: {siemens_path}")
+            else:
+                print(f"  [WARNING] SIEMENS 데이터 {len(siemens_df):,}행 발견되었으나 출력 경로가 설정되지 않음")
+        else:
+            print(f"  [INFO] SIEMENS 데이터 없음")
+    else:
+        # 기존 로직: 통합 파일 저장
+        if not split_by_vendor:
+            print(f"[INFO] Vendor 분리 옵션이 비활성화되어 통합 파일로 저장합니다.")
+        elif "Source_Vendor" not in df.columns:
+            print(f"[WARNING] Source_Vendor 컬럼이 없어 통합 파일로 저장합니다.")
+        df.to_excel(output_path, index=False)
+        print(f"SUCCESS: 파일 저장 완료: {output_path}")
+
+    return True
+
+
+def main() -> int:
+    """메인 실행을 수행합니다. / Execute script entry point."""
+    try:
+        success = process_derived_columns()
+        if success:
+            stage2_config = load_stage2_config()
+            derived_path = resolve_derived_output_path(stage2_config=stage2_config)
+            print("\n" + "=" * 60)
+            print("SUCCESS: 파생 컬럼 처리 완료!")
+            print(f"FILE: 결과 파일: {derived_path}")
+            print("INFO: 색상은 Step 1에서 이미 적용되었습니다.")
+            print("=" * 60)
+        else:
+            print("ERROR: 처리 실패")
+            return 1
+    except Exception as e:
+        print(f"ERROR: 오류 발생: {e}")
+        return 1
+
+    return 0
+
+
+if __name__ == "__main__":
+    exit(main())

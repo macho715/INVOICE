@@ -1,0 +1,4194 @@
+('C:\\PP '
+ '1027\\scripts\\stage1_Standalone\\standalone\\build\\build_exe_optimized_onedir\\PYZ-01.pyz',
+ [('__future__',
+   'C:\\Program Files\\Python311\\Lib\\__future__.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Program Files\\Python311\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_bootsubprocess',
+   'C:\\Program Files\\Python311\\Lib\\_bootsubprocess.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Program Files\\Python311\\Lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Program Files\\Python311\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('_distutils_hack',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\_distutils_hack\\__init__.py',
+   'PYMODULE'),
+  ('_distutils_hack.override',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\_distutils_hack\\override.py',
+   'PYMODULE'),
+  ('_osx_support',
+   'C:\\Program Files\\Python311\\Lib\\_osx_support.py',
+   'PYMODULE'),
+  ('_py_abc', 'C:\\Program Files\\Python311\\Lib\\_py_abc.py', 'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Program Files\\Python311\\Lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('_sitebuiltins',
+   'C:\\Program Files\\Python311\\Lib\\_sitebuiltins.py',
+   'PYMODULE'),
+  ('_strptime', 'C:\\Program Files\\Python311\\Lib\\_strptime.py', 'PYMODULE'),
+  ('_threading_local',
+   'C:\\Program Files\\Python311\\Lib\\_threading_local.py',
+   'PYMODULE'),
+  ('argparse', 'C:\\Program Files\\Python311\\Lib\\argparse.py', 'PYMODULE'),
+  ('ast', 'C:\\Program Files\\Python311\\Lib\\ast.py', 'PYMODULE'),
+  ('asyncio',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.mixins',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\mixins.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.taskgroups',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\taskgroups.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('asyncio.threads',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\threads.py',
+   'PYMODULE'),
+  ('asyncio.timeouts',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\timeouts.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Program Files\\Python311\\Lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('backports',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
+   'PYMODULE'),
+  ('base64', 'C:\\Program Files\\Python311\\Lib\\base64.py', 'PYMODULE'),
+  ('bdb', 'C:\\Program Files\\Python311\\Lib\\bdb.py', 'PYMODULE'),
+  ('bisect', 'C:\\Program Files\\Python311\\Lib\\bisect.py', 'PYMODULE'),
+  ('bz2', 'C:\\Program Files\\Python311\\Lib\\bz2.py', 'PYMODULE'),
+  ('calendar', 'C:\\Program Files\\Python311\\Lib\\calendar.py', 'PYMODULE'),
+  ('cgi', 'C:\\Program Files\\Python311\\Lib\\cgi.py', 'PYMODULE'),
+  ('cmd', 'C:\\Program Files\\Python311\\Lib\\cmd.py', 'PYMODULE'),
+  ('code', 'C:\\Program Files\\Python311\\Lib\\code.py', 'PYMODULE'),
+  ('codeop', 'C:\\Program Files\\Python311\\Lib\\codeop.py', 'PYMODULE'),
+  ('concurrent',
+   'C:\\Program Files\\Python311\\Lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('configparser',
+   'C:\\Program Files\\Python311\\Lib\\configparser.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Program Files\\Python311\\Lib\\contextlib.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Program Files\\Python311\\Lib\\contextvars.py',
+   'PYMODULE'),
+  ('copy', 'C:\\Program Files\\Python311\\Lib\\copy.py', 'PYMODULE'),
+  ('csv', 'C:\\Program Files\\Python311\\Lib\\csv.py', 'PYMODULE'),
+  ('ctypes',
+   'C:\\Program Files\\Python311\\Lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Program Files\\Python311\\Lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Program Files\\Python311\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Program Files\\Python311\\Lib\\dataclasses.py',
+   'PYMODULE'),
+  ('datetime', 'C:\\Program Files\\Python311\\Lib\\datetime.py', 'PYMODULE'),
+  ('dateutil',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\__init__.py',
+   'PYMODULE'),
+  ('dateutil._common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\_common.py',
+   'PYMODULE'),
+  ('dateutil._version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\_version.py',
+   'PYMODULE'),
+  ('dateutil.easter',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\easter.py',
+   'PYMODULE'),
+  ('dateutil.parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\parser\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.parser._parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\parser\\_parser.py',
+   'PYMODULE'),
+  ('dateutil.parser.isoparser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\parser\\isoparser.py',
+   'PYMODULE'),
+  ('dateutil.relativedelta',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\relativedelta.py',
+   'PYMODULE'),
+  ('dateutil.rrule',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\rrule.py',
+   'PYMODULE'),
+  ('dateutil.tz',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\tz\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.tz._common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\tz\\_common.py',
+   'PYMODULE'),
+  ('dateutil.tz._factories',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\tz\\_factories.py',
+   'PYMODULE'),
+  ('dateutil.tz.tz',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\tz\\tz.py',
+   'PYMODULE'),
+  ('dateutil.tz.win',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\tz\\win.py',
+   'PYMODULE'),
+  ('dateutil.zoneinfo',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\dateutil\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('decimal', 'C:\\Program Files\\Python311\\Lib\\decimal.py', 'PYMODULE'),
+  ('difflib', 'C:\\Program Files\\Python311\\Lib\\difflib.py', 'PYMODULE'),
+  ('dis', 'C:\\Program Files\\Python311\\Lib\\dis.py', 'PYMODULE'),
+  ('distutils',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\__init__.py',
+   'PYMODULE'),
+  ('distutils._msvccompiler',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\_msvccompiler.py',
+   'PYMODULE'),
+  ('distutils.archive_util',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\archive_util.py',
+   'PYMODULE'),
+  ('distutils.ccompiler',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\ccompiler.py',
+   'PYMODULE'),
+  ('distutils.cmd',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\cmd.py',
+   'PYMODULE'),
+  ('distutils.command',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\command\\__init__.py',
+   'PYMODULE'),
+  ('distutils.command.bdist',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\command\\bdist.py',
+   'PYMODULE'),
+  ('distutils.command.build',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\command\\build.py',
+   'PYMODULE'),
+  ('distutils.command.build_ext',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\command\\build_ext.py',
+   'PYMODULE'),
+  ('distutils.command.sdist',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\command\\sdist.py',
+   'PYMODULE'),
+  ('distutils.config',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\config.py',
+   'PYMODULE'),
+  ('distutils.core',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\core.py',
+   'PYMODULE'),
+  ('distutils.debug',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\debug.py',
+   'PYMODULE'),
+  ('distutils.dep_util',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\dep_util.py',
+   'PYMODULE'),
+  ('distutils.dir_util',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\dir_util.py',
+   'PYMODULE'),
+  ('distutils.dist',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\dist.py',
+   'PYMODULE'),
+  ('distutils.errors',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\errors.py',
+   'PYMODULE'),
+  ('distutils.extension',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\extension.py',
+   'PYMODULE'),
+  ('distutils.fancy_getopt',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\fancy_getopt.py',
+   'PYMODULE'),
+  ('distutils.file_util',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\file_util.py',
+   'PYMODULE'),
+  ('distutils.filelist',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\filelist.py',
+   'PYMODULE'),
+  ('distutils.log',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\log.py',
+   'PYMODULE'),
+  ('distutils.spawn',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\spawn.py',
+   'PYMODULE'),
+  ('distutils.sysconfig',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\sysconfig.py',
+   'PYMODULE'),
+  ('distutils.text_file',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\text_file.py',
+   'PYMODULE'),
+  ('distutils.util',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\util.py',
+   'PYMODULE'),
+  ('distutils.version',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\version.py',
+   'PYMODULE'),
+  ('distutils.versionpredicate',
+   'C:\\Program Files\\Python311\\Lib\\distutils\\versionpredicate.py',
+   'PYMODULE'),
+  ('doctest', 'C:\\Program Files\\Python311\\Lib\\doctest.py', 'PYMODULE'),
+  ('email',
+   'C:\\Program Files\\Python311\\Lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Program Files\\Python311\\Lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Program Files\\Python311\\Lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Program Files\\Python311\\Lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Program Files\\Python311\\Lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Program Files\\Python311\\Lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Program Files\\Python311\\Lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Program Files\\Python311\\Lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Program Files\\Python311\\Lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Program Files\\Python311\\Lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Program Files\\Python311\\Lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Program Files\\Python311\\Lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Program Files\\Python311\\Lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Program Files\\Python311\\Lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Program Files\\Python311\\Lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Program Files\\Python311\\Lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Program Files\\Python311\\Lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Program Files\\Python311\\Lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Program Files\\Python311\\Lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Program Files\\Python311\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('et_xmlfile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\et_xmlfile\\__init__.py',
+   'PYMODULE'),
+  ('et_xmlfile.incremental_tree',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\et_xmlfile\\incremental_tree.py',
+   'PYMODULE'),
+  ('et_xmlfile.xmlfile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\et_xmlfile\\xmlfile.py',
+   'PYMODULE'),
+  ('fileinput', 'C:\\Program Files\\Python311\\Lib\\fileinput.py', 'PYMODULE'),
+  ('fnmatch', 'C:\\Program Files\\Python311\\Lib\\fnmatch.py', 'PYMODULE'),
+  ('fractions', 'C:\\Program Files\\Python311\\Lib\\fractions.py', 'PYMODULE'),
+  ('ftplib', 'C:\\Program Files\\Python311\\Lib\\ftplib.py', 'PYMODULE'),
+  ('getopt', 'C:\\Program Files\\Python311\\Lib\\getopt.py', 'PYMODULE'),
+  ('getpass', 'C:\\Program Files\\Python311\\Lib\\getpass.py', 'PYMODULE'),
+  ('gettext', 'C:\\Program Files\\Python311\\Lib\\gettext.py', 'PYMODULE'),
+  ('glob', 'C:\\Program Files\\Python311\\Lib\\glob.py', 'PYMODULE'),
+  ('gzip', 'C:\\Program Files\\Python311\\Lib\\gzip.py', 'PYMODULE'),
+  ('hashlib', 'C:\\Program Files\\Python311\\Lib\\hashlib.py', 'PYMODULE'),
+  ('hmac', 'C:\\Program Files\\Python311\\Lib\\hmac.py', 'PYMODULE'),
+  ('html', 'C:\\Program Files\\Python311\\Lib\\html\\__init__.py', 'PYMODULE'),
+  ('html.entities',
+   'C:\\Program Files\\Python311\\Lib\\html\\entities.py',
+   'PYMODULE'),
+  ('http', 'C:\\Program Files\\Python311\\Lib\\http\\__init__.py', 'PYMODULE'),
+  ('http.client',
+   'C:\\Program Files\\Python311\\Lib\\http\\client.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Program Files\\Python311\\Lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Program Files\\Python311\\Lib\\http\\server.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\resources\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\resources\\_common.py',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\resources\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.resources._legacy',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\resources\\_legacy.py',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\resources\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\resources\\readers.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Program Files\\Python311\\Lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('inspect', 'C:\\Program Files\\Python311\\Lib\\inspect.py', 'PYMODULE'),
+  ('ipaddress', 'C:\\Program Files\\Python311\\Lib\\ipaddress.py', 'PYMODULE'),
+  ('jaraco', '-', 'PYMODULE'),
+  ('json', 'C:\\Program Files\\Python311\\Lib\\json\\__init__.py', 'PYMODULE'),
+  ('json.decoder',
+   'C:\\Program Files\\Python311\\Lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Program Files\\Python311\\Lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Program Files\\Python311\\Lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Program Files\\Python311\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('lzma', 'C:\\Program Files\\Python311\\Lib\\lzma.py', 'PYMODULE'),
+  ('mimetypes', 'C:\\Program Files\\Python311\\Lib\\mimetypes.py', 'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Program Files\\Python311\\Lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('netrc', 'C:\\Program Files\\Python311\\Lib\\netrc.py', 'PYMODULE'),
+  ('nturl2path',
+   'C:\\Program Files\\Python311\\Lib\\nturl2path.py',
+   'PYMODULE'),
+  ('numbers', 'C:\\Program Files\\Python311\\Lib\\numbers.py', 'PYMODULE'),
+  ('numpy',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('numpy.__config__',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\__config__.py',
+   'PYMODULE'),
+  ('numpy._array_api_info',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_array_api_info.py',
+   'PYMODULE'),
+  ('numpy._core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\__init__.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_add_newdocs.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs_scalars',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_add_newdocs_scalars.py',
+   'PYMODULE'),
+  ('numpy._core._asarray',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_asarray.py',
+   'PYMODULE'),
+  ('numpy._core._dtype',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_dtype.py',
+   'PYMODULE'),
+  ('numpy._core._dtype_ctypes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_dtype_ctypes.py',
+   'PYMODULE'),
+  ('numpy._core._exceptions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_exceptions.py',
+   'PYMODULE'),
+  ('numpy._core._internal',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_internal.py',
+   'PYMODULE'),
+  ('numpy._core._machar',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_machar.py',
+   'PYMODULE'),
+  ('numpy._core._methods',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_methods.py',
+   'PYMODULE'),
+  ('numpy._core._string_helpers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_string_helpers.py',
+   'PYMODULE'),
+  ('numpy._core._type_aliases',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_type_aliases.py',
+   'PYMODULE'),
+  ('numpy._core._ufunc_config',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py',
+   'PYMODULE'),
+  ('numpy._core.arrayprint',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\arrayprint.py',
+   'PYMODULE'),
+  ('numpy._core.defchararray',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\defchararray.py',
+   'PYMODULE'),
+  ('numpy._core.einsumfunc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\einsumfunc.py',
+   'PYMODULE'),
+  ('numpy._core.fromnumeric',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py',
+   'PYMODULE'),
+  ('numpy._core.function_base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\function_base.py',
+   'PYMODULE'),
+  ('numpy._core.getlimits',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\getlimits.py',
+   'PYMODULE'),
+  ('numpy._core.memmap',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\memmap.py',
+   'PYMODULE'),
+  ('numpy._core.multiarray',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\multiarray.py',
+   'PYMODULE'),
+  ('numpy._core.numeric',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\numeric.py',
+   'PYMODULE'),
+  ('numpy._core.numerictypes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\numerictypes.py',
+   'PYMODULE'),
+  ('numpy._core.overrides',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\overrides.py',
+   'PYMODULE'),
+  ('numpy._core.printoptions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\printoptions.py',
+   'PYMODULE'),
+  ('numpy._core.records',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\records.py',
+   'PYMODULE'),
+  ('numpy._core.shape_base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\shape_base.py',
+   'PYMODULE'),
+  ('numpy._core.strings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\strings.py',
+   'PYMODULE'),
+  ('numpy._core.umath',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_core\\umath.py',
+   'PYMODULE'),
+  ('numpy._distributor_init',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_distributor_init.py',
+   'PYMODULE'),
+  ('numpy._expired_attrs_2_0',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_expired_attrs_2_0.py',
+   'PYMODULE'),
+  ('numpy._globals',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_globals.py',
+   'PYMODULE'),
+  ('numpy._pytesttester',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_pytesttester.py',
+   'PYMODULE'),
+  ('numpy._typing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy._typing._add_docstring',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_add_docstring.py',
+   'PYMODULE'),
+  ('numpy._typing._array_like',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_array_like.py',
+   'PYMODULE'),
+  ('numpy._typing._char_codes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_char_codes.py',
+   'PYMODULE'),
+  ('numpy._typing._dtype_like',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_dtype_like.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_nbit.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit_base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_nbit_base.py',
+   'PYMODULE'),
+  ('numpy._typing._nested_sequence',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_nested_sequence.py',
+   'PYMODULE'),
+  ('numpy._typing._scalars',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_scalars.py',
+   'PYMODULE'),
+  ('numpy._typing._shape',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_shape.py',
+   'PYMODULE'),
+  ('numpy._typing._ufunc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_typing\\_ufunc.py',
+   'PYMODULE'),
+  ('numpy._utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_utils\\__init__.py',
+   'PYMODULE'),
+  ('numpy._utils._convertions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_utils\\_convertions.py',
+   'PYMODULE'),
+  ('numpy._utils._inspect',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\_utils\\_inspect.py',
+   'PYMODULE'),
+  ('numpy.char',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\char\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\core\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core._utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\core\\_utils.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\ctypeslib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib._ctypeslib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\ctypeslib\\_ctypeslib.py',
+   'PYMODULE'),
+  ('numpy.dtypes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\dtypes.py',
+   'PYMODULE'),
+  ('numpy.exceptions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\exceptions.py',
+   'PYMODULE'),
+  ('numpy.f2py',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py.__version__',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\__version__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._backend',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_backend.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._distutils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_distutils.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._meson',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_meson.py',
+   'PYMODULE'),
+  ('numpy.f2py._isocbind',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\_isocbind.py',
+   'PYMODULE'),
+  ('numpy.f2py.auxfuncs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\auxfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.capi_maps',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\capi_maps.py',
+   'PYMODULE'),
+  ('numpy.f2py.cb_rules',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\cb_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.cfuncs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\cfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.common_rules',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\common_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.crackfortran',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\crackfortran.py',
+   'PYMODULE'),
+  ('numpy.f2py.diagnose',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\diagnose.py',
+   'PYMODULE'),
+  ('numpy.f2py.f2py2e',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\f2py2e.py',
+   'PYMODULE'),
+  ('numpy.f2py.f90mod_rules',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\f90mod_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.func2subr',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\func2subr.py',
+   'PYMODULE'),
+  ('numpy.f2py.rules',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.symbolic',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\symbolic.py',
+   'PYMODULE'),
+  ('numpy.f2py.use_rules',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\f2py\\use_rules.py',
+   'PYMODULE'),
+  ('numpy.fft',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\fft\\__init__.py',
+   'PYMODULE'),
+  ('numpy.fft._helper',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\fft\\_helper.py',
+   'PYMODULE'),
+  ('numpy.fft._pocketfft',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\fft\\_pocketfft.py',
+   'PYMODULE'),
+  ('numpy.fft.helper',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\fft\\helper.py',
+   'PYMODULE'),
+  ('numpy.lib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.lib._array_utils_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_array_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraypad_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_arraypad_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraysetops_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_arraysetops_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arrayterator_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_arrayterator_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._datasource',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_datasource.py',
+   'PYMODULE'),
+  ('numpy.lib._format_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_format_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._function_base_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_function_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._histograms_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_histograms_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._index_tricks_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_index_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._iotools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_iotools.py',
+   'PYMODULE'),
+  ('numpy.lib._nanfunctions_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_nanfunctions_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._npyio_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_npyio_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._polynomial_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_polynomial_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._scimath_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_scimath_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._shape_base_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_shape_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._stride_tricks_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_stride_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._twodim_base_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_twodim_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._type_check_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_type_check_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._ufunclike_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_ufunclike_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._utils_impl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\_version.py',
+   'PYMODULE'),
+  ('numpy.lib.array_utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\array_utils.py',
+   'PYMODULE'),
+  ('numpy.lib.format',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\format.py',
+   'PYMODULE'),
+  ('numpy.lib.introspect',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\introspect.py',
+   'PYMODULE'),
+  ('numpy.lib.mixins',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\mixins.py',
+   'PYMODULE'),
+  ('numpy.lib.npyio',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\npyio.py',
+   'PYMODULE'),
+  ('numpy.lib.recfunctions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\recfunctions.py',
+   'PYMODULE'),
+  ('numpy.lib.scimath',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\scimath.py',
+   'PYMODULE'),
+  ('numpy.lib.stride_tricks',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\lib\\stride_tricks.py',
+   'PYMODULE'),
+  ('numpy.linalg',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg._linalg',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.ma',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\ma\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ma.core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\ma\\core.py',
+   'PYMODULE'),
+  ('numpy.ma.extras',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\ma\\extras.py',
+   'PYMODULE'),
+  ('numpy.ma.mrecords',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\ma\\mrecords.py',
+   'PYMODULE'),
+  ('numpy.matlib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\matlib.py',
+   'PYMODULE'),
+  ('numpy.matrixlib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\matrixlib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib.defmatrix',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\matrixlib\\defmatrix.py',
+   'PYMODULE'),
+  ('numpy.polynomial',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\__init__.py',
+   'PYMODULE'),
+  ('numpy.polynomial._polybase',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\_polybase.py',
+   'PYMODULE'),
+  ('numpy.polynomial.chebyshev',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\chebyshev.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\hermite.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite_e',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\hermite_e.py',
+   'PYMODULE'),
+  ('numpy.polynomial.laguerre',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\laguerre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.legendre',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\legendre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polynomial',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polyutils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\polynomial\\polyutils.py',
+   'PYMODULE'),
+  ('numpy.random',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\random\\__init__.py',
+   'PYMODULE'),
+  ('numpy.random._pickle',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\random\\_pickle.py',
+   'PYMODULE'),
+  ('numpy.rec',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\rec\\__init__.py',
+   'PYMODULE'),
+  ('numpy.strings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\strings\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\testing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\testing\\_private\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.extbuild',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\testing\\_private\\extbuild.py',
+   'PYMODULE'),
+  ('numpy.testing._private.utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\testing\\_private\\utils.py',
+   'PYMODULE'),
+  ('numpy.testing.overrides',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\testing\\overrides.py',
+   'PYMODULE'),
+  ('numpy.typing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\numpy\\version.py',
+   'PYMODULE'),
+  ('opcode', 'C:\\Program Files\\Python311\\Lib\\opcode.py', 'PYMODULE'),
+  ('openpyxl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl._constants',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\_constants.py',
+   'PYMODULE'),
+  ('openpyxl.cell',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\cell\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.cell._writer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\cell\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.cell.cell',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\cell\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.cell.read_only',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\cell\\read_only.py',
+   'PYMODULE'),
+  ('openpyxl.cell.rich_text',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\cell\\rich_text.py',
+   'PYMODULE'),
+  ('openpyxl.cell.text',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\cell\\text.py',
+   'PYMODULE'),
+  ('openpyxl.chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chart._3d',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\_3d.py',
+   'PYMODULE'),
+  ('openpyxl.chart._chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.area_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\area_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.axis',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\axis.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bar_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\bar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bubble_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\bubble_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.chartspace',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\chartspace.py',
+   'PYMODULE'),
+  ('openpyxl.chart.data_source',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\data_source.py',
+   'PYMODULE'),
+  ('openpyxl.chart.descriptors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\descriptors.py',
+   'PYMODULE'),
+  ('openpyxl.chart.error_bar',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\error_bar.py',
+   'PYMODULE'),
+  ('openpyxl.chart.label',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\label.py',
+   'PYMODULE'),
+  ('openpyxl.chart.layout',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\layout.py',
+   'PYMODULE'),
+  ('openpyxl.chart.legend',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\legend.py',
+   'PYMODULE'),
+  ('openpyxl.chart.line_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\line_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.marker',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\marker.py',
+   'PYMODULE'),
+  ('openpyxl.chart.picture',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pie_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\pie_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pivot',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\pivot.py',
+   'PYMODULE'),
+  ('openpyxl.chart.plotarea',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\plotarea.py',
+   'PYMODULE'),
+  ('openpyxl.chart.print_settings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\print_settings.py',
+   'PYMODULE'),
+  ('openpyxl.chart.radar_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\radar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reader',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\reader.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reference',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\reference.py',
+   'PYMODULE'),
+  ('openpyxl.chart.scatter_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\scatter_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\series.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series_factory',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\series_factory.py',
+   'PYMODULE'),
+  ('openpyxl.chart.shapes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\shapes.py',
+   'PYMODULE'),
+  ('openpyxl.chart.stock_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\stock_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.surface_chart',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\surface_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.text',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\text.py',
+   'PYMODULE'),
+  ('openpyxl.chart.title',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\title.py',
+   'PYMODULE'),
+  ('openpyxl.chart.trendline',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\trendline.py',
+   'PYMODULE'),
+  ('openpyxl.chart.updown_bars',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chart\\updown_bars.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.chartsheet',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\chartsheet.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.custom',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.properties',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.protection',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.publish',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\publish.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.relation',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.views',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.comments',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\comments\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.comments.author',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\comments\\author.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comment_sheet',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\comments\\comment_sheet.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comments',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\comments\\comments.py',
+   'PYMODULE'),
+  ('openpyxl.comments.shape_writer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\comments\\shape_writer.py',
+   'PYMODULE'),
+  ('openpyxl.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\compat\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.compat.abc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\compat\\abc.py',
+   'PYMODULE'),
+  ('openpyxl.compat.numbers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\compat\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.compat.product',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\compat\\product.py',
+   'PYMODULE'),
+  ('openpyxl.compat.singleton',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\compat\\singleton.py',
+   'PYMODULE'),
+  ('openpyxl.compat.strings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\compat\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\base.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.container',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\container.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.excel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.namespace',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\namespace.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.nested',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\nested.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.sequence',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\sequence.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.serialisable',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\serialisable.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.slots',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\slots.py',
+   'PYMODULE'),
+  ('openpyxl.drawing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.colors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.connector',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\connector.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.drawing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.effect',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\effect.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.fill',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\fill.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.geometry',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\geometry.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.graphic',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\graphic.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.image',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\image.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.line',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\line.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.picture',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.properties',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.relation',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.spreadsheet_drawing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\spreadsheet_drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.text',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\text.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.xdr',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\xdr.py',
+   'PYMODULE'),
+  ('openpyxl.formatting',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\formatting\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.formatting',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\formatting\\formatting.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.rule',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\formatting\\rule.py',
+   'PYMODULE'),
+  ('openpyxl.formula',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\formula\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formula.tokenizer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\formula\\tokenizer.py',
+   'PYMODULE'),
+  ('openpyxl.formula.translate',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\formula\\translate.py',
+   'PYMODULE'),
+  ('openpyxl.packaging',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\core.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.custom',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.extended',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\extended.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.interface',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\interface.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.manifest',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\manifest.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.relationship',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\relationship.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.workbook',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.pivot',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.cache',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\cache.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.fields',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\fields.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.record',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\record.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.table',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\table.py',
+   'PYMODULE'),
+  ('openpyxl.reader',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\reader\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.reader.drawings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\reader\\drawings.py',
+   'PYMODULE'),
+  ('openpyxl.reader.excel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\reader\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.reader.strings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\reader\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.reader.workbook',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\reader\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.styles',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.styles.alignment',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\alignment.py',
+   'PYMODULE'),
+  ('openpyxl.styles.borders',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\borders.py',
+   'PYMODULE'),
+  ('openpyxl.styles.builtins',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\builtins.py',
+   'PYMODULE'),
+  ('openpyxl.styles.cell_style',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\cell_style.py',
+   'PYMODULE'),
+  ('openpyxl.styles.colors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.styles.differential',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\differential.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fills',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\fills.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fonts',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\fonts.py',
+   'PYMODULE'),
+  ('openpyxl.styles.named_styles',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\named_styles.py',
+   'PYMODULE'),
+  ('openpyxl.styles.numbers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.styles.protection',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.styles.proxy',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\proxy.py',
+   'PYMODULE'),
+  ('openpyxl.styles.styleable',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\styleable.py',
+   'PYMODULE'),
+  ('openpyxl.styles.stylesheet',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\stylesheet.py',
+   'PYMODULE'),
+  ('openpyxl.styles.table',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\styles\\table.py',
+   'PYMODULE'),
+  ('openpyxl.utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.utils.bound_dictionary',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\bound_dictionary.py',
+   'PYMODULE'),
+  ('openpyxl.utils.cell',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.utils.dataframe',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\dataframe.py',
+   'PYMODULE'),
+  ('openpyxl.utils.datetime',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\datetime.py',
+   'PYMODULE'),
+  ('openpyxl.utils.escape',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\escape.py',
+   'PYMODULE'),
+  ('openpyxl.utils.exceptions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\exceptions.py',
+   'PYMODULE'),
+  ('openpyxl.utils.formulas',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\formulas.py',
+   'PYMODULE'),
+  ('openpyxl.utils.indexed_list',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\indexed_list.py',
+   'PYMODULE'),
+  ('openpyxl.utils.inference',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\inference.py',
+   'PYMODULE'),
+  ('openpyxl.utils.protection',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.utils.units',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\utils\\units.py',
+   'PYMODULE'),
+  ('openpyxl.workbook',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.workbook._writer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.child',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\child.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.defined_name',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\defined_name.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\external_link\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link.external',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\external_link\\external.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_reference',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\external_reference.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.function_group',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\function_group.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.properties',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.protection',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.smart_tags',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\smart_tags.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.views',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\views.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.web',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\web.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.workbook',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._read_only',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_read_only.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._reader',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_reader.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._write_only',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_write_only.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._writer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.cell_range',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\cell_range.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.cell_watch',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\cell_watch.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.controls',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\controls.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.copier',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\copier.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.custom',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.datavalidation',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\datavalidation.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.dimensions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\dimensions.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.drawing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.errors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\errors.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.filters',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\filters.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.formula',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\formula.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.header_footer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\header_footer.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.hyperlink',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\hyperlink.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.merge',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\merge.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.ole',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\ole.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.page',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\page.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.pagebreak',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\pagebreak.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.picture',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.print_settings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\print_settings.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.properties',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.protection',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.related',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\related.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.scenario',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\scenario.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.smart_tag',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\smart_tag.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.table',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\table.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.views',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.worksheet',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\worksheet.py',
+   'PYMODULE'),
+  ('openpyxl.writer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\writer\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.writer.excel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\writer\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.writer.theme',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\writer\\theme.py',
+   'PYMODULE'),
+  ('openpyxl.xml',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\xml\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.xml.constants',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\xml\\constants.py',
+   'PYMODULE'),
+  ('openpyxl.xml.functions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\openpyxl\\xml\\functions.py',
+   'PYMODULE'),
+  ('packaging',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('packaging._elffile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('packaging._manylinux',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('packaging._musllinux',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('packaging._parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('packaging._structures',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('packaging._tokenizer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('packaging.licenses',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\licenses\\__init__.py',
+   'PYMODULE'),
+  ('packaging.licenses._spdx',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\licenses\\_spdx.py',
+   'PYMODULE'),
+  ('packaging.markers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\markers.py',
+   'PYMODULE'),
+  ('packaging.requirements',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('packaging.specifiers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('packaging.tags',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\tags.py',
+   'PYMODULE'),
+  ('packaging.utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\utils.py',
+   'PYMODULE'),
+  ('packaging.version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\packaging\\version.py',
+   'PYMODULE'),
+  ('pandas',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_config\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config.config',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_config\\config.py',
+   'PYMODULE'),
+  ('pandas._config.dates',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_config\\dates.py',
+   'PYMODULE'),
+  ('pandas._config.display',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_config\\display.py',
+   'PYMODULE'),
+  ('pandas._config.localization',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_config\\localization.py',
+   'PYMODULE'),
+  ('pandas._libs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_libs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.tslibs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.window',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_libs\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_testing\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing._hypothesis',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_testing\\_hypothesis.py',
+   'PYMODULE'),
+  ('pandas._testing._io',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_testing\\_io.py',
+   'PYMODULE'),
+  ('pandas._testing._warnings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_testing\\_warnings.py',
+   'PYMODULE'),
+  ('pandas._testing.asserters',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_testing\\asserters.py',
+   'PYMODULE'),
+  ('pandas._testing.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_testing\\compat.py',
+   'PYMODULE'),
+  ('pandas._testing.contexts',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_testing\\contexts.py',
+   'PYMODULE'),
+  ('pandas._typing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_typing.py',
+   'PYMODULE'),
+  ('pandas._version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_version.py',
+   'PYMODULE'),
+  ('pandas._version_meson',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\_version_meson.py',
+   'PYMODULE'),
+  ('pandas.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\api\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.extensions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\api\\extensions\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.indexers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\api\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.interchange',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\api\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.types',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\api\\types\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.typing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\api\\typing\\__init__.py',
+   'PYMODULE'),
+  ('pandas.arrays',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat._constants',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\_constants.py',
+   'PYMODULE'),
+  ('pandas.compat._optional',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\_optional.py',
+   'PYMODULE'),
+  ('pandas.compat.compressors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\compressors.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy.function',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\numpy\\function.py',
+   'PYMODULE'),
+  ('pandas.compat.pickle_compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\pickle_compat.py',
+   'PYMODULE'),
+  ('pandas.compat.pyarrow',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\compat\\pyarrow.py',
+   'PYMODULE'),
+  ('pandas.conftest',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\conftest.py',
+   'PYMODULE'),
+  ('pandas.core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.executor',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\executor.py',
+   'PYMODULE'),
+  ('pandas.core._numba.extensions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\extensions.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.mean_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\mean_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.min_max_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\min_max_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.shared',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\shared.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.sum_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\sum_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.var_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\var_.py',
+   'PYMODULE'),
+  ('pandas.core.accessor',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.algorithms',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\algorithms.py',
+   'PYMODULE'),
+  ('pandas.core.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\api.py',
+   'PYMODULE'),
+  ('pandas.core.apply',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\apply.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.datetimelike_accumulations',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\datetimelike_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_accumulations',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_reductions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_reductions.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.putmask',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\putmask.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.quantile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\quantile.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.replace',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\replace.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.take',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\take.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.transforms',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\transforms.py',
+   'PYMODULE'),
+  ('pandas.core.arraylike',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arraylike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._arrow_string_mixins',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_arrow_string_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._mixins',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._ranges',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_ranges.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow._arrow_utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\_arrow_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.accessors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.array',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.extension_types',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\extension_types.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\base.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.boolean',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\boolean.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.categorical',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimelike',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.floating',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\floating.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.integer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\integer.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.interval',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.masked',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\masked.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numeric',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numpy_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\numpy_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.period',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\period.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.accessor',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.array',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.scipy_sparse',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\scipy_sparse.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\string_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_arrow',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\string_arrow.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.timedeltas',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\base.py',
+   'PYMODULE'),
+  ('pandas.core.common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.computation.align',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\align.py',
+   'PYMODULE'),
+  ('pandas.core.computation.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\api.py',
+   'PYMODULE'),
+  ('pandas.core.computation.check',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\check.py',
+   'PYMODULE'),
+  ('pandas.core.computation.common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation.engines',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\engines.py',
+   'PYMODULE'),
+  ('pandas.core.computation.eval',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\eval.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expr',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\expr.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expressions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\expressions.py',
+   'PYMODULE'),
+  ('pandas.core.computation.ops',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.computation.parsing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\parsing.py',
+   'PYMODULE'),
+  ('pandas.core.computation.pytables',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\pytables.py',
+   'PYMODULE'),
+  ('pandas.core.computation.scope',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\scope.py',
+   'PYMODULE'),
+  ('pandas.core.config_init',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\config_init.py',
+   'PYMODULE'),
+  ('pandas.core.construction',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.astype',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\astype.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.cast',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\cast.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\common.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.concat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.dtypes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\dtypes.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.generic',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.inference',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\inference.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.missing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.flags',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\flags.py',
+   'PYMODULE'),
+  ('pandas.core.frame',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\frame.py',
+   'PYMODULE'),
+  ('pandas.core.generic',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\base.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.categorical',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.generic',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.groupby',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\groupby.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.grouper',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\grouper.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.indexing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.numba_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.ops',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.indexers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.objects',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\objects.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.indexes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.accessors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.category',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\category.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimelike',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.extension',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\extension.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.frozen',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\frozen.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.interval',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.multi',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\multi.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.period',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\period.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.range',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\range.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.timedeltas',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.indexing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.interchange',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.buffer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\buffer.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.column',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\column.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe_protocol',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe_protocol.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.from_dataframe',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\from_dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.internals',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.internals.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\api.py',
+   'PYMODULE'),
+  ('pandas.core.internals.array_manager',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\array_manager.py',
+   'PYMODULE'),
+  ('pandas.core.internals.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\base.py',
+   'PYMODULE'),
+  ('pandas.core.internals.blocks',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\blocks.py',
+   'PYMODULE'),
+  ('pandas.core.internals.concat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.internals.construction',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.internals.managers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py',
+   'PYMODULE'),
+  ('pandas.core.internals.ops',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.methods',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.methods.describe',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\describe.py',
+   'PYMODULE'),
+  ('pandas.core.methods.selectn',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\selectn.py',
+   'PYMODULE'),
+  ('pandas.core.methods.to_dict',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\to_dict.py',
+   'PYMODULE'),
+  ('pandas.core.missing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.nanops',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\nanops.py',
+   'PYMODULE'),
+  ('pandas.core.ops',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.ops.array_ops',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\array_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\common.py',
+   'PYMODULE'),
+  ('pandas.core.ops.dispatch',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\dispatch.py',
+   'PYMODULE'),
+  ('pandas.core.ops.docstrings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\docstrings.py',
+   'PYMODULE'),
+  ('pandas.core.ops.invalid',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\invalid.py',
+   'PYMODULE'),
+  ('pandas.core.ops.mask_ops',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\mask_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.missing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.resample',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\resample.py',
+   'PYMODULE'),
+  ('pandas.core.reshape',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\api.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.concat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.encoding',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\encoding.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.melt',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\melt.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.merge',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\merge.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.pivot',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\pivot.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.reshape',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\reshape.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.tile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\tile.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\util.py',
+   'PYMODULE'),
+  ('pandas.core.roperator',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\roperator.py',
+   'PYMODULE'),
+  ('pandas.core.sample',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\sample.py',
+   'PYMODULE'),
+  ('pandas.core.series',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\series.py',
+   'PYMODULE'),
+  ('pandas.core.shared_docs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\shared_docs.py',
+   'PYMODULE'),
+  ('pandas.core.sorting',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\sorting.py',
+   'PYMODULE'),
+  ('pandas.core.sparse',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\sparse\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.sparse.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\sparse\\api.py',
+   'PYMODULE'),
+  ('pandas.core.strings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.strings.accessor',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.strings.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\base.py',
+   'PYMODULE'),
+  ('pandas.core.strings.object_array',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\object_array.py',
+   'PYMODULE'),
+  ('pandas.core.tools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.tools.datetimes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.tools.numeric',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.tools.timedeltas',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.tools.times',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\times.py',
+   'PYMODULE'),
+  ('pandas.core.util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.util.hashing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\util\\hashing.py',
+   'PYMODULE'),
+  ('pandas.core.util.numba_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\util\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.window.common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\common.py',
+   'PYMODULE'),
+  ('pandas.core.window.doc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\doc.py',
+   'PYMODULE'),
+  ('pandas.core.window.ewm',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\ewm.py',
+   'PYMODULE'),
+  ('pandas.core.window.expanding',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\expanding.py',
+   'PYMODULE'),
+  ('pandas.core.window.numba_',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window.online',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\online.py',
+   'PYMODULE'),
+  ('pandas.core.window.rolling',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\core\\window\\rolling.py',
+   'PYMODULE'),
+  ('pandas.errors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\errors\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io._util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\api.py',
+   'PYMODULE'),
+  ('pandas.io.clipboard',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\clipboard\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.clipboards',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\clipboards.py',
+   'PYMODULE'),
+  ('pandas.io.common',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\common.py',
+   'PYMODULE'),
+  ('pandas.io.excel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.excel._base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_base.py',
+   'PYMODULE'),
+  ('pandas.io.excel._calamine',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_calamine.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odfreader',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_odfreader.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odswriter',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_odswriter.py',
+   'PYMODULE'),
+  ('pandas.io.excel._openpyxl',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_openpyxl.py',
+   'PYMODULE'),
+  ('pandas.io.excel._pyxlsb',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_pyxlsb.py',
+   'PYMODULE'),
+  ('pandas.io.excel._util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlrd',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_xlrd.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlsxwriter',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_xlsxwriter.py',
+   'PYMODULE'),
+  ('pandas.io.feather_format',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\feather_format.py',
+   'PYMODULE'),
+  ('pandas.io.formats',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.formats._color_data',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\_color_data.py',
+   'PYMODULE'),
+  ('pandas.io.formats.console',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\console.py',
+   'PYMODULE'),
+  ('pandas.io.formats.css',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\css.py',
+   'PYMODULE'),
+  ('pandas.io.formats.csvs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py',
+   'PYMODULE'),
+  ('pandas.io.formats.excel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\excel.py',
+   'PYMODULE'),
+  ('pandas.io.formats.format',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\format.py',
+   'PYMODULE'),
+  ('pandas.io.formats.html',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\html.py',
+   'PYMODULE'),
+  ('pandas.io.formats.info',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\info.py',
+   'PYMODULE'),
+  ('pandas.io.formats.printing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\printing.py',
+   'PYMODULE'),
+  ('pandas.io.formats.string',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\string.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\style.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style_render',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\style_render.py',
+   'PYMODULE'),
+  ('pandas.io.formats.xml',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\xml.py',
+   'PYMODULE'),
+  ('pandas.io.gbq',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\gbq.py',
+   'PYMODULE'),
+  ('pandas.io.html',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\html.py',
+   'PYMODULE'),
+  ('pandas.io.json',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\json\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.json._json',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_json.py',
+   'PYMODULE'),
+  ('pandas.io.json._normalize',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_normalize.py',
+   'PYMODULE'),
+  ('pandas.io.json._table_schema',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_table_schema.py',
+   'PYMODULE'),
+  ('pandas.io.orc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\orc.py',
+   'PYMODULE'),
+  ('pandas.io.parquet',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\parquet.py',
+   'PYMODULE'),
+  ('pandas.io.parsers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.arrow_parser_wrapper',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\arrow_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.base_parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\base_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.c_parser_wrapper',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\c_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.python_parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\python_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.readers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\readers.py',
+   'PYMODULE'),
+  ('pandas.io.pickle',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\pickle.py',
+   'PYMODULE'),
+  ('pandas.io.pytables',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\pytables.py',
+   'PYMODULE'),
+  ('pandas.io.sas',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas7bdat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas7bdat.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_constants',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas_constants.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_xport',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas_xport.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sasreader',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sasreader.py',
+   'PYMODULE'),
+  ('pandas.io.spss',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\spss.py',
+   'PYMODULE'),
+  ('pandas.io.sql',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\sql.py',
+   'PYMODULE'),
+  ('pandas.io.stata',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\stata.py',
+   'PYMODULE'),
+  ('pandas.io.xml',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\io\\xml.py',
+   'PYMODULE'),
+  ('pandas.plotting',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\plotting\\__init__.py',
+   'PYMODULE'),
+  ('pandas.plotting._core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\plotting\\_core.py',
+   'PYMODULE'),
+  ('pandas.plotting._misc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\plotting\\_misc.py',
+   'PYMODULE'),
+  ('pandas.testing',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\testing.py',
+   'PYMODULE'),
+  ('pandas.tseries',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\tseries\\__init__.py',
+   'PYMODULE'),
+  ('pandas.tseries.api',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\tseries\\api.py',
+   'PYMODULE'),
+  ('pandas.tseries.frequencies',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\tseries\\frequencies.py',
+   'PYMODULE'),
+  ('pandas.tseries.holiday',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\tseries\\holiday.py',
+   'PYMODULE'),
+  ('pandas.tseries.offsets',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\tseries\\offsets.py',
+   'PYMODULE'),
+  ('pandas.util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.util._decorators',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\_decorators.py',
+   'PYMODULE'),
+  ('pandas.util._doctools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\_doctools.py',
+   'PYMODULE'),
+  ('pandas.util._exceptions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\_exceptions.py',
+   'PYMODULE'),
+  ('pandas.util._print_versions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\_print_versions.py',
+   'PYMODULE'),
+  ('pandas.util._test_decorators',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\_test_decorators.py',
+   'PYMODULE'),
+  ('pandas.util._tester',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\_tester.py',
+   'PYMODULE'),
+  ('pandas.util._validators',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\_validators.py',
+   'PYMODULE'),
+  ('pandas.util.version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pandas\\util\\version\\__init__.py',
+   'PYMODULE'),
+  ('pathlib', 'C:\\Program Files\\Python311\\Lib\\pathlib.py', 'PYMODULE'),
+  ('pdb', 'C:\\Program Files\\Python311\\Lib\\pdb.py', 'PYMODULE'),
+  ('pickle', 'C:\\Program Files\\Python311\\Lib\\pickle.py', 'PYMODULE'),
+  ('pickletools',
+   'C:\\Program Files\\Python311\\Lib\\pickletools.py',
+   'PYMODULE'),
+  ('pkgutil', 'C:\\Program Files\\Python311\\Lib\\pkgutil.py', 'PYMODULE'),
+  ('platform', 'C:\\Program Files\\Python311\\Lib\\platform.py', 'PYMODULE'),
+  ('pprint', 'C:\\Program Files\\Python311\\Lib\\pprint.py', 'PYMODULE'),
+  ('py_compile',
+   'C:\\Program Files\\Python311\\Lib\\py_compile.py',
+   'PYMODULE'),
+  ('pydoc', 'C:\\Program Files\\Python311\\Lib\\pydoc.py', 'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Program Files\\Python311\\Lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Program Files\\Python311\\Lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pytz',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pytz\\__init__.py',
+   'PYMODULE'),
+  ('pytz.exceptions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pytz\\exceptions.py',
+   'PYMODULE'),
+  ('pytz.lazy',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pytz\\lazy.py',
+   'PYMODULE'),
+  ('pytz.tzfile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pytz\\tzfile.py',
+   'PYMODULE'),
+  ('pytz.tzinfo',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\pytz\\tzinfo.py',
+   'PYMODULE'),
+  ('queue', 'C:\\Program Files\\Python311\\Lib\\queue.py', 'PYMODULE'),
+  ('quopri', 'C:\\Program Files\\Python311\\Lib\\quopri.py', 'PYMODULE'),
+  ('random', 'C:\\Program Files\\Python311\\Lib\\random.py', 'PYMODULE'),
+  ('rlcompleter',
+   'C:\\Program Files\\Python311\\Lib\\rlcompleter.py',
+   'PYMODULE'),
+  ('runpy', 'C:\\Program Files\\Python311\\Lib\\runpy.py', 'PYMODULE'),
+  ('scripts', '-', 'PYMODULE'),
+  ('scripts.core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\scripts\\core\\__init__.py',
+   'PYMODULE'),
+  ('scripts.core.header_normalizer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\scripts\\core\\header_normalizer.py',
+   'PYMODULE'),
+  ('scripts.core.header_registry',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\scripts\\core\\header_registry.py',
+   'PYMODULE'),
+  ('scripts.core.semantic_matcher',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\scripts\\core\\semantic_matcher.py',
+   'PYMODULE'),
+  ('scripts.core.standard_header_order',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\scripts\\core\\standard_header_order.py',
+   'PYMODULE'),
+  ('scripts.tools', '-', 'PYMODULE'),
+  ('scripts.tools.data_synchronizer_v30',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\scripts\\tools\\data_synchronizer_v30.py',
+   'PYMODULE'),
+  ('secrets', 'C:\\Program Files\\Python311\\Lib\\secrets.py', 'PYMODULE'),
+  ('selectors', 'C:\\Program Files\\Python311\\Lib\\selectors.py', 'PYMODULE'),
+  ('setuptools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._core_metadata',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_core_metadata.py',
+   'PYMODULE'),
+  ('setuptools._discovery',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_discovery.py',
+   'PYMODULE'),
+  ('setuptools._distutils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils._log',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_log.py',
+   'PYMODULE'),
+  ('setuptools._distutils._macos_compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_macos_compat.py',
+   'PYMODULE'),
+  ('setuptools._distutils._modified',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_modified.py',
+   'PYMODULE'),
+  ('setuptools._distutils._msvccompiler',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_msvccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.archive_util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\archive_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.ccompiler',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\ccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.cmd',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\cmd.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command._framework_compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\_framework_compat.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.bdist',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.bdist_dumb',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist_dumb.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.bdist_rpm',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist_rpm.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build_clib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_clib.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build_ext',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_ext.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build_py',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_py.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build_scripts',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_scripts.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.check',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\check.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.clean',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\clean.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.config',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\config.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.install',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.install_data',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_data.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.install_egg_info',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_egg_info.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.install_headers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_headers.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.install_lib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_lib.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.install_scripts',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_scripts.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.sdist',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat.numpy',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\numpy.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat.py39',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers', '-', 'PYMODULE'),
+  ('setuptools._distutils.compilers.C', '-', 'PYMODULE'),
+  ('setuptools._distutils.compilers.C.base',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\base.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.cygwin',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\cygwin.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.errors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\errors.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.msvc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\msvc.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.unix',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\unix.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.zos',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\zos.py',
+   'PYMODULE'),
+  ('setuptools._distutils.core',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\core.py',
+   'PYMODULE'),
+  ('setuptools._distutils.cygwinccompiler',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\cygwinccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.debug',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\debug.py',
+   'PYMODULE'),
+  ('setuptools._distutils.dep_util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dep_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.dir_util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dir_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.dist',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.errors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\errors.py',
+   'PYMODULE'),
+  ('setuptools._distutils.extension',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\extension.py',
+   'PYMODULE'),
+  ('setuptools._distutils.fancy_getopt',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\fancy_getopt.py',
+   'PYMODULE'),
+  ('setuptools._distutils.file_util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\file_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.filelist',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\filelist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.log',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\log.py',
+   'PYMODULE'),
+  ('setuptools._distutils.spawn',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\spawn.py',
+   'PYMODULE'),
+  ('setuptools._distutils.sysconfig',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\sysconfig.py',
+   'PYMODULE'),
+  ('setuptools._distutils.text_file',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\text_file.py',
+   'PYMODULE'),
+  ('setuptools._distutils.unixccompiler',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\unixccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\version.py',
+   'PYMODULE'),
+  ('setuptools._distutils.versionpredicate',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\versionpredicate.py',
+   'PYMODULE'),
+  ('setuptools._distutils.zosccompiler',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\zosccompiler.py',
+   'PYMODULE'),
+  ('setuptools._entry_points',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_entry_points.py',
+   'PYMODULE'),
+  ('setuptools._imp',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_imp.py',
+   'PYMODULE'),
+  ('setuptools._importlib',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_importlib.py',
+   'PYMODULE'),
+  ('setuptools._itertools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_itertools.py',
+   'PYMODULE'),
+  ('setuptools._normalization',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_normalization.py',
+   'PYMODULE'),
+  ('setuptools._path',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_path.py',
+   'PYMODULE'),
+  ('setuptools._reqs',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_reqs.py',
+   'PYMODULE'),
+  ('setuptools._shutil',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_shutil.py',
+   'PYMODULE'),
+  ('setuptools._static',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_static.py',
+   'PYMODULE'),
+  ('setuptools._vendor', '-', 'PYMODULE'),
+  ('setuptools._vendor.backports',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile.compat.py38',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\py38.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._adapters',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_adapters.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._collections',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_collections.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_compat.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._functools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_functools.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._itertools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_itertools.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._meta',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_meta.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._text',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_text.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat.py311',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py311.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat.py39',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco', '-', 'PYMODULE'),
+  ('setuptools._vendor.jaraco.context',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\context.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco.functools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\functools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco.text',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools.more',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\more.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools.recipes',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\recipes.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._elffile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._manylinux',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._musllinux',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._structures',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._tokenizer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.markers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.requirements',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.specifiers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.tags',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._re',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_re.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._types',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_types.py',
+   'PYMODULE'),
+  ('setuptools._vendor.typing_extensions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.compat.py310',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\py310.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.glob',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\glob.py',
+   'PYMODULE'),
+  ('setuptools.archive_util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\archive_util.py',
+   'PYMODULE'),
+  ('setuptools.command',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.command._requirestxt',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\_requirestxt.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_egg',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_egg.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_wheel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_wheel.py',
+   'PYMODULE'),
+  ('setuptools.command.build',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\build.py',
+   'PYMODULE'),
+  ('setuptools.command.egg_info',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\egg_info.py',
+   'PYMODULE'),
+  ('setuptools.command.sdist',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools.command.setopt',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\command\\setopt.py',
+   'PYMODULE'),
+  ('setuptools.compat',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.compat.py310',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\compat\\py310.py',
+   'PYMODULE'),
+  ('setuptools.compat.py311',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\compat\\py311.py',
+   'PYMODULE'),
+  ('setuptools.compat.py39',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools.config',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.config._apply_pyprojecttoml',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.error_reporting',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\error_reporting.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.extra_validations',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\extra_validations.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.fastjsonschema_exceptions',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_exceptions.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.fastjsonschema_validations',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_validations.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.formats',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\formats.py',
+   'PYMODULE'),
+  ('setuptools.config.expand',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\expand.py',
+   'PYMODULE'),
+  ('setuptools.config.pyprojecttoml',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\pyprojecttoml.py',
+   'PYMODULE'),
+  ('setuptools.config.setupcfg',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\config\\setupcfg.py',
+   'PYMODULE'),
+  ('setuptools.depends',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\depends.py',
+   'PYMODULE'),
+  ('setuptools.discovery',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\discovery.py',
+   'PYMODULE'),
+  ('setuptools.dist',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\dist.py',
+   'PYMODULE'),
+  ('setuptools.errors',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\errors.py',
+   'PYMODULE'),
+  ('setuptools.extension',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\extension.py',
+   'PYMODULE'),
+  ('setuptools.glob',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\glob.py',
+   'PYMODULE'),
+  ('setuptools.installer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\installer.py',
+   'PYMODULE'),
+  ('setuptools.logging',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\logging.py',
+   'PYMODULE'),
+  ('setuptools.monkey',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\monkey.py',
+   'PYMODULE'),
+  ('setuptools.msvc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\msvc.py',
+   'PYMODULE'),
+  ('setuptools.unicode_utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\unicode_utils.py',
+   'PYMODULE'),
+  ('setuptools.version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\version.py',
+   'PYMODULE'),
+  ('setuptools.warnings',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\warnings.py',
+   'PYMODULE'),
+  ('setuptools.wheel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\wheel.py',
+   'PYMODULE'),
+  ('setuptools.windows_support',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\setuptools\\windows_support.py',
+   'PYMODULE'),
+  ('shlex', 'C:\\Program Files\\Python311\\Lib\\shlex.py', 'PYMODULE'),
+  ('shutil', 'C:\\Program Files\\Python311\\Lib\\shutil.py', 'PYMODULE'),
+  ('signal', 'C:\\Program Files\\Python311\\Lib\\signal.py', 'PYMODULE'),
+  ('site', 'C:\\Program Files\\Python311\\Lib\\site.py', 'PYMODULE'),
+  ('six',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\six.py',
+   'PYMODULE'),
+  ('socket', 'C:\\Program Files\\Python311\\Lib\\socket.py', 'PYMODULE'),
+  ('socketserver',
+   'C:\\Program Files\\Python311\\Lib\\socketserver.py',
+   'PYMODULE'),
+  ('sqlite3',
+   'C:\\Program Files\\Python311\\Lib\\sqlite3\\__init__.py',
+   'PYMODULE'),
+  ('sqlite3.dbapi2',
+   'C:\\Program Files\\Python311\\Lib\\sqlite3\\dbapi2.py',
+   'PYMODULE'),
+  ('sqlite3.dump',
+   'C:\\Program Files\\Python311\\Lib\\sqlite3\\dump.py',
+   'PYMODULE'),
+  ('ssl', 'C:\\Program Files\\Python311\\Lib\\ssl.py', 'PYMODULE'),
+  ('statistics',
+   'C:\\Program Files\\Python311\\Lib\\statistics.py',
+   'PYMODULE'),
+  ('string', 'C:\\Program Files\\Python311\\Lib\\string.py', 'PYMODULE'),
+  ('stringprep',
+   'C:\\Program Files\\Python311\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Program Files\\Python311\\Lib\\subprocess.py',
+   'PYMODULE'),
+  ('sysconfig', 'C:\\Program Files\\Python311\\Lib\\sysconfig.py', 'PYMODULE'),
+  ('tarfile', 'C:\\Program Files\\Python311\\Lib\\tarfile.py', 'PYMODULE'),
+  ('tempfile', 'C:\\Program Files\\Python311\\Lib\\tempfile.py', 'PYMODULE'),
+  ('textwrap', 'C:\\Program Files\\Python311\\Lib\\textwrap.py', 'PYMODULE'),
+  ('threading', 'C:\\Program Files\\Python311\\Lib\\threading.py', 'PYMODULE'),
+  ('token', 'C:\\Program Files\\Python311\\Lib\\token.py', 'PYMODULE'),
+  ('tokenize', 'C:\\Program Files\\Python311\\Lib\\tokenize.py', 'PYMODULE'),
+  ('tomllib',
+   'C:\\Program Files\\Python311\\Lib\\tomllib\\__init__.py',
+   'PYMODULE'),
+  ('tomllib._parser',
+   'C:\\Program Files\\Python311\\Lib\\tomllib\\_parser.py',
+   'PYMODULE'),
+  ('tomllib._re',
+   'C:\\Program Files\\Python311\\Lib\\tomllib\\_re.py',
+   'PYMODULE'),
+  ('tomllib._types',
+   'C:\\Program Files\\Python311\\Lib\\tomllib\\_types.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Program Files\\Python311\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('tty', 'C:\\Program Files\\Python311\\Lib\\tty.py', 'PYMODULE'),
+  ('typing', 'C:\\Program Files\\Python311\\Lib\\typing.py', 'PYMODULE'),
+  ('tzdata',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Africa',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Africa\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.Argentina',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.Indiana',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.Kentucky',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\Kentucky\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.North_Dakota',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\America\\North_Dakota\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Antarctica',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Arctic',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Arctic\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Asia',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Asia\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Atlantic',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Australia',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Australia\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Brazil',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Brazil\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Canada',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Canada\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Chile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Chile\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Etc',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Etc\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Europe',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Europe\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Indian',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Indian\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Mexico',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Mexico\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Pacific',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.US',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\__init__.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('unittest._log',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\_log.py',
+   'PYMODULE'),
+  ('unittest.async_case',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\async_case.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.mock',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\mock.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'C:\\Program Files\\Python311\\Lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Program Files\\Python311\\Lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Program Files\\Python311\\Lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Program Files\\Python311\\Lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Program Files\\Python311\\Lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Program Files\\Python311\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('uuid', 'C:\\Program Files\\Python311\\Lib\\uuid.py', 'PYMODULE'),
+  ('webbrowser',
+   'C:\\Program Files\\Python311\\Lib\\webbrowser.py',
+   'PYMODULE'),
+  ('wheel',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\__init__.py',
+   'PYMODULE'),
+  ('wheel.cli',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\cli\\__init__.py',
+   'PYMODULE'),
+  ('wheel.cli.convert',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\cli\\convert.py',
+   'PYMODULE'),
+  ('wheel.cli.pack',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\cli\\pack.py',
+   'PYMODULE'),
+  ('wheel.cli.tags',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\cli\\tags.py',
+   'PYMODULE'),
+  ('wheel.cli.unpack',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\cli\\unpack.py',
+   'PYMODULE'),
+  ('wheel.macosx_libfile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\macosx_libfile.py',
+   'PYMODULE'),
+  ('wheel.metadata',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\metadata.py',
+   'PYMODULE'),
+  ('wheel.util',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\util.py',
+   'PYMODULE'),
+  ('wheel.vendored',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\__init__.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging._elffile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging._manylinux',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging._musllinux',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging._parser',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging._structures',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging._tokenizer',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging.markers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\markers.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging.requirements',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging.specifiers',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging.tags',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\tags.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging.utils',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\utils.py',
+   'PYMODULE'),
+  ('wheel.vendored.packaging.version',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\vendored\\packaging\\version.py',
+   'PYMODULE'),
+  ('wheel.wheelfile',
+   'C:\\PP '
+   '1027\\scripts\\stage1_Standalone\\standalone\\.venv\\Lib\\site-packages\\wheel\\wheelfile.py',
+   'PYMODULE'),
+  ('xml', 'C:\\Program Files\\Python311\\Lib\\xml\\__init__.py', 'PYMODULE'),
+  ('xml.dom',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom.NodeFilter',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\NodeFilter.py',
+   'PYMODULE'),
+  ('xml.dom.domreg',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\domreg.py',
+   'PYMODULE'),
+  ('xml.dom.expatbuilder',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\expatbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.minicompat',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\minicompat.py',
+   'PYMODULE'),
+  ('xml.dom.minidom',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\minidom.py',
+   'PYMODULE'),
+  ('xml.dom.pulldom',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\pulldom.py',
+   'PYMODULE'),
+  ('xml.dom.xmlbuilder',
+   'C:\\Program Files\\Python311\\Lib\\xml\\dom\\xmlbuilder.py',
+   'PYMODULE'),
+  ('xml.etree',
+   'C:\\Program Files\\Python311\\Lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Program Files\\Python311\\Lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Program Files\\Python311\\Lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Program Files\\Python311\\Lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Program Files\\Python311\\Lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Program Files\\Python311\\Lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Program Files\\Python311\\Lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Program Files\\Python311\\Lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Program Files\\Python311\\Lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Program Files\\Python311\\Lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Program Files\\Python311\\Lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Program Files\\Python311\\Lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Program Files\\Python311\\Lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Program Files\\Python311\\Lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Program Files\\Python311\\Lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('zipfile', 'C:\\Program Files\\Python311\\Lib\\zipfile.py', 'PYMODULE'),
+  ('zipimport', 'C:\\Program Files\\Python311\\Lib\\zipimport.py', 'PYMODULE'),
+  ('zoneinfo',
+   'C:\\Program Files\\Python311\\Lib\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('zoneinfo._common',
+   'C:\\Program Files\\Python311\\Lib\\zoneinfo\\_common.py',
+   'PYMODULE'),
+  ('zoneinfo._tzpath',
+   'C:\\Program Files\\Python311\\Lib\\zoneinfo\\_tzpath.py',
+   'PYMODULE'),
+  ('zoneinfo._zoneinfo',
+   'C:\\Program Files\\Python311\\Lib\\zoneinfo\\_zoneinfo.py',
+   'PYMODULE')])

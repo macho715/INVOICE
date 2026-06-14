@@ -1,0 +1,77 @@
+{
+  "expectation_suite_name": "stage1_sync_expectations",
+  "data_asset_type": "PandasDataFrame",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Case No."
+      },
+      "meta": {
+        "description": "Case No. 컬럼이 반드시 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Case No."
+      },
+      "meta": {
+        "description": "Case No. 값이 null이 아니어야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "Case No.",
+        "mostly": 0.99
+      },
+      "meta": {
+        "description": "Case No.가 거의 고유해야 함 (99% 이상)"
+      }
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "min_value": 1000,
+        "max_value": 20000
+      },
+      "meta": {
+        "description": "행 수가 합리적인 범위 내에 있어야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_be_between",
+      "kwargs": {
+        "min_value": 40,
+        "max_value": 70
+      },
+      "meta": {
+        "description": "컬럼 수가 표준 범위 내에 있어야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Source_Sheet"
+      },
+      "meta": {
+        "description": "Source_Sheet 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Source_Vendor"
+      },
+      "meta": {
+        "description": "Source_Vendor 컬럼이 존재해야 함"
+      }
+    }
+  ],
+  "meta": {
+    "description": "Stage 1 데이터 동기화 결과 검증 규칙",
+    "version": "1.0.0"
+  }
+}
+

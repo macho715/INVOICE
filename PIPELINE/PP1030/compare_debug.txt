@@ -1,0 +1,5 @@
+--- Master Columns ---
+['Unnamed: 0', 'Shipment Invoice No.', 'SCT Ref.No', 'Site', 'EQ No', 'Case No.', 'Pkg', 'Storage', 'Description', 'L(CM)', 'W(CM)', 'H(CM)', 'CBM', 'N.W(kgs)', 'G.W(kgs)', 'Stack', 'HS Code', 'Currency', 'Price', 'Vessel', 'COE', 'POL', 'POD', 'ETD/ATD', 'ETA/ATA', 'DSV Indoor', 'DSV Al Markaz', 'DSV Outdoor', 'DSV MZD', 'MOSB', 'Shifting', 'MIR', 'SHU', 'DAS', 'AGI', 'Unnamed: 35', 'Unnamed: 36']
+
+--- Warehouse Columns ---
+['Unnamed: 0', 'Shipment Invoice No.', 'SCT Ref.No', 'Site', 'EQ No', 'Case No.', 'Pkg', 'Storage', 'Description', 'L(CM)', 'W(CM)', 'H(CM)', 'CBM', 'N.W(kgs)', 'G.W(kgs)', 'Stack', 'HS Code', 'Currency', 'Price', 'Vessel', 'COE', 'POL', 'POD', 'ETD/ATD', 'ETA/ATA', 'DSV Indoor', 'DSV Al Markaz', 'DSV Outdoor', 'Hauler Indoor', 'DSV MZP', 'MOSB', 'Shifting', 'MIR', 'SHU', 'DAS', 'AGI', 'Unnamed: 36', 'Unnamed: 37']

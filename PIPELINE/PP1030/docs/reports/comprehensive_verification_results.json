@@ -1,0 +1,127 @@
+{
+  "merge_logic": {
+    "verification1": {
+      "sample_cases": [],
+      "update_stats": {
+        "sample_count": 0,
+        "total_changes": 0,
+        "master_wins": 0
+      },
+      "column_updates": {},
+      "verified_rules": {
+        "master_always_wins": null,
+        "date_columns_updated": false,
+        "non_date_columns_updated": false
+      }
+    },
+    "verification2": {
+      "stage1": {
+        "original_total": 7197,
+        "multi_total": 9125,
+        "merged_total": 8680,
+        "loss": -1483
+      },
+      "stage2": {
+        "rows_before": 8680,
+        "rows_after": 8680,
+        "rows_match": true,
+        "added_columns": 12
+      },
+      "stage3": {
+        "rows_before": 8680,
+        "rows_after": 8680,
+        "rows_match": true,
+        "vendor_dist": {
+          "SIEMENS": 1606,
+          "HITACHI": 359
+        }
+      },
+      "data_loss": []
+    },
+    "verification3": {
+      "duplicate_cases": [],
+      "sheet_priority": {
+        "CASE_LIST": {
+          "rank": 1,
+          "first_idx": "0",
+          "count": "8602"
+        },
+        "HE_LOCAL": {
+          "rank": 2,
+          "first_idx": "8602",
+          "count": "78"
+        }
+      },
+      "empty_key_preserved": "0",
+      "dedup_stats": {
+        "total_rows": 8680,
+        "empty_keys": "0",
+        "valid_keys": "8680",
+        "unique_cases": 8680
+      }
+    }
+  },
+  "excel_colors": {
+    "mode": "ultra_fast",
+    "version": "v1.0.1",
+    "sheets": {
+      "Case List, RIL": {
+        "header_row": 1,
+        "sampled_rows": 50,
+        "sampled_cols": 8,
+        "orange_samples": 0,
+        "yellow_samples": 0,
+        "sample_cases": []
+      },
+      "HE Local": {
+        "header_row": 1,
+        "sampled_rows": 50,
+        "sampled_cols": 8,
+        "orange_samples": 0,
+        "yellow_samples": 0,
+        "sample_cases": []
+      },
+      "HE-0214,0252 (Capacitor)": {
+        "header_row": 1,
+        "sampled_rows": 50,
+        "sampled_cols": 8,
+        "orange_samples": 0,
+        "yellow_samples": 0,
+        "sample_cases": []
+      }
+    },
+    "params": {
+      "mode": "ultra_fast",
+      "stage1": "data\\processed\\synced\\HVDC WAREHOUSE_HITACHI(HE).synced_v3.4.xlsx",
+      "report": "docs\\reports\\excel_color_verification.json",
+      "header_rows": 5,
+      "rows": 200,
+      "cols": 12,
+      "sheets": 3,
+      "samples": 5,
+      "processes": 2,
+      "no_parallel": true,
+      "tail_rows": 0,
+      "random_sample": 0,
+      "random_seed": 23,
+      "date_cols_only": false,
+      "full_scan": false,
+      "date_cols": "",
+      "max_cells": 2000,
+      "change_log": null,
+      "prefer_change_log": false,
+      "verbose": false
+    }
+  },
+  "dedup_logic": {
+    "output": "================================================================================\n중복 제거 시 남겨두는 데이터 처리 방식 분석\n================================================================================\n\n[1] drop_duplicates_by_case 함수 동작 원리\n--------------------------------------------------------------------------------\n\ndrop_duplicates_by_case 함수는 다음과 같이 작동합니다:\n\n1. Case No 정규화:\n   - Case No 값을 정규화 (대문자 변환, 공백 제거, 구분자 통일)\n   - 예: \"Case 123\", \"CASE-123\", \"case_123\" → 모두 \"CASE-123\"으로 통일\n\n2. keep='first' 정책:\n   - pandas의 duplicated(keep='first') 메서드 사용\n   - 데이터프레임의 인덱스 순서상 첫 번째로 나타나는 행을 유지\n   - 이후에 나타나는 중복 행은 제거됨\n\n3. 빈 키 행 보존:\n   - Case No가 비어있거나 NaN인 행은 중복 제거 대상에서 제외\n   - preserve_empty_keys=True (기본값)일 때 모든 빈 키 행 보존\n   \n\n[2] Stage 1에서 시트 결합 순서\n--------------------------------------------------------------------------------\n\nStage 1에서 여러 시트를 결합할 때 순서가 중요합니다:\n\n1. 시트 순서 정의 (line 2076-2087):\n   - Case List, RIL (우선순위 1)\n   - HE Local (우선순위 2)\n   - HE-0214,0252 (Capacitor) (우선순위 3)\n   - 기타 시트들 (우선순위 4)\n\n2. pd.concat() 실행 (line 2185):\n   - sheet_order 순서대로 결합\n   - ignore_index=True: 인덱스 재설정\n   - sort=False: 정렬 없음 (순서 유지)\n\n3. 중복 제거 실행 (line 2241):\n   - 결합된 데이터프레임 전체에 대해 drop_duplicates_by_case 실행\n   - keep='first'로 인해 앞쪽 시트(Case List, RIL)의 데이터가 우선 유지됨\n   \n\n[3] 실제 데이터 확인\n--------------------------------------------------------------------------------\n전체 유효 Case No: 8,680개\n\nSource_Sheet 분포:\n  - CASE_LIST: 8,602행 (99.1%)\n  - HE_LOCAL: 78행 (0.9%)\n\n시트별 고유 Case No 개수:\n  - CASE_LIST: 8,602개 고유 Case No\n  - HE_LOCAL: 78개 고유 Case No\n\n중복 제거 후 결과:\n  - 총 행수: 8,680행\n  - 고유 Case No: 8,680개\n  - CASE_LIST 시트 우선 유지: 8,602행\n\n  [참고] 중복 제거가 이미 완료된 상태이므로,\n        실제 중복 케이스는 Stage 1 실행 로그에서 확인 가능합니다.\n\n[4] 중복 제거 시 우선순위 정리\n--------------------------------------------------------------------------------\n\n중복 제거 시 남겨지는 데이터의 우선순위:\n\n1. 시트 순서 우선순위:\n   Case List, RIL > HE Local > Capacitor > 기타 시트\n\n2. keep='first' 동작:\n   - 데이터프레임에서 먼저 나타나는 행이 유지됨\n   - pd.concat()으로 시트를 결합할 때 Case List, RIL이 먼저 오므로\n   - 동일 Case No가 여러 시트에 있으면 Case List, RIL의 데이터가 유지됨\n\n3. 빈 키 행:\n   - Case No가 비어있는 행은 중복 제거 대상에서 제외\n   - 모든 빈 키 행이 보존됨\n\n4. 데이터 처리 예시:\n   \n   시트1 (Case List, RIL):\n   Case No | Value\n   123     | A\n   456     | B\n   \n   시트2 (HE Local):\n   Case No | Value\n   123     | C  ← 중복\n   789     | D\n   \n   결합 후:\n   Case No | Value | Source_Sheet\n   123     | A     | CASE_LIST     ← keep='first'로 유지\n   456     | B     | CASE_LIST\n   123     | C     | HE_LOCAL      ← 중복으로 제거됨\n   789     | D     | HE_LOCAL\n   \n   중복 제거 후:\n   Case No | Value | Source_Sheet\n   123     | A     | CASE_LIST     ← 첫 번째 발생만 유지\n   456     | B     | CASE_LIST\n   789     | D     | HE_LOCAL\n   \n\n[5] 코드 위치\n--------------------------------------------------------------------------------\n\n관련 코드 위치:\n\n1. 시트 순서 정의:\n   scripts/stage1_sync_sorted/data_synchronizer_v30.py\n   - Line 2076-2087: sheet_order 정의\n\n2. 시트 결합:\n   scripts/stage1_sync_sorted/data_synchronizer_v30.py\n   - Line 2185: pd.concat(combined_dfs, ignore_index=True, sort=False)\n\n3. 중복 제거:\n   scripts/stage1_sync_sorted/data_synchronizer_v30.py\n   - Line 2241-2243: drop_duplicates_by_case(keep=\"first\")\n   \n   scripts/core/duplicate_handler.py\n   - Line 178-246: drop_duplicates_by_case 함수 구현\n   - Line 229: duplicated(keep='first') 실행\n   \n\n================================================================================\n분석 완료\n================================================================================\n",
+    "stats": {
+      "total_rows": 8680,
+      "unique_cases": 8680
+    }
+  },
+  "master_warehouse": {
+    "output": "================================================================================\nCase List 파일(Master)과 HVDC 파일(Warehouse) 업데이트 시\n동일 Case 처리 방식 상세 분석\n================================================================================\n\n[1] 처리 흐름 개요\n--------------------------------------------------------------------------------\n\nStage 1에서 Master(Case List) 파일과 Warehouse(HVDC WAREHOUSE) 파일을 병합할 때:\n\n1. Case No 기준 매칭:\n   - Master의 각 행에 대해 Warehouse에 동일 Case No가 있는지 확인\n   - Case No가 있으면: 업데이트\n   - Case No가 없으면: 신규 추가\n\n2. 업데이트 우선순위:\n   - Master 데이터가 항상 우선 (Master → Warehouse 방향)\n   - Warehouse 데이터는 Master 데이터로 덮어씌워짐\n   \n\n[2] 동일 Case No 발견 시 처리 방식\n--------------------------------------------------------------------------------\n\n동일 Case No가 Master와 Warehouse에 모두 있을 때 (_apply_updates 함수):\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n1. Source_Sheet 업데이트 (Line 1698-1705)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n   - Master의 Source_Sheet 값으로 Warehouse를 업데이트\n   - 원본 시트 이름을 반영하기 위함\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n2. Source_Vendor 업데이트 (Line 1707-1713)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n   - Master의 Source_Vendor 값으로 Warehouse를 업데이트\n   - 벤더 정보를 반영하기 위함\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n3. 공통 컬럼 처리 (Line 1715-1764)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n   \n   A. 메타데이터 컬럼 제외 (Line 1721-1722):\n      - Source_Sheet, Source_Vendor는 이미 위에서 처리\n      - METADATA_COLUMNS에 포함된 컬럼은 Warehouse 원본 값 유지\n   \n   B. 날짜 컬럼 처리 (Line 1728-1748):\n      조건: semantic_key in date_semantic_keys\n      \n      규칙:\n      - Master에 값이 있으면 무조건 업데이트 (Master 우선)\n      - Warehouse 값과 다르면 업데이트\n      - 같은 날짜라도 형식 통일 (mval로 덮어쓰기)\n      \n      예시:\n      Master: ETD/ATD = 2024-05-17\n      Warehouse: ETD/ATD = 2024-05-18\n      → 결과: ETD/ATD = 2024-05-17 (Master 값으로 업데이트)\n   \n   C. 비날짜 컬럼 처리 (Line 1749-1764):\n      조건: ALWAYS_OVERWRITE_NONDATE = True (Line 232)\n      \n      규칙:\n      - Master에 값이 있으면 무조건 업데이트\n      - Warehouse 값과 다르면 업데이트\n      \n      예시:\n      Master: Product = \"A\"\n      Warehouse: Product = \"B\"\n      → 결과: Product = \"A\" (Master 값으로 업데이트)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n4. Master 전용 컬럼 처리 (Line 1766-1790)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n   - Master에만 있는 컬럼을 Warehouse에 추가\n   - 해당 Case의 값으로 업데이트\n   - 예: \"DHL WH\" 컬럼이 Master에만 있는 경우\n   \n\n[3] 실제 데이터 예시\n--------------------------------------------------------------------------------\n\n[시나리오] 동일 Case No \"207557\"이 Master와 Warehouse에 모두 있음\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[처리 전]\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nMaster (Case List):\nCase No | ETD/ATD      | ETA/ATA      | Product | DHL WH\n207557  | 2024-05-17  | 2024-06-25  | Item A  | 2024-06-01\n\nWarehouse (HVDC):\nCase No | ETD/ATD      | ETA/ATA      | Product | DHL WH\n207557  | 2024-05-18  | 2024-06-25  | Item B  | (없음)\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[처리 후]\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nWarehouse (업데이트됨):\nCase No | ETD/ATD      | ETA/ATA      | Product | DHL WH\n207557  | 2024-05-17  | 2024-06-25  | Item A  | 2024-06-01\n        ↑ Master 값  ↑ 같음(유지)  ↑ Master 값 ↑ Master 값 추가\n\n변경 사항:\n- ETD/ATD: 2024-05-18 → 2024-05-17 (Master 값으로 업데이트)\n- Product: Item B → Item A (Master 값으로 업데이트)\n- DHL WH: (없음) → 2024-06-01 (Master 전용 컬럼 추가 및 값 업데이트)\n- ETA/ATA: 변경 없음 (값이 동일)\n   \n\n[4] 핵심 정책\n--------------------------------------------------------------------------------\n\n1. Master 우선 정책 (Master → Warehouse):\n   - 모든 컬럼에서 Master 데이터가 우선\n   - Warehouse 데이터는 Master 데이터로 덮어씌워짐\n\n2. 날짜 컬럼 처리:\n   - Master에 값이 있으면 무조건 업데이트\n   - 날짜 형식 통일 (Master 형식으로 표준화)\n   - _dates_equal() 함수로 논리적 동등성 확인\n\n3. 비날짜 컬럼 처리:\n   - ALWAYS_OVERWRITE_NONDATE = True\n   - Master에 값이 있으면 무조건 업데이트\n   - 문자열 비교로 값 변경 확인\n\n4. Master 전용 컬럼:\n   - Warehouse에 없는 컬럼은 추가\n   - 해당 Case의 값으로 업데이트\n\n5. 메타데이터 컬럼:\n   - Source_Sheet, Source_Vendor는 Master 값으로 업데이트\n   - 원본 출처 정보 반영\n   \n\n[5] 코드 위치\n--------------------------------------------------------------------------------\n\n관련 코드 위치:\n\n1. 업데이트 로직:\n   scripts/stage1_sync_sorted/data_synchronizer_v30.py\n   - Line 1587-1799: _apply_updates() 함수\n   \n2. 날짜 컬럼 처리:\n   - Line 1728-1748: 날짜 컬럼 업데이트 로직\n   - Line 390-405: _dates_equal() 함수 (날짜 동등성 확인)\n   - Line 365: date_semantic_keys 초기화\n   \n3. 비날짜 컬럼 처리:\n   - Line 1749-1764: 비날짜 컬럼 업데이트 로직\n   - Line 232: ALWAYS_OVERWRITE_NONDATE = True 설정\n   \n4. 신규 케이스 추가:\n   - Line 1658-1691: 신규 케이스 추가 로직\n   \n\n[6] 통계 정보\n--------------------------------------------------------------------------------\n총 케이스 수: 8,680개\n\n[참고] 실제 업데이트 통계는 Stage 1 실행 로그에서 확인 가능합니다:\n  - Date updates: 날짜 컬럼 업데이트 수\n  - Field updates: 비날짜 컬럼 업데이트 수\n  - New records: 신규 추가된 케이스 수\n  - Source_Sheet updates: Source_Sheet 업데이트 수\n\n================================================================================\n분석 완료\n================================================================================\n\n[요약]\n--------------------------------------------------------------------------------\n\n동일 Case No 처리 규칙:\n1. Master 데이터가 항상 우선\n2. 날짜 컬럼: Master 값이 있으면 무조건 업데이트\n3. 비날짜 컬럼: Master 값이 있으면 무조건 업데이트 (ALWAYS_OVERWRITE_NONDATE=True)\n4. Master 전용 컬럼: Warehouse에 추가 및 값 업데이트\n5. 메타데이터: Source_Sheet, Source_Vendor는 Master 값으로 업데이트\n        \n",
+    "success": true
+  }
+}

@@ -1,0 +1,105 @@
+"""
+SAFEEN 인보이스 파서
+
+SAFEEN PDF 인보이스를 파싱하여 표준 형식으로 변환
+
+작성일: 2025-11-11
+작성자: MACHO-GPT v3.4-mini
+"""
+
+import PyPDF2
+import re
+from pathlib import Path
+from typing import List, Dict
+
+
+class SAFEENParser:
+    """SAFEEN 인보이스 파서 클래스"""
+    
+    def __init__(self):
+        """파서 초기화"""
+        self.patterns = self._define_patterns()
+    
+    def _define_patterns(self) -> Dict:
+        """정규표현식 패턴 정의"""
+        return {
+            'invoice_no': r'INVOICE\s*NO\.?\s*[:：]?\s*([A-Z0-9\-]+)',
+            'invoice_date': r'DATE\s*[:：]?\s*(\d{2}[-/]\d{2}[-/]\d{4})',
+            'voyage_no': r'ROT[#\s]*[:：]?\s*([A-Z0-9\-]+)',
+            'amount': r'AMOUNT\s*[:：]?\s*AED\s*([\d,]+\.?\d*)',
+            'service_desc': r'(CHANNEL\s+CROSSING|PILOTAGE|PILOT\s+LAUNCH)',
+        }
+    
+    def parse(self, pdf_path: Path) -> List[Dict]:
+        """
+        SAFEEN PDF 파싱
+        
+        Parameters:
+            pdf_path (Path): PDF 파일 경로
+        
+        Returns:
+            List[Dict]: 파싱된 라인 목록
+        """
+        lines = []
+        
+        try:
+            # PDF 텍스트 추출
+            with open(pdf_path, 'rb') as file:
+                reader = PyPDF2.PdfReader(file)
+                text = ""
+                for page in reader.pages:
+                    text += page.extract_text()
+            
+            # 인보이스 번호 추출
+            invoice_match = re.search(self.patterns['invoice_no'], text, re.IGNORECASE)
+            invoice_no = invoice_match.group(1) if invoice_match else f"SAFEEN-{pdf_path.stem}"
+            
+            # 인보이스 날짜 추출
+            date_match = re.search(self.patterns['invoice_date'], text, re.IGNORECASE)
+            invoice_date = date_match.group(1) if date_match else "2024-11-01"
+            
+            # Voyage No 추출
+            voyage_match = re.search(self.patterns['voyage_no'], text, re.IGNORECASE)
+            voyage_no = voyage_match.group(1) if voyage_match else "UNKNOWN"
+            
+            # 금액 추출
+            amount_match = re.search(self.patterns['amount'], text, re.IGNORECASE)
+            amount_str = amount_match.group(1) if amount_match else "0.00"
+            amount = float(amount_str.replace(',', ''))
+            
+            # 서비스 설명 추출
+            service_match = re.search(self.patterns['service_desc'], text, re.IGNORECASE)
+            service = service_match.group(1) if service_match else "CHANNEL CROSSING"
+            
+            # SUBJECT 생성
+            subject = f"SAFEEN – {service} – Rot# {voyage_no}"
+            
+            # 라인 데이터 생성
+            line = {
+                'Voyage No': voyage_no,
+                'SUBJECT': subject,
+                'INVOICE NUMBER': invoice_no,
+                'INVOICE DATE': invoice_date,
+                'Total_Amount_AED': amount,
+                'Qty': 1.0,
+                'Provider': 'SAFEEN',
+                'Service_Type': service,
+            }
+            
+            lines.append(line)
+            
+        except Exception as e:
+            print(f"Error parsing SAFEEN PDF {pdf_path}: {str(e)}")
+            # 최소한의 더미 데이터 반환
+            lines.append({
+                'Voyage No': 'UNKNOWN',
+                'SUBJECT': f'SAFEEN – ERROR PARSING – {pdf_path.name}',
+                'INVOICE NUMBER': f'SAFEEN-{pdf_path.stem}',
+                'INVOICE DATE': '2024-11-01',
+                'Total_Amount_AED': 0.0,
+                'Qty': 1.0,
+                'Provider': 'SAFEEN',
+                'Service_Type': 'UNKNOWN',
+            })
+        
+        return lines

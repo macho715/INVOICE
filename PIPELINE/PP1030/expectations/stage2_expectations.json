@@ -1,0 +1,79 @@
+{
+  "expectation_suite_name": "stage2_derived_expectations",
+  "data_asset_type": "PandasDataFrame",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Status"
+      },
+      "meta": {
+        "description": "Status 파생 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "SQM"
+      },
+      "meta": {
+        "description": "SQM 파생 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "SQM",
+        "min_value": 0.0,
+        "max_value": 1000.0,
+        "mostly": 0.95
+      },
+      "meta": {
+        "description": "SQM 값이 합리적인 범위 내에 있어야 함 (0-1000 m²)"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Stack_Status"
+      },
+      "meta": {
+        "description": "Stack_Status 파생 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Stack_Status",
+        "value_set": [0, 1, 2, 3, 4, 5],
+        "mostly": 0.95
+      },
+      "meta": {
+        "description": "Stack_Status가 유효한 값이어야 함 (0-5)"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Latest_Location"
+      },
+      "meta": {
+        "description": "Latest_Location 파생 컬럼이 존재해야 함"
+      }
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_equal",
+      "kwargs": {
+        "value": null
+      },
+      "meta": {
+        "description": "Stage 2 출력 행 수는 Stage 1과 동일해야 함 (동적 검증)"
+      }
+    }
+  ],
+  "meta": {
+    "description": "Stage 2 파생 컬럼 계산 결과 검증 규칙",
+    "version": "1.0.0"
+  }
+}
+

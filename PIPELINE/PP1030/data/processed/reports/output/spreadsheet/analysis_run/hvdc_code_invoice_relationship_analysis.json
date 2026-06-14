@@ -1,0 +1,1759 @@
+{
+  "workbook": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\output\\spreadsheet\\HVDC_WAREHOUSE_INVOICE_all_billing_months_formatted.xlsx",
+  "sheet": "invoice_all_months",
+  "rows_excluding_header": 608,
+  "columns": [
+    "S No.",
+    "Operation Month",
+    "HVDC CODE",
+    "HVDC CODE 1",
+    "HVDC CODE 2",
+    "HVDC CODE 3",
+    "HVDC CODE 4",
+    "Category",
+    "20DC",
+    "20FR",
+    "40DC",
+    "40FR",
+    "CNTR No.",
+    "CNTR Unstuffing Q'TY",
+    "CNTR Stuffing Q'TY",
+    "Start",
+    "Finish",
+    "pkg",
+    "Weight (kg)",
+    "CBM",
+    "Handling In freight ton",
+    "Handling out Freight Ton",
+    "Sqm",
+    "Amount",
+    "Handling In",
+    "Handling out",
+    "Unstuffing",
+    "Stuffing",
+    "folk lift",
+    "crane",
+    "TOTAL",
+    "Billing month"
+  ],
+  "code_columns": [
+    "HVDC CODE",
+    "HVDC CODE 1",
+    "HVDC CODE 2",
+    "HVDC CODE 3",
+    "HVDC CODE 4"
+  ],
+  "related_header_groups": {
+    "month_columns": [
+      "Operation Month",
+      "Billing month",
+      "Start",
+      "Finish"
+    ],
+    "quantity_columns": [
+      "20DC",
+      "20FR",
+      "40DC",
+      "40FR",
+      "CNTR Unstuffing Q'TY",
+      "CNTR Stuffing Q'TY",
+      "pkg",
+      "Weight (kg)",
+      "CBM",
+      "Handling In freight ton",
+      "Handling out Freight Ton",
+      "Sqm"
+    ],
+    "money_columns": [
+      "Amount",
+      "Handling In",
+      "Handling out",
+      "Unstuffing",
+      "Stuffing",
+      "folk lift",
+      "crane",
+      "TOTAL"
+    ]
+  },
+  "classification_counts": {
+    "hvdc_adopt": 400,
+    "blank_after_na_removal": 9,
+    "service_or_location_label": 68,
+    "hvdc_dsv": 62,
+    "hvdc_other": 30,
+    "non_hvdc_text": 39
+  },
+  "classification_total_by_total_column": {
+    "hvdc_adopt": 4305517.1308,
+    "blank_after_na_removal": 69671.85,
+    "service_or_location_label": 7222504.32,
+    "hvdc_dsv": 219278.44943,
+    "hvdc_other": 191646.74655468,
+    "non_hvdc_text": 2567312.716136
+  },
+  "split_presence_patterns": {
+    "('Y', 'Y', 'Y', 'Y', 'Y')": 390,
+    "('-', '-', '-', '-', '-')": 9,
+    "('Y', 'Y', '-', '-', '-')": 53,
+    "('Y', 'Y', 'Y', '-', '-')": 13,
+    "('Y', '-', '-', '-', '-')": 143
+  },
+  "blank_rows_after_na_removal": [
+    66,
+    67,
+    68,
+    69,
+    70,
+    78,
+    79,
+    80,
+    81
+  ],
+  "split_mismatch_count": 132,
+  "blank_split_valid_code_count": 104,
+  "split_mismatch_sample": [
+    {
+      "row": 62,
+      "code": "HVDC-ADOPT-HE-0087,90",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        87
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0087,90"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-04",
+      "total": 2397.25
+    },
+    {
+      "row": 63,
+      "code": "HVDC-ADOPT-HE-0091,92",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        91
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0091,92"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-04",
+      "total": 99.0
+    },
+    {
+      "row": 87,
+      "code": "HVDC-ADOPT-HE-0108 & 0109",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        108
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0108 & 0109"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-06",
+      "total": 1300.0
+    },
+    {
+      "row": 116,
+      "code": "HVDC-ADOPT-HE-0158 , 159",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        158
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0158 , 159"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-07",
+      "total": 6132.5
+    },
+    {
+      "row": 123,
+      "code": "HVDC-ADOPT-HE-0130 , 0131",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        130
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0130 , 0131"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-07",
+      "total": 6537.2
+    },
+    {
+      "row": 124,
+      "code": "HVDC-ADOPT-HE-0132 , 0133",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        132
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0132 , 0133"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-07",
+      "total": 7160.0
+    },
+    {
+      "row": 128,
+      "code": "HVDC-ADOPT-HE-0143, 0144",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        143
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0143, 0144"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-08",
+      "total": 1253.66
+    },
+    {
+      "row": 143,
+      "code": "HVDC-ADOPT-HE-0165, 169",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        165
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0165, 169"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-08",
+      "total": 3017.0
+    },
+    {
+      "row": 144,
+      "code": "HVDC-ADOPT-HE-0166, 171",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        166
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0166, 171"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-08",
+      "total": 373.5
+    },
+    {
+      "row": 196,
+      "code": "HVDC-ADOPT-HE-0183/184",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        183
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0183/184"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-10",
+      "total": 138.25
+    },
+    {
+      "row": 197,
+      "code": "HVDC-ADOPT-HE-0200,0201",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        200
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2000201
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-10",
+      "total": 2786.5
+    },
+    {
+      "row": 233,
+      "code": "HVDC-ADOPT-HE-0205, 0213",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        205
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0205, 0213"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-11",
+      "total": 24371.5
+    },
+    {
+      "row": 251,
+      "code": "HVDC-ADOPT-SIM-0046, 0047",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        46
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        "0046, 0047"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-12",
+      "total": 904.06
+    },
+    {
+      "row": 269,
+      "code": "HVDC-ADOPT-HE-0215, 0232",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        215
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0215, 0232"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-12",
+      "total": 9618.2
+    },
+    {
+      "row": 270,
+      "code": "HVDC-ADOPT-HE-0215, 0232",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        215
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0215, 0232"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2024-12",
+      "total": 499.2
+    },
+    {
+      "row": 287,
+      "code": "HVDC-ADOPT-HE-0192, 0195, 0189, 0193, 0197, 0191",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        192
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0192, 0195, 0189, 0193, 0197, 0191"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-01",
+      "total": 16289.91
+    },
+    {
+      "row": 288,
+      "code": "HVDC-ADOPT-HE-0262 HE-0263",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        262
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0262 HE"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-01",
+      "total": 5311.51
+    },
+    {
+      "row": 309,
+      "code": "HVDC-ADOPT-SIM-0029, 0034",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        29
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        "0029, 0034"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-01",
+      "total": 2332.16
+    },
+    {
+      "row": 310,
+      "code": "HVDC-ADOPT-SIM-0029, 0034 ",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        29
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        "0029, 0034 "
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-01",
+      "total": 193.23
+    },
+    {
+      "row": 318,
+      "code": "HVDC-ADOPT-HE-0143, 0116",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        143
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0143, 0116"
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-01",
+      "total": 0.0
+    },
+    {
+      "row": 349,
+      "code": "HVDC-ADOPT-HE-0233,0236",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        233
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2330236
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-02",
+      "total": 12118.4
+    },
+    {
+      "row": 350,
+      "code": "HVDC-ADOPT-HE-0256,0257",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        256
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2560257
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-02",
+      "total": 5610.7
+    },
+    {
+      "row": 352,
+      "code": "HVDC-ADOPT-HE-0238,0239",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        238
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        2380239
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-02",
+      "total": 2741.67
+    },
+    {
+      "row": 376,
+      "code": "HVDC-DAS-NIE-MOSB-004",
+      "expected": [
+        "HVDC",
+        "DAS",
+        "NIE",
+        "MOSB-004"
+      ],
+      "actual": [
+        "HVDC",
+        "DAS",
+        "NIE",
+        "MOSB"
+      ],
+      "class": "hvdc_other",
+      "billing_month": "2025-02",
+      "total": 4111.6
+    },
+    {
+      "row": 377,
+      "code": "HVDC-ADOPT-HE-0246,247,249,250",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        246
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        246247249250
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-03",
+      "total": 3011.47
+    },
+    {
+      "row": 437,
+      "code": "HVDC-ADOPT-HE-0005 / 0027 ",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        5
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        "0005 / 0027 "
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-04",
+      "total": 79.84
+    },
+    {
+      "row": 440,
+      "code": "HVDC-ADOPT-HE-0094,0005,0262,0139,0178,0257,0093,0256,0138",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        94
+      ],
+      "actual": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        9.4000502620139e+33
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-04",
+      "total": 176.96
+    },
+    {
+      "row": 457,
+      "code": "HVDC-DSV-MOSB-DSV-112 ",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        "DSV-112"
+      ],
+      "actual": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        "DSV"
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-04",
+      "total": 5109.0
+    },
+    {
+      "row": 467,
+      "code": "HVDC-DSV-HE-MOSB-263",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-263"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 7982.5
+    },
+    {
+      "row": 468,
+      "code": "HVDC-ADOPT-HE-0300",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        300
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 14.7108
+    }
+  ],
+  "blank_split_valid_code_sample": [
+    {
+      "row": 467,
+      "code": "HVDC-DSV-HE-MOSB-263",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-263"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 7982.5
+    },
+    {
+      "row": 468,
+      "code": "HVDC-ADOPT-HE-0300",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "HE",
+        300
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 14.7108
+    },
+    {
+      "row": 469,
+      "code": "HVDC-DSV-MOSB-260",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        260
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 213.3399
+    },
+    {
+      "row": 471,
+      "code": "HVDC-DSV-MOSB-264",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        264
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 6700.0
+    },
+    {
+      "row": 472,
+      "code": "HVDC-DSV-MOSB-264",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        264
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 4700.0
+    },
+    {
+      "row": 473,
+      "code": "HVDC-DSV-HE-MOSB-267",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-267"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 2005.0
+    },
+    {
+      "row": 474,
+      "code": "HVDC-ADOPT-SCT-0128",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        128
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 9121.5
+    },
+    {
+      "row": 475,
+      "code": "HVDC-DSV-HE-MOSB-268",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-268"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 6828.0
+    },
+    {
+      "row": 476,
+      "code": "HVDC-DSV-HE-MOSB-268",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-268"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 7980.0
+    },
+    {
+      "row": 478,
+      "code": "HVDC-DSV-HE-MOSB-269",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-269"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 8612.2
+    },
+    {
+      "row": 479,
+      "code": "HVDC-DSV-HE-MOSB-269",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-269"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 6612.2
+    },
+    {
+      "row": 480,
+      "code": "HVDC-DSV-HE-MOSB-271",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-271"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 867.5000000000001
+    },
+    {
+      "row": 481,
+      "code": "HVDC-ADOPT-SCT-0086 (Outbound to SHU)",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        86
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 78.03
+    },
+    {
+      "row": 482,
+      "code": "HVDC-ADOPT-SCT-0086 (Outbound to MIR)",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        86
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 26.01
+    },
+    {
+      "row": 483,
+      "code": "HVDC-ADOPT-SCT-0132",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        132
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 2285.0
+    },
+    {
+      "row": 484,
+      "code": "HVDC-DSV-HE-MOSB-276",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-276"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 82.5
+    },
+    {
+      "row": 485,
+      "code": "HVDC-ADOPT-SCT-0135",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SCT",
+        135
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 4500.0
+    },
+    {
+      "row": 486,
+      "code": "HVDC-AGI-ALS-338",
+      "expected": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_other",
+      "billing_month": "2025-11",
+      "total": 6238.1125
+    },
+    {
+      "row": 487,
+      "code": "HVDC-AGI-ALS-338",
+      "expected": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_other",
+      "billing_month": "2025-11",
+      "total": 4238.1125
+    },
+    {
+      "row": 488,
+      "code": "HVDC-AGI-ALS-338",
+      "expected": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_other",
+      "billing_month": "2025-11",
+      "total": 4238.1125
+    },
+    {
+      "row": 489,
+      "code": "HVDC-AGI-ALS-338",
+      "expected": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_other",
+      "billing_month": "2025-11",
+      "total": 4238.1125
+    },
+    {
+      "row": 490,
+      "code": "HVDC-AGI-ALS-338",
+      "expected": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_other",
+      "billing_month": "2025-11",
+      "total": 4238.1125
+    },
+    {
+      "row": 491,
+      "code": "HVDC-AGI-ALS-338",
+      "expected": [
+        "HVDC",
+        "AGI",
+        "ALS",
+        338
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_other",
+      "billing_month": "2025-11",
+      "total": 1483.8905
+    },
+    {
+      "row": 492,
+      "code": "HVDC-DSV-HE-MOSB-283 (Open Yard)",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-283 (Open Yard)"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 8811.232470000006
+    },
+    {
+      "row": 493,
+      "code": "HVDC-DSV-HE-MOSB-283 (Warehouse)",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-283 (Warehouse)"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 0.0
+    },
+    {
+      "row": 494,
+      "code": "HVDC-DSV-ELS-MIR-275 (Inbound & Outbound)",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "ELS",
+        "MIR-275 (Inbound & Outbound)"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 128.0
+    },
+    {
+      "row": 495,
+      "code": "HVDC-ADOPT-SIM-0095 (Inbound & Outbound)",
+      "expected": [
+        "HVDC",
+        "ADOPT",
+        "SIM",
+        95
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_adopt",
+      "billing_month": "2025-11",
+      "total": 1431.05
+    },
+    {
+      "row": 496,
+      "code": "HVDC-DSV-HE-MOSB-285(Open Yard)",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-285(Open Yard)"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 3334.720850000001
+    },
+    {
+      "row": 497,
+      "code": "HVDC-DSV-HE-MOSB-285(Warehouse)",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "HE",
+        "MOSB-285(Warehouse)"
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 0.0
+    },
+    {
+      "row": 498,
+      "code": "HVDC-DSV-MOSB-288",
+      "expected": [
+        "HVDC",
+        "DSV",
+        "MOSB",
+        288
+      ],
+      "actual": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "class": "hvdc_dsv",
+      "billing_month": "2025-11",
+      "total": 2845.5
+    }
+  ],
+  "vendor_counts": {
+    "HE": 195,
+    "PPL": 1,
+    "SIM": 103,
+    "SCT": 130,
+    "MOSB": 11,
+    "SEI": 7,
+    "SKM": 2,
+    "ADOPT_PARSE_FAIL": 9,
+    "NIE": 1,
+    "ALM": 1,
+    "ALS": 23,
+    "ELS": 1,
+    "SAS": 4,
+    "HE/SCHENCKER": 1,
+    "CAM": 1,
+    "RE": 1,
+    "SCT/SIM": 1
+  },
+  "vendor_totals": {
+    "HE": 2608138.25669,
+    "PPL": 2570.15,
+    "SIM": 837682.72964,
+    "SCT": 987843.41,
+    "MOSB": 29665.0799,
+    "SEI": 33448.41,
+    "SKM": 921.0,
+    "ADOPT_PARSE_FAIL": 13563.59,
+    "NIE": 4111.6,
+    "ALM": 9389.93,
+    "ALS": 171940.20655468001,
+    "ELS": 128.0,
+    "SAS": 8084.33,
+    "HE/SCHENCKER": 230.5,
+    "CAM": 42.26,
+    "RE": 7725.0,
+    "SCT/SIM": 957.874
+  },
+  "billing_month_counts": {
+    "2024-01": 9,
+    "2024-02": 17,
+    "2024-03": 27,
+    "2024-04": 16,
+    "2024-05": 11,
+    "2024-06": 14,
+    "2024-07": 32,
+    "2024-08": 37,
+    "2024-09": 23,
+    "2024-10": 21,
+    "2024-11": 41,
+    "2024-12": 30,
+    "2025-01": 47,
+    "2025-02": 50,
+    "2025-03": 35,
+    "2025-04": 55,
+    "2025-11": 56,
+    "2025-12": 28,
+    "2026-01": 29,
+    "2026-02": 30
+  },
+  "billing_month_totals": {
+    "2024-01": 154706.13,
+    "2024-02": 426744.51,
+    "2024-03": 429265.72,
+    "2024-04": 374939.24,
+    "2024-05": 267762.66,
+    "2024-06": 658275.22,
+    "2024-07": 836914.6,
+    "2024-08": 988859.14,
+    "2024-09": 865693.3,
+    "2024-10": 791792.15,
+    "2024-11": 915417.03,
+    "2024-12": 905842.81,
+    "2025-01": 1022125.8,
+    "2025-02": 971324.17,
+    "2025-03": 883890.99,
+    "2025-04": 1046083.42,
+    "2025-11": 998951.4191010001,
+    "2025-12": 808189.882845,
+    "2026-01": 634390.19874468,
+    "2026-02": 594762.82223
+  },
+  "billing_month_class_counts": {
+    "2024-01": {
+      "hvdc_adopt": 9
+    },
+    "2024-02": {
+      "hvdc_adopt": 17
+    },
+    "2024-03": {
+      "hvdc_adopt": 27
+    },
+    "2024-04": {
+      "hvdc_adopt": 11,
+      "blank_after_na_removal": 5
+    },
+    "2024-05": {
+      "hvdc_adopt": 7,
+      "blank_after_na_removal": 4
+    },
+    "2024-06": {
+      "hvdc_adopt": 8,
+      "service_or_location_label": 6
+    },
+    "2024-07": {
+      "hvdc_adopt": 28,
+      "service_or_location_label": 4
+    },
+    "2024-08": {
+      "hvdc_adopt": 33,
+      "service_or_location_label": 4
+    },
+    "2024-09": {
+      "hvdc_adopt": 15,
+      "hvdc_dsv": 3,
+      "service_or_location_label": 5
+    },
+    "2024-10": {
+      "hvdc_adopt": 15,
+      "service_or_location_label": 6
+    },
+    "2024-11": {
+      "hvdc_adopt": 32,
+      "hvdc_dsv": 1,
+      "service_or_location_label": 8
+    },
+    "2024-12": {
+      "hvdc_adopt": 19,
+      "service_or_location_label": 9,
+      "hvdc_other": 2
+    },
+    "2025-01": {
+      "hvdc_adopt": 41,
+      "service_or_location_label": 5,
+      "hvdc_dsv": 1
+    },
+    "2025-02": {
+      "hvdc_adopt": 44,
+      "service_or_location_label": 5,
+      "hvdc_other": 1
+    },
+    "2025-03": {
+      "hvdc_adopt": 24,
+      "service_or_location_label": 11
+    },
+    "2025-04": {
+      "hvdc_adopt": 48,
+      "service_or_location_label": 5,
+      "hvdc_dsv": 2
+    },
+    "2025-11": {
+      "hvdc_dsv": 25,
+      "hvdc_adopt": 10,
+      "non_hvdc_text": 14,
+      "hvdc_other": 7
+    },
+    "2025-12": {
+      "hvdc_dsv": 10,
+      "non_hvdc_text": 10,
+      "hvdc_other": 3,
+      "hvdc_adopt": 5
+    },
+    "2026-01": {
+      "hvdc_adopt": 5,
+      "hvdc_other": 9,
+      "hvdc_dsv": 8,
+      "non_hvdc_text": 7
+    },
+    "2026-02": {
+      "hvdc_dsv": 12,
+      "hvdc_adopt": 2,
+      "hvdc_other": 8,
+      "non_hvdc_text": 8
+    }
+  },
+  "category_counts": {
+    "DSV Outdoor": 312,
+    "DSV Indoor": 127,
+    "DSV MZP": 9,
+    "Shifting": 2,
+    "(blank)": 4,
+    "DSV Al Markaz": 6,
+    "AAA  Storage": 5,
+    "Outdoor": 85,
+    "Warehouse": 58
+  },
+  "category_totals": {
+    "DSV Outdoor": 5296042.57,
+    "DSV Indoor": 5973382.73,
+    "DSV MZP": 69671.85,
+    "Shifting": 136386.5,
+    "(blank)": 1264.1,
+    "DSV Al Markaz": 8188.0,
+    "AAA  Storage": 54701.14,
+    "Outdoor": 1492744.033945,
+    "Warehouse": 1543550.28897568
+  },
+  "category_class_counts": {
+    "DSV Outdoor": {
+      "hvdc_adopt": 278,
+      "service_or_location_label": 28,
+      "hvdc_dsv": 5,
+      "hvdc_other": 1
+    },
+    "DSV Indoor": {
+      "hvdc_adopt": 94,
+      "service_or_location_label": 29,
+      "hvdc_dsv": 2,
+      "hvdc_other": 2
+    },
+    "DSV MZP": {
+      "blank_after_na_removal": 9
+    },
+    "Shifting": {
+      "service_or_location_label": 2
+    },
+    "(blank)": {
+      "hvdc_adopt": 2,
+      "service_or_location_label": 2
+    },
+    "DSV Al Markaz": {
+      "hvdc_adopt": 4,
+      "service_or_location_label": 2
+    },
+    "AAA  Storage": {
+      "service_or_location_label": 5
+    },
+    "Outdoor": {
+      "hvdc_dsv": 31,
+      "hvdc_adopt": 19,
+      "non_hvdc_text": 16,
+      "hvdc_other": 19
+    },
+    "Warehouse": {
+      "hvdc_dsv": 24,
+      "hvdc_other": 8,
+      "non_hvdc_text": 23,
+      "hvdc_adopt": 3
+    }
+  },
+  "source_class_counts": {
+    "('base_invoice_rows', 'hvdc_adopt')": 378,
+    "('base_invoice_rows', 'blank_after_na_removal')": 9,
+    "('base_invoice_rows', 'service_or_location_label')": 68,
+    "('base_invoice_rows', 'hvdc_dsv')": 7,
+    "('base_invoice_rows', 'hvdc_other')": 3,
+    "('appended_draft_rows', 'hvdc_dsv')": 55,
+    "('appended_draft_rows', 'hvdc_adopt')": 22,
+    "('appended_draft_rows', 'non_hvdc_text')": 39,
+    "('appended_draft_rows', 'hvdc_other')": 27
+  },
+  "source_class_totals": {
+    "('base_invoice_rows', 'hvdc_adopt')": 4220707.95,
+    "('base_invoice_rows', 'blank_after_na_removal')": 69671.85,
+    "('base_invoice_rows', 'service_or_location_label')": 7222504.32,
+    "('base_invoice_rows', 'hvdc_dsv')": 21720.17,
+    "('base_invoice_rows', 'hvdc_other')": 5032.6,
+    "('appended_draft_rows', 'hvdc_dsv')": 197558.27943,
+    "('appended_draft_rows', 'hvdc_adopt')": 84809.1808,
+    "('appended_draft_rows', 'non_hvdc_text')": 2567312.716136,
+    "('appended_draft_rows', 'hvdc_other')": 186614.14655468002
+  },
+  "nonzero_by_related_columns": {
+    "Amount": 95,
+    "Handling In": 305,
+    "Unstuffing": 158,
+    "TOTAL": 602,
+    "40DC": 138,
+    "CNTR Unstuffing Q'TY": 206,
+    "pkg": 498,
+    "Weight (kg)": 439,
+    "CBM": 497,
+    "Handling In freight ton": 300,
+    "Sqm": 90,
+    "folk lift": 66,
+    "Handling out": 288,
+    "Handling out Freight Ton": 298,
+    "20FR": 10,
+    "crane": 45,
+    "40FR": 51,
+    "20DC": 40,
+    "Stuffing": 5,
+    "CNTR Stuffing Q'TY": 4
+  },
+  "totals_by_related_columns": {
+    "Amount": 9879451.036136,
+    "Handling In": 999136.24,
+    "Unstuffing": 1706000.0,
+    "TOTAL": 14575931.21292068,
+    "40DC": 812.0,
+    "CNTR Unstuffing Q'TY": 919.0,
+    "pkg": 9827.0,
+    "Weight (kg)": 14971654.6496,
+    "CBM": 67452.726259784,
+    "Handling In freight ton": 45010.5432,
+    "Sqm": 829078.518136,
+    "folk lift": 379000.0,
+    "Handling out": 965455.72022468,
+    "Handling out Freight Ton": 40939.853059784,
+    "20FR": 31.0,
+    "crane": 556001.33,
+    "40FR": 51.0,
+    "20DC": 57.0,
+    "Stuffing": 81866.5,
+    "CNTR Stuffing Q'TY": 75.0
+  },
+  "service_labels": {
+    "DSV Open Yard | DSV Outdoor": 11,
+    "M44 Warehouse | DSV Indoor": 11,
+    "Al Markaz Warehouse | DSV Al Markaz": 11,
+    "Mina Zayed Open Yard | DSV MZP": 10,
+    "Shifting from M44 to Al Markaz | Shifting from M44 to Al Markaz": 2,
+    "HE-0192/195/189/193/197/191 | HE": 2,
+    "Additional Manpower - M44 WH | Additional Manpower": 2,
+    "Additional Manpower - Al Markaz WH | Additional Manpower": 2,
+    "Additional Manpower - Open Yard | Additional Manpower": 2,
+    "Port charge Man Masket to Gate pass | Port charge Man Masket to Gate pass": 1,
+    "10 Ton Forklift (M44 Warehouse) | 10 Ton Forklift (M44 Warehouse)": 1,
+    "Valve Capacitor Replacement | Valve Capacitor Replacement": 1,
+    "HVDCADOPT-SIM-0005-2 | HVDC": 1,
+    "EQ-211-HE_LOCAL-JAN24 - LV Panel - DAS Pole | EQ": 1,
+    "Warehouse Outbound | DSV Outdoor": 1,
+    "Daily gate pass for operators | Daily gate pass for operators": 1,
+    "Daily gate pass for trailers | Daily gate pass for trailers": 1,
+    "Mina Zayed open yard | DSV MZP": 1,
+    "Dg Warehouse- November 2024 | AAA  Storage": 1,
+    "Dg Warehouse- December 2024 | AAA  Storage": 1,
+    "Dg Warehouse- January 2025 | AAA  Storage": 1,
+    "Dg Warehouse- February 2025 | AAA  Storage": 1,
+    "Dg Warehouse- March 2025 | AAA  Storage": 1,
+    "Outbound to Al Masaood #1 | Outbound to Al Masaood #1": 1
+  },
+  "non_hvdc_text": {
+    "Lifting Test": 1,
+    "Lifting test": 1,
+    "RETURN / HE-0382": 1,
+    "CASE NO. 208704": 1,
+    "CASE NO. 365775": 1,
+    "PRL-O-058-A DHL EQ101": 1,
+    "ISO DG CONTAILER STORAGE/HANDLING CHARGE": 1,
+    "DSV OPEN YARD FOR THE NOV-25": 1,
+    "M44 WAREHOUSE FOR THE NOV-25": 1,
+    "AL MARKAZ WAREHOUSE FOR THE NOV-25 (Minimum)": 1,
+    "MINA ZAYED OPEN YARD FOR THE NOV-25": 1,
+    "DSV DG WAREHOUSE FOR THE NOV-25": 1,
+    "OOG WAREHOUSE (ACTUAL + 10%) FOR NOV-25": 1,
+    "DG DUBAI THIRD PARTY WAREHOUSE (ACTUAL + 10%) for NOV-25 (HAULER)": 2,
+    "[HVDC-ADOPT-PPL-0021 & 0022": 1,
+    "PORT CHARGE FOR CABLE DRUMS IN MINA ZAYED": 1,
+    "ISO DG CONTAILER STORAGE/HANDLING CHARGE DEC-25": 1,
+    "DSV OPEN YARD FOR THE DEC-25": 1,
+    "M44 WAREHOUSE FOR THE DEC-25": 1,
+    "AL MARKAZ WAREHOUSE FOR THE DEC-25 (Minimum)": 1,
+    "MINA ZAYED OPEN YARD FOR THE DEC-25": 1,
+    "DSV DG WAREHOUSE FOR THE DEC-25": 1,
+    "OOG WAREHOUSE (ACTUAL + 10%) FOR DEC-25": 1,
+    "ISO DG CONTAILER STORAGE/HANDLING CHARGE JAN-25": 1,
+    "DSV OPEN YARD FOR THE JAN-26": 1,
+    "M44 WAREHOUSE FOR THE JAN-26": 1,
+    "MINA ZAYED OPEN YARD FOR THE JAN-26": 1,
+    "DSV DG WAREHOUSE FOR THE JAN-26": 1,
+    "OOG WAREHOUSE (ACTUAL + 10%) FOR JAN-26": 1,
+    "DG DUBAI THIRD PARTY WAREHOUSE (ACTUAL + 10%) for JAN-26 (HAULER)": 1,
+    "ISO DG CONTAILER STORAGE/HANDLING CHARGE FEB-25": 1,
+    "DSV OPEN YARD FOR THE FEB-26": 1,
+    "M45 Temporary AC warehouse (as per offer)": 1,
+    "M44 WAREHOUSE FOR THE FEB-26": 1,
+    "MINA ZAYED OPEN YARD FOR THE FEB-26": 1,
+    "DSV DG WAREHOUSE FOR THE FEB-26": 1,
+    "OOG WAREHOUSE (ACTUAL + 10%) FOR FEB-26": 1,
+    "DG DUBAI THIRD PARTY WAREHOUSE (ACTUAL + 10%) for FEB-26 (HAULER)": 1
+  },
+  "total_component_mismatch_count": 12,
+  "total_component_mismatch_sample": [
+    {
+      "row": 38,
+      "code": "HVDC-ADOPT-SIM-0001",
+      "billing_month": "2024-03",
+      "total": 6788.35,
+      "component_sum": 6788.36,
+      "diff": -0.01
+    },
+    {
+      "row": 118,
+      "code": "HVDC-ADOPT-SCT-0005",
+      "billing_month": "2024-07",
+      "total": 33605.55,
+      "component_sum": 33605.56,
+      "diff": -0.01
+    },
+    {
+      "row": 119,
+      "code": "HVDC-ADOPT-HE-0162",
+      "billing_month": "2024-07",
+      "total": 67571.25,
+      "component_sum": 67571.24,
+      "diff": 0.01
+    },
+    {
+      "row": 121,
+      "code": "HVDC-ADOPT-SCT-0004",
+      "billing_month": "2024-07",
+      "total": 5373.65,
+      "component_sum": 5373.66,
+      "diff": -0.01
+    },
+    {
+      "row": 125,
+      "code": "HVDC-ADOPT-SCT-0008",
+      "billing_month": "2024-07",
+      "total": 5438.95,
+      "component_sum": 5438.96,
+      "diff": -0.01
+    },
+    {
+      "row": 247,
+      "code": "Additional Manpower - M44 WH",
+      "billing_month": "2024-11",
+      "total": 3500.0,
+      "component_sum": 0.0,
+      "diff": 3500.0
+    },
+    {
+      "row": 248,
+      "code": "Additional Manpower - Al Markaz WH",
+      "billing_month": "2024-11",
+      "total": 3500.0,
+      "component_sum": 0.0,
+      "diff": 3500.0
+    },
+    {
+      "row": 249,
+      "code": "Additional Manpower - Open Yard",
+      "billing_month": "2024-11",
+      "total": 3500.0,
+      "component_sum": 0.0,
+      "diff": 3500.0
+    },
+    {
+      "row": 361,
+      "code": "HVDC-ADOPT-SCT-0029",
+      "billing_month": "2025-02",
+      "total": 3956.75,
+      "component_sum": 3956.76,
+      "diff": -0.01
+    },
+    {
+      "row": 431,
+      "code": "HVDC-ADOPT-HE-0309-2,0310-2,0311-2,0301-2 ",
+      "billing_month": "2025-04",
+      "total": 3256.7,
+      "component_sum": 3256.69,
+      "diff": 0.01
+    },
+    {
+      "row": 493,
+      "code": "HVDC-DSV-HE-MOSB-283 (Warehouse)",
+      "billing_month": "2025-11",
+      "total": 0.0,
+      "component_sum": 1125.68272,
+      "diff": -1125.68272
+    },
+    {
+      "row": 497,
+      "code": "HVDC-DSV-HE-MOSB-285(Warehouse)",
+      "billing_month": "2025-11",
+      "total": 0.0,
+      "component_sum": 353.90072,
+      "diff": -353.90072
+    }
+  ],
+  "invalid_finish_text_dates": [
+    {
+      "row": 516,
+      "finish": "2025-11-31",
+      "code": "DSV OPEN YARD FOR THE NOV-25",
+      "billing_month": "2025-11",
+      "total": 218700.0
+    },
+    {
+      "row": 517,
+      "finish": "2025-11-31",
+      "code": "M44 WAREHOUSE FOR THE NOV-25",
+      "billing_month": "2025-11",
+      "total": 254000.0
+    },
+    {
+      "row": 518,
+      "finish": "2025-11-31",
+      "code": "AL MARKAZ WAREHOUSE FOR THE NOV-25 (Minimum)",
+      "billing_month": "2025-11",
+      "total": 135000.0
+    },
+    {
+      "row": 519,
+      "finish": "2025-11-31",
+      "code": "MINA ZAYED OPEN YARD FOR THE NOV-25",
+      "billing_month": "2025-11",
+      "total": 33000.0
+    }
+  ]
+}

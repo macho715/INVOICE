@@ -1,0 +1,6726 @@
+{
+  "meta": {
+    "source_file": "C:\\HVDC_WORK\\PIPELINE\\PP1030\\docs\\HVDC STATUS1.xlsx",
+    "sheet_name": "hvdc all status",
+    "row_count": 893,
+    "grain": "1 row = 1 shipment / 1 voyage case",
+    "rules": {
+      "global": "COE/POL/POD/DOC_* 중심",
+      "uae_ops": "POD/Customs/WH/MOSB/SHU~AGI 중심",
+      "planned_vs_actual": "DOC_* = 계획, SHU~AGI = 실제",
+      "wh_role": "선택 staging",
+      "mosb_role": "AGI/DAS 필수 경유 hub"
+    },
+    "assumptions": [
+      "DOC_* 컬럼은 non-empty marker면 계획 site로 간주",
+      "actual site는 SHU/MIR/DAS/AGI 날짜 존재 기준",
+      "multi-site row는 graph aggregate 시 path를 복수 생성하고 allocation_weight를 1/n 분배",
+      "2000년 이전 날짜는 placeholder/오류 가능성으로 무시",
+      "POD→Customs 매핑은 문자열 alias 기반"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "airport:auh",
+      "type": "airport",
+      "name": "Abu Dhabi Airport"
+    },
+    {
+      "id": "origin_pol:netherlands:amsterdam",
+      "type": "origin_pol",
+      "name": "Amsterdam"
+    },
+    {
+      "id": "origin_pol:belgium:antwerp",
+      "type": "origin_pol",
+      "name": "Antwerp"
+    },
+    {
+      "id": "origin_pol:austria:antwerp",
+      "type": "origin_pol",
+      "name": "Antwerp"
+    },
+    {
+      "id": "origin_pol:germany:antwerp",
+      "type": "origin_pol",
+      "name": "Antwerp"
+    },
+    {
+      "id": "origin_pol:sweden:antwerp",
+      "type": "origin_pol",
+      "name": "Antwerp"
+    },
+    {
+      "id": "origin_pol:spain:barcelona",
+      "type": "origin_pol",
+      "name": "Barcelona"
+    },
+    {
+      "id": "origin_pol:united_kingdom:belfast",
+      "type": "origin_pol",
+      "name": "Belfast"
+    },
+    {
+      "id": "origin_pol:denmark:billund",
+      "type": "origin_pol",
+      "name": "Billund"
+    },
+    {
+      "id": "origin_pol:sweden:billund",
+      "type": "origin_pol",
+      "name": "Billund"
+    },
+    {
+      "id": "origin_pol:germany:bremen",
+      "type": "origin_pol",
+      "name": "Bremen"
+    },
+    {
+      "id": "origin_pol:germany:bremerhaven",
+      "type": "origin_pol",
+      "name": "Bremerhaven"
+    },
+    {
+      "id": "origin_pol:belgium:brussels",
+      "type": "origin_pol",
+      "name": "Brussels"
+    },
+    {
+      "id": "origin_pol:korea:busan_port",
+      "type": "origin_pol",
+      "name": "Busan Port"
+    },
+    {
+      "id": "origin_pol:france:cdg",
+      "type": "origin_pol",
+      "name": "Cdg"
+    },
+    {
+      "id": "origin_pol:france:charles_de_gaulle",
+      "type": "origin_pol",
+      "name": "Charles De Gaulle"
+    },
+    {
+      "id": "origin_pol:india:chennai",
+      "type": "origin_pol",
+      "name": "Chennai"
+    },
+    {
+      "id": "origin_pol:shanghai:china",
+      "type": "origin_pol",
+      "name": "China"
+    },
+    {
+      "id": "origin_pol:india:cochin",
+      "type": "origin_pol",
+      "name": "Cochin"
+    },
+    {
+      "id": "origin_pol:denmark:copenhagen",
+      "type": "origin_pol",
+      "name": "Copenhagen"
+    },
+    {
+      "id": "origin_pol:sweden:copenhagen",
+      "type": "origin_pol",
+      "name": "Copenhagen"
+    },
+    {
+      "id": "origin_pol:korea:dangjin",
+      "type": "origin_pol",
+      "name": "Dangjin"
+    },
+    {
+      "id": "origin_pol:uk:england",
+      "type": "origin_pol",
+      "name": "England"
+    },
+    {
+      "id": "origin_pol:india:ennore",
+      "type": "origin_pol",
+      "name": "Ennore"
+    },
+    {
+      "id": "origin_pol:united_kingdom:felixstowe",
+      "type": "origin_pol",
+      "name": "Felixstowe"
+    },
+    {
+      "id": "origin_pol:germany:frankfurt",
+      "type": "origin_pol",
+      "name": "Frankfurt"
+    },
+    {
+      "id": "origin_pol:switzerland:geneve",
+      "type": "origin_pol",
+      "name": "Geneve"
+    },
+    {
+      "id": "origin_pol:italy:genoa",
+      "type": "origin_pol",
+      "name": "Genoa"
+    },
+    {
+      "id": "origin_pol:sweden:gothenburg",
+      "type": "origin_pol",
+      "name": "Gothenburg"
+    },
+    {
+      "id": "origin_pol:france:gothenburg",
+      "type": "origin_pol",
+      "name": "Gothenburg"
+    },
+    {
+      "id": "origin_pol:austria:graz",
+      "type": "origin_pol",
+      "name": "Graz"
+    },
+    {
+      "id": "origin_pol:germany:hamburg",
+      "type": "origin_pol",
+      "name": "Hamburg"
+    },
+    {
+      "id": "origin_pol:united_kingdom:heathrow",
+      "type": "origin_pol",
+      "name": "Heathrow"
+    },
+    {
+      "id": "origin_pol:sweden:helsingborg",
+      "type": "origin_pol",
+      "name": "Helsingborg"
+    },
+    {
+      "id": "origin_pol:japan:hitachi",
+      "type": "origin_pol",
+      "name": "Hitachi"
+    },
+    {
+      "id": "origin_pol:korea:incheon",
+      "type": "origin_pol",
+      "name": "Incheon"
+    },
+    {
+      "id": "origin_pol:turkey:istanbul",
+      "type": "origin_pol",
+      "name": "Istanbul"
+    },
+    {
+      "id": "origin_pol:brazil:itagui",
+      "type": "origin_pol",
+      "name": "Itagui"
+    },
+    {
+      "id": "origin_pol:turkey:izmit",
+      "type": "origin_pol",
+      "name": "Izmit"
+    },
+    {
+      "id": "origin_pol:indonesia:jakarta",
+      "type": "origin_pol",
+      "name": "Jakarta"
+    },
+    {
+      "id": "origin_pol:uae:jebel_ali",
+      "type": "origin_pol",
+      "name": "Jebel Ali"
+    },
+    {
+      "id": "origin_pol:egypt:kairo",
+      "type": "origin_pol",
+      "name": "Kairo"
+    },
+    {
+      "id": "origin_pol:japan:kobe",
+      "type": "origin_pol",
+      "name": "Kobe"
+    },
+    {
+      "id": "origin_pol:slovenia:koper",
+      "type": "origin_pol",
+      "name": "Koper"
+    },
+    {
+      "id": "origin_pol:malaysia:kuala_lumpur",
+      "type": "origin_pol",
+      "name": "Kuala Lumpur"
+    },
+    {
+      "id": "origin_pol:italy:la_spezia",
+      "type": "origin_pol",
+      "name": "La Spezia"
+    },
+    {
+      "id": "origin_pol:france:le_havre",
+      "type": "origin_pol",
+      "name": "Le Havre"
+    },
+    {
+      "id": "origin_pol:austria:linz",
+      "type": "origin_pol",
+      "name": "Linz"
+    },
+    {
+      "id": "origin_pol:uk:london",
+      "type": "origin_pol",
+      "name": "London"
+    },
+    {
+      "id": "origin_pol:united_kingdom:london",
+      "type": "origin_pol",
+      "name": "London"
+    },
+    {
+      "id": "origin_pol:united_kingdom:london_gateway",
+      "type": "origin_pol",
+      "name": "London Gateway"
+    },
+    {
+      "id": "origin_pol:sweden:malm",
+      "type": "origin_pol",
+      "name": "Malm"
+    },
+    {
+      "id": "origin_pol:sweden:malmoe",
+      "type": "origin_pol",
+      "name": "Malmoe"
+    },
+    {
+      "id": "origin_pol:italy:malpensa",
+      "type": "origin_pol",
+      "name": "Malpensa"
+    },
+    {
+      "id": "origin_pol:korea:masan",
+      "type": "origin_pol",
+      "name": "Masan"
+    },
+    {
+      "id": "origin_pol:italy:milan",
+      "type": "origin_pol",
+      "name": "Milan"
+    },
+    {
+      "id": "origin_pol:oman:muscat",
+      "type": "origin_pol",
+      "name": "Muscat"
+    },
+    {
+      "id": "origin_pol:india:nhava_sheva",
+      "type": "origin_pol",
+      "name": "Nhava Sheva"
+    },
+    {
+      "id": "origin_pol:germany:norden_ham",
+      "type": "origin_pol",
+      "name": "Norden Ham"
+    },
+    {
+      "id": "origin_pol:sweden:norrkoping",
+      "type": "origin_pol",
+      "name": "Norrkoping"
+    },
+    {
+      "id": "origin_pol:united_kingdom:nottingham",
+      "type": "origin_pol",
+      "name": "Nottingham"
+    },
+    {
+      "id": "origin_pol:japan:osaka",
+      "type": "origin_pol",
+      "name": "Osaka"
+    },
+    {
+      "id": "origin_pol:norway:oslo",
+      "type": "origin_pol",
+      "name": "Oslo"
+    },
+    {
+      "id": "origin_pol:malaysia:port_klang",
+      "type": "origin_pol",
+      "name": "Port Klang"
+    },
+    {
+      "id": "origin_pol:italy:port_of_pozzuoli",
+      "type": "origin_pol",
+      "name": "Port Of Pozzuoli"
+    },
+    {
+      "id": "origin_pol:norway:rognan",
+      "type": "origin_pol",
+      "name": "Rognan"
+    },
+    {
+      "id": "origin_pol:netherlands:rotterdam",
+      "type": "origin_pol",
+      "name": "Rotterdam"
+    },
+    {
+      "id": "origin_pol:italy:salermo",
+      "type": "origin_pol",
+      "name": "Salermo"
+    },
+    {
+      "id": "origin_pol:china:shanghai",
+      "type": "origin_pol",
+      "name": "Shanghai"
+    },
+    {
+      "id": "origin_pol:china:shekou",
+      "type": "origin_pol",
+      "name": "Shekou"
+    },
+    {
+      "id": "origin_pol:china:shekou_shenzhen",
+      "type": "origin_pol",
+      "name": "Shekou Shenzhen"
+    },
+    {
+      "id": "origin_pol:china:shenzhen",
+      "type": "origin_pol",
+      "name": "Shenzhen"
+    },
+    {
+      "id": "origin_pol:united_kingdom:southampton",
+      "type": "origin_pol",
+      "name": "Southampton"
+    },
+    {
+      "id": "origin_pol:sweden:stockholm",
+      "type": "origin_pol",
+      "name": "Stockholm"
+    },
+    {
+      "id": "origin_pol:egypt:sukhna",
+      "type": "origin_pol",
+      "name": "Sukhna"
+    },
+    {
+      "id": "origin_pol:estonia:talinn",
+      "type": "origin_pol",
+      "name": "Talinn"
+    },
+    {
+      "id": "origin_pol:india:tuticorin",
+      "type": "origin_pol",
+      "name": "Tuticorin"
+    },
+    {
+      "id": "origin_pol:sweden:uddevalla",
+      "type": "origin_pol",
+      "name": "Uddevalla"
+    },
+    {
+      "id": "origin_pol:bulgaria:varna",
+      "type": "origin_pol",
+      "name": "Varna"
+    },
+    {
+      "id": "origin_pol:italy:venezia",
+      "type": "origin_pol",
+      "name": "Venezia"
+    },
+    {
+      "id": "origin_pol:italy:venice",
+      "type": "origin_pol",
+      "name": "Venice"
+    },
+    {
+      "id": "origin_pol:great_britain:viena",
+      "type": "origin_pol",
+      "name": "Viena"
+    },
+    {
+      "id": "origin_pol:austria:viena",
+      "type": "origin_pol",
+      "name": "Viena"
+    },
+    {
+      "id": "origin_pol:austria:vienna",
+      "type": "origin_pol",
+      "name": "Vienna"
+    },
+    {
+      "id": "origin_pol:india:visakhapatnam",
+      "type": "origin_pol",
+      "name": "Visakhapatnam"
+    },
+    {
+      "id": "origin_pol:spain:vitoria_gasteiz",
+      "type": "origin_pol",
+      "name": "Vitoria Gasteiz"
+    },
+    {
+      "id": "origin_pol:china:zhenzhen",
+      "type": "origin_pol",
+      "name": "Zhenzhen"
+    },
+    {
+      "id": "origin_pol:switzerland:zurich",
+      "type": "origin_pol",
+      "name": "Zurich"
+    },
+    {
+      "id": "origin_region:americas",
+      "type": "origin_region",
+      "name": "Americas"
+    },
+    {
+      "id": "origin_region:east_se_asia",
+      "type": "origin_region",
+      "name": "East Se Asia"
+    },
+    {
+      "id": "origin_region:europe",
+      "type": "origin_region",
+      "name": "Europe"
+    },
+    {
+      "id": "origin_region:middle_east",
+      "type": "origin_region",
+      "name": "Middle East"
+    },
+    {
+      "id": "origin_region:other",
+      "type": "origin_region",
+      "name": "Other"
+    },
+    {
+      "id": "port:jebel_ali",
+      "type": "port",
+      "name": "Jebel Ali"
+    },
+    {
+      "id": "port:khalifa",
+      "type": "port",
+      "name": "Khalifa Port"
+    },
+    {
+      "id": "port:mina_zayed",
+      "type": "port",
+      "name": "Mina Zayed"
+    },
+    {
+      "id": "site:AGI",
+      "type": "site",
+      "name": "AGI"
+    },
+    {
+      "id": "site:DAS",
+      "type": "site",
+      "name": "DAS"
+    },
+    {
+      "id": "site:MIR",
+      "type": "site",
+      "name": "MIR"
+    },
+    {
+      "id": "site:SHU",
+      "type": "site",
+      "name": "SHU"
+    },
+    {
+      "id": "port:dsv",
+      "type": "unknown",
+      "name": "port:dsv"
+    },
+    {
+      "id": "port:mir",
+      "type": "unknown",
+      "name": "port:mir"
+    },
+    {
+      "id": "port:mosb",
+      "type": "unknown",
+      "name": "port:mosb"
+    },
+    {
+      "id": "port:muharraq",
+      "type": "unknown",
+      "name": "port:muharraq"
+    },
+    {
+      "id": "port:shu",
+      "type": "unknown",
+      "name": "port:shu"
+    },
+    {
+      "id": "port:uae",
+      "type": "unknown",
+      "name": "port:uae"
+    }
+  ],
+  "edges": [
+    {
+      "id": "airport:auh__site:AGI",
+      "source": "airport:auh",
+      "target": "site:AGI",
+      "route_type": "pod_to_site",
+      "shipment_count": 20.25,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0371",
+        "HVDC-ADOPT-HE-0415",
+        "HVDC-ADOPT-HE-0443",
+        "HVDC-ADOPT-HE-0461",
+        "HVDC-ADOPT-HE-0487",
+        "HVDC-ADOPT-HE-0495",
+        "HVDC-ADOPT-HE-0504",
+        "HVDC-ADOPT-HE-0511",
+        "HVDC-ADOPT-HE-0516",
+        "HVDC-ADOPT-HE-0531",
+        "HVDC-ADOPT-SCT-0044",
+        "HVDC-ADOPT-SCT-0061",
+        "HVDC-ADOPT-SCT-0079",
+        "HVDC-ADOPT-SCT-0080",
+        "HVDC-ADOPT-SCT-0090",
+        "HVDC-ADOPT-SCT-0103",
+        "HVDC-ADOPT-SCT-0119",
+        "HVDC-ADOPT-SCT-0129",
+        "HVDC-ADOPT-SCT-0130",
+        "HVDC-ADOPT-SCT-0134",
+        "HVDC-ADOPT-SCT-0141",
+        "HVDC-ADOPT-SCT-0145",
+        "HVDC-ADOPT-SCT-0147",
+        "HVDC-ADOPT-SCT-0148",
+        "HVDC-ADOPT-SCT-0150",
+        "HVDC-ADOPT-SCT-0152",
+        "HVDC-ADOPT-SCT-0156",
+        "HVDC-ADOPT-SCT-0157",
+        "HVDC-ADOPT-SCT-0176",
+        "HVDC-ADOPT-SCT-0177",
+        "HVDC-ADOPT-SCT-0179",
+        "HVDC-ADOPT-SIM-0057",
+        "HVDC-ADOPT-SIM-0088",
+        "HVDC-ADOPT-SIM-0094",
+        "HVDC-ADOPT-SIM-0095",
+        "HVDC-ADOPT-SIM-0099",
+        "HVDC-ADOPT-SIM-0107",
+        "HVDC-ADOPT-SIM-0108"
+      ],
+      "allocation_weight_sum": 20.25,
+      "cif_value_sum": 9246197.066666668,
+      "gross_weight_kg_sum": 50076.26666666666,
+      "flow_codes": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "airport:auh__site:DAS",
+      "source": "airport:auh",
+      "target": "site:DAS",
+      "route_type": "pod_to_site",
+      "shipment_count": 42.583333333333336,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0062",
+        "HVDC-ADOPT-HE-0063",
+        "HVDC-ADOPT-HE-0230",
+        "HVDC-ADOPT-HE-0231",
+        "HVDC-ADOPT-HE-0237",
+        "HVDC-ADOPT-HE-0251",
+        "HVDC-ADOPT-HE-0267",
+        "HVDC-ADOPT-HE-0326",
+        "HVDC-ADOPT-HE-0371",
+        "HVDC-ADOPT-HE-0402",
+        "HVDC-ADOPT-HE-0405",
+        "HVDC-ADOPT-HE-0406",
+        "HVDC-ADOPT-HE-0407",
+        "HVDC-ADOPT-HE-0411",
+        "HVDC-ADOPT-HE-0412",
+        "HVDC-ADOPT-HE-0433",
+        "HVDC-ADOPT-HE-0446",
+        "HVDC-ADOPT-HE-0462",
+        "HVDC-ADOPT-HE-0469",
+        "HVDC-ADOPT-HE-0480",
+        "HVDC-ADOPT-HE-0493",
+        "HVDC-ADOPT-HE-0497",
+        "HVDC-ADOPT-HE-0500",
+        "HVDC-ADOPT-HE-0508",
+        "HVDC-ADOPT-HE-0509",
+        "HVDC-ADOPT-HE-0518",
+        "HVDC-ADOPT-HE-0530",
+        "HVDC-ADOPT-HE-0532",
+        "HVDC-ADOPT-HE-0534",
+        "HVDC-ADOPT-HE-0540",
+        "HVDC-ADOPT-HE-0546",
+        "HVDC-ADOPT-SCT-0027",
+        "HVDC-ADOPT-SCT-0040",
+        "HVDC-ADOPT-SCT-0041",
+        "HVDC-ADOPT-SCT-0044",
+        "HVDC-ADOPT-SCT-0048",
+        "HVDC-ADOPT-SCT-0056",
+        "HVDC-ADOPT-SCT-0061",
+        "HVDC-ADOPT-SCT-0065",
+        "HVDC-ADOPT-SCT-0077",
+        "HVDC-ADOPT-SCT-0079",
+        "HVDC-ADOPT-SCT-0091",
+        "HVDC-ADOPT-SCT-0119",
+        "HVDC-ADOPT-SCT-0129",
+        "HVDC-ADOPT-SCT-0130",
+        "HVDC-ADOPT-SCT-0131",
+        "HVDC-ADOPT-SCT-0134",
+        "HVDC-ADOPT-SCT-0136",
+        "HVDC-ADOPT-SCT-0137",
+        "HVDC-ADOPT-SCT-0139",
+        "HVDC-ADOPT-SCT-0141",
+        "HVDC-ADOPT-SCT-0147",
+        "HVDC-ADOPT-SCT-0148",
+        "HVDC-ADOPT-SCT-0152",
+        "HVDC-ADOPT-SCT-0156",
+        "HVDC-ADOPT-SCT-0157",
+        "HVDC-ADOPT-SCT-0169",
+        "HVDC-ADOPT-SCT-0172",
+        "HVDC-ADOPT-SCT-0176",
+        "HVDC-ADOPT-SCT-0177",
+        "HVDC-ADOPT-SCT-0179",
+        "HVDC-ADOPT-SEI-0020",
+        "HVDC-ADOPT-SIM-0057",
+        "HVDC-ADOPT-SIM-0088",
+        "HVDC-ADOPT-SIM-0095",
+        "HVDC-ADOPT-SIM-0107"
+      ],
+      "allocation_weight_sum": 42.583333333333336,
+      "cif_value_sum": 42235644.57666667,
+      "gross_weight_kg_sum": 175080.26666666663,
+      "flow_codes": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "airport:auh__site:MIR",
+      "source": "airport:auh",
+      "target": "site:MIR",
+      "route_type": "pod_to_site",
+      "shipment_count": 49.91666666666667,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0064",
+        "HVDC-ADOPT-HE-0065",
+        "HVDC-ADOPT-HE-0228",
+        "HVDC-ADOPT-HE-0229",
+        "HVDC-ADOPT-HE-0312",
+        "HVDC-ADOPT-HE-0313",
+        "HVDC-ADOPT-HE-0356",
+        "HVDC-ADOPT-HE-0360",
+        "HVDC-ADOPT-HE-0361",
+        "HVDC-ADOPT-HE-0363",
+        "HVDC-ADOPT-HE-0370",
+        "HVDC-ADOPT-HE-0421",
+        "HVDC-ADOPT-HE-0422",
+        "HVDC-ADOPT-HE-0444",
+        "HVDC-ADOPT-HE-0447",
+        "HVDC-ADOPT-HE-0448",
+        "HVDC-ADOPT-HE-0488",
+        "HVDC-ADOPT-HE-0493",
+        "HVDC-ADOPT-HE-0496",
+        "HVDC-ADOPT-HE-0498",
+        "HVDC-ADOPT-HE-0500",
+        "HVDC-ADOPT-HE-0502",
+        "HVDC-ADOPT-HE-0510",
+        "HVDC-ADOPT-HE-0517",
+        "HVDC-ADOPT-HE-0527",
+        "HVDC-ADOPT-HE-0528",
+        "HVDC-ADOPT-HE-0537",
+        "HVDC-ADOPT-HE-0545",
+        "HVDC-ADOPT-PPL-0011",
+        "HVDC-ADOPT-PPL-0012",
+        "HVDC-ADOPT-PPL-0016",
+        "HVDC-ADOPT-PPL-0017",
+        "HVDC-ADOPT-PPL-0019",
+        "HVDC-ADOPT-PPL-0020",
+        "HVDC-ADOPT-PPL-0022",
+        "HVDC-ADOPT-SCT-0027",
+        "HVDC-ADOPT-SCT-0033",
+        "HVDC-ADOPT-SCT-0044",
+        "HVDC-ADOPT-SCT-0061",
+        "HVDC-ADOPT-SCT-0063",
+        "HVDC-ADOPT-SCT-0065",
+        "HVDC-ADOPT-SCT-0075",
+        "HVDC-ADOPT-SCT-0077",
+        "HVDC-ADOPT-SCT-0079",
+        "HVDC-ADOPT-SCT-0080",
+        "HVDC-ADOPT-SCT-0091",
+        "HVDC-ADOPT-SCT-0103",
+        "HVDC-ADOPT-SCT-0116",
+        "HVDC-ADOPT-SCT-0119",
+        "HVDC-ADOPT-SCT-0129",
+        "HVDC-ADOPT-SCT-0130",
+        "HVDC-ADOPT-SCT-0134",
+        "HVDC-ADOPT-SCT-0136",
+        "HVDC-ADOPT-SCT-0137",
+        "HVDC-ADOPT-SCT-0148",
+        "HVDC-ADOPT-SCT-0149",
+        "HVDC-ADOPT-SCT-0152",
+        "HVDC-ADOPT-SCT-0156",
+        "HVDC-ADOPT-SCT-0157",
+        "HVDC-ADOPT-SCT-0167",
+        "HVDC-ADOPT-SCT-0172",
+        "HVDC-ADOPT-SCT-0176",
+        "HVDC-ADOPT-SCT-0177",
+        "HVDC-ADOPT-SIM-0057",
+        "HVDC-ADOPT-SIM-0072",
+        "HVDC-ADOPT-SIM-0073",
+        "HVDC-ADOPT-SIM-0076-A",
+        "HVDC-ADOPT-SIM-0076-C",
+        "HVDC-ADOPT-SIM-0088",
+        "HVDC-ADOPT-SIM-0092",
+        "HVDC-ADOPT-SIM-0094",
+        "HVDC-ADOPT-SIM-0095",
+        "HVDC-ADOPT-SIM-0099",
+        "HVDC-ADOPT-SIM-0102",
+        "HVDC-ADOPT-SIM-0107"
+      ],
+      "allocation_weight_sum": 49.91666666666667,
+      "cif_value_sum": 86011636.78466666,
+      "gross_weight_kg_sum": 249943.9,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "airport:auh__site:SHU",
+      "source": "airport:auh",
+      "target": "site:SHU",
+      "route_type": "pod_to_site",
+      "shipment_count": 87.24999999999997,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0066",
+        "HVDC-ADOPT-HE-0067",
+        "HVDC-ADOPT-HE-0208",
+        "HVDC-ADOPT-HE-0223",
+        "HVDC-ADOPT-HE-0224",
+        "HVDC-ADOPT-HE-0225",
+        "HVDC-ADOPT-HE-0244",
+        "HVDC-ADOPT-HE-0252",
+        "HVDC-ADOPT-HE-0264",
+        "HVDC-ADOPT-HE-0290",
+        "HVDC-ADOPT-HE-0302",
+        "HVDC-ADOPT-HE-0307",
+        "HVDC-ADOPT-HE-0312",
+        "HVDC-ADOPT-HE-0313",
+        "HVDC-ADOPT-HE-0317-1",
+        "HVDC-ADOPT-HE-0317-2",
+        "HVDC-ADOPT-HE-0317-3",
+        "HVDC-ADOPT-HE-0318-1",
+        "HVDC-ADOPT-HE-0318-2",
+        "HVDC-ADOPT-HE-0318-3",
+        "HVDC-ADOPT-HE-0318-4",
+        "HVDC-ADOPT-HE-0319-1",
+        "HVDC-ADOPT-HE-0319-2",
+        "HVDC-ADOPT-HE-0319-3",
+        "HVDC-ADOPT-HE-0368-1",
+        "HVDC-ADOPT-HE-0368-2",
+        "HVDC-ADOPT-HE-0368-3",
+        "HVDC-ADOPT-HE-0368-4",
+        "HVDC-ADOPT-HE-0368-5",
+        "HVDC-ADOPT-HE-0368-6",
+        "HVDC-ADOPT-HE-0368-7",
+        "HVDC-ADOPT-HE-0369",
+        "HVDC-ADOPT-HE-0372",
+        "HVDC-ADOPT-HE-0373",
+        "HVDC-ADOPT-HE-0375",
+        "HVDC-ADOPT-HE-0398",
+        "HVDC-ADOPT-HE-0399",
+        "HVDC-ADOPT-HE-0401",
+        "HVDC-ADOPT-HE-0403",
+        "HVDC-ADOPT-HE-0404",
+        "HVDC-ADOPT-HE-0408",
+        "HVDC-ADOPT-HE-0409",
+        "HVDC-ADOPT-HE-0410",
+        "HVDC-ADOPT-HE-0417",
+        "HVDC-ADOPT-HE-0418",
+        "HVDC-ADOPT-HE-0419",
+        "HVDC-ADOPT-HE-0445",
+        "HVDC-ADOPT-HE-0449",
+        "HVDC-ADOPT-HE-0453",
+        "HVDC-ADOPT-HE-0463",
+        "HVDC-ADOPT-HE-0477-1",
+        "HVDC-ADOPT-HE-0477-2",
+        "HVDC-ADOPT-HE-0493",
+        "HVDC-ADOPT-HE-0501",
+        "HVDC-ADOPT-HE-0509",
+        "HVDC-ADOPT-HE-0529",
+        "HVDC-ADOPT-HE-0533",
+        "HVDC-ADOPT-HE-0538",
+        "HVDC-ADOPT-HE-0556",
+        "HVDC-ADOPT-SCT-0040",
+        "HVDC-ADOPT-SCT-0041",
+        "HVDC-ADOPT-SCT-0044",
+        "HVDC-ADOPT-SCT-0046",
+        "HVDC-ADOPT-SCT-0056",
+        "HVDC-ADOPT-SCT-0061",
+        "HVDC-ADOPT-SCT-0063",
+        "HVDC-ADOPT-SCT-0065",
+        "HVDC-ADOPT-SCT-0069",
+        "HVDC-ADOPT-SCT-0075",
+        "HVDC-ADOPT-SCT-0077",
+        "HVDC-ADOPT-SCT-0079",
+        "HVDC-ADOPT-SCT-0080",
+        "HVDC-ADOPT-SCT-0088",
+        "HVDC-ADOPT-SCT-0091",
+        "HVDC-ADOPT-SCT-0099",
+        "HVDC-ADOPT-SCT-0100",
+        "HVDC-ADOPT-SCT-0103",
+        "HVDC-ADOPT-SCT-0104",
+        "HVDC-ADOPT-SCT-0116",
+        "HVDC-ADOPT-SCT-0119",
+        "HVDC-ADOPT-SCT-0125",
+        "HVDC-ADOPT-SCT-0129",
+        "HVDC-ADOPT-SCT-0130",
+        "HVDC-ADOPT-SCT-0131",
+        "HVDC-ADOPT-SCT-0133",
+        "HVDC-ADOPT-SCT-0134",
+        "HVDC-ADOPT-SCT-0136",
+        "HVDC-ADOPT-SCT-0141",
+        "HVDC-ADOPT-SCT-0145",
+        "HVDC-ADOPT-SCT-0148",
+        "HVDC-ADOPT-SCT-0152",
+        "HVDC-ADOPT-SCT-0156",
+        "HVDC-ADOPT-SCT-0157",
+        "HVDC-ADOPT-SCT-0167",
+        "HVDC-ADOPT-SCT-0172",
+        "HVDC-ADOPT-SCT-0176",
+        "HVDC-ADOPT-SCT-0177",
+        "HVDC-ADOPT-SEI-0007",
+        "HVDC-ADOPT-SEI-0015",
+        "HVDC-ADOPT-SEI-0020",
+        "HVDC-ADOPT-SEI-0022",
+        "HVDC-ADOPT-SIM-0030",
+        "HVDC-ADOPT-SIM-0057",
+        "HVDC-ADOPT-SIM-0072",
+        "HVDC-ADOPT-SIM-0073",
+        "HVDC-ADOPT-SIM-0076-B",
+        "HVDC-ADOPT-SIM-0076-D",
+        "HVDC-ADOPT-SIM-0088",
+        "HVDC-ADOPT-SIM-0092",
+        "HVDC-ADOPT-SIM-0095",
+        "HVDC-ADOPT-SIM-0103",
+        "HVDC-ADOPT-SIM-0107",
+        "HVDC-ADOPT-SIM-0109"
+      ],
+      "allocation_weight_sum": 87.24999999999997,
+      "cif_value_sum": 134406526.41499996,
+      "gross_weight_kg_sum": 336889.26666666666,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:austria:antwerp__port:khalifa",
+      "source": "origin_pol:austria:antwerp",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 12.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0032",
+        "HVDC-ADOPT-HE-0079",
+        "HVDC-ADOPT-HE-0134",
+        "HVDC-ADOPT-HE-0135",
+        "HVDC-ADOPT-HE-0136",
+        "HVDC-ADOPT-HE-0137",
+        "HVDC-ADOPT-HE-0138",
+        "HVDC-ADOPT-HE-0139",
+        "HVDC-ADOPT-HE-0198",
+        "HVDC-ADOPT-HE-0199",
+        "HVDC-ADOPT-HE-0200",
+        "HVDC-ADOPT-HE-0201"
+      ],
+      "allocation_weight_sum": 12.0,
+      "cif_value_sum": 1003741.9200000002,
+      "gross_weight_kg_sum": 35766.0,
+      "flow_codes": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:austria:graz__airport:auh",
+      "source": "origin_pol:austria:graz",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0095",
+        "HVDC-ADOPT-SIM-0107"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 327074.6,
+      "gross_weight_kg_sum": 23497.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:austria:linz__airport:auh",
+      "source": "origin_pol:austria:linz",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 8.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0369",
+        "HVDC-ADOPT-HE-0370",
+        "HVDC-ADOPT-HE-0371",
+        "HVDC-ADOPT-HE-0417",
+        "HVDC-ADOPT-HE-0480",
+        "HVDC-ADOPT-HE-0498",
+        "HVDC-ADOPT-HE-0501",
+        "HVDC-ADOPT-HE-0517"
+      ],
+      "allocation_weight_sum": 8.0,
+      "cif_value_sum": 701730.18,
+      "gross_weight_kg_sum": 24625.5,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:austria:viena__airport:auh",
+      "source": "origin_pol:austria:viena",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0003",
+        "HVDC-ADOPT-ZEN-0007",
+        "HVDC-ADOPT-ZEN-0013"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 160819.54,
+      "gross_weight_kg_sum": 1604.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:austria:vienna__airport:auh",
+      "source": "origin_pol:austria:vienna",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0372"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 74819.35,
+      "gross_weight_kg_sum": 3290.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:belgium:antwerp__port:khalifa",
+      "source": "origin_pol:belgium:antwerp",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 130.99999999999997,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0007",
+        "HVDC-ADOPT-HE-0012",
+        "HVDC-ADOPT-HE-0013",
+        "HVDC-ADOPT-HE-0014",
+        "HVDC-ADOPT-HE-0015",
+        "HVDC-ADOPT-HE-0016",
+        "HVDC-ADOPT-HE-0017",
+        "HVDC-ADOPT-HE-0018",
+        "HVDC-ADOPT-HE-0019",
+        "HVDC-ADOPT-HE-0021",
+        "HVDC-ADOPT-HE-0022",
+        "HVDC-ADOPT-HE-0023",
+        "HVDC-ADOPT-HE-0024",
+        "HVDC-ADOPT-HE-0025",
+        "HVDC-ADOPT-HE-0026",
+        "HVDC-ADOPT-HE-0028",
+        "HVDC-ADOPT-HE-0029",
+        "HVDC-ADOPT-HE-0030",
+        "HVDC-ADOPT-HE-0031",
+        "HVDC-ADOPT-HE-0033",
+        "HVDC-ADOPT-HE-0034",
+        "HVDC-ADOPT-HE-0035",
+        "HVDC-ADOPT-HE-0036",
+        "HVDC-ADOPT-HE-0037",
+        "HVDC-ADOPT-HE-0038",
+        "HVDC-ADOPT-HE-0039",
+        "HVDC-ADOPT-HE-0040",
+        "HVDC-ADOPT-HE-0041",
+        "HVDC-ADOPT-HE-0042",
+        "HVDC-ADOPT-HE-0043",
+        "HVDC-ADOPT-HE-0044",
+        "HVDC-ADOPT-HE-0045",
+        "HVDC-ADOPT-HE-0046",
+        "HVDC-ADOPT-HE-0047",
+        "HVDC-ADOPT-HE-0048",
+        "HVDC-ADOPT-HE-0049",
+        "HVDC-ADOPT-HE-0050",
+        "HVDC-ADOPT-HE-0051",
+        "HVDC-ADOPT-HE-0052",
+        "HVDC-ADOPT-HE-0057",
+        "HVDC-ADOPT-HE-0058",
+        "HVDC-ADOPT-HE-0059",
+        "HVDC-ADOPT-HE-0060",
+        "HVDC-ADOPT-HE-0061",
+        "HVDC-ADOPT-HE-0071",
+        "HVDC-ADOPT-HE-0072",
+        "HVDC-ADOPT-HE-0073",
+        "HVDC-ADOPT-HE-0074",
+        "HVDC-ADOPT-HE-0075",
+        "HVDC-ADOPT-HE-0076",
+        "HVDC-ADOPT-HE-0077",
+        "HVDC-ADOPT-HE-0078",
+        "HVDC-ADOPT-HE-0240",
+        "HVDC-ADOPT-HE-0241",
+        "HVDC-ADOPT-HE-0242",
+        "HVDC-ADOPT-HE-0276",
+        "HVDC-ADOPT-HE-0277",
+        "HVDC-ADOPT-HE-0278",
+        "HVDC-ADOPT-HE-0279",
+        "HVDC-ADOPT-HE-0280",
+        "HVDC-ADOPT-HE-0281",
+        "HVDC-ADOPT-HE-0282",
+        "HVDC-ADOPT-HE-0283",
+        "HVDC-ADOPT-HE-0284",
+        "HVDC-ADOPT-HE-0285",
+        "HVDC-ADOPT-HE-0286",
+        "HVDC-ADOPT-HE-0287",
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0301-2",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0309-2",
+        "HVDC-ADOPT-HE-0310-1",
+        "HVDC-ADOPT-HE-0310-2",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0311-2",
+        "HVDC-ADOPT-HE-0315",
+        "HVDC-ADOPT-HE-0316",
+        "HVDC-ADOPT-HE-0320",
+        "HVDC-ADOPT-HE-0321",
+        "HVDC-ADOPT-HE-0323",
+        "HVDC-ADOPT-HE-0324",
+        "HVDC-ADOPT-HE-0329",
+        "HVDC-ADOPT-HE-0334",
+        "HVDC-ADOPT-HE-0335",
+        "HVDC-ADOPT-HE-0336",
+        "HVDC-ADOPT-HE-0337",
+        "HVDC-ADOPT-HE-0338",
+        "HVDC-ADOPT-HE-0339",
+        "HVDC-ADOPT-HE-0355",
+        "HVDC-ADOPT-HE-0380",
+        "HVDC-ADOPT-HE-0381",
+        "HVDC-ADOPT-HE-0385-2",
+        "HVDC-ADOPT-HE-0387-2",
+        "HVDC-ADOPT-HE-0395",
+        "HVDC-ADOPT-HE-0396",
+        "HVDC-ADOPT-HE-0397",
+        "HVDC-ADOPT-HE-0413",
+        "HVDC-ADOPT-HE-0414",
+        "HVDC-ADOPT-HE-0420",
+        "HVDC-ADOPT-HE-0423",
+        "HVDC-ADOPT-HE-0424",
+        "HVDC-ADOPT-HE-0429",
+        "HVDC-ADOPT-HE-0430",
+        "HVDC-ADOPT-HE-0431",
+        "HVDC-ADOPT-HE-0436",
+        "HVDC-ADOPT-HE-0450",
+        "HVDC-ADOPT-HE-0459",
+        "HVDC-ADOPT-HE-0460",
+        "HVDC-ADOPT-HE-0466",
+        "HVDC-ADOPT-HE-0467",
+        "HVDC-ADOPT-HE-0468",
+        "HVDC-ADOPT-HE-0471",
+        "HVDC-ADOPT-HE-0472",
+        "HVDC-ADOPT-HE-0473",
+        "HVDC-ADOPT-HE-0475",
+        "HVDC-ADOPT-HE-0483",
+        "HVDC-ADOPT-HE-0484",
+        "HVDC-ADOPT-HE-0485",
+        "HVDC-ADOPT-HE-0486",
+        "HVDC-ADOPT-HE-0512",
+        "HVDC-ADOPT-HE-0513",
+        "HVDC-ADOPT-HE-0514",
+        "HVDC-ADOPT-HE-0515",
+        "HVDC-ADOPT-HE-0535",
+        "HVDC-ADOPT-HE-0536",
+        "HVDC-ADOPT-SIM-0001",
+        "HVDC-ADOPT-SIM-0029",
+        "HVDC-ADOPT-SIM-0034",
+        "HVDC-ADOPT-SIM-0079-A",
+        "HVDC-ADOPT-SIM-0079-B"
+      ],
+      "allocation_weight_sum": 130.99999999999997,
+      "cif_value_sum": 154824332.47597983,
+      "gross_weight_kg_sum": 2694747.4000000004,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:belgium:brussels__airport:auh",
+      "source": "origin_pol:belgium:brussels",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0453",
+        "HVDC-ADOPT-SIM-0094",
+        "HVDC-ADOPT-SIM-0099",
+        "HVDC-ADOPT-SIM-0108"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 287314.66000000003,
+      "gross_weight_kg_sum": 16767.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:brazil:itagui__port:mina_zayed",
+      "source": "origin_pol:brazil:itagui",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 8.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0085",
+        "HVDC-ADOPT-HE-0110",
+        "HVDC-ADOPT-HE-0161",
+        "HVDC-ADOPT-HE-0182",
+        "HVDC-ADOPT-HE-0205",
+        "HVDC-ADOPT-HE-0213",
+        "HVDC-ADOPT-HE-0215",
+        "HVDC-ADOPT-HE-0232"
+      ],
+      "allocation_weight_sum": 8.0,
+      "cif_value_sum": 831343785.59,
+      "gross_weight_kg_sum": 3615297.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:bulgaria:varna__port:khalifa",
+      "source": "origin_pol:bulgaria:varna",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0342",
+        "HVDC-ADOPT-HE-0343",
+        "HVDC-ADOPT-HE-0352",
+        "HVDC-ADOPT-HE-0353"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 24914013.14,
+      "gross_weight_kg_sum": 62092.0,
+      "flow_codes": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:china:shanghai__airport:auh",
+      "source": "origin_pol:china:shanghai",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 11.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0368-1",
+        "HVDC-ADOPT-HE-0368-2",
+        "HVDC-ADOPT-HE-0368-3",
+        "HVDC-ADOPT-HE-0368-4",
+        "HVDC-ADOPT-HE-0368-5",
+        "HVDC-ADOPT-HE-0368-6",
+        "HVDC-ADOPT-HE-0368-7",
+        "HVDC-ADOPT-HE-0433",
+        "HVDC-ADOPT-SCT-0040",
+        "HVDC-ADOPT-SCT-0056",
+        "HVDC-ADOPT-SCT-0104"
+      ],
+      "allocation_weight_sum": 11.0,
+      "cif_value_sum": 609393.44,
+      "gross_weight_kg_sum": 45622.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:china:shanghai__port:khalifa",
+      "source": "origin_pol:china:shanghai",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 38.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0268",
+        "HVDC-ADOPT-HE-0269",
+        "HVDC-ADOPT-HE-0270",
+        "HVDC-ADOPT-HE-0271",
+        "HVDC-ADOPT-HE-0272",
+        "HVDC-ADOPT-HE-0273",
+        "HVDC-ADOPT-HE-0274",
+        "HVDC-ADOPT-HE-0275",
+        "HVDC-ADOPT-HE-0330",
+        "HVDC-ADOPT-HE-0344",
+        "HVDC-ADOPT-HE-0345",
+        "HVDC-ADOPT-HE-0346",
+        "HVDC-ADOPT-HE-0347",
+        "HVDC-ADOPT-HE-0348",
+        "HVDC-ADOPT-HE-0349",
+        "HVDC-ADOPT-HE-0364",
+        "HVDC-ADOPT-HE-0365",
+        "HVDC-ADOPT-HE-0366",
+        "HVDC-ADOPT-HE-0434",
+        "HVDC-ADOPT-HE-0435",
+        "HVDC-ADOPT-HE-0464",
+        "HVDC-ADOPT-HE-0465",
+        "HVDC-ADOPT-HE-0470",
+        "HVDC-ADOPT-HE-0505",
+        "HVDC-ADOPT-HE-0506",
+        "HVDC-ADOPT-HE-0507",
+        "HVDC-ADOPT-HE-0523",
+        "HVDC-ADOPT-HE-0524",
+        "HVDC-ADOPT-HE-0525",
+        "HVDC-ADOPT-SCT-0029",
+        "HVDC-ADOPT-SCT-0047",
+        "HVDC-ADOPT-SCT-0057",
+        "HVDC-ADOPT-SCT-0066",
+        "HVDC-ADOPT-SCT-0089",
+        "HVDC-ADOPT-SCT-0105",
+        "HVDC-ADOPT-SCT-0126",
+        "HVDC-ADOPT-SCT-0127",
+        "HVDC-ADOPT-SCT-0171"
+      ],
+      "allocation_weight_sum": 38.0,
+      "cif_value_sum": 10513437.400999999,
+      "gross_weight_kg_sum": 275392.69999999995,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:china:shekou__port:khalifa",
+      "source": "origin_pol:china:shekou",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0054"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 223572.73,
+      "gross_weight_kg_sum": 10410.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:china:shekou_shenzhen__port:khalifa",
+      "source": "origin_pol:china:shekou_shenzhen",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0109"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 199621.95,
+      "gross_weight_kg_sum": 10050.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:china:shenzhen__airport:auh",
+      "source": "origin_pol:china:shenzhen",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0027"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 2292.92,
+      "gross_weight_kg_sum": 51.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:china:zhenzhen__airport:auh",
+      "source": "origin_pol:china:zhenzhen",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0090",
+        "HVDC-ADOPT-SCT-0152",
+        "HVDC-ADOPT-SCT-0176"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 36092.26,
+      "gross_weight_kg_sum": 1300.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:denmark:billund__airport:auh",
+      "source": "origin_pol:denmark:billund",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 11.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0224",
+        "HVDC-ADOPT-HE-0225",
+        "HVDC-ADOPT-HE-0264",
+        "HVDC-ADOPT-HE-0267",
+        "HVDC-ADOPT-HE-0319-1",
+        "HVDC-ADOPT-HE-0319-2",
+        "HVDC-ADOPT-HE-0319-3",
+        "HVDC-ADOPT-HE-0326",
+        "HVDC-ADOPT-HE-0356",
+        "HVDC-ADOPT-HE-0360",
+        "HVDC-ADOPT-HE-0361"
+      ],
+      "allocation_weight_sum": 11.0,
+      "cif_value_sum": 37438112.983,
+      "gross_weight_kg_sum": 67163.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:denmark:copenhagen__airport:auh",
+      "source": "origin_pol:denmark:copenhagen",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 27.999999999999996,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0062",
+        "HVDC-ADOPT-HE-0064",
+        "HVDC-ADOPT-HE-0066",
+        "HVDC-ADOPT-HE-0373",
+        "HVDC-ADOPT-HE-0375",
+        "HVDC-ADOPT-HE-0401",
+        "HVDC-ADOPT-HE-0402",
+        "HVDC-ADOPT-HE-0403",
+        "HVDC-ADOPT-HE-0404",
+        "HVDC-ADOPT-HE-0405",
+        "HVDC-ADOPT-HE-0406",
+        "HVDC-ADOPT-HE-0407",
+        "HVDC-ADOPT-HE-0408",
+        "HVDC-ADOPT-HE-0411",
+        "HVDC-ADOPT-HE-0443",
+        "HVDC-ADOPT-HE-0444",
+        "HVDC-ADOPT-HE-0445",
+        "HVDC-ADOPT-HE-0446",
+        "HVDC-ADOPT-HE-0461",
+        "HVDC-ADOPT-HE-0462",
+        "HVDC-ADOPT-HE-0463",
+        "HVDC-ADOPT-HE-0469",
+        "HVDC-ADOPT-HE-0493",
+        "HVDC-ADOPT-HE-0495",
+        "HVDC-ADOPT-HE-0496",
+        "HVDC-ADOPT-HE-0500",
+        "HVDC-ADOPT-HE-0504",
+        "HVDC-ADOPT-HE-0518"
+      ],
+      "allocation_weight_sum": 27.999999999999996,
+      "cif_value_sum": 33872928.230000004,
+      "gross_weight_kg_sum": 26243.5,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:denmark:copenhagen__port:khalifa",
+      "source": "origin_pol:denmark:copenhagen",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0006",
+        "HVDC-ADOPT-ZEN-0006 A",
+        "HVDC-ADOPT-ZEN-0014"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 1981043.43,
+      "gross_weight_kg_sum": 230102.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:egypt:kairo__airport:auh",
+      "source": "origin_pol:egypt:kairo",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0075",
+        "HVDC-ADOPT-SCT-0125",
+        "HVDC-ADOPT-SCT-0133",
+        "HVDC-ADOPT-SCT-0149"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 14045.79,
+      "gross_weight_kg_sum": 2525.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:egypt:sukhna__port:khalifa",
+      "source": "origin_pol:egypt:sukhna",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0135",
+        "HVDC-ADOPT-SCT-0154"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 145960.76,
+      "gross_weight_kg_sum": 20395.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:estonia:talinn__airport:auh",
+      "source": "origin_pol:estonia:talinn",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 5.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0208",
+        "HVDC-ADOPT-HE-0237",
+        "HVDC-ADOPT-HE-0251",
+        "HVDC-ADOPT-HE-0363"
+      ],
+      "allocation_weight_sum": 5.0,
+      "cif_value_sum": 8472466.879999999,
+      "gross_weight_kg_sum": 5932.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:france:cdg__airport:auh",
+      "source": "origin_pol:france:cdg",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0011",
+        "HVDC-ADOPT-PPL-0012"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 94458.6,
+      "gross_weight_kg_sum": 740.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:france:charles_de_gaulle__airport:auh",
+      "source": "origin_pol:france:charles_de_gaulle",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0447",
+        "HVDC-ADOPT-HE-0448"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 21861614.35,
+      "gross_weight_kg_sum": 29365.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:france:gothenburg__port:khalifa",
+      "source": "origin_pol:france:gothenburg",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0216",
+        "HVDC-ADOPT-HE-0217",
+        "HVDC-ADOPT-HE-0218",
+        "HVDC-ADOPT-HE-0219"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 18831925.41,
+      "gross_weight_kg_sum": 12840.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:france:le_havre__port:mina_zayed",
+      "source": "origin_pol:france:le_havre",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0001",
+        "HVDC-ADOPT-PPL-0002"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 8312174.52,
+      "gross_weight_kg_sum": 683244.182,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:germany:antwerp__port:khalifa",
+      "source": "origin_pol:germany:antwerp",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 22.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0093",
+        "HVDC-ADOPT-HE-0094",
+        "HVDC-ADOPT-HE-0095",
+        "HVDC-ADOPT-HE-0096",
+        "HVDC-ADOPT-HE-0097",
+        "HVDC-ADOPT-HE-0098",
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109",
+        "HVDC-ADOPT-HE-0114",
+        "HVDC-ADOPT-HE-0115",
+        "HVDC-ADOPT-HE-0117",
+        "HVDC-ADOPT-HE-0118",
+        "HVDC-ADOPT-HE-0119",
+        "HVDC-ADOPT-HE-0120",
+        "HVDC-ADOPT-HE-0121",
+        "HVDC-ADOPT-HE-0122",
+        "HVDC-ADOPT-HE-0123",
+        "HVDC-ADOPT-HE-0124",
+        "HVDC-ADOPT-HE-0130",
+        "HVDC-ADOPT-HE-0131",
+        "HVDC-ADOPT-HE-0132",
+        "HVDC-ADOPT-HE-0133"
+      ],
+      "allocation_weight_sum": 22.0,
+      "cif_value_sum": 5186683.789999998,
+      "gross_weight_kg_sum": 112942.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:germany:bremen__airport:auh",
+      "source": "origin_pol:germany:bremen",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0019"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 59558.06,
+      "gross_weight_kg_sum": 65.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:germany:bremerhaven__port:khalifa",
+      "source": "origin_pol:germany:bremerhaven",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0185",
+        "HVDC-ADOPT-HE-0187",
+        "HVDC-ADOPT-HE-0203",
+        "HVDC-ADOPT-HE-0204"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 12628685.53,
+      "gross_weight_kg_sum": 394755.0,
+      "flow_codes": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:germany:frankfurt__airport:auh",
+      "source": "origin_pol:germany:frankfurt",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0502",
+        "HVDC-ADOPT-PPL-0016",
+        "HVDC-ADOPT-SEI-0020",
+        "HVDC-ADOPT-SIM-0030",
+        "HVDC-ADOPT-SIM-0102",
+        "HVDC-ADOPT-SIM-0103",
+        "HVDC-ADOPT-SIM-0109"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 4523669.869999999,
+      "gross_weight_kg_sum": 7742.8,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:germany:hamburg__port:khalifa",
+      "source": "origin_pol:germany:hamburg",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 61.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0014",
+        "HVDC-ADOPT-SCT-0059",
+        "HVDC-ADOPT-SCT-0174",
+        "HVDC-ADOPT-SIM-0002",
+        "HVDC-ADOPT-SIM-0005-1",
+        "HVDC-ADOPT-SIM-0005-2A",
+        "HVDC-ADOPT-SIM-0005-2B",
+        "HVDC-ADOPT-SIM-0006",
+        "HVDC-ADOPT-SIM-0009-1A",
+        "HVDC-ADOPT-SIM-0009-1B",
+        "HVDC-ADOPT-SIM-0009-2A",
+        "HVDC-ADOPT-SIM-0009-2B",
+        "HVDC-ADOPT-SIM-0010",
+        "HVDC-ADOPT-SIM-0012-A",
+        "HVDC-ADOPT-SIM-0012-B",
+        "HVDC-ADOPT-SIM-0012-C",
+        "HVDC-ADOPT-SIM-0013",
+        "HVDC-ADOPT-SIM-0015",
+        "HVDC-ADOPT-SIM-0016",
+        "HVDC-ADOPT-SIM-0017-A",
+        "HVDC-ADOPT-SIM-0017-B",
+        "HVDC-ADOPT-SIM-0019-A",
+        "HVDC-ADOPT-SIM-0019-B",
+        "HVDC-ADOPT-SIM-0019-C",
+        "HVDC-ADOPT-SIM-0019-D",
+        "HVDC-ADOPT-SIM-0020",
+        "HVDC-ADOPT-SIM-0021",
+        "HVDC-ADOPT-SIM-0024",
+        "HVDC-ADOPT-SIM-0025",
+        "HVDC-ADOPT-SIM-0027",
+        "HVDC-ADOPT-SIM-0028-A",
+        "HVDC-ADOPT-SIM-0028-B",
+        "HVDC-ADOPT-SIM-0032",
+        "HVDC-ADOPT-SIM-0033",
+        "HVDC-ADOPT-SIM-0035",
+        "HVDC-ADOPT-SIM-0036-A",
+        "HVDC-ADOPT-SIM-0036-B",
+        "HVDC-ADOPT-SIM-0037-A",
+        "HVDC-ADOPT-SIM-0037-B",
+        "HVDC-ADOPT-SIM-0038",
+        "HVDC-ADOPT-SIM-0039",
+        "HVDC-ADOPT-SIM-0040",
+        "HVDC-ADOPT-SIM-0041",
+        "HVDC-ADOPT-SIM-0042-A",
+        "HVDC-ADOPT-SIM-0042-B",
+        "HVDC-ADOPT-SIM-0043",
+        "HVDC-ADOPT-SIM-0044",
+        "HVDC-ADOPT-SIM-0045",
+        "HVDC-ADOPT-SIM-0048",
+        "HVDC-ADOPT-SIM-0049",
+        "HVDC-ADOPT-SIM-0050",
+        "HVDC-ADOPT-SIM-0051",
+        "HVDC-ADOPT-SIM-0052",
+        "HVDC-ADOPT-SIM-0053",
+        "HVDC-ADOPT-SIM-0054",
+        "HVDC-ADOPT-SIM-0055",
+        "HVDC-ADOPT-SIM-0056",
+        "HVDC-ADOPT-SIM-0061",
+        "HVDC-ADOPT-SIM-0062",
+        "HVDC-ADOPT-SIM-0064",
+        "HVDC-ADOPT-SIM-0065"
+      ],
+      "allocation_weight_sum": 61.0,
+      "cif_value_sum": 77515926.67999995,
+      "gross_weight_kg_sum": 1431607.1500000004,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:germany:norden_ham__port:mina_zayed",
+      "source": "origin_pol:germany:norden_ham",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0009"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 305204.49,
+      "gross_weight_kg_sum": 560.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:great_britain:viena__airport:auh",
+      "source": "origin_pol:great_britain:viena",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0002"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 18080.59,
+      "gross_weight_kg_sum": 1444.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:india:chennai__airport:auh",
+      "source": "origin_pol:india:chennai",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0537"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 4816306.98,
+      "gross_weight_kg_sum": 567.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:india:cochin__port:khalifa",
+      "source": "origin_pol:india:cochin",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0015",
+        "HVDC-ADOPT-ZEN-0018"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 146976.62,
+      "gross_weight_kg_sum": 15769.650000000001,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:india:ennore__port:khalifa",
+      "source": "origin_pol:india:ennore",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0382"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 102922105.9,
+      "gross_weight_kg_sum": 106433.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:india:nhava_sheva__port:khalifa",
+      "source": "origin_pol:india:nhava_sheva",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 6.999999999999999,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0258",
+        "HVDC-ADOPT-HE-0259",
+        "HVDC-ADOPT-HE-0260",
+        "HVDC-ADOPT-HE-0261",
+        "HVDC-ADOPT-HE-0262",
+        "HVDC-ADOPT-HE-0263",
+        "HVDC-ADOPT-ZEN-0011"
+      ],
+      "allocation_weight_sum": 6.999999999999999,
+      "cif_value_sum": 4229383.538,
+      "gross_weight_kg_sum": 28408.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:india:tuticorin__port:khalifa",
+      "source": "origin_pol:india:tuticorin",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0001",
+        "HVDC-ADOPT-ZEN-0009",
+        "HVDC-ADOPT-ZEN-0010",
+        "HVDC-ADOPT-ZEN-0012"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 83520.85,
+      "gross_weight_kg_sum": 12632.93,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:india:visakhapatnam__port:khalifa",
+      "source": "origin_pol:india:visakhapatnam",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0327",
+        "HVDC-ADOPT-HE-0340",
+        "HVDC-ADOPT-SIM-0066",
+        "HVDC-ADOPT-SIM-0080-A",
+        "HVDC-ADOPT-SIM-0080-B",
+        "HVDC-ADOPT-SIM-0080-C",
+        "HVDC-ADOPT-SIM-0080-D"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 1903010.33,
+      "gross_weight_kg_sum": 359720.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:indonesia:jakarta__port:khalifa",
+      "source": "origin_pol:indonesia:jakarta",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0019"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 51813.75,
+      "gross_weight_kg_sum": 1518.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:italy:genoa__port:khalifa",
+      "source": "origin_pol:italy:genoa",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 5.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0341",
+        "HVDC-ADOPT-HE-0425",
+        "HVDC-ADOPT-HE-0426",
+        "HVDC-ADOPT-HE-0427",
+        "HVDC-ADOPT-HE-0428"
+      ],
+      "allocation_weight_sum": 5.0,
+      "cif_value_sum": 832059.2999999998,
+      "gross_weight_kg_sum": 21960.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:italy:la_spezia__port:khalifa",
+      "source": "origin_pol:italy:la_spezia",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0003",
+        "HVDC-ADOPT-PPL-0004"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 4050262.5999999996,
+      "gross_weight_kg_sum": 28225.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:italy:malpensa__airport:auh",
+      "source": "origin_pol:italy:malpensa",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0020",
+        "HVDC-ADOPT-PPL-0021",
+        "HVDC-ADOPT-PPL-0022",
+        "HVDC-ADOPT-SIM-0057"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 325800.5,
+      "gross_weight_kg_sum": 3873.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:italy:milan__airport:auh",
+      "source": "origin_pol:italy:milan",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0312",
+        "HVDC-ADOPT-HE-0313",
+        "HVDC-ADOPT-PPL-0017",
+        "HVDC-ADOPT-PPL-0018"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 892047.9199999999,
+      "gross_weight_kg_sum": 5753.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:italy:port_of_pozzuoli__port:mina_zayed",
+      "source": "origin_pol:italy:port_of_pozzuoli",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0005",
+        "HVDC-ADOPT-PPL-0006",
+        "HVDC-ADOPT-PPL-0007",
+        "HVDC-ADOPT-PPL-0008"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 657114.64,
+      "gross_weight_kg_sum": 9367.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:italy:salermo__port:khalifa",
+      "source": "origin_pol:italy:salermo",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0015"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 1084798.8,
+      "gross_weight_kg_sum": 110630.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:italy:venezia__port:khalifa",
+      "source": "origin_pol:italy:venezia",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 22.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0147",
+        "HVDC-ADOPT-HE-0148",
+        "HVDC-ADOPT-HE-0149",
+        "HVDC-ADOPT-HE-0150",
+        "HVDC-ADOPT-HE-0151",
+        "HVDC-ADOPT-HE-0152",
+        "HVDC-ADOPT-HE-0188",
+        "HVDC-ADOPT-HE-0189",
+        "HVDC-ADOPT-HE-0190",
+        "HVDC-ADOPT-HE-0191",
+        "HVDC-ADOPT-HE-0192",
+        "HVDC-ADOPT-HE-0193",
+        "HVDC-ADOPT-HE-0194",
+        "HVDC-ADOPT-HE-0195",
+        "HVDC-ADOPT-HE-0196",
+        "HVDC-ADOPT-HE-0197",
+        "HVDC-ADOPT-HE-0245",
+        "HVDC-ADOPT-HE-0246",
+        "HVDC-ADOPT-HE-0247",
+        "HVDC-ADOPT-HE-0248",
+        "HVDC-ADOPT-HE-0249",
+        "HVDC-ADOPT-HE-0250"
+      ],
+      "allocation_weight_sum": 22.0,
+      "cif_value_sum": 5690204.080000001,
+      "gross_weight_kg_sum": 168401.0,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:italy:venice__port:khalifa",
+      "source": "origin_pol:italy:venice",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0303",
+        "HVDC-ADOPT-HE-0304",
+        "HVDC-ADOPT-HE-0305",
+        "HVDC-ADOPT-HE-0306"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 22376461.2006,
+      "gross_weight_kg_sum": 25066.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:japan:hitachi__port:mina_zayed",
+      "source": "origin_pol:japan:hitachi",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0004-1",
+        "HVDC-ADOPT-SEI-0004-2",
+        "HVDC-ADOPT-SEI-0011"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 11990973580.0,
+      "gross_weight_kg_sum": 11198543.2,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:japan:kobe__port:khalifa",
+      "source": "origin_pol:japan:kobe",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0003",
+        "HVDC-ADOPT-SEI-0006",
+        "HVDC-ADOPT-SEI-0008",
+        "HVDC-ADOPT-SEI-0009",
+        "HVDC-ADOPT-SEI-0014",
+        "HVDC-ADOPT-SEI-0017-01",
+        "HVDC-ADOPT-SEI-0017-02"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 701469487.02,
+      "gross_weight_kg_sum": 237497.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:japan:osaka__airport:auh",
+      "source": "origin_pol:japan:osaka",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0007",
+        "HVDC-ADOPT-SEI-0015",
+        "HVDC-ADOPT-SEI-0017-03"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 192659.69,
+      "gross_weight_kg_sum": 106.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:japan:osaka__port:khalifa",
+      "source": "origin_pol:japan:osaka",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0018"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 87141.02,
+      "gross_weight_kg_sum": 55.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:japan:osaka__port:mina_zayed",
+      "source": "origin_pol:japan:osaka",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0001",
+        "HVDC-ADOPT-SEI-0002"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 5593501019.6,
+      "gross_weight_kg_sum": 4593265.4,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:korea:busan_port__port:khalifa",
+      "source": "origin_pol:korea:busan_port",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 88.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0001",
+        "HVDC-ADOPT-SCT-0003",
+        "HVDC-ADOPT-SCT-0005",
+        "HVDC-ADOPT-SCT-0006",
+        "HVDC-ADOPT-SCT-0009",
+        "HVDC-ADOPT-SCT-0011",
+        "HVDC-ADOPT-SCT-0012",
+        "HVDC-ADOPT-SCT-0013",
+        "HVDC-ADOPT-SCT-0014",
+        "HVDC-ADOPT-SCT-0015",
+        "HVDC-ADOPT-SCT-0016",
+        "HVDC-ADOPT-SCT-0018",
+        "HVDC-ADOPT-SCT-0019",
+        "HVDC-ADOPT-SCT-0020",
+        "HVDC-ADOPT-SCT-0021",
+        "HVDC-ADOPT-SCT-0022",
+        "HVDC-ADOPT-SCT-0024",
+        "HVDC-ADOPT-SCT-0025",
+        "HVDC-ADOPT-SCT-0026",
+        "HVDC-ADOPT-SCT-0030",
+        "HVDC-ADOPT-SCT-0031",
+        "HVDC-ADOPT-SCT-0032",
+        "HVDC-ADOPT-SCT-0034",
+        "HVDC-ADOPT-SCT-0035",
+        "HVDC-ADOPT-SCT-0036",
+        "HVDC-ADOPT-SCT-0037",
+        "HVDC-ADOPT-SCT-0038",
+        "HVDC-ADOPT-SCT-0039",
+        "HVDC-ADOPT-SCT-0042",
+        "HVDC-ADOPT-SCT-0043",
+        "HVDC-ADOPT-SCT-0045",
+        "HVDC-ADOPT-SCT-0049",
+        "HVDC-ADOPT-SCT-0050",
+        "HVDC-ADOPT-SCT-0051",
+        "HVDC-ADOPT-SCT-0052",
+        "HVDC-ADOPT-SCT-0055",
+        "HVDC-ADOPT-SCT-0058",
+        "HVDC-ADOPT-SCT-0060",
+        "HVDC-ADOPT-SCT-0062",
+        "HVDC-ADOPT-SCT-0067",
+        "HVDC-ADOPT-SCT-0070",
+        "HVDC-ADOPT-SCT-0071",
+        "HVDC-ADOPT-SCT-0072",
+        "HVDC-ADOPT-SCT-0073",
+        "HVDC-ADOPT-SCT-0074",
+        "HVDC-ADOPT-SCT-0081",
+        "HVDC-ADOPT-SCT-0082",
+        "HVDC-ADOPT-SCT-0083",
+        "HVDC-ADOPT-SCT-0084",
+        "HVDC-ADOPT-SCT-0086",
+        "HVDC-ADOPT-SCT-0087",
+        "HVDC-ADOPT-SCT-0092",
+        "HVDC-ADOPT-SCT-0093",
+        "HVDC-ADOPT-SCT-0094",
+        "HVDC-ADOPT-SCT-0095",
+        "HVDC-ADOPT-SCT-0096",
+        "HVDC-ADOPT-SCT-0097-1",
+        "HVDC-ADOPT-SCT-0097-2",
+        "HVDC-ADOPT-SCT-0098",
+        "HVDC-ADOPT-SCT-0101",
+        "HVDC-ADOPT-SCT-0102",
+        "HVDC-ADOPT-SCT-0107",
+        "HVDC-ADOPT-SCT-0108",
+        "HVDC-ADOPT-SCT-0112",
+        "HVDC-ADOPT-SCT-0113",
+        "HVDC-ADOPT-SCT-0114",
+        "HVDC-ADOPT-SCT-0115",
+        "HVDC-ADOPT-SCT-0117",
+        "HVDC-ADOPT-SCT-0118",
+        "HVDC-ADOPT-SCT-0120",
+        "HVDC-ADOPT-SCT-0123",
+        "HVDC-ADOPT-SCT-0124",
+        "HVDC-ADOPT-SCT-0128",
+        "HVDC-ADOPT-SCT-0132",
+        "HVDC-ADOPT-SCT-0138",
+        "HVDC-ADOPT-SCT-0140",
+        "HVDC-ADOPT-SCT-0142",
+        "HVDC-ADOPT-SCT-0143",
+        "HVDC-ADOPT-SCT-0144",
+        "HVDC-ADOPT-SCT-0146",
+        "HVDC-ADOPT-SCT-0151",
+        "HVDC-ADOPT-SCT-0155",
+        "HVDC-ADOPT-SCT-0159",
+        "HVDC-ADOPT-SCT-0166",
+        "HVDC-ADOPT-SCT-0168",
+        "HVDC-ADOPT-SCT-0170",
+        "HVDC-ADOPT-SCT-0173",
+        "HVDC-ADOPT-ZEN-0005"
+      ],
+      "allocation_weight_sum": 88.0,
+      "cif_value_sum": 33583641.94500002,
+      "gross_weight_kg_sum": 5081515.299999999,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:korea:dangjin__port:jebel_ali",
+      "source": "origin_pol:korea:dangjin",
+      "target": "port:jebel_ali",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HS-0001"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 420049.88,
+      "gross_weight_kg_sum": 471966.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:korea:incheon__airport:auh",
+      "source": "origin_pol:korea:incheon",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 25.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0044",
+        "HVDC-ADOPT-SCT-0048",
+        "HVDC-ADOPT-SCT-0063",
+        "HVDC-ADOPT-SCT-0065",
+        "HVDC-ADOPT-SCT-0099",
+        "HVDC-ADOPT-SCT-0100",
+        "HVDC-ADOPT-SCT-0103",
+        "HVDC-ADOPT-SCT-0129",
+        "HVDC-ADOPT-SCT-0131",
+        "HVDC-ADOPT-SCT-0134",
+        "HVDC-ADOPT-SCT-0136",
+        "HVDC-ADOPT-SCT-0137",
+        "HVDC-ADOPT-SCT-0139",
+        "HVDC-ADOPT-SCT-0141",
+        "HVDC-ADOPT-SCT-0145",
+        "HVDC-ADOPT-SCT-0147",
+        "HVDC-ADOPT-SCT-0148",
+        "HVDC-ADOPT-SCT-0156",
+        "HVDC-ADOPT-SCT-0157",
+        "HVDC-ADOPT-SCT-0167",
+        "HVDC-ADOPT-SCT-0169",
+        "HVDC-ADOPT-SCT-0172",
+        "HVDC-ADOPT-SCT-0175",
+        "HVDC-ADOPT-SCT-0177",
+        "HVDC-ADOPT-SCT-0179"
+      ],
+      "allocation_weight_sum": 25.0,
+      "cif_value_sum": 1134027.5500000003,
+      "gross_weight_kg_sum": 25132.500000000004,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:korea:masan__port:khalifa",
+      "source": "origin_pol:korea:masan",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0023",
+        "HVDC-ADOPT-SCT-0110"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 14594574.984,
+      "gross_weight_kg_sum": 1849723.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:malaysia:kuala_lumpur__airport:auh",
+      "source": "origin_pol:malaysia:kuala_lumpur",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0080",
+        "HVDC-ADOPT-SCT-0150"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 5634.139999999999,
+      "gross_weight_kg_sum": 262.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:malaysia:port_klang__port:khalifa",
+      "source": "origin_pol:malaysia:port_klang",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 9.999999999999998,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0328",
+        "HVDC-ADOPT-HE-0354",
+        "HVDC-ADOPT-HE-0357",
+        "HVDC-ADOPT-HE-0358",
+        "HVDC-ADOPT-SCT-0002",
+        "HVDC-ADOPT-SCT-0004",
+        "HVDC-ADOPT-SCT-0007",
+        "HVDC-ADOPT-SCT-0008",
+        "HVDC-ADOPT-SCT-0010",
+        "HVDC-ADOPT-SCT-0017"
+      ],
+      "allocation_weight_sum": 9.999999999999998,
+      "cif_value_sum": 2546556.4899999998,
+      "gross_weight_kg_sum": 160135.0,
+      "flow_codes": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:netherlands:amsterdam__airport:auh",
+      "source": "origin_pol:netherlands:amsterdam",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 26.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0063",
+        "HVDC-ADOPT-HE-0065",
+        "HVDC-ADOPT-HE-0067",
+        "HVDC-ADOPT-HE-0228",
+        "HVDC-ADOPT-HE-0229",
+        "HVDC-ADOPT-HE-0230",
+        "HVDC-ADOPT-HE-0231",
+        "HVDC-ADOPT-HE-0398",
+        "HVDC-ADOPT-HE-0399",
+        "HVDC-ADOPT-HE-0409",
+        "HVDC-ADOPT-HE-0410",
+        "HVDC-ADOPT-HE-0412",
+        "HVDC-ADOPT-HE-0415",
+        "HVDC-ADOPT-HE-0418",
+        "HVDC-ADOPT-HE-0419",
+        "HVDC-ADOPT-HE-0421",
+        "HVDC-ADOPT-HE-0422",
+        "HVDC-ADOPT-HE-0449",
+        "HVDC-ADOPT-HE-0477-1",
+        "HVDC-ADOPT-HE-0477-2",
+        "HVDC-ADOPT-HE-0487",
+        "HVDC-ADOPT-HE-0488",
+        "HVDC-ADOPT-HE-0497",
+        "HVDC-ADOPT-HE-0510",
+        "HVDC-ADOPT-HE-0511",
+        "HVDC-ADOPT-HE-0516"
+      ],
+      "allocation_weight_sum": 26.0,
+      "cif_value_sum": 85570606.78999999,
+      "gross_weight_kg_sum": 256302.0,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:netherlands:rotterdam__port:khalifa",
+      "source": "origin_pol:netherlands:rotterdam",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0012"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 37880852.0,
+      "gross_weight_kg_sum": 1420.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:norway:oslo__airport:auh",
+      "source": "origin_pol:norway:oslo",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0022"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 34254.72,
+      "gross_weight_kg_sum": 85.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:norway:rognan__port:mina_zayed",
+      "source": "origin_pol:norway:rognan",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0005"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 5471699.84,
+      "gross_weight_kg_sum": 496254.0,
+      "flow_codes": [
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:oman:muscat__port:uae",
+      "source": "origin_pol:oman:muscat",
+      "target": "port:uae",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0010"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 99000.0,
+      "gross_weight_kg_sum": 1657.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:shanghai:china__airport:auh",
+      "source": "origin_pol:shanghai:china",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0046"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 2308.48,
+      "gross_weight_kg_sum": 62.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:shanghai:china__port:khalifa",
+      "source": "origin_pol:shanghai:china",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0004"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 230400.72,
+      "gross_weight_kg_sum": 171896.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:slovenia:koper__port:khalifa",
+      "source": "origin_pol:slovenia:koper",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0455",
+        "HVDC-ADOPT-HE-0456",
+        "HVDC-ADOPT-HE-0457",
+        "HVDC-ADOPT-HE-0458"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 3154412.36,
+      "gross_weight_kg_sum": 71700.0,
+      "flow_codes": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:spain:barcelona__airport:auh",
+      "source": "origin_pol:spain:barcelona",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.9999999999999998,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0069",
+        "HVDC-ADOPT-SCT-0091"
+      ],
+      "allocation_weight_sum": 1.9999999999999998,
+      "cif_value_sum": 76599.15999999999,
+      "gross_weight_kg_sum": 1184.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:spain:barcelona__port:khalifa",
+      "source": "origin_pol:spain:barcelona",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 6.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0028",
+        "HVDC-ADOPT-SCT-0053",
+        "HVDC-ADOPT-SCT-0068",
+        "HVDC-ADOPT-SCT-0085",
+        "HVDC-ADOPT-SCT-0106",
+        "HVDC-ADOPT-SCT-0122"
+      ],
+      "allocation_weight_sum": 6.0,
+      "cif_value_sum": 665456.5100000001,
+      "gross_weight_kg_sum": 16933.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:spain:vitoria_gasteiz__airport:auh",
+      "source": "origin_pol:spain:vitoria_gasteiz",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0033",
+        "HVDC-ADOPT-SCT-0061",
+        "HVDC-ADOPT-SCT-0079",
+        "HVDC-ADOPT-SCT-0088"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 47450.14000000001,
+      "gross_weight_kg_sum": 848.4000000000001,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:antwerp__port:khalifa",
+      "source": "origin_pol:sweden:antwerp",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0099",
+        "HVDC-ADOPT-HE-0100"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 1864720.52,
+      "gross_weight_kg_sum": 4135.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:billund__airport:auh",
+      "source": "origin_pol:sweden:billund",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0317-1",
+        "HVDC-ADOPT-HE-0317-2",
+        "HVDC-ADOPT-HE-0317-3",
+        "HVDC-ADOPT-HE-0318-1",
+        "HVDC-ADOPT-HE-0318-2",
+        "HVDC-ADOPT-HE-0318-3",
+        "HVDC-ADOPT-HE-0318-4"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 41748140.8,
+      "gross_weight_kg_sum": 41272.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:copenhagen__airport:auh",
+      "source": "origin_pol:sweden:copenhagen",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0223",
+        "HVDC-ADOPT-HE-0252"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 5923900.23,
+      "gross_weight_kg_sum": 22343.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:gothenburg__port:khalifa",
+      "source": "origin_pol:sweden:gothenburg",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 163.99999999999997,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0001",
+        "HVDC-ADOPT-HE-0002",
+        "HVDC-ADOPT-HE-0003",
+        "HVDC-ADOPT-HE-0004",
+        "HVDC-ADOPT-HE-0005",
+        "HVDC-ADOPT-HE-0008",
+        "HVDC-ADOPT-HE-0009",
+        "HVDC-ADOPT-HE-0010",
+        "HVDC-ADOPT-HE-0011",
+        "HVDC-ADOPT-HE-0020",
+        "HVDC-ADOPT-HE-0027",
+        "HVDC-ADOPT-HE-0053",
+        "HVDC-ADOPT-HE-0054",
+        "HVDC-ADOPT-HE-0055",
+        "HVDC-ADOPT-HE-0056",
+        "HVDC-ADOPT-HE-0068-1",
+        "HVDC-ADOPT-HE-0068-2",
+        "HVDC-ADOPT-HE-0069",
+        "HVDC-ADOPT-HE-0070",
+        "HVDC-ADOPT-HE-0080-1",
+        "HVDC-ADOPT-HE-0080-2",
+        "HVDC-ADOPT-HE-0081",
+        "HVDC-ADOPT-HE-0082",
+        "HVDC-ADOPT-HE-0083",
+        "HVDC-ADOPT-HE-0084-1",
+        "HVDC-ADOPT-HE-0084-2",
+        "HVDC-ADOPT-HE-0087",
+        "HVDC-ADOPT-HE-0090",
+        "HVDC-ADOPT-HE-0091",
+        "HVDC-ADOPT-HE-0092",
+        "HVDC-ADOPT-HE-0101",
+        "HVDC-ADOPT-HE-0102",
+        "HVDC-ADOPT-HE-0103",
+        "HVDC-ADOPT-HE-0104",
+        "HVDC-ADOPT-HE-0105",
+        "HVDC-ADOPT-HE-0106",
+        "HVDC-ADOPT-HE-0107",
+        "HVDC-ADOPT-HE-0111",
+        "HVDC-ADOPT-HE-0112",
+        "HVDC-ADOPT-HE-0113",
+        "HVDC-ADOPT-HE-0125",
+        "HVDC-ADOPT-HE-0126",
+        "HVDC-ADOPT-HE-0127-1",
+        "HVDC-ADOPT-HE-0127-2",
+        "HVDC-ADOPT-HE-0128",
+        "HVDC-ADOPT-HE-0129",
+        "HVDC-ADOPT-HE-0140",
+        "HVDC-ADOPT-HE-0141",
+        "HVDC-ADOPT-HE-0142",
+        "HVDC-ADOPT-HE-0145",
+        "HVDC-ADOPT-HE-0146",
+        "HVDC-ADOPT-HE-0153-1",
+        "HVDC-ADOPT-HE-0153-2",
+        "HVDC-ADOPT-HE-0154-1",
+        "HVDC-ADOPT-HE-0154-2",
+        "HVDC-ADOPT-HE-0155",
+        "HVDC-ADOPT-HE-0156",
+        "HVDC-ADOPT-HE-0157",
+        "HVDC-ADOPT-HE-0158",
+        "HVDC-ADOPT-HE-0159",
+        "HVDC-ADOPT-HE-0160",
+        "HVDC-ADOPT-HE-0162",
+        "HVDC-ADOPT-HE-0163",
+        "HVDC-ADOPT-HE-0164",
+        "HVDC-ADOPT-HE-0165",
+        "HVDC-ADOPT-HE-0166",
+        "HVDC-ADOPT-HE-0167",
+        "HVDC-ADOPT-HE-0168",
+        "HVDC-ADOPT-HE-0169",
+        "HVDC-ADOPT-HE-0170",
+        "HVDC-ADOPT-HE-0171",
+        "HVDC-ADOPT-HE-0172",
+        "HVDC-ADOPT-HE-0173",
+        "HVDC-ADOPT-HE-0174",
+        "HVDC-ADOPT-HE-0175",
+        "HVDC-ADOPT-HE-0176",
+        "HVDC-ADOPT-HE-0177",
+        "HVDC-ADOPT-HE-0179-A",
+        "HVDC-ADOPT-HE-0179-B",
+        "HVDC-ADOPT-HE-0180",
+        "HVDC-ADOPT-HE-0181",
+        "HVDC-ADOPT-HE-0183",
+        "HVDC-ADOPT-HE-0184",
+        "HVDC-ADOPT-HE-0186",
+        "HVDC-ADOPT-HE-0202",
+        "HVDC-ADOPT-HE-0206",
+        "HVDC-ADOPT-HE-0207",
+        "HVDC-ADOPT-HE-0209",
+        "HVDC-ADOPT-HE-0210",
+        "HVDC-ADOPT-HE-0211",
+        "HVDC-ADOPT-HE-0212",
+        "HVDC-ADOPT-HE-0214",
+        "HVDC-ADOPT-HE-0220",
+        "HVDC-ADOPT-HE-0221",
+        "HVDC-ADOPT-HE-0222",
+        "HVDC-ADOPT-HE-0226",
+        "HVDC-ADOPT-HE-0227",
+        "HVDC-ADOPT-HE-0233",
+        "HVDC-ADOPT-HE-0234",
+        "HVDC-ADOPT-HE-0236",
+        "HVDC-ADOPT-HE-0238",
+        "HVDC-ADOPT-HE-0239",
+        "HVDC-ADOPT-HE-0243",
+        "HVDC-ADOPT-HE-0253",
+        "HVDC-ADOPT-HE-0254",
+        "HVDC-ADOPT-HE-0255",
+        "HVDC-ADOPT-HE-0256",
+        "HVDC-ADOPT-HE-0257",
+        "HVDC-ADOPT-HE-0288",
+        "HVDC-ADOPT-HE-0289",
+        "HVDC-ADOPT-HE-0291",
+        "HVDC-ADOPT-HE-0292",
+        "HVDC-ADOPT-HE-0293",
+        "HVDC-ADOPT-HE-0294",
+        "HVDC-ADOPT-HE-0295",
+        "HVDC-ADOPT-HE-0296",
+        "HVDC-ADOPT-HE-0297",
+        "HVDC-ADOPT-HE-0298",
+        "HVDC-ADOPT-HE-0299",
+        "HVDC-ADOPT-HE-0300",
+        "HVDC-ADOPT-HE-0314",
+        "HVDC-ADOPT-HE-0322",
+        "HVDC-ADOPT-HE-0325-1",
+        "HVDC-ADOPT-HE-0325-2",
+        "HVDC-ADOPT-HE-0331",
+        "HVDC-ADOPT-HE-0332",
+        "HVDC-ADOPT-HE-0333",
+        "HVDC-ADOPT-HE-0359",
+        "HVDC-ADOPT-HE-0362",
+        "HVDC-ADOPT-HE-0374",
+        "HVDC-ADOPT-HE-0376",
+        "HVDC-ADOPT-HE-0377",
+        "HVDC-ADOPT-HE-0378",
+        "HVDC-ADOPT-HE-0379",
+        "HVDC-ADOPT-HE-0383",
+        "HVDC-ADOPT-HE-0384",
+        "HVDC-ADOPT-HE-0385-1",
+        "HVDC-ADOPT-HE-0386",
+        "HVDC-ADOPT-HE-0387-1",
+        "HVDC-ADOPT-HE-0388",
+        "HVDC-ADOPT-HE-0389",
+        "HVDC-ADOPT-HE-0390",
+        "HVDC-ADOPT-HE-0391",
+        "HVDC-ADOPT-HE-0392",
+        "HVDC-ADOPT-HE-0393",
+        "HVDC-ADOPT-HE-0394",
+        "HVDC-ADOPT-HE-0400",
+        "HVDC-ADOPT-HE-0437",
+        "HVDC-ADOPT-HE-0438",
+        "HVDC-ADOPT-HE-0438-2",
+        "HVDC-ADOPT-HE-0439",
+        "HVDC-ADOPT-HE-0439-2",
+        "HVDC-ADOPT-HE-0440",
+        "HVDC-ADOPT-HE-0440-2",
+        "HVDC-ADOPT-HE-0441",
+        "HVDC-ADOPT-HE-0441-2",
+        "HVDC-ADOPT-HE-0451",
+        "HVDC-ADOPT-HE-0452",
+        "HVDC-ADOPT-HE-0454",
+        "HVDC-ADOPT-HE-0482",
+        "HVDC-ADOPT-HE-0519",
+        "HVDC-ADOPT-HE-0520",
+        "HVDC-ADOPT-HE-0521",
+        "HVDC-ADOPT-HE-0522"
+      ],
+      "allocation_weight_sum": 163.99999999999997,
+      "cif_value_sum": 2619361511.1749997,
+      "gross_weight_kg_sum": 5318535.000000001,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:helsingborg__port:khalifa",
+      "source": "origin_pol:sweden:helsingborg",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0076",
+        "HVDC-ADOPT-SCT-0121"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 1035103.03,
+      "gross_weight_kg_sum": 13125.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:sweden:malm__airport:auh",
+      "source": "origin_pol:sweden:malm",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0119",
+        "HVDC-ADOPT-SCT-0130"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 267661.15,
+      "gross_weight_kg_sum": 3574.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:sweden:malmoe__airport:auh",
+      "source": "origin_pol:sweden:malmoe",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 5.999999999999999,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0244",
+        "HVDC-ADOPT-HE-0302",
+        "HVDC-ADOPT-HE-0307",
+        "HVDC-ADOPT-HE-0531",
+        "HVDC-ADOPT-SCT-0041",
+        "HVDC-ADOPT-SCT-0077"
+      ],
+      "allocation_weight_sum": 5.999999999999999,
+      "cif_value_sum": 9906672.559999997,
+      "gross_weight_kg_sum": 9337.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:norrkoping__port:mina_zayed",
+      "source": "origin_pol:sweden:norrkoping",
+      "target": "port:mina_zayed",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0088",
+        "HVDC-ADOPT-HE-0089",
+        "HVDC-ADOPT-HE-0178"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 431189193.6,
+      "gross_weight_kg_sum": 1442514.0,
+      "flow_codes": [
+        4
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:stockholm__airport:auh",
+      "source": "origin_pol:sweden:stockholm",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0534",
+        "HVDC-ADOPT-SCT-0116"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 761851.1,
+      "gross_weight_kg_sum": 6333.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:sweden:uddevalla__port:muharraq",
+      "source": "origin_pol:sweden:uddevalla",
+      "target": "port:muharraq",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0116",
+        "HVDC-ADOPT-HE-0143",
+        "HVDC-ADOPT-HE-0144"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 335957096.28999996,
+      "gross_weight_kg_sum": 1618021.0,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:switzerland:geneve__airport:auh",
+      "source": "origin_pol:switzerland:geneve",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0076-A",
+        "HVDC-ADOPT-SIM-0076-B",
+        "HVDC-ADOPT-SIM-0076-C",
+        "HVDC-ADOPT-SIM-0076-D"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 249240.0,
+      "gross_weight_kg_sum": 6685.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:switzerland:zurich__airport:auh",
+      "source": "origin_pol:switzerland:zurich",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0092"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 1078526.0,
+      "gross_weight_kg_sum": 1931.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:turkey:istanbul__airport:auh",
+      "source": "origin_pol:turkey:istanbul",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 14.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0508",
+        "HVDC-ADOPT-HE-0509",
+        "HVDC-ADOPT-HE-0527",
+        "HVDC-ADOPT-HE-0528",
+        "HVDC-ADOPT-HE-0529",
+        "HVDC-ADOPT-HE-0530",
+        "HVDC-ADOPT-HE-0532",
+        "HVDC-ADOPT-HE-0533",
+        "HVDC-ADOPT-HE-0538",
+        "HVDC-ADOPT-HE-0540",
+        "HVDC-ADOPT-HE-0545",
+        "HVDC-ADOPT-HE-0546",
+        "HVDC-ADOPT-HE-0556",
+        "HVDC-ADOPT-SIM-0088"
+      ],
+      "allocation_weight_sum": 14.0,
+      "cif_value_sum": 9958516.11,
+      "gross_weight_kg_sum": 168699.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:turkey:izmit__port:khalifa",
+      "source": "origin_pol:turkey:izmit",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0442",
+        "HVDC-ADOPT-HE-0476"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 6199468.2,
+      "gross_weight_kg_sum": 44637.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:uae:jebel_ali__port:dsv",
+      "source": "origin_pol:uae:jebel_ali",
+      "target": "port:dsv",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 2906200.0,
+      "gross_weight_kg_sum": 15400.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:uae:jebel_ali__port:mir",
+      "source": "origin_pol:uae:jebel_ali",
+      "target": "port:mir",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499-12",
+        "HVDC-ADOPT-HE-0499-5",
+        "HVDC-ADOPT-HE-0499-6"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 2934948.0,
+      "gross_weight_kg_sum": 61730.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:uae:jebel_ali__port:mosb",
+      "source": "origin_pol:uae:jebel_ali",
+      "target": "port:mosb",
+      "route_type": "pol_to_pod",
+      "shipment_count": 6.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499",
+        "HVDC-ADOPT-HE-0499-10",
+        "HVDC-ADOPT-HE-0499-11",
+        "HVDC-ADOPT-HE-0499-2",
+        "HVDC-ADOPT-HE-0499-8",
+        "HVDC-ADOPT-HE-0499-9"
+      ],
+      "allocation_weight_sum": 6.0,
+      "cif_value_sum": 4416796.0,
+      "gross_weight_kg_sum": 64040.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:uae:jebel_ali__port:shu",
+      "source": "origin_pol:uae:jebel_ali",
+      "target": "port:shu",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499-1",
+        "HVDC-ADOPT-HE-0499-13"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 1481848.0,
+      "gross_weight_kg_sum": 30890.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:uk:england__airport:auh",
+      "source": "origin_pol:uk:england",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0290"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 336918.14,
+      "gross_weight_kg_sum": 1135.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:uk:london__airport:auh",
+      "source": "origin_pol:uk:london",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0013"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 126138.8,
+      "gross_weight_kg_sum": 502.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:united_kingdom:belfast__airport:auh",
+      "source": "origin_pol:united_kingdom:belfast",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0072",
+        "HVDC-ADOPT-SIM-0073"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 258480.0,
+      "gross_weight_kg_sum": 2061.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:united_kingdom:felixstowe__port:khalifa",
+      "source": "origin_pol:united_kingdom:felixstowe",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0265",
+        "HVDC-ADOPT-HE-0266",
+        "HVDC-ADOPT-ZEN-0008"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 4975902.0600000005,
+      "gross_weight_kg_sum": 27864.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_pol:united_kingdom:heathrow__airport:auh",
+      "source": "origin_pol:united_kingdom:heathrow",
+      "target": "airport:auh",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0021-L",
+        "HVDC-ADOPT-SEI-0021-T"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 8923.92,
+      "gross_weight_kg_sum": 173.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:united_kingdom:london__port:khalifa",
+      "source": "origin_pol:united_kingdom:london",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0013",
+        "HVDC-ADOPT-ZEN-0016"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 70281170.0,
+      "gross_weight_kg_sum": 30247.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_pol:united_kingdom:london_gateway__port:khalifa",
+      "source": "origin_pol:united_kingdom:london_gateway",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0350",
+        "HVDC-ADOPT-HE-0351",
+        "HVDC-ADOPT-ZEN-0017"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 3587224.748,
+      "gross_weight_kg_sum": 24917.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_pol:united_kingdom:nottingham__port:khalifa",
+      "source": "origin_pol:united_kingdom:nottingham",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0018"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 75983.38,
+      "gross_weight_kg_sum": 7059.45,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_pol:united_kingdom:southampton__port:khalifa",
+      "source": "origin_pol:united_kingdom:southampton",
+      "target": "port:khalifa",
+      "route_type": "pol_to_pod",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0014-A",
+        "HVDC-ADOPT-SIM-0014-B"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 44137.259999999995,
+      "gross_weight_kg_sum": 4870.05,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:americas__origin_pol:brazil:itagui",
+      "source": "origin_region:americas",
+      "target": "origin_pol:brazil:itagui",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 8.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0085",
+        "HVDC-ADOPT-HE-0110",
+        "HVDC-ADOPT-HE-0161",
+        "HVDC-ADOPT-HE-0182",
+        "HVDC-ADOPT-HE-0205",
+        "HVDC-ADOPT-HE-0213",
+        "HVDC-ADOPT-HE-0215",
+        "HVDC-ADOPT-HE-0232"
+      ],
+      "allocation_weight_sum": 8.0,
+      "cif_value_sum": 831343785.59,
+      "gross_weight_kg_sum": 3615297.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:china:shanghai",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:china:shanghai",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 49.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0268",
+        "HVDC-ADOPT-HE-0269",
+        "HVDC-ADOPT-HE-0270",
+        "HVDC-ADOPT-HE-0271",
+        "HVDC-ADOPT-HE-0272",
+        "HVDC-ADOPT-HE-0273",
+        "HVDC-ADOPT-HE-0274",
+        "HVDC-ADOPT-HE-0275",
+        "HVDC-ADOPT-HE-0330",
+        "HVDC-ADOPT-HE-0344",
+        "HVDC-ADOPT-HE-0345",
+        "HVDC-ADOPT-HE-0346",
+        "HVDC-ADOPT-HE-0347",
+        "HVDC-ADOPT-HE-0348",
+        "HVDC-ADOPT-HE-0349",
+        "HVDC-ADOPT-HE-0364",
+        "HVDC-ADOPT-HE-0365",
+        "HVDC-ADOPT-HE-0366",
+        "HVDC-ADOPT-HE-0368-1",
+        "HVDC-ADOPT-HE-0368-2",
+        "HVDC-ADOPT-HE-0368-3",
+        "HVDC-ADOPT-HE-0368-4",
+        "HVDC-ADOPT-HE-0368-5",
+        "HVDC-ADOPT-HE-0368-6",
+        "HVDC-ADOPT-HE-0368-7",
+        "HVDC-ADOPT-HE-0433",
+        "HVDC-ADOPT-HE-0434",
+        "HVDC-ADOPT-HE-0435",
+        "HVDC-ADOPT-HE-0464",
+        "HVDC-ADOPT-HE-0465",
+        "HVDC-ADOPT-HE-0470",
+        "HVDC-ADOPT-HE-0505",
+        "HVDC-ADOPT-HE-0506",
+        "HVDC-ADOPT-HE-0507",
+        "HVDC-ADOPT-HE-0523",
+        "HVDC-ADOPT-HE-0524",
+        "HVDC-ADOPT-HE-0525",
+        "HVDC-ADOPT-SCT-0029",
+        "HVDC-ADOPT-SCT-0040",
+        "HVDC-ADOPT-SCT-0047",
+        "HVDC-ADOPT-SCT-0056",
+        "HVDC-ADOPT-SCT-0057",
+        "HVDC-ADOPT-SCT-0066",
+        "HVDC-ADOPT-SCT-0089",
+        "HVDC-ADOPT-SCT-0104",
+        "HVDC-ADOPT-SCT-0105",
+        "HVDC-ADOPT-SCT-0126",
+        "HVDC-ADOPT-SCT-0127",
+        "HVDC-ADOPT-SCT-0171"
+      ],
+      "allocation_weight_sum": 49.0,
+      "cif_value_sum": 11122830.840999998,
+      "gross_weight_kg_sum": 321014.69999999995,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:china:shekou",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:china:shekou",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0054"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 223572.73,
+      "gross_weight_kg_sum": 10410.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:china:shekou_shenzhen",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:china:shekou_shenzhen",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0109"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 199621.95,
+      "gross_weight_kg_sum": 10050.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:china:shenzhen",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:china:shenzhen",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0027"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 2292.92,
+      "gross_weight_kg_sum": 51.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:china:zhenzhen",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:china:zhenzhen",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0090",
+        "HVDC-ADOPT-SCT-0152",
+        "HVDC-ADOPT-SCT-0176"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 36092.26,
+      "gross_weight_kg_sum": 1300.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:indonesia:jakarta",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:indonesia:jakarta",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0019"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 51813.75,
+      "gross_weight_kg_sum": 1518.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:japan:hitachi",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:japan:hitachi",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0004-1",
+        "HVDC-ADOPT-SEI-0004-2",
+        "HVDC-ADOPT-SEI-0011"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 11990973580.0,
+      "gross_weight_kg_sum": 11198543.2,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:japan:kobe",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:japan:kobe",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0003",
+        "HVDC-ADOPT-SEI-0006",
+        "HVDC-ADOPT-SEI-0008",
+        "HVDC-ADOPT-SEI-0009",
+        "HVDC-ADOPT-SEI-0014",
+        "HVDC-ADOPT-SEI-0017-01",
+        "HVDC-ADOPT-SEI-0017-02"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 701469487.02,
+      "gross_weight_kg_sum": 237497.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:japan:osaka",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:japan:osaka",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 6.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0001",
+        "HVDC-ADOPT-SEI-0002",
+        "HVDC-ADOPT-SEI-0007",
+        "HVDC-ADOPT-SEI-0015",
+        "HVDC-ADOPT-SEI-0017-03",
+        "HVDC-ADOPT-SEI-0018"
+      ],
+      "allocation_weight_sum": 6.0,
+      "cif_value_sum": 5593780820.31,
+      "gross_weight_kg_sum": 4593426.4,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:korea:busan_port",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:korea:busan_port",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 88.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0001",
+        "HVDC-ADOPT-SCT-0003",
+        "HVDC-ADOPT-SCT-0005",
+        "HVDC-ADOPT-SCT-0006",
+        "HVDC-ADOPT-SCT-0009",
+        "HVDC-ADOPT-SCT-0011",
+        "HVDC-ADOPT-SCT-0012",
+        "HVDC-ADOPT-SCT-0013",
+        "HVDC-ADOPT-SCT-0014",
+        "HVDC-ADOPT-SCT-0015",
+        "HVDC-ADOPT-SCT-0016",
+        "HVDC-ADOPT-SCT-0018",
+        "HVDC-ADOPT-SCT-0019",
+        "HVDC-ADOPT-SCT-0020",
+        "HVDC-ADOPT-SCT-0021",
+        "HVDC-ADOPT-SCT-0022",
+        "HVDC-ADOPT-SCT-0024",
+        "HVDC-ADOPT-SCT-0025",
+        "HVDC-ADOPT-SCT-0026",
+        "HVDC-ADOPT-SCT-0030",
+        "HVDC-ADOPT-SCT-0031",
+        "HVDC-ADOPT-SCT-0032",
+        "HVDC-ADOPT-SCT-0034",
+        "HVDC-ADOPT-SCT-0035",
+        "HVDC-ADOPT-SCT-0036",
+        "HVDC-ADOPT-SCT-0037",
+        "HVDC-ADOPT-SCT-0038",
+        "HVDC-ADOPT-SCT-0039",
+        "HVDC-ADOPT-SCT-0042",
+        "HVDC-ADOPT-SCT-0043",
+        "HVDC-ADOPT-SCT-0045",
+        "HVDC-ADOPT-SCT-0049",
+        "HVDC-ADOPT-SCT-0050",
+        "HVDC-ADOPT-SCT-0051",
+        "HVDC-ADOPT-SCT-0052",
+        "HVDC-ADOPT-SCT-0055",
+        "HVDC-ADOPT-SCT-0058",
+        "HVDC-ADOPT-SCT-0060",
+        "HVDC-ADOPT-SCT-0062",
+        "HVDC-ADOPT-SCT-0067",
+        "HVDC-ADOPT-SCT-0070",
+        "HVDC-ADOPT-SCT-0071",
+        "HVDC-ADOPT-SCT-0072",
+        "HVDC-ADOPT-SCT-0073",
+        "HVDC-ADOPT-SCT-0074",
+        "HVDC-ADOPT-SCT-0081",
+        "HVDC-ADOPT-SCT-0082",
+        "HVDC-ADOPT-SCT-0083",
+        "HVDC-ADOPT-SCT-0084",
+        "HVDC-ADOPT-SCT-0086",
+        "HVDC-ADOPT-SCT-0087",
+        "HVDC-ADOPT-SCT-0092",
+        "HVDC-ADOPT-SCT-0093",
+        "HVDC-ADOPT-SCT-0094",
+        "HVDC-ADOPT-SCT-0095",
+        "HVDC-ADOPT-SCT-0096",
+        "HVDC-ADOPT-SCT-0097-1",
+        "HVDC-ADOPT-SCT-0097-2",
+        "HVDC-ADOPT-SCT-0098",
+        "HVDC-ADOPT-SCT-0101",
+        "HVDC-ADOPT-SCT-0102",
+        "HVDC-ADOPT-SCT-0107",
+        "HVDC-ADOPT-SCT-0108",
+        "HVDC-ADOPT-SCT-0112",
+        "HVDC-ADOPT-SCT-0113",
+        "HVDC-ADOPT-SCT-0114",
+        "HVDC-ADOPT-SCT-0115",
+        "HVDC-ADOPT-SCT-0117",
+        "HVDC-ADOPT-SCT-0118",
+        "HVDC-ADOPT-SCT-0120",
+        "HVDC-ADOPT-SCT-0123",
+        "HVDC-ADOPT-SCT-0124",
+        "HVDC-ADOPT-SCT-0128",
+        "HVDC-ADOPT-SCT-0132",
+        "HVDC-ADOPT-SCT-0138",
+        "HVDC-ADOPT-SCT-0140",
+        "HVDC-ADOPT-SCT-0142",
+        "HVDC-ADOPT-SCT-0143",
+        "HVDC-ADOPT-SCT-0144",
+        "HVDC-ADOPT-SCT-0146",
+        "HVDC-ADOPT-SCT-0151",
+        "HVDC-ADOPT-SCT-0155",
+        "HVDC-ADOPT-SCT-0159",
+        "HVDC-ADOPT-SCT-0166",
+        "HVDC-ADOPT-SCT-0168",
+        "HVDC-ADOPT-SCT-0170",
+        "HVDC-ADOPT-SCT-0173",
+        "HVDC-ADOPT-ZEN-0005"
+      ],
+      "allocation_weight_sum": 88.0,
+      "cif_value_sum": 33583641.94500002,
+      "gross_weight_kg_sum": 5081515.299999999,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:korea:dangjin",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:korea:dangjin",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HS-0001"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 420049.88,
+      "gross_weight_kg_sum": 471966.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:korea:incheon",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:korea:incheon",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 25.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0044",
+        "HVDC-ADOPT-SCT-0048",
+        "HVDC-ADOPT-SCT-0063",
+        "HVDC-ADOPT-SCT-0065",
+        "HVDC-ADOPT-SCT-0099",
+        "HVDC-ADOPT-SCT-0100",
+        "HVDC-ADOPT-SCT-0103",
+        "HVDC-ADOPT-SCT-0129",
+        "HVDC-ADOPT-SCT-0131",
+        "HVDC-ADOPT-SCT-0134",
+        "HVDC-ADOPT-SCT-0136",
+        "HVDC-ADOPT-SCT-0137",
+        "HVDC-ADOPT-SCT-0139",
+        "HVDC-ADOPT-SCT-0141",
+        "HVDC-ADOPT-SCT-0145",
+        "HVDC-ADOPT-SCT-0147",
+        "HVDC-ADOPT-SCT-0148",
+        "HVDC-ADOPT-SCT-0156",
+        "HVDC-ADOPT-SCT-0157",
+        "HVDC-ADOPT-SCT-0167",
+        "HVDC-ADOPT-SCT-0169",
+        "HVDC-ADOPT-SCT-0172",
+        "HVDC-ADOPT-SCT-0175",
+        "HVDC-ADOPT-SCT-0177",
+        "HVDC-ADOPT-SCT-0179"
+      ],
+      "allocation_weight_sum": 25.0,
+      "cif_value_sum": 1134027.5500000003,
+      "gross_weight_kg_sum": 25132.500000000004,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:korea:masan",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:korea:masan",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0023",
+        "HVDC-ADOPT-SCT-0110"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 14594574.984,
+      "gross_weight_kg_sum": 1849723.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:malaysia:kuala_lumpur",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:malaysia:kuala_lumpur",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0080",
+        "HVDC-ADOPT-SCT-0150"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 5634.139999999999,
+      "gross_weight_kg_sum": 262.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "origin_region:east_se_asia__origin_pol:malaysia:port_klang",
+      "source": "origin_region:east_se_asia",
+      "target": "origin_pol:malaysia:port_klang",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 9.999999999999998,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0328",
+        "HVDC-ADOPT-HE-0354",
+        "HVDC-ADOPT-HE-0357",
+        "HVDC-ADOPT-HE-0358",
+        "HVDC-ADOPT-SCT-0002",
+        "HVDC-ADOPT-SCT-0004",
+        "HVDC-ADOPT-SCT-0007",
+        "HVDC-ADOPT-SCT-0008",
+        "HVDC-ADOPT-SCT-0010",
+        "HVDC-ADOPT-SCT-0017"
+      ],
+      "allocation_weight_sum": 9.999999999999998,
+      "cif_value_sum": 2546556.4899999998,
+      "gross_weight_kg_sum": 160135.0,
+      "flow_codes": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:austria:antwerp",
+      "source": "origin_region:europe",
+      "target": "origin_pol:austria:antwerp",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 12.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0032",
+        "HVDC-ADOPT-HE-0079",
+        "HVDC-ADOPT-HE-0134",
+        "HVDC-ADOPT-HE-0135",
+        "HVDC-ADOPT-HE-0136",
+        "HVDC-ADOPT-HE-0137",
+        "HVDC-ADOPT-HE-0138",
+        "HVDC-ADOPT-HE-0139",
+        "HVDC-ADOPT-HE-0198",
+        "HVDC-ADOPT-HE-0199",
+        "HVDC-ADOPT-HE-0200",
+        "HVDC-ADOPT-HE-0201"
+      ],
+      "allocation_weight_sum": 12.0,
+      "cif_value_sum": 1003741.9200000002,
+      "gross_weight_kg_sum": 35766.0,
+      "flow_codes": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:austria:graz",
+      "source": "origin_region:europe",
+      "target": "origin_pol:austria:graz",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0095",
+        "HVDC-ADOPT-SIM-0107"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 327074.6,
+      "gross_weight_kg_sum": 23497.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:austria:linz",
+      "source": "origin_region:europe",
+      "target": "origin_pol:austria:linz",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 8.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0369",
+        "HVDC-ADOPT-HE-0370",
+        "HVDC-ADOPT-HE-0371",
+        "HVDC-ADOPT-HE-0417",
+        "HVDC-ADOPT-HE-0480",
+        "HVDC-ADOPT-HE-0498",
+        "HVDC-ADOPT-HE-0501",
+        "HVDC-ADOPT-HE-0517"
+      ],
+      "allocation_weight_sum": 8.0,
+      "cif_value_sum": 701730.18,
+      "gross_weight_kg_sum": 24625.5,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:austria:viena",
+      "source": "origin_region:europe",
+      "target": "origin_pol:austria:viena",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0003",
+        "HVDC-ADOPT-ZEN-0007",
+        "HVDC-ADOPT-ZEN-0013"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 160819.54,
+      "gross_weight_kg_sum": 1604.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:austria:vienna",
+      "source": "origin_region:europe",
+      "target": "origin_pol:austria:vienna",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0372"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 74819.35,
+      "gross_weight_kg_sum": 3290.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:belgium:antwerp",
+      "source": "origin_region:europe",
+      "target": "origin_pol:belgium:antwerp",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 130.99999999999997,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0007",
+        "HVDC-ADOPT-HE-0012",
+        "HVDC-ADOPT-HE-0013",
+        "HVDC-ADOPT-HE-0014",
+        "HVDC-ADOPT-HE-0015",
+        "HVDC-ADOPT-HE-0016",
+        "HVDC-ADOPT-HE-0017",
+        "HVDC-ADOPT-HE-0018",
+        "HVDC-ADOPT-HE-0019",
+        "HVDC-ADOPT-HE-0021",
+        "HVDC-ADOPT-HE-0022",
+        "HVDC-ADOPT-HE-0023",
+        "HVDC-ADOPT-HE-0024",
+        "HVDC-ADOPT-HE-0025",
+        "HVDC-ADOPT-HE-0026",
+        "HVDC-ADOPT-HE-0028",
+        "HVDC-ADOPT-HE-0029",
+        "HVDC-ADOPT-HE-0030",
+        "HVDC-ADOPT-HE-0031",
+        "HVDC-ADOPT-HE-0033",
+        "HVDC-ADOPT-HE-0034",
+        "HVDC-ADOPT-HE-0035",
+        "HVDC-ADOPT-HE-0036",
+        "HVDC-ADOPT-HE-0037",
+        "HVDC-ADOPT-HE-0038",
+        "HVDC-ADOPT-HE-0039",
+        "HVDC-ADOPT-HE-0040",
+        "HVDC-ADOPT-HE-0041",
+        "HVDC-ADOPT-HE-0042",
+        "HVDC-ADOPT-HE-0043",
+        "HVDC-ADOPT-HE-0044",
+        "HVDC-ADOPT-HE-0045",
+        "HVDC-ADOPT-HE-0046",
+        "HVDC-ADOPT-HE-0047",
+        "HVDC-ADOPT-HE-0048",
+        "HVDC-ADOPT-HE-0049",
+        "HVDC-ADOPT-HE-0050",
+        "HVDC-ADOPT-HE-0051",
+        "HVDC-ADOPT-HE-0052",
+        "HVDC-ADOPT-HE-0057",
+        "HVDC-ADOPT-HE-0058",
+        "HVDC-ADOPT-HE-0059",
+        "HVDC-ADOPT-HE-0060",
+        "HVDC-ADOPT-HE-0061",
+        "HVDC-ADOPT-HE-0071",
+        "HVDC-ADOPT-HE-0072",
+        "HVDC-ADOPT-HE-0073",
+        "HVDC-ADOPT-HE-0074",
+        "HVDC-ADOPT-HE-0075",
+        "HVDC-ADOPT-HE-0076",
+        "HVDC-ADOPT-HE-0077",
+        "HVDC-ADOPT-HE-0078",
+        "HVDC-ADOPT-HE-0240",
+        "HVDC-ADOPT-HE-0241",
+        "HVDC-ADOPT-HE-0242",
+        "HVDC-ADOPT-HE-0276",
+        "HVDC-ADOPT-HE-0277",
+        "HVDC-ADOPT-HE-0278",
+        "HVDC-ADOPT-HE-0279",
+        "HVDC-ADOPT-HE-0280",
+        "HVDC-ADOPT-HE-0281",
+        "HVDC-ADOPT-HE-0282",
+        "HVDC-ADOPT-HE-0283",
+        "HVDC-ADOPT-HE-0284",
+        "HVDC-ADOPT-HE-0285",
+        "HVDC-ADOPT-HE-0286",
+        "HVDC-ADOPT-HE-0287",
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0301-2",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0309-2",
+        "HVDC-ADOPT-HE-0310-1",
+        "HVDC-ADOPT-HE-0310-2",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0311-2",
+        "HVDC-ADOPT-HE-0315",
+        "HVDC-ADOPT-HE-0316",
+        "HVDC-ADOPT-HE-0320",
+        "HVDC-ADOPT-HE-0321",
+        "HVDC-ADOPT-HE-0323",
+        "HVDC-ADOPT-HE-0324",
+        "HVDC-ADOPT-HE-0329",
+        "HVDC-ADOPT-HE-0334",
+        "HVDC-ADOPT-HE-0335",
+        "HVDC-ADOPT-HE-0336",
+        "HVDC-ADOPT-HE-0337",
+        "HVDC-ADOPT-HE-0338",
+        "HVDC-ADOPT-HE-0339",
+        "HVDC-ADOPT-HE-0355",
+        "HVDC-ADOPT-HE-0380",
+        "HVDC-ADOPT-HE-0381",
+        "HVDC-ADOPT-HE-0385-2",
+        "HVDC-ADOPT-HE-0387-2",
+        "HVDC-ADOPT-HE-0395",
+        "HVDC-ADOPT-HE-0396",
+        "HVDC-ADOPT-HE-0397",
+        "HVDC-ADOPT-HE-0413",
+        "HVDC-ADOPT-HE-0414",
+        "HVDC-ADOPT-HE-0420",
+        "HVDC-ADOPT-HE-0423",
+        "HVDC-ADOPT-HE-0424",
+        "HVDC-ADOPT-HE-0429",
+        "HVDC-ADOPT-HE-0430",
+        "HVDC-ADOPT-HE-0431",
+        "HVDC-ADOPT-HE-0436",
+        "HVDC-ADOPT-HE-0450",
+        "HVDC-ADOPT-HE-0459",
+        "HVDC-ADOPT-HE-0460",
+        "HVDC-ADOPT-HE-0466",
+        "HVDC-ADOPT-HE-0467",
+        "HVDC-ADOPT-HE-0468",
+        "HVDC-ADOPT-HE-0471",
+        "HVDC-ADOPT-HE-0472",
+        "HVDC-ADOPT-HE-0473",
+        "HVDC-ADOPT-HE-0475",
+        "HVDC-ADOPT-HE-0483",
+        "HVDC-ADOPT-HE-0484",
+        "HVDC-ADOPT-HE-0485",
+        "HVDC-ADOPT-HE-0486",
+        "HVDC-ADOPT-HE-0512",
+        "HVDC-ADOPT-HE-0513",
+        "HVDC-ADOPT-HE-0514",
+        "HVDC-ADOPT-HE-0515",
+        "HVDC-ADOPT-HE-0535",
+        "HVDC-ADOPT-HE-0536",
+        "HVDC-ADOPT-SIM-0001",
+        "HVDC-ADOPT-SIM-0029",
+        "HVDC-ADOPT-SIM-0034",
+        "HVDC-ADOPT-SIM-0079-A",
+        "HVDC-ADOPT-SIM-0079-B"
+      ],
+      "allocation_weight_sum": 130.99999999999997,
+      "cif_value_sum": 154824332.47597983,
+      "gross_weight_kg_sum": 2694747.4000000004,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:belgium:brussels",
+      "source": "origin_region:europe",
+      "target": "origin_pol:belgium:brussels",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0453",
+        "HVDC-ADOPT-SIM-0094",
+        "HVDC-ADOPT-SIM-0099",
+        "HVDC-ADOPT-SIM-0108"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 287314.66000000003,
+      "gross_weight_kg_sum": 16767.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:denmark:billund",
+      "source": "origin_region:europe",
+      "target": "origin_pol:denmark:billund",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 11.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0224",
+        "HVDC-ADOPT-HE-0225",
+        "HVDC-ADOPT-HE-0264",
+        "HVDC-ADOPT-HE-0267",
+        "HVDC-ADOPT-HE-0319-1",
+        "HVDC-ADOPT-HE-0319-2",
+        "HVDC-ADOPT-HE-0319-3",
+        "HVDC-ADOPT-HE-0326",
+        "HVDC-ADOPT-HE-0356",
+        "HVDC-ADOPT-HE-0360",
+        "HVDC-ADOPT-HE-0361"
+      ],
+      "allocation_weight_sum": 11.0,
+      "cif_value_sum": 37438112.983,
+      "gross_weight_kg_sum": 67163.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:denmark:copenhagen",
+      "source": "origin_region:europe",
+      "target": "origin_pol:denmark:copenhagen",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 30.999999999999996,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0062",
+        "HVDC-ADOPT-HE-0064",
+        "HVDC-ADOPT-HE-0066",
+        "HVDC-ADOPT-HE-0373",
+        "HVDC-ADOPT-HE-0375",
+        "HVDC-ADOPT-HE-0401",
+        "HVDC-ADOPT-HE-0402",
+        "HVDC-ADOPT-HE-0403",
+        "HVDC-ADOPT-HE-0404",
+        "HVDC-ADOPT-HE-0405",
+        "HVDC-ADOPT-HE-0406",
+        "HVDC-ADOPT-HE-0407",
+        "HVDC-ADOPT-HE-0408",
+        "HVDC-ADOPT-HE-0411",
+        "HVDC-ADOPT-HE-0443",
+        "HVDC-ADOPT-HE-0444",
+        "HVDC-ADOPT-HE-0445",
+        "HVDC-ADOPT-HE-0446",
+        "HVDC-ADOPT-HE-0461",
+        "HVDC-ADOPT-HE-0462",
+        "HVDC-ADOPT-HE-0463",
+        "HVDC-ADOPT-HE-0469",
+        "HVDC-ADOPT-HE-0493",
+        "HVDC-ADOPT-HE-0495",
+        "HVDC-ADOPT-HE-0496",
+        "HVDC-ADOPT-HE-0500",
+        "HVDC-ADOPT-HE-0504",
+        "HVDC-ADOPT-HE-0518",
+        "HVDC-ADOPT-ZEN-0006",
+        "HVDC-ADOPT-ZEN-0006 A",
+        "HVDC-ADOPT-ZEN-0014"
+      ],
+      "allocation_weight_sum": 30.999999999999996,
+      "cif_value_sum": 35853971.66000002,
+      "gross_weight_kg_sum": 256345.5,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:france:cdg",
+      "source": "origin_region:europe",
+      "target": "origin_pol:france:cdg",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0011",
+        "HVDC-ADOPT-PPL-0012"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 94458.6,
+      "gross_weight_kg_sum": 740.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:france:charles_de_gaulle",
+      "source": "origin_region:europe",
+      "target": "origin_pol:france:charles_de_gaulle",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0447",
+        "HVDC-ADOPT-HE-0448"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 21861614.35,
+      "gross_weight_kg_sum": 29365.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:france:gothenburg",
+      "source": "origin_region:europe",
+      "target": "origin_pol:france:gothenburg",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0216",
+        "HVDC-ADOPT-HE-0217",
+        "HVDC-ADOPT-HE-0218",
+        "HVDC-ADOPT-HE-0219"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 18831925.41,
+      "gross_weight_kg_sum": 12840.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:france:le_havre",
+      "source": "origin_region:europe",
+      "target": "origin_pol:france:le_havre",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0001",
+        "HVDC-ADOPT-PPL-0002"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 8312174.52,
+      "gross_weight_kg_sum": 683244.182,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:germany:antwerp",
+      "source": "origin_region:europe",
+      "target": "origin_pol:germany:antwerp",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 22.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0093",
+        "HVDC-ADOPT-HE-0094",
+        "HVDC-ADOPT-HE-0095",
+        "HVDC-ADOPT-HE-0096",
+        "HVDC-ADOPT-HE-0097",
+        "HVDC-ADOPT-HE-0098",
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109",
+        "HVDC-ADOPT-HE-0114",
+        "HVDC-ADOPT-HE-0115",
+        "HVDC-ADOPT-HE-0117",
+        "HVDC-ADOPT-HE-0118",
+        "HVDC-ADOPT-HE-0119",
+        "HVDC-ADOPT-HE-0120",
+        "HVDC-ADOPT-HE-0121",
+        "HVDC-ADOPT-HE-0122",
+        "HVDC-ADOPT-HE-0123",
+        "HVDC-ADOPT-HE-0124",
+        "HVDC-ADOPT-HE-0130",
+        "HVDC-ADOPT-HE-0131",
+        "HVDC-ADOPT-HE-0132",
+        "HVDC-ADOPT-HE-0133"
+      ],
+      "allocation_weight_sum": 22.0,
+      "cif_value_sum": 5186683.789999998,
+      "gross_weight_kg_sum": 112942.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:germany:bremen",
+      "source": "origin_region:europe",
+      "target": "origin_pol:germany:bremen",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0019"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 59558.06,
+      "gross_weight_kg_sum": 65.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:germany:bremerhaven",
+      "source": "origin_region:europe",
+      "target": "origin_pol:germany:bremerhaven",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0185",
+        "HVDC-ADOPT-HE-0187",
+        "HVDC-ADOPT-HE-0203",
+        "HVDC-ADOPT-HE-0204"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 12628685.53,
+      "gross_weight_kg_sum": 394755.0,
+      "flow_codes": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:germany:frankfurt",
+      "source": "origin_region:europe",
+      "target": "origin_pol:germany:frankfurt",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0502",
+        "HVDC-ADOPT-PPL-0016",
+        "HVDC-ADOPT-SEI-0020",
+        "HVDC-ADOPT-SIM-0030",
+        "HVDC-ADOPT-SIM-0102",
+        "HVDC-ADOPT-SIM-0103",
+        "HVDC-ADOPT-SIM-0109"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 4523669.869999999,
+      "gross_weight_kg_sum": 7742.8,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:germany:hamburg",
+      "source": "origin_region:europe",
+      "target": "origin_pol:germany:hamburg",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 61.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0014",
+        "HVDC-ADOPT-SCT-0059",
+        "HVDC-ADOPT-SCT-0174",
+        "HVDC-ADOPT-SIM-0002",
+        "HVDC-ADOPT-SIM-0005-1",
+        "HVDC-ADOPT-SIM-0005-2A",
+        "HVDC-ADOPT-SIM-0005-2B",
+        "HVDC-ADOPT-SIM-0006",
+        "HVDC-ADOPT-SIM-0009-1A",
+        "HVDC-ADOPT-SIM-0009-1B",
+        "HVDC-ADOPT-SIM-0009-2A",
+        "HVDC-ADOPT-SIM-0009-2B",
+        "HVDC-ADOPT-SIM-0010",
+        "HVDC-ADOPT-SIM-0012-A",
+        "HVDC-ADOPT-SIM-0012-B",
+        "HVDC-ADOPT-SIM-0012-C",
+        "HVDC-ADOPT-SIM-0013",
+        "HVDC-ADOPT-SIM-0015",
+        "HVDC-ADOPT-SIM-0016",
+        "HVDC-ADOPT-SIM-0017-A",
+        "HVDC-ADOPT-SIM-0017-B",
+        "HVDC-ADOPT-SIM-0019-A",
+        "HVDC-ADOPT-SIM-0019-B",
+        "HVDC-ADOPT-SIM-0019-C",
+        "HVDC-ADOPT-SIM-0019-D",
+        "HVDC-ADOPT-SIM-0020",
+        "HVDC-ADOPT-SIM-0021",
+        "HVDC-ADOPT-SIM-0024",
+        "HVDC-ADOPT-SIM-0025",
+        "HVDC-ADOPT-SIM-0027",
+        "HVDC-ADOPT-SIM-0028-A",
+        "HVDC-ADOPT-SIM-0028-B",
+        "HVDC-ADOPT-SIM-0032",
+        "HVDC-ADOPT-SIM-0033",
+        "HVDC-ADOPT-SIM-0035",
+        "HVDC-ADOPT-SIM-0036-A",
+        "HVDC-ADOPT-SIM-0036-B",
+        "HVDC-ADOPT-SIM-0037-A",
+        "HVDC-ADOPT-SIM-0037-B",
+        "HVDC-ADOPT-SIM-0038",
+        "HVDC-ADOPT-SIM-0039",
+        "HVDC-ADOPT-SIM-0040",
+        "HVDC-ADOPT-SIM-0041",
+        "HVDC-ADOPT-SIM-0042-A",
+        "HVDC-ADOPT-SIM-0042-B",
+        "HVDC-ADOPT-SIM-0043",
+        "HVDC-ADOPT-SIM-0044",
+        "HVDC-ADOPT-SIM-0045",
+        "HVDC-ADOPT-SIM-0048",
+        "HVDC-ADOPT-SIM-0049",
+        "HVDC-ADOPT-SIM-0050",
+        "HVDC-ADOPT-SIM-0051",
+        "HVDC-ADOPT-SIM-0052",
+        "HVDC-ADOPT-SIM-0053",
+        "HVDC-ADOPT-SIM-0054",
+        "HVDC-ADOPT-SIM-0055",
+        "HVDC-ADOPT-SIM-0056",
+        "HVDC-ADOPT-SIM-0061",
+        "HVDC-ADOPT-SIM-0062",
+        "HVDC-ADOPT-SIM-0064",
+        "HVDC-ADOPT-SIM-0065"
+      ],
+      "allocation_weight_sum": 61.0,
+      "cif_value_sum": 77515926.67999995,
+      "gross_weight_kg_sum": 1431607.1500000004,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:germany:norden_ham",
+      "source": "origin_region:europe",
+      "target": "origin_pol:germany:norden_ham",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0009"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 305204.49,
+      "gross_weight_kg_sum": 560.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:genoa",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:genoa",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 5.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0341",
+        "HVDC-ADOPT-HE-0425",
+        "HVDC-ADOPT-HE-0426",
+        "HVDC-ADOPT-HE-0427",
+        "HVDC-ADOPT-HE-0428"
+      ],
+      "allocation_weight_sum": 5.0,
+      "cif_value_sum": 832059.2999999998,
+      "gross_weight_kg_sum": 21960.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:la_spezia",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:la_spezia",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0003",
+        "HVDC-ADOPT-PPL-0004"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 4050262.5999999996,
+      "gross_weight_kg_sum": 28225.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:malpensa",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:malpensa",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0020",
+        "HVDC-ADOPT-PPL-0021",
+        "HVDC-ADOPT-PPL-0022",
+        "HVDC-ADOPT-SIM-0057"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 325800.5,
+      "gross_weight_kg_sum": 3873.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:milan",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:milan",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0312",
+        "HVDC-ADOPT-HE-0313",
+        "HVDC-ADOPT-PPL-0017",
+        "HVDC-ADOPT-PPL-0018"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 892047.9199999999,
+      "gross_weight_kg_sum": 5753.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:port_of_pozzuoli",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:port_of_pozzuoli",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0005",
+        "HVDC-ADOPT-PPL-0006",
+        "HVDC-ADOPT-PPL-0007",
+        "HVDC-ADOPT-PPL-0008"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 657114.64,
+      "gross_weight_kg_sum": 9367.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:salermo",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:salermo",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0015"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 1084798.8,
+      "gross_weight_kg_sum": 110630.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:venezia",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:venezia",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 22.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0147",
+        "HVDC-ADOPT-HE-0148",
+        "HVDC-ADOPT-HE-0149",
+        "HVDC-ADOPT-HE-0150",
+        "HVDC-ADOPT-HE-0151",
+        "HVDC-ADOPT-HE-0152",
+        "HVDC-ADOPT-HE-0188",
+        "HVDC-ADOPT-HE-0189",
+        "HVDC-ADOPT-HE-0190",
+        "HVDC-ADOPT-HE-0191",
+        "HVDC-ADOPT-HE-0192",
+        "HVDC-ADOPT-HE-0193",
+        "HVDC-ADOPT-HE-0194",
+        "HVDC-ADOPT-HE-0195",
+        "HVDC-ADOPT-HE-0196",
+        "HVDC-ADOPT-HE-0197",
+        "HVDC-ADOPT-HE-0245",
+        "HVDC-ADOPT-HE-0246",
+        "HVDC-ADOPT-HE-0247",
+        "HVDC-ADOPT-HE-0248",
+        "HVDC-ADOPT-HE-0249",
+        "HVDC-ADOPT-HE-0250"
+      ],
+      "allocation_weight_sum": 22.0,
+      "cif_value_sum": 5690204.080000001,
+      "gross_weight_kg_sum": 168401.0,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:italy:venice",
+      "source": "origin_region:europe",
+      "target": "origin_pol:italy:venice",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0303",
+        "HVDC-ADOPT-HE-0304",
+        "HVDC-ADOPT-HE-0305",
+        "HVDC-ADOPT-HE-0306"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 22376461.2006,
+      "gross_weight_kg_sum": 25066.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:netherlands:amsterdam",
+      "source": "origin_region:europe",
+      "target": "origin_pol:netherlands:amsterdam",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 26.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0063",
+        "HVDC-ADOPT-HE-0065",
+        "HVDC-ADOPT-HE-0067",
+        "HVDC-ADOPT-HE-0228",
+        "HVDC-ADOPT-HE-0229",
+        "HVDC-ADOPT-HE-0230",
+        "HVDC-ADOPT-HE-0231",
+        "HVDC-ADOPT-HE-0398",
+        "HVDC-ADOPT-HE-0399",
+        "HVDC-ADOPT-HE-0409",
+        "HVDC-ADOPT-HE-0410",
+        "HVDC-ADOPT-HE-0412",
+        "HVDC-ADOPT-HE-0415",
+        "HVDC-ADOPT-HE-0418",
+        "HVDC-ADOPT-HE-0419",
+        "HVDC-ADOPT-HE-0421",
+        "HVDC-ADOPT-HE-0422",
+        "HVDC-ADOPT-HE-0449",
+        "HVDC-ADOPT-HE-0477-1",
+        "HVDC-ADOPT-HE-0477-2",
+        "HVDC-ADOPT-HE-0487",
+        "HVDC-ADOPT-HE-0488",
+        "HVDC-ADOPT-HE-0497",
+        "HVDC-ADOPT-HE-0510",
+        "HVDC-ADOPT-HE-0511",
+        "HVDC-ADOPT-HE-0516"
+      ],
+      "allocation_weight_sum": 26.0,
+      "cif_value_sum": 85570606.78999999,
+      "gross_weight_kg_sum": 256302.0,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:netherlands:rotterdam",
+      "source": "origin_region:europe",
+      "target": "origin_pol:netherlands:rotterdam",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0012"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 37880852.0,
+      "gross_weight_kg_sum": 1420.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:norway:oslo",
+      "source": "origin_region:europe",
+      "target": "origin_pol:norway:oslo",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0022"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 34254.72,
+      "gross_weight_kg_sum": 85.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:norway:rognan",
+      "source": "origin_region:europe",
+      "target": "origin_pol:norway:rognan",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0005"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 5471699.84,
+      "gross_weight_kg_sum": 496254.0,
+      "flow_codes": [
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:spain:barcelona",
+      "source": "origin_region:europe",
+      "target": "origin_pol:spain:barcelona",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 8.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0028",
+        "HVDC-ADOPT-SCT-0053",
+        "HVDC-ADOPT-SCT-0068",
+        "HVDC-ADOPT-SCT-0069",
+        "HVDC-ADOPT-SCT-0085",
+        "HVDC-ADOPT-SCT-0091",
+        "HVDC-ADOPT-SCT-0106",
+        "HVDC-ADOPT-SCT-0122"
+      ],
+      "allocation_weight_sum": 8.0,
+      "cif_value_sum": 742055.6699999999,
+      "gross_weight_kg_sum": 18117.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:spain:vitoria_gasteiz",
+      "source": "origin_region:europe",
+      "target": "origin_pol:spain:vitoria_gasteiz",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0033",
+        "HVDC-ADOPT-SCT-0061",
+        "HVDC-ADOPT-SCT-0079",
+        "HVDC-ADOPT-SCT-0088"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 47450.14000000001,
+      "gross_weight_kg_sum": 848.4000000000001,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:antwerp",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:antwerp",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0099",
+        "HVDC-ADOPT-HE-0100"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 1864720.52,
+      "gross_weight_kg_sum": 4135.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:billund",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:billund",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0317-1",
+        "HVDC-ADOPT-HE-0317-2",
+        "HVDC-ADOPT-HE-0317-3",
+        "HVDC-ADOPT-HE-0318-1",
+        "HVDC-ADOPT-HE-0318-2",
+        "HVDC-ADOPT-HE-0318-3",
+        "HVDC-ADOPT-HE-0318-4"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 41748140.8,
+      "gross_weight_kg_sum": 41272.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:copenhagen",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:copenhagen",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0223",
+        "HVDC-ADOPT-HE-0252"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 5923900.23,
+      "gross_weight_kg_sum": 22343.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:gothenburg",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:gothenburg",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 163.99999999999997,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0001",
+        "HVDC-ADOPT-HE-0002",
+        "HVDC-ADOPT-HE-0003",
+        "HVDC-ADOPT-HE-0004",
+        "HVDC-ADOPT-HE-0005",
+        "HVDC-ADOPT-HE-0008",
+        "HVDC-ADOPT-HE-0009",
+        "HVDC-ADOPT-HE-0010",
+        "HVDC-ADOPT-HE-0011",
+        "HVDC-ADOPT-HE-0020",
+        "HVDC-ADOPT-HE-0027",
+        "HVDC-ADOPT-HE-0053",
+        "HVDC-ADOPT-HE-0054",
+        "HVDC-ADOPT-HE-0055",
+        "HVDC-ADOPT-HE-0056",
+        "HVDC-ADOPT-HE-0068-1",
+        "HVDC-ADOPT-HE-0068-2",
+        "HVDC-ADOPT-HE-0069",
+        "HVDC-ADOPT-HE-0070",
+        "HVDC-ADOPT-HE-0080-1",
+        "HVDC-ADOPT-HE-0080-2",
+        "HVDC-ADOPT-HE-0081",
+        "HVDC-ADOPT-HE-0082",
+        "HVDC-ADOPT-HE-0083",
+        "HVDC-ADOPT-HE-0084-1",
+        "HVDC-ADOPT-HE-0084-2",
+        "HVDC-ADOPT-HE-0087",
+        "HVDC-ADOPT-HE-0090",
+        "HVDC-ADOPT-HE-0091",
+        "HVDC-ADOPT-HE-0092",
+        "HVDC-ADOPT-HE-0101",
+        "HVDC-ADOPT-HE-0102",
+        "HVDC-ADOPT-HE-0103",
+        "HVDC-ADOPT-HE-0104",
+        "HVDC-ADOPT-HE-0105",
+        "HVDC-ADOPT-HE-0106",
+        "HVDC-ADOPT-HE-0107",
+        "HVDC-ADOPT-HE-0111",
+        "HVDC-ADOPT-HE-0112",
+        "HVDC-ADOPT-HE-0113",
+        "HVDC-ADOPT-HE-0125",
+        "HVDC-ADOPT-HE-0126",
+        "HVDC-ADOPT-HE-0127-1",
+        "HVDC-ADOPT-HE-0127-2",
+        "HVDC-ADOPT-HE-0128",
+        "HVDC-ADOPT-HE-0129",
+        "HVDC-ADOPT-HE-0140",
+        "HVDC-ADOPT-HE-0141",
+        "HVDC-ADOPT-HE-0142",
+        "HVDC-ADOPT-HE-0145",
+        "HVDC-ADOPT-HE-0146",
+        "HVDC-ADOPT-HE-0153-1",
+        "HVDC-ADOPT-HE-0153-2",
+        "HVDC-ADOPT-HE-0154-1",
+        "HVDC-ADOPT-HE-0154-2",
+        "HVDC-ADOPT-HE-0155",
+        "HVDC-ADOPT-HE-0156",
+        "HVDC-ADOPT-HE-0157",
+        "HVDC-ADOPT-HE-0158",
+        "HVDC-ADOPT-HE-0159",
+        "HVDC-ADOPT-HE-0160",
+        "HVDC-ADOPT-HE-0162",
+        "HVDC-ADOPT-HE-0163",
+        "HVDC-ADOPT-HE-0164",
+        "HVDC-ADOPT-HE-0165",
+        "HVDC-ADOPT-HE-0166",
+        "HVDC-ADOPT-HE-0167",
+        "HVDC-ADOPT-HE-0168",
+        "HVDC-ADOPT-HE-0169",
+        "HVDC-ADOPT-HE-0170",
+        "HVDC-ADOPT-HE-0171",
+        "HVDC-ADOPT-HE-0172",
+        "HVDC-ADOPT-HE-0173",
+        "HVDC-ADOPT-HE-0174",
+        "HVDC-ADOPT-HE-0175",
+        "HVDC-ADOPT-HE-0176",
+        "HVDC-ADOPT-HE-0177",
+        "HVDC-ADOPT-HE-0179-A",
+        "HVDC-ADOPT-HE-0179-B",
+        "HVDC-ADOPT-HE-0180",
+        "HVDC-ADOPT-HE-0181",
+        "HVDC-ADOPT-HE-0183",
+        "HVDC-ADOPT-HE-0184",
+        "HVDC-ADOPT-HE-0186",
+        "HVDC-ADOPT-HE-0202",
+        "HVDC-ADOPT-HE-0206",
+        "HVDC-ADOPT-HE-0207",
+        "HVDC-ADOPT-HE-0209",
+        "HVDC-ADOPT-HE-0210",
+        "HVDC-ADOPT-HE-0211",
+        "HVDC-ADOPT-HE-0212",
+        "HVDC-ADOPT-HE-0214",
+        "HVDC-ADOPT-HE-0220",
+        "HVDC-ADOPT-HE-0221",
+        "HVDC-ADOPT-HE-0222",
+        "HVDC-ADOPT-HE-0226",
+        "HVDC-ADOPT-HE-0227",
+        "HVDC-ADOPT-HE-0233",
+        "HVDC-ADOPT-HE-0234",
+        "HVDC-ADOPT-HE-0236",
+        "HVDC-ADOPT-HE-0238",
+        "HVDC-ADOPT-HE-0239",
+        "HVDC-ADOPT-HE-0243",
+        "HVDC-ADOPT-HE-0253",
+        "HVDC-ADOPT-HE-0254",
+        "HVDC-ADOPT-HE-0255",
+        "HVDC-ADOPT-HE-0256",
+        "HVDC-ADOPT-HE-0257",
+        "HVDC-ADOPT-HE-0288",
+        "HVDC-ADOPT-HE-0289",
+        "HVDC-ADOPT-HE-0291",
+        "HVDC-ADOPT-HE-0292",
+        "HVDC-ADOPT-HE-0293",
+        "HVDC-ADOPT-HE-0294",
+        "HVDC-ADOPT-HE-0295",
+        "HVDC-ADOPT-HE-0296",
+        "HVDC-ADOPT-HE-0297",
+        "HVDC-ADOPT-HE-0298",
+        "HVDC-ADOPT-HE-0299",
+        "HVDC-ADOPT-HE-0300",
+        "HVDC-ADOPT-HE-0314",
+        "HVDC-ADOPT-HE-0322",
+        "HVDC-ADOPT-HE-0325-1",
+        "HVDC-ADOPT-HE-0325-2",
+        "HVDC-ADOPT-HE-0331",
+        "HVDC-ADOPT-HE-0332",
+        "HVDC-ADOPT-HE-0333",
+        "HVDC-ADOPT-HE-0359",
+        "HVDC-ADOPT-HE-0362",
+        "HVDC-ADOPT-HE-0374",
+        "HVDC-ADOPT-HE-0376",
+        "HVDC-ADOPT-HE-0377",
+        "HVDC-ADOPT-HE-0378",
+        "HVDC-ADOPT-HE-0379",
+        "HVDC-ADOPT-HE-0383",
+        "HVDC-ADOPT-HE-0384",
+        "HVDC-ADOPT-HE-0385-1",
+        "HVDC-ADOPT-HE-0386",
+        "HVDC-ADOPT-HE-0387-1",
+        "HVDC-ADOPT-HE-0388",
+        "HVDC-ADOPT-HE-0389",
+        "HVDC-ADOPT-HE-0390",
+        "HVDC-ADOPT-HE-0391",
+        "HVDC-ADOPT-HE-0392",
+        "HVDC-ADOPT-HE-0393",
+        "HVDC-ADOPT-HE-0394",
+        "HVDC-ADOPT-HE-0400",
+        "HVDC-ADOPT-HE-0437",
+        "HVDC-ADOPT-HE-0438",
+        "HVDC-ADOPT-HE-0438-2",
+        "HVDC-ADOPT-HE-0439",
+        "HVDC-ADOPT-HE-0439-2",
+        "HVDC-ADOPT-HE-0440",
+        "HVDC-ADOPT-HE-0440-2",
+        "HVDC-ADOPT-HE-0441",
+        "HVDC-ADOPT-HE-0441-2",
+        "HVDC-ADOPT-HE-0451",
+        "HVDC-ADOPT-HE-0452",
+        "HVDC-ADOPT-HE-0454",
+        "HVDC-ADOPT-HE-0482",
+        "HVDC-ADOPT-HE-0519",
+        "HVDC-ADOPT-HE-0520",
+        "HVDC-ADOPT-HE-0521",
+        "HVDC-ADOPT-HE-0522"
+      ],
+      "allocation_weight_sum": 163.99999999999997,
+      "cif_value_sum": 2619361511.1749997,
+      "gross_weight_kg_sum": 5318535.000000001,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:helsingborg",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:helsingborg",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0076",
+        "HVDC-ADOPT-SCT-0121"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 1035103.03,
+      "gross_weight_kg_sum": 13125.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:malm",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:malm",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0119",
+        "HVDC-ADOPT-SCT-0130"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 267661.15,
+      "gross_weight_kg_sum": 3574.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:malmoe",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:malmoe",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 5.999999999999999,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0244",
+        "HVDC-ADOPT-HE-0302",
+        "HVDC-ADOPT-HE-0307",
+        "HVDC-ADOPT-HE-0531",
+        "HVDC-ADOPT-SCT-0041",
+        "HVDC-ADOPT-SCT-0077"
+      ],
+      "allocation_weight_sum": 5.999999999999999,
+      "cif_value_sum": 9906672.559999997,
+      "gross_weight_kg_sum": 9337.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:norrkoping",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:norrkoping",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0088",
+        "HVDC-ADOPT-HE-0089",
+        "HVDC-ADOPT-HE-0178"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 431189193.6,
+      "gross_weight_kg_sum": 1442514.0,
+      "flow_codes": [
+        4
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:stockholm",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:stockholm",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0534",
+        "HVDC-ADOPT-SCT-0116"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 761851.1,
+      "gross_weight_kg_sum": 6333.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:sweden:uddevalla",
+      "source": "origin_region:europe",
+      "target": "origin_pol:sweden:uddevalla",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0116",
+        "HVDC-ADOPT-HE-0143",
+        "HVDC-ADOPT-HE-0144"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 335957096.28999996,
+      "gross_weight_kg_sum": 1618021.0,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:uk:england",
+      "source": "origin_region:europe",
+      "target": "origin_pol:uk:england",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0290"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 336918.14,
+      "gross_weight_kg_sum": 1135.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:uk:london",
+      "source": "origin_region:europe",
+      "target": "origin_pol:uk:london",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0013"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 126138.8,
+      "gross_weight_kg_sum": 502.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:united_kingdom:belfast",
+      "source": "origin_region:europe",
+      "target": "origin_pol:united_kingdom:belfast",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0072",
+        "HVDC-ADOPT-SIM-0073"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 258480.0,
+      "gross_weight_kg_sum": 2061.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:united_kingdom:felixstowe",
+      "source": "origin_region:europe",
+      "target": "origin_pol:united_kingdom:felixstowe",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0265",
+        "HVDC-ADOPT-HE-0266",
+        "HVDC-ADOPT-ZEN-0008"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 4975902.0600000005,
+      "gross_weight_kg_sum": 27864.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:united_kingdom:heathrow",
+      "source": "origin_region:europe",
+      "target": "origin_pol:united_kingdom:heathrow",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0021-L",
+        "HVDC-ADOPT-SEI-0021-T"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 8923.92,
+      "gross_weight_kg_sum": 173.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:united_kingdom:london",
+      "source": "origin_region:europe",
+      "target": "origin_pol:united_kingdom:london",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0013",
+        "HVDC-ADOPT-ZEN-0016"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 70281170.0,
+      "gross_weight_kg_sum": 30247.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:united_kingdom:london_gateway",
+      "source": "origin_region:europe",
+      "target": "origin_pol:united_kingdom:london_gateway",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0350",
+        "HVDC-ADOPT-HE-0351",
+        "HVDC-ADOPT-ZEN-0017"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 3587224.748,
+      "gross_weight_kg_sum": 24917.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:europe__origin_pol:united_kingdom:nottingham",
+      "source": "origin_region:europe",
+      "target": "origin_pol:united_kingdom:nottingham",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0018"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 75983.38,
+      "gross_weight_kg_sum": 7059.45,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:europe__origin_pol:united_kingdom:southampton",
+      "source": "origin_region:europe",
+      "target": "origin_pol:united_kingdom:southampton",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0014-A",
+        "HVDC-ADOPT-SIM-0014-B"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 44137.259999999995,
+      "gross_weight_kg_sum": 4870.05,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:middle_east__origin_pol:oman:muscat",
+      "source": "origin_region:middle_east",
+      "target": "origin_pol:oman:muscat",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0010"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 99000.0,
+      "gross_weight_kg_sum": 1657.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "origin_region:middle_east__origin_pol:uae:jebel_ali",
+      "source": "origin_region:middle_east",
+      "target": "origin_pol:uae:jebel_ali",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 12.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499",
+        "HVDC-ADOPT-HE-0499-1",
+        "HVDC-ADOPT-HE-0499-10",
+        "HVDC-ADOPT-HE-0499-11",
+        "HVDC-ADOPT-HE-0499-12",
+        "HVDC-ADOPT-HE-0499-13",
+        "HVDC-ADOPT-HE-0499-2",
+        "HVDC-ADOPT-HE-0499-5",
+        "HVDC-ADOPT-HE-0499-6",
+        "HVDC-ADOPT-HE-0499-8",
+        "HVDC-ADOPT-HE-0499-9"
+      ],
+      "allocation_weight_sum": 12.0,
+      "cif_value_sum": 11739792.0,
+      "gross_weight_kg_sum": 172060.0,
+      "flow_codes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:bulgaria:varna",
+      "source": "origin_region:other",
+      "target": "origin_pol:bulgaria:varna",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0342",
+        "HVDC-ADOPT-HE-0343",
+        "HVDC-ADOPT-HE-0352",
+        "HVDC-ADOPT-HE-0353"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 24914013.14,
+      "gross_weight_kg_sum": 62092.0,
+      "flow_codes": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:egypt:kairo",
+      "source": "origin_region:other",
+      "target": "origin_pol:egypt:kairo",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0075",
+        "HVDC-ADOPT-SCT-0125",
+        "HVDC-ADOPT-SCT-0133",
+        "HVDC-ADOPT-SCT-0149"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 14045.79,
+      "gross_weight_kg_sum": 2525.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:egypt:sukhna",
+      "source": "origin_region:other",
+      "target": "origin_pol:egypt:sukhna",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0135",
+        "HVDC-ADOPT-SCT-0154"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 145960.76,
+      "gross_weight_kg_sum": 20395.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:other__origin_pol:estonia:talinn",
+      "source": "origin_region:other",
+      "target": "origin_pol:estonia:talinn",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 5.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0208",
+        "HVDC-ADOPT-HE-0237",
+        "HVDC-ADOPT-HE-0251",
+        "HVDC-ADOPT-HE-0363"
+      ],
+      "allocation_weight_sum": 5.0,
+      "cif_value_sum": 8472466.879999999,
+      "gross_weight_kg_sum": 5932.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:great_britain:viena",
+      "source": "origin_region:other",
+      "target": "origin_pol:great_britain:viena",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0002"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 18080.59,
+      "gross_weight_kg_sum": 1444.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:other__origin_pol:india:chennai",
+      "source": "origin_region:other",
+      "target": "origin_pol:india:chennai",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0537"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 4816306.98,
+      "gross_weight_kg_sum": 567.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:india:cochin",
+      "source": "origin_region:other",
+      "target": "origin_pol:india:cochin",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0015",
+        "HVDC-ADOPT-ZEN-0018"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 146976.62,
+      "gross_weight_kg_sum": 15769.650000000001,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:other__origin_pol:india:ennore",
+      "source": "origin_region:other",
+      "target": "origin_pol:india:ennore",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0382"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 102922105.9,
+      "gross_weight_kg_sum": 106433.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:other__origin_pol:india:nhava_sheva",
+      "source": "origin_region:other",
+      "target": "origin_pol:india:nhava_sheva",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 6.999999999999999,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0258",
+        "HVDC-ADOPT-HE-0259",
+        "HVDC-ADOPT-HE-0260",
+        "HVDC-ADOPT-HE-0261",
+        "HVDC-ADOPT-HE-0262",
+        "HVDC-ADOPT-HE-0263",
+        "HVDC-ADOPT-ZEN-0011"
+      ],
+      "allocation_weight_sum": 6.999999999999999,
+      "cif_value_sum": 4229383.538,
+      "gross_weight_kg_sum": 28408.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:india:tuticorin",
+      "source": "origin_region:other",
+      "target": "origin_pol:india:tuticorin",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-ZEN-0001",
+        "HVDC-ADOPT-ZEN-0009",
+        "HVDC-ADOPT-ZEN-0010",
+        "HVDC-ADOPT-ZEN-0012"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 83520.85,
+      "gross_weight_kg_sum": 12632.93,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:other__origin_pol:india:visakhapatnam",
+      "source": "origin_region:other",
+      "target": "origin_pol:india:visakhapatnam",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 7.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0327",
+        "HVDC-ADOPT-HE-0340",
+        "HVDC-ADOPT-SIM-0066",
+        "HVDC-ADOPT-SIM-0080-A",
+        "HVDC-ADOPT-SIM-0080-B",
+        "HVDC-ADOPT-SIM-0080-C",
+        "HVDC-ADOPT-SIM-0080-D"
+      ],
+      "allocation_weight_sum": 7.0,
+      "cif_value_sum": 1903010.33,
+      "gross_weight_kg_sum": 359720.0,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:shanghai:china",
+      "source": "origin_region:other",
+      "target": "origin_pol:shanghai:china",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SCT-0046",
+        "HVDC-ADOPT-ZEN-0004"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 232709.2,
+      "gross_weight_kg_sum": 171958.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:slovenia:koper",
+      "source": "origin_region:other",
+      "target": "origin_pol:slovenia:koper",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0455",
+        "HVDC-ADOPT-HE-0456",
+        "HVDC-ADOPT-HE-0457",
+        "HVDC-ADOPT-HE-0458"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 3154412.36,
+      "gross_weight_kg_sum": 71700.0,
+      "flow_codes": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:switzerland:geneve",
+      "source": "origin_region:other",
+      "target": "origin_pol:switzerland:geneve",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 4.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0076-A",
+        "HVDC-ADOPT-SIM-0076-B",
+        "HVDC-ADOPT-SIM-0076-C",
+        "HVDC-ADOPT-SIM-0076-D"
+      ],
+      "allocation_weight_sum": 4.0,
+      "cif_value_sum": 249240.0,
+      "gross_weight_kg_sum": 6685.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:switzerland:zurich",
+      "source": "origin_region:other",
+      "target": "origin_pol:switzerland:zurich",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-SIM-0092"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 1078526.0,
+      "gross_weight_kg_sum": 1931.0,
+      "flow_codes": []
+    },
+    {
+      "id": "origin_region:other__origin_pol:turkey:istanbul",
+      "source": "origin_region:other",
+      "target": "origin_pol:turkey:istanbul",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 14.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0508",
+        "HVDC-ADOPT-HE-0509",
+        "HVDC-ADOPT-HE-0527",
+        "HVDC-ADOPT-HE-0528",
+        "HVDC-ADOPT-HE-0529",
+        "HVDC-ADOPT-HE-0530",
+        "HVDC-ADOPT-HE-0532",
+        "HVDC-ADOPT-HE-0533",
+        "HVDC-ADOPT-HE-0538",
+        "HVDC-ADOPT-HE-0540",
+        "HVDC-ADOPT-HE-0545",
+        "HVDC-ADOPT-HE-0546",
+        "HVDC-ADOPT-HE-0556",
+        "HVDC-ADOPT-SIM-0088"
+      ],
+      "allocation_weight_sum": 14.0,
+      "cif_value_sum": 9958516.11,
+      "gross_weight_kg_sum": 168699.0,
+      "flow_codes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "origin_region:other__origin_pol:turkey:izmit",
+      "source": "origin_region:other",
+      "target": "origin_pol:turkey:izmit",
+      "route_type": "origin_region_to_pol",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0442",
+        "HVDC-ADOPT-HE-0476"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 6199468.2,
+      "gross_weight_kg_sum": 44637.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "port:dsv__site:SHU",
+      "source": "port:dsv",
+      "target": "site:SHU",
+      "route_type": "pod_to_site",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 2906200.0,
+      "gross_weight_kg_sum": 15400.0,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "port:jebel_ali__site:AGI",
+      "source": "port:jebel_ali",
+      "target": "site:AGI",
+      "route_type": "pod_to_site",
+      "shipment_count": 0.25,
+      "shipment_ids": [
+        "HVDC-ADOPT-HS-0001"
+      ],
+      "allocation_weight_sum": 0.25,
+      "cif_value_sum": 105012.47,
+      "gross_weight_kg_sum": 117991.5,
+      "flow_codes": []
+    },
+    {
+      "id": "port:jebel_ali__site:DAS",
+      "source": "port:jebel_ali",
+      "target": "site:DAS",
+      "route_type": "pod_to_site",
+      "shipment_count": 0.25,
+      "shipment_ids": [
+        "HVDC-ADOPT-HS-0001"
+      ],
+      "allocation_weight_sum": 0.25,
+      "cif_value_sum": 105012.47,
+      "gross_weight_kg_sum": 117991.5,
+      "flow_codes": []
+    },
+    {
+      "id": "port:jebel_ali__site:MIR",
+      "source": "port:jebel_ali",
+      "target": "site:MIR",
+      "route_type": "pod_to_site",
+      "shipment_count": 0.25,
+      "shipment_ids": [
+        "HVDC-ADOPT-HS-0001"
+      ],
+      "allocation_weight_sum": 0.25,
+      "cif_value_sum": 105012.47,
+      "gross_weight_kg_sum": 117991.5,
+      "flow_codes": []
+    },
+    {
+      "id": "port:jebel_ali__site:SHU",
+      "source": "port:jebel_ali",
+      "target": "site:SHU",
+      "route_type": "pod_to_site",
+      "shipment_count": 0.25,
+      "shipment_ids": [
+        "HVDC-ADOPT-HS-0001"
+      ],
+      "allocation_weight_sum": 0.25,
+      "cif_value_sum": 105012.47,
+      "gross_weight_kg_sum": 117991.5,
+      "flow_codes": []
+    },
+    {
+      "id": "port:khalifa__site:AGI",
+      "source": "port:khalifa",
+      "target": "site:AGI",
+      "route_type": "pod_to_site",
+      "shipment_count": 129.08333333333334,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0018",
+        "HVDC-ADOPT-HE-0019",
+        "HVDC-ADOPT-HE-0029",
+        "HVDC-ADOPT-HE-0030",
+        "HVDC-ADOPT-HE-0031",
+        "HVDC-ADOPT-HE-0032",
+        "HVDC-ADOPT-HE-0048",
+        "HVDC-ADOPT-HE-0049",
+        "HVDC-ADOPT-HE-0050",
+        "HVDC-ADOPT-HE-0051",
+        "HVDC-ADOPT-HE-0052",
+        "HVDC-ADOPT-HE-0071",
+        "HVDC-ADOPT-HE-0076",
+        "HVDC-ADOPT-HE-0077",
+        "HVDC-ADOPT-HE-0079",
+        "HVDC-ADOPT-HE-0090",
+        "HVDC-ADOPT-HE-0092",
+        "HVDC-ADOPT-HE-0093",
+        "HVDC-ADOPT-HE-0094",
+        "HVDC-ADOPT-HE-0101",
+        "HVDC-ADOPT-HE-0102",
+        "HVDC-ADOPT-HE-0103",
+        "HVDC-ADOPT-HE-0104",
+        "HVDC-ADOPT-HE-0105",
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109",
+        "HVDC-ADOPT-HE-0114",
+        "HVDC-ADOPT-HE-0118",
+        "HVDC-ADOPT-HE-0119",
+        "HVDC-ADOPT-HE-0129",
+        "HVDC-ADOPT-HE-0138",
+        "HVDC-ADOPT-HE-0139",
+        "HVDC-ADOPT-HE-0140",
+        "HVDC-ADOPT-HE-0141",
+        "HVDC-ADOPT-HE-0147",
+        "HVDC-ADOPT-HE-0148",
+        "HVDC-ADOPT-HE-0160",
+        "HVDC-ADOPT-HE-0162",
+        "HVDC-ADOPT-HE-0163",
+        "HVDC-ADOPT-HE-0173",
+        "HVDC-ADOPT-HE-0174",
+        "HVDC-ADOPT-HE-0175",
+        "HVDC-ADOPT-HE-0176",
+        "HVDC-ADOPT-HE-0177",
+        "HVDC-ADOPT-HE-0179-A",
+        "HVDC-ADOPT-HE-0179-B",
+        "HVDC-ADOPT-HE-0180",
+        "HVDC-ADOPT-HE-0183",
+        "HVDC-ADOPT-HE-0192",
+        "HVDC-ADOPT-HE-0193",
+        "HVDC-ADOPT-HE-0204",
+        "HVDC-ADOPT-HE-0206",
+        "HVDC-ADOPT-HE-0210",
+        "HVDC-ADOPT-HE-0212",
+        "HVDC-ADOPT-HE-0219",
+        "HVDC-ADOPT-HE-0222",
+        "HVDC-ADOPT-HE-0233",
+        "HVDC-ADOPT-HE-0236",
+        "HVDC-ADOPT-HE-0238",
+        "HVDC-ADOPT-HE-0240",
+        "HVDC-ADOPT-HE-0262",
+        "HVDC-ADOPT-HE-0263",
+        "HVDC-ADOPT-HE-0268",
+        "HVDC-ADOPT-HE-0269",
+        "HVDC-ADOPT-HE-0288",
+        "HVDC-ADOPT-HE-0289",
+        "HVDC-ADOPT-HE-0295",
+        "HVDC-ADOPT-HE-0300",
+        "HVDC-ADOPT-HE-0301-1",
+        "HVDC-ADOPT-HE-0301-2",
+        "HVDC-ADOPT-HE-0320",
+        "HVDC-ADOPT-HE-0323",
+        "HVDC-ADOPT-HE-0330",
+        "HVDC-ADOPT-HE-0331",
+        "HVDC-ADOPT-HE-0336",
+        "HVDC-ADOPT-HE-0338",
+        "HVDC-ADOPT-HE-0343",
+        "HVDC-ADOPT-HE-0350",
+        "HVDC-ADOPT-HE-0352",
+        "HVDC-ADOPT-HE-0353",
+        "HVDC-ADOPT-HE-0357",
+        "HVDC-ADOPT-HE-0362",
+        "HVDC-ADOPT-HE-0380",
+        "HVDC-ADOPT-HE-0381",
+        "HVDC-ADOPT-HE-0382",
+        "HVDC-ADOPT-HE-0385-1",
+        "HVDC-ADOPT-HE-0385-2",
+        "HVDC-ADOPT-HE-0386",
+        "HVDC-ADOPT-HE-0393",
+        "HVDC-ADOPT-HE-0394",
+        "HVDC-ADOPT-HE-0397",
+        "HVDC-ADOPT-HE-0413",
+        "HVDC-ADOPT-HE-0414",
+        "HVDC-ADOPT-HE-0420",
+        "HVDC-ADOPT-HE-0429",
+        "HVDC-ADOPT-HE-0438",
+        "HVDC-ADOPT-HE-0438-2",
+        "HVDC-ADOPT-HE-0439",
+        "HVDC-ADOPT-HE-0439-2",
+        "HVDC-ADOPT-HE-0440",
+        "HVDC-ADOPT-HE-0440-2",
+        "HVDC-ADOPT-HE-0441",
+        "HVDC-ADOPT-HE-0441-2",
+        "HVDC-ADOPT-HE-0458",
+        "HVDC-ADOPT-HE-0467",
+        "HVDC-ADOPT-HE-0470",
+        "HVDC-ADOPT-HE-0506",
+        "HVDC-ADOPT-HE-0513",
+        "HVDC-ADOPT-HE-0519",
+        "HVDC-ADOPT-HE-0520",
+        "HVDC-ADOPT-HE-0525",
+        "HVDC-ADOPT-HE-0535",
+        "HVDC-ADOPT-HE-0536",
+        "HVDC-ADOPT-SCT-0003",
+        "HVDC-ADOPT-SCT-0004",
+        "HVDC-ADOPT-SCT-0005",
+        "HVDC-ADOPT-SCT-0007",
+        "HVDC-ADOPT-SCT-0008",
+        "HVDC-ADOPT-SCT-0010",
+        "HVDC-ADOPT-SCT-0014",
+        "HVDC-ADOPT-SCT-0016",
+        "HVDC-ADOPT-SCT-0017",
+        "HVDC-ADOPT-SCT-0018",
+        "HVDC-ADOPT-SCT-0019",
+        "HVDC-ADOPT-SCT-0021",
+        "HVDC-ADOPT-SCT-0024",
+        "HVDC-ADOPT-SCT-0025",
+        "HVDC-ADOPT-SCT-0026",
+        "HVDC-ADOPT-SCT-0029",
+        "HVDC-ADOPT-SCT-0030",
+        "HVDC-ADOPT-SCT-0031",
+        "HVDC-ADOPT-SCT-0032",
+        "HVDC-ADOPT-SCT-0034",
+        "HVDC-ADOPT-SCT-0035",
+        "HVDC-ADOPT-SCT-0036",
+        "HVDC-ADOPT-SCT-0038",
+        "HVDC-ADOPT-SCT-0039",
+        "HVDC-ADOPT-SCT-0043",
+        "HVDC-ADOPT-SCT-0049",
+        "HVDC-ADOPT-SCT-0050",
+        "HVDC-ADOPT-SCT-0051",
+        "HVDC-ADOPT-SCT-0052",
+        "HVDC-ADOPT-SCT-0054",
+        "HVDC-ADOPT-SCT-0057",
+        "HVDC-ADOPT-SCT-0058",
+        "HVDC-ADOPT-SCT-0059",
+        "HVDC-ADOPT-SCT-0060",
+        "HVDC-ADOPT-SCT-0062",
+        "HVDC-ADOPT-SCT-0066",
+        "HVDC-ADOPT-SCT-0067",
+        "HVDC-ADOPT-SCT-0068",
+        "HVDC-ADOPT-SCT-0070",
+        "HVDC-ADOPT-SCT-0071",
+        "HVDC-ADOPT-SCT-0072",
+        "HVDC-ADOPT-SCT-0073",
+        "HVDC-ADOPT-SCT-0074",
+        "HVDC-ADOPT-SCT-0081",
+        "HVDC-ADOPT-SCT-0082",
+        "HVDC-ADOPT-SCT-0083",
+        "HVDC-ADOPT-SCT-0084",
+        "HVDC-ADOPT-SCT-0085",
+        "HVDC-ADOPT-SCT-0087",
+        "HVDC-ADOPT-SCT-0089",
+        "HVDC-ADOPT-SCT-0092",
+        "HVDC-ADOPT-SCT-0093",
+        "HVDC-ADOPT-SCT-0094",
+        "HVDC-ADOPT-SCT-0096",
+        "HVDC-ADOPT-SCT-0098",
+        "HVDC-ADOPT-SCT-0102",
+        "HVDC-ADOPT-SCT-0105",
+        "HVDC-ADOPT-SCT-0106",
+        "HVDC-ADOPT-SCT-0107",
+        "HVDC-ADOPT-SCT-0108",
+        "HVDC-ADOPT-SCT-0109",
+        "HVDC-ADOPT-SCT-0115",
+        "HVDC-ADOPT-SCT-0117",
+        "HVDC-ADOPT-SCT-0118",
+        "HVDC-ADOPT-SCT-0121",
+        "HVDC-ADOPT-SCT-0122",
+        "HVDC-ADOPT-SCT-0126",
+        "HVDC-ADOPT-SCT-0127",
+        "HVDC-ADOPT-SCT-0128",
+        "HVDC-ADOPT-SCT-0132",
+        "HVDC-ADOPT-SCT-0135",
+        "HVDC-ADOPT-SCT-0138",
+        "HVDC-ADOPT-SCT-0140",
+        "HVDC-ADOPT-SCT-0142",
+        "HVDC-ADOPT-SCT-0143",
+        "HVDC-ADOPT-SCT-0144",
+        "HVDC-ADOPT-SCT-0151",
+        "HVDC-ADOPT-SCT-0155",
+        "HVDC-ADOPT-SCT-0159",
+        "HVDC-ADOPT-SCT-0166",
+        "HVDC-ADOPT-SCT-0168",
+        "HVDC-ADOPT-SCT-0173",
+        "HVDC-ADOPT-SCT-0174",
+        "HVDC-ADOPT-SIM-0001",
+        "HVDC-ADOPT-SIM-0018",
+        "HVDC-ADOPT-SIM-0029",
+        "HVDC-ADOPT-SIM-0036-A",
+        "HVDC-ADOPT-SIM-0036-B",
+        "HVDC-ADOPT-SIM-0037-A",
+        "HVDC-ADOPT-SIM-0037-B",
+        "HVDC-ADOPT-SIM-0041",
+        "HVDC-ADOPT-SIM-0042-A",
+        "HVDC-ADOPT-SIM-0042-B",
+        "HVDC-ADOPT-SIM-0048",
+        "HVDC-ADOPT-SIM-0051",
+        "HVDC-ADOPT-SIM-0052",
+        "HVDC-ADOPT-SIM-0062",
+        "HVDC-ADOPT-SIM-0079-A",
+        "HVDC-ADOPT-SIM-0080-B"
+      ],
+      "allocation_weight_sum": 129.08333333333334,
+      "cif_value_sum": 881697075.2262455,
+      "gross_weight_kg_sum": 3582946.9791666665,
+      "flow_codes": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "port:khalifa__site:DAS",
+      "source": "port:khalifa",
+      "target": "site:DAS",
+      "route_type": "pod_to_site",
+      "shipment_count": 139.24999999999997,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0001",
+        "HVDC-ADOPT-HE-0002",
+        "HVDC-ADOPT-HE-0003",
+        "HVDC-ADOPT-HE-0004",
+        "HVDC-ADOPT-HE-0005",
+        "HVDC-ADOPT-HE-0007",
+        "HVDC-ADOPT-HE-0008",
+        "HVDC-ADOPT-HE-0009",
+        "HVDC-ADOPT-HE-0010",
+        "HVDC-ADOPT-HE-0011",
+        "HVDC-ADOPT-HE-0012",
+        "HVDC-ADOPT-HE-0013",
+        "HVDC-ADOPT-HE-0020",
+        "HVDC-ADOPT-HE-0022",
+        "HVDC-ADOPT-HE-0023",
+        "HVDC-ADOPT-HE-0026",
+        "HVDC-ADOPT-HE-0027",
+        "HVDC-ADOPT-HE-0033",
+        "HVDC-ADOPT-HE-0034",
+        "HVDC-ADOPT-HE-0035",
+        "HVDC-ADOPT-HE-0036",
+        "HVDC-ADOPT-HE-0037",
+        "HVDC-ADOPT-HE-0060",
+        "HVDC-ADOPT-HE-0061",
+        "HVDC-ADOPT-HE-0074",
+        "HVDC-ADOPT-HE-0087",
+        "HVDC-ADOPT-HE-0091",
+        "HVDC-ADOPT-HE-0093",
+        "HVDC-ADOPT-HE-0094",
+        "HVDC-ADOPT-HE-0102",
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109",
+        "HVDC-ADOPT-HE-0114",
+        "HVDC-ADOPT-HE-0118",
+        "HVDC-ADOPT-HE-0119",
+        "HVDC-ADOPT-HE-0127-1",
+        "HVDC-ADOPT-HE-0127-2",
+        "HVDC-ADOPT-HE-0128",
+        "HVDC-ADOPT-HE-0129",
+        "HVDC-ADOPT-HE-0132",
+        "HVDC-ADOPT-HE-0133",
+        "HVDC-ADOPT-HE-0138",
+        "HVDC-ADOPT-HE-0139",
+        "HVDC-ADOPT-HE-0146",
+        "HVDC-ADOPT-HE-0147",
+        "HVDC-ADOPT-HE-0148",
+        "HVDC-ADOPT-HE-0158",
+        "HVDC-ADOPT-HE-0159",
+        "HVDC-ADOPT-HE-0174",
+        "HVDC-ADOPT-HE-0175",
+        "HVDC-ADOPT-HE-0177",
+        "HVDC-ADOPT-HE-0180",
+        "HVDC-ADOPT-HE-0181",
+        "HVDC-ADOPT-HE-0184",
+        "HVDC-ADOPT-HE-0187",
+        "HVDC-ADOPT-HE-0192",
+        "HVDC-ADOPT-HE-0193",
+        "HVDC-ADOPT-HE-0200",
+        "HVDC-ADOPT-HE-0201",
+        "HVDC-ADOPT-HE-0202",
+        "HVDC-ADOPT-HE-0206",
+        "HVDC-ADOPT-HE-0209",
+        "HVDC-ADOPT-HE-0218",
+        "HVDC-ADOPT-HE-0222",
+        "HVDC-ADOPT-HE-0226",
+        "HVDC-ADOPT-HE-0227",
+        "HVDC-ADOPT-HE-0236",
+        "HVDC-ADOPT-HE-0240",
+        "HVDC-ADOPT-HE-0256",
+        "HVDC-ADOPT-HE-0257",
+        "HVDC-ADOPT-HE-0262",
+        "HVDC-ADOPT-HE-0263",
+        "HVDC-ADOPT-HE-0265",
+        "HVDC-ADOPT-HE-0268",
+        "HVDC-ADOPT-HE-0269",
+        "HVDC-ADOPT-HE-0276",
+        "HVDC-ADOPT-HE-0277",
+        "HVDC-ADOPT-HE-0278",
+        "HVDC-ADOPT-HE-0279",
+        "HVDC-ADOPT-HE-0288",
+        "HVDC-ADOPT-HE-0289",
+        "HVDC-ADOPT-HE-0295",
+        "HVDC-ADOPT-HE-0301-2",
+        "HVDC-ADOPT-HE-0308",
+        "HVDC-ADOPT-HE-0309-1",
+        "HVDC-ADOPT-HE-0309-2",
+        "HVDC-ADOPT-HE-0310-1",
+        "HVDC-ADOPT-HE-0310-2",
+        "HVDC-ADOPT-HE-0314",
+        "HVDC-ADOPT-HE-0315",
+        "HVDC-ADOPT-HE-0316",
+        "HVDC-ADOPT-HE-0322",
+        "HVDC-ADOPT-HE-0325-1",
+        "HVDC-ADOPT-HE-0325-2",
+        "HVDC-ADOPT-HE-0327",
+        "HVDC-ADOPT-HE-0330",
+        "HVDC-ADOPT-HE-0331",
+        "HVDC-ADOPT-HE-0332",
+        "HVDC-ADOPT-HE-0338",
+        "HVDC-ADOPT-HE-0341",
+        "HVDC-ADOPT-HE-0348",
+        "HVDC-ADOPT-HE-0349",
+        "HVDC-ADOPT-HE-0350",
+        "HVDC-ADOPT-HE-0352",
+        "HVDC-ADOPT-HE-0353",
+        "HVDC-ADOPT-HE-0354",
+        "HVDC-ADOPT-HE-0359",
+        "HVDC-ADOPT-HE-0362",
+        "HVDC-ADOPT-HE-0376",
+        "HVDC-ADOPT-HE-0383",
+        "HVDC-ADOPT-HE-0384",
+        "HVDC-ADOPT-HE-0396",
+        "HVDC-ADOPT-HE-0400",
+        "HVDC-ADOPT-HE-0420",
+        "HVDC-ADOPT-HE-0430",
+        "HVDC-ADOPT-HE-0435",
+        "HVDC-ADOPT-HE-0451",
+        "HVDC-ADOPT-HE-0454",
+        "HVDC-ADOPT-HE-0457",
+        "HVDC-ADOPT-HE-0464",
+        "HVDC-ADOPT-HE-0467",
+        "HVDC-ADOPT-HE-0475",
+        "HVDC-ADOPT-HE-0482",
+        "HVDC-ADOPT-HE-0483",
+        "HVDC-ADOPT-HE-0484",
+        "HVDC-ADOPT-HE-0485",
+        "HVDC-ADOPT-HE-0486",
+        "HVDC-ADOPT-HE-0506",
+        "HVDC-ADOPT-HE-0513",
+        "HVDC-ADOPT-HE-0520",
+        "HVDC-ADOPT-HE-0525",
+        "HVDC-ADOPT-SCT-0002",
+        "HVDC-ADOPT-SCT-0003",
+        "HVDC-ADOPT-SCT-0005",
+        "HVDC-ADOPT-SCT-0009",
+        "HVDC-ADOPT-SCT-0010",
+        "HVDC-ADOPT-SCT-0011",
+        "HVDC-ADOPT-SCT-0016",
+        "HVDC-ADOPT-SCT-0017",
+        "HVDC-ADOPT-SCT-0018",
+        "HVDC-ADOPT-SCT-0021",
+        "HVDC-ADOPT-SCT-0022",
+        "HVDC-ADOPT-SCT-0024",
+        "HVDC-ADOPT-SCT-0025",
+        "HVDC-ADOPT-SCT-0026",
+        "HVDC-ADOPT-SCT-0028",
+        "HVDC-ADOPT-SCT-0030",
+        "HVDC-ADOPT-SCT-0031",
+        "HVDC-ADOPT-SCT-0032",
+        "HVDC-ADOPT-SCT-0034",
+        "HVDC-ADOPT-SCT-0035",
+        "HVDC-ADOPT-SCT-0036",
+        "HVDC-ADOPT-SCT-0037",
+        "HVDC-ADOPT-SCT-0038",
+        "HVDC-ADOPT-SCT-0039",
+        "HVDC-ADOPT-SCT-0042",
+        "HVDC-ADOPT-SCT-0043",
+        "HVDC-ADOPT-SCT-0045",
+        "HVDC-ADOPT-SCT-0049",
+        "HVDC-ADOPT-SCT-0050",
+        "HVDC-ADOPT-SCT-0052",
+        "HVDC-ADOPT-SCT-0053",
+        "HVDC-ADOPT-SCT-0054",
+        "HVDC-ADOPT-SCT-0055",
+        "HVDC-ADOPT-SCT-0057",
+        "HVDC-ADOPT-SCT-0058",
+        "HVDC-ADOPT-SCT-0059",
+        "HVDC-ADOPT-SCT-0060",
+        "HVDC-ADOPT-SCT-0062",
+        "HVDC-ADOPT-SCT-0066",
+        "HVDC-ADOPT-SCT-0067",
+        "HVDC-ADOPT-SCT-0068",
+        "HVDC-ADOPT-SCT-0070",
+        "HVDC-ADOPT-SCT-0071",
+        "HVDC-ADOPT-SCT-0072",
+        "HVDC-ADOPT-SCT-0073",
+        "HVDC-ADOPT-SCT-0074",
+        "HVDC-ADOPT-SCT-0076",
+        "HVDC-ADOPT-SCT-0081",
+        "HVDC-ADOPT-SCT-0082",
+        "HVDC-ADOPT-SCT-0083",
+        "HVDC-ADOPT-SCT-0084",
+        "HVDC-ADOPT-SCT-0085",
+        "HVDC-ADOPT-SCT-0087",
+        "HVDC-ADOPT-SCT-0089",
+        "HVDC-ADOPT-SCT-0093",
+        "HVDC-ADOPT-SCT-0094",
+        "HVDC-ADOPT-SCT-0096",
+        "HVDC-ADOPT-SCT-0098",
+        "HVDC-ADOPT-SCT-0101",
+        "HVDC-ADOPT-SCT-0106",
+        "HVDC-ADOPT-SCT-0107",
+        "HVDC-ADOPT-SCT-0108",
+        "HVDC-ADOPT-SCT-0109",
+        "HVDC-ADOPT-SCT-0115",
+        "HVDC-ADOPT-SCT-0117",
+        "HVDC-ADOPT-SCT-0118",
+        "HVDC-ADOPT-SCT-0121",
+        "HVDC-ADOPT-SCT-0122",
+        "HVDC-ADOPT-SCT-0124",
+        "HVDC-ADOPT-SCT-0126",
+        "HVDC-ADOPT-SCT-0132",
+        "HVDC-ADOPT-SCT-0135",
+        "HVDC-ADOPT-SCT-0138",
+        "HVDC-ADOPT-SCT-0140",
+        "HVDC-ADOPT-SCT-0143",
+        "HVDC-ADOPT-SCT-0144",
+        "HVDC-ADOPT-SCT-0146",
+        "HVDC-ADOPT-SCT-0151",
+        "HVDC-ADOPT-SCT-0159",
+        "HVDC-ADOPT-SCT-0166",
+        "HVDC-ADOPT-SCT-0170",
+        "HVDC-ADOPT-SCT-0174",
+        "HVDC-ADOPT-SIM-0001",
+        "HVDC-ADOPT-SIM-0005-1",
+        "HVDC-ADOPT-SIM-0005-2A",
+        "HVDC-ADOPT-SIM-0005-2B",
+        "HVDC-ADOPT-SIM-0006",
+        "HVDC-ADOPT-SIM-0018",
+        "HVDC-ADOPT-SIM-0024",
+        "HVDC-ADOPT-SIM-0025",
+        "HVDC-ADOPT-SIM-0048",
+        "HVDC-ADOPT-SIM-0049",
+        "HVDC-ADOPT-SIM-0050",
+        "HVDC-ADOPT-SIM-0079-B",
+        "HVDC-ADOPT-SIM-0080-A"
+      ],
+      "allocation_weight_sum": 139.24999999999997,
+      "cif_value_sum": 834541227.7389121,
+      "gross_weight_kg_sum": 4090188.5958333337,
+      "flow_codes": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "port:khalifa__site:MIR",
+      "source": "port:khalifa",
+      "target": "site:MIR",
+      "route_type": "pod_to_site",
+      "shipment_count": 167.75,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0014",
+        "HVDC-ADOPT-HE-0015",
+        "HVDC-ADOPT-HE-0025",
+        "HVDC-ADOPT-HE-0043",
+        "HVDC-ADOPT-HE-0044",
+        "HVDC-ADOPT-HE-0045",
+        "HVDC-ADOPT-HE-0046",
+        "HVDC-ADOPT-HE-0047",
+        "HVDC-ADOPT-HE-0058",
+        "HVDC-ADOPT-HE-0059",
+        "HVDC-ADOPT-HE-0072",
+        "HVDC-ADOPT-HE-0073",
+        "HVDC-ADOPT-HE-0078",
+        "HVDC-ADOPT-HE-0093",
+        "HVDC-ADOPT-HE-0097",
+        "HVDC-ADOPT-HE-0098",
+        "HVDC-ADOPT-HE-0102",
+        "HVDC-ADOPT-HE-0106",
+        "HVDC-ADOPT-HE-0107",
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109",
+        "HVDC-ADOPT-HE-0111",
+        "HVDC-ADOPT-HE-0112",
+        "HVDC-ADOPT-HE-0113",
+        "HVDC-ADOPT-HE-0115",
+        "HVDC-ADOPT-HE-0120",
+        "HVDC-ADOPT-HE-0121",
+        "HVDC-ADOPT-HE-0136",
+        "HVDC-ADOPT-HE-0137",
+        "HVDC-ADOPT-HE-0142",
+        "HVDC-ADOPT-HE-0145",
+        "HVDC-ADOPT-HE-0146",
+        "HVDC-ADOPT-HE-0149",
+        "HVDC-ADOPT-HE-0150",
+        "HVDC-ADOPT-HE-0151",
+        "HVDC-ADOPT-HE-0152",
+        "HVDC-ADOPT-HE-0153-1",
+        "HVDC-ADOPT-HE-0153-2",
+        "HVDC-ADOPT-HE-0154-1",
+        "HVDC-ADOPT-HE-0154-2",
+        "HVDC-ADOPT-HE-0155",
+        "HVDC-ADOPT-HE-0156",
+        "HVDC-ADOPT-HE-0157",
+        "HVDC-ADOPT-HE-0177",
+        "HVDC-ADOPT-HE-0183",
+        "HVDC-ADOPT-HE-0184",
+        "HVDC-ADOPT-HE-0188",
+        "HVDC-ADOPT-HE-0189",
+        "HVDC-ADOPT-HE-0190",
+        "HVDC-ADOPT-HE-0191",
+        "HVDC-ADOPT-HE-0203",
+        "HVDC-ADOPT-HE-0207",
+        "HVDC-ADOPT-HE-0211",
+        "HVDC-ADOPT-HE-0217",
+        "HVDC-ADOPT-HE-0221",
+        "HVDC-ADOPT-HE-0234",
+        "HVDC-ADOPT-HE-0236",
+        "HVDC-ADOPT-HE-0239",
+        "HVDC-ADOPT-HE-0241",
+        "HVDC-ADOPT-HE-0248",
+        "HVDC-ADOPT-HE-0249",
+        "HVDC-ADOPT-HE-0250",
+        "HVDC-ADOPT-HE-0253",
+        "HVDC-ADOPT-HE-0260",
+        "HVDC-ADOPT-HE-0261",
+        "HVDC-ADOPT-HE-0270",
+        "HVDC-ADOPT-HE-0271",
+        "HVDC-ADOPT-HE-0280",
+        "HVDC-ADOPT-HE-0281",
+        "HVDC-ADOPT-HE-0282",
+        "HVDC-ADOPT-HE-0283",
+        "HVDC-ADOPT-HE-0291",
+        "HVDC-ADOPT-HE-0294",
+        "HVDC-ADOPT-HE-0298",
+        "HVDC-ADOPT-HE-0303",
+        "HVDC-ADOPT-HE-0304",
+        "HVDC-ADOPT-HE-0321",
+        "HVDC-ADOPT-HE-0324",
+        "HVDC-ADOPT-HE-0329",
+        "HVDC-ADOPT-HE-0337",
+        "HVDC-ADOPT-HE-0340",
+        "HVDC-ADOPT-HE-0341",
+        "HVDC-ADOPT-HE-0342",
+        "HVDC-ADOPT-HE-0346",
+        "HVDC-ADOPT-HE-0347",
+        "HVDC-ADOPT-HE-0351",
+        "HVDC-ADOPT-HE-0358",
+        "HVDC-ADOPT-HE-0362",
+        "HVDC-ADOPT-HE-0364",
+        "HVDC-ADOPT-HE-0365",
+        "HVDC-ADOPT-HE-0374",
+        "HVDC-ADOPT-HE-0377",
+        "HVDC-ADOPT-HE-0378",
+        "HVDC-ADOPT-HE-0379",
+        "HVDC-ADOPT-HE-0382",
+        "HVDC-ADOPT-HE-0391",
+        "HVDC-ADOPT-HE-0392",
+        "HVDC-ADOPT-HE-0395",
+        "HVDC-ADOPT-HE-0400",
+        "HVDC-ADOPT-HE-0414",
+        "HVDC-ADOPT-HE-0423",
+        "HVDC-ADOPT-HE-0427",
+        "HVDC-ADOPT-HE-0428",
+        "HVDC-ADOPT-HE-0430",
+        "HVDC-ADOPT-HE-0431",
+        "HVDC-ADOPT-HE-0434",
+        "HVDC-ADOPT-HE-0436",
+        "HVDC-ADOPT-HE-0437",
+        "HVDC-ADOPT-HE-0456",
+        "HVDC-ADOPT-HE-0459",
+        "HVDC-ADOPT-HE-0460",
+        "HVDC-ADOPT-HE-0465",
+        "HVDC-ADOPT-HE-0468",
+        "HVDC-ADOPT-HE-0471",
+        "HVDC-ADOPT-HE-0472",
+        "HVDC-ADOPT-HE-0473",
+        "HVDC-ADOPT-HE-0475",
+        "HVDC-ADOPT-HE-0505",
+        "HVDC-ADOPT-HE-0512",
+        "HVDC-ADOPT-HE-0515",
+        "HVDC-ADOPT-HE-0522",
+        "HVDC-ADOPT-HE-0523",
+        "HVDC-ADOPT-PPL-0003",
+        "HVDC-ADOPT-PPL-0004",
+        "HVDC-ADOPT-PPL-0014",
+        "HVDC-ADOPT-SCT-0001",
+        "HVDC-ADOPT-SCT-0003",
+        "HVDC-ADOPT-SCT-0006",
+        "HVDC-ADOPT-SCT-0007",
+        "HVDC-ADOPT-SCT-0008",
+        "HVDC-ADOPT-SCT-0013",
+        "HVDC-ADOPT-SCT-0014",
+        "HVDC-ADOPT-SCT-0015",
+        "HVDC-ADOPT-SCT-0016",
+        "HVDC-ADOPT-SCT-0017",
+        "HVDC-ADOPT-SCT-0018",
+        "HVDC-ADOPT-SCT-0019",
+        "HVDC-ADOPT-SCT-0020",
+        "HVDC-ADOPT-SCT-0021",
+        "HVDC-ADOPT-SCT-0022",
+        "HVDC-ADOPT-SCT-0023",
+        "HVDC-ADOPT-SCT-0024",
+        "HVDC-ADOPT-SCT-0025",
+        "HVDC-ADOPT-SCT-0026",
+        "HVDC-ADOPT-SCT-0028",
+        "HVDC-ADOPT-SCT-0030",
+        "HVDC-ADOPT-SCT-0031",
+        "HVDC-ADOPT-SCT-0032",
+        "HVDC-ADOPT-SCT-0034",
+        "HVDC-ADOPT-SCT-0035",
+        "HVDC-ADOPT-SCT-0036",
+        "HVDC-ADOPT-SCT-0037",
+        "HVDC-ADOPT-SCT-0038",
+        "HVDC-ADOPT-SCT-0039",
+        "HVDC-ADOPT-SCT-0042",
+        "HVDC-ADOPT-SCT-0043",
+        "HVDC-ADOPT-SCT-0045",
+        "HVDC-ADOPT-SCT-0049",
+        "HVDC-ADOPT-SCT-0050",
+        "HVDC-ADOPT-SCT-0051",
+        "HVDC-ADOPT-SCT-0052",
+        "HVDC-ADOPT-SCT-0053",
+        "HVDC-ADOPT-SCT-0054",
+        "HVDC-ADOPT-SCT-0055",
+        "HVDC-ADOPT-SCT-0057",
+        "HVDC-ADOPT-SCT-0058",
+        "HVDC-ADOPT-SCT-0059",
+        "HVDC-ADOPT-SCT-0060",
+        "HVDC-ADOPT-SCT-0062",
+        "HVDC-ADOPT-SCT-0066",
+        "HVDC-ADOPT-SCT-0067",
+        "HVDC-ADOPT-SCT-0068",
+        "HVDC-ADOPT-SCT-0070",
+        "HVDC-ADOPT-SCT-0071",
+        "HVDC-ADOPT-SCT-0072",
+        "HVDC-ADOPT-SCT-0073",
+        "HVDC-ADOPT-SCT-0076",
+        "HVDC-ADOPT-SCT-0081",
+        "HVDC-ADOPT-SCT-0082",
+        "HVDC-ADOPT-SCT-0083",
+        "HVDC-ADOPT-SCT-0084",
+        "HVDC-ADOPT-SCT-0085",
+        "HVDC-ADOPT-SCT-0086",
+        "HVDC-ADOPT-SCT-0087",
+        "HVDC-ADOPT-SCT-0089",
+        "HVDC-ADOPT-SCT-0093",
+        "HVDC-ADOPT-SCT-0094",
+        "HVDC-ADOPT-SCT-0096",
+        "HVDC-ADOPT-SCT-0097-1",
+        "HVDC-ADOPT-SCT-0097-2",
+        "HVDC-ADOPT-SCT-0098",
+        "HVDC-ADOPT-SCT-0101",
+        "HVDC-ADOPT-SCT-0106",
+        "HVDC-ADOPT-SCT-0107",
+        "HVDC-ADOPT-SCT-0108",
+        "HVDC-ADOPT-SCT-0109",
+        "HVDC-ADOPT-SCT-0110",
+        "HVDC-ADOPT-SCT-0112",
+        "HVDC-ADOPT-SCT-0113",
+        "HVDC-ADOPT-SCT-0114",
+        "HVDC-ADOPT-SCT-0115",
+        "HVDC-ADOPT-SCT-0117",
+        "HVDC-ADOPT-SCT-0120",
+        "HVDC-ADOPT-SCT-0121",
+        "HVDC-ADOPT-SCT-0122",
+        "HVDC-ADOPT-SCT-0123",
+        "HVDC-ADOPT-SCT-0124",
+        "HVDC-ADOPT-SCT-0126",
+        "HVDC-ADOPT-SCT-0128",
+        "HVDC-ADOPT-SCT-0132",
+        "HVDC-ADOPT-SCT-0135",
+        "HVDC-ADOPT-SCT-0140",
+        "HVDC-ADOPT-SCT-0142",
+        "HVDC-ADOPT-SCT-0143",
+        "HVDC-ADOPT-SCT-0151",
+        "HVDC-ADOPT-SCT-0154",
+        "HVDC-ADOPT-SCT-0166",
+        "HVDC-ADOPT-SCT-0171",
+        "HVDC-ADOPT-SCT-0174",
+        "HVDC-ADOPT-SIM-0001",
+        "HVDC-ADOPT-SIM-0002",
+        "HVDC-ADOPT-SIM-0012-A",
+        "HVDC-ADOPT-SIM-0012-B",
+        "HVDC-ADOPT-SIM-0012-C",
+        "HVDC-ADOPT-SIM-0013",
+        "HVDC-ADOPT-SIM-0014-B",
+        "HVDC-ADOPT-SIM-0015",
+        "HVDC-ADOPT-SIM-0016",
+        "HVDC-ADOPT-SIM-0018",
+        "HVDC-ADOPT-SIM-0019-A",
+        "HVDC-ADOPT-SIM-0019-B",
+        "HVDC-ADOPT-SIM-0019-C",
+        "HVDC-ADOPT-SIM-0019-D",
+        "HVDC-ADOPT-SIM-0021",
+        "HVDC-ADOPT-SIM-0029",
+        "HVDC-ADOPT-SIM-0032",
+        "HVDC-ADOPT-SIM-0033",
+        "HVDC-ADOPT-SIM-0035",
+        "HVDC-ADOPT-SIM-0038",
+        "HVDC-ADOPT-SIM-0040",
+        "HVDC-ADOPT-SIM-0061",
+        "HVDC-ADOPT-SIM-0064",
+        "HVDC-ADOPT-SIM-0065",
+        "HVDC-ADOPT-SIM-0066",
+        "HVDC-ADOPT-SIM-0080-C"
+      ],
+      "allocation_weight_sum": 167.75,
+      "cif_value_sum": 782320641.1735784,
+      "gross_weight_kg_sum": 5824259.495833333,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "port:khalifa__site:SHU",
+      "source": "port:khalifa",
+      "target": "site:SHU",
+      "route_type": "pod_to_site",
+      "shipment_count": 185.9166666666667,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0016",
+        "HVDC-ADOPT-HE-0017",
+        "HVDC-ADOPT-HE-0021",
+        "HVDC-ADOPT-HE-0024",
+        "HVDC-ADOPT-HE-0028",
+        "HVDC-ADOPT-HE-0038",
+        "HVDC-ADOPT-HE-0039",
+        "HVDC-ADOPT-HE-0040",
+        "HVDC-ADOPT-HE-0041",
+        "HVDC-ADOPT-HE-0042",
+        "HVDC-ADOPT-HE-0053",
+        "HVDC-ADOPT-HE-0054",
+        "HVDC-ADOPT-HE-0055",
+        "HVDC-ADOPT-HE-0056",
+        "HVDC-ADOPT-HE-0057",
+        "HVDC-ADOPT-HE-0068-1",
+        "HVDC-ADOPT-HE-0068-2",
+        "HVDC-ADOPT-HE-0069",
+        "HVDC-ADOPT-HE-0070",
+        "HVDC-ADOPT-HE-0075",
+        "HVDC-ADOPT-HE-0080-1",
+        "HVDC-ADOPT-HE-0080-2",
+        "HVDC-ADOPT-HE-0081",
+        "HVDC-ADOPT-HE-0082",
+        "HVDC-ADOPT-HE-0083",
+        "HVDC-ADOPT-HE-0084-1",
+        "HVDC-ADOPT-HE-0084-2",
+        "HVDC-ADOPT-HE-0093",
+        "HVDC-ADOPT-HE-0095",
+        "HVDC-ADOPT-HE-0096",
+        "HVDC-ADOPT-HE-0099",
+        "HVDC-ADOPT-HE-0100",
+        "HVDC-ADOPT-HE-0102",
+        "HVDC-ADOPT-HE-0108",
+        "HVDC-ADOPT-HE-0109",
+        "HVDC-ADOPT-HE-0117",
+        "HVDC-ADOPT-HE-0122",
+        "HVDC-ADOPT-HE-0123",
+        "HVDC-ADOPT-HE-0124",
+        "HVDC-ADOPT-HE-0125",
+        "HVDC-ADOPT-HE-0126",
+        "HVDC-ADOPT-HE-0130",
+        "HVDC-ADOPT-HE-0131",
+        "HVDC-ADOPT-HE-0134",
+        "HVDC-ADOPT-HE-0135",
+        "HVDC-ADOPT-HE-0164",
+        "HVDC-ADOPT-HE-0165",
+        "HVDC-ADOPT-HE-0166",
+        "HVDC-ADOPT-HE-0167",
+        "HVDC-ADOPT-HE-0168",
+        "HVDC-ADOPT-HE-0169",
+        "HVDC-ADOPT-HE-0170",
+        "HVDC-ADOPT-HE-0171",
+        "HVDC-ADOPT-HE-0172",
+        "HVDC-ADOPT-HE-0183",
+        "HVDC-ADOPT-HE-0184",
+        "HVDC-ADOPT-HE-0185",
+        "HVDC-ADOPT-HE-0186",
+        "HVDC-ADOPT-HE-0194",
+        "HVDC-ADOPT-HE-0195",
+        "HVDC-ADOPT-HE-0196",
+        "HVDC-ADOPT-HE-0197",
+        "HVDC-ADOPT-HE-0198",
+        "HVDC-ADOPT-HE-0199",
+        "HVDC-ADOPT-HE-0214",
+        "HVDC-ADOPT-HE-0216",
+        "HVDC-ADOPT-HE-0220",
+        "HVDC-ADOPT-HE-0236",
+        "HVDC-ADOPT-HE-0242",
+        "HVDC-ADOPT-HE-0243",
+        "HVDC-ADOPT-HE-0245",
+        "HVDC-ADOPT-HE-0246",
+        "HVDC-ADOPT-HE-0247",
+        "HVDC-ADOPT-HE-0254",
+        "HVDC-ADOPT-HE-0255",
+        "HVDC-ADOPT-HE-0258",
+        "HVDC-ADOPT-HE-0259",
+        "HVDC-ADOPT-HE-0262",
+        "HVDC-ADOPT-HE-0266",
+        "HVDC-ADOPT-HE-0272",
+        "HVDC-ADOPT-HE-0273",
+        "HVDC-ADOPT-HE-0274",
+        "HVDC-ADOPT-HE-0275",
+        "HVDC-ADOPT-HE-0284",
+        "HVDC-ADOPT-HE-0285",
+        "HVDC-ADOPT-HE-0286",
+        "HVDC-ADOPT-HE-0287",
+        "HVDC-ADOPT-HE-0292",
+        "HVDC-ADOPT-HE-0293",
+        "HVDC-ADOPT-HE-0294",
+        "HVDC-ADOPT-HE-0296",
+        "HVDC-ADOPT-HE-0297",
+        "HVDC-ADOPT-HE-0299",
+        "HVDC-ADOPT-HE-0305",
+        "HVDC-ADOPT-HE-0306",
+        "HVDC-ADOPT-HE-0311-1",
+        "HVDC-ADOPT-HE-0311-2",
+        "HVDC-ADOPT-HE-0327",
+        "HVDC-ADOPT-HE-0328",
+        "HVDC-ADOPT-HE-0333",
+        "HVDC-ADOPT-HE-0334",
+        "HVDC-ADOPT-HE-0335",
+        "HVDC-ADOPT-HE-0339",
+        "HVDC-ADOPT-HE-0341",
+        "HVDC-ADOPT-HE-0344",
+        "HVDC-ADOPT-HE-0345",
+        "HVDC-ADOPT-HE-0349",
+        "HVDC-ADOPT-HE-0355",
+        "HVDC-ADOPT-HE-0362",
+        "HVDC-ADOPT-HE-0364",
+        "HVDC-ADOPT-HE-0365",
+        "HVDC-ADOPT-HE-0366",
+        "HVDC-ADOPT-HE-0387-1",
+        "HVDC-ADOPT-HE-0387-2",
+        "HVDC-ADOPT-HE-0388",
+        "HVDC-ADOPT-HE-0389",
+        "HVDC-ADOPT-HE-0390",
+        "HVDC-ADOPT-HE-0400",
+        "HVDC-ADOPT-HE-0414",
+        "HVDC-ADOPT-HE-0424",
+        "HVDC-ADOPT-HE-0425",
+        "HVDC-ADOPT-HE-0426",
+        "HVDC-ADOPT-HE-0430",
+        "HVDC-ADOPT-HE-0442",
+        "HVDC-ADOPT-HE-0450",
+        "HVDC-ADOPT-HE-0452",
+        "HVDC-ADOPT-HE-0454",
+        "HVDC-ADOPT-HE-0455",
+        "HVDC-ADOPT-HE-0458",
+        "HVDC-ADOPT-HE-0466",
+        "HVDC-ADOPT-HE-0476",
+        "HVDC-ADOPT-HE-0482",
+        "HVDC-ADOPT-HE-0507",
+        "HVDC-ADOPT-HE-0514",
+        "HVDC-ADOPT-HE-0521",
+        "HVDC-ADOPT-HE-0524",
+        "HVDC-ADOPT-SCT-0001",
+        "HVDC-ADOPT-SCT-0002",
+        "HVDC-ADOPT-SCT-0003",
+        "HVDC-ADOPT-SCT-0004",
+        "HVDC-ADOPT-SCT-0006",
+        "HVDC-ADOPT-SCT-0010",
+        "HVDC-ADOPT-SCT-0012",
+        "HVDC-ADOPT-SCT-0013",
+        "HVDC-ADOPT-SCT-0014",
+        "HVDC-ADOPT-SCT-0018",
+        "HVDC-ADOPT-SCT-0019",
+        "HVDC-ADOPT-SCT-0021",
+        "HVDC-ADOPT-SCT-0023",
+        "HVDC-ADOPT-SCT-0024",
+        "HVDC-ADOPT-SCT-0025",
+        "HVDC-ADOPT-SCT-0026",
+        "HVDC-ADOPT-SCT-0030",
+        "HVDC-ADOPT-SCT-0031",
+        "HVDC-ADOPT-SCT-0032",
+        "HVDC-ADOPT-SCT-0034",
+        "HVDC-ADOPT-SCT-0035",
+        "HVDC-ADOPT-SCT-0036",
+        "HVDC-ADOPT-SCT-0037",
+        "HVDC-ADOPT-SCT-0038",
+        "HVDC-ADOPT-SCT-0039",
+        "HVDC-ADOPT-SCT-0042",
+        "HVDC-ADOPT-SCT-0043",
+        "HVDC-ADOPT-SCT-0047",
+        "HVDC-ADOPT-SCT-0049",
+        "HVDC-ADOPT-SCT-0050",
+        "HVDC-ADOPT-SCT-0051",
+        "HVDC-ADOPT-SCT-0052",
+        "HVDC-ADOPT-SCT-0053",
+        "HVDC-ADOPT-SCT-0054",
+        "HVDC-ADOPT-SCT-0055",
+        "HVDC-ADOPT-SCT-0057",
+        "HVDC-ADOPT-SCT-0058",
+        "HVDC-ADOPT-SCT-0059",
+        "HVDC-ADOPT-SCT-0060",
+        "HVDC-ADOPT-SCT-0062",
+        "HVDC-ADOPT-SCT-0066",
+        "HVDC-ADOPT-SCT-0067",
+        "HVDC-ADOPT-SCT-0068",
+        "HVDC-ADOPT-SCT-0070",
+        "HVDC-ADOPT-SCT-0071",
+        "HVDC-ADOPT-SCT-0072",
+        "HVDC-ADOPT-SCT-0073",
+        "HVDC-ADOPT-SCT-0076",
+        "HVDC-ADOPT-SCT-0081",
+        "HVDC-ADOPT-SCT-0082",
+        "HVDC-ADOPT-SCT-0083",
+        "HVDC-ADOPT-SCT-0084",
+        "HVDC-ADOPT-SCT-0085",
+        "HVDC-ADOPT-SCT-0086",
+        "HVDC-ADOPT-SCT-0087",
+        "HVDC-ADOPT-SCT-0089",
+        "HVDC-ADOPT-SCT-0092",
+        "HVDC-ADOPT-SCT-0093",
+        "HVDC-ADOPT-SCT-0094",
+        "HVDC-ADOPT-SCT-0095",
+        "HVDC-ADOPT-SCT-0096",
+        "HVDC-ADOPT-SCT-0097-1",
+        "HVDC-ADOPT-SCT-0097-2",
+        "HVDC-ADOPT-SCT-0101",
+        "HVDC-ADOPT-SCT-0102",
+        "HVDC-ADOPT-SCT-0106",
+        "HVDC-ADOPT-SCT-0107",
+        "HVDC-ADOPT-SCT-0108",
+        "HVDC-ADOPT-SCT-0109",
+        "HVDC-ADOPT-SCT-0110",
+        "HVDC-ADOPT-SCT-0112",
+        "HVDC-ADOPT-SCT-0113",
+        "HVDC-ADOPT-SCT-0114",
+        "HVDC-ADOPT-SCT-0115",
+        "HVDC-ADOPT-SCT-0117",
+        "HVDC-ADOPT-SCT-0120",
+        "HVDC-ADOPT-SCT-0121",
+        "HVDC-ADOPT-SCT-0122",
+        "HVDC-ADOPT-SCT-0124",
+        "HVDC-ADOPT-SCT-0126",
+        "HVDC-ADOPT-SCT-0132",
+        "HVDC-ADOPT-SCT-0135",
+        "HVDC-ADOPT-SCT-0140",
+        "HVDC-ADOPT-SCT-0143",
+        "HVDC-ADOPT-SCT-0144",
+        "HVDC-ADOPT-SCT-0151",
+        "HVDC-ADOPT-SCT-0154",
+        "HVDC-ADOPT-SCT-0166",
+        "HVDC-ADOPT-SCT-0171",
+        "HVDC-ADOPT-SCT-0174",
+        "HVDC-ADOPT-SEI-0003",
+        "HVDC-ADOPT-SEI-0006",
+        "HVDC-ADOPT-SEI-0008",
+        "HVDC-ADOPT-SEI-0009",
+        "HVDC-ADOPT-SEI-0013",
+        "HVDC-ADOPT-SEI-0014",
+        "HVDC-ADOPT-SEI-0017-01",
+        "HVDC-ADOPT-SEI-0017-02",
+        "HVDC-ADOPT-SEI-0018",
+        "HVDC-ADOPT-SIM-0001",
+        "HVDC-ADOPT-SIM-0002",
+        "HVDC-ADOPT-SIM-0009-1A",
+        "HVDC-ADOPT-SIM-0009-1B",
+        "HVDC-ADOPT-SIM-0009-2A",
+        "HVDC-ADOPT-SIM-0009-2B",
+        "HVDC-ADOPT-SIM-0010",
+        "HVDC-ADOPT-SIM-0014-A",
+        "HVDC-ADOPT-SIM-0017-A",
+        "HVDC-ADOPT-SIM-0017-B",
+        "HVDC-ADOPT-SIM-0018",
+        "HVDC-ADOPT-SIM-0020",
+        "HVDC-ADOPT-SIM-0027",
+        "HVDC-ADOPT-SIM-0028-A",
+        "HVDC-ADOPT-SIM-0028-B",
+        "HVDC-ADOPT-SIM-0029",
+        "HVDC-ADOPT-SIM-0034",
+        "HVDC-ADOPT-SIM-0039",
+        "HVDC-ADOPT-SIM-0043",
+        "HVDC-ADOPT-SIM-0044",
+        "HVDC-ADOPT-SIM-0045",
+        "HVDC-ADOPT-SIM-0053",
+        "HVDC-ADOPT-SIM-0054",
+        "HVDC-ADOPT-SIM-0055",
+        "HVDC-ADOPT-SIM-0056",
+        "HVDC-ADOPT-SIM-0066",
+        "HVDC-ADOPT-SIM-0080-D"
+      ],
+      "allocation_weight_sum": 185.9166666666667,
+      "cif_value_sum": 1411616932.2988453,
+      "gross_weight_kg_sum": 5151381.979166665,
+      "flow_codes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "port:mina_zayed__site:AGI",
+      "source": "port:mina_zayed",
+      "target": "site:AGI",
+      "route_type": "pod_to_site",
+      "shipment_count": 3.5,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0182",
+        "HVDC-ADOPT-HE-0205",
+        "HVDC-ADOPT-HE-0215",
+        "HVDC-ADOPT-PPL-0009"
+      ],
+      "allocation_weight_sum": 3.5,
+      "cif_value_sum": 387865016.645,
+      "gross_weight_kg_sum": 1698678.0,
+      "flow_codes": [
+        4
+      ]
+    },
+    {
+      "id": "port:mina_zayed__site:DAS",
+      "source": "port:mina_zayed",
+      "target": "site:DAS",
+      "route_type": "pod_to_site",
+      "shipment_count": 3.5,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0088",
+        "HVDC-ADOPT-HE-0089",
+        "HVDC-ADOPT-HE-0178",
+        "HVDC-ADOPT-SEI-0001"
+      ],
+      "allocation_weight_sum": 3.5,
+      "cif_value_sum": 3124247326.6,
+      "gross_weight_kg_sum": 3675260.7,
+      "flow_codes": [
+        4
+      ]
+    },
+    {
+      "id": "port:mina_zayed__site:MIR",
+      "source": "port:mina_zayed",
+      "target": "site:MIR",
+      "route_type": "pod_to_site",
+      "shipment_count": 12.5,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0085",
+        "HVDC-ADOPT-HE-0110",
+        "HVDC-ADOPT-HE-0161",
+        "HVDC-ADOPT-HE-0213",
+        "HVDC-ADOPT-HE-0232",
+        "HVDC-ADOPT-PPL-0001",
+        "HVDC-ADOPT-PPL-0002",
+        "HVDC-ADOPT-PPL-0005",
+        "HVDC-ADOPT-PPL-0006",
+        "HVDC-ADOPT-PPL-0007",
+        "HVDC-ADOPT-PPL-0008",
+        "HVDC-ADOPT-PPL-0009",
+        "HVDC-ADOPT-SEI-0005"
+      ],
+      "allocation_weight_sum": 12.5,
+      "cif_value_sum": 458224962.435,
+      "gross_weight_kg_sum": 3106044.182,
+      "flow_codes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "port:mina_zayed__site:SHU",
+      "source": "port:mina_zayed",
+      "target": "site:SHU",
+      "route_type": "pod_to_site",
+      "shipment_count": 2.5,
+      "shipment_ids": [
+        "HVDC-ADOPT-SEI-0001",
+        "HVDC-ADOPT-SEI-0002",
+        "HVDC-ADOPT-SEI-0004-1"
+      ],
+      "allocation_weight_sum": 2.5,
+      "cif_value_sum": 8848898596.6,
+      "gross_weight_kg_sum": 7835752.7,
+      "flow_codes": [
+        2
+      ]
+    },
+    {
+      "id": "port:mir__site:AGI",
+      "source": "port:mir",
+      "target": "site:AGI",
+      "route_type": "pod_to_site",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499-6"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 1453100.0,
+      "gross_weight_kg_sum": 30840.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "port:mir__site:MIR",
+      "source": "port:mir",
+      "target": "site:MIR",
+      "route_type": "pod_to_site",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499-12",
+        "HVDC-ADOPT-HE-0499-5"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 1481848.0,
+      "gross_weight_kg_sum": 30890.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "port:mosb__site:AGI",
+      "source": "port:mosb",
+      "target": "site:AGI",
+      "route_type": "pod_to_site",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499-10",
+        "HVDC-ADOPT-HE-0499-8",
+        "HVDC-ADOPT-HE-0499-9"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 1481848.0,
+      "gross_weight_kg_sum": 30890.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "port:mosb__site:DAS",
+      "source": "port:mosb",
+      "target": "site:DAS",
+      "route_type": "pod_to_site",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499",
+        "HVDC-ADOPT-HE-0499-11",
+        "HVDC-ADOPT-HE-0499-2"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 2934948.0,
+      "gross_weight_kg_sum": 33150.0,
+      "flow_codes": [
+        3
+      ]
+    },
+    {
+      "id": "port:muharraq__site:SHU",
+      "source": "port:muharraq",
+      "target": "site:SHU",
+      "route_type": "pod_to_site",
+      "shipment_count": 3.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0116",
+        "HVDC-ADOPT-HE-0143",
+        "HVDC-ADOPT-HE-0144"
+      ],
+      "allocation_weight_sum": 3.0,
+      "cif_value_sum": 335957096.28999996,
+      "gross_weight_kg_sum": 1618021.0,
+      "flow_codes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "port:shu__site:SHU",
+      "source": "port:shu",
+      "target": "site:SHU",
+      "route_type": "pod_to_site",
+      "shipment_count": 2.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-HE-0499-1",
+        "HVDC-ADOPT-HE-0499-13"
+      ],
+      "allocation_weight_sum": 2.0,
+      "cif_value_sum": 1481848.0,
+      "gross_weight_kg_sum": 30890.0,
+      "flow_codes": [
+        1
+      ]
+    },
+    {
+      "id": "port:uae__site:MIR",
+      "source": "port:uae",
+      "target": "site:MIR",
+      "route_type": "pod_to_site",
+      "shipment_count": 1.0,
+      "shipment_ids": [
+        "HVDC-ADOPT-PPL-0010"
+      ],
+      "allocation_weight_sum": 1.0,
+      "cif_value_sum": 99000.0,
+      "gross_weight_kg_sum": 1657.0,
+      "flow_codes": [
+        2
+      ]
+    }
+  ]
+}
