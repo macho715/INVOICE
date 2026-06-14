@@ -1,0 +1,36 @@
+{
+  "rate_source_success_order": [
+    "CONTRACT",
+    "AT COST",
+    "nan"
+  ],
+  "avg_gate_score": 66.21621621621621,
+  "pdf_validation_correlation": 100.0,
+  "common_descriptions": [
+    "CUSTOMS CLEARANCE FEE",
+    "DELIVERY ORDER, TERMINAL HANDLING, DO & LOCAL DHL FEE",
+    "MASTER DO FEE",
+    "TERMINAL HANDLING FEE (1 X 20DC)",
+    "TRANSPORTATION CHARGES (1 X 20DC) FROM KHALIFA PORT TO DSV M"
+  ],
+  "improvement_recommendations": [
+    {
+      "issue": "CONTRACT Rate 매칭 실패",
+      "count": 22,
+      "solution": "Rate Loader 규칙 추가 또는 Contract Rate 데이터 업데이트",
+      "priority": "HIGH"
+    },
+    {
+      "issue": "Low Gate Score",
+      "count": 14,
+      "solution": "증빙서류 보완 또는 Gate 검증 로직 개선",
+      "priority": "MEDIUM"
+    },
+    {
+      "issue": "PDF 검증 미실행",
+      "count": 14,
+      "solution": "Supporting Documents 폴더 구조 확인 및 PDF 파일 매칭 개선",
+      "priority": "MEDIUM"
+    }
+  ]
+}

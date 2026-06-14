@@ -1,0 +1,330 @@
+{
+  "report_metadata": {
+    "title": "DSV SHPT Technical Debt Management Report",
+    "generated_at": "2025-10-14T19:18:28.777536",
+    "manager_version": "1.0.0",
+    "scope": "Comprehensive technical debt resolution plan"
+  },
+  "executive_summary": {
+    "total_technical_debts": 4,
+    "cleanup_actions_required": 3,
+    "estimated_resolution_time": "7-8 weeks",
+    "priority_distribution": {
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 0
+    },
+    "severity_distribution": {
+      "CRITICAL": 1,
+      "HIGH": 1,
+      "MEDIUM": 1,
+      "LOW": 1
+    },
+    "key_areas": [
+      "코드 중복 685개 블록 해결",
+      "테스트 커버리지 0% → 90% 향상",
+      "파일 구조 정리 및 네이밍 표준화",
+      "문서화 체계 구축"
+    ]
+  },
+  "file_system_analysis": {
+    "total_files": {
+      "python": 29,
+      "documentation": 14,
+      "configuration": 16,
+      "results": 21
+    },
+    "file_categories": {
+      "backup_files": 2,
+      "test_files": 1,
+      "temp_files": 0
+    }
+  },
+  "technical_debts": [
+    {
+      "debt_id": "TD001",
+      "category": "File Management",
+      "description": "2개의 백업 파일이 프로덕션 코드와 함께 존재",
+      "severity": "MEDIUM",
+      "affected_files": [
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\comprehensive_invoice_validator_backup.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\create_enhanced_excel_report_backup.py"
+      ],
+      "resolution_plan": "백업 파일을 별도 Archive 폴더로 이동",
+      "estimated_effort": "2-3 hours",
+      "risk_if_not_resolved": "코드 베이스 혼란, 잘못된 파일 수정 위험",
+      "priority": 2
+    },
+    {
+      "debt_id": "TD002",
+      "category": "Naming Convention",
+      "description": "파일명 네이밍 컨벤션 비일관성",
+      "severity": "LOW",
+      "affected_files": [
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\create_enhanced_excel_report_backup.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_code_quality_auditor_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_contract_validation_gap_analysis_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_integration_architecture_designer_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_tdd_strategy_planner_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_technical_debt_manager_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\shpt_sept_2025_enhanced_audit.py"
+      ],
+      "resolution_plan": "snake_case 통일, 의미있는 이름으로 리네이밍",
+      "estimated_effort": "1-2 days",
+      "risk_if_not_resolved": "개발자 생산성 저하, 코드 탐색 어려움",
+      "priority": 3
+    },
+    {
+      "debt_id": "TD003",
+      "category": "Code Duplication",
+      "description": "685개의 중복 코드 블록 및 19개 중복 함수 존재",
+      "severity": "HIGH",
+      "affected_files": [
+        "Multiple files with duplicated logic"
+      ],
+      "resolution_plan": "공통 유틸리티 모듈 추출, 중복 로직 통합",
+      "estimated_effort": "2-3 weeks",
+      "risk_if_not_resolved": "유지보수성 저하, 버그 증가",
+      "priority": 1
+    },
+    {
+      "debt_id": "TD004",
+      "category": "Test Coverage",
+      "description": "테스트 커버리지 0%, 160개 누락 테스트 케이스",
+      "severity": "CRITICAL",
+      "affected_files": [
+        "All production code without tests"
+      ],
+      "resolution_plan": "TDD 전략에 따른 체계적 테스트 작성",
+      "estimated_effort": "18 weeks",
+      "risk_if_not_resolved": "시스템 안정성 저하, 버그 발생률 증가",
+      "priority": 1
+    }
+  ],
+  "cleanup_actions": [
+    {
+      "action_id": "CA001",
+      "action_type": "Archive",
+      "target_files": [
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\comprehensive_invoice_validator_backup.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\create_enhanced_excel_report_backup.py"
+      ],
+      "description": "백업 파일들을 Archive/Backups/ 폴더로 이동",
+      "automated": true,
+      "verification_steps": [
+        "백업 파일이 Archive 폴더로 이동되었는지 확인",
+        "원본 기능이 영향받지 않았는지 테스트",
+        "Archive 매니페스트 파일 생성"
+      ]
+    },
+    {
+      "action_id": "CA002",
+      "action_type": "Organize",
+      "target_files": [
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_code_quality_auditor_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_contract_validation_gap_analysis_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_dependency_analyzer_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_integration_architecture_designer_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_performance_analyzer_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_tdd_strategy_planner_251014.py",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\logi_technical_debt_manager_251014.py"
+      ],
+      "description": "분석 도구들을 tools/ 또는 utils/ 폴더로 정리",
+      "automated": false,
+      "verification_steps": [
+        "도구별 용도 및 재사용성 검토",
+        "프로덕션 코드와 분리",
+        "도구 실행 스크립트 생성"
+      ]
+    },
+    {
+      "action_id": "CA003",
+      "action_type": "Organize",
+      "target_files": [
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\README.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\CONTRACT_ANALYSIS_SUMMARY.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\PDF_INTEGRATION_COMPLETE_REPORT_INDEX.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\PDF_INTEGRATION_COMPLETE_REPORT_PART1_OVERVIEW.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\PDF_INTEGRATION_COMPLETE_REPORT_PART2_ALGORITHMS.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\PDF_INTEGRATION_COMPLETE_REPORT_PART3_IMPLEMENTATION.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\PDF_INTEGRATION_COMPLETE_REPORT_PART4_ARCHITECTURE.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\PDF_INTEGRATION_GUIDE.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\SHPT_SYSTEM_UPDATE_SUMMARY.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\SYSTEM_ARCHITECTURE_FINAL.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Results\\Sept_2025\\Reports\\SHPT_SEPT_2025_CONTRACT_IMPROVED_REPORT.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Results\\Sept_2025\\Reports\\SHPT_SEPT_2025_FINAL_REPORT.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Documentation\\Technical\\CONTRACT_RATE_VALIDATION_ANALYSIS.md",
+        "C:\\Users\\minky\\Downloads\\HVDC_Invoice_Audit-20251012T195441Z-1-001\\HVDC_Invoice_Audit\\01_DSV_SHPT\\Core_Systems\\.pytest_cache\\README.md"
+      ],
+      "description": "문서 파일들을 계층적 구조로 정리",
+      "automated": false,
+      "verification_steps": [
+        "문서 카테고리별 분류",
+        "중복 문서 통합",
+        "문서 링크 및 참조 업데이트",
+        "문서 인덱스 생성"
+      ]
+    }
+  ],
+  "naming_standardization": {
+    "current_naming_analysis": {
+      "total_files": 29,
+      "naming_patterns": {
+        "snake_case": 29
+      },
+      "inconsistencies": []
+    },
+    "standardization_rules": {
+      "file_naming": {
+        "core_modules": "{domain}_{component}_system.py",
+        "utilities": "util_{function_name}.py",
+        "tests": "test_{module_name}.py",
+        "analysis_tools": "logi_{tool_name}_{date}.py",
+        "configuration": "config_{environment}.{ext}",
+        "documentation": "{topic}_{type}.md"
+      },
+      "function_naming": {
+        "public_methods": "snake_case",
+        "private_methods": "_snake_case",
+        "constants": "UPPER_SNAKE_CASE",
+        "classes": "PascalCase"
+      },
+      "variable_naming": {
+        "local_variables": "snake_case",
+        "instance_variables": "snake_case",
+        "class_variables": "snake_case",
+        "global_constants": "UPPER_SNAKE_CASE"
+      }
+    },
+    "refactoring_actions": [],
+    "automated_checks": {
+      "pre_commit_hooks": [
+        "flake8 naming convention check",
+        "pylint naming validation",
+        "custom naming pattern validator"
+      ],
+      "ci_pipeline": [
+        "naming convention compliance check",
+        "automated refactoring suggestions",
+        "documentation update validation"
+      ]
+    }
+  },
+  "documentation_sync": {
+    "current_documentation_state": {
+      "total_docs": 14,
+      "doc_types": {
+        "README": 2,
+        "GENERAL": 11,
+        "USER_GUIDES": 1
+      },
+      "coverage_analysis": {
+        "overall_coverage": "53.8%",
+        "recommended_coverage": "50%+",
+        "gap": 0
+      }
+    },
+    "synchronization_requirements": {
+      "api_documentation": "코드 변경 시 자동 업데이트",
+      "architecture_docs": "주요 구조 변경 시 수동 업데이트",
+      "user_guides": "기능 추가/변경 시 업데이트",
+      "technical_specs": "설계 변경 시 실시간 동기화"
+    },
+    "automation_strategy": {
+      "docstring_extraction": "Python docstring → API 문서 자동 생성",
+      "code_analysis": "코드 변경 감지 → 관련 문서 업데이트 알림",
+      "diagram_generation": "코드 구조 → UML/시퀀스 다이어그램 자동 생성",
+      "changelog_automation": "커밋 메시지 → CHANGELOG.md 자동 업데이트"
+    },
+    "quality_standards": {
+      "completeness": "모든 public API 문서화 100%",
+      "accuracy": "코드-문서 불일치 0%",
+      "freshness": "문서 업데이트 지연 < 24시간",
+      "accessibility": "검색 가능한 문서 인덱스"
+    }
+  },
+  "implementation_timeline": {
+    "total_duration": "7-8 weeks",
+    "weekly_timeline": {
+      "Week 1": {
+        "focus": "Critical Technical Debt Resolution",
+        "tasks": [
+          "685개의 중복 코드 블록 및 19개 중복 함수 존재",
+          "테스트 커버리지 0%, 160개 누락 테스트 케이스"
+        ],
+        "deliverables": [
+          "중복 코드 통합 계획 수립",
+          "테스트 전략 실행 시작"
+        ],
+        "success_criteria": [
+          "중복 함수 50% 감소",
+          "핵심 모듈 테스트 커버리지 30% 달성"
+        ]
+      },
+      "Week 2": {
+        "focus": "Medium Priority Debt + Automated Cleanup",
+        "tasks": [
+          "2개의 백업 파일이 프로덕션 코드와 함께 존재",
+          "백업 파일들을 Archive/Backups/ 폴더로 이동"
+        ],
+        "deliverables": [
+          "백업 파일 아카이빙 완료",
+          "임시 파일 정리 완료",
+          "문서화 부족 개선"
+        ],
+        "success_criteria": [
+          "파일 구조 정리 100%",
+          "문서 커버리지 30% 향상"
+        ]
+      },
+      "Week 3": {
+        "focus": "Low Priority Debt + Manual Organization",
+        "tasks": [
+          "파일명 네이밍 컨벤션 비일관성",
+          "분석 도구들을 tools/ 또는 utils/ 폴더로 정리",
+          "문서 파일들을 계층적 구조로 정리"
+        ],
+        "deliverables": [
+          "네이밍 표준화 완료",
+          "문서 구조 재정리",
+          "분석 도구 정리"
+        ],
+        "success_criteria": [
+          "네이밍 컨벤션 준수율 95%",
+          "문서 구조 체계화 완료"
+        ]
+      },
+      "Week 4-5": {
+        "focus": "Validation & Maintenance Automation Setup",
+        "tasks": [
+          "전체 기술 부채 해결 검증",
+          "자동화된 품질 체크 설정",
+          "유지보수 프로세스 구축"
+        ],
+        "deliverables": [
+          "품질 게이트 자동화",
+          "CI/CD 파이프라인 개선",
+          "기술 부채 모니터링 대시보드"
+        ],
+        "success_criteria": [
+          "모든 기술 부채 KPI 목표 달성",
+          "자동화된 품질 체크 동작",
+          "지속적인 부채 관리 체계 구축"
+        ]
+      }
+    },
+    "resource_requirements": {
+      "developers": "1-2 developers",
+      "devops": "0.5 DevOps engineer",
+      "documentation": "0.5 Technical writer"
+    },
+    "success_metrics": {
+      "code_duplication_reduction": "> 80%",
+      "test_coverage_increase": "> 90%",
+      "file_organization_score": "> 95%",
+      "documentation_coverage": "> 50%",
+      "naming_convention_compliance": "> 95%"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  "test_anomaly_detector.py::TestAlertManager::test_alert_threshold",
+  "test_anomaly_detector.py::TestAnomalyRecord::test_anomaly_record_creation",
+  "test_anomaly_detector.py::TestDataQualityValidator::test_data_quality_validator",
+  "test_anomaly_detector.py::TestECDFCalibrator::test_ecdf_calibrator",
+  "test_anomaly_detector.py::TestFeatureBuilder::test_feature_builder_dwell",
+  "test_anomaly_detector.py::TestHeaderNormalizer::test_header_normalization",
+  "test_anomaly_detector.py::TestHybridAnomalyDetector::test_full_pipeline",
+  "test_anomaly_detector.py::TestIntegration::test_config_defaults",
+  "test_anomaly_detector.py::TestIntegration::test_optional_dependencies",
+  "test_anomaly_detector.py::TestMLDetector::test_ml_layer_flags_outliers",
+  "test_anomaly_detector.py::TestRuleDetector::test_rule_time_reversal",
+  "test_anomaly_detector.py::TestStatDetector::test_iqr_outliers"
+]

@@ -1,0 +1,182 @@
+{
+  "project_id": "HVDC_2025_001",
+  "timestamp": "2025-10-24T08:29:47.171274",
+  "workflow_status": {
+    "project_id": "HVDC_2025_001",
+    "last_updated": "2025-10-24 08:29:47.171274",
+    "total_documents": 13,
+    "completed_documents": 0,
+    "pending_documents": 4,
+    "overdue_documents": 0,
+    "atlp_ready": false,
+    "overall_progress": 0.0
+  },
+  "documents": {
+    "ELC": {
+      "name": "ELC",
+      "description": "FWD/AFT Draft·Trim·GM",
+      "status": "PROVIDED",
+      "provider": "Vessel/LCT",
+      "consumer": "Aries",
+      "file_path": "/documents/ELC_v1.0.pdf",
+      "created_date": "2025-10-24T08:29:47.128190",
+      "notes": "Vessel에서 제공됨"
+    },
+    "Tank": {
+      "name": "Tank",
+      "description": "Ballast Tank Arrangement & Capacity",
+      "status": "PROVIDED",
+      "provider": "Vessel/LCT",
+      "consumer": "Aries",
+      "file_path": "/documents/Tank_Arrangement.pdf",
+      "created_date": "2025-10-24T08:29:47.128190",
+      "notes": ""
+    },
+    "SB": {
+      "name": "SB",
+      "description": "Stability Booklet 등 기본도면",
+      "status": "NOT_PROVIDED",
+      "provider": "Vessel/LCT",
+      "consumer": "Samsung",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "Seq": {
+      "name": "Seq",
+      "description": "Sequence of Loading (SPMT 단계/접촉/밸러스트)",
+      "status": "PROVIDED",
+      "provider": "Mammoet",
+      "consumer": "Aries",
+      "file_path": "/documents/Sequence_Loading.pdf",
+      "created_date": "2025-10-24T08:29:47.128190",
+      "notes": ""
+    },
+    "MS": {
+      "name": "MS",
+      "description": "Method Statement (Ballasting Seq 포함)",
+      "status": "PROVIDED",
+      "provider": "Mammoet",
+      "consumer": "Samsung",
+      "file_path": "/documents/Method_Statement.pdf",
+      "created_date": "2025-10-24T08:29:47.128190",
+      "notes": ""
+    },
+    "Fsc": {
+      "name": "Fsc",
+      "description": "Final Sailing Condition",
+      "status": "NOT_PROVIDED",
+      "provider": "Mammoet",
+      "consumer": "Samsung",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "PL": {
+      "name": "PL",
+      "description": "Packing List",
+      "status": "NOT_PROVIDED",
+      "provider": "Mammoet",
+      "consumer": "Samsung",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "StrBridge": {
+      "name": "StrBridge",
+      "description": "Steel Bridge Strength",
+      "status": "NOT_PROVIDED",
+      "provider": "Aries",
+      "consumer": "Samsung",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "StrBow": {
+      "name": "StrBow",
+      "description": "Bow Deck Strength",
+      "status": "NOT_PROVIDED",
+      "provider": "Aries",
+      "consumer": "Samsung",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "Intact": {
+      "name": "Intact",
+      "description": "Intact Stability per Step",
+      "status": "NOT_PROVIDED",
+      "provider": "Aries",
+      "consumer": "Samsung",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "Tyre7": {
+      "name": "Tyre7",
+      "description": "7-타이어 스케치 계산 + ETA",
+      "status": "NOT_PROVIDED",
+      "provider": "Aries",
+      "consumer": "Samsung",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "Cover": {
+      "name": "Cover",
+      "description": "Cover Note & Bundle",
+      "status": "NOT_PROVIDED",
+      "provider": "Samsung",
+      "consumer": "HM/MWS",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    },
+    "ATLP": {
+      "name": "ATLP",
+      "description": "ATLP/MWS 제출",
+      "status": "NOT_PROVIDED",
+      "provider": "Samsung",
+      "consumer": "HM/MWS",
+      "file_path": null,
+      "created_date": null,
+      "notes": ""
+    }
+  },
+  "assumptions": {
+    "elc_absent": {
+      "description": "ELC 없이 Aries 계산 가능 (Trim≈0, Present Condition 가정)",
+      "enables": [
+        "str_bridge",
+        "str_bow",
+        "intact",
+        "tyre7"
+      ],
+      "requires": [
+        "tank",
+        "seq"
+      ]
+    }
+  },
+  "validation": {
+    "FOR_REVIEW": false,
+    "FOR_APPROVAL": false,
+    "MISSING_FOR_REVIEW": [
+      "seq",
+      "tank"
+    ],
+    "MISSING_FOR_APPROVAL": [
+      "elc",
+      "ms",
+      "seq",
+      "tank"
+    ],
+    "PROVIDED_DOCS": [
+      "ELC",
+      "MS",
+      "Seq",
+      "Tank"
+    ],
+    "NOTE": "ELC 미제공 시 Aries는 Trim≈0 / Present Condition 가정으로 7-타이어 계산 가능(단, 승인본은 ELC 필수)."
+  }
+}

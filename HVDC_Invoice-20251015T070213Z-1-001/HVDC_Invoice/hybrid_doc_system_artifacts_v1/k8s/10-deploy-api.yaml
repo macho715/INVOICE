@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  namespace: hybrid-doc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          image: hybrid-doc-api:1.0
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: ade-secrets
+          env:
+            - name: ROUTING_RULES_PATH
+              value: /config/routing_rules.json
+            - name: IR_SCHEMA_PATH
+              value: /config/unified_ir_schema.yaml
+          volumeMounts:
+            - name: config
+              mountPath: /config
+      volumes:
+        - name: config
+          configMap:
+            name: hybrid-config

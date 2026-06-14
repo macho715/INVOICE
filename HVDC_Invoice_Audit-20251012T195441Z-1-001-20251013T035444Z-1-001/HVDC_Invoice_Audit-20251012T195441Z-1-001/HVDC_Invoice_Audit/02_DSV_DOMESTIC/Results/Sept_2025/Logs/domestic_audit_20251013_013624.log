@@ -1,0 +1,16 @@
+2025-10-13 01:36:24,723 [INFO] DOMESTIC 9월 2025 시스템 초기화 완료
+2025-10-13 01:36:24,723 [INFO] 참조 데이터: 사용
+2025-10-13 01:36:24,723 [INFO] ============================================================
+2025-10-13 01:36:24,723 [INFO] DOMESTIC 9월 2025 Invoice Audit 시작
+2025-10-13 01:36:24,723 [INFO] ============================================================
+2025-10-13 01:36:24,723 [INFO] 인보이스 로드 중: C:\Users\minky\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\02_DSV_DOMESTIC\Data\DSV 202509\SCNT HVDC DRAFT INVOICE FOR DOMESTIC DELIVERY SEPTEMBER 2025.xlsx
+2025-10-13 01:36:24,937 [INFO] 헤더 행 발견: 0행
+2025-10-13 01:36:24,938 [INFO] 컬럼명: ['S/N', 'Shipment Reference#', 'Job #', 'Operation Type', 'Place of Loading', 'Place of Delivery', '# Trips', 'Vehicle Type', 'Applied rate', 'Rate (USD)']
+2025-10-13 01:36:24,945 [INFO] ✓ 44개 항목 로드 완료
+2025-10-13 01:36:24,945 [INFO] 검증 시작...
+2025-10-13 01:36:25,115 [INFO] ✓ JSON 저장: domestic_sept_2025_result_20251013_013624.json
+2025-10-13 01:36:25,121 [INFO] ✓ CSV 저장: domestic_sept_2025_result_20251013_013624.csv
+2025-10-13 01:36:25,183 [INFO] ✓ Excel 저장: domestic_sept_2025_result_20251013_013624.xlsx
+2025-10-13 01:36:25,190 [INFO] ✓ 최종 보고서 생성: DOMESTIC_SEPT_2025_FINAL_REPORT.md
+2025-10-13 01:36:25,190 [INFO] ✓ 감사 완료 (처리시간: 0.47초)
+2025-10-13 01:36:25,191 [ERROR] ❌ 감사 실패: 'cp949' codec can't encode character '\u2705' in position 2: illegal multibyte sequence

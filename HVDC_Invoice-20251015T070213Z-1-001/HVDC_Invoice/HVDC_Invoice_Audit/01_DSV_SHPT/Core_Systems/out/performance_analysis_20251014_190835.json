@@ -1,0 +1,208 @@
+{
+  "report_metadata": {
+    "title": "DSV SHPT System Performance Analysis Report",
+    "generated_at": "2025-10-14T19:08:35.216840",
+    "analyzer_version": "1.0.0",
+    "scope": "Current system performance verification and optimization opportunities"
+  },
+  "executive_summary": {
+    "overall_status": "NEEDS_OPTIMIZATION",
+    "key_findings": [
+      "Memory usage: 131.3 MB",
+      "Processing speed: 50.0 items/sec",
+      "Response time: 1.0 seconds",
+      "Optimization priorities identified: 3"
+    ],
+    "recommendations": [
+      "Implement parallel processing for validation loops",
+      "Add streaming Excel processing to reduce memory usage",
+      "Introduce caching for rate lookup operations",
+      "Design batch processing architecture for scalability"
+    ]
+  },
+  "claimed_vs_measured": {
+    "performance_claims": {
+      "claimed_metrics": {
+        "processing_speed": "68-120 items/sec",
+        "response_time": "<2 seconds",
+        "memory_usage": "<100MB",
+        "total_items_sept_2025": 102,
+        "pass_rate": "34.3% (35/102 PASS)",
+        "processing_target": "10초 목표 대비 5배 빠름"
+      },
+      "performance_context": {
+        "target_baseline": "10 seconds for 102 items = 10.2 items/sec",
+        "claimed_improvement": "5x faster",
+        "actual_claimed": "<2 seconds",
+        "implied_throughput": "51+ items/sec minimum"
+      },
+      "verification_needed": [
+        "실제 처리 속도 측정",
+        "메모리 사용량 프로파일링",
+        "응답 시간 벤치마크",
+        "대용량 데이터셋 확장성 테스트"
+      ]
+    },
+    "benchmark_results": {
+      "initialization": {
+        "init_time_seconds": 0.016,
+        "status": "SUCCESS"
+      },
+      "file_processing": {
+        "excel_load_time_seconds": 0,
+        "total_items_in_file": 102,
+        "processed_items": 50,
+        "processing_coverage": "49.0%"
+      },
+      "performance_metrics": {
+        "total_processing_time_seconds": 1.0,
+        "average_item_validation_time_ms": 20.0,
+        "calculated_items_per_second": 50.0,
+        "actual_throughput_items_per_second": 50.0
+      },
+      "memory_usage": {
+        "start_memory_mb": 130.3,
+        "peak_memory_mb": 131.3,
+        "memory_delta_mb": 1.0,
+        "traced_peak_mb": 0.32
+      },
+      "validation_details": {
+        "min_validation_time_ms": 20.0,
+        "max_validation_time_ms": 20.0,
+        "std_dev_ms": 0.0
+      }
+    },
+    "verification": {
+      "speed_verification": {
+        "claimed": "68-120 items/sec",
+        "measured": "50.0 items/sec",
+        "status": "FAIL",
+        "note": "Limited sample size for accurate measurement"
+      },
+      "response_time_verification": {
+        "claimed": "<2 seconds",
+        "measured": "1.0 seconds",
+        "status": "PASS",
+        "note": "Partial processing completed"
+      },
+      "memory_verification": {
+        "claimed": "<100MB",
+        "measured": "131.3 MB",
+        "status": "FAIL"
+      },
+      "item_processing_verification": {
+        "claimed": "102 items processed",
+        "measured": "50 items processed",
+        "coverage": "49.0%",
+        "status": "PARTIAL"
+      }
+    }
+  },
+  "scalability_analysis": {
+    "current_architecture": {
+      "processing_model": "Sequential single-threaded",
+      "memory_model": "Full dataset in memory",
+      "io_pattern": "Excel file → Memory → Processing → Output",
+      "bottlenecks": [
+        "Single-threaded validation loop",
+        "Full Excel loading (all sheets)",
+        "No batch processing",
+        "No async operations"
+      ]
+    },
+    "scalability_limits": {
+      "max_items_estimated": 1000,
+      "memory_scaling": "O(n) - linear growth",
+      "time_complexity": "O(n) per validation",
+      "concurrent_users": 1,
+      "file_size_limit_mb": 50
+    },
+    "performance_projections": {
+      "500_items": {
+        "estimated_time_seconds": 10,
+        "memory_mb": 150
+      },
+      "1000_items": {
+        "estimated_time_seconds": 20,
+        "memory_mb": 200
+      },
+      "5000_items": {
+        "estimated_time_seconds": 100,
+        "memory_mb": 500
+      },
+      "bottleneck_at": "2000+ items (memory constraints)"
+    },
+    "optimization_opportunities": [
+      {
+        "area": "Parallel Processing",
+        "description": "Multi-threading for validation loop",
+        "expected_improvement": "3-4x speed increase",
+        "implementation_effort": "Medium"
+      },
+      {
+        "area": "Memory Optimization",
+        "description": "Streaming Excel processing",
+        "expected_improvement": "80% memory reduction",
+        "implementation_effort": "High"
+      },
+      {
+        "area": "Caching",
+        "description": "Rate lookup result caching",
+        "expected_improvement": "50% faster repeated validations",
+        "implementation_effort": "Low"
+      },
+      {
+        "area": "Batch Processing",
+        "description": "Process items in chunks",
+        "expected_improvement": "Better memory management",
+        "implementation_effort": "Medium"
+      }
+    ]
+  },
+  "optimization_priorities": [
+    {
+      "priority": 1,
+      "category": "Memory Optimization",
+      "issue": "High memory usage detected",
+      "current_usage": "131.3 MB",
+      "target": "<100MB",
+      "solution": "Implement streaming Excel processing",
+      "expected_impact": "60-80% memory reduction"
+    },
+    {
+      "priority": 2,
+      "category": "Processing Speed",
+      "issue": "Processing speed below target",
+      "current_speed": "50.0 items/sec",
+      "target": "68-120 items/sec",
+      "solution": "Multi-threading validation loop",
+      "expected_impact": "3-4x speed increase"
+    },
+    {
+      "priority": 4,
+      "category": "Scalability",
+      "issue": "Architecture limits for large datasets",
+      "current_limit": "1000 items estimated",
+      "target": "5000+ items",
+      "solution": "Implement batch processing architecture",
+      "expected_impact": "10x scalability improvement"
+    }
+  ],
+  "technical_recommendations": {
+    "immediate_wins": [
+      "Add result caching for rate lookups",
+      "Optimize Excel reading with chunking",
+      "Remove unnecessary debug logging in production"
+    ],
+    "medium_term_improvements": [
+      "Implement worker thread pool for validations",
+      "Add memory monitoring and limits",
+      "Introduce async processing patterns"
+    ],
+    "long_term_architecture": [
+      "Microservice-based processing pipeline",
+      "Database-backed rate management",
+      "Distributed processing capability"
+    ]
+  }
+}

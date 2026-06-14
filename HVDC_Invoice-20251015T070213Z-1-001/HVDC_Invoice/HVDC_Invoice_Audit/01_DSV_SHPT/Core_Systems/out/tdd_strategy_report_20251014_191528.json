@@ -1,0 +1,5234 @@
+{
+  "report_metadata": {
+    "title": "DSV SHPT TDD Strategy Report",
+    "generated_at": "2025-10-14T19:15:28.426805",
+    "planner_version": "1.0.0",
+    "scope": "Kent Beck TDD principles implementation strategy"
+  },
+  "executive_summary": {
+    "current_test_coverage": "0.0%",
+    "missing_test_cases": 160,
+    "estimated_implementation_time": "18 weeks",
+    "expected_final_coverage": "> 90%",
+    "key_benefits": [
+      "시스템 안정성 95% 향상",
+      "버그 발견 시간 80% 단축",
+      "코드 품질 대폭 개선",
+      "유지보수성 60% 향상"
+    ],
+    "investment_required": "2-3 developers, 18 weeks"
+  },
+  "current_state_analysis": {
+    "existing_tests": {
+      "test_contract_improvement.py": [
+        "test_contract_improvement"
+      ],
+      "test_contract_validation.py": [
+        "test_should_classify_contract_item",
+        "test_should_find_ref_rate_for_standard_contract_item",
+        "test_should_calculate_delta_for_overcharged_contract",
+        "test_should_find_ref_rate_for_transportation_contract",
+        "test_should_handle_customs_clearance_contract",
+        "test_should_return_none_for_unknown_contract_item"
+      ],
+      "test_pdf_integration.py": [
+        "test_should_initialize_integration_layer",
+        "test_should_have_pdf_gates",
+        "test_gate_11_should_pass_on_consistent_mbl",
+        "test_gate_11_should_fail_on_mbl_mismatch",
+        "test_gate_12_should_pass_on_consistent_containers",
+        "test_gate_13_should_pass_within_tolerance",
+        "test_gate_13_should_fail_exceeding_tolerance",
+        "test_gate_14_should_detect_missing_moiat_cert",
+        "test_should_cache_parsed_pdfs",
+        "test_should_integrate_with_audit_system",
+        "test_enhanced_gates_should_include_pdf_gates"
+      ]
+    },
+    "production_functions": {
+      "analyze_missing_contracts.py": [
+        {
+          "name": "analyze_missing_contracts",
+          "complexity": 14,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "comprehensive_invoice_validator_backup.py": [
+        {
+          "name": "main",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "validate_comprehensive_invoice_system",
+          "complexity": 2,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "generate_comprehensive_reports",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "create_enhanced_excel_report.py": [
+        {
+          "name": "main",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "load_data",
+          "complexity": 6,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_excel_report",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_main_data_sheet",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_executive_dashboard",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_pdf_integration_summary",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_gate_analysis_sheet",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_supporting_docs_mapping",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_comprehensive_report",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "create_enhanced_excel_report_backup.py": [
+        {
+          "name": "main",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "load_data",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_main_data_sheet",
+          "complexity": 2,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_executive_dashboard",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_pdf_integration_summary",
+          "complexity": 8,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_gate_analysis_sheet",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_supporting_docs_mapping",
+          "complexity": 8,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_excel_report",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_vba_analysis_sheet",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_vba_log_sheet",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_vba_master_data_sheet",
+          "complexity": 6,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_comprehensive_report",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "create_excel_report.py": [
+        {
+          "name": "extract_port_from_description",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_container_type",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_route",
+          "complexity": 2,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_decision_logic",
+          "complexity": 11,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "format_attachments",
+          "complexity": 9,
+          "risk_level": "MEDIUM",
+          "has_tests": false
+        },
+        {
+          "name": "create_comparison_report",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "apply_header_format",
+          "complexity": 2,
+          "risk_level": "MEDIUM",
+          "has_tests": false
+        },
+        {
+          "name": "apply_conditional_formatting",
+          "complexity": 5,
+          "risk_level": "MEDIUM",
+          "has_tests": false
+        },
+        {
+          "name": "adjust_column_widths",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "freeze_header",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_excel_report",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "main",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "excel_data_processor.py": [
+        {
+          "name": "main",
+          "complexity": 2,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "load_json_data",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_pdf_integration_stats",
+          "complexity": 2,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "process_supporting_docs_data",
+          "complexity": 4,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "extract_gate_analysis_data",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_cross_document_issues",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_demurrage_risk_data",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "create_executive_summary_data",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "process_all_data",
+          "complexity": 2,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "save_processed_data",
+          "complexity": 6,
+          "risk_level": "HIGH",
+          "has_tests": false
+        }
+      ],
+      "generate_comprehensive_excel_report.py": [
+        {
+          "name": "main",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_comprehensive_report",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "generate_final_excel_report.py": [
+        {
+          "name": "main",
+          "complexity": 6,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "generate_vba_integrated_report.py": [
+        {
+          "name": "main",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_comprehensive_report",
+          "complexity": 2,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "invoice_pdf_integration.py": [
+        {
+          "name": "parse_supporting_docs",
+          "complexity": 6,
+          "risk_level": "MEDIUM",
+          "has_tests": false
+        },
+        {
+          "name": "validate_invoice_with_docs",
+          "complexity": 8,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "enrich_validation_with_pdf",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "run_pdf_gates",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_integrated_report",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "run_comprehensive_validation.py": [
+        {
+          "name": "main",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "run_basic_validation",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "load_vba_results",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "load_python_results",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_basic_reports",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "generate_html_dashboard",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "print_results",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "run_shpt_sept2025.py": [
+        {
+          "name": "main",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ],
+      "shpt_audit_system.py": [
+        {
+          "name": "main",
+          "complexity": 9,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "normalize_data",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "get_standard_rate",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "calculate_delta_percent",
+          "complexity": 2,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "get_cost_guard_band",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "validate_shpt_invoice_item",
+          "complexity": 2,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "generate_shpt_report",
+          "complexity": 2,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "run_shpt_audit",
+          "complexity": 10,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "calculate_ath",
+          "complexity": 1,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "convert_aed_to_usd",
+          "complexity": 1,
+          "risk_level": "MEDIUM",
+          "has_tests": false
+        },
+        {
+          "name": "convert_usd_to_aed",
+          "complexity": 1,
+          "risk_level": "MEDIUM",
+          "has_tests": false
+        },
+        {
+          "name": "validate_air_invoice_item",
+          "complexity": 6,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "run_air_import_audit",
+          "complexity": 14,
+          "risk_level": "HIGH",
+          "has_tests": false
+        }
+      ],
+      "shpt_sept_2025_enhanced_audit.py": [
+        {
+          "name": "main",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "is_portal_fee",
+          "complexity": 1,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "parse_aed_from_formula",
+          "complexity": 2,
+          "risk_level": "MEDIUM",
+          "has_tests": false
+        },
+        {
+          "name": "get_portal_fee_fixed_rate",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "portal_fee_band",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "validate_gate_01_document_set",
+          "complexity": 1,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "validate_gate_07_total_consistency",
+          "complexity": 1,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "run_key_gates",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "load_invoice_sheets",
+          "complexity": 3,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_invoice_items",
+          "complexity": 10,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "validate_enhanced_item",
+          "complexity": 17,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "map_supporting_documents",
+          "complexity": 7,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_shipment_id",
+          "complexity": 4,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "extract_doc_type",
+          "complexity": 5,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "run_full_enhanced_audit",
+          "complexity": 17,
+          "risk_level": "HIGH",
+          "has_tests": false
+        },
+        {
+          "name": "save_enhanced_results",
+          "complexity": 8,
+          "risk_level": "LOW",
+          "has_tests": false
+        },
+        {
+          "name": "print_enhanced_summary",
+          "complexity": 2,
+          "risk_level": "LOW",
+          "has_tests": false
+        }
+      ]
+    },
+    "test_coverage_by_file": {
+      "analyze_missing_contracts.py": 0.0,
+      "comprehensive_invoice_validator_backup.py": 0.0,
+      "create_enhanced_excel_report.py": 0.0,
+      "create_enhanced_excel_report_backup.py": 0.0,
+      "create_excel_report.py": 0.0,
+      "excel_data_processor.py": 0.0,
+      "generate_comprehensive_excel_report.py": 0.0,
+      "generate_final_excel_report.py": 0.0,
+      "generate_vba_integrated_report.py": 0.0,
+      "invoice_pdf_integration.py": 0.0,
+      "run_comprehensive_validation.py": 0.0,
+      "run_shpt_sept2025.py": 0.0,
+      "shpt_audit_system.py": 0.0,
+      "shpt_sept_2025_enhanced_audit.py": 0.0
+    }
+  },
+  "missing_test_cases": [
+    {
+      "test_id": "TC001",
+      "name": "test_should_analyze_missing_contracts_with_valid_input",
+      "description": "analyze_missing_contracts 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "analyze_missing_contracts",
+      "target_file": "analyze_missing_contracts.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 analyze_missing_contracts 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 analyze_missing_contracts 테스트 작성",
+      "green_phase": "analyze_missing_contracts 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC002",
+      "name": "test_should_analyze_missing_contracts_handle_boundary_values",
+      "description": "analyze_missing_contracts 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "analyze_missing_contracts",
+      "target_file": "analyze_missing_contracts.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC003",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "comprehensive_invoice_validator_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC004",
+      "name": "test_should_main_handle_boundary_values",
+      "description": "main 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "main",
+      "target_file": "comprehensive_invoice_validator_backup.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC005",
+      "name": "test_should_validate_comprehensive_invoice_system_with_valid_input",
+      "description": "validate_comprehensive_invoice_system 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_comprehensive_invoice_system",
+      "target_file": "comprehensive_invoice_validator_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 validate_comprehensive_invoice_system 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 validate_comprehensive_invoice_system 테스트 작성",
+      "green_phase": "validate_comprehensive_invoice_system 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC007",
+      "name": "test_should_validate_comprehensive_invoice_system_handle_invalid_input",
+      "description": "validate_comprehensive_invoice_system 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_comprehensive_invoice_system",
+      "target_file": "comprehensive_invoice_validator_backup.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC007",
+      "name": "test_should_generate_comprehensive_reports_with_valid_input",
+      "description": "generate_comprehensive_reports 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_comprehensive_reports",
+      "target_file": "comprehensive_invoice_validator_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_comprehensive_reports 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_comprehensive_reports 테스트 작성",
+      "green_phase": "generate_comprehensive_reports 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC008",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC009",
+      "name": "test_should_load_data_with_valid_input",
+      "description": "load_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "load_data",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 load_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 load_data 테스트 작성",
+      "green_phase": "load_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC010",
+      "name": "test_should_load_data_handle_boundary_values",
+      "description": "load_data 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "load_data",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC011",
+      "name": "test_should_generate_excel_report_with_valid_input",
+      "description": "generate_excel_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_excel_report",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_excel_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_excel_report 테스트 작성",
+      "green_phase": "generate_excel_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC012",
+      "name": "test_should_create_main_data_sheet_with_valid_input",
+      "description": "create_main_data_sheet 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_main_data_sheet",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_main_data_sheet 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_main_data_sheet 테스트 작성",
+      "green_phase": "create_main_data_sheet 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC013",
+      "name": "test_should_create_executive_dashboard_with_valid_input",
+      "description": "create_executive_dashboard 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_executive_dashboard",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_executive_dashboard 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_executive_dashboard 테스트 작성",
+      "green_phase": "create_executive_dashboard 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC014",
+      "name": "test_should_create_pdf_integration_summary_with_valid_input",
+      "description": "create_pdf_integration_summary 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_pdf_integration_summary",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_pdf_integration_summary 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_pdf_integration_summary 테스트 작성",
+      "green_phase": "create_pdf_integration_summary 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC015",
+      "name": "test_should_create_pdf_integration_summary_handle_boundary_values",
+      "description": "create_pdf_integration_summary 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_pdf_integration_summary",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC016",
+      "name": "test_should_create_gate_analysis_sheet_with_valid_input",
+      "description": "create_gate_analysis_sheet 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_gate_analysis_sheet",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_gate_analysis_sheet 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_gate_analysis_sheet 테스트 작성",
+      "green_phase": "create_gate_analysis_sheet 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC017",
+      "name": "test_should_create_supporting_docs_mapping_with_valid_input",
+      "description": "create_supporting_docs_mapping 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_supporting_docs_mapping",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_supporting_docs_mapping 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_supporting_docs_mapping 테스트 작성",
+      "green_phase": "create_supporting_docs_mapping 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC018",
+      "name": "test_should_create_comprehensive_report_with_valid_input",
+      "description": "create_comprehensive_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_comprehensive_report",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_comprehensive_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_comprehensive_report 테스트 작성",
+      "green_phase": "create_comprehensive_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC019",
+      "name": "test_should_create_comprehensive_report_handle_boundary_values",
+      "description": "create_comprehensive_report 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_comprehensive_report",
+      "target_file": "create_enhanced_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC020",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC021",
+      "name": "test_should_load_data_with_valid_input",
+      "description": "load_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "load_data",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 load_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 load_data 테스트 작성",
+      "green_phase": "load_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC022",
+      "name": "test_should_load_data_handle_boundary_values",
+      "description": "load_data 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "load_data",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC023",
+      "name": "test_should_create_main_data_sheet_with_valid_input",
+      "description": "create_main_data_sheet 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_main_data_sheet",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_main_data_sheet 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_main_data_sheet 테스트 작성",
+      "green_phase": "create_main_data_sheet 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC024",
+      "name": "test_should_create_executive_dashboard_with_valid_input",
+      "description": "create_executive_dashboard 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_executive_dashboard",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_executive_dashboard 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_executive_dashboard 테스트 작성",
+      "green_phase": "create_executive_dashboard 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC025",
+      "name": "test_should_create_pdf_integration_summary_with_valid_input",
+      "description": "create_pdf_integration_summary 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_pdf_integration_summary",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_pdf_integration_summary 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_pdf_integration_summary 테스트 작성",
+      "green_phase": "create_pdf_integration_summary 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC026",
+      "name": "test_should_create_pdf_integration_summary_handle_boundary_values",
+      "description": "create_pdf_integration_summary 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_pdf_integration_summary",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC027",
+      "name": "test_should_create_gate_analysis_sheet_with_valid_input",
+      "description": "create_gate_analysis_sheet 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_gate_analysis_sheet",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_gate_analysis_sheet 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_gate_analysis_sheet 테스트 작성",
+      "green_phase": "create_gate_analysis_sheet 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC028",
+      "name": "test_should_create_supporting_docs_mapping_with_valid_input",
+      "description": "create_supporting_docs_mapping 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_supporting_docs_mapping",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_supporting_docs_mapping 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_supporting_docs_mapping 테스트 작성",
+      "green_phase": "create_supporting_docs_mapping 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC029",
+      "name": "test_should_create_supporting_docs_mapping_handle_boundary_values",
+      "description": "create_supporting_docs_mapping 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_supporting_docs_mapping",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC030",
+      "name": "test_should_generate_excel_report_with_valid_input",
+      "description": "generate_excel_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_excel_report",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_excel_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_excel_report 테스트 작성",
+      "green_phase": "generate_excel_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC031",
+      "name": "test_should_create_vba_analysis_sheet_with_valid_input",
+      "description": "create_vba_analysis_sheet 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_vba_analysis_sheet",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_vba_analysis_sheet 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_vba_analysis_sheet 테스트 작성",
+      "green_phase": "create_vba_analysis_sheet 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC032",
+      "name": "test_should_create_vba_analysis_sheet_handle_boundary_values",
+      "description": "create_vba_analysis_sheet 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_vba_analysis_sheet",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC033",
+      "name": "test_should_create_vba_log_sheet_with_valid_input",
+      "description": "create_vba_log_sheet 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_vba_log_sheet",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_vba_log_sheet 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_vba_log_sheet 테스트 작성",
+      "green_phase": "create_vba_log_sheet 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC034",
+      "name": "test_should_create_vba_master_data_sheet_with_valid_input",
+      "description": "create_vba_master_data_sheet 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_vba_master_data_sheet",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_vba_master_data_sheet 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_vba_master_data_sheet 테스트 작성",
+      "green_phase": "create_vba_master_data_sheet 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC035",
+      "name": "test_should_create_vba_master_data_sheet_handle_boundary_values",
+      "description": "create_vba_master_data_sheet 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_vba_master_data_sheet",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC036",
+      "name": "test_should_create_comprehensive_report_with_valid_input",
+      "description": "create_comprehensive_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_comprehensive_report",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_comprehensive_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_comprehensive_report 테스트 작성",
+      "green_phase": "create_comprehensive_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC037",
+      "name": "test_should_create_comprehensive_report_handle_boundary_values",
+      "description": "create_comprehensive_report 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_comprehensive_report",
+      "target_file": "create_enhanced_excel_report_backup.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC038",
+      "name": "test_should_extract_port_from_description_with_valid_input",
+      "description": "extract_port_from_description 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_port_from_description",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_port_from_description 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_port_from_description 테스트 작성",
+      "green_phase": "extract_port_from_description 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC039",
+      "name": "test_should_extract_port_from_description_handle_boundary_values",
+      "description": "extract_port_from_description 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "extract_port_from_description",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC040",
+      "name": "test_should_extract_container_type_with_valid_input",
+      "description": "extract_container_type 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_container_type",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_container_type 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_container_type 테스트 작성",
+      "green_phase": "extract_container_type 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC041",
+      "name": "test_should_extract_container_type_handle_boundary_values",
+      "description": "extract_container_type 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "extract_container_type",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC042",
+      "name": "test_should_extract_route_with_valid_input",
+      "description": "extract_route 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_route",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_route 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_route 테스트 작성",
+      "green_phase": "extract_route 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC043",
+      "name": "test_should_generate_decision_logic_with_valid_input",
+      "description": "generate_decision_logic 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_decision_logic",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_decision_logic 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_decision_logic 테스트 작성",
+      "green_phase": "generate_decision_logic 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC044",
+      "name": "test_should_generate_decision_logic_handle_boundary_values",
+      "description": "generate_decision_logic 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "generate_decision_logic",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC045",
+      "name": "test_should_format_attachments_with_valid_input",
+      "description": "format_attachments 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "format_attachments",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 format_attachments 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 format_attachments 테스트 작성",
+      "green_phase": "format_attachments 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC046",
+      "name": "test_should_format_attachments_handle_boundary_values",
+      "description": "format_attachments 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "format_attachments",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC047",
+      "name": "test_should_format_attachments_handle_invalid_input",
+      "description": "format_attachments 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "format_attachments",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC048",
+      "name": "test_should_create_comparison_report_with_valid_input",
+      "description": "create_comparison_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_comparison_report",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_comparison_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_comparison_report 테스트 작성",
+      "green_phase": "create_comparison_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC049",
+      "name": "test_should_apply_header_format_with_valid_input",
+      "description": "apply_header_format 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "apply_header_format",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 apply_header_format 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 apply_header_format 테스트 작성",
+      "green_phase": "apply_header_format 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC051",
+      "name": "test_should_apply_header_format_handle_invalid_input",
+      "description": "apply_header_format 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "apply_header_format",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC051",
+      "name": "test_should_apply_conditional_formatting_with_valid_input",
+      "description": "apply_conditional_formatting 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "apply_conditional_formatting",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 apply_conditional_formatting 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 apply_conditional_formatting 테스트 작성",
+      "green_phase": "apply_conditional_formatting 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC052",
+      "name": "test_should_apply_conditional_formatting_handle_boundary_values",
+      "description": "apply_conditional_formatting 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "apply_conditional_formatting",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC053",
+      "name": "test_should_apply_conditional_formatting_handle_invalid_input",
+      "description": "apply_conditional_formatting 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "apply_conditional_formatting",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC054",
+      "name": "test_should_adjust_column_widths_with_valid_input",
+      "description": "adjust_column_widths 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "adjust_column_widths",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 adjust_column_widths 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 adjust_column_widths 테스트 작성",
+      "green_phase": "adjust_column_widths 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC055",
+      "name": "test_should_adjust_column_widths_handle_boundary_values",
+      "description": "adjust_column_widths 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "adjust_column_widths",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC056",
+      "name": "test_should_freeze_header_with_valid_input",
+      "description": "freeze_header 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "freeze_header",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 freeze_header 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 freeze_header 테스트 작성",
+      "green_phase": "freeze_header 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC057",
+      "name": "test_should_create_excel_report_with_valid_input",
+      "description": "create_excel_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_excel_report",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_excel_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_excel_report 테스트 작성",
+      "green_phase": "create_excel_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC058",
+      "name": "test_should_create_excel_report_handle_boundary_values",
+      "description": "create_excel_report 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "create_excel_report",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC059",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "create_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC060",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC061",
+      "name": "test_should_load_json_data_with_valid_input",
+      "description": "load_json_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "load_json_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 load_json_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 load_json_data 테스트 작성",
+      "green_phase": "load_json_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC062",
+      "name": "test_should_extract_pdf_integration_stats_with_valid_input",
+      "description": "extract_pdf_integration_stats 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_pdf_integration_stats",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_pdf_integration_stats 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_pdf_integration_stats 테스트 작성",
+      "green_phase": "extract_pdf_integration_stats 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC063",
+      "name": "test_should_process_supporting_docs_data_with_valid_input",
+      "description": "process_supporting_docs_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "process_supporting_docs_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 process_supporting_docs_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 process_supporting_docs_data 테스트 작성",
+      "green_phase": "process_supporting_docs_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC064",
+      "name": "test_should_process_supporting_docs_data_handle_boundary_values",
+      "description": "process_supporting_docs_data 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "process_supporting_docs_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC065",
+      "name": "test_should_process_supporting_docs_data_handle_invalid_input",
+      "description": "process_supporting_docs_data 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "process_supporting_docs_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC066",
+      "name": "test_should_extract_gate_analysis_data_with_valid_input",
+      "description": "extract_gate_analysis_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_gate_analysis_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_gate_analysis_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_gate_analysis_data 테스트 작성",
+      "green_phase": "extract_gate_analysis_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC067",
+      "name": "test_should_extract_cross_document_issues_with_valid_input",
+      "description": "extract_cross_document_issues 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_cross_document_issues",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_cross_document_issues 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_cross_document_issues 테스트 작성",
+      "green_phase": "extract_cross_document_issues 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC068",
+      "name": "test_should_extract_cross_document_issues_handle_boundary_values",
+      "description": "extract_cross_document_issues 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "extract_cross_document_issues",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC069",
+      "name": "test_should_extract_demurrage_risk_data_with_valid_input",
+      "description": "extract_demurrage_risk_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_demurrage_risk_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_demurrage_risk_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_demurrage_risk_data 테스트 작성",
+      "green_phase": "extract_demurrage_risk_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC070",
+      "name": "test_should_extract_demurrage_risk_data_handle_boundary_values",
+      "description": "extract_demurrage_risk_data 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "extract_demurrage_risk_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC071",
+      "name": "test_should_create_executive_summary_data_with_valid_input",
+      "description": "create_executive_summary_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "create_executive_summary_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 create_executive_summary_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 create_executive_summary_data 테스트 작성",
+      "green_phase": "create_executive_summary_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC072",
+      "name": "test_should_process_all_data_with_valid_input",
+      "description": "process_all_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "process_all_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 process_all_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 process_all_data 테스트 작성",
+      "green_phase": "process_all_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC074",
+      "name": "test_should_process_all_data_handle_invalid_input",
+      "description": "process_all_data 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "process_all_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC074",
+      "name": "test_should_save_processed_data_with_valid_input",
+      "description": "save_processed_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "save_processed_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 save_processed_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 save_processed_data 테스트 작성",
+      "green_phase": "save_processed_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC075",
+      "name": "test_should_save_processed_data_handle_boundary_values",
+      "description": "save_processed_data 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "save_processed_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC076",
+      "name": "test_should_save_processed_data_handle_invalid_input",
+      "description": "save_processed_data 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "save_processed_data",
+      "target_file": "excel_data_processor.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC077",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "generate_comprehensive_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC078",
+      "name": "test_should_generate_comprehensive_report_with_valid_input",
+      "description": "generate_comprehensive_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_comprehensive_report",
+      "target_file": "generate_comprehensive_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_comprehensive_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_comprehensive_report 테스트 작성",
+      "green_phase": "generate_comprehensive_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC079",
+      "name": "test_should_generate_comprehensive_report_handle_boundary_values",
+      "description": "generate_comprehensive_report 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "generate_comprehensive_report",
+      "target_file": "generate_comprehensive_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC080",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "generate_final_excel_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC081",
+      "name": "test_should_main_handle_boundary_values",
+      "description": "main 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "main",
+      "target_file": "generate_final_excel_report.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC082",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "generate_vba_integrated_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC083",
+      "name": "test_should_generate_comprehensive_report_with_valid_input",
+      "description": "generate_comprehensive_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_comprehensive_report",
+      "target_file": "generate_vba_integrated_report.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_comprehensive_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_comprehensive_report 테스트 작성",
+      "green_phase": "generate_comprehensive_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC084",
+      "name": "test_should_parse_supporting_docs_with_valid_input",
+      "description": "parse_supporting_docs 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "parse_supporting_docs",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 parse_supporting_docs 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 parse_supporting_docs 테스트 작성",
+      "green_phase": "parse_supporting_docs 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC085",
+      "name": "test_should_parse_supporting_docs_handle_boundary_values",
+      "description": "parse_supporting_docs 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "parse_supporting_docs",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC086",
+      "name": "test_should_parse_supporting_docs_handle_invalid_input",
+      "description": "parse_supporting_docs 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "parse_supporting_docs",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC087",
+      "name": "test_should_validate_invoice_with_docs_with_valid_input",
+      "description": "validate_invoice_with_docs 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_invoice_with_docs",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 validate_invoice_with_docs 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 validate_invoice_with_docs 테스트 작성",
+      "green_phase": "validate_invoice_with_docs 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC088",
+      "name": "test_should_validate_invoice_with_docs_handle_boundary_values",
+      "description": "validate_invoice_with_docs 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_invoice_with_docs",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC089",
+      "name": "test_should_validate_invoice_with_docs_handle_invalid_input",
+      "description": "validate_invoice_with_docs 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_invoice_with_docs",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC090",
+      "name": "test_should_enrich_validation_with_pdf_with_valid_input",
+      "description": "enrich_validation_with_pdf 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "enrich_validation_with_pdf",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 enrich_validation_with_pdf 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 enrich_validation_with_pdf 테스트 작성",
+      "green_phase": "enrich_validation_with_pdf 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC091",
+      "name": "test_should_enrich_validation_with_pdf_handle_boundary_values",
+      "description": "enrich_validation_with_pdf 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "enrich_validation_with_pdf",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC092",
+      "name": "test_should_run_pdf_gates_with_valid_input",
+      "description": "run_pdf_gates 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "run_pdf_gates",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 run_pdf_gates 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 run_pdf_gates 테스트 작성",
+      "green_phase": "run_pdf_gates 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC093",
+      "name": "test_should_generate_integrated_report_with_valid_input",
+      "description": "generate_integrated_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_integrated_report",
+      "target_file": "invoice_pdf_integration.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_integrated_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_integrated_report 테스트 작성",
+      "green_phase": "generate_integrated_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC094",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC095",
+      "name": "test_should_run_basic_validation_with_valid_input",
+      "description": "run_basic_validation 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "run_basic_validation",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 run_basic_validation 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 run_basic_validation 테스트 작성",
+      "green_phase": "run_basic_validation 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC096",
+      "name": "test_should_load_vba_results_with_valid_input",
+      "description": "load_vba_results 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "load_vba_results",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 load_vba_results 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 load_vba_results 테스트 작성",
+      "green_phase": "load_vba_results 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC097",
+      "name": "test_should_load_python_results_with_valid_input",
+      "description": "load_python_results 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "load_python_results",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 load_python_results 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 load_python_results 테스트 작성",
+      "green_phase": "load_python_results 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC098",
+      "name": "test_should_generate_basic_reports_with_valid_input",
+      "description": "generate_basic_reports 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_basic_reports",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_basic_reports 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_basic_reports 테스트 작성",
+      "green_phase": "generate_basic_reports 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC099",
+      "name": "test_should_generate_basic_reports_handle_boundary_values",
+      "description": "generate_basic_reports 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "generate_basic_reports",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC100",
+      "name": "test_should_generate_html_dashboard_with_valid_input",
+      "description": "generate_html_dashboard 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_html_dashboard",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_html_dashboard 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_html_dashboard 테스트 작성",
+      "green_phase": "generate_html_dashboard 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC101",
+      "name": "test_should_print_results_with_valid_input",
+      "description": "print_results 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "print_results",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 print_results 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 print_results 테스트 작성",
+      "green_phase": "print_results 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC102",
+      "name": "test_should_print_results_handle_boundary_values",
+      "description": "print_results 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "print_results",
+      "target_file": "run_comprehensive_validation.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC103",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "run_shpt_sept2025.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC104",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC105",
+      "name": "test_should_main_handle_boundary_values",
+      "description": "main 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "main",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC106",
+      "name": "test_should_normalize_data_with_valid_input",
+      "description": "normalize_data 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "normalize_data",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 normalize_data 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 normalize_data 테스트 작성",
+      "green_phase": "normalize_data 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC107",
+      "name": "test_should_normalize_data_handle_boundary_values",
+      "description": "normalize_data 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "normalize_data",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC108",
+      "name": "test_should_get_standard_rate_with_valid_input",
+      "description": "get_standard_rate 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "get_standard_rate",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 get_standard_rate 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 get_standard_rate 테스트 작성",
+      "green_phase": "get_standard_rate 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC109",
+      "name": "test_should_calculate_delta_percent_with_valid_input",
+      "description": "calculate_delta_percent 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "calculate_delta_percent",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 calculate_delta_percent 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 calculate_delta_percent 테스트 작성",
+      "green_phase": "calculate_delta_percent 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC111",
+      "name": "test_should_calculate_delta_percent_handle_invalid_input",
+      "description": "calculate_delta_percent 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "calculate_delta_percent",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC111",
+      "name": "test_should_get_cost_guard_band_with_valid_input",
+      "description": "get_cost_guard_band 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "get_cost_guard_band",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 get_cost_guard_band 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 get_cost_guard_band 테스트 작성",
+      "green_phase": "get_cost_guard_band 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC112",
+      "name": "test_should_validate_shpt_invoice_item_with_valid_input",
+      "description": "validate_shpt_invoice_item 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_shpt_invoice_item",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 validate_shpt_invoice_item 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 validate_shpt_invoice_item 테스트 작성",
+      "green_phase": "validate_shpt_invoice_item 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC114",
+      "name": "test_should_validate_shpt_invoice_item_handle_invalid_input",
+      "description": "validate_shpt_invoice_item 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_shpt_invoice_item",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC114",
+      "name": "test_should_generate_shpt_report_with_valid_input",
+      "description": "generate_shpt_report 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "generate_shpt_report",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 generate_shpt_report 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 generate_shpt_report 테스트 작성",
+      "green_phase": "generate_shpt_report 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC115",
+      "name": "test_should_run_shpt_audit_with_valid_input",
+      "description": "run_shpt_audit 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_shpt_audit",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 run_shpt_audit 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 run_shpt_audit 테스트 작성",
+      "green_phase": "run_shpt_audit 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC116",
+      "name": "test_should_run_shpt_audit_handle_boundary_values",
+      "description": "run_shpt_audit 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_shpt_audit",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC117",
+      "name": "test_should_run_shpt_audit_handle_invalid_input",
+      "description": "run_shpt_audit 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_shpt_audit",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC118",
+      "name": "test_should_calculate_ath_with_valid_input",
+      "description": "calculate_ath 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "calculate_ath",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 calculate_ath 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 calculate_ath 테스트 작성",
+      "green_phase": "calculate_ath 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC120",
+      "name": "test_should_calculate_ath_handle_invalid_input",
+      "description": "calculate_ath 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "calculate_ath",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC120",
+      "name": "test_should_convert_aed_to_usd_with_valid_input",
+      "description": "convert_aed_to_usd 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "convert_aed_to_usd",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 convert_aed_to_usd 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 convert_aed_to_usd 테스트 작성",
+      "green_phase": "convert_aed_to_usd 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC122",
+      "name": "test_should_convert_aed_to_usd_handle_invalid_input",
+      "description": "convert_aed_to_usd 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "convert_aed_to_usd",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC122",
+      "name": "test_should_convert_usd_to_aed_with_valid_input",
+      "description": "convert_usd_to_aed 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "convert_usd_to_aed",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 convert_usd_to_aed 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 convert_usd_to_aed 테스트 작성",
+      "green_phase": "convert_usd_to_aed 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC124",
+      "name": "test_should_convert_usd_to_aed_handle_invalid_input",
+      "description": "convert_usd_to_aed 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "convert_usd_to_aed",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC124",
+      "name": "test_should_validate_air_invoice_item_with_valid_input",
+      "description": "validate_air_invoice_item 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_air_invoice_item",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 validate_air_invoice_item 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 validate_air_invoice_item 테스트 작성",
+      "green_phase": "validate_air_invoice_item 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC125",
+      "name": "test_should_validate_air_invoice_item_handle_boundary_values",
+      "description": "validate_air_invoice_item 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_air_invoice_item",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC126",
+      "name": "test_should_validate_air_invoice_item_handle_invalid_input",
+      "description": "validate_air_invoice_item 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_air_invoice_item",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC127",
+      "name": "test_should_run_air_import_audit_with_valid_input",
+      "description": "run_air_import_audit 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_air_import_audit",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 run_air_import_audit 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 run_air_import_audit 테스트 작성",
+      "green_phase": "run_air_import_audit 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC128",
+      "name": "test_should_run_air_import_audit_handle_boundary_values",
+      "description": "run_air_import_audit 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_air_import_audit",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC129",
+      "name": "test_should_run_air_import_audit_handle_invalid_input",
+      "description": "run_air_import_audit 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_air_import_audit",
+      "target_file": "shpt_audit_system.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC130",
+      "name": "test_should_main_with_valid_input",
+      "description": "main 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "main",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 main 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 main 테스트 작성",
+      "green_phase": "main 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC131",
+      "name": "test_should_main_handle_boundary_values",
+      "description": "main 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "main",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC132",
+      "name": "test_should_is_portal_fee_with_valid_input",
+      "description": "is_portal_fee 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "is_portal_fee",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 is_portal_fee 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 is_portal_fee 테스트 작성",
+      "green_phase": "is_portal_fee 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC133",
+      "name": "test_should_parse_aed_from_formula_with_valid_input",
+      "description": "parse_aed_from_formula 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "parse_aed_from_formula",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 parse_aed_from_formula 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 parse_aed_from_formula 테스트 작성",
+      "green_phase": "parse_aed_from_formula 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC135",
+      "name": "test_should_parse_aed_from_formula_handle_invalid_input",
+      "description": "parse_aed_from_formula 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "parse_aed_from_formula",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC135",
+      "name": "test_should_get_portal_fee_fixed_rate_with_valid_input",
+      "description": "get_portal_fee_fixed_rate 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "get_portal_fee_fixed_rate",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 get_portal_fee_fixed_rate 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 get_portal_fee_fixed_rate 테스트 작성",
+      "green_phase": "get_portal_fee_fixed_rate 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC136",
+      "name": "test_should_portal_fee_band_with_valid_input",
+      "description": "portal_fee_band 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "portal_fee_band",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 portal_fee_band 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 portal_fee_band 테스트 작성",
+      "green_phase": "portal_fee_band 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC137",
+      "name": "test_should_portal_fee_band_handle_boundary_values",
+      "description": "portal_fee_band 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "portal_fee_band",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC138",
+      "name": "test_should_validate_gate_01_document_set_with_valid_input",
+      "description": "validate_gate_01_document_set 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_gate_01_document_set",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 validate_gate_01_document_set 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 validate_gate_01_document_set 테스트 작성",
+      "green_phase": "validate_gate_01_document_set 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC140",
+      "name": "test_should_validate_gate_01_document_set_handle_invalid_input",
+      "description": "validate_gate_01_document_set 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_gate_01_document_set",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC140",
+      "name": "test_should_validate_gate_07_total_consistency_with_valid_input",
+      "description": "validate_gate_07_total_consistency 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_gate_07_total_consistency",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 validate_gate_07_total_consistency 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 validate_gate_07_total_consistency 테스트 작성",
+      "green_phase": "validate_gate_07_total_consistency 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC142",
+      "name": "test_should_validate_gate_07_total_consistency_handle_invalid_input",
+      "description": "validate_gate_07_total_consistency 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_gate_07_total_consistency",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC142",
+      "name": "test_should_run_key_gates_with_valid_input",
+      "description": "run_key_gates 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "run_key_gates",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 run_key_gates 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 run_key_gates 테스트 작성",
+      "green_phase": "run_key_gates 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC143",
+      "name": "test_should_load_invoice_sheets_with_valid_input",
+      "description": "load_invoice_sheets 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "load_invoice_sheets",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 load_invoice_sheets 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 load_invoice_sheets 테스트 작성",
+      "green_phase": "load_invoice_sheets 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC144",
+      "name": "test_should_extract_invoice_items_with_valid_input",
+      "description": "extract_invoice_items 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_invoice_items",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_invoice_items 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_invoice_items 테스트 작성",
+      "green_phase": "extract_invoice_items 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC145",
+      "name": "test_should_extract_invoice_items_handle_boundary_values",
+      "description": "extract_invoice_items 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "extract_invoice_items",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC146",
+      "name": "test_should_validate_enhanced_item_with_valid_input",
+      "description": "validate_enhanced_item 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_enhanced_item",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 validate_enhanced_item 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 validate_enhanced_item 테스트 작성",
+      "green_phase": "validate_enhanced_item 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC147",
+      "name": "test_should_validate_enhanced_item_handle_boundary_values",
+      "description": "validate_enhanced_item 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_enhanced_item",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC148",
+      "name": "test_should_validate_enhanced_item_handle_invalid_input",
+      "description": "validate_enhanced_item 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "validate_enhanced_item",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC149",
+      "name": "test_should_map_supporting_documents_with_valid_input",
+      "description": "map_supporting_documents 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "map_supporting_documents",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 map_supporting_documents 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 map_supporting_documents 테스트 작성",
+      "green_phase": "map_supporting_documents 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC150",
+      "name": "test_should_map_supporting_documents_handle_boundary_values",
+      "description": "map_supporting_documents 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "map_supporting_documents",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC151",
+      "name": "test_should_extract_shipment_id_with_valid_input",
+      "description": "extract_shipment_id 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_shipment_id",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_shipment_id 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_shipment_id 테스트 작성",
+      "green_phase": "extract_shipment_id 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC152",
+      "name": "test_should_extract_shipment_id_handle_boundary_values",
+      "description": "extract_shipment_id 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "extract_shipment_id",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC153",
+      "name": "test_should_extract_doc_type_with_valid_input",
+      "description": "extract_doc_type 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "extract_doc_type",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 extract_doc_type 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 extract_doc_type 테스트 작성",
+      "green_phase": "extract_doc_type 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC154",
+      "name": "test_should_extract_doc_type_handle_boundary_values",
+      "description": "extract_doc_type 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "extract_doc_type",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC155",
+      "name": "test_should_run_full_enhanced_audit_with_valid_input",
+      "description": "run_full_enhanced_audit 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_full_enhanced_audit",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 run_full_enhanced_audit 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 run_full_enhanced_audit 테스트 작성",
+      "green_phase": "run_full_enhanced_audit 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC156",
+      "name": "test_should_run_full_enhanced_audit_handle_boundary_values",
+      "description": "run_full_enhanced_audit 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_full_enhanced_audit",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC157",
+      "name": "test_should_run_full_enhanced_audit_handle_invalid_input",
+      "description": "run_full_enhanced_audit 함수가 잘못된 입력을 적절히 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "run_full_enhanced_audit",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "잘못된 입력 데이터 준비"
+      ],
+      "test_steps": [
+        "None 값으로 테스트",
+        "빈 값으로 테스트",
+        "잘못된 타입으로 테스트"
+      ],
+      "expected_results": [
+        "명확한 예외 발생",
+        "시스템 상태 보존",
+        "적절한 에러 메시지"
+      ],
+      "red_phase": "예외 처리 테스트 실패 작성",
+      "green_phase": "기본 예외 처리 구현",
+      "refactor_phase": "예외 처리 패턴 일관화",
+      "estimated_effort": "2-3 hours",
+      "business_value": "견고한 에러 처리"
+    },
+    {
+      "test_id": "TC158",
+      "name": "test_should_save_enhanced_results_with_valid_input",
+      "description": "save_enhanced_results 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "save_enhanced_results",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 save_enhanced_results 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 save_enhanced_results 테스트 작성",
+      "green_phase": "save_enhanced_results 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    },
+    {
+      "test_id": "TC159",
+      "name": "test_should_save_enhanced_results_handle_boundary_values",
+      "description": "save_enhanced_results 함수가 경계값을 올바르게 처리해야 함",
+      "test_type": "unit",
+      "priority": 2,
+      "target_function": "save_enhanced_results",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "경계값 데이터 준비"
+      ],
+      "test_steps": [
+        "최소값으로 테스트",
+        "최대값으로 테스트",
+        "경계 근처 값으로 테스트"
+      ],
+      "expected_results": [
+        "모든 경계값에서 안전한 동작",
+        "적절한 에러 처리"
+      ],
+      "red_phase": "경계값 테스트 실패 작성",
+      "green_phase": "경계값 처리 로직 구현",
+      "refactor_phase": "경계값 상수화 및 검증 로직 추출",
+      "estimated_effort": "3-4 hours",
+      "business_value": "시스템 안정성 확보"
+    },
+    {
+      "test_id": "TC160",
+      "name": "test_should_print_enhanced_summary_with_valid_input",
+      "description": "print_enhanced_summary 함수가 유효한 입력으로 정상 동작해야 함",
+      "test_type": "unit",
+      "priority": 3,
+      "target_function": "print_enhanced_summary",
+      "target_file": "shpt_sept_2025_enhanced_audit.py",
+      "preconditions": [
+        "유효한 입력 데이터 준비",
+        "시스템 초기화 완료"
+      ],
+      "test_steps": [
+        "유효한 파라미터로 print_enhanced_summary 호출",
+        "결과 검증",
+        "부작용 확인"
+      ],
+      "expected_results": [
+        "정상적인 결과 반환",
+        "예외 발생 없음",
+        "시스템 상태 유지"
+      ],
+      "red_phase": "실패하는 print_enhanced_summary 테스트 작성",
+      "green_phase": "print_enhanced_summary 최소 구현으로 테스트 통과",
+      "refactor_phase": "코드 구조 개선 및 중복 제거",
+      "estimated_effort": "2-3 hours",
+      "business_value": "기본 기능 동작 보장"
+    }
+  ],
+  "tdd_implementation_phases": [
+    {
+      "phase_name": "Phase 1: Foundation Testing",
+      "objectives": [
+        "핵심 비즈니스 로직 함수 테스트 작성",
+        "TDD 워크플로 구축",
+        "테스트 인프라 설정"
+      ],
+      "deliverables": [
+        "pytest 설정 및 구성",
+        "테스트 유틸리티 함수",
+        "핵심 함수 10개 완전한 테스트 커버리지",
+        "CI/CD 테스트 파이프라인 기본 구조"
+      ],
+      "success_criteria": [
+        "모든 핵심 함수 테스트 통과",
+        "테스트 실행 시간 < 30초",
+        "코드 커버리지 > 70%"
+      ],
+      "estimated_duration": "2-3 weeks"
+    },
+    {
+      "phase_name": "Phase 2: Integration Testing",
+      "objectives": [
+        "모듈 간 통합 테스트 작성",
+        "End-to-end 워크플로 테스트",
+        "외부 의존성 모킹"
+      ],
+      "deliverables": [
+        "통합 테스트 슈트",
+        "Mock 객체 및 테스트 더블",
+        "워크플로 테스트 케이스",
+        "데이터베이스 및 파일 시스템 테스트"
+      ],
+      "success_criteria": [
+        "전체 워크플로 테스트 통과",
+        "외부 의존성 없는 테스트 실행",
+        "통합 테스트 커버리지 > 80%"
+      ],
+      "estimated_duration": "3-4 weeks"
+    },
+    {
+      "phase_name": "Phase 3: Contract & Property Testing",
+      "objectives": [
+        "비즈니스 규칙 Contract 테스트",
+        "속성 기반 테스트 (Property-based testing)",
+        "성능 및 부하 테스트"
+      ],
+      "deliverables": [
+        "계약 기반 테스트 프레임워크",
+        "Property-based 테스트 케이스",
+        "성능 벤치마크 테스트",
+        "부하 테스트 시나리오"
+      ],
+      "success_criteria": [
+        "모든 비즈니스 규칙 검증",
+        "성능 요구사항 만족",
+        "부하 테스트 통과"
+      ],
+      "estimated_duration": "2-3 weeks"
+    },
+    {
+      "phase_name": "Phase 4: Advanced Testing Strategies",
+      "objectives": [
+        "Mutation 테스트 도입",
+        "테스트 품질 향상",
+        "자동화된 테스트 분석"
+      ],
+      "deliverables": [
+        "Mutation 테스트 설정",
+        "테스트 품질 메트릭 대시보드",
+        "자동화된 테스트 리포트",
+        "테스트 유지보수 가이드라인"
+      ],
+      "success_criteria": [
+        "Mutation 스코어 > 80%",
+        "테스트 유지보수성 확보",
+        "완전 자동화된 테스트 파이프라인"
+      ],
+      "estimated_duration": "2-3 weeks"
+    }
+  ],
+  "tdd_guidelines": {
+    "kent_beck_tdd_cycle": {
+      "red_phase": {
+        "description": "실패하는 테스트 작성",
+        "rules": [
+          "가장 간단한 실패 케이스부터 시작",
+          "테스트 이름은 행동을 명확히 표현",
+          "하나의 실패 원인만 테스트",
+          "컴파일되지 않는 코드도 Red 단계"
+        ],
+        "example": "def test_should_calculate_contract_delta_percentage():\n    # Given\n    draft_rate = 100.0\n    ref_rate = 90.0\n    # When\n    delta = calculator.calculate_delta_percent(draft_rate, ref_rate)\n    # Then\n    assert delta == 11.11"
+      },
+      "green_phase": {
+        "description": "테스트를 통과시키는 최소한의 코드 작성",
+        "rules": [
+          "테스트 통과가 유일한 목표",
+          "하드코딩도 허용",
+          "중복 코드 허용",
+          "가장 간단한 구현 선택"
+        ],
+        "example": "def calculate_delta_percent(draft_rate, ref_rate):\n    return 11.11  # 하드코딩으로 시작"
+      },
+      "refactor_phase": {
+        "description": "코드 품질 개선 (동작 변경 없이)",
+        "rules": [
+          "모든 테스트가 통과한 상태에서만 실행",
+          "중복 제거",
+          "의미 있는 이름으로 변경",
+          "구조 개선"
+        ],
+        "example": "def calculate_delta_percent(draft_rate, ref_rate):\n    if ref_rate == 0:\n        raise ValueError('Reference rate cannot be zero')\n    return round(((draft_rate - ref_rate) / ref_rate) * 100, 2)"
+      }
+    },
+    "logistics_specific_guidelines": {
+      "contract_validation_tests": {
+        "principles": [
+          "각 Contract 항목별 개별 테스트",
+          "Lane Map 기반 참조 요율 테스트",
+          "COST-GUARD 밴드 경계값 테스트",
+          "Delta 계산 정확성 테스트"
+        ],
+        "test_patterns": [
+          "Given-When-Then 구조 사용",
+          "테스트 데이터 Builder 패턴",
+          "Fixture를 통한 테스트 데이터 관리",
+          "Parametrized 테스트로 여러 시나리오 커버"
+        ]
+      },
+      "pdf_processing_tests": {
+        "principles": [
+          "다양한 PDF 형식 지원 테스트",
+          "OCR 정확도 검증 테스트",
+          "메타데이터 추출 테스트",
+          "대용량 파일 처리 성능 테스트"
+        ],
+        "mock_strategies": [
+          "PDF 파서 Mock 객체",
+          "파일 시스템 Mock",
+          "네트워크 의존성 Mock",
+          "시간 의존성 Mock"
+        ]
+      },
+      "excel_processing_tests": {
+        "principles": [
+          "시트별 데이터 처리 테스트",
+          "수식 계산 검증 테스트",
+          "대용량 Excel 파일 처리 테스트",
+          "포맷 변환 정확성 테스트"
+        ],
+        "test_data_management": [
+          "테스트 전용 Excel 파일",
+          "동적 테스트 데이터 생성",
+          "테스트 후 정리 (Clean-up)",
+          "병렬 테스트 격리"
+        ]
+      }
+    },
+    "quality_standards": {
+      "test_naming_conventions": {
+        "pattern": "test_should_{action}_when_{condition}",
+        "examples": [
+          "test_should_calculate_delta_when_valid_rates_provided",
+          "test_should_raise_error_when_reference_rate_is_zero",
+          "test_should_return_pass_when_delta_within_threshold"
+        ]
+      },
+      "assertion_guidelines": {
+        "specific_assertions": "assert result.status == 'PASS' (구체적)",
+        "avoid_generic": "assert result (너무 일반적)",
+        "multiple_assertions": "여러 assert 허용 (관련된 경우)",
+        "custom_matchers": "도메인 특화 assertion 함수 사용"
+      },
+      "test_organization": {
+        "arrange_act_assert": "Given-When-Then 구조",
+        "one_concept_per_test": "테스트당 하나의 개념만",
+        "independent_tests": "테스트 간 독립성 보장",
+        "fast_feedback": "빠른 피드백을 위한 단위 테스트 우선"
+      }
+    }
+  },
+  "implementation_plan": {
+    "total_tests": 160,
+    "priority_distribution": {
+      "critical": 0,
+      "high": 80,
+      "medium": 80,
+      "low": 0
+    },
+    "estimated_timeline": "18 weeks",
+    "weekly_implementation_plan": {
+      "Week 1": {
+        "focus": "High Priority Tests (Batch 1)",
+        "tests": [
+          

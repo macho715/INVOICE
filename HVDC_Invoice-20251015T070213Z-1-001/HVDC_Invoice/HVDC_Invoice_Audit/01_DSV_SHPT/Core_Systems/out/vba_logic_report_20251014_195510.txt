@@ -1,0 +1,165 @@
+================================================================================
+VBA Business Logic Analysis Report
+================================================================================
+
+[FILE SUMMARY]
+
+modApplyFormula.bas:
+  Total Lines: 115
+  Procedures: 3
+    - FindHeaderCol:
+        Business Logic: 6 lines
+        Formatting: 0 lines (excluded)
+    - ApplyFormula_ByDynamicRemark_ExactTotal_Safe:
+        Business Logic: 13 lines
+        Formatting: 0 lines (excluded)
+    - ApplyFormula_Impl:
+        Business Logic: 44 lines
+        Formatting: 6 lines (excluded)
+
+modCompileMaster.bas:
+  Total Lines: 131
+  Procedures: 4
+    - CompileAllSheets:
+        Business Logic: 52 lines
+        Formatting: 1 lines (excluded)
+    - GetValueFromLabel:
+        Business Logic: 10 lines
+        Formatting: 0 lines (excluded)
+    - FindHeaderRow:
+        Business Logic: 10 lines
+        Formatting: 0 lines (excluded)
+    - FindCol:
+        Business Logic: 10 lines
+        Formatting: 0 lines (excluded)
+
+modExtractFormulas.bas:
+  Total Lines: 89
+  Procedures: 2
+    - ExtractFormulasWithExclusion:
+        Business Logic: 13 lines
+        Formatting: 0 lines (excluded)
+    - ExtractFormulas_Impl:
+        Business Logic: 46 lines
+        Formatting: 2 lines (excluded)
+
+modHelpers.bas:
+  Total Lines: 125
+  Procedures: 10
+    - LogAction:
+        Business Logic: 17 lines
+        Formatting: 1 lines (excluded)
+    - LogActionSafe:
+        Business Logic: 8 lines
+        Formatting: 0 lines (excluded)
+    - AppBegin:
+        Business Logic: 8 lines
+        Formatting: 0 lines (excluded)
+    - AppEnd:
+        Business Logic: 7 lines
+        Formatting: 0 lines (excluded)
+    - SafeFind:
+        Business Logic: 11 lines
+        Formatting: 0 lines (excluded)
+    - lastDataRow:
+        Business Logic: 10 lines
+        Formatting: 0 lines (excluded)
+    - ClearRange:
+        Business Logic: 5 lines
+        Formatting: 0 lines (excluded)
+    - ProcExists:
+        Business Logic: 10 lines
+        Formatting: 0 lines (excluded)
+    - GetOrCreateSheet:
+        Business Logic: 9 lines
+        Formatting: 0 lines (excluded)
+    - Nz:
+        Business Logic: 8 lines
+        Formatting: 0 lines (excluded)
+
+modPipeline.bas:
+  Total Lines: 54
+  Procedures: 3
+    - START_PIPELINE:
+        Business Logic: 2 lines
+        Formatting: 0 lines (excluded)
+    - RunPipeline_Final:
+        Business Logic: 17 lines
+        Formatting: 0 lines (excluded)
+    - SafeRun:
+        Business Logic: 11 lines
+        Formatting: 0 lines (excluded)
+
+Module1.bas:
+  Total Lines: 4
+  Procedures: 0
+
+[PROCEDURE CALL GRAPH]
+
+modApplyFormula.bas::ApplyFormula_ByDynamicRemark_ExactTotal_Safe calls:
+  -> ApplyFormula_Impl
+  -> LogAction
+  -> AppBegin
+  -> AppEnd
+  -> LogActionSafe
+
+modApplyFormula.bas::ApplyFormula_Impl calls:
+  -> lastDataRow
+  -> FindHeaderCol
+  -> SafeFind
+  -> ClearRange
+
+modCompileMaster.bas::CompileAllSheets calls:
+  -> GetValueFromLabel
+  -> FindHeaderRow
+  -> FindCol
+
+modExtractFormulas.bas::ExtractFormulasWithExclusion calls:
+  -> ExtractFormulas_Impl
+  -> LogAction
+  -> AppBegin
+  -> AppEnd
+  -> LogActionSafe
+
+modExtractFormulas.bas::ExtractFormulas_Impl calls:
+  -> lastDataRow
+  -> SafeFind
+
+modHelpers.bas::LogActionSafe calls:
+  -> LogAction
+
+modHelpers.bas::ProcExists calls:
+  -> ProcName
+
+modPipeline.bas::RunPipeline_Final calls:
+  -> ExtractFormulasWithExclusion
+  -> ApplyFormula_ByDynamicRemark_ExactTotal_Safe
+  -> LogAction
+  -> AppBegin
+  -> CompileAllSheets
+  -> AppEnd
+  -> LogActionSafe
+  -> SafeRun
+
+modPipeline.bas::START_PIPELINE calls:
+  -> RunPipeline_Final
+
+modPipeline.bas::SafeRun calls:
+  -> LogAction
+  -> ProcExists
+  -> ProcName
+  -> RunPipeline_Final
+  -> LogActionSafe
+
+[MASTER SHEET GENERATION LOGIC]
+
+Sheet Creation:
+  Line 19: Set outWS = ThisWorkbook.Worksheets("MasterData")
+
+Header Definition:
+  Line 28: Dim headers As Variant...
+  Line 29: headers = Array("CWI Job Number", "Order Ref. Number", "S/No", "RATE SOURCE", "D...
+  Line 30: outWS.Range("A1").Resize(1, UBound(headers) + 1).Value = headers...
+
+Sheet Iteration:
+  Line 37: For Each ws In ThisWorkbook.Worksheets

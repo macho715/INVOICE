@@ -1,0 +1,18 @@
+[
+  "test_ofco_parser.py::TestOFCOParser::test_audit_computation",
+  "test_ofco_parser.py::TestOFCOParser::test_build_items_produces_results",
+  "test_ofco_parser.py::TestOFCOParser::test_cost_center_mapping_adp_port_dues",
+  "test_ofco_parser.py::TestOFCOParser::test_cost_center_mapping_berthing",
+  "test_ofco_parser.py::TestOFCOParser::test_cost_center_mapping_cargo_clearance",
+  "test_ofco_parser.py::TestOFCOParser::test_cost_center_mapping_fw_supply",
+  "test_ofco_parser.py::TestOFCOParser::test_cost_center_mapping_safeen",
+  "test_ofco_parser.py::TestOFCOParser::test_cost_center_mapping_water_supply",
+  "test_ofco_parser.py::TestOFCOParser::test_find_subject_lines",
+  "test_ofco_parser.py::TestOFCOParser::test_manpower_pattern",
+  "test_ofco_parser.py::TestOFCOParser::test_multi_line_description_parsing",
+  "test_ofco_parser.py::TestOFCOParser::test_parse_full_invoice",
+  "test_ofco_parser.py::TestOFCOParser::test_parse_invoice_date",
+  "test_ofco_parser.py::TestOFCOParser::test_parse_invoice_number",
+  "test_ofco_parser.py::TestOFCOParser::test_parse_total_amount",
+  "test_ofco_parser.py::TestOFCOParser::test_parse_vat_percent"
+]

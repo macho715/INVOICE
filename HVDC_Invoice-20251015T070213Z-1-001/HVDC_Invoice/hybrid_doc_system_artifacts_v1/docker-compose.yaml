@@ -1,0 +1,43 @@
+version: "3.9"
+services:
+  api:
+    build: ./services/api
+    image: hybrid-doc-api:1.0
+    environment:
+      - ADE_API_KEY=${ADE_API_KEY}
+      - ADE_ENDPOINT=${ADE_ENDPOINT}
+      - ROUTING_RULES_PATH=/app/config/routing_rules.json
+      - IR_SCHEMA_PATH=/app/config/unified_ir_schema.yaml
+    volumes:
+      - ./config:/app/config:ro
+      - ./data:/app/data
+    ports:
+      - "8080:8080"
+    depends_on:
+      - broker
+      - redis
+  worker:
+    build: ./services/worker
+    image: hybrid-doc-worker:1.0
+    environment:
+      - ADE_API_KEY=${ADE_API_KEY}
+      - ADE_ENDPOINT=${ADE_ENDPOINT}
+      - ROUTING_RULES_PATH=/app/config/routing_rules.json
+      - IR_SCHEMA_PATH=/app/config/unified_ir_schema.yaml
+      - CELERY_BROKER_URL=amqp://guest:guest@broker:5672//
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    volumes:
+      - ./config:/app/config:ro
+      - ./data:/app/data
+    depends_on:
+      - broker
+      - redis
+  broker:
+    image: rabbitmq:3.13-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"

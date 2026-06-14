@@ -1,0 +1,191 @@
+# Invoice 매핑 규칙 v1.0
+# SCNT SHIPMENT DRAFT INVOICE (SEPT 2025) 파일용
+
+# 네임스페이스 정의
+namespaces:
+  hvdc: "https://hvdc.example.org/ns#"
+  hvdci: "https://hvdc.example.org/id/"
+  ex: "http://samsung.com/project-logistics#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  org: "https://www.w3.org/ns/org#"
+  ops: "https://www.w3.org/ns/ops#"
+
+# 컬럼 매핑 규칙
+column_mapping:
+  # SEPT 시트 기준 (주요 데이터 시트)
+  "SEPT":
+    # 기본 식별자
+    "2": "invoice_title"           # "DRAFT INVOICE FOR HVDC..."
+    "3": "shipment_reference"      # "HVDC-ADOPT-SCT-0126"
+    "4": "job_number"              # "BAMF0017659"
+    "5": "type"                    # "SHIPMENT"
+    "6": "bl_number"               # "CHN2595234"
+    "7": "container_number"        # 컨테이너 번호
+    "8": "description"             # 상품 설명
+    "9": "quantity"                # 수량
+    "10": "unit"                   # 단위
+    "11": "unit_price"             # 단가
+    "12": "total_amount"           # 총액
+    "13": "currency"               # 통화
+    "14": "vendor"                 # 공급업체
+    "15": "invoice_date"           # 인보이스 날짜
+    "16": "due_date"               # 만료일
+    "17": "payment_terms"          # 결제 조건
+    "18": "notes"                  # 비고
+    "19": "status"                 # 상태
+    "20": "approval_status"        # 승인 상태
+    "21": "created_by"             # 생성자
+    "22": "created_date"           # 생성일
+    "23": "modified_by"            # 수정자
+    "24": "modified_date"          # 수정일
+    "25": "exchange_rate"          # 환율
+    "26": "local_amount"           # 현지 통화 금액
+    "27": "tax_amount"             # 세금
+
+# 엔티티 매핑 규칙
+entity_mapping:
+  # Invoice 엔티티
+  invoice:
+    type: "hvdc:Invoice"
+    identifier_field: "shipment_reference"
+    properties:
+      - field: "invoice_title"
+        property: "hvdc:title"
+        datatype: "xsd:string"
+      - field: "shipment_reference"
+        property: "hvdc:hasShipmentReference"
+        datatype: "xsd:string"
+      - field: "job_number"
+        property: "hvdc:hasJobNumber"
+        datatype: "xsd:string"
+      - field: "bl_number"
+        property: "hvdc:hasBLNumber"
+        datatype: "xsd:string"
+      - field: "container_number"
+        property: "hvdc:hasContainerNumber"
+        datatype: "xsd:string"
+      - field: "description"
+        property: "hvdc:description"
+        datatype: "xsd:string"
+      - field: "quantity"
+        property: "hvdc:quantity"
+        datatype: "xsd:decimal"
+      - field: "unit"
+        property: "hvdc:unit"
+        datatype: "xsd:string"
+      - field: "unit_price"
+        property: "hvdc:unitPrice"
+        datatype: "xsd:decimal"
+      - field: "total_amount"
+        property: "hvdc:totalAmount"
+        datatype: "xsd:decimal"
+      - field: "currency"
+        property: "hvdc:currency"
+        datatype: "xsd:string"
+      - field: "vendor"
+        property: "hvdc:hasVendor"
+        datatype: "xsd:string"
+      - field: "invoice_date"
+        property: "hvdc:invoiceDate"
+        datatype: "xsd:date"
+      - field: "due_date"
+        property: "hvdc:dueDate"
+        datatype: "xsd:date"
+      - field: "payment_terms"
+        property: "hvdc:paymentTerms"
+        datatype: "xsd:string"
+      - field: "notes"
+        property: "hvdc:notes"
+        datatype: "xsd:string"
+      - field: "status"
+        property: "hvdc:status"
+        datatype: "xsd:string"
+      - field: "approval_status"
+        property: "hvdc:approvalStatus"
+        datatype: "xsd:string"
+      - field: "exchange_rate"
+        property: "hvdc:exchangeRate"
+        datatype: "xsd:decimal"
+      - field: "local_amount"
+        property: "hvdc:localAmount"
+        datatype: "xsd:decimal"
+      - field: "tax_amount"
+        property: "hvdc:taxAmount"
+        datatype: "xsd:decimal"
+
+  # Shipment 연결
+  shipment_link:
+    type: "hvdc:Shipment"
+    identifier_field: "shipment_reference"
+    link_property: "hvdc:relatedShipment"
+    target_uri_pattern: "hvdci:Shipment/{shipment_reference}"
+
+# 비즈니스 규칙
+business_rules:
+  # 필수 필드 검증
+  required_fields:
+    - "shipment_reference"
+    - "job_number"
+    - "bl_number"
+    - "total_amount"
+    - "currency"
+    - "vendor"
+
+  # 데이터 정규화 규칙
+  normalization:
+    shipment_reference:
+      pattern: "HVDC-ADOPT-([A-Z0-9-]+)"
+      replacement: "HVDC-ADOPT-\\1"
+    job_number:
+      pattern: "BAMF([0-9]+)"
+      replacement: "BAMF\\1"
+    bl_number:
+      pattern: "([A-Z0-9]+)"
+      replacement: "\\1"
+    currency:
+      uppercase: true
+      valid_values: ["USD", "AED", "EUR", "KRW"]
+
+  # 데이터 타입 변환
+  type_conversion:
+    quantity: "decimal"
+    unit_price: "decimal"
+    total_amount: "decimal"
+    exchange_rate: "decimal"
+    local_amount: "decimal"
+    tax_amount: "decimal"
+    invoice_date: "date"
+    due_date: "date"
+    created_date: "date"
+    modified_date: "date"
+
+# 필터링 규칙
+filters:
+  # 빈 행 제외
+  exclude_empty_rows: true
+
+  # 유효하지 않은 데이터 제외
+  exclude_invalid:
+    - field: "shipment_reference"
+      condition: "is_null_or_empty"
+    - field: "total_amount"
+      condition: "is_null_or_zero"
+    - field: "currency"
+      condition: "not_in_valid_values"
+
+# 출력 설정
+output:
+  format: "turtle"
+  file_pattern: "invoice_{sheet_name}_{timestamp}.ttl"
+  include_prefixes: true
+  pretty_print: true
+
+# 메타데이터
+metadata:
+  version: "1.0"
+  created_date: "2025-10-20"
+  description: "SCNT SHIPMENT DRAFT INVOICE (SEPT 2025) 매핑 규칙"
+  author: "LogiOntology System"
+  source_file: "invoice_sept2025.xlsm"

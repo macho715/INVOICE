@@ -1,0 +1,20 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: hybrid-worker-rmq
+  namespace: hybrid-doc
+spec:
+  scaleTargetRef:
+    name: worker
+  pollingInterval: 15        # seconds (default 30)
+  cooldownPeriod: 60         # seconds
+  minReplicaCount: 1
+  maxReplicaCount: 10
+  triggers:
+    - type: rabbitmq
+      metadata:
+        queueName: celery
+        mode: QueueLength
+        value: "20"          # target queue length per replica
+        protocol: amqp
+        hostFromEnv: CELERY_BROKER_URL

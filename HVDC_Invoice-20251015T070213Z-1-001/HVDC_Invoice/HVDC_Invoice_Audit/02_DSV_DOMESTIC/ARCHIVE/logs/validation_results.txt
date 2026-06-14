@@ -1,0 +1,346 @@
+2025-10-14 20:21:35,676 - HybridPDFRouter - INFO - Loaded routing rules from C:\Users\minky\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\00_Shared\hybrid_integration\routing_rules_hvdc.json
+2025-10-14 20:21:35,677 - HybridPDFRouter - INFO - HybridPDFRouter initialized with 15 rules
+2025-10-14 20:21:35,677 - DOMESTICHybridIntegration - INFO - [OK] DOMESTIC Hybrid PDF Integration initialized
+2025-10-14 20:21:35,677 - HybridPDFRouter - INFO - Routed HVDC-DSV-SKM-MOSB-212_DN (1 FB & 6 LB).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,677 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-SKM-MOSB-212_DN (1 FB & 6 LB).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,677 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:35,864 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 1b30163f125d2a4c to Unified IR
+2025-10-14 20:21:35,864 - SchemaValidator - INFO - Document 1b30163f125d2a4c passed validation
+2025-10-14 20:21:35,864 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 1b30163f125d2a4c to DOMESTIC format
+2025-10-14 20:21:35,865 - HybridPDFRouter - INFO - Routed HVDC-DSV-SKM-MOSB-212_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,865 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-SKM-MOSB-212_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,865 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:35,897 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document be8ff1cb952d30a4 to Unified IR
+2025-10-14 20:21:35,898 - SchemaValidator - INFO - Document be8ff1cb952d30a4 passed validation
+2025-10-14 20:21:35,898 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR be8ff1cb952d30a4 to DOMESTIC format
+2025-10-14 20:21:35,898 - HybridPDFRouter - INFO - Routed HVDC-DSV-PRE-MIR-SHU-DAS-AGI-213_DN (MOSB-MIRFA-SHU).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,898 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-PRE-MIR-SHU-DAS-AGI-213_DN (MOSB-MIRFA-SHU).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,898 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:35,909 - DOMESTICHybridIntegration - WARNING -   [WARN] No text extracted from Data\DSV 202509\SCNT Domestic (Sept 2025) - Supporting Documents\02. HVDC-DSV-PRE-MIR-SHU-DAS-AGI-213\HVDC-DSV-PRE-MIR-SHU-DAS-AGI-213_DN (MOSB-MIRFA-SHU).pdf
+2025-10-14 20:21:35,909 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 9f5be33719a18065 to Unified IR
+2025-10-14 20:21:35,909 - SchemaValidator - WARNING - Document 9f5be33719a18065 failed validation: 3 errors
+2025-10-14 20:21:35,909 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (3): ['blocks array is empty - at least one block required', 'DN missing critical field: dn_fields.origin']
+2025-10-14 20:21:35,909 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 9f5be33719a18065 to DOMESTIC format
+2025-10-14 20:21:35,910 - HybridPDFRouter - INFO - Routed HVDC-DSV-PRE-MIR-214_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,910 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-PRE-MIR-214_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,910 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:35,945 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 6a96530dfb3624cb to Unified IR
+2025-10-14 20:21:35,945 - SchemaValidator - INFO - Document 6a96530dfb3624cb passed validation
+2025-10-14 20:21:35,945 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 6a96530dfb3624cb to DOMESTIC format
+2025-10-14 20:21:35,945 - HybridPDFRouter - INFO - Routed HVDC-ADOPT-SCT-0126_DAS_DN (DSV-MOSB).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,945 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-ADOPT-SCT-0126_DAS_DN (DSV-MOSB).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:35,945 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,052 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document f6b2147b5fee6e3b to Unified IR
+2025-10-14 20:21:36,053 - SchemaValidator - INFO - Document f6b2147b5fee6e3b passed validation
+2025-10-14 20:21:36,053 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR f6b2147b5fee6e3b to DOMESTIC format
+2025-10-14 20:21:36,053 - HybridPDFRouter - INFO - Routed HVDC-ADOPT-SCT-0126_DN (DSV-MIRFA).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,054 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-ADOPT-SCT-0126_DN (DSV-MIRFA).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,054 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,154 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document f2b9f40b040b929c to Unified IR
+2025-10-14 20:21:36,155 - SchemaValidator - INFO - Document f2b9f40b040b929c passed validation
+2025-10-14 20:21:36,155 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR f2b9f40b040b929c to DOMESTIC format
+2025-10-14 20:21:36,155 - HybridPDFRouter - INFO - Routed HVDC-ADOPT-SCT-0126_DN (DSV-SHU).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,155 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-ADOPT-SCT-0126_DN (DSV-SHU).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,155 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,227 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document ea6cdbb1d1947252 to Unified IR
+2025-10-14 20:21:36,227 - SchemaValidator - INFO - Document ea6cdbb1d1947252 passed validation
+2025-10-14 20:21:36,227 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR ea6cdbb1d1947252 to DOMESTIC format
+2025-10-14 20:21:36,227 - HybridPDFRouter - INFO - Routed HVDC-ADOPT-SCT-0126_DN (MOSB-DSV).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,227 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-ADOPT-SCT-0126_DN (MOSB-DSV).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,227 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,252 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 5bb1a297d1bf1eb1 to Unified IR
+2025-10-14 20:21:36,252 - SchemaValidator - INFO - Document 5bb1a297d1bf1eb1 passed validation
+2025-10-14 20:21:36,252 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 5bb1a297d1bf1eb1 to DOMESTIC format
+2025-10-14 20:21:36,253 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-SHU-216_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,253 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-SHU-216_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,253 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,277 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document dc59934b88675476 to Unified IR
+2025-10-14 20:21:36,277 - SchemaValidator - INFO - Document dc59934b88675476 passed validation
+2025-10-14 20:21:36,277 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR dc59934b88675476 to DOMESTIC format
+2025-10-14 20:21:36,277 - HybridPDFRouter - INFO - Routed HVDC-DSV-SHU-218_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,277 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-SHU-218_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,277 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,300 - DOMESTICHybridIntegration - WARNING -   [WARN] No text extracted from Data\DSV 202509\SCNT Domestic (Sept 2025) - Supporting Documents\06. HVDC-DSV-SHU-218\HVDC-DSV-SHU-218_DN.pdf
+2025-10-14 20:21:36,301 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document fafc3157748b5de5 to Unified IR
+2025-10-14 20:21:36,301 - SchemaValidator - WARNING - Document fafc3157748b5de5 failed validation: 3 errors
+2025-10-14 20:21:36,301 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (3): ['blocks array is empty - at least one block required', 'DN missing critical field: dn_fields.origin']
+2025-10-14 20:21:36,301 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR fafc3157748b5de5 to DOMESTIC format
+2025-10-14 20:21:36,302 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-MIR-219_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,302 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-MIR-219_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,302 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,317 - DOMESTICHybridIntegration - WARNING -   [WARN] No text extracted from Data\DSV 202509\SCNT Domestic (Sept 2025) - Supporting Documents\07. HVDC-DSV-MOSB-MIR-219\HVDC-DSV-MOSB-MIR-219_DN.pdf
+2025-10-14 20:21:36,318 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 0d8ae3d7136d8b9e to Unified IR
+2025-10-14 20:21:36,318 - SchemaValidator - WARNING - Document 0d8ae3d7136d8b9e failed validation: 3 errors
+2025-10-14 20:21:36,318 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (3): ['blocks array is empty - at least one block required', 'DN missing critical field: dn_fields.origin']
+2025-10-14 20:21:36,318 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 0d8ae3d7136d8b9e to DOMESTIC format
+2025-10-14 20:21:36,319 - HybridPDFRouter - INFO - Routed HVDC-DSV-SAS-MOSB-217_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,319 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-SAS-MOSB-217_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,319 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,349 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 58dee13b86919847 to Unified IR
+2025-10-14 20:21:36,349 - SchemaValidator - INFO - Document 58dee13b86919847 passed validation
+2025-10-14 20:21:36,349 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 58dee13b86919847 to DOMESTIC format
+2025-10-14 20:21:36,349 - HybridPDFRouter - INFO - Routed HVDC-ADOPT-HE-0487_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,349 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-ADOPT-HE-0487_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,349 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,452 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 1d9d602ba778bd09 to Unified IR
+2025-10-14 20:21:36,452 - SchemaValidator - INFO - Document 1d9d602ba778bd09 passed validation
+2025-10-14 20:21:36,452 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 1d9d602ba778bd09 to DOMESTIC format
+2025-10-14 20:21:36,452 - HybridPDFRouter - INFO - Routed HVDC-MIR-DSV-221_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,452 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-MIR-DSV-221_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,452 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,484 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 3c4ffc6598ea2687 to Unified IR
+2025-10-14 20:21:36,484 - SchemaValidator - INFO - Document 3c4ffc6598ea2687 passed validation
+2025-10-14 20:21:36,484 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 3c4ffc6598ea2687 to DOMESTIC format
+2025-10-14 20:21:36,484 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-MIR-220_DN (M44-MIRFA).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,484 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-MIR-220_DN (M44-MIRFA).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,484 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,809 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 6abd47fd98e1fb1d to Unified IR
+2025-10-14 20:21:36,809 - SchemaValidator - INFO - Document 6abd47fd98e1fb1d passed validation
+2025-10-14 20:21:36,809 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 6abd47fd98e1fb1d to DOMESTIC format
+2025-10-14 20:21:36,810 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-MIR-220_DN (MARKAZ-MIRFA).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,810 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-MIR-220_DN (MARKAZ-MIRFA).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,810 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,901 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 7f88ae81df12ec7b to Unified IR
+2025-10-14 20:21:36,901 - SchemaValidator - INFO - Document 7f88ae81df12ec7b passed validation
+2025-10-14 20:21:36,901 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 7f88ae81df12ec7b to DOMESTIC format
+2025-10-14 20:21:36,901 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-222_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,901 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-222_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,901 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,947 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 6fd4a6b51d0761df to Unified IR
+2025-10-14 20:21:36,947 - SchemaValidator - INFO - Document 6fd4a6b51d0761df passed validation
+2025-10-14 20:21:36,947 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 6fd4a6b51d0761df to DOMESTIC format
+2025-10-14 20:21:36,947 - HybridPDFRouter - INFO - Routed HVDC-DSV-FP-TRO-223_8LB_DN (with Rate Approval).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,947 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-FP-TRO-223_8LB_DN (with Rate Approval).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,947 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:36,977 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document deeda0bbf4b72a34 to Unified IR
+2025-10-14 20:21:36,977 - SchemaValidator - WARNING - Document deeda0bbf4b72a34 failed validation: 2 errors
+2025-10-14 20:21:36,977 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (2): ['DN missing critical field: dn_fields.origin', 'DN missing critical field: dn_fields.destination']
+2025-10-14 20:21:36,977 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR deeda0bbf4b72a34 to DOMESTIC format
+2025-10-14 20:21:36,977 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-223 _DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,977 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-223 _DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:36,977 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,023 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 03208e11dc751019 to Unified IR
+2025-10-14 20:21:37,023 - SchemaValidator - INFO - Document 03208e11dc751019 passed validation
+2025-10-14 20:21:37,023 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 03208e11dc751019 to DOMESTIC format
+2025-10-14 20:21:37,023 - HybridPDFRouter - INFO - Routed HVDC-DSV-HE-SHU-199_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,024 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-HE-SHU-199_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,024 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,094 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document efb5e50d53633aa1 to Unified IR
+2025-10-14 20:21:37,095 - SchemaValidator - INFO - Document efb5e50d53633aa1 passed validation
+2025-10-14 20:21:37,095 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR efb5e50d53633aa1 to DOMESTIC format
+2025-10-14 20:21:37,095 - HybridPDFRouter - INFO - Routed HVDC-DSV-HE-MIR-TEC-224_DNs.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,095 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-HE-MIR-TEC-224_DNs.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,095 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,140 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 505934e7087d7a11 to Unified IR
+2025-10-14 20:21:37,140 - SchemaValidator - INFO - Document 505934e7087d7a11 passed validation
+2025-10-14 20:21:37,140 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 505934e7087d7a11 to DOMESTIC format
+2025-10-14 20:21:37,141 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-225_DN (1 FB & 3-TonPU).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,141 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-225_DN (1 FB & 3-TonPU).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,141 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,187 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document de69ff35ce911d2a to Unified IR
+2025-10-14 20:21:37,187 - SchemaValidator - INFO - Document de69ff35ce911d2a passed validation
+2025-10-14 20:21:37,187 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR de69ff35ce911d2a to DOMESTIC format
+2025-10-14 20:21:37,190 - HybridPDFRouter - INFO - Routed HVDC-DSV-PRE-SHU-MIR-227_DN (Prestige-Mirfa-Shuweihat).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,190 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-PRE-SHU-MIR-227_DN (Prestige-Mirfa-Shuweihat).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,190 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,240 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document bb1eb070eee669fa to Unified IR
+2025-10-14 20:21:37,241 - SchemaValidator - INFO - Document bb1eb070eee669fa passed validation
+2025-10-14 20:21:37,241 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR bb1eb070eee669fa to DOMESTIC format
+2025-10-14 20:21:37,241 - HybridPDFRouter - INFO - Routed HVDC-DSV-HE-SHU-228_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,241 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-HE-SHU-228_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,241 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,293 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 6e8751d309ac025f to Unified IR
+2025-10-14 20:21:37,294 - SchemaValidator - INFO - Document 6e8751d309ac025f passed validation
+2025-10-14 20:21:37,294 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 6e8751d309ac025f to DOMESTIC format
+2025-10-14 20:21:37,294 - HybridPDFRouter - INFO - Routed HVDC-DSV-MOSB-229_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,294 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-MOSB-229_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,294 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,340 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document fbc9ae5c77b2dc8d to Unified IR
+2025-10-14 20:21:37,340 - SchemaValidator - INFO - Document fbc9ae5c77b2dc8d passed validation
+2025-10-14 20:21:37,340 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR fbc9ae5c77b2dc8d to DOMESTIC format
+2025-10-14 20:21:37,340 - HybridPDFRouter - INFO - Routed HVDC-DSV-SHU-SKM-226_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,340 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-SHU-SKM-226_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,340 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,368 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 412e2803d6892bb2 to Unified IR
+2025-10-14 20:21:37,368 - SchemaValidator - INFO - Document 412e2803d6892bb2 passed validation
+2025-10-14 20:21:37,369 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 412e2803d6892bb2 to DOMESTIC format
+2025-10-14 20:21:37,369 - HybridPDFRouter - INFO - Routed HVDC-DSV-PRE-MIR-SHU-230_DN (Prestige-Mirfa).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,369 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-PRE-MIR-SHU-230_DN (Prestige-Mirfa).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,369 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,492 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 3ab772a364af7dc8 to Unified IR
+2025-10-14 20:21:37,492 - SchemaValidator - INFO - Document 3ab772a364af7dc8 passed validation
+2025-10-14 20:21:37,492 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 3ab772a364af7dc8 to DOMESTIC format
+2025-10-14 20:21:37,492 - HybridPDFRouter - INFO - Routed HVDC-DSV-PRE-MIR-SHU-230_DN (Prestige-Shuweihat).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,493 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-PRE-MIR-SHU-230_DN (Prestige-Shuweihat).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,493 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,589 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 638e95fbfb6370b1 to Unified IR
+2025-10-14 20:21:37,589 - SchemaValidator - INFO - Document 638e95fbfb6370b1 passed validation
+2025-10-14 20:21:37,589 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 638e95fbfb6370b1 to DOMESTIC format
+2025-10-14 20:21:37,589 - HybridPDFRouter - INFO - Routed HVDC-ADOPT-SCT-0123-0124_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,589 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-ADOPT-SCT-0123-0124_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,589 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,656 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document c06a1d3de5d6b6fe to Unified IR
+2025-10-14 20:21:37,656 - SchemaValidator - INFO - Document c06a1d3de5d6b6fe passed validation
+2025-10-14 20:21:37,656 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR c06a1d3de5d6b6fe to DOMESTIC format
+2025-10-14 20:21:37,656 - HybridPDFRouter - INFO - Routed HVDC-ADOPT-HE-0499_DN (with Rate Approval).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,656 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-ADOPT-HE-0499_DN (with Rate Approval).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,656 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,702 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 25d05d3cadbfdd3b to Unified IR
+2025-10-14 20:21:37,702 - SchemaValidator - WARNING - Document 25d05d3cadbfdd3b failed validation: 2 errors
+2025-10-14 20:21:37,702 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (2): ['DN missing critical field: dn_fields.origin', 'DN missing critical field: dn_fields.destination']
+2025-10-14 20:21:37,702 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 25d05d3cadbfdd3b to DOMESTIC format
+2025-10-14 20:21:37,702 - HybridPDFRouter - INFO - Routed HVDC-DSV-PRE-MDAS-232_DN (MOSB-Shuweihat).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,702 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-PRE-MDAS-232_DN (MOSB-Shuweihat).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,702 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,709 - DOMESTICHybridIntegration - WARNING -   [WARN] No text extracted from Data\DSV 202509\SCNT Domestic (Sept 2025) - Supporting Documents\25. HVDC-DSV-PRE-MDAS-232 (PEI_SCT-19LT-PJC-LPO-1450)\HVDC-DSV-PRE-MDAS-232_DN (MOSB-Shuweihat).pdf
+2025-10-14 20:21:37,709 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document a6cb7ac9ca2b314e to Unified IR
+2025-10-14 20:21:37,709 - SchemaValidator - WARNING - Document a6cb7ac9ca2b314e failed validation: 3 errors
+2025-10-14 20:21:37,709 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (3): ['blocks array is empty - at least one block required', 'DN missing critical field: dn_fields.origin']
+2025-10-14 20:21:37,709 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR a6cb7ac9ca2b314e to DOMESTIC format
+2025-10-14 20:21:37,709 - HybridPDFRouter - INFO - Routed HVDC-DSV-PRE-MDAS-232_DN (Prestige-MOSB).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,710 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-PRE-MDAS-232_DN (Prestige-MOSB).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,710 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,717 - DOMESTICHybridIntegration - WARNING -   [WARN] No text extracted from Data\DSV 202509\SCNT Domestic (Sept 2025) - Supporting Documents\25. HVDC-DSV-PRE-MDAS-232 (PEI_SCT-19LT-PJC-LPO-1450)\HVDC-DSV-PRE-MDAS-232_DN (Prestige-MOSB).pdf
+2025-10-14 20:21:37,717 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document a1fb7eeac739f834 to Unified IR
+2025-10-14 20:21:37,717 - SchemaValidator - WARNING - Document a1fb7eeac739f834 failed validation: 3 errors
+2025-10-14 20:21:37,717 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (3): ['blocks array is empty - at least one block required', 'DN missing critical field: dn_fields.origin']
+2025-10-14 20:21:37,717 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR a1fb7eeac739f834 to DOMESTIC format
+2025-10-14 20:21:37,717 - HybridPDFRouter - INFO - Routed HVDC-DSV-HAU-SHU-231_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,717 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-HAU-SHU-231_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,718 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,764 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 554aae727ad26534 to Unified IR
+2025-10-14 20:21:37,764 - SchemaValidator - INFO - Document 554aae727ad26534 passed validation
+2025-10-14 20:21:37,764 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 554aae727ad26534 to DOMESTIC format
+2025-10-14 20:21:37,765 - HybridPDFRouter - INFO - Routed HVDC-DSV-HE-AGI-233_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,765 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-HE-AGI-233_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,765 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,791 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 41043d8ea891bfd4 to Unified IR
+2025-10-14 20:21:37,791 - SchemaValidator - INFO - Document 41043d8ea891bfd4 passed validation
+2025-10-14 20:21:37,791 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 41043d8ea891bfd4 to DOMESTIC format
+2025-10-14 20:21:37,791 - HybridPDFRouter - INFO - Routed HVDC-DSV-SHU-MIR-235_DN.pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,791 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-SHU-MIR-235_DN.pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,792 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,817 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document 06d330c2e4d14bf8 to Unified IR
+2025-10-14 20:21:37,817 - SchemaValidator - INFO - Document 06d330c2e4d14bf8 passed validation
+2025-10-14 20:21:37,817 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR 06d330c2e4d14bf8 to DOMESTIC format
+2025-10-14 20:21:37,818 - HybridPDFRouter - INFO - Routed HVDC-DSV-SAS-SHU-234_DN (with Toll Fee & Rate approval).pdf to docling (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,818 - DOMESTICHybridIntegration - INFO - [ROUTE] HVDC-DSV-SAS-SHU-234_DN (with Toll Fee & Rate approval).pdf -> DOCLING (rule: sensitive_force_local, confidence: 0.90)
+2025-10-14 20:21:37,818 - DOMESTICHybridIntegration - INFO -   [DOCLING] Docling selected - using local fallback parsing
+2025-10-14 20:21:37,847 - DOMESTICHybridIntegration - WARNING -   [WARN] No text extracted from Data\DSV 202509\SCNT Domestic (Sept 2025) - Supporting Documents\29. HVDC-DSV-SAS-SHU-234\HVDC-DSV-SAS-SHU-234_DN (with Toll Fee & Rate approval).pdf
+2025-10-14 20:21:37,849 - DOMESTICToUnifiedIRAdapter - INFO - Converted DOMESTIC document c9f70fce6ece8dd7 to Unified IR
+2025-10-14 20:21:37,850 - SchemaValidator - WARNING - Document c9f70fce6ece8dd7 failed validation: 3 errors
+2025-10-14 20:21:37,850 - DOMESTICHybridIntegration - WARNING -   [WARN] Validation warnings (3): ['blocks array is empty - at least one block required', 'DN missing critical field: dn_fields.origin']
+2025-10-14 20:21:37,850 - UnifiedIRToDOMESTICAdapter - INFO - Converted Unified IR c9f70fce6ece8dd7 to DOMESTIC format
+[HYBRID] Docling/ADE integration enabled
+================================================================================
+9??2025 Domestic ?몃낫?댁뒪 + PDF ?듯빀 寃利?
+================================================================================
+
+?뱛 Step 1: Supporting Documents ?ㅼ틪...
+??諛쒓껄??DN PDF: 36媛?
+
+?뱞 Step 2: DN PDF ?뚯떛...
+[HYBRID] Using Hybrid Docling/ADE routing for DN parsing...
+
+DN PDF parsing started... (Total: 36)
+  [1/36] HVDC-DSV-SKM-MOSB-212_DN (1 FB & 6 LB).pdf ... [OK] (hybrid)
+  [2/36] HVDC-DSV-SKM-MOSB-212_DN.pdf ... [OK] (hybrid)
+  [3/36] HVDC-DSV-PRE-MIR-SHU-DAS-AGI-213_DN (MOSB-MIRFA-SHU).pdf ... [OK] (hybrid)
+  [4/36] HVDC-DSV-PRE-MIR-214_DN.pdf ... [OK] (hybrid)
+  [5/36] HVDC-ADOPT-SCT-0126_DAS_DN (DSV-MOSB).pdf ... [OK] (hybrid)
+  [6/36] HVDC-ADOPT-SCT-0126_DN (DSV-MIRFA).pdf ... [OK] (hybrid)
+  [7/36] HVDC-ADOPT-SCT-0126_DN (DSV-SHU).pdf ... [OK] (hybrid)
+  [8/36] HVDC-ADOPT-SCT-0126_DN (MOSB-DSV).pdf ... [OK] (hybrid)
+  [9/36] HVDC-DSV-MOSB-SHU-216_DN.pdf ... [OK] (hybrid)
+  [10/36] HVDC-DSV-SHU-218_DN.pdf ... [OK] (hybrid)
+  [11/36] HVDC-DSV-MOSB-MIR-219_DN.pdf ... [OK] (hybrid)
+  [12/36] HVDC-DSV-SAS-MOSB-217_DN.pdf ... [OK] (hybrid)
+  [13/36] HVDC-ADOPT-HE-0487_DN.pdf ... [OK] (hybrid)
+  [14/36] HVDC-MIR-DSV-221_DN.pdf ... [OK] (hybrid)
+  [15/36] HVDC-DSV-MOSB-MIR-220_DN (M44-MIRFA).pdf ... [OK] (hybrid)
+  [16/36] HVDC-DSV-MOSB-MIR-220_DN (MARKAZ-MIRFA).pdf ... [OK] (hybrid)
+  [17/36] HVDC-DSV-MOSB-222_DN.pdf ... [OK] (hybrid)
+  [18/36] HVDC-DSV-FP-TRO-223_8LB_DN (with Rate Approval).pdf ... [OK] (hybrid)
+  [19/36] HVDC-DSV-MOSB-223 _DN.pdf ... [OK] (hybrid)
+  [20/36] HVDC-DSV-HE-SHU-199_DN.pdf ... [OK] (hybrid)
+  [21/36] HVDC-DSV-HE-MIR-TEC-224_DNs.pdf ... [OK] (hybrid)
+  [22/36] HVDC-DSV-MOSB-225_DN (1 FB & 3-TonPU).pdf ... [OK] (hybrid)
+  [23/36] HVDC-DSV-PRE-SHU-MIR-227_DN (Prestige-Mirfa-Shuweihat).pdf ... [OK] (hybrid)
+  [24/36] HVDC-DSV-HE-SHU-228_DN.pdf ... [OK] (hybrid)
+  [25/36] HVDC-DSV-MOSB-229_DN.pdf ... [OK] (hybrid)
+  [26/36] HVDC-DSV-SHU-SKM-226_DN.pdf ... [OK] (hybrid)
+  [27/36] HVDC-DSV-PRE-MIR-SHU-230_DN (Prestige-Mirfa).pdf ... [OK] (hybrid)
+  [28/36] HVDC-DSV-PRE-MIR-SHU-230_DN (Prestige-Shuweihat).pdf ... [OK] (hybrid)
+  [29/36] HVDC-ADOPT-SCT-0123-0124_DN.pdf ... [OK] (hybrid)
+  [30/36] HVDC-ADOPT-HE-0499_DN (with Rate Approval).pdf ... [OK] (hybrid)
+  [31/36] HVDC-DSV-PRE-MDAS-232_DN (MOSB-Shuweihat).pdf ... [OK] (hybrid)
+  [32/36] HVDC-DSV-PRE-MDAS-232_DN (Prestige-MOSB).pdf ... [OK] (hybrid)
+  [33/36] HVDC-DSV-HAU-SHU-231_DN.pdf ... [OK] (hybrid)
+  [34/36] HVDC-DSV-HE-AGI-233_DN.pdf ... [OK] (hybrid)
+  [35/36] HVDC-DSV-SHU-MIR-235_DN.pdf ... [OK] (hybrid)
+  [36/36] HVDC-DSV-SAS-SHU-234_DN (with Toll Fee & Rate approval).pdf ... [OK] (hybrid)
+
+[DONE] Parsing complete: 36/36 success (100.0%)
+
+======================================================================
+DOMESTIC HYBRID INTEGRATION SUMMARY
+======================================================================
+
+Parsing Statistics:
+  Total Attempts: 36
+  Successes: 36
+  Failures: 0
+  Success Rate: 100.0%
+
+Routing Statistics:
+  Total Routes: 36
+  ADE Routes: 0 (0.0%)
+  Docling Routes: 36
+  Total ADE Cost: $0.00
+
+Budget Status (Date: 2025-10-14):
+  Daily Limit: $50.00
+  Used: $0.00
+  Remaining: $50.00
+  Usage: 0.0%
+======================================================================
+
+
+?뵇 Step 3: Cross-Document 寃利?..
+
+?뵇 Cross-Document 寃利??쒖옉 (1:1 洹몃━??留ㅼ묶)...
+  DN ?곗씠???깃났): 36媛?
+  ?몃낫?댁뒪: 44媛???ぉ
+  ?뱤 ?섏슂-怨듦툒 遺꾩꽍 ??? dn_supply_demand.csv
+  ??DN 留ㅼ묶: 31/44 (70.5%)
+
+?뱤 Step 4: Excel??PDF 寃利?寃곌낵 ?듯빀...
+
+?뱷 Excel items ?쒗듃??PDF 寃利?寃곌낵 異붽? 以?..
+  Validation results count: 44
+  Items count: 44
+  ??異붽???而щ읆: 13媛?(PDF 寃利?寃곌낵 + ?좎궗??+ 異붿쟻 ?뺣낫 + 誘몃ℓ移??ъ쑀)
+
+?뱤 Excel ?뚯씪 ?ъ깮??以? Results/Sept_2025/domestic_sept_2025_FINAL_WITH_PDF_VALIDATION_20251014_202138.xlsx
+  ?뵕 ?섏씠?쇰쭅???앹꽦 以?.. (Enhanced Matching 4-level fallback)
+  ???섏씠?쇰쭅???앹꽦 ?꾨즺: 35/44 (ref_adj ??ApprovedLaneMap)
+  ???쒗듃 異붽?: DN_Validation (44 rows)
+??Excel ?뚯씪 ????꾨즺: Results/Sept_2025/domestic_sept_2025_FINAL_WITH_PDF_VALIDATION_20251014_202138.xlsx
+  - items ?쒗듃: 44 rows 횞 25 columns
+  - DN_Validation ?쒗듃: 44 rows
+
+?뱤 Step 5: 醫낇빀 由ы룷???앹꽦...
+
+?뱤 醫낇빀 由ы룷???앹꽦 以?..
+??由ы룷????? Results\Sept_2025\Reports\SEPT_2025_COMPLETE_VALIDATION_REPORT.md
+
+================================================================================
+?럦 寃利??꾨즺!
+================================================================================
+
+?뱞 異쒕젰 ?뚯씪:
+  - Excel (Enhanced): Results/Sept_2025/domestic_sept_2025_FINAL_WITH_PDF_VALIDATION_20251013_231013.xlsx
+  - Excel (Final): Results/Sept_2025/domestic_sept_2025_FINAL_WITH_PDF_VALIDATION_20251014_202138.xlsx
+  - Report: Results/Sept_2025/Reports/SEPT_2025_COMPLETE_VALIDATION_REPORT.md
+
+??9??Domestic ?몃낫?댁뒪 + PDF ?듯빀 寃利??꾨즺!

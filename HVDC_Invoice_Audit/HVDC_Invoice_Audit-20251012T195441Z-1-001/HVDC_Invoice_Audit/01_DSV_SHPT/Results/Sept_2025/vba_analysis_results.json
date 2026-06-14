@@ -1,0 +1,4293 @@
+{
+  "file_info": {
+    "file_path": "Data\\DSV 202509\\SCNT SHIPMENT DRAFT INVOICE (SEPT 2025)_FINAL.xlsm",
+    "file_size": 245391,
+    "analysis_timestamp": "2025-10-13T23:01:46.458107",
+    "total_sheets": 31
+  },
+  "vba_results": {
+    "formula_extraction": {
+      "sheets_with_formulas": [
+        "MasterData",
+        "LOG"
+      ],
+      "formula_count": 29,
+      "formula_data": [
+        {
+          "sheet": "MasterData",
+          "row": 8,
+          "formula": "=535/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 9,
+          "formula": "=25/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 15,
+          "formula": "=175/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 16,
+          "formula": "=30/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 17,
+          "formula": "=180/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 22,
+          "formula": "=150/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 23,
+          "formula": "=30/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 24,
+          "formula": "=(25+55)/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 29,
+          "formula": "=27/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 30,
+          "formula": "=35/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 35,
+          "formula": "=29.38/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 36,
+          "formula": "=130/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 37,
+          "formula": "=35/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 38,
+          "formula": "=25/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 39,
+          "formula": "=80/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 44,
+          "formula": "=(420/2)+600"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 45,
+          "formula": "=35/3.6725"
+        },
+        {
+          "sheet": "MasterData",
+          "row": 46,
+          "formula": "=27/3.6725"
+        },
+        {
+          "sheet": "LOG",
+          "row": 4,
+          "formula": "ExtractFormulas"
+        },
+        {
+          "sheet": "LOG",
+          "row": 5,
+          "formula": "ExtractFormulas"
+        },
+        {
+          "sheet": "LOG",
+          "row": 6,
+          "formula": "ExtractFormulas"
+        },
+        {
+          "sheet": "LOG",
+          "row": 7,
+          "formula": "ExtractFormulasWithExclusion"
+        },
+        {
+          "sheet": "LOG",
+          "row": 8,
+          "formula": "ApplyFormula"
+        },
+        {
+          "sheet": "LOG",
+          "row": 9,
+          "formula": "ApplyFormula"
+        },
+        {
+          "sheet": "LOG",
+          "row": 10,
+          "formula": "ApplyFormula"
+        },
+        {
+          "sheet": "LOG",
+          "row": 11,
+          "formula": "ApplyFormula"
+        },
+        {
+          "sheet": "LOG",
+          "row": 12,
+          "formula": "ApplyFormula_ByDynamicRemark_ExactTotal_Safe"
+        },
+        {
+          "sheet": "LOG",
+          "row": 13,
+          "formula": "CompileAllSheets"
+        },
+        {
+          "sheet": "LOG",
+          "row": 14,
+          "formula": "PIPELINE"
+        }
+      ]
+    },
+    "rev_rate_calculations": {
+      "sheets_with_rev_rates": [
+        "SEPT",
+        "MasterData",
+        "SCT0126",
+        "SCT0127",
+        "SCT0038",
+        "SCT0122",
+        "SCT0131",
+        "SCT0123,0124",
+        "SCT0134",
+        "HE0471",
+        "HE0472",
+        "HE0473",
+        "HE0450,0459,0460",
+        "HE0466,0467,0468",
+        "HE0464,0465,0470",
+        "HE0437,0438-2,0439-2,0440-1,044",
+        "HE0487",
+        "HE0438-0454",
+        "HE0425,0426,0427,0428",
+        "HE0475",
+        "HE0497",
+        "HE0500",
+        "HE0488",
+        "HE0495,0496",
+        "HE0498",
+        "HE0501",
+        "HE0502",
+        "HE0499L1",
+        "HE0499L2",
+        "HE0499L3"
+      ],
+      "calculations": [
+        {
+          "sheet": "SEPT",
+          "row": 5,
+          "qty": 749,
+          "total": 3308.0993873383254
+        },
+        {
+          "sheet": "SEPT",
+          "row": 6,
+          "qty": 1,
+          "total": 989.8202859087814
+        },
+        {
+          "sheet": "SEPT",
+          "row": 7,
+          "qty": 38,
+          "total": 49.012933968686184
+        },
+        {
+          "sheet": "SEPT",
+          "row": 8,
+          "qty": 4,
+          "total": 994.7964601769911
+        },
+        {
+          "sheet": "SEPT",
+          "row": 9,
+          "qty": 4,
+          "total": 1621.6822328114365
+        },
+        {
+          "sheet": "SEPT",
+          "row": 10,
+          "qty": 6,
+          "total": 1112.5194009530292
+        },
+        {
+          "sheet": "SEPT",
+          "row": 11,
+          "qty": 4,
+          "total": 2354.7822328114366
+        },
+        {
+          "sheet": "SEPT",
+          "row": 12,
+          "qty": 4,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 13,
+          "qty": 6,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 14,
+          "qty": 7,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 15,
+          "qty": 41,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 16,
+          "qty": 8,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 17,
+          "qty": 116,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 18,
+          "qty": 8,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 19,
+          "qty": 5,
+          "total": 230
+        },
+        {
+          "sheet": "SEPT",
+          "row": 20,
+          "qty": 40,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 21,
+          "qty": 8,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 22,
+          "qty": 4,
+          "total": 300
+        },
+        {
+          "sheet": "SEPT",
+          "row": 23,
+          "qty": 61,
+          "total": 460
+        },
+        {
+          "sheet": "SEPT",
+          "row": 24,
+          "qty": 2,
+          "total": 230
+        },
+        {
+          "sheet": "SEPT",
+          "row": 25,
+          "qty": 8,
+          "total": 230
+        },
+        {
+          "sheet": "SEPT",
+          "row": 26,
+          "qty": 16,
+          "total": 460
+        },
+        {
+          "sheet": "SEPT",
+          "row": 27,
+          "qty": 23,
+          "total": 230
+        },
+        {
+          "sheet": "SEPT",
+          "row": 28,
+          "qty": 1,
+          "total": 230
+        },
+        {
+          "sheet": "SEPT",
+          "row": 29,
+          "qty": 7,
+          "total": 230
+        },
+        {
+          "sheet": "SEPT",
+          "row": 30,
+          "qty": "-",
+          "total": 2691.77
+        },
+        {
+          "sheet": "SEPT",
+          "row": 31,
+          "qty": "-",
+          "total": 1422.76
+        },
+        {
+          "sheet": "SEPT",
+          "row": 32,
+          "qty": "-",
+          "total": 1584.19
+        },
+        {
+          "sheet": "SEPT",
+          "row": 33,
+          "total": 0
+        },
+        {
+          "sheet": "SEPT",
+          "row": 34,
+          "total": 21429.43293396868
+        },
+        {
+          "sheet": "MasterData",
+          "row": 2,
+          "rate": 150,
+          "qty": 1,
+          "total": 300,
+          "rev_rate": 150,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 3,
+          "rate": 150,
+          "qty": 1,
+          "total": 300,
+          "rev_rate": 150,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 4,
+          "rate": 372,
+          "qty": 1,
+          "total": 300,
+          "rev_rate": 372,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 5,
+          "rate": 479,
+          "qty": 2,
+          "total": 300,
+          "rev_rate": 479,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 6,
+          "rate": 252,
+          "qty": 3,
+          "total": 300,
+          "rev_rate": 252,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 7,
+          "rate": 252,
+          "qty": 3,
+          "total": 300,
+          "rev_rate": 252,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 8,
+          "rate": 145.6773315180395,
+          "qty": 1,
+          "total": 300,
+          "rev_rate": 145.68,
+          "rev_total": 300,
+          "difference": 0.002668481960512281
+        },
+        {
+          "sheet": "MasterData",
+          "row": 9,
+          "rate": 6.8073519400953035,
+          "qty": 3,
+          "total": 300,
+          "rev_rate": 6.81,
+          "rev_total": 300,
+          "difference": 0.00794417971408734
+        },
+        {
+          "sheet": "MasterData",
+          "row": 10,
+          "rate": 150,
+          "qty": 1,
+          "total": 300,
+          "rev_rate": 150,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 11,
+          "rate": 150,
+          "qty": 1,
+          "total": 300,
+          "rev_rate": 150,
+          "rev_total": 300,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 12,
+          "rate": 372,
+          "qty": 1,
+          "total": 230,
+          "rev_rate": 372,
+          "rev_total": 230,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 13,
+          "rate": 252,
+          "qty": 1,
+          "total": 230,
+          "rev_rate": 252,
+          "rev_total": 230,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 14,
+          "rate": 10,
+          "qty": 1,
+          "total": 460,
+          "rev_rate": 10,
+          "rev_total": 460,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 15,
+          "rate": 47.65146358066712,
+          "qty": 1,
+          "total": 460,
+          "rev_rate": 47.65,
+          "rev_total": 460,
+          "difference": -0.001463580667120823
+        },
+        {
+          "sheet": "MasterData",
+          "row": 16,
+          "rate": 8.168822328114365,
+          "qty": 1,
+          "total": 230,
+          "rev_rate": 8.17,
+          "rev_total": 230,
+          "difference": 0.001177671885635334
+        },
+        {
+          "sheet": "MasterData",
+          "row": 17,
+          "rate": 49.01,
+          "qty": 1,
+          "total": 2691.77,
+          "rev_rate": 49.01,
+          "rev_total": 2691.77,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 18,
+          "rate": 150,
+          "qty": 1,
+          "total": 1422.76,
+          "rev_rate": 150,
+          "rev_total": 1422.76,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 19,
+          "rate": 150,
+          "qty": 1,
+          "total": 1584.19,
+          "rev_rate": 150,
+          "rev_total": 1584.19,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 20,
+          "rate": 372,
+          "qty": 1,
+          "total": 230,
+          "rev_rate": 372,
+          "rev_total": 230,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 21,
+          "rate": 252,
+          "qty": 1,
+          "total": 230,
+          "rev_rate": 252,
+          "rev_total": 230,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 22,
+          "rate": 40.84411164057182,
+          "qty": 1,
+          "total": 230,
+          "rev_rate": 40.84,
+          "rev_total": 230,
+          "difference": -0.004111640571814235
+        },
+        {
+          "sheet": "MasterData",
+          "row": 23,
+          "rate": 8.168822328114365,
+          "qty": 1,
+          "total": 49.01,
+          "rev_rate": 8.17,
+          "rev_total": 49.01,
+          "difference": 0.001177671885635334
+        },
+        {
+          "sheet": "MasterData",
+          "row": 24,
+          "rate": 21.78352620830497,
+          "qty": 1,
+          "total": 994.7964601769911,
+          "rev_rate": 21.78,
+          "rev_total": 994.79,
+          "difference": -0.0035262083049687476
+        },
+        {
+          "sheet": "MasterData",
+          "row": 25,
+          "rate": 80,
+          "qty": 1,
+          "total": 1112.5194009530292,
+          "rev_rate": 80,
+          "rev_total": 1112.52,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 26,
+          "rate": 150,
+          "qty": 1,
+          "total": 3308.0993873383254,
+          "rev_rate": 150,
+          "rev_total": 3308.1099999999997,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 27,
+          "rate": 0.55,
+          "qty": 2136,
+          "total": 989.8202859087816,
+          "rev_rate": 0.55,
+          "rev_total": 989.8199999999999,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 28,
+          "rate": 200,
+          "qty": 1,
+          "total": 1621.6822328114365,
+          "rev_rate": 200,
+          "rev_total": 1621.68,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 29,
+          "rate": 7.351940095302927,
+          "qty": 1,
+          "total": 2354.782232811436,
+          "rev_rate": 7.35,
+          "rev_total": 2354.78,
+          "difference": -0.0019400953029276025
+        },
+        {
+          "sheet": "MasterData",
+          "row": 30,
+          "rate": 9.530292716133424,
+          "qty": 1,
+          "total": 21429.43,
+          "rev_rate": 9.53,
+          "rev_total": 21429.43,
+          "difference": -0.00029271613342451985
+        },
+        {
+          "sheet": "MasterData",
+          "row": 31,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 32,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 33,
+          "rate": 479,
+          "qty": 1,
+          "rev_rate": 479,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 34,
+          "rate": 252,
+          "qty": 1,
+          "rev_rate": 252,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 35,
+          "rate": 8,
+          "qty": 1,
+          "rev_rate": 8,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 36,
+          "rate": 35.39823008849557,
+          "qty": 1,
+          "rev_rate": 35.4,
+          "difference": 0.0017699115044251812
+        },
+        {
+          "sheet": "MasterData",
+          "row": 37,
+          "rate": 9.530292716133424,
+          "qty": 1,
+          "rev_rate": 9.53,
+          "difference": -0.00029271613342451985
+        },
+        {
+          "sheet": "MasterData",
+          "row": 38,
+          "rate": 6.8073519400953035,
+          "qty": 1,
+          "rev_rate": 6.81,
+          "difference": 0.002648059904696076
+        },
+        {
+          "sheet": "MasterData",
+          "row": 39,
+          "rate": 21.78352620830497,
+          "qty": 1,
+          "rev_rate": 21.78,
+          "difference": -0.0035262083049687476
+        },
+        {
+          "sheet": "MasterData",
+          "row": 40,
+          "rate": 80,
+          "qty": 1,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 41,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 42,
+          "rate": 0.55,
+          "qty": 2178,
+          "rev_rate": 0.55,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 43,
+          "rate": 100,
+          "qty": 1,
+          "rev_rate": 100,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 44,
+          "rate": 810,
+          "qty": 1,
+          "rev_rate": 810,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 45,
+          "rate": 9.530292716133424,
+          "qty": 1,
+          "rev_rate": 9.53,
+          "difference": -0.00029271613342451985
+        },
+        {
+          "sheet": "MasterData",
+          "row": 46,
+          "rate": 7.351940095302927,
+          "qty": 1,
+          "rev_rate": 7.35,
+          "difference": -0.0019400953029276025
+        },
+        {
+          "sheet": "MasterData",
+          "row": 47,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 48,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 49,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 50,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 51,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 52,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 53,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 54,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 55,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 56,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 57,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 58,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 59,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 60,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 61,
+          "rate": 80,
+          "qty": 1,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 62,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 63,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 64,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 65,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 66,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 67,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 68,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 69,
+          "rate": 80,
+          "qty": 2,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 70,
+          "rate": 150,
+          "qty": 2,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 71,
+          "rate": 80,
+          "qty": 1,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 72,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 73,
+          "rate": 80,
+          "qty": 1,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 74,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 75,
+          "rate": 80,
+          "qty": 2,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 76,
+          "rate": 150,
+          "qty": 2,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 77,
+          "rate": 80,
+          "qty": 1,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 78,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 79,
+          "rate": 80,
+          "qty": 1,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 80,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 81,
+          "rate": 80,
+          "qty": 1,
+          "rev_rate": 80,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 82,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 83,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 84,
+          "rate": 24.51,
+          "qty": 1,
+          "rev_rate": 24.51,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 85,
+          "rate": 15.72,
+          "qty": 1,
+          "rev_rate": 15.72,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 86,
+          "rate": 8.58,
+          "qty": 1,
+          "rev_rate": 8.58,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 87,
+          "rate": 85.77,
+          "qty": 1,
+          "rev_rate": 85.77,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 88,
+          "rate": 125,
+          "qty": 1,
+          "rev_rate": 125,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 89,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 90,
+          "rate": 1978.35,
+          "qty": 1,
+          "rev_rate": 1978.35,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 91,
+          "rate": 85.77,
+          "qty": 1,
+          "rev_rate": 85.77,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 92,
+          "rate": 68.07,
+          "qty": 1,
+          "rev_rate": 68.07,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 93,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 94,
+          "rate": 8.58,
+          "qty": 1,
+          "rev_rate": 8.58,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 95,
+          "rate": 125,
+          "qty": 1,
+          "rev_rate": 125,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 96,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 97,
+          "rate": 989.18,
+          "qty": 1,
+          "rev_rate": 989.18,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 98,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 99,
+          "rate": 20.01,
+          "qty": 1,
+          "rev_rate": 20.01,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 100,
+          "rate": 125,
+          "qty": 1,
+          "rev_rate": 125,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 101,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 102,
+          "rate": 989.18,
+          "qty": 1,
+          "rev_rate": 989.18,
+          "difference": 0
+        },
+        {
+          "sheet": "MasterData",
+          "row": 103,
+          "rate": 150,
+          "qty": 1,
+          "rev_rate": 150,
+          "difference": 0
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 10
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 11
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 15,
+          "rate": 3
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 16,
+          "rate": 4
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 17,
+          "rate": 5
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 18,
+          "rate": 6
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 19,
+          "rate": 7
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 20,
+          "rate": 8
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 21
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 22
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 23
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 24
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 25
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 26
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 27,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 28
+        },
+        {
+          "sheet": "SCT0126",
+          "row": 29
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 10
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 11
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 15,
+          "rate": 3
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 16,
+          "rate": 4
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 17,
+          "rate": 5
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 18,
+          "rate": 6
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 19,
+          "rate": 7
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 20
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 21
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 22
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 23
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 24
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 25
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 26
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 27,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 28
+        },
+        {
+          "sheet": "SCT0127",
+          "row": 29
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 10
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 11
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 14
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 15
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 16
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 17
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 18
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 19
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 20
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 21,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 22
+        },
+        {
+          "sheet": "SCT0038",
+          "row": 23
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 10
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 11
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 15,
+          "rate": 3
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 16,
+          "rate": 4
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 17,
+          "rate": 5
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 18,
+          "rate": 6
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 19,
+          "rate": 7
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 20
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 21
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 22
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 23
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 24
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 25
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 26
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 27,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 28
+        },
+        {
+          "sheet": "SCT0122",
+          "row": 29
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 10
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 11
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 15,
+          "rate": 3
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 16,
+          "rate": 4
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 17,
+          "rate": 5
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 18,
+          "rate": 6
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 19
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 20
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 21
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 22
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 23
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 24
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 25
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 26,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 27
+        },
+        {
+          "sheet": "SCT0131",
+          "row": 28
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 10
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 11
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 15,
+          "rate": 3
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 16,
+          "rate": 4
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 17,
+          "rate": 5
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 18,
+          "rate": 6
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 19,
+          "rate": 7
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 20,
+          "rate": 8
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 21,
+          "rate": 9
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 22
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 23
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 24
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 25
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 26
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 27
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 28,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 29
+        },
+        {
+          "sheet": "SCT0123,0124",
+          "row": 30
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 10
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 11
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 15,
+          "rate": 3
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 16,
+          "rate": 4
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 17,
+          "rate": 5
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 18,
+          "rate": 6
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 19,
+          "rate": 7
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 20
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 21
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 22
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 23
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 24
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 25
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 26,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 27
+        },
+        {
+          "sheet": "SCT0134",
+          "row": 28
+        },
+        {
+          "sheet": "HE0471",
+          "row": 10
+        },
+        {
+          "sheet": "HE0471",
+          "row": 11
+        },
+        {
+          "sheet": "HE0471",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0471",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0471",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0471",
+          "row": 15
+        },
+        {
+          "sheet": "HE0471",
+          "row": 16
+        },
+        {
+          "sheet": "HE0471",
+          "row": 17
+        },
+        {
+          "sheet": "HE0471",
+          "row": 18
+        },
+        {
+          "sheet": "HE0471",
+          "row": 19
+        },
+        {
+          "sheet": "HE0471",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0471",
+          "row": 21
+        },
+        {
+          "sheet": "HE0471",
+          "row": 22
+        },
+        {
+          "sheet": "HE0472",
+          "row": 10
+        },
+        {
+          "sheet": "HE0472",
+          "row": 11
+        },
+        {
+          "sheet": "HE0472",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0472",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0472",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0472",
+          "row": 15
+        },
+        {
+          "sheet": "HE0472",
+          "row": 16
+        },
+        {
+          "sheet": "HE0472",
+          "row": 17
+        },
+        {
+          "sheet": "HE0472",
+          "row": 18
+        },
+        {
+          "sheet": "HE0472",
+          "row": 19
+        },
+        {
+          "sheet": "HE0472",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0472",
+          "row": 21
+        },
+        {
+          "sheet": "HE0472",
+          "row": 22
+        },
+        {
+          "sheet": "HE0473",
+          "row": 10
+        },
+        {
+          "sheet": "HE0473",
+          "row": 11
+        },
+        {
+          "sheet": "HE0473",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0473",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0473",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0473",
+          "row": 15
+        },
+        {
+          "sheet": "HE0473",
+          "row": 16
+        },
+        {
+          "sheet": "HE0473",
+          "row": 17
+        },
+        {
+          "sheet": "HE0473",
+          "row": 18
+        },
+        {
+          "sheet": "HE0473",
+          "row": 19
+        },
+        {
+          "sheet": "HE0473",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0473",
+          "row": 21
+        },
+        {
+          "sheet": "HE0473",
+          "row": 22
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 10
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 11
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 15
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 16
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 17
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 18
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 19
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 21
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "row": 22
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 10
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 11
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 15
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 16
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 17
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 18
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 19
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 21
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "row": 22
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 10
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 11
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 15
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 16
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 17
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 18
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 19
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 21
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "row": 22
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 10
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 11
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 15
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 16
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 17
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 18
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 19
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 21
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "row": 22
+        },
+        {
+          "sheet": "HE0487",
+          "row": 10
+        },
+        {
+          "sheet": "HE0487",
+          "row": 11
+        },
+        {
+          "sheet": "HE0487",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0487",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0487",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0487",
+          "row": 15
+        },
+        {
+          "sheet": "HE0487",
+          "row": 16
+        },
+        {
+          "sheet": "HE0487",
+          "row": 17
+        },
+        {
+          "sheet": "HE0487",
+          "row": 18
+        },
+        {
+          "sheet": "HE0487",
+          "row": 19
+        },
+        {
+          "sheet": "HE0487",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0487",
+          "row": 21
+        },
+        {
+          "sheet": "HE0487",
+          "row": 22
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 10
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 11
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 15
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 16
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 17
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 18
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 19
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 21
+        },
+        {
+          "sheet": "HE0438-0454",
+          "row": 22
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 10
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 11
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 15
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 16
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 17
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 18
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 19
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 21
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "row": 22
+        },
+        {
+          "sheet": "HE0475",
+          "row": 10
+        },
+        {
+          "sheet": "HE0475",
+          "row": 11
+        },
+        {
+          "sheet": "HE0475",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0475",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0475",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0475",
+          "row": 15
+        },
+        {
+          "sheet": "HE0475",
+          "row": 16
+        },
+        {
+          "sheet": "HE0475",
+          "row": 17
+        },
+        {
+          "sheet": "HE0475",
+          "row": 18
+        },
+        {
+          "sheet": "HE0475",
+          "row": 19
+        },
+        {
+          "sheet": "HE0475",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0475",
+          "row": 21
+        },
+        {
+          "sheet": "HE0475",
+          "row": 22
+        },
+        {
+          "sheet": "HE0497",
+          "row": 10
+        },
+        {
+          "sheet": "HE0497",
+          "row": 11
+        },
+        {
+          "sheet": "HE0497",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0497",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0497",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0497",
+          "row": 15
+        },
+        {
+          "sheet": "HE0497",
+          "row": 16
+        },
+        {
+          "sheet": "HE0497",
+          "row": 17
+        },
+        {
+          "sheet": "HE0497",
+          "row": 18
+        },
+        {
+          "sheet": "HE0497",
+          "row": 19
+        },
+        {
+          "sheet": "HE0497",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0497",
+          "row": 21
+        },
+        {
+          "sheet": "HE0497",
+          "row": 22
+        },
+        {
+          "sheet": "HE0500",
+          "row": 10
+        },
+        {
+          "sheet": "HE0500",
+          "row": 11
+        },
+        {
+          "sheet": "HE0500",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0500",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0500",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0500",
+          "row": 15
+        },
+        {
+          "sheet": "HE0500",
+          "row": 16
+        },
+        {
+          "sheet": "HE0500",
+          "row": 17
+        },
+        {
+          "sheet": "HE0500",
+          "row": 18
+        },
+        {
+          "sheet": "HE0500",
+          "row": 19
+        },
+        {
+          "sheet": "HE0500",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0500",
+          "row": 21
+        },
+        {
+          "sheet": "HE0500",
+          "row": 22
+        },
+        {
+          "sheet": "HE0488",
+          "row": 10
+        },
+        {
+          "sheet": "HE0488",
+          "row": 11
+        },
+        {
+          "sheet": "HE0488",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0488",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0488",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0488",
+          "row": 15
+        },
+        {
+          "sheet": "HE0488",
+          "row": 16
+        },
+        {
+          "sheet": "HE0488",
+          "row": 17
+        },
+        {
+          "sheet": "HE0488",
+          "row": 18
+        },
+        {
+          "sheet": "HE0488",
+          "row": 19
+        },
+        {
+          "sheet": "HE0488",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0488",
+          "row": 21
+        },
+        {
+          "sheet": "HE0488",
+          "row": 22
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 10
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 11
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 15
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 16
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 17
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 18
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 19
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 21
+        },
+        {
+          "sheet": "HE0495,0496",
+          "row": 22
+        },
+        {
+          "sheet": "HE0498",
+          "row": 10
+        },
+        {
+          "sheet": "HE0498",
+          "row": 11
+        },
+        {
+          "sheet": "HE0498",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0498",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0498",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0498",
+          "row": 15
+        },
+        {
+          "sheet": "HE0498",
+          "row": 16
+        },
+        {
+          "sheet": "HE0498",
+          "row": 17
+        },
+        {
+          "sheet": "HE0498",
+          "row": 18
+        },
+        {
+          "sheet": "HE0498",
+          "row": 19
+        },
+        {
+          "sheet": "HE0498",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0498",
+          "row": 21
+        },
+        {
+          "sheet": "HE0498",
+          "row": 22
+        },
+        {
+          "sheet": "HE0501",
+          "row": 10
+        },
+        {
+          "sheet": "HE0501",
+          "row": 11
+        },
+        {
+          "sheet": "HE0501",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0501",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0501",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0501",
+          "row": 15
+        },
+        {
+          "sheet": "HE0501",
+          "row": 16
+        },
+        {
+          "sheet": "HE0501",
+          "row": 17
+        },
+        {
+          "sheet": "HE0501",
+          "row": 18
+        },
+        {
+          "sheet": "HE0501",
+          "row": 19
+        },
+        {
+          "sheet": "HE0501",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0501",
+          "row": 21
+        },
+        {
+          "sheet": "HE0501",
+          "row": 22
+        },
+        {
+          "sheet": "HE0502",
+          "row": 10
+        },
+        {
+          "sheet": "HE0502",
+          "row": 11
+        },
+        {
+          "sheet": "HE0502",
+          "row": 12,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0502",
+          "row": 13,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0502",
+          "row": 14,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0502",
+          "row": 15
+        },
+        {
+          "sheet": "HE0502",
+          "row": 16
+        },
+        {
+          "sheet": "HE0502",
+          "row": 17
+        },
+        {
+          "sheet": "HE0502",
+          "row": 18
+        },
+        {
+          "sheet": "HE0502",
+          "row": 19
+        },
+        {
+          "sheet": "HE0502",
+          "row": 20,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0502",
+          "row": 21
+        },
+        {
+          "sheet": "HE0502",
+          "row": 22
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 10
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 11,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 12,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 13,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 14,
+          "rate": 3
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 15,
+          "rate": 4
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 16,
+          "rate": 5
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 17,
+          "rate": 6
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 18,
+          "rate": 7
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 19,
+          "rate": 8
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 20,
+          "rate": 9
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 21,
+          "rate": 10
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 22
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 23
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 24
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 25
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 26
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 27,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 28
+        },
+        {
+          "sheet": "HE0499L1",
+          "row": 29
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 10
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 11,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 12,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 13,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 14,
+          "rate": 3
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 15,
+          "rate": 4
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 16,
+          "rate": 5
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 17
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 18
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 19
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 20
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 21
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 22
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 23
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 24
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 25,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 26
+        },
+        {
+          "sheet": "HE0499L2",
+          "row": 27
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 10
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 11,
+          "rate": "S/No"
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 12,
+          "rate": 1
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 13,
+          "rate": 2
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 14,
+          "rate": 3
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 15,
+          "rate": 4
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 16,
+          "rate": 5
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 17,
+          "rate": 6
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 18
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 19
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 20
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 21
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 22
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 23,
+          "rate": "TOTAL"
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 24
+        },
+        {
+          "sheet": "HE0499L3",
+          "row": 25
+        }
+      ],
+      "validation_summary": {
+        "total_items": 553,
+        "valid_calculations": 524,
+        "calculation_errors": [
+          {
+            "sheet": "MasterData",
+            "row": 2,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 150.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 3,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 150.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 4,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 372.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 5,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 958.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 6,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 756.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 7,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 756.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 8,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 145.68,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 9,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 20.43,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 10,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 150.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 11,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 150.0,
+            "actual": 300
+          },
+          {
+            "sheet": "MasterData",
+            "row": 12,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 372.0,
+            "actual": 230
+          },
+          {
+            "sheet": "MasterData",
+            "row": 13,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 252.0,
+            "actual": 230
+          },
+          {
+            "sheet": "MasterData",
+            "row": 14,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 10.0,
+            "actual": 460
+          },
+          {
+            "sheet": "MasterData",
+            "row": 15,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 47.65,
+            "actual": 460
+          },
+          {
+            "sheet": "MasterData",
+            "row": 16,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 8.17,
+            "actual": 230
+          },
+          {
+            "sheet": "MasterData",
+            "row": 17,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 49.01,
+            "actual": 2691.77
+          },
+          {
+            "sheet": "MasterData",
+            "row": 18,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 150.0,
+            "actual": 1422.76
+          },
+          {
+            "sheet": "MasterData",
+            "row": 19,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 150.0,
+            "actual": 1584.19
+          },
+          {
+            "sheet": "MasterData",
+            "row": 20,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 372.0,
+            "actual": 230
+          },
+          {
+            "sheet": "MasterData",
+            "row": 21,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 252.0,
+            "actual": 230
+          },
+          {
+            "sheet": "MasterData",
+            "row": 22,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 40.84,
+            "actual": 230
+          },
+          {
+            "sheet": "MasterData",
+            "row": 23,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 8.17,
+            "actual": 49.01
+          },
+          {
+            "sheet": "MasterData",
+            "row": 24,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 21.78,
+            "actual": 994.79
+          },
+          {
+            "sheet": "MasterData",
+            "row": 25,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 80.0,
+            "actual": 1112.52
+          },
+          {
+            "sheet": "MasterData",
+            "row": 26,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 150.0,
+            "actual": 3308.1099999999997
+          },
+          {
+            "sheet": "MasterData",
+            "row": 27,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 1174.8,
+            "actual": 989.8199999999999
+          },
+          {
+            "sheet": "MasterData",
+            "row": 28,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 200.0,
+            "actual": 1621.68
+          },
+          {
+            "sheet": "MasterData",
+            "row": 29,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 7.35,
+            "actual": 2354.78
+          },
+          {
+            "sheet": "MasterData",
+            "row": 30,
+            "type": "REV_TOTAL_ERROR",
+            "expected": 9.53,
+            "actual": 21429.43
+          }
+        ],
+        "accuracy_rate": 0.9475587703435805
+      }
+    },
+    "master_data": {
+      "sheet_found": true,
+      "data_summary": {
+        "No": {
+          "non_null_count": 102,
+          "unique_count": 102
+        },
+        "CWI Job Number": {
+          "non_null_count": 102,
+          "unique_count": 28
+        },
+        "Order Ref. Number": {
+          "non_null_count": 102,
+          "unique_count": 28
+        },
+        "S/No": {
+          "non_null_count": 102,
+          "unique_count": 10
+        },
+        "RATE SOURCE": {
+          "non_null_count": 102,
+          "unique_count": 3
+        },
+        "DESCRIPTION": {
+          "non_null_count": 102,
+          "unique_count": 47
+        },
+        "RATE": {
+          "non_null_count": 102,
+          "unique_count": 30
+        },
+        "Formula": {
+          "non_null_count": 18,
+          "unique_count": 13
+        },
+        "Q'TY": {
+          "non_null_count": 102,
+          "unique_count": 5
+        },
+        "TOTAL (USD)": {
+          "non_null_count": 102,
+          "unique_count": 36
+        },
+        "REV RATE": {
+          "non_null_count": 102,
+          "unique_count": 30
+        },
+        "REV TOTAL": {
+          "non_null_count": 102,
+          "unique_count": 36
+        },
+        "DIFFERENCE": {
+          "non_null_count": 102,
+          "unique_count": 11
+        },
+        "행 레이블": {
+          "non_null_count": 29,
+          "unique_count": 29
+        },
+        "합계 : TOTAL (USD)": {
+          "non_null_count": 29,
+          "unique_count": 14
+        },
+        "합계 : REV TOTAL": {
+          "non_null_count": 29,
+          "unique_count": 14
+        }
+      },
+      "column_mapping": {
+        "0": "No",
+        "1": "CWI Job Number",
+        "2": "Order Ref. Number",
+        "3": "S/No",
+        "4": "RATE SOURCE",
+        "5": "DESCRIPTION",
+        "6": "RATE",
+        "7": "Formula",
+        "8": "Q'TY",
+        "9": "TOTAL (USD)",
+        "10": "REV RATE",
+        "11": "REV TOTAL",
+        "12": "DIFFERENCE",
+        "15": "행 레이블",
+        "16": "합계 : TOTAL (USD)",
+        "17": "합계 : REV TOTAL"
+      },
+      "row_count": 102
+    },
+    "sheet_analysis": {
+      "SEPT": {
+        "shape": [
+          34,
+          30
+        ],
+        "has_headers": true,
+        "data_start_row": 4,
+        "columns_identified": {
+          "2": "S/NO",
+          "3": "SHPT REF",
+          "4": "JOB #",
+          "5": "TYPE",
+          "6": "BL #",
+          "7": "POL",
+          "8": "POD",
+          "9": "MODE",
+          "10": "NO. OF CNTR",
+          "11": "VOLUME",
+          "12": "QUANTITY",
+          "13": "BILL OF ENTRY NUMBER",
+          "14": "BOE ISSUED DATE",
+          "15": "# TRIPS",
+          "16": "MASTER DO\nCHARGE",
+          "17": "CUSTOMS\nCLEARANCE\nCHARGE",
+          "18": "HOUSE\nDO\nCHARGE (BL EXCHANGE) / DELIVERY ORDER",
+          "19": "PORT HANDLING CHARGE",
+          "20": "TRANSPORTATION\nCHARGE",
+          "21": "TRANSPORTATION\nCHARGE",
+          "22": "ADDITIONAL AMOUNT\n(PLEASE REFER TO THE DETAIL SHEET)",
+          "23": "DUTY RELATED CHARGES",
+          "24": "AT COST AMOUNT",
+          "25": "GRAND TOTAL (USD)",
+          "26": "REMARKS",
+          "27": "REVIEWD BY SCT"
+        },
+        "data_quality": {
+          "total_rows": 30,
+          "non_empty_rows": 30,
+          "completeness": 1.0
+        }
+      },
+      "MasterData": {
+        "shape": [
+          103,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 1,
+        "columns_identified": {
+          "0": "NO",
+          "1": "CWI JOB NUMBER",
+          "2": "ORDER REF. NUMBER",
+          "3": "S/NO",
+          "4": "RATE SOURCE",
+          "5": "DESCRIPTION",
+          "6": "RATE",
+          "7": "FORMULA",
+          "8": "Q'TY",
+          "9": "TOTAL (USD)",
+          "10": "REV RATE",
+          "11": "REV TOTAL",
+          "12": "DIFFERENCE",
+          "15": "행 레이블",
+          "16": "합계 : TOTAL (USD)",
+          "17": "합계 : REV TOTAL"
+        },
+        "data_quality": {
+          "total_rows": 102,
+          "non_empty_rows": 102,
+          "completeness": 1.0
+        }
+      },
+      "SCT0126": {
+        "shape": [
+          29,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-SCT-0126"
+        },
+        "data_quality": {
+          "total_rows": 20,
+          "non_empty_rows": 17,
+          "completeness": 0.85
+        }
+      },
+      "SCT0127": {
+        "shape": [
+          29,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-SCT-0127"
+        },
+        "data_quality": {
+          "total_rows": 20,
+          "non_empty_rows": 17,
+          "completeness": 0.85
+        }
+      },
+      "SCT0038": {
+        "shape": [
+          23,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-SCT-0038"
+        },
+        "data_quality": {
+          "total_rows": 14,
+          "non_empty_rows": 11,
+          "completeness": 0.7857142857142857
+        }
+      },
+      "SCT0122": {
+        "shape": [
+          29,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-SCT-0122"
+        },
+        "data_quality": {
+          "total_rows": 20,
+          "non_empty_rows": 17,
+          "completeness": 0.85
+        }
+      },
+      "SCT0131": {
+        "shape": [
+          28,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-SCT-0131"
+        },
+        "data_quality": {
+          "total_rows": 19,
+          "non_empty_rows": 16,
+          "completeness": 0.8421052631578947
+        }
+      },
+      "SCT0123,0124": {
+        "shape": [
+          30,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-SCT-0123, 0124"
+        },
+        "data_quality": {
+          "total_rows": 21,
+          "non_empty_rows": 18,
+          "completeness": 0.8571428571428571
+        }
+      },
+      "SCT0134": {
+        "shape": [
+          28,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-SCT-0134"
+        },
+        "data_quality": {
+          "total_rows": 19,
+          "non_empty_rows": 16,
+          "completeness": 0.8421052631578947
+        }
+      },
+      "HE0471": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0471"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0472": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0472"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0473": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0473"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0450,0459,0460": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0450, 0459, 0460"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0466,0467,0468": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0466,0467,0468"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0464,0465,0470": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0464,0465,0470"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0437,0438-2,0439-2,0440-1,044": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0437,0438-2,0439-2,0440-2,0441-1"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0487": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0487"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0438-0454": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0438, 0439, 0440-1, 0441, 0482, 0454"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0425,0426,0427,0428": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0425, 0426, 0427, 0428"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0475": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0475"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0497": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0497"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0500": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0500"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0488": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0488"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0495,0496": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0495, 0496"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0498": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0498"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0501": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0501"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0502": {
+        "shape": [
+          22,
+          12
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0502"
+        },
+        "data_quality": {
+          "total_rows": 13,
+          "non_empty_rows": 10,
+          "completeness": 0.7692307692307693
+        }
+      },
+      "HE0499L1": {
+        "shape": [
+          29,
+          17
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0499(LOT1)"
+        },
+        "data_quality": {
+          "total_rows": 20,
+          "non_empty_rows": 17,
+          "completeness": 0.85
+        }
+      },
+      "HE0499L2": {
+        "shape": [
+          27,
+          18
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0499(LOT2)"
+        },
+        "data_quality": {
+          "total_rows": 18,
+          "non_empty_rows": 15,
+          "completeness": 0.8333333333333334
+        }
+      },
+      "HE0499L3": {
+        "shape": [
+          25,
+          17
+        ],
+        "has_headers": true,
+        "data_start_row": 9,
+        "columns_identified": {
+          "1": "ABU DHABI, UNITED ARAB EMIRATES",
+          "7": "ORDER REF. NUMBER:",
+          "8": "HVDC-ADOPT-HE-0499(LOT3)"
+        },
+        "data_quality": {
+          "total_rows": 16,
+          "non_empty_rows": 13,
+          "completeness": 0.8125
+        }
+      },
+      "LOG": {
+        "shape": [
+          14,
+          4
+        ],
+        "has_headers": false,
+        "data_start_row": null,
+        "columns_identified": {},
+        "data_quality": {}
+      }
+    }
+  },
+  "validation_results": {
+    "formula_validation": {
+      "total_formulas": 29,
+      "valid_formulas": 29,
+      "formula_patterns": {
+        "CALCULATION": 18,
+        "OTHER": 11
+      },
+      "issues": []
+    },
+    "calculation_validation": {
+      "total_items": 553,
+      "valid_calculations": 524,
+      "calculation_errors": [
+        {
+          "sheet": "MasterData",
+          "row": 2,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 150.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 3,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 150.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 4,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 372.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 5,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 958.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 6,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 756.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 7,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 756.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 8,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 145.68,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 9,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 20.43,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 10,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 150.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 11,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 150.0,
+          "actual": 300
+        },
+        {
+          "sheet": "MasterData",
+          "row": 12,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 372.0,
+          "actual": 230
+        },
+        {
+          "sheet": "MasterData",
+          "row": 13,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 252.0,
+          "actual": 230
+        },
+        {
+          "sheet": "MasterData",
+          "row": 14,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 10.0,
+          "actual": 460
+        },
+        {
+          "sheet": "MasterData",
+          "row": 15,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 47.65,
+          "actual": 460
+        },
+        {
+          "sheet": "MasterData",
+          "row": 16,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 8.17,
+          "actual": 230
+        },
+        {
+          "sheet": "MasterData",
+          "row": 17,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 49.01,
+          "actual": 2691.77
+        },
+        {
+          "sheet": "MasterData",
+          "row": 18,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 150.0,
+          "actual": 1422.76
+        },
+        {
+          "sheet": "MasterData",
+          "row": 19,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 150.0,
+          "actual": 1584.19
+        },
+        {
+          "sheet": "MasterData",
+          "row": 20,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 372.0,
+          "actual": 230
+        },
+        {
+          "sheet": "MasterData",
+          "row": 21,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 252.0,
+          "actual": 230
+        },
+        {
+          "sheet": "MasterData",
+          "row": 22,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 40.84,
+          "actual": 230
+        },
+        {
+          "sheet": "MasterData",
+          "row": 23,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 8.17,
+          "actual": 49.01
+        },
+        {
+          "sheet": "MasterData",
+          "row": 24,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 21.78,
+          "actual": 994.79
+        },
+        {
+          "sheet": "MasterData",
+          "row": 25,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 80.0,
+          "actual": 1112.52
+        },
+        {
+          "sheet": "MasterData",
+          "row": 26,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 150.0,
+          "actual": 3308.1099999999997
+        },
+        {
+          "sheet": "MasterData",
+          "row": 27,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 1174.8,
+          "actual": 989.8199999999999
+        },
+        {
+          "sheet": "MasterData",
+          "row": 28,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 200.0,
+          "actual": 1621.68
+        },
+        {
+          "sheet": "MasterData",
+          "row": 29,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 7.35,
+          "actual": 2354.78
+        },
+        {
+          "sheet": "MasterData",
+          "row": 30,
+          "type": "REV_TOTAL_ERROR",
+          "expected": 9.53,
+          "actual": 21429.43
+        }
+      ],
+      "accuracy_rate": 0.9475587703435805
+    },
+    "data_integrity": {
+      "total_checks": 30,
+      "passed_checks": 11,
+      "pass_rate": 0.36666666666666664,
+      "issues": [
+        {
+          "sheet": "SCT0038",
+          "issue": "Low data completeness: 78.57%"
+        },
+        {
+          "sheet": "HE0471",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0472",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0473",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0450,0459,0460",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0466,0467,0468",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0464,0465,0470",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0437,0438-2,0439-2,0440-1,044",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0487",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0438-0454",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0425,0426,0427,0428",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0475",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0497",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0500",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0488",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0495,0496",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0498",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0501",
+          "issue": "Low data completeness: 76.92%"
+        },
+        {
+          "sheet": "HE0502",
+          "issue": "Low data completeness: 76.92%"
+        }
+      ]
+    },
+    "overall_score": 0.6571127185051235
+  },
+  "summary": {
+    "total_sheets_analyzed": 31,
+    "formulas_extracted": 29,
+    "calculations_analyzed": 553,
+    "master_data_rows": 102,
+    "overall_validation_score": 0.6571127185051235,
+    "validation_status": "FAIL"
+  }
+}

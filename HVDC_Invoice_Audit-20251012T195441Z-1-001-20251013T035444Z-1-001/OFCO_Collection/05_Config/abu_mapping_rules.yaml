@@ -1,0 +1,334 @@
+namespaces:
+  hvdc: "https://hvdc.example.org/ns#"
+  hvdci: "https://hvdc.example.org/id/"
+  abu: "https://abu-dhabi.example.org/ns#"
+  abui: "https://abu-dhabi.example.org/id/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  org: "http://www.w3.org/ns/org#"
+  time: "http://www.w3.org/2006/time#"
+  prov: "http://www.w3.org/ns/prov#"
+
+# 아부다비 물류 가이드라인 매핑
+guideline_mapping:
+  executive_summary:
+    version: "abu:version"
+    key_improvements: "abu:keyImprovements"
+    safety_requirements: "abu:safetyRequirements"
+    port_policies: "abu:portPolicies"
+    vessel_stowage: "abu:vesselStowage"
+
+  group_profile:
+    purpose_scope: "abu:purposeScope"
+    key_participants: "abu:keyParticipants"
+    activity_period: "abu:activityPeriod"
+    traffic_level: "abu:trafficLevel"
+    top_participants: "abu:topParticipants"
+
+  patterns:
+    language_ratio: "abu:languageRatio"
+    peak_hours: "abu:peakHours"
+    response_delay: "abu:responseDelay"
+    top_keywords: "abu:topKeywords"
+
+  pain_points: "abu:painPoints"
+  tailored_rules: "abu:tailoredRules"
+  kpis: "abu:kpis"
+
+# WhatsApp 대화 데이터 매핑
+whatsapp_mapping:
+  message:
+    timestamp: "abu:timestamp"
+    sender: "abu:sender"
+    message: "abu:messageContent"
+    keywords: "abu:logisticsKeywords"
+
+  shipment:
+    ship_name: "abu:shipName"
+    eta: "abu:estimatedArrival"
+    location: "abu:currentLocation"
+    cargo: "abu:cargoType"
+    status: "abu:shipStatus"
+
+  container:
+    container_id: "abu:containerId"
+    type: "abu:containerType"
+    timestamp: "abu:timestamp"
+    sender: "abu:sender"
+
+  delivery:
+    company: "abu:deliveryCompany"
+    quantity: "abu:deliveryQuantity"
+    unit: "abu:deliveryUnit"
+    date_info: "abu:deliveryDateInfo"
+
+# 엔티티 매핑
+entity_mapping:
+  abu_guideline:
+    type: "abu:AbuDhabiGuideline"
+    properties:
+      - field: "version"
+        property: "abu:version"
+        datatype: "xsd:string"
+      - field: "purpose_scope"
+        property: "abu:purposeScope"
+        datatype: "xsd:string"
+      - field: "activity_period"
+        property: "abu:activityPeriod"
+        datatype: "xsd:string"
+      - field: "traffic_level"
+        property: "abu:trafficLevel"
+        datatype: "xsd:string"
+
+  abu_shipment:
+    type: "abu:AbuDhabiShipment"
+    properties:
+      - field: "ship_name"
+        property: "abu:shipName"
+        datatype: "xsd:string"
+      - field: "eta"
+        property: "abu:estimatedArrival"
+        datatype: "xsd:string"
+      - field: "location"
+        property: "abu:currentLocation"
+        datatype: "xsd:string"
+      - field: "cargo"
+        property: "abu:cargoType"
+        datatype: "xsd:string"
+      - field: "status"
+        property: "abu:shipStatus"
+        datatype: "xsd:string"
+      - field: "timestamp"
+        property: "abu:timestamp"
+        datatype: "xsd:dateTime"
+      - field: "responsible_person"
+        property: "abu:responsiblePerson"
+        datatype: "xsd:string"
+
+  abu_container:
+    type: "abu:AbuDhabiContainer"
+    properties:
+      - field: "container_id"
+        property: "abu:containerId"
+        datatype: "xsd:string"
+      - field: "type"
+        property: "abu:containerType"
+        datatype: "xsd:string"
+      - field: "timestamp"
+        property: "abu:timestamp"
+        datatype: "xsd:dateTime"
+      - field: "sender"
+        property: "abu:reportedBy"
+        datatype: "xsd:string"
+      - field: "responsible_person"
+        property: "abu:responsiblePerson"
+        datatype: "xsd:string"
+
+  abu_delivery:
+    type: "abu:AbuDhabiDelivery"
+    properties:
+      - field: "company"
+        property: "abu:deliveryCompany"
+        datatype: "xsd:string"
+      - field: "quantity"
+        property: "abu:deliveryQuantity"
+        datatype: "xsd:integer"
+      - field: "unit"
+        property: "abu:deliveryUnit"
+        datatype: "xsd:string"
+      - field: "date_info"
+        property: "abu:deliveryDateInfo"
+        datatype: "xsd:string"
+      - field: "timestamp"
+        property: "abu:timestamp"
+        datatype: "xsd:dateTime"
+      - field: "responsible_person"
+        property: "abu:responsiblePerson"
+        datatype: "xsd:string"
+
+  abu_participant:
+    type: "org:Organization"
+    properties:
+      - field: "name"
+        property: "org:name"
+        datatype: "xsd:string"
+      - field: "message_count"
+        property: "abu:messageCount"
+        datatype: "xsd:integer"
+      - field: "role"
+        property: "org:role"
+        datatype: "xsd:string"
+
+  abu_rule:
+    type: "abu:AbuDhabiRule"
+    properties:
+      - field: "category"
+        property: "abu:ruleCategory"
+        datatype: "xsd:string"
+      - field: "rule"
+        property: "abu:ruleText"
+        datatype: "xsd:string"
+      - field: "priority"
+        property: "abu:rulePriority"
+        datatype: "xsd:integer"
+
+  abu_kpi:
+    type: "abu:AbuDhabiKPI"
+    properties:
+      - field: "description"
+        property: "abu:kpiDescription"
+        datatype: "xsd:string"
+      - field: "target_percentage"
+        property: "abu:targetPercentage"
+        datatype: "xsd:decimal"
+      - field: "category"
+        property: "abu:kpiCategory"
+        datatype: "xsd:string"
+
+# 비즈니스 규칙
+business_rules:
+  required_fields:
+    - "ship_name"
+    - "container_id"
+    - "company"
+    - "name"
+    - "category"
+    - "rule"
+    - "description"
+
+  type_conversion:
+    timestamp: "datetime"
+    message_count: "integer"
+    target_percentage: "decimal"
+    quantity: "integer"
+
+  data_quality:
+    min_message_length: 5
+    max_keywords_per_message: 10
+    required_shipment_fields: ["ship_name", "timestamp"]
+    required_container_fields: ["container_id", "type"]
+    required_delivery_fields: ["company", "quantity"]
+
+# 필터링 규칙
+filters:
+  exclude_empty_rows: true
+  exclude_system_messages: true
+  min_keyword_count: 1
+  exclude_media_messages: true
+
+# 태그 사전 엔티티 매핑
+tag_entity_mapping:
+  abu_vessel_entity:
+    type: "abu:VesselEntity"
+    properties:
+      - field: "key"
+        property: "abu:vesselKey"
+        datatype: "xsd:string"
+      - field: "synonyms"
+        property: "abu:synonyms"
+        datatype: "xsd:string"
+      - field: "regex"
+        property: "abu:regexPattern"
+        datatype: "xsd:string"
+      - field: "priority"
+        property: "abu:priority"
+        datatype: "xsd:integer"
+      - field: "category"
+        property: "abu:category"
+        datatype: "xsd:string"
+
+  abu_location_entity:
+    type: "abu:LocationEntity"
+    properties:
+      - field: "key"
+        property: "abu:locationKey"
+        datatype: "xsd:string"
+      - field: "synonyms"
+        property: "abu:synonyms"
+        datatype: "xsd:string"
+      - field: "regex"
+        property: "abu:regexPattern"
+        datatype: "xsd:string"
+      - field: "priority"
+        property: "abu:priority"
+        datatype: "xsd:integer"
+      - field: "category"
+        property: "abu:category"
+        datatype: "xsd:string"
+
+  abu_document_entity:
+    type: "abu:DocumentType"
+    properties:
+      - field: "key"
+        property: "abu:documentKey"
+        datatype: "xsd:string"
+      - field: "synonyms"
+        property: "abu:synonyms"
+        datatype: "xsd:string"
+      - field: "regex"
+        property: "abu:regexPattern"
+        datatype: "xsd:string"
+      - field: "priority"
+        property: "abu:priority"
+        datatype: "xsd:integer"
+      - field: "category"
+        property: "abu:category"
+        datatype: "xsd:string"
+
+  abu_equipment_entity:
+    type: "abu:EquipmentType"
+    properties:
+      - field: "key"
+        property: "abu:equipmentKey"
+        datatype: "xsd:string"
+      - field: "synonyms"
+        property: "abu:synonyms"
+        datatype: "xsd:string"
+      - field: "regex"
+        property: "abu:regexPattern"
+        datatype: "xsd:string"
+      - field: "priority"
+        property: "abu:priority"
+        datatype: "xsd:integer"
+      - field: "category"
+        property: "abu:category"
+        datatype: "xsd:string"
+
+  abu_risk_entity:
+    type: "abu:RiskFactor"
+    properties:
+      - field: "key"
+        property: "abu:riskKey"
+        datatype: "xsd:string"
+      - field: "synonyms"
+        property: "abu:synonyms"
+        datatype: "xsd:string"
+      - field: "regex"
+        property: "abu:regexPattern"
+        datatype: "xsd:string"
+      - field: "priority"
+        property: "abu:priority"
+        datatype: "xsd:integer"
+      - field: "category"
+        property: "abu:category"
+        datatype: "xsd:string"
+
+  abu_status_entity:
+    type: "abu:StatusType"
+    properties:
+      - field: "key"
+        property: "abu:statusKey"
+        datatype: "xsd:string"
+      - field: "synonyms"
+        property: "abu:synonyms"
+        datatype: "xsd:string"
+      - field: "regex"
+        property: "abu:regexPattern"
+        datatype: "xsd:string"
+      - field: "priority"
+        property: "abu:priority"
+        datatype: "xsd:integer"
+      - field: "category"
+        property: "abu:category"
+        datatype: "xsd:string"

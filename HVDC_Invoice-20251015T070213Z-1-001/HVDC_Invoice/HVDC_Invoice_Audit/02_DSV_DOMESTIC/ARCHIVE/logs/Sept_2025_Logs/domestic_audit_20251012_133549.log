@@ -1,0 +1,15 @@
+2025-10-12 13:35:49,748 [INFO] DOMESTIC 9월 2025 시스템 초기화 완료
+2025-10-12 13:35:49,748 [INFO] 참조 데이터: 사용
+2025-10-12 13:35:49,748 [INFO] ============================================================
+2025-10-12 13:35:49,749 [INFO] DOMESTIC 9월 2025 Invoice Audit 시작
+2025-10-12 13:35:49,750 [INFO] ============================================================
+2025-10-12 13:35:49,750 [INFO] 인보이스 로드 중: C:\cursor mcp\HVDC_Invoice_Audit\02_DSV_DOMESTIC\Data\DSV 202509\SCNT HVDC DRAFT INVOICE FOR DOMESTIC DELIVERY SEPTEMBER 2025.xlsx
+2025-10-12 13:35:49,791 [WARNING] 인보이스 파일 없음: C:\cursor mcp\HVDC_Invoice_Audit\02_DSV_DOMESTIC\Data\DSV 202509\SCNT HVDC DRAFT INVOICE FOR DOMESTIC DELIVERY SEPTEMBER 2025.xlsx
+2025-10-12 13:35:49,793 [INFO] 샘플 데이터로 대체합니다
+2025-10-12 13:35:49,794 [INFO] ✓ 샘플 데이터 8개 항목 생성
+2025-10-12 13:35:49,794 [INFO] 검증 시작...
+2025-10-12 13:35:50,963 [INFO] ✓ JSON 저장: domestic_sept_2025_result_20251012_133549.json
+2025-10-12 13:35:50,974 [INFO] ✓ CSV 저장: domestic_sept_2025_result_20251012_133549.csv
+2025-10-12 13:35:51,064 [INFO] ✓ Excel 저장: domestic_sept_2025_result_20251012_133549.xlsx
+2025-10-12 13:35:51,093 [INFO] ✓ 최종 보고서 생성: DOMESTIC_SEPT_2025_FINAL_REPORT.md
+2025-10-12 13:35:51,094 [INFO] ✓ 감사 완료 (처리시간: 1.35초)

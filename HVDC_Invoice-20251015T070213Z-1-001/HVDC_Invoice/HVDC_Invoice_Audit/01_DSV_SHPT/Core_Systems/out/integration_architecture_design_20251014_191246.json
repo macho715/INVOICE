@@ -1,0 +1,474 @@
+{
+  "report_metadata": {
+    "title": "DSV SHPT Integration Architecture Design Report",
+    "generated_at": "2025-10-14T19:12:46.668944",
+    "designer_version": "1.0.0",
+    "scope": "VBA, PDF, Audit Logic Integration Architecture"
+  },
+  "executive_summary": {
+    "current_integration_status": "FRAGMENTED",
+    "target_architecture": "UNIFIED_LAYERED_ARCHITECTURE",
+    "total_improvements": 7,
+    "estimated_timeline": "13-18 weeks",
+    "expected_benefits": [
+      "코드 중복 85% 감소",
+      "처리 성능 3-4배 향상",
+      "유지보수 복잡도 60% 감소",
+      "시스템 안정성 95% 향상"
+    ],
+    "investment_required": "13-18주 개발 기간, 고급 개발자 2-3명"
+  },
+  "current_state_analysis": {
+    "vba_integration": {
+      "current_vba_files": 0,
+      "vba_python_integration_files": 0,
+      "vba_functionality_status": "REMOVED",
+      "replacement_needed": true,
+      "impact": "Excel automation features lost"
+    },
+    "pdf_integration": {
+      "pdf_locations": [
+        "HVDC_Invoice_Audit/01_DSV_SHPT/Core_Systems/invoice_pdf_integration.py",
+        "HVDC_Invoice_Audit/00_Shared/pdf_integration/",
+        "HVDC_Invoice_Audit/PDF/"
+      ],
+      "integration_status": "FRAGMENTED",
+      "duplication_issues": true,
+      "central_coordination": false
+    },
+    "audit_logic_integration": {
+      "audit_systems": [
+        "shpt_sept_2025_enhanced_audit.py",
+        "shpt_audit_system.py",
+        "comprehensive_invoice_validator_backup.py"
+      ],
+      "functionality_overlap": "HIGH",
+      "consistency_issues": true,
+      "maintenance_complexity": "CRITICAL"
+    },
+    "overall_integration_maturity": "FRAGMENTED",
+    "critical_gaps": [
+      "No centralized PDF processing",
+      "Duplicated audit logic across multiple systems",
+      "Lost VBA functionality without replacement",
+      "Inconsistent error handling across components",
+      "No unified configuration management"
+    ]
+  },
+  "unified_architecture_design": {
+    "architectural_principles": {
+      "separation_of_concerns": "각 컴포넌트는 단일 책임을 가짐",
+      "dependency_inversion": "고수준 모듈이 저수준 모듈에 의존하지 않음",
+      "open_closed_principle": "확장에는 열려있고 수정에는 닫혀있음",
+      "interface_segregation": "클라이언트별 특화된 인터페이스 제공",
+      "single_source_of_truth": "데이터와 설정의 단일 진실 원천"
+    },
+    "core_layers": {
+      "presentation_layer": {
+        "components": [
+          "CLI Interface",
+          "Web Dashboard",
+          "API Gateway"
+        ],
+        "responsibilities": [
+          "User interaction",
+          "Result presentation",
+          "External integrations"
+        ],
+        "technologies": [
+          "FastAPI",
+          "Streamlit",
+          "CLI argparse"
+        ]
+      },
+      "application_layer": {
+        "components": [
+          "Invoice Audit Orchestrator",
+          "Workflow Manager",
+          "Configuration Manager"
+        ],
+        "responsibilities": [
+          "Business logic coordination",
+          "Workflow execution",
+          "Cross-cutting concerns"
+        ],
+        "technologies": [
+          "Python classes",
+          "Dependency injection",
+          "Configuration management"
+        ]
+      },
+      "domain_layer": {
+        "components": [
+          "Audit Engine",
+          "Validation Rules",
+          "Rate Calculator",
+          "Document Processor"
+        ],
+        "responsibilities": [
+          "Core business logic",
+          "Domain rules",
+          "Calculations",
+          "Validations"
+        ],
+        "technologies": [
+          "Pure Python",
+          "Domain models",
+          "Business rules engine"
+        ]
+      },
+      "infrastructure_layer": {
+        "components": [
+          "File Readers",
+          "PDF Parsers",
+          "Excel Processors",
+          "External APIs"
+        ],
+        "responsibilities": [
+          "External integrations",
+          "Data access",
+          "File processing",
+          "I/O operations"
+        ],
+        "technologies": [
+          "Pandas",
+          "PDFPlumber",
+          "OpenPyXL",
+          "Requests"
+        ]
+      }
+    },
+    "integration_patterns": {
+      "facade_pattern": "Unified interface for complex subsystems",
+      "adapter_pattern": "Legacy system integration",
+      "strategy_pattern": "Multiple validation algorithms",
+      "observer_pattern": "Event-driven processing",
+      "factory_pattern": "Component creation and configuration"
+    }
+  },
+  "improvement_roadmap": [
+    {
+      "improvement_id": "INT-001",
+      "title": "Unified Audit Engine Development",
+      "description": "Enhanced와 SHPT 시스템을 통합한 단일 감사 엔진 개발. Contract 검증 로직, Portal Fee 검증, Gate 시스템을 모두 포함하는 통합 엔진",
+      "components_affected": [
+        "shpt_sept_2025_enhanced_audit.py",
+        "shpt_audit_system.py"
+      ],
+      "expected_benefits": [
+        "코드 중복 제거 (현재 19개 중복 함수)",
+        "일관된 검증 로직",
+        "유지보수 복잡도 감소",
+        "Contract 검증 완성도 100% 달성"
+      ],
+      "implementation_effort": "HIGH",
+      "risk_level": "MEDIUM",
+      "timeline": "4-6 weeks"
+    },
+    {
+      "improvement_id": "INT-002",
+      "title": "Centralized PDF Processing Service",
+      "description": "분산된 PDF 처리 로직을 중앙집중화. 00_Shared, PDF, Core_Systems의 PDF 관련 코드를 단일 서비스로 통합",
+      "components_affected": [
+        "invoice_pdf_integration.py",
+        "pdf_integration/*",
+        "PDF/*"
+      ],
+      "expected_benefits": [
+        "PDF 처리 로직 중앙집중화",
+        "중복 코드 제거",
+        "일관된 PDF 파싱 결과",
+        "성능 최적화 (캐싱, 병렬처리)"
+      ],
+      "implementation_effort": "MEDIUM",
+      "risk_level": "LOW",
+      "timeline": "2-3 weeks"
+    },
+    {
+      "improvement_id": "INT-003",
+      "title": "VBA Functionality Replacement",
+      "description": "삭제된 VBA 기능을 Python 네이티브 구현으로 대체. Excel 자동화, 수식 처리, 데이터 변환 기능 구현",
+      "components_affected": [
+        "Excel processing",
+        "Formula calculation",
+        "Report generation"
+      ],
+      "expected_benefits": [
+        "VBA 의존성 제거",
+        "크로스 플랫폼 호환성",
+        "성능 향상",
+        "유지보수성 개선"
+      ],
+      "implementation_effort": "HIGH",
+      "risk_level": "HIGH",
+      "timeline": "6-8 weeks"
+    },
+    {
+      "improvement_id": "INT-004",
+      "title": "Configuration Management System",
+      "description": "하드코딩된 설정값들을 외부 설정 파일로 이동. Lane Map, Contract 요율, 임계값 등을 JSON/YAML로 관리",
+      "components_affected": [
+        "All audit systems",
+        "Rate management",
+        "Validation rules"
+      ],
+      "expected_benefits": [
+        "설정 변경 용이성",
+        "환경별 설정 분리",
+        "버전 관리 가능",
+        "실시간 설정 업데이트"
+      ],
+      "implementation_effort": "LOW",
+      "risk_level": "LOW",
+      "timeline": "1-2 weeks"
+    },
+    {
+      "improvement_id": "INT-005",
+      "title": "Event-Driven Processing Pipeline",
+      "description": "현재 동기적 처리를 비동기 이벤트 기반으로 변경. 대용량 파일 처리, 병렬 검증, 실시간 진행상황 추적",
+      "components_affected": [
+        "Processing pipeline",
+        "User interface",
+        "Progress tracking"
+      ],
+      "expected_benefits": [
+        "처리 성능 3-4배 향상",
+        "사용자 경험 개선",
+        "확장성 증대",
+        "리소스 효율성"
+      ],
+      "implementation_effort": "HIGH",
+      "risk_level": "MEDIUM",
+      "timeline": "4-5 weeks"
+    },
+    {
+      "improvement_id": "INT-006",
+      "title": "Comprehensive Error Handling Framework",
+      "description": "일관된 에러 처리, 로깅, 복구 메커니즘 구축. 사용자 친화적 에러 메시지와 자동 복구 기능",
+      "components_affected": [
+        "All components"
+      ],
+      "expected_benefits": [
+        "시스템 안정성 향상",
+        "디버깅 효율성 증대",
+        "사용자 경험 개선",
+        "자동 복구 기능"
+      ],
+      "implementation_effort": "MEDIUM",
+      "risk_level": "LOW",
+      "timeline": "2-3 weeks"
+    },
+    {
+      "improvement_id": "INT-007",
+      "title": "API-First Architecture Migration",
+      "description": "모든 기능을 REST API로 노출. 웹 인터페이스, CLI, 외부 시스템 통합을 위한 API 우선 설계",
+      "components_affected": [
+        "All business logic",
+        "User interfaces",
+        "External integrations"
+      ],
+      "expected_benefits": [
+        "시스템 통합 용이성",
+        "확장성 및 재사용성",
+        "마이크로서비스 전환 준비",
+        "외부 시스템 연동 단순화"
+      ],
+      "implementation_effort": "HIGH",
+      "risk_level": "MEDIUM",
+      "timeline": "6-8 weeks"
+    }
+  ],
+  "prioritization_analysis": {
+    "priority_matrix": {
+      "INT-001": {
+        "title": "Unified Audit Engine Development",
+        "impact_score": 8,
+        "ease_score": 2,
+        "risk_score": 5,
+        "total_score": 5.6,
+        "priority_rank": 4
+      },
+      "INT-002": {
+        "title": "Centralized PDF Processing Service",
+        "impact_score": 8,
+        "ease_score": 5,
+        "risk_score": 8,
+        "total_score": 7.1,
+        "priority_rank": 2
+      },
+      "INT-003": {
+        "title": "VBA Functionality Replacement",
+        "impact_score": 8,
+        "ease_score": 2,
+        "risk_score": 2,
+        "total_score": 5.0,
+        "priority_rank": 7
+      },
+      "INT-004": {
+        "title": "Configuration Management System",
+        "impact_score": 8,
+        "ease_score": 8,
+        "risk_score": 8,
+        "total_score": 8.0,
+        "priority_rank": 1
+      },
+      "INT-005": {
+        "title": "Event-Driven Processing Pipeline",
+        "impact_score": 8,
+        "ease_score": 2,
+        "risk_score": 5,
+        "total_score": 5.6,
+        "priority_rank": 5
+      },
+      "INT-006": {
+        "title": "Comprehensive Error Handling Framework",
+        "impact_score": 8,
+        "ease_score": 5,
+        "risk_score": 8,
+        "total_score": 7.1,
+        "priority_rank": 3
+      },
+      "INT-007": {
+        "title": "API-First Architecture Migration",
+        "impact_score": 8,
+        "ease_score": 2,
+        "risk_score": 5,
+        "total_score": 5.6,
+        "priority_rank": 6
+      }
+    },
+    "recommended_sequence": [
+      "INT-004",
+      "INT-002",
+      "INT-006",
+      "INT-001",
+      "INT-005",
+      "INT-007",
+      "INT-003"
+    ],
+    "quick_wins": [
+      "INT-004"
+    ],
+    "high_impact": [
+      "INT-004",
+      "INT-002",
+      "INT-006"
+    ]
+  },
+  "migration_strategy": {
+    "migration_phases": {
+      "phase_1_foundation": {
+        "duration": "2-3 weeks",
+        "focus": "기반 인프라 구축",
+        "improvements": [
+          "INT-004",
+          "INT-006"
+        ],
+        "objectives": [
+          "안정적인 기반 구조 마련",
+          "일관된 설정 관리",
+          "에러 처리 표준화"
+        ],
+        "success_criteria": [
+          "모든 설정이 외부 파일로 이동",
+          "통합 로깅 시스템 구축",
+          "에러 복구 메커니즘 동작"
+        ]
+      },
+      "phase_2_consolidation": {
+        "duration": "4-5 weeks",
+        "focus": "핵심 로직 통합",
+        "improvements": [
+          "INT-001",
+          "INT-002"
+        ],
+        "objectives": [
+          "중복 코드 제거",
+          "핵심 비즈니스 로직 통합",
+          "PDF 처리 중앙집중화"
+        ],
+        "success_criteria": [
+          "단일 감사 엔진 동작",
+          "Contract 검증 100% 완성",
+          "PDF 처리 성능 50% 향상"
+        ]
+      },
+      "phase_3_enhancement": {
+        "duration": "3-4 weeks",
+        "focus": "기능 강화 및 성능 최적화",
+        "improvements": [
+          "INT-003",
+          "INT-005"
+        ],
+        "objectives": [
+          "VBA 기능 완전 대체",
+          "처리 성능 향상",
+          "사용자 경험 개선"
+        ],
+        "success_criteria": [
+          "Excel 자동화 Python 완전 이전",
+          "처리 속도 3배 향상",
+          "메모리 사용량 50% 감소"
+        ]
+      },
+      "phase_4_modernization": {
+        "duration": "4-6 weeks",
+        "focus": "현대적 아키텍처 전환",
+        "improvements": [
+          "INT-007"
+        ],
+        "objectives": [
+          "API 우선 설계 적용",
+          "외부 통합 용이성",
+          "마이크로서비스 준비"
+        ],
+        "success_criteria": [
+          "모든 기능 REST API 제공",
+          "웹 인터페이스 구축",
+          "외부 시스템 연동 가능"
+        ]
+      }
+    },
+    "total_timeline": "13-18 weeks",
+    "rollback_strategy": {
+      "backup_requirements": [
+        "각 Phase 시작 전 전체 시스템 백업",
+        "데이터베이스 마이그레이션 스크립트 준비",
+        "설정 파일 버전 관리"
+      ],
+      "rollback_triggers": [
+        "성능 저하 20% 이상",
+        "기능 오류 발생률 5% 초과",
+        "메모리 사용량 2배 증가",
+        "사용자 승인 절차 실패"
+      ],
+      "rollback_procedures": {
+        "immediate": "이전 버전으로 즉시 전환 (30분 이내)",
+        "data_recovery": "백업 데이터 복구 (2시간 이내)",
+        "full_system": "전체 시스템 이전 상태 복구 (4시간 이내)"
+      }
+    },
+    "risk_mitigation": {
+      "continuous_testing": "각 단계별 자동 테스트 실행",
+      "gradual_deployment": "기능별 점진적 배포",
+      "user_feedback": "사용자 피드백 반영 주기 (주간)",
+      "performance_monitoring": "실시간 성능 모니터링"
+    }
+  },
+  "success_metrics": {
+    "technical_kpis": {
+      "code_duplication_reduction": "85%",
+      "processing_speed_improvement": "300-400%",
+      "memory_efficiency": "50% reduction",
+      "test_coverage": ">90%",
+      "error_rate": "<1%"
+    },
+    "business_kpis": {
+      "audit_accuracy": ">98%",
+      "processing_time": "<30 seconds for 100 items",
+      "user_satisfaction": ">4.5/5.0",
+      "system_uptime": ">99.5%",
+      "maintenance_cost": "40% reduction"
+    }
+  }
+}

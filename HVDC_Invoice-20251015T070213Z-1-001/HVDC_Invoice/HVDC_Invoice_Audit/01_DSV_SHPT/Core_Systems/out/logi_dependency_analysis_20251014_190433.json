@@ -1,0 +1,663 @@
+{
+  "analysis_timestamp": "2025-10-14T19:04:33.001019",
+  "total_modules": 19,
+  "dependency_matrix": {
+    "analyze_missing_contracts.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "comprehensive_invoice_validator_backup.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 1,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "create_enhanced_excel_report.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 1,
+      "create_enhanced_excel_report_backup.py": 1,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 1,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 1,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "create_enhanced_excel_report_backup.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 1,
+      "create_enhanced_excel_report_backup.py": 1,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "create_excel_report.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "excel_data_processor.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 1,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 1,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 1,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "generate_comprehensive_excel_report.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 1,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 1,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "generate_final_excel_report.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "generate_vba_integrated_report.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 1,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 1,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "invoice_pdf_integration.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 1,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 1,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 1,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 1,
+      "verify_contract_results.py": 0
+    },
+    "logi_dependency_analyzer_251014.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 1,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "run_comprehensive_validation.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "run_shpt_sept2025.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 1,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "shpt_audit_system.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 1,
+      "shpt_audit_system.py": 1,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "shpt_sept_2025_enhanced_audit.py": {
+      "analyze_missing_contracts.py": 1,
+      "comprehensive_invoice_validator_backup.py": 1,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 1,
+      "test_contract_improvement.py": 1,
+      "test_contract_validation.py": 1,
+      "test_pdf_integration.py": 1,
+      "verify_contract_results.py": 0
+    },
+    "test_contract_improvement.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "test_contract_validation.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 1,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    },
+    "test_pdf_integration.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 1,
+      "verify_contract_results.py": 0
+    },
+    "verify_contract_results.py": {
+      "analyze_missing_contracts.py": 0,
+      "comprehensive_invoice_validator_backup.py": 0,
+      "create_enhanced_excel_report.py": 0,
+      "create_enhanced_excel_report_backup.py": 0,
+      "create_excel_report.py": 0,
+      "excel_data_processor.py": 0,
+      "generate_comprehensive_excel_report.py": 0,
+      "generate_final_excel_report.py": 0,
+      "generate_vba_integrated_report.py": 0,
+      "invoice_pdf_integration.py": 0,
+      "logi_dependency_analyzer_251014.py": 0,
+      "run_comprehensive_validation.py": 0,
+      "run_shpt_sept2025.py": 0,
+      "shpt_audit_system.py": 0,
+      "shpt_sept_2025_enhanced_audit.py": 0,
+      "test_contract_improvement.py": 0,
+      "test_contract_validation.py": 0,
+      "test_pdf_integration.py": 0,
+      "verify_contract_results.py": 0
+    }
+  },
+  "duplication_analysis": {
+    "total_unique_functions": 196,
+    "duplicated_functions": {
+      "main": [
+        "comprehensive_invoice_validator_backup.py",
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py",
+        "create_excel_report.py",
+        "excel_data_processor.py",
+        "generate_comprehensive_excel_report.py",
+        "generate_final_excel_report.py",
+        "generate_vba_integrated_report.py",
+        "logi_dependency_analyzer_251014.py",
+        "run_comprehensive_validation.py",
+        "run_shpt_sept2025.py",
+        "shpt_audit_system.py",
+        "shpt_sept_2025_enhanced_audit.py"
+      ],
+      "__init__": [
+        "comprehensive_invoice_validator_backup.py",
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py",
+        "excel_data_processor.py",
+        "generate_comprehensive_excel_report.py",
+        "generate_vba_integrated_report.py",
+        "invoice_pdf_integration.py",
+        "logi_dependency_analyzer_251014.py",
+        "run_shpt_sept2025.py",
+        "shpt_audit_system.py",
+        "shpt_sept_2025_enhanced_audit.py"
+      ],
+      "_generate_recommendations": [
+        "comprehensive_invoice_validator_backup.py",
+        "generate_vba_integrated_report.py",
+        "logi_dependency_analyzer_251014.py"
+      ],
+      "_define_column_mapping": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "load_data": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "_parse_supporting_docs": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "_parse_evidence_types": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "_enhance_dataframe": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "generate_excel_report": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "create_main_data_sheet": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "create_executive_dashboard": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "create_pdf_integration_summary": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "create_gate_analysis_sheet": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "create_supporting_docs_mapping": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "create_comprehensive_report": [
+        "create_enhanced_excel_report.py",
+        "create_enhanced_excel_report_backup.py"
+      ],
+      "_define_styles": [
+        "create_enhanced_excel_report_backup.py",
+        "generate_vba_integrated_report.py"
+      ],
+      "_adjust_column_widths": [
+        "create_enhanced_excel_report_backup.py",
+        "generate_comprehensive_excel_report.py"
+      ],
+      "generate_comprehensive_report": [
+        "generate_comprehensive_excel_report.py",
+        "generate_vba_integrated_report.py"
+      ],
+      "_create_executive_dashboard": [
+        "generate_comprehensive_excel_report.py",
+        "generate_vba_integrated_report.py"
+      ]
+    },
+    "duplication_count": 19,
+    "category_overlap_scores": {
+      "audit": 0.0,
+      "excel": 0.047619047619047616,
+      "vba": 0.0,
+      "pdf": 0.027777777777777776,
+      "report": 0.09090909090909091,
+      "data": 0.047619047619047616,
+      "config": 0.0,
+      "test": 0.0
+    }
+  },
+  "complexity_metrics": {
+    "analyze_missing_contracts.py": {
+      "lines_of_code": 126,
+      "num_classes": 0,
+      "num_functions": 1,
+      "import_count": 5,
+      "complexity_score": 1.36
+    },
+    "comprehensive_invoice_validator_backup.py": {
+      "lines_of_code": 1409,
+      "num_classes": 1,
+      "num_functions": 34,
+      "import_count": 20,
+      "complexity_score": 17.49
+    },
+    "create_enhanced_excel_report.py": {
+      "lines_of_code": 361,
+      "num_classes": 1,
+      "num_functions": 14,
+      "import_count": 11,
+      "complexity_score": 5.01
+    },
+    "create_enhanced_excel_report_backup.py": {
+      "lines_of_code": 1172,
+      "num_classes": 1,
+      "num_functions": 28,
+      "import_count": 16,
+      "complexity_score": 14.52
+    },
+    "create_excel_report.py": {
+      "lines_of_code": 428,
+      "num_classes": 0,
+      "num_functions": 12,
+      "import_count": 8,
+      "complexity_score": 5.48
+    },
+    "excel_data_processor.py": {
+      "lines_of_code": 408,
+      "num_classes": 1,
+      "num_functions": 12,
+      "import_count": 7,
+      "complexity_score": 5.28
+    },
+    "generate_comprehensive_excel_report.py": {
+      "lines_of_code": 1011,
+      "num_classes": 1,
+      "num_functions": 15,
+      "import_count": 12,
+      "complexity_score": 11.61
+    },
+    "generate_final_excel_report.py": {
+      "lines_of_code": 156,
+      "num_classes": 0,
+      "num_functions": 1,
+      "import_count": 6,
+      "complexity_score": 1.6600000000000001
+    },
+    "generate_vba_integrated_report.py": {
+      "lines_of_code": 960,
+      "num_classes": 1,
+      "num_functions": 23,
+      "import_count": 12,
+      "complexity_score": 11.899999999999999
+    },
+    "invoice_pdf_integration.py": {
+      "lines_of_code": 611,
+      "num_classes": 1,
+      "num_functions": 12,
+      "import_count": 7,
+      "complexity_score": 7.3100000000000005
+    },
+    "logi_dependency_analyzer_251014.py": {
+      "lines_of_code": 366,
+      "num_classes": 1,
+      "num_functions": 12,
+      "import_count": 10,
+      "complexity_score": 4.86
+    },
+    "run_comprehensive_validation.py": {
+      "lines_of_code": 305,
+      "num_classes": 0,
+      "num_functions": 7,
+      "import_count": 9,
+      "complexity_score": 3.75
+    },
+    "run_shpt_sept2025.py": {
+      "lines_of_code": 54,
+      "num_classes": 1,
+      "num_functions": 2,
+      "import_count": 3,
+      "complexity_score": 0.74
+    },
+    "shpt_audit_system.py": {
+      "lines_of_code": 1002,
+      "num_classes": 1,
+      "num_functions": 19,
+      "import_count": 7,
+      "complexity_score": 11.92
+    },
+    "shpt_sept_2025_enhanced_audit.py": {
+      "lines_of_code": 1154,
+      "num_classes": 1,
+      "num_functions": 22,
+      "import_count": 14,
+      "complexity_score": 13.739999999999998
+    },
+    "test_contract_improvement.py": {
+      "lines_of_code": 157,
+      "num_classes": 0,
+      "num_functions": 1,
+      "import_count": 5,
+      "complexity_score": 1.6700000000000002
+    },
+    "test_contract_validation.py": {
+      "lines_of_code": 152,
+      "num_classes": 1,
+      "num_functions": 7,
+      "import_count": 5,
+      "complexity_score": 2.2199999999999998
+    },
+    "test_pdf_integration.py": {
+      "lines_of_code": 284,
+      "num_classes": 2,
+      "num_functions": 14,
+      "import_count": 6,
+      "complexity_score": 4.24
+    },
+    "verify_contract_results.py": {
+      "lines_of_code": 90,
+      "num_classes": 0,
+      "num_functions": 0,
+      "import_count": 2,
+      "complexity_score": 0.9
+    }
+  },
+  "core_modules": {
+    "shpt_sept_2025_enhanced_audit.py": 6,
+    "invoice_pdf_integration.py": 4,
+    "create_enhanced_excel_report.py": 4,
+    "excel_data_processor.py": 3,
+    "create_enhanced_excel_report_backup.py": 2
+  },
+  "recommendations": [
+    "HIGH_DUPLICATION: 19개 중복 함수 발견. 공통 모듈로 리팩터링 필요."
+  ]
+}

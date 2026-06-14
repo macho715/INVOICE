@@ -1,0 +1,19 @@
+[HYBRID] Docling/ADE integration enabled
+================================================================================
+9월 2025 Domestic 인보이스 + PDF 통합 검증
+================================================================================
+Traceback (most recent call last):
+  File "C:\Users\minky\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\02_DSV_DOMESTIC\validate_sept_2025_with_pdf.py", line 1502, in <module>
+    success = main()
+  File "C:\Users\minky\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\02_DSV_DOMESTIC\validate_sept_2025_with_pdf.py", line 1432, in main
+    print("\n\U0001f4c2 Step 1: Supporting Documents 스캔...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c2' in position 2: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\minky\Downloads\HVDC_Invoice_Audit-20251012T195441Z-1-001\HVDC_Invoice_Audit\02_DSV_DOMESTIC\validate_sept_2025_with_pdf.py", line 1508, in <module>
+    print(f"\n\U0001f4a5 오류 발생: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4a5' in position 2: illegal multibyte sequence
