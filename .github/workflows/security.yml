@@ -44,7 +44,7 @@ jobs:
         pip-audit --desc
         
     - name: Upload dependency reports
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: dependency-security-reports
         path: |
@@ -81,7 +81,7 @@ jobs:
         bandit -r . -f txt -ll
         
     - name: Upload static analysis reports
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: static-analysis-reports
         path: |
@@ -190,7 +190,7 @@ jobs:
         echo "✅ GitLeaks scan completed" >> security-summary.md
         
     - name: Upload security summary
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: security-summary
         path: security-summary.md
